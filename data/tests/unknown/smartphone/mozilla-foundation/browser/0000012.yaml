@@ -1,254 +1,12 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:115.1.0) Gecko/115.1.0 Firefox/115.1.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 115.1.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 115.1.0
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:28.0) Gecko/28.0 Firefox/28.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 28.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 28.0.0
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 31.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 31.0.0
-    manufacturer: mozilla
--
-  headers:
-    sec-ch-ua-platform: '"Linux"'
-    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:148.0) Gecko/148.0 Firefox/148.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 148.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 148.0.0
-    manufacturer: mozilla
--
-  headers:
-    sec-ch-ua-model: '""'
-    sec-ch-ua-platform: '"Linux"'
-    sec-ch-ua-platform-version: '""'
-    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138"'
-    sec-ch-ua-full-version: '""'
-    sec-ch-ua-bitness: '""'
-    sec-ch-ua-arch: '""'
-    sec-ch-ua-mobile: '?0'
-    sec-ch-ua-wow64: '?0'
-    user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:148.0) Gecko/148.0 Firefox/148.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 148.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 148.0.0
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Android 15; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0'
-  device:
-    architecture: null
-    deviceName: 'general Mobile Phone'
-    marketingName: 'general Mobile Phone'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 149.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 149.0.0
-    manufacturer: mozilla
--
-  headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -257,21 +15,23 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 149.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: Android
     marketingName: Android
     version: 12.0.0
     manufacturer: google
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 149.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: Gecko
     version: 149.0.0
@@ -280,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -295,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -309,7 +63,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 149.0.0
@@ -318,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -333,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -347,7 +101,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -356,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Focus/6.1.1 Chrome/107.0.5304.54 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -371,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Firefox Focus'
     modus: null
@@ -385,7 +139,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.54
@@ -395,13 +155,11 @@
     x-requested-with: org.mozilla.klar
     user-agent: 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Focus/6.1.1 Chrome/107.0.5304.54 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -410,13 +168,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Firefox Klar'
     modus: null
@@ -424,7 +178,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.54
@@ -433,13 +193,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -448,13 +206,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -462,7 +216,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 149.0.0
@@ -471,13 +231,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -486,13 +244,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -500,7 +254,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 132.0.0
@@ -509,13 +269,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -524,13 +282,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -538,7 +292,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 149.0.0
@@ -550,13 +310,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Android 15; Mobile; rv:148.0) Gecko/148.0 Firefox/148.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -565,13 +323,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -579,7 +333,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 148.0.0
@@ -597,13 +357,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Android 15; Mobile; rv:148.0) Gecko/148.0 Firefox/148.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -612,13 +370,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -626,7 +380,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 148.0.0
@@ -635,13 +395,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:37.0) Gecko/37.0 Firefox/37.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -650,13 +408,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -664,7 +418,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 37.0.0
@@ -673,13 +433,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -688,13 +446,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -702,7 +456,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 150.0.0
@@ -711,13 +471,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -726,13 +484,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -740,7 +494,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -749,13 +509,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -764,13 +522,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -778,7 +532,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 150.0.0
@@ -787,13 +547,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:27.0) Gecko/27.0 Firefox/27.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -802,13 +560,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -816,7 +570,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 27.0.0
@@ -825,13 +585,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -840,13 +598,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -854,7 +608,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 150.0.0
@@ -863,13 +623,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 15; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -878,13 +636,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -892,7 +646,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 150.0.0
@@ -901,13 +661,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -916,13 +674,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -930,7 +684,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 150.0.0
@@ -939,13 +699,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -954,13 +712,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -968,7 +722,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 150.0.0
@@ -977,13 +737,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -992,13 +750,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1006,7 +760,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 150.0.0
@@ -1015,13 +775,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:22.0) Gecko/22.0 Firefox/22.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1030,13 +788,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1044,7 +798,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 22.0.0
@@ -1062,13 +822,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1077,13 +835,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1091,7 +845,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 149.0.0
@@ -1100,13 +860,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1115,13 +873,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1129,7 +883,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -1138,13 +898,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:28.0) Gecko/28.0 Firefox/28.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1153,13 +911,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1167,7 +921,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 28.0.0
@@ -1176,13 +936,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:21.0) Gecko/21.0 Firefox/21.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1191,13 +949,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1205,7 +959,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 21.0.0
@@ -1214,13 +974,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:44.0) Gecko/44.0 Firefox/44.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1229,13 +987,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1243,7 +997,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 44.0.0
@@ -1252,13 +1012,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:12.0) Gecko/12.0 Firefox/12.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1267,13 +1025,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1281,7 +1035,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 12.0.0
@@ -1290,13 +1050,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1305,13 +1063,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1319,7 +1073,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 41.0.0
@@ -1328,13 +1088,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:49.0) Gecko/49.0 Firefox/49.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1343,13 +1101,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1357,7 +1111,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 49.0.0
@@ -1366,13 +1126,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:32.0) Gecko/32.0 Firefox/32.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1381,13 +1139,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1395,7 +1149,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 32.0.0
@@ -1404,13 +1164,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:18.0) Gecko/18.0 Firefox/18.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1419,13 +1177,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1433,7 +1187,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 18.0.0
@@ -1442,13 +1202,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1457,13 +1215,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1471,7 +1225,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 31.0.0
@@ -1480,13 +1240,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12.1; Mobile; rv:5.0) Gecko/5.0 Firefox/5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1495,13 +1253,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1509,7 +1263,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 5.0.0
@@ -1518,13 +1278,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:63.0) Gecko/63.0 Firefox/63.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1533,13 +1291,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1547,7 +1301,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 63.0.0
@@ -1556,13 +1316,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:39.0) Gecko/39.0 Firefox/39.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1571,13 +1329,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1585,7 +1339,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 39.0.0
@@ -1594,13 +1354,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:22.0) Gecko/22.0 Firefox/22.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1609,13 +1367,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1623,7 +1377,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 22.0.0
@@ -1632,13 +1392,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:18.0) Gecko/18.0 Firefox/18.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1647,13 +1405,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1661,7 +1415,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 18.0.0
@@ -1670,13 +1430,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1685,13 +1443,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1699,7 +1453,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -1708,13 +1468,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 15; Mobile; rv:134.0.0) Gecko/134.0.0 Firefox/134.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1723,13 +1481,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1737,7 +1491,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 134.0.0
@@ -1746,13 +1506,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:63.0) Gecko/63.0 Firefox/63.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1761,13 +1519,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1775,7 +1529,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 63.0.0
@@ -1784,13 +1544,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:18.0) Gecko/18.0 Firefox/18.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1799,13 +1557,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1813,7 +1567,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 18.0.0
@@ -1822,13 +1582,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:65.0) Gecko/65.0 Firefox/65.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1837,13 +1595,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1851,7 +1605,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 65.0.0
@@ -1860,13 +1620,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:64.0) Gecko/64.0 Firefox/64.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1875,13 +1633,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1889,7 +1643,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 64.0.0
@@ -1898,13 +1658,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:37.0) Gecko/37.0 Firefox/37.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1913,13 +1671,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1927,7 +1681,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 37.0.0
@@ -1936,13 +1696,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12.1; Mobile; rv:61.0) Gecko/61.0 Firefox/61.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1951,13 +1709,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -1965,7 +1719,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 61.0.0
@@ -1974,13 +1734,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:17.0) Gecko/17.0 Firefox/17.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1989,13 +1747,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2003,7 +1757,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 17.0.0
@@ -2012,13 +1772,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:56.0) Gecko/56.0 Firefox/56.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2027,13 +1785,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2041,7 +1795,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 56.0.0
@@ -2050,13 +1810,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:52.0) Gecko/52.0 Firefox/52.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2065,13 +1823,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2079,7 +1833,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 52.0.0
@@ -2088,13 +1848,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:42.0) Gecko/42.0 Firefox/42.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2103,13 +1861,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2117,7 +1871,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 42.0.0
@@ -2126,13 +1886,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:39.0) Gecko/39.0 Firefox/39.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2141,13 +1899,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2155,7 +1909,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 39.0.0
@@ -2164,13 +1924,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:33.0) Gecko/33.0 Firefox/33.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2179,13 +1937,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2193,7 +1947,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 33.0.0
@@ -2202,13 +1962,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:40.0) Gecko/40.0 Firefox/40.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2217,13 +1975,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2231,7 +1985,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 40.0.0
@@ -2240,13 +2000,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2255,13 +2013,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2269,7 +2023,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -2278,13 +2038,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:26.0) Gecko/26.0 Firefox/26.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2293,13 +2051,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2307,7 +2061,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 26.0.0
@@ -2316,13 +2076,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:47.0) Gecko/47.0 Firefox/47.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2331,13 +2089,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2345,7 +2099,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 47.0.0
@@ -2354,13 +2114,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:67.0) Gecko/67.0 Firefox/67.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2369,13 +2127,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2383,7 +2137,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 67.0.0
@@ -2392,13 +2152,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:55.0) Gecko/55.0 Firefox/55.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2407,13 +2165,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2421,7 +2175,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 55.0.0
@@ -2431,13 +2191,11 @@
     x-requested-with: XMLHttpRequest
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2446,13 +2204,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2460,7 +2214,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 150.0.0
@@ -2469,13 +2229,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 17; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2484,13 +2242,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2498,7 +2252,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -2507,13 +2267,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 15; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2522,13 +2280,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2536,7 +2290,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -2545,13 +2305,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2560,13 +2318,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2574,7 +2328,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -2583,13 +2343,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:108.0.1) Gecko/108.0.1 Firefox/108.0.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2598,13 +2356,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2612,7 +2366,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 108.0.1
@@ -2621,13 +2381,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 9; Mobile; rv:37.0) Gecko/37.0 Firefox/37.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2636,13 +2394,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2650,7 +2404,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 37.0.0
@@ -2659,13 +2419,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2674,13 +2432,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2688,7 +2442,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -2697,13 +2457,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:64.0) Gecko/64.0 Firefox/64.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2712,13 +2470,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2726,7 +2480,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 64.0.0
@@ -2735,13 +2495,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:65.0) Gecko/65.0 Firefox/65.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2750,13 +2508,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2764,7 +2518,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 65.0.0
@@ -2773,13 +2533,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:14.0) Gecko/14.0 Firefox/14.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2788,13 +2546,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2802,7 +2556,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 14.0.0
@@ -2814,13 +2574,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:149.0) Gecko/149.0 Firefox/149.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2829,13 +2587,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2843,7 +2597,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 149.0.0
@@ -2853,13 +2613,11 @@
     x-requested-with: org.mozilla.klar
     user-agent: 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Focus/5.2 Chrome/91.0.4472.88 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2868,13 +2626,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Firefox Klar'
     modus: null
@@ -2882,7 +2636,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.88
@@ -2891,13 +2651,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:107.0) Gecko/107.0 Firefox/107.0 MixerBox-Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2906,13 +2664,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2920,7 +2674,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 107.0.0
@@ -2929,13 +2689,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:109.0) Gecko/119.0 Firefox/119.0 YouBrowser/1.4.12'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2944,13 +2702,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2958,7 +2712,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 119.0.0
@@ -2967,13 +2727,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12.1; Mobile; rv:59.0) Gecko/59.0 Firefox/59.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -2982,13 +2740,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2996,7 +2750,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 59.0.0
@@ -3005,13 +2765,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 15; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3020,13 +2778,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3034,7 +2788,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -3043,13 +2803,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:48.0) Gecko/48.0 Firefox/48.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3058,13 +2816,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3072,7 +2826,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 48.0.0
@@ -3081,13 +2841,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:15.0) Gecko/15.0 Firefox/15.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3096,13 +2854,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3110,7 +2864,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 15.0.0
@@ -3119,13 +2879,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:26.0) Gecko/26.0 Firefox/26.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3134,13 +2892,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3148,7 +2902,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 26.0.0
@@ -3158,13 +2918,11 @@
     x-requested-with: XMLHttpRequest
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3173,13 +2931,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3187,7 +2941,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 151.0.0
@@ -3196,13 +2956,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3211,13 +2969,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3225,7 +2979,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -3234,13 +2994,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3249,13 +3007,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3263,7 +3017,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -3272,13 +3032,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3287,13 +3045,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3301,7 +3055,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -3310,13 +3070,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:50.0) Gecko/50.0 Firefox/50.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3325,13 +3083,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3339,7 +3093,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 50.0.0
@@ -3348,13 +3108,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:10.0) Gecko/10.0 Firefox/10.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3363,13 +3121,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3377,7 +3131,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 10.0.0
@@ -3387,13 +3147,11 @@
     x-requested-with: XMLHttpRequest
     user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3402,13 +3160,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3416,7 +3170,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -3425,13 +3185,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 17; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3440,13 +3198,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3454,7 +3208,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -3463,13 +3223,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3478,13 +3236,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3492,7 +3246,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -3501,13 +3261,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:31.0) Gecko/31.0 Firefox/31.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3516,13 +3274,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3530,7 +3284,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 31.0.0
@@ -3539,13 +3299,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 12.1; Mobile; rv:29.0) Gecko/29.0 Firefox/29.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3554,13 +3312,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3568,7 +3322,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 29.0.0
@@ -3577,13 +3337,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 11; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3592,13 +3350,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3606,7 +3360,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 152.0.0
@@ -3615,13 +3375,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:154.0) Gecko/154.0 Firefox/154.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3630,13 +3388,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3644,7 +3398,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 154.0.0
@@ -3653,13 +3413,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:130.0.0) Gecko/130.0.0 Firefox/130.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3668,13 +3426,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3682,7 +3436,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 130.0.0
@@ -3691,13 +3451,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 13; Mobile; rv:139.0.1) Gecko/139.0.1 Firefox/139.0.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3706,13 +3464,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3720,7 +3474,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 139.0.1
@@ -3729,13 +3489,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 10; Mobile; rv:122.0.0) Gecko/122.0.0 Firefox/122.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3744,13 +3502,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3758,7 +3512,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 122.0.0
@@ -3767,13 +3527,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:128.0) Gecko/128.0 Firefox/128.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3782,13 +3540,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3796,7 +3550,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 128.0.0
@@ -3805,13 +3565,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:61.0) Gecko/61.0 Firefox/61.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -3820,13 +3578,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3834,8 +3588,254 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 61.0.0
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Android 12; Mobile; rv:154.0) Gecko/154.0 Firefox/154.0'
+  device:
+    architecture: ''
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 154.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Gecko
+    version: 154.0.0
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:153.0) Gecko/153.0 Firefox/153.0'
+  device:
+    architecture: ''
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 153.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Gecko
+    version: 153.0.0
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Android 14; Mobile; rv:153.0) Gecko/153.0 Firefox/153.0'
+  device:
+    architecture: ''
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 153.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Gecko
+    version: 153.0.0
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Android 17; Mobile; rv:153.0) Gecko/153.0 Firefox/153.0'
+  device:
+    architecture: ''
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 153.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Gecko
+    version: 153.0.0
+    manufacturer: mozilla
+-
+  headers:
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138"'
+    sec-ch-ua-mobile: '?0'
+    user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
+  device:
+    architecture: ''
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: false
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 152.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Gecko
+    version: 152.0.0
+    manufacturer: mozilla
+-
+  headers:
+    sec-ch-ua-model: '""'
+    sec-ch-ua-platform: '"Linux"'
+    sec-ch-ua-platform-version: '""'
+    sec-ch-ua: '"Not)A;Brand";v="8", "Chromium";v="138"'
+    sec-ch-ua-full-version: '""'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-mobile: '?0'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Android 16; Mobile; rv:152.0) Gecko/152.0 Firefox/152.0'
+  device:
+    architecture: ''
+    deviceName: 'general Mobile Phone'
+    marketingName: 'general Mobile Phone'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: smartphone
+    ismobile: false
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 152.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Gecko
+    version: 152.0.0
     manufacturer: mozilla

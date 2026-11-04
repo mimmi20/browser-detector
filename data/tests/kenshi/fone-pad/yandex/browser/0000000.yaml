@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; E11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.869 YaSearchBrowser/24.42/apad BroPP/1.0 YaSearchApp/24.42/apad webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E11
     marketingName: E11
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.869
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; E12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.2400 YaSearchBrowser/24.40/apad BroPP/1.0 YaSearchApp/24.40/apad webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E12
     marketingName: E12
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.2400
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; E17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.5.93.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E17
     marketingName: E17
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -93,13 +91,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; E18) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.308 YaBrowser/24.4.0.308.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E18
     marketingName: E18
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -131,13 +129,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.308
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; E28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 YaSearchBrowser/23.56.1 BroPP/1.0 YaSearchApp/23.56.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E28
     marketingName: E28
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -169,13 +167,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; H38) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.869 YaSearchBrowser/24.42/apad BroPP/1.0 YaSearchApp/24.42/apad webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H38
     marketingName: H38
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -207,13 +205,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.869
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; H21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 YaApp_Android/20.121/apad YaSearchBrowser/20.121/apad BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H21
     marketingName: H21
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2000
       height: 1200
@@ -245,13 +243,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; H19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.0.278.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H19
     marketingName: H19
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -283,13 +281,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; H11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.96 YaBrowser/24.4.3.96.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H11
     marketingName: H11
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 800
@@ -321,13 +319,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.96
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; Kenshi_K10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.0.284.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K10
     marketingName: K10
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2000
       height: 1200
@@ -359,13 +357,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; H44) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.97 YaBrowser/25.2.8.97.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H44
     marketingName: H44
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -397,13 +395,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.6834.97
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; H34) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.261 YaBrowser/25.4.0.261.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H34
     marketingName: H34
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 800
@@ -435,13 +433,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.261
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; H24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.0.284.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H24
     marketingName: H24
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -473,13 +471,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; H14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.897 YaSearchBrowser/25.29/apad BroPP/1.0 YaSearchApp/25.29/apad webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H14
     marketingName: H14
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -511,13 +509,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.6834.897
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; E10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.0.284.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E10
     marketingName: E10
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2000
       height: 1200
@@ -549,13 +547,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Pad Pro E111) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.91 YaSearchBrowser/25.66.1/apad BroPP/1.0 YaSearchApp/25.66.1/apad webOmni SA/3 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pad Pro E111'
     marketingName: 'Pad Pro E111'
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2000
       height: 1200
@@ -587,13 +585,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.91
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Pad Pro E110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.98 YaSearchBrowser/25.66.1/apad BroPP/1.0 YaSearchApp/25.66.1/apad webOmni SA/3 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pad Pro E110'
     marketingName: 'Pad Pro E110'
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2000
       height: 1200
@@ -625,13 +623,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.98
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Pad Pro E90) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.270 YaBrowser/25.10.0.270.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pad Pro E90'
     marketingName: 'Pad Pro E90'
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1920
       height: 1200
@@ -663,13 +661,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.270
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Pad Pro E112) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.886 YaSearchBrowser/25.101.1/apad BroPP/1.0 YaSearchApp/25.101.1/apad webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pad Pro E112'
     marketingName: 'Pad Pro E112'
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2560
       height: 1600
@@ -701,13 +699,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.886
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Pad Lite E48) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.2232 YaSearchBrowser/25.100.1/apad BroPP/1.0 YaSearchApp/25.100.1/apad webOmni SA/3 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pad Lite E48'
     marketingName: 'Pad Lite E48'
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -739,13 +737,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.2232
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 11; H21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.141 YaBrowser/22.3.6.66.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H21
     marketingName: H21
     manufacturer: kenshi
     brand: kenshi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2000
       height: 1200
@@ -777,13 +775,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.141

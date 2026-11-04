@@ -207,6 +207,8 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/iemobile\/[\d.]+\) (?P<devicecode>[a-z]+; ?[^);\/]+)/i',
             '/^(?P<devicecode>.+)\/[\d.]+ up\.link\//i',
             '/^(?P<devicecode>.+) up\.link\//i',
+            '/^(?P<devicecode>.+)[_;\/]/i',
+            '/\((?P<devicecode>[^);\/ ]+)/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];
@@ -229,7 +231,7 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             $filtered,
         );
 
-        // if ($value === 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/87.0.4280.88 Safari/537.36 LG Browser/8.00.00(LGE; NIK50MEU4STN; 04.42.26; 0x00000001; DTV_C22P); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, NIK50MEU4STN, wireless)') {
+        // if ($value === 'Mozilla/5.0 (Linux; Tizen 2.2.1.3; SM-R750) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.76 efl-webengine/0.1.1.1 Mobile Safari/537.36') {
         //     var_dump($normalizedValue, $filtered, $finds);
         // }
 

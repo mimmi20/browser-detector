@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0 HbbTV/1.4.1 ( DRM; MStar; 2KTV18; 1.0; 1.0; com.mstarsemi.smarttv; ) CE-HTML/1.0 FVC/3.0 (MStar; com.mstarsemi.smarttv; )'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2KTV18
     marketingName: 2KTV18
     manufacturer: mstar
     brand: mstar
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Sraf
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: seraphic
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 47.0.2526.106
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0 HbbTV/1.4.1 ( DRM; MStar; 4KTV18; 1.0; 1.0; com.mstarsemi.smarttv; ) CE-HTML/1.0 FVC/3.0 (MStar; com.mstarsemi.smarttv; )'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 4KTV18
     marketingName: 4KTV18
     manufacturer: mstar
     brand: mstar
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Sraf
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: seraphic
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 47.0.2526.106

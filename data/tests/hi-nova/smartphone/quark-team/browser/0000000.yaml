@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; MIZ-BD00 Build/HinovaMIZ-BD00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/6.9.0.481 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MIZ-BD00
     marketingName: '11'
     manufacturer: hi-nova
     brand: hi-nova
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1084
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; zh-Hans-CN; MRK-BD00 Build/HinovaMRK-BD00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 Quark/7.14.8.883 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRK-BD00
     marketingName: '10 SE 5G'
     manufacturer: hi-nova
     brand: hi-nova
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80

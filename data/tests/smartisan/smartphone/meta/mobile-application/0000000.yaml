@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; YQ601 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/112.0.0.20.70;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: YQ601
     marketingName: 'U1 Jianguo'
     manufacturer: smartisan
     brand: smartisan
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Smartisan OS'
-    marketingName: 'Smartisan OS'
-    version: 2.0.0
-    manufacturer: smartisan
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Smartisan OS'
+    marketingName: 'Smartisan OS'
+    version: 2.0.0
+    manufacturer: smartisan
+    bits: 0
   engine:
     name: Blink
     version: 39.0.0.0

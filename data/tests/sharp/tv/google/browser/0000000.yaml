@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv8l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 (+DRM; UMC-Sharp; FVP6683;1.0.0.0;1.0.0.0; UMC_2KAndroidTV_2019;UMC_SHARP;) FVC/4.0 (UMC-Sharp; UMC_2KAndroidTV_2019;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TV'
     marketingName: 'Aquos TV'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 55.0.2883.91
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 (+DRM; UMC-Sharp; FVP6886;1.0.0.0;1.0.0.0; UMC_GoogleTV_2019;UMC_SHARP;) FVC/4.0 (UMC; UMC_GoogleTV_2019;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TV'
     marketingName: 'Aquos TV'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Google TV'
-    marketingName: 'Google TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Google TV'
+    marketingName: 'Google TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 55.0.2883.91
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SHARP 2K EU Android TV Build/UKNV.260324.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '2K EU Android TV'
     marketingName: 2K
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.178
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; AQUOS-TVE23A Build/UKNV.260317.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TVE23A'
     marketingName: 'Aquos TVE23A'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; AQUOS-TVE21A Build/UKNV.260302.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TVE21A'
     marketingName: 'Aquos TVE21A'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.34
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Sharp Google TV Build/RTMA.250416.207; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Google TV'
     marketingName: 'Google TV'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SHARP 2K TV Build/RTM8.240401.091; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '2K TV'
     marketingName: 2K
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -245,13 +243,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SHARP 2K Smart TV Build/RTM9.241015.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '2K Smart TV'
     marketingName: 2K
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -283,13 +281,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; AQUOS-TVL23A Build/RTT2.220103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TVL23A'
     marketingName: 'Aquos TVL23A'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -321,13 +319,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; AQUOS-TVE21B Build/RTOB.250806.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TVE21B'
     marketingName: 'Aquos TVE21B'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.171
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; AQUOS-TVE19G Build/RTOB.250806.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.208 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TVE19G'
     marketingName: 'Aquos TVE19G'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.208
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; AQUOS-TVE19C Build/RTOB.250721.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TVE19C'
     marketingName: 'Aquos TVE19C'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.171
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; AQUOS-4KTVJ22-2 Build/RTT2.210708.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos 4KTVJ22-2'
     marketingName: 'Aquos 4KTVJ22-2'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -473,13 +471,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; AQUOS-TVJ19 Build/QTG3.210505.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Aquos TVJ19'
     marketingName: 'Aquos TVJ19'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +509,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91

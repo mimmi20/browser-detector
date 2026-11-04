@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; M821-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M821-EEA
     marketingName: M821
     manufacturer: magch
     brand: magch
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; M820) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M820
     marketingName: M820
     manufacturer: magch
     brand: magch
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.0.0

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P-04A (c100;TB;W24H12)(compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general i-mobile device'
     marketingName: 'general i-mobile device'
     manufacturer: i-mobile
     brand: i-mobile
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: NaverBot
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: naver
     type: search-bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

@@ -10,13 +10,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G781B
     marketingName: 'Galaxy S20 FE 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -25,13 +23,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Quetta Browser'
     modus: null
@@ -39,7 +33,13 @@
     manufacturer: quetta-networks
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.0

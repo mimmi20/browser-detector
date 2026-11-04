@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36; ClaudeBot/1.0; +claudebot@anthropic.com)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8'
     marketingName: 'Pixel 8'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: ClaudeBot
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.8695.124 Mobile Safari/537.36; compatible; Claude-User/1.0; +https://www.anthropic.com/claude-user'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8'
     marketingName: 'Pixel 8'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Claude-User
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.8695.124
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com) Chrome/128.0.7616.44 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 7'
     marketingName: 'Pixel 7'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: ClaudeBot
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 128.0.7616.44
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.3269.145 Mobile Safari/537.36; compatible; Claude-SearchBot/1.0; +https://www.anthropic.com/claude-searchbot'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 7'
     marketingName: 'Pixel 7'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Claude-SearchBot
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.3269.145
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.1766.103 Mobile Safari/537.36; compatible; Claude-User/1.0; +https://www.anthropic.com/claude-user'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 7'
     marketingName: 'Pixel 7'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Claude-User
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.1766.103
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.8164.240 Mobile Safari/537.36; compatible; Claude-User/1.0; +https://www.anthropic.com/claude-user'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 6'
     marketingName: 'Pixel 6'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Claude-User
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.8164.240
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.3319.67 Mobile Safari/537.36; compatible; Claude-SearchBot/1.0; +https://www.anthropic.com/claude-searchbot'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 6'
     marketingName: 'Pixel 6'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Claude-SearchBot
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.3319.67
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com) Chrome/134.0.2105.195 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 6'
     marketingName: 'Pixel 6'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: ClaudeBot
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.2105.195
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko; compatible; Claude-SearchBot/1.0; +https://www.anthropic.com/claude-searchbot) Chrome/126.0.2072.42 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8'
     marketingName: 'Pixel 8'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Claude-SearchBot
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: anthropic
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.2072.42

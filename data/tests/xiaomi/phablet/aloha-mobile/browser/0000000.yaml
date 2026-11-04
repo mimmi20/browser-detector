@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; XIAOMI M2003J15SC Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36 AlohaBrowser/3.9.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2003J15SC
     marketingName: 'Redmi Note 10X'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -17,13 +15,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Aloha Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: aloha-mobile
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.96
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; M2103K19G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36 AlohaBrowser/3.12.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2103K19G
     marketingName: 'Redmi Note 10 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Aloha Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: aloha-mobile
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.96
@@ -89,13 +89,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 AlohaBrowser/8.5.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2312DRA50G
     marketingName: 'Redmi Note 13 Pro 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -104,13 +102,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Aloha Browser'
     modus: null
@@ -118,7 +112,13 @@
     manufacturer: aloha-mobile
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.0

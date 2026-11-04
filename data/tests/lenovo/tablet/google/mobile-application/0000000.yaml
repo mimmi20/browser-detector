@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Lenovo TB-X505F Build/QKQ1.191224.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Safari/537.36 GSA/12.4.9.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB-X505F
     marketingName: 'Tab M10 HD Wi-Fi'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.152
@@ -41,13 +41,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Lenovo TB-7306F Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.116 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB-7306F
     marketingName: 'Tab M7 Wi-Fi (3rd Gen)'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -56,13 +54,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -70,7 +64,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -80,13 +80,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Lenovo TB-7305F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.57 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB-7305F
     marketingName: 'Tab M7'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -95,13 +93,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -109,7 +103,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.57
@@ -119,13 +119,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Lenovo TB-X505F Build/QKQ1.191224.003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.131 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB-X505F
     marketingName: 'Tab M10 HD Wi-Fi'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -134,13 +132,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -148,7 +142,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.131
@@ -157,13 +157,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; TB328FU Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Safari/537.36 GoogleApp/14.39.39.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB328FU
     marketingName: 'Tab M10 Wi-Fi (3rd Gen)'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -172,13 +170,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -186,7 +180,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -195,13 +195,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Lenovo TB125FU Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.178 Safari/537.36 GNews Android/2022175919'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB125FU
     marketingName: 'Tab M10 Plus Wi-Fi (3rd Gen)'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -210,13 +208,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google News'
     modus: null
@@ -224,7 +218,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.178
@@ -233,13 +233,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; TB350FU Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.63 Safari/537.36 GoogleApp/16.26.67.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB350FU
     marketingName: 'Tab P11 Wi-Fi (2nd Gen)'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -248,13 +246,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -262,7 +256,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.63
@@ -271,13 +271,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; TB330FU Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Safari/537.36 GoogleApp/16.49.61.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB330FU
     marketingName: 'Tab M11 Wi-Fi'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -286,13 +284,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -300,7 +294,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.146
@@ -309,13 +309,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; TB373FU Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.159 Safari/537.36 GoogleApp/17.8.62.ve.arm64 DSRP'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB373FU
     marketingName: 'IdeaTab Pro 12.7" (2025)'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2944
       height: 1840
@@ -324,13 +322,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -338,7 +332,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.159
@@ -347,13 +347,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; TB361FU Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.183 Safari/537.36 OcIdWebView ({\"os\":\"Android\",\"osVersion\":\"36\",\"app\":\"com.google.android.gms\",\"appVersion\":\"263032001\",\"style\":3,\"callingAppId\":\"com.google.android.googlequicksearchbox\",\"isDarkTheme\":false})'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TB361FU
     marketingName: 'Idea Tab Plus Wi-Fi'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -362,13 +360,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google App'
     modus: null
@@ -376,7 +370,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.183

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; SM-F731B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F731B
     marketingName: 'Galaxy Z Flip 5 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2640
       height: 1080
@@ -17,13 +15,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.146
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 15; SM-F711B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.60 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F711B
     marketingName: 'Galaxy Z Flip 3 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2640
       height: 1080
@@ -55,13 +53,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.60
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 13; SM-N980F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-N980F
     marketingName: 'Galaxy Note 20 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -93,13 +91,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.132
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; SM-F741B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F741B
     marketingName: 'Galaxy Z Flip 6 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1080
@@ -131,13 +129,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.79
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; SM-F721B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F721B
     marketingName: 'Galaxy Z Flip 4 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2640
       height: 1080
@@ -169,13 +167,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.79
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; SM-F956B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F956B
     marketingName: 'Galaxy Z Fold 6'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1856
@@ -207,13 +205,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.178
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 13; SM-N986B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-N986B
     marketingName: 'Galaxy Note 20 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -245,13 +243,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; SM-F776B Build/CP2A.260605.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.137 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F776B
     marketingName: 'Galaxy Z Flip 8 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2520
       height: 1080
@@ -283,13 +281,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.7922.137
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; SM-F976B Build/CP2A.260605.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F976B
     marketingName: 'Galaxy Z Fold 8 Ultra (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2504
       height: 2256
@@ -321,13 +319,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.137
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; SM-F971B Build/CP2A.260605.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F971B
     marketingName: 'Galaxy Z Fold 8 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2448
       height: 1848
@@ -359,13 +357,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.8010.36

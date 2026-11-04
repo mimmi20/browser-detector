@@ -4,13 +4,11 @@
     x-operamini-phone: 'RIM # BlackBerry 8520'
     user-agent: 'Opera/9.80 (X11; Linux zvav; U; xx) Presto/2.8.119 Version/11.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BlackBerry 8520'
     marketingName: 'BlackBerry Curve 8520'
     manufacturer: rim
     brand: rim
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -19,13 +17,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'RIM OS'
-    marketingName: 'RIM OS'
-    version: 5.0.0.1036
-    manufacturer: rim
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -33,7 +27,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'RIM OS'
+    marketingName: 'RIM OS'
+    version: 5.0.0.1036
+    manufacturer: rim
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119

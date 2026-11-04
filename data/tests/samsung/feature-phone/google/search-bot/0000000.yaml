@@ -2,13 +2,11 @@
   headers:
     user-agent: 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-E250
     marketingName: SGH-E250
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Bot Mobile'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: search-bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

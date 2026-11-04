@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; W-P611-EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W-P611-EEA
     marketingName: 'View 3 Pro'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.128
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; W-P311-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W-P311-EEA
     marketingName: 'View 3'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1520
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.127
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; W-V830-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W-V830-EEA
     marketingName: 'View 4'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; W-V800-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W-V800-EEA
     marketingName: 'View 3 Lite'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; W-V730-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W-V730-EEA
     marketingName: 'View 4 Lite'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; W-V755-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W-V755-EEA
     marketingName: 'Power U30'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1640
       height: 720
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.41
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; W-V680-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W-V680-EEA
     marketingName: Y81
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1520
       height: 720
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.41
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; W-V750BN-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W-V750BN-EEA
     marketingName: 'Power U20'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1640
       height: 720
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.0.0

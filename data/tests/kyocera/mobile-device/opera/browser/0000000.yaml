@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/3.0 (WILLCOM;KYOCERA/W320K/2;1.0.7.14.000000/0.1/C100) Opera/7.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Kyocera device'
     marketingName: 'general Kyocera device'
     manufacturer: kyocera
     brand: kyocera
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: null

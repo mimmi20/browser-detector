@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; CPH2161) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.75 Mobile Safari/537.36 ABB/3.1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CPH2161
     marketingName: 'A73 5G'
     manufacturer: bbk
     brand: oppo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 93.0.4577.75
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; GM1903) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.63 Mobile Safari/537.36 ABB/3.2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GM1903
     marketingName: '7'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.63
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; RMX1931) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 ABB/3.4.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX1931
     marketingName: 'X2 Pro Premium Edition (Global)'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0
@@ -123,13 +123,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 ABB/3.4.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LE2113
     marketingName: '9'
     manufacturer: bbk
     brand: oneplus
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -138,13 +136,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -152,7 +146,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'AtomicBrowser/3.7.1 CFNetwork/467.12 Darwin/10.3.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 467.12.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/758.4.3 Darwin/15.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.4.3
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/758.0.2 Darwin/15.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.0.2
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'AtomicLite/7.0.1 CFNetwork/758.1.6 Darwin/15.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser Lite'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.1.6
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/758.1.6 Darwin/15.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.1.6
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'AtomicLite/7.0.1 CFNetwork/758.0.2 Darwin/15.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser Lite'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.0.2
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'AtomicLite/7.0.1 CFNetwork/808.0.2 Darwin/16.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser Lite'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 808.0.2
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/808.0.2 Darwin/16.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 808.0.2
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/808.2.16 Darwin/16.3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 808.2.16
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'AtomicBrowser/4.0.1 CFNetwork/467.12 Darwin/10.3.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 467.12.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'AtomicBrowser/4.0.2 CFNetwork/467.12 Darwin/10.3.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 467.12.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'AtomicBrowser/4.0 CFNetwork/467.12 Darwin/10.3.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 467.12.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'AtomicBrowser/5.1.0 CFNetwork/467.12 Darwin/10.3.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 467.12.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'AtomicBrowser/5.5.1 CFNetwork/467.12 Darwin/10.3.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +509,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 467.12.0
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'AtomicBrowser/6.0.1 CFNetwork/459 Darwin/10.0.0d3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 459.0.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/758.5.3 Darwin/15.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.5.3
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/808.3 Darwin/16.3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 808.3.0
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/811.5.4 Darwin/16.7.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.3.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.3.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 811.5.4
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/808.1.4 Darwin/16.1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +699,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 808.1.4
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'AtomicLite/7.0.1 CFNetwork/811.5.4 Darwin/16.7.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +737,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.3.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser Lite'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.3.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 811.5.4
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'AtomicBrowser/7.0.1 CFNetwork/758.2.8 Darwin/15.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +775,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Atomic Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: richard-trautvetter
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 758.2.8

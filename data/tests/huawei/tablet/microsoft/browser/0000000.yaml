@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SHT-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.0 Mobile Safari/537.36 EdgA/44.11.4.4121 comdirect/1.0 (appVersion:19.12.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SHT-W09
     marketingName: 'MediaPad M5 8.4'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 73.0.3683.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; CMR-W09 Build/HUAWEICMR-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 Safari/537.36 EdgW/1.0 comdirect/1.0 (appVersion:20.10.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CMR-W09
     marketingName: 'MatePad M5 10.8" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge WebView'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 86.0.4240.99
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BAH3-W59) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Safari/537.36 EdgA/46.06.4.5161'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BAH3-W59
     marketingName: 'MatePad 10.4" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -93,13 +91,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 77.0.3865.116
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; DBY-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 EdgA/93.0.961.44'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DBY-W09
     marketingName: 'MatePad 11 Wi-Fi (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -131,13 +129,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 93.0.4577.63
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; DBY-W09 Build/HUAWEIDBY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Safari/537.36 EdgW/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DBY-W09
     marketingName: 'MatePad 11 Wi-Fi (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -169,13 +167,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge WebView'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; WGR-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 EdgA/102.0.1245.39'
   device:
-    architecture: null
+    architecture: ''
     deviceName: WGR-W09
     marketingName: 'MatePad Pro 12.6" Wi-Fi (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -207,13 +205,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.63
@@ -233,13 +233,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 9; CMR-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 EdgA/110.0.1587.41'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CMR-W09
     marketingName: 'MatePad M5 10.8" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -248,13 +246,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -262,7 +256,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0
@@ -271,13 +271,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Bach-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36 EdgA/118.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Bach-W09
     marketingName: 'MediaPad M3 Lite 10 Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -286,13 +284,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -300,7 +294,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -319,13 +319,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 EdgA/149.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DBY-W09
     marketingName: 'MatePad 11 Wi-Fi (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -334,13 +332,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -348,98 +342,26 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.0
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 9.0; MediaPad M6 8.4 Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Mobile Safari/537.36 EdgA/90.0.818.56'
-  device:
-    architecture: null
-    deviceName: S7-301w
-    marketingName: 'MediaPad 10 Link'
-    manufacturer: huawei
-    brand: huawei
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: 1280
-      height: 800
-      touch: true
-      size: 10.1
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Edge Mobile for Android'
-    modus: null
-    version: 90.0.818.56
-    manufacturer: microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 90.0.4430.93
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 9.0; bVRD-W10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.53 Mobile Safari/537.36 EdgA/133.0.3065.51'
-  device:
-    architecture: null
-    deviceName: VRD-W10
-    marketingName: 'MediaPad M6 Turbo 8.4 Wi-Fi'
-    manufacturer: huawei
-    brand: huawei
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: 2560
-      height: 1600
-      touch: true
-      size: 8.4
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Edge Mobile for Android'
-    modus: null
-    version: 133.0.3065.51
-    manufacturer: microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 133.0.6943.53
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MatePad Pro Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 EdgA/91.0.864.48'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MatePad Pro Wi-Fi'
     marketingName: 'MatePad Pro 10.8" Wi-Fi (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -448,13 +370,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -462,7 +380,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -471,13 +395,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MatePad 10.8 Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.157 Mobile Safari/537.36 EdgA/138.0.3351.95'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MatePad 10.8 Wi-Fi'
     marketingName: 'MatePad 10.8" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -486,13 +408,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -500,7 +418,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.157

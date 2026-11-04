@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Tab 80 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.135 Safari/537.36 GoogleApp/16.12.41.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Tab 80'
     marketingName: 'Tab 80'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.135
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; MEGA 2 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Safari/537.36 GoogleApp/17.42.17.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mega 2'
     marketingName: 'Mega 2'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2000
       height: 1200
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.181

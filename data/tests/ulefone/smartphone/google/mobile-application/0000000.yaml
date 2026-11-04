@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 8.1.0; Ulefone_S1 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.96 Mobile Safari/537.36 NSTNWV/3.7.311703224.release.go'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S1
     marketingName: S1
     manufacturer: ulefone
     brand: ulefone
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Android Go'
-    marketingName: 'Android Go'
-    version: 8.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android Go'
+    marketingName: 'Android Go'
+    version: 8.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.96
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Armor 8 Pro Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 GSA/12.48.23.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Armor 8 Pro'
     marketingName: 'Armor 8 Pro'
     manufacturer: ulefone
     brand: ulefone
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.104
@@ -79,13 +79,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Note 8P Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.78 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Note 8P'
     marketingName: 'Note 8P'
     manufacturer: ulefone
     brand: ulefone
-    dualOrientation: true
-    simCount: 2
     display:
       width: 960
       height: 480
@@ -94,13 +92,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -108,7 +102,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.78
@@ -118,13 +118,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Note 6 Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Note 6'
     marketingName: 'Note 6'
     manufacturer: ulefone
     brand: ulefone
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -133,13 +131,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -147,7 +141,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.125
@@ -156,13 +156,11 @@
   headers:
     user-agent: 'com.google.android.apps.searchlite/724009 (Linux; U; Android 9; de_DE; Ulefone_Note 7; Build/PPR1.180610.011; Cronet/108.0.5359.47)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Note 7'
     marketingName: 'Note 7'
     manufacturer: ulefone
     brand: ulefone
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 600
@@ -171,13 +169,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -185,7 +179,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -194,13 +194,11 @@
   headers:
     user-agent: 'com.google.android.apps.searchlite/173804 (Linux; U; Android 10; de; Note 8P; Build/QP1A.190711.020; Cronet/111.0.5563.55)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Note 8P'
     marketingName: 'Note 8P'
     manufacturer: ulefone
     brand: ulefone
-    dualOrientation: true
-    simCount: 2
     display:
       width: 960
       height: 480
@@ -209,13 +207,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -223,7 +217,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -242,13 +242,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Armor X12 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.55 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Armor X12'
     marketingName: 'Armor X12'
     manufacturer: ulefone
     brand: ulefone
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -257,13 +255,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -271,7 +265,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0

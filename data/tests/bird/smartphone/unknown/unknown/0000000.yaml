@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Bird_T900/1.0 WindowsMobile/6.5 Release/12.1.2010 Browser/IE6 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T900
     marketingName: T900
     manufacturer: bird
     brand: bird
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Mobile OS'
-    marketingName: 'Windows Mobile OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Mobile OS'
+    marketingName: 'Windows Mobile OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null

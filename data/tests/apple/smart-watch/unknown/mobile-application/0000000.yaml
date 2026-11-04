@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Outcast for Apple Watch'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Watch
     marketingName: Watch
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 340
       height: 272
@@ -17,13 +15,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: watchOS
-    marketingName: watchOS
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Outcast
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: watchOS
+    marketingName: watchOS
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null

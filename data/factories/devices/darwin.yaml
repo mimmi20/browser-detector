@@ -1,4 +1,5 @@
 rules:
+  '/apple ?tv/i': tv
   '/watchos|iphone|cpu os/i': mobile
   '/(networkingextension|com\.apple\.webkit\.networking|safariviewservice)\/[\d\.]+ .* darwin\//i': desktop
   '/(networkingextension|com\.apple\.webkit\.networking)\/[\d\.]+ .* ios\//i': mobile

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Haier_HT-I600_TD/I600_MocorDroid2.2_W11.41_V1.00 Release/06.26.2012 Mozilla/5.0 (Linux; U; Android 2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HT-I600
     marketingName: HT-I600
     manufacturer: haier
     brand: haier
-    dualOrientation: true
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MocorDroid
-    marketingName: MocorDroid
-    version: 2.2.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.2.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 533.1.0

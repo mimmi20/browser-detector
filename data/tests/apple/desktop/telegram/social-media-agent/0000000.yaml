@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_1) AppleWebKit/537.36 (KHTML, like Gecko; compatible; TelegramBot/1.0) Chrome/118.0.8011.135 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 14.6.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TelegramBot
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: telegram
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 14.6.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 118.0.8011.135
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_1) AppleWebKit/605.1.15 (KHTML, like Gecko; compatible; TelegramBot/1.0) Version/19.0 Safari/605.1.15'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 14.6.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TelegramBot
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: telegram
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 14.6.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15

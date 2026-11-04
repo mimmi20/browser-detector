@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; MEIZU 21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.533 YaSearchBrowser/24.17.1 BroPP/1.0 YaSearchApp/24.17.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '21'
     marketingName: '21'
     manufacturer: meizu
     brand: meizu
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.533
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; meizu M10 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36 YandexSearch/7.40 YandexSearchBrowser/7.40'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M10
     marketingName: M10
     manufacturer: meizu
     brand: meizu
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Mblu 21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.974 YaSearchBrowser/24.124.1 BroPP/1.0 YaSearchApp/24.124.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mblu 21'
     marketingName: 'Mblu 21'
     manufacturer: meizu
     brand: meizu
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1640
       height: 720
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.974
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; MEIZU 21 Note) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.128 YaBrowser/26.4.5.128.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '21 Note'
     marketingName: '21 Note'
     manufacturer: meizu
     brand: meizu
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2780
       height: 1264
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.128
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; MEIZU 22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '22'
     marketingName: '22'
     manufacturer: meizu
     brand: meizu
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2670
       height: 1200
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.2244

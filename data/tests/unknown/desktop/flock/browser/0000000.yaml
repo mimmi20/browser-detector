@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 6.1; pl; rv:1.9.0.16) Gecko/2010021013 Firefox/3.0.16 Flock/2.5.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Gecko
     version: 1.9.0.16
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Flock/3.5.2.4599 Chrome/7.0.517.442 Safari/534.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: 534.7.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.17) Gecko/20080913 Firefox/2.0.0.17 Flock/1.2.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.1.17
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.0.4) Gecko/20060625 Firefox/1.5.0.4 Flock/0.7.0.99'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: null
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: null
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: Gecko
     version: 1.8.0.4
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Flock/16.17 (FreeBSD 7.6; nl_NL;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: FreeBSD
-    marketingName: FreeBSD
-    version: 7.6.0
-    manufacturer: freebsd
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: FreeBSD
+    marketingName: FreeBSD
+    version: 7.6.0
+    manufacturer: freebsd
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Flock/1.4 (CRUX Linux 1.8; nl;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: 1.8.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: 1.8.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Flock/8.9 (Debian Linux 2.4; ar_SD;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 2.4.0
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 2.4.0
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Flock/10.20 (Ubuntu 4.0; ca;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: 4.0.0
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: 4.0.0
+    manufacturer: canonical
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Flock/16.12 (Ark Linux 1.5; ar_MA;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Ark Linux'
-    marketingName: 'Ark Linux'
-    version: 1.5.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Flock
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: flock
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Ark Linux'
+    marketingName: 'Ark Linux'
+    version: 1.5.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null

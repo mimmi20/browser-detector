@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; AE9260 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 OPR/75.0.2254.68857'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AE9260
     marketingName: 'S1 Pro'
     manufacturer: benco
     brand: benco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; AEOP517 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36 OPR/99.3.2254.1265'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEOP517
     marketingName: V92
     manufacturer: benco
     brand: benco
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; AEOP519 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 OPR/99.3.2254.1265'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEOP519
     marketingName: 'V90 Plus'
     manufacturer: benco
     brand: benco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1640
       height: 720
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159

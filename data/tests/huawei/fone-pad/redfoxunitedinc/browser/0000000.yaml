@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; en; JMS-L09 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 HiBrowser/v3.00.03.02;lang=ru;nation=RU;locale=ru_RU UWS/ Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JMS-L09
     marketingName: 'Pad X7 8.7" LTE'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Hi Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: redfoxunitedinc
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215

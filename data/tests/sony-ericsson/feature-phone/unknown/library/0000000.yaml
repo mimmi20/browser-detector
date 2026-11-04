@@ -2,13 +2,11 @@
   headers:
     user-agent: 'SonyEricssonT306/R101 [Html2Wml/0.4.11 libwww-perl/5.79]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T306
     marketingName: T306
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 101
       height: 80
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Perl
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

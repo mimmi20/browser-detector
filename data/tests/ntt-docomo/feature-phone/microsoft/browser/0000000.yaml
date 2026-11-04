@@ -2,13 +2,11 @@
   headers:
     user-agent: 'DoCoMo/2.0/SO502i (compatible; Mozilla 4.0; MSIE 6.0; yahooseeker-jp-mobile AT Yahoo!JAPAN)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SO502i
     marketingName: SO502i
     manufacturer: ntt-docomo
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 120
       height: 72
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Trident
     version: null

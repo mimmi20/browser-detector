@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Monazilla/1.0 (twinkle/8.0; iOS11.4.1; iPhone10,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPhone 10,1'
     marketingName: 'iPhone 8'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1334
       height: 750
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.4.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: twinkle
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: michel-de-boer
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.4.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null

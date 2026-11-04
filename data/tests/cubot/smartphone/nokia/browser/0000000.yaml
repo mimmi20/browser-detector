@@ -1,0 +1,76 @@
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (X11; Series60/2.1 Nokia7610/3.0415.0 Profile/MIDP-2.0 Configuration/CLDC-1.0)'
+  device:
+    architecture: ''
+    deviceName: X11
+    marketingName: X11
+    manufacturer: cubot
+    brand: cubot
+    display:
+      width: 1280
+      height: 720
+      touch: true
+      size: 5.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: 'Nokia OSS Browser'
+    modus: null
+    version: 2.1.0
+    manufacturer: nokia
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 2.1.0
+    manufacturer: nokia
+    bits: 0
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'mozilla/5.0 (x11; u; linux armv7l; es-es; rv:1.9.2b6pre) gecko/20100318 firefox/3.5 maemo browser 1.7.4.8 rx-51 n900'
+  device:
+    architecture: ''
+    deviceName: X11
+    marketingName: X11
+    manufacturer: cubot
+    brand: cubot
+    display:
+      width: 1280
+      height: 720
+      touch: true
+      size: 5.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: MicroB
+    modus: null
+    version: 1.7.4.8
+    manufacturer: nokia
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Maemo
+    marketingName: Maemo
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
+  engine:
+    name: Gecko
+    version: 1.9.2
+    manufacturer: mozilla

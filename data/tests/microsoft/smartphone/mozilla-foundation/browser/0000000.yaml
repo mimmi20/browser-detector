@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0.13333.0; U; pt-BR; Microsoft RM-1114_1000)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1114
     marketingName: 'Lumia 435'
     manufacturer: microsoft
     brand: microsoft
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.13333.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.13333.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Gecko
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.10.15148.0; U; pt-BR; Microsoft RM-1109_1002)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1109
     marketingName: 'Lumia 640'
     manufacturer: microsoft
     brand: microsoft
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.10.15148.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.10.15148.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Gecko
     version: null

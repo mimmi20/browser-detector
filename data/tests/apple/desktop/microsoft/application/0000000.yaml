@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X) PowerPoint/14.43.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PowerPoint
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X) Word/14.58.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X) Excel/14.37.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.1 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.12.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Electron
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.12.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.87
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.10.210 (Mac OS/10.12.6; Desktop; de-DE; NonAppStore; Apple/iMac18,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 18,2'
     marketingName: 'iMac 21.5" (2017)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 4096
       height: 2304
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.12.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.12.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.10.210 (Mac OS/10.13.4; Desktop; de-DE; NonAppStore; Apple/iMac16,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 16,2'
     marketingName: 'iMac 21.5" (2015)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.13.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.13.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Word/16.16.18081201 CFNetwork/902.1 Darwin/17.7.0 (x86_64)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.13.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.13.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 902.1.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.42.1011 (Mac OS/10.13.6; Desktop; es-MX; NonAppStore; Apple/Macmini7,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 7,1'
     marketingName: 'Mac Mini (2014)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.13.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.13.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.43.1108 (Mac OS/10.13.6; Desktop; es-MX; NonAppStore; Apple/MacPro5,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 5,1'
     marketingName: 'Mac Pro (2010)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.13.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.13.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.43.1108 (Mac OS/10.13.6; Desktop; es-MX; NonAppStore; Apple/iMac12,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 12,1'
     marketingName: 'iMac 21.5" (2011)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -359,13 +357,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.13.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.13.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.44.1213 (Mac OS/11.1; Desktop; es-MX; AppStore; Apple/iMac19,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 19,2'
     marketingName: 'iMac 21.5" (2019)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 4096
       height: 2304
@@ -397,13 +395,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/10.14.6; Desktop; es-MX; NonAppStore; Apple/iMac14,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 14,2'
     marketingName: 'iMac 27" (2013)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1440
@@ -435,13 +433,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.14.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.14.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/10.14.6; Desktop; es-MX; NonAppStore; Apple/iMac14,4)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 14,4'
     marketingName: 'iMac 21.5" (2014)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -473,13 +471,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.14.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.14.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/10.15.7; Desktop; es-ES; NonAppStore; Apple/iMac14,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 14,1'
     marketingName: 'iMac 21.5" (2013)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -511,13 +509,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.15.7
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.15.7
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Microsoft Office OneNote/16.40/200810 (Mac OS/10.13.6; Desktop; es-MX; NonAppStore; Apple/iMac10,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 10,1'
     marketingName: 'iMac 21.5" (2009)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -549,13 +547,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.13.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: OneNote
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.13.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.47.314 (Mac OS/11.2.3; Desktop; es-MX; NonAppStore; Apple/iMac20,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 20,1'
     marketingName: 'iMac 27" (2020)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 5120
       height: 2880
@@ -587,13 +585,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.2.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.2.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/11.2.2; Desktop; es-MX; AppStore; Apple/Macmini9,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac Mini 9,1'
     marketingName: 'Mac Mini M1 (2020)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.2.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.2.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/11.2.1; Desktop; en-US; NonAppStore; Apple/iMac17,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 17,1'
     marketingName: 'iMac 27" (2015)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 5120
       height: 2880
@@ -663,13 +661,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/11.2.2; Desktop; es-MX; NonAppStore; Apple/iMac19,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 19,1'
     marketingName: 'iMac 27" (2019)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 5120
       height: 2880
@@ -701,13 +699,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.2.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.2.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.47.314 (Mac OS/11.2.3; Desktop; es-MX; NonAppStore; Apple/iMac20,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 20,2'
     marketingName: 'iMac 27" (2020)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 5120
       height: 2880
@@ -739,13 +737,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.2.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.2.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Microsoft Office PowerPoint/16.54.1010 (Mac OS/11.5.1; Desktop; en-US; NonAppStore; Apple/iMac18,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 18,1'
     marketingName: 'iMac 21.5" (2017)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -777,13 +775,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PowerPoint
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Microsoft Office PowerPoint/16.54.1010 (Mac OS/11.5.1; Desktop; en-US; NonAppStore; Apple/iMac18,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 18,2'
     marketingName: 'iMac 21.5" (2017)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 4096
       height: 2304
@@ -815,13 +813,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PowerPoint
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Microsoft Office PowerPoint/16.54.1010 (Mac OS/11.5.1; Desktop; en-US; NonAppStore; Apple/iMac18,3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 18,3'
     marketingName: 'iMac 27" (2017)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 5120
       height: 2880
@@ -853,13 +851,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PowerPoint
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.54.1010 (Mac OS/11.6; Desktop; en-US; AppStore; Apple/iMac21,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 21,1'
     marketingName: 'iMac M1 24" (2021)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 4480
       height: 2520
@@ -891,13 +889,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.54.1010 (Mac OS/11.6; Desktop; en-US; AppStore; Apple/iMac21,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 21,2'
     marketingName: 'iMac M1 24" (2021)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 4480
       height: 2520
@@ -929,13 +927,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.54.1010 (Mac OS/12.0.1; Desktop; es-MX; NonAppStore; Apple/iMacPro1,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac Pro 1,1'
     marketingName: 'iMac Pro 27" (2017)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 5120
       height: 2880
@@ -967,13 +965,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 12.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 12.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.5.00.22362 Chrome/96.0.4664.174 Electron/16.2.8 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1005,13 +1003,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 12.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Teams
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 12.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.174
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.70.212 (Mac OS/13.2.1; Desktop; de-DE; AppStore; Apple/Mac14,3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 14,3'
     marketingName: 'Mac mini M2 (2023)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +1041,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 13.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 13.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac13,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 13,1'
     marketingName: 'Mac Studio M1 Max (2022)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +1079,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 14.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 14.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac13,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 13,2'
     marketingName: 'Mac Studio M1 Ultra (2022)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +1117,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 14.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 14.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac14,14)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 14,14'
     marketingName: 'Mac Studio M2 Ultra (2023)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1155,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 14.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 14.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Microsoft Office Word/16.78.1008 (Mac OS/14.0; Desktop; en-US; NonAppStore; Apple/Mac14,5)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +1193,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 14.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Word
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 14.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.96.2 Chrome/128.0.6613.186 Electron/32.2.6 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +1231,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.15.7
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Visual Studio Code'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.15.7
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 128.0.6613.186
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.43.1108 (Mac OS/12.7.6; Desktop; es-MX; NonAppStore; Apple/MacPro6,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 6,1'
     marketingName: 'Mac Pro (2013)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1271,13 +1269,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 12.7.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 12.7.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.43.1108 (Mac OS/26.7.0; Desktop; es-MX; NonAppStore; Apple/MacPro7,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacPro 7,1'
     marketingName: 'Mac Pro (2019)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1309,13 +1307,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 26.7.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.7.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.98.608 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac15,14)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 15,14'
     marketingName: 'Mac Studio M3 Ultra (2025)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1347,13 +1345,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 26.5.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.5.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Microsoft Office PowerPoint/16.112.821 (Mac OS/26.5.2; Desktop; en-US; AppStore; Apple/Mac16,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 16,2'
     marketingName: 'iMac M4 24" (2024)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 4480
       height: 2520
@@ -1385,13 +1383,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 26.5.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PowerPoint
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.5.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.112.817 (Mac OS/15.3.1; Desktop; en-US; NonAppStore; Apple/Mac16,3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 16,3'
     marketingName: 'iMac M4 24" (2024)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 4480
       height: 2520
@@ -1423,13 +1421,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 15.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 15.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Microsoft Office PowerPoint/16.111.726 (Mac OS/26.6.2; Desktop; en-US; AppStore; Apple/Mac16,9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 16,9'
     marketingName: 'Mac Studio M4 Max (2025)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,13 +1459,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 26.6.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PowerPoint
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 26.6.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/11.7.11; Desktop; en-US; NonAppStore; Apple/iMac15,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 15,1'
     marketingName: 'iMac 27" (2014-2015)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 5120
       height: 2880
@@ -1499,13 +1497,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 11.7.11
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 11.7.11
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/12.7.6; Desktop; en-US; NonAppStore; Apple/iMac16,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 16,1'
     marketingName: 'iMac 21.5" (2015)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -1537,13 +1535,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 12.7.6
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 12.7.6
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/10.6.8; Desktop; en-US; NonAppStore; Apple/iMac4,1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 4,1'
     marketingName: 'iMac (2006)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1440
       height: 900
@@ -1575,13 +1573,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.6.8
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.8
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'Microsoft Office Excel/16.46.212 (Mac OS/10.6.8; Desktop; en-US; NonAppStore; Apple/iMac4,2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iMac 4,2'
     marketingName: 'iMac 17" (2006)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1440
       height: 900
@@ -1613,13 +1611,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.6.8
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Excel
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.8
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Odin/74.3729.2.10 Safari/537.36 HbbTV/1.5.1 ( DRM; Hisense; 55U62QGAVT; V0000.01.00G.K1130; 55U62QGAVT; SmartTV_2021A;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55U62QGAVT
     marketingName: 55U62QGAVT
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.108
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Odin/3.2987.2.8 Safari/537.36 HbbTV/1.4.1 ( DRM; Hisense; 55A6100EE; V0000.01.00a.J0901; 55A6100EE; SmartTV_DB2019A;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55A6100EE
     marketingName: 55A6100EE
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.133
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Odin/3.2987.2.8 Safari/537.36 HbbTV/1.4.1 ( DRM; Hisense; 50A6502EA; V0000.01.00a.J0613; 50A6502EA; SmartTV_DB2019A;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50A6502EA
     marketingName: 50A6502EA
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.133
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 Model/Hisense-NT72671D VIDAA/6.0(Hisense;SmartTV;85A66GAVT;NT72671/V0000.06.12N.N0622;UHD;86A6GA;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general HiSense TV'
     marketingName: 'general HiSense TV'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'VIDAA OS'
-    marketingName: 'VIDAA OS'
-    version: 6.0.0
-    manufacturer: vidaa
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'VIDAA OS'
+    marketingName: 'VIDAA OS'
+    version: 6.0.0
+    manufacturer: vidaa
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.182
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 HbbTV/1.6.1 (+DRM;Hisense;SmartTV_2022_2;V0000.01.00L.L0607;55A69FEVS;SmartTV_2022_2;) FVC/7.0 (Hisense;SmartTV_2022_2;) LaTivu_1.0.1_2022'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55A69FEVS
     marketingName: 55A69FEVS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -169,13 +167,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.182
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 HbbTV/1.6.1 (+DRM;Hisense;SmartTV_2022_1;V0004.01.00L.L0607;50A53FEVS;SmartTV_2022_1;) FVC/7.0 (Hisense;SmartTV_2022_1;) LaTivu_1.0.1_2022'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50A53FEVS
     marketingName: 50A53FEVS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -207,13 +205,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.182
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 HbbTV/1.6.1 (+DRM;Hisense;SmartTV_2022_1_FHD;V0004.01.00L.L0607;32A35EEVS;SmartTV_2022_1_FHD;) FVC/7.0 (Hisense;SmartTV_2022_1_FHD;) LaTivu_1.0.1_2022'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 32A35EEVS
     marketingName: 32A35EEVS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -245,13 +243,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.182
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 HbbTV/1.6.1 (+DRM;Hisense;SmartTV_2022_3;V0000.01.00L.L0607;75U9KAAT;SmartTV_2022_3;) FVC/7.0 (Hisense;SmartTV_2022_3;) LaTivu_1.0.1_2022'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 75U9KAAT
     marketingName: 75U9KAAT
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -283,13 +281,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.182
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Odin/74.3729.2.10 Safari/537.36 VK_PATCH/1.0 CE-HTML/1.0 HBBTV/2.0 MSD6886 (Hisense;50A6101EX;V0000.01.00a.N0519)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50A6101EX
     marketingName: 50A6101EX
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -321,13 +319,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.108
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Odin/74.3729.2.10 Safari/537.36 HbbTV/1.5.1 (+DRM;Hisense;SmartTV_2021_2;V0103.01.00R.N0227;VT0150UD1;SmartTV_2021_2;) FVC/5.0 (Hisense;SmartTV_2021_2;) LaTivu_1.0.1_2021'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Smart TV (2021)'
     marketingName: 'Smart TV (2021)'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.108
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Odin/88.4324.2.10 Safari/537.36 HbbTV/1.6.1 (+DRM;Hisense;SmartTV_2022_1_FHD;V0115.01.00L.N1206;VS0332FD1;SmartTV_2022_1_FHD;) FVC/7.0 (Hisense;SmartTV_2022_1_FHD;) LaTivu_1.0.1_2022'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Smart TV (2022)'
     marketingName: 'Smart TV (2022)'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Odin Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: hisense
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.182

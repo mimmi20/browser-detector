@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 1520) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Mobile Safari/537.36 Edge/12.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 1520'
     marketingName: 'Lumia 1520'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 12.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 520)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-914
     marketingName: 'Lumia 520'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; Vodafone)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-835
     marketingName: 'Lumia 610'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 620)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-846
     marketingName: 'Lumia 620'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 900)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-823
     marketingName: 'Lumia 900'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 920)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 920'
     marketingName: 'Lumia 920'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 928) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 928'
     marketingName: 'Lumia 928'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Nokia 526)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-997
     marketingName: 'Lumia 526'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 625)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 625'
     marketingName: 'Lumia 625'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1045
     marketingName: 'Lumia 930'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 635) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-974
     marketingName: 'Lumia 635'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 710'
     marketingName: 'Lumia 710'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; 909)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 1020'
     marketingName: 'Lumia 1020'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 630) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-977
     marketingName: 'Lumia 630'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 854
       height: 480
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 720)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 720'
     marketingName: 'Lumia 720'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 510)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-898
     marketingName: 'Lumia 510'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 925) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-892
     marketingName: 'Lumia 925'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; NOKIA; Lumia 820) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 820'
     marketingName: 'Lumia 820'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; NOKIA; Lumia 1520) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 1520'
     marketingName: 'Lumia 1520'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 530 Dual SIM) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1017
     marketingName: 'Lumia 530'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Mobile: Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Nokia; Lumia 730 Dual Sim'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1040
     marketingName: 'Lumia 730'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 930) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Mobile Safari/537.36 Edge/12.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1045
     marketingName: 'Lumia 930'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 12.0.0
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.1; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; RM-976_1166)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-976
     marketingName: 'Lumia 630'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 830) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-984
     marketingName: 'Lumia 830'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 830; Vodafone) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-984
     marketingName: 'Lumia 830'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-819
     marketingName: 'Lumia 800'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 735; Orange) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1038
     marketingName: 'Lumia 735'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 920'
     marketingName: 'Lumia 920'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 1520) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 1520'
     marketingName: 'Lumia 1520'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 730 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1040
     marketingName: 'Lumia 730'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 630) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-977
     marketingName: 'Lumia 630'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 854
       height: 480
@@ -1157,13 +1155,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 635) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-974
     marketingName: 'Lumia 635'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -1195,13 +1193,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 625) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 625'
     marketingName: 'Lumia 625'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1233,13 +1231,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 930) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/14.14295'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1045
     marketingName: 'Lumia 930'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -1271,13 +1269,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 14.14295.0
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 820) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 820'
     marketingName: 'Lumia 820'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1309,13 +1307,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 920'
     marketingName: 'Lumia 920'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1347,13 +1345,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; 909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 1020'
     marketingName: 'Lumia 1020'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1385,13 +1383,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; 909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 1020'
     marketingName: 'Lumia 1020'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1423,13 +1421,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 925) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-892
     marketingName: 'Lumia 925'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1461,13 +1459,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 735) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1038
     marketingName: 'Lumia 735'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1499,13 +1497,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 521)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-917
     marketingName: 'Lumia 521'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1537,13 +1535,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 525)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 525'
     marketingName: 'Lumia 525'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1575,13 +1573,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 625H)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 625H'
     marketingName: 'Lumia 625H'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1613,13 +1611,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 520) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10512'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-914
     marketingName: 'Lumia 520'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1651,13 +1649,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 12.10512.0
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 822) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 822'
     marketingName: 'Lumia 822'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1689,13 +1687,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 929)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 929'
     marketingName: 'Lumia Icon'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -1727,13 +1725,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 830) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-984
     marketingName: 'Lumia 830'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1765,13 +1763,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 620) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-846
     marketingName: 'Lumia 620'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1803,13 +1801,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 925) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-892
     marketingName: 'Lumia 925'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1841,13 +1839,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 735) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1038
     marketingName: 'Lumia 735'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1879,13 +1877,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 14.14393.0
@@ -1902,13 +1902,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 8.0.10517.0; Trident/5.0; IEMobile/9.0; CuteBrowser/3.0.0; NOKIA; RM-820_nam_att_100)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-820
     marketingName: 'Lumia 920'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1917,13 +1915,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.10517.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -1931,7 +1925,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.10517.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -1940,13 +1940,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 505)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-923
     marketingName: 'Lumia 505'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1955,13 +1953,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -1969,7 +1963,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 3.1.0
@@ -1978,13 +1978,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Nokia 520T; CMCC)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 520T'
     marketingName: 'Lumia 520T'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1993,13 +1991,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2007,7 +2001,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 3.1.0
@@ -2016,13 +2016,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 610C)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 610C'
     marketingName: 'Lumia 610C'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2031,13 +2029,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2045,7 +2039,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -2054,13 +2054,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; LUMIA700)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 700'
     marketingName: 'Lumia 700'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2069,13 +2067,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2083,7 +2077,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -2092,13 +2092,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 719)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 719'
     marketingName: 'Lumia 719'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2107,13 +2105,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2121,7 +2115,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -2130,13 +2130,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Nokia 720T; CMCC)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 720T'
     marketingName: 'Lumia 720T'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2145,13 +2143,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2159,7 +2153,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -2168,13 +2168,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 800C)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 800c'
     marketingName: 'Lumia 800c'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2183,13 +2181,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2197,7 +2191,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -2206,13 +2206,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 810)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 810'
     marketingName: 'Lumia 810'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2221,13 +2219,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2235,7 +2229,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 3.1.0
@@ -2244,13 +2244,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) NOKIA;RM-821_eu_euro2_248'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-821
     marketingName: 'Lumia 920'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -2259,13 +2257,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2273,7 +2267,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 3.1.0
@@ -2282,13 +2282,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; RM-822apacprc204)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-822
     marketingName: 'Lumia 920'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -2297,13 +2295,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2311,7 +2305,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -2320,13 +2320,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; ARM; Touch; IEMobile/10.0;NOKIA;RM-824_lta_lta1_213)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-824
     marketingName: 'Lumia 820'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2335,13 +2333,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2349,7 +2343,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -2358,13 +2358,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) NOKIA;RM-825_eu_belgium_215'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-825
     marketingName: 'Lumia 820'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2373,13 +2371,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2387,7 +2381,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 3.1.0
@@ -2396,13 +2396,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; ARM; Touch; IEMobile/10.0;NOKIA;RM-845_nam_vzw_100)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-845
     marketingName: 'Lumia 822'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2411,13 +2409,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2425,7 +2419,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -2434,13 +2434,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; RM-875_eu_euro2_242)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-875
     marketingName: 'Lumia 1020'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -2449,13 +2447,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2463,7 +2457,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 3.1.0
@@ -2472,13 +2472,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; ARM; Touch; IEMobile/10.0;NOKIA;RM-878_nam_usa_100)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-878
     marketingName: 'Lumia 810'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2487,13 +2485,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2501,7 +2495,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -2510,13 +2510,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) NOKIA;RM-885_eu_euro2_220'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-885
     marketingName: 'Lumia 720'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2525,13 +2523,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2539,7 +2533,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 3.1.0
@@ -2548,13 +2548,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; XXX)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X
     marketingName: X
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2563,13 +2561,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2577,7 +2571,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -2586,13 +2586,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0; S60/3.0 NOKIAN93/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Mozilla/4.0 (compatible; MSIE 5.0; S60/3.0 NOKIAN93/1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N9
     marketingName: N9
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2601,13 +2599,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2615,7 +2609,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2624,13 +2624,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; RM-1027) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1027
     marketingName: 'Lumia 636'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2639,13 +2637,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2653,7 +2647,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -2662,13 +2662,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; RM-1019) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1019
     marketingName: 'Lumia 530'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2677,13 +2675,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2691,7 +2685,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -2700,13 +2700,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; RM-978) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-978
     marketingName: 'Lumia 630'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2715,13 +2713,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2729,7 +2723,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -2738,13 +2738,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Lumia 730 Dual SIM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1040
     marketingName: 'Lumia 730'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -2753,13 +2751,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2767,7 +2761,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -2776,13 +2776,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; NOKIA; Lumia 928) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 928'
     marketingName: 'Lumia 928'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -2791,13 +2789,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -2805,7 +2799,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -2814,13 +2814,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Nokia; Lumia 520) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10130'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-914
     marketingName: 'Lumia 520'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2829,13 +2827,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -2843,7 +2837,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10130.0
@@ -2852,13 +2852,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; WebView/3.0; NOKIA; RM-1027) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-1027
     marketingName: 'Lumia 636'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2867,13 +2865,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile'
     modus: null
@@ -2881,7 +2875,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -2890,13 +2890,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; ARM; Touch; WPDesktop; Lumia 636)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 636'
     marketingName: 'Lumia 636'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -2905,13 +2903,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2919,7 +2913,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -2928,13 +2928,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; 1520.1) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 1520.1'
     marketingName: 'Lumia 1520.1'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -2943,13 +2941,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2957,7 +2951,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -2966,13 +2966,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; RM-915; Vodafone ES) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-915
     marketingName: 'Lumia 520'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -2981,13 +2979,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2995,7 +2989,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -3004,13 +3004,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; RM-893) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-893
     marketingName: 'Lumia 925'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -3019,13 +3017,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -3033,7 +3027,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -3042,13 +3042,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; RM-910) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-910
     marketingName: 'Lumia 925'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -3057,13 +3055,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -3071,7 +3065,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -3080,13 +3080,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; ARM; Nokia 925) AppleWebKit/537.36 (KHTML like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-892
     marketingName: 'Lumia 925'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -3095,13 +3093,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -3109,7 +3103,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -3126,13 +3126,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Nokia G50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Mobile Safari/537.36 EdgA/101.0.1210.53'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G50
     marketingName: G50
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -3141,13 +3139,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -3155,7 +3149,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.1210.53
@@ -3164,13 +3164,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Nokia G50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Mobile Safari/537.36 EdgA/101.0.1210.53'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G50
     marketingName: G50
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -3179,13 +3177,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -3193,7 +3187,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.64
@@ -3202,13 +3202,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Nokia X20 Build/SKQ1.210821.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 EdgW/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X20
     marketingName: X20
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -3217,13 +3215,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge WebView'
     modus: null
@@ -3231,7 +3225,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.71
@@ -3240,13 +3240,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Nokia 5.4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36 EdgA/105.0.1343.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5.4'
     marketingName: '5.4'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -3255,13 +3253,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -3269,7 +3263,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0
@@ -3285,13 +3285,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Nokia 5.4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36 EdgA/105.0.1343.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5.4'
     marketingName: '5.4'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -3300,13 +3298,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -3314,7 +3308,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0
@@ -3323,13 +3323,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Nokia X20 Build/TKQ1.220807.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 EdgA/121.0.2277.138'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X20
     marketingName: X20
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -3338,13 +3336,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -3352,7 +3346,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.0.0

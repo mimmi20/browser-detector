@@ -8,13 +8,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SS5724G
     marketingName: SS5724G
     manufacturer: soho-style
     brand: soho-style
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -23,13 +21,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -37,7 +31,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.178
@@ -52,13 +52,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S1586K
     marketingName: M8
     manufacturer: soho-style
     brand: soho-style
-    dualOrientation: true
-    simCount: 2
     display:
       width: null
       height: null
@@ -67,13 +65,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -81,7 +75,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116

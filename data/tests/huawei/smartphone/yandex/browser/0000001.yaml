@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; MEP-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.710 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MEP-AN00
     marketingName: '500 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2736
       height: 1264
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.710
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; MEY-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.102 YaBrowser/25.6.1.102.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MEY-AN00
     marketingName: '500'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2736
       height: 1264
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.102
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; BKQ-N49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.220 YaBrowser/25.12.3.220.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-N49
     marketingName: 'Magic 8 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2808
       height: 1256
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.220
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 9; JAT-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaApp_Android/10.63 YaSearchBrowser/10.63 BroPP/1.0 SA/1 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JAT-LX1
     marketingName: 'Honor 8A Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.117
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; JSN-L21 Build/HONORJSN-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 YaBrowser/19.6.0.158 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JSN-L21
     marketingName: 'Honor 8X'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; MAR-LX1H Build/HUAWEIMAR-L21H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 YaApp_Android/10.61 YaSearchBrowser/10.61'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MAR-LX1H
     marketingName: 'Honor 20S'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2312
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 9; HRY-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.215 YaBrowser/25.12.3.215.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HRY-LX1
     marketingName: 'Honor 10 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.215
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 16; LNA-LX2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.72 YaBrowser/26.3.6.72.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LNA-LX2
     marketingName: X8d
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.72
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 16; LNA-LX2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.1033 YaSearchBrowser/25.124.1 BroPP/1.0 YaSearchApp/25.124.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LNA-LX2
     marketingName: X8d
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.1033
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 13; JNY-LX1 Build/HUAWEIJNY-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.746 YaApp_Android/26.32.1 YaSearchBrowser/26.32.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JNY-LX1
     marketingName: 'P40 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2310
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.746
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 12; TLR-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.402 YaApp_Android/25.128.1 YaSearchBrowser/25.128.1 BroPP/1.0 (beta) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TLR-LX9
     marketingName: 'Nova 14 4G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1084
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.402
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; VKP-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKP-NX9
     marketingName: '600 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.59
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; VKP-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.32 YaBrowser/26.6.1.32.00 (alpha) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKP-NX9
     marketingName: '600 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.32
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; VKJ-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKJ-NX9
     marketingName: '600'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.59
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; VKJ-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKJ-NX9
     marketingName: '600'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; VKJ-AN90) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.56 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKJ-AN90
     marketingName: '600'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.56
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; VKJ-AN90) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKJ-AN90
     marketingName: '600'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.49
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; VKJ-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.55 YaBrowser/25.10.6.55.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKJ-AN00
     marketingName: '600'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.55
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; SER-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SER-AN00
     marketingName: 'Power 2'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1200
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; SER-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.148 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SER-AN00
     marketingName: 'Power 2'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1200
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.148
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; PNM-AN20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.60 YaBrowser/25.10.6.60.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PNM-AN20
     marketingName: 'Magic V6'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2352
       height: 2172
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.60
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; PNM-AN10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PNM-AN10
     marketingName: 'Magic V6'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2352
       height: 2172
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; NLA-NX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.952 YaSearchBrowser/25.61.1 BroPP/1.0 YaSearchApp/25.61.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-NX1
     marketingName: 'X6d 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.952
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; MTN-NX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MTN-NX3
     marketingName: 'Magic 8 Lite'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1200
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; MTN-NX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MTN-NX3
     marketingName: 'Magic 8 Lite'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1200
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; LNA-NX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LNA-NX1
     marketingName: '600 Lite'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2600
       height: 1200
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.59
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; LNA-NX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LNA-NX1
     marketingName: '600 Lite'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2600
       height: 1200
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; LLY-NX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LLY-NX3
     marketingName: '200 Lite 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; LLY-NX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LLY-NX3
     marketingName: '200 Lite 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; LGN-NX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.49 YaBrowser/26.4.7.49.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LGN-NX1
     marketingName: '400 Smart'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1610
       height: 720
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.49
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; LDY-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LDY-AN00
     marketingName: 'Magic8 Pro Air'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1216
@@ -1157,13 +1155,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.59
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; LDY-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LDY-AN00
     marketingName: 'Magic8 Pro Air'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1216
@@ -1195,13 +1193,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; BKQ-AN90) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN90
     marketingName: 'Magic 8 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2808
       height: 1256
@@ -1233,13 +1231,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; BKQ-AN90) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN90
     marketingName: 'Magic 8 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2808
       height: 1256
@@ -1271,13 +1269,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; BKQ-AN20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN20
     marketingName: 'Magic 8 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -1309,13 +1307,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; BKQ-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN00
     marketingName: 'Magic 8 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -1347,13 +1345,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; BKQ-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN00
     marketingName: 'Magic 8 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -1385,13 +1383,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.2244
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; AAP-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAP-AN00
     marketingName: Win
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -1423,13 +1421,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; AAP-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAP-AN00
     marketingName: Win
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -1461,13 +1459,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; AAK-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAK-AN00
     marketingName: 'Win RT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -1499,13 +1497,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; AAK-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAK-AN00
     marketingName: 'Win RT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -1537,13 +1535,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NLA-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.121 YaBrowser/26.4.5.121.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-LX3
     marketingName: X5c
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1575,13 +1573,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.121
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NLA-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.59 YaSearchBrowser/26.61.1 BroPP/1.0 YaSearchApp/26.61.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-LX1
     marketingName: 'X5c Plus'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1613,13 +1611,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.59
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NLA-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-LX1
     marketingName: 'X5c Plus'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1651,13 +1649,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NAA-LX2P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NAA-LX2P
     marketingName: 'Honor X5d Plus'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1689,13 +1687,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; NAA-LX2P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NAA-LX2P
     marketingName: 'Honor X5d Plus'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1727,13 +1725,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; LOG-AN10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.117 YaBrowser/26.4.4.117.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LOG-AN10
     marketingName: 'Honor Play 10T'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -1765,13 +1763,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.117
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; LGN-LX2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.112 YaBrowser/26.6.1.112.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LGN-LX2
     marketingName: 'X7d 4G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1610
       height: 720
@@ -1803,13 +1801,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.112
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; JDY-LX3P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JDY-LX3P
     marketingName: X6b
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1841,13 +1839,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.61
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; GFY-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GFY-LX3
     marketingName: 'Play 9A (2024)'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1879,13 +1877,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1902,13 +1902,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; GFY-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GFY-LX3
     marketingName: 'Play 9A (2024)'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1917,13 +1915,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1931,7 +1925,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.51
@@ -1940,13 +1940,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; VYG-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2074 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VYG-AL00
     marketingName: 'Mate 80 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2832
       height: 1280
@@ -1955,13 +1953,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1969,7 +1963,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.2074
@@ -1978,13 +1978,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; VYG-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.107 YaBrowser/26.4.2.107.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VYG-AL00
     marketingName: 'Mate 80 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2832
       height: 1280
@@ -1993,13 +1991,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2007,7 +2001,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.107
@@ -2016,13 +2016,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; TLR-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TLR-LX9
     marketingName: 'Nova 14 4G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1084
@@ -2031,13 +2029,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2045,7 +2039,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -2054,13 +2054,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; PSD-AL80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.1105 YaSearchBrowser/25.122.1 BroPP/1.0 YaSearchApp/25.122.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PSD-AL80
     marketingName: 'Nova Flip S'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2690
       height: 1136
@@ -2069,13 +2067,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2083,7 +2077,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.1105
@@ -2092,13 +2092,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; PLR-AL50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PLR-AL50
     marketingName: 'Mate 70 Pro Premium Edition'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2832
       height: 1316
@@ -2107,13 +2105,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2121,7 +2115,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.55
@@ -2130,13 +2130,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MRT-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.148 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRT-AL10
     marketingName: 'Nova 14 Ultra 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2860
       height: 1272
@@ -2145,13 +2143,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2159,7 +2153,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.148
@@ -2168,13 +2168,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MRT-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.115 YaBrowser/26.4.4.115.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRT-AL10
     marketingName: 'Nova 14 Ultra 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2860
       height: 1272
@@ -2183,13 +2181,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2197,7 +2191,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.115
@@ -2206,13 +2206,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MIS-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MIS-AL00
     marketingName: 'Nova 13 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2776
       height: 1224
@@ -2221,13 +2219,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2235,7 +2229,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.71
@@ -2244,13 +2244,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; MIS-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.63 YaBrowser/26.4.6.63.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MIS-AL00
     marketingName: 'Nova 13 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2776
       height: 1224
@@ -2259,13 +2257,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2273,7 +2267,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.63
@@ -2282,13 +2282,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; LMR-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.49 YaApp_Android/26.61.1 YaSearchBrowser/26.61.1 BroPP/1.0 (beta) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LMR-LX9
     marketingName: 'Pura 80 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2848
       height: 1276
@@ -2297,13 +2295,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2311,7 +2305,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.49
@@ -2320,13 +2320,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; LMR-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LMR-LX9
     marketingName: 'Pura 80 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2848
       height: 1276
@@ -2335,13 +2333,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2349,7 +2343,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -2358,13 +2358,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; LMR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.4.123.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LMR-AL00
     marketingName: 'Pura 80 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2848
       height: 1276
@@ -2373,13 +2371,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2387,7 +2381,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.123
@@ -2396,13 +2396,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; LMR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1921 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LMR-AL00
     marketingName: 'Pura 80 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2848
       height: 1276
@@ -2411,13 +2409,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2425,7 +2419,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.1921
@@ -2434,13 +2434,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; LEM-AL50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.756 YaApp_Android/25.126.1 YaSearchBrowser/25.126.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LEM-AL50
     marketingName: 'Pocket 2'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2690
       height: 1136
@@ -2449,13 +2447,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2463,7 +2457,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.756
@@ -2472,13 +2472,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; LEM-AL50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.98 YaBrowser/25.6.3.98.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LEM-AL50
     marketingName: 'Pocket 2'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2690
       height: 1136
@@ -2487,13 +2485,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2501,7 +2495,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.98
@@ -2510,13 +2510,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; JUY-AL50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.112 YaBrowser/26.4.1.112.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JUY-AL50
     marketingName: 'Enjoy 80'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -2525,13 +2523,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2539,7 +2533,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.112
@@ -2548,13 +2548,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; JUY-AL50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.822 YaSearchBrowser/25.46.1 BroPP/1.0 YaSearchApp/25.46.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JUY-AL50
     marketingName: 'Enjoy 80'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -2563,13 +2561,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2577,7 +2571,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.822
@@ -2586,13 +2586,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; HED-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HED-AL00
     marketingName: 'Pura 80'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -2601,13 +2599,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2615,7 +2609,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -2624,13 +2624,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; HED-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.112 YaBrowser/26.4.1.112.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HED-AL00
     marketingName: 'Pura 80'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -2639,13 +2637,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2653,7 +2647,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.112
@@ -2662,13 +2662,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; GRL-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.47 YaBrowser/26.3.7.47.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GRL-AL20
     marketingName: 'Mate XTs Ultimate'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3184
       height: 2232
@@ -2677,13 +2675,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2691,7 +2685,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.47
@@ -2700,13 +2700,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; BRE-AL80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.75 YaBrowser/26.3.6.75.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL80
     marketingName: 'Enjoy 70X'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -2715,13 +2713,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2729,7 +2723,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.75
@@ -2738,13 +2738,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; BRE-AL80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.756 YaApp_Android/25.126.1 YaSearchBrowser/25.126.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL80
     marketingName: 'Enjoy 70X'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -2753,13 +2751,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2767,7 +2761,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.756
@@ -2776,13 +2776,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; BRE-AL80a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL80a
     marketingName: 'Enjoy 70X'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -2791,13 +2789,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2805,7 +2799,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.71
@@ -2814,13 +2814,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; BRE-AL80a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL80a
     marketingName: 'Enjoy 70X'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -2829,13 +2827,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2843,7 +2837,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.55
@@ -2852,13 +2852,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; BRE-AL00b) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL00b
     marketingName: 'Enjoy 70X Energy'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -2867,13 +2865,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2881,7 +2875,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.71
@@ -2890,13 +2890,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; BRE-AL00b) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.4.123.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL00b
     marketingName: 'Enjoy 70X Energy'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -2905,13 +2903,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2919,7 +2913,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.123
@@ -2928,13 +2928,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; JUY-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.71 YaSearchBrowser/26.44.1 BroPP/1.0 YaSearchApp/26.44.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JUY-AL00
     marketingName: 'Enjoy 80'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -2943,13 +2941,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2957,7 +2951,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.71
@@ -2966,13 +2966,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; JUY-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.4.123.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JUY-AL00
     marketingName: 'Enjoy 80'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -2981,13 +2979,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2995,7 +2989,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.123
@@ -3004,13 +3004,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ANE-LX1 Build/HUAWEIANE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/121.0.6167.178 YaBrowser/24.2.0.35 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ANE-LX1
     marketingName: 'P20 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -3019,13 +3017,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3033,7 +3027,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.178
@@ -3042,13 +3042,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; VKP-NX9 Build/HONORVKP-N39; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.5.0.102 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKP-NX9
     marketingName: '600 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -3057,13 +3055,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3071,7 +3065,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -3080,13 +3080,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; VKJ-NX9 Build/HONORVKJ-N39; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.93 YaBrowser/25.5.0.58 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKJ-NX9
     marketingName: '600'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -3095,13 +3093,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3109,7 +3103,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -3118,13 +3118,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SER-AN00 Build/HONORSER-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SER-AN00
     marketingName: 'Power 2'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1200
@@ -3133,13 +3131,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3147,7 +3141,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -3156,13 +3156,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; LNA-NX1 Build/HONORLNA-N32; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.93 YaBrowser/25.5.0.58 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LNA-NX1
     marketingName: '600 Lite'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2600
       height: 1200
@@ -3171,13 +3169,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3185,7 +3179,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -3194,13 +3194,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; LNA-LX2 Build/HONORLNA-L32; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.93 YaBrowser/25.5.0.58 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LNA-LX2
     marketingName: X8d
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -3209,13 +3207,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3223,7 +3217,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -3232,13 +3232,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; LLY-NX3 Build/HONORLLY-N33; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LLY-NX3
     marketingName: '200 Lite 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -3247,13 +3245,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3261,7 +3255,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -3270,13 +3270,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; AAP-AN00 Build/HONORAAP-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/148.0.7778.217 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAP-AN00
     marketingName: Win
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -3285,13 +3283,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3299,7 +3293,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.217
@@ -3308,13 +3308,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; NAA-LX2P Build/HONORNAA-L32P; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.5.0.58 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NAA-LX2P
     marketingName: 'Honor X5d Plus'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -3323,13 +3321,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -3337,7 +3331,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -3346,13 +3346,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; FOA-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.4.123.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FOA-LX9
     marketingName: 'Nova 11'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -3361,13 +3359,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -3375,7 +3369,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.123
@@ -3384,13 +3384,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; JLN-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.123 YaBrowser/26.4.4.123.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JLN-LX1
     marketingName: 'Nova 9 SE'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -3399,13 +3397,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -3413,7 +3407,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.123
@@ -3422,13 +3422,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; LLY-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.68 YaSearchBrowser/26.63.1 BroPP/1.0 YaSearchApp/26.63.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LLY-LX1
     marketingName: X8b
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2412
       height: 1080
@@ -3437,13 +3435,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -3451,7 +3445,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.68
@@ -3460,13 +3460,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; AQM-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.149 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AQM-LX1
     marketingName: Y8p
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3475,13 +3473,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -3489,7 +3483,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.149
@@ -3498,13 +3498,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; PNM-N49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.110 YaBrowser/26.6.4.110.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PNM-N49
     marketingName: 'Magic V6'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2352
       height: 2172
@@ -3513,13 +3511,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -3527,7 +3521,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.110
@@ -3536,13 +3536,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; BRP-NX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.114 YaBrowser/26.8.4.114.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRP-NX1
     marketingName: X9c
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -3551,13 +3549,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -3565,7 +3559,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.114
@@ -3574,13 +3574,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; BNE-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.119 YaBrowser/26.8.3.119.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BNE-LX1
     marketingName: 'Nova 10 SE 4G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -3589,13 +3587,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -3603,7 +3597,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.119
@@ -3612,13 +3612,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; ELI-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.111 YaBrowser/26.8.5.111.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ELI-NX9
     marketingName: '200'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2664
       height: 1200
@@ -3627,13 +3625,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -3641,7 +3635,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.111

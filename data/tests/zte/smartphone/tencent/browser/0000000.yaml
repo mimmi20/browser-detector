@@ -2,13 +2,11 @@
   headers:
     user-agent: 'MQQBrowser/Mini2.8 (ZTE-X990/X990_V2_Z12_ESFR_D18F100)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X990
     marketingName: X990
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Mobile OS'
-    marketingName: 'Windows Mobile OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'QQ Browser Mini'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: tencent
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Mobile OS'
+    marketingName: 'Windows Mobile OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; zh-cn; ZTE 7530N Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.72 MQQBrowser/12.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 7530N
     marketingName: 'Voyage 10'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'QQ Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: tencent
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 89.0.4389.72
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; zh-cn; ZTE 7551N Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.86 MQQBrowser/19.6 Mobile Safari/537.36 COVC/047600'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 7551N
     marketingName: 'Xiaoxian 60 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 2
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'QQ Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: tencent
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.86

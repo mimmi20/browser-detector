@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; HarmonyOS; BRE-AL00b; HMSCore 6.16.2.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.5.301 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL00b
     marketingName: 'Enjoy 70X Energy'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: null
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: huawei
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: null
+    manufacturer: huawei
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HRY-LX1; HMSCore 6.4.0.324; GMSCore 26.22.33) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/16.0.6.300 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HRY-LX1
     marketingName: 'Honor 10 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: huawei
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HarmonyOS; JUY-AL00; HMSCore 6.16.2.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.6.301 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JUY-AL00
     marketingName: 'Enjoy 80'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: null
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: huawei
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: null
+    manufacturer: huawei
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196

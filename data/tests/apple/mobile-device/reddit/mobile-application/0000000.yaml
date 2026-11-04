@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Reddit/Version 2.6.0/Build 200033/iOS Version 10.0.2 (Build 14A456)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.0.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Reddit
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: reddit
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.0.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Reddit/Version 2.6.0/Build 200033/iOS Version 10.1.1 (Build 14B100)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.1.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Reddit
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: reddit
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.1.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Reddit/Version 2.6.0/Build 200033/iOS Version 10.2.1 (Build 14D27)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Reddit
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: reddit
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null

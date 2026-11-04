@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; RockChip H96_Max_RK3528; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.174 Mobile Safari/537.36 Sapphire/1.11.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Max RK3528'
     marketingName: 'Max RK3528'
     manufacturer: h96
     brand: h96
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Bing Search'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.174

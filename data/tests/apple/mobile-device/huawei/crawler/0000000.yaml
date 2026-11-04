@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5; Android) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.3701.3 Safari/537.36 HuaweiCrawler'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: HuaweiCrawler
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: huawei
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.3701.3

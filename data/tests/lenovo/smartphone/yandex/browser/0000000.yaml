@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A319 Build/MocorDroid4.4.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 YaBrowser/13.9.1500.3524 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A319
     marketingName: RocStar
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MocorDroid
-    marketingName: MocorDroid
-    version: 4.4.2
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 4.4.2
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Blink
     version: 28.0.1500.95
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; Lenovo Z5s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 YaBrowser/20.11.3.88.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z5s
     marketingName: Z5s
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 86.0.4240.198
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 9; Lenovo L78051) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.216 YaBrowser/21.5.2.110.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: L78051
     marketingName: 'Z6 Pro'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 90.0.4430.216
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 9; Lenovo L39051) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.216 YaApp_Android/21.53.1 YaSearchBrowser/21.53.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: L39051
     marketingName: 'K10 Plus'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1520
       height: 720
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 90.0.4430.216
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 9; Lenovo PB-6505MC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 YaApp_Android/21.50.1 YaSearchBrowser/21.50.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PB-6505MC
     marketingName: 'Tab V7'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 90.0.4430.93
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; ThinkPhone 25 by motorola) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'ThinkPhone 25'
     marketingName: 'ThinkPhone 25'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2670
       height: 1220
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.1898
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; XT2603-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XT2603-1
     marketingName: 'Edge 70 Ultra 5G'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2780
       height: 1264
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; XT2601-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XT2601-1
     marketingName: 'Edge 70 5G'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; motorola signature) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2132 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Signature
     marketingName: Signature
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2780
       height: 1264
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.2132
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; motorola razr plus 2024) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.55 YaBrowser/26.4.7.55.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Razr Plus (2024)'
     marketingName: 'Razr Plus (2024)'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.55
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; motorola razr 60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Razr 60'
     marketingName: 'Razr 60'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1080
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.61
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; motorola razr 40s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Razr 40s'
     marketingName: 'Razr 40s'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; motorola razr 2026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Razr (2026)'
     marketingName: 'Razr (2026)'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1080
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; motorola edge 70 fusion) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 70 Fusion'
     marketingName: 'Edge 70 Fusion'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2772
       height: 1272
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; moto g86 power 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.105 YaBrowser/25.2.5.105.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G86 Power 5G'
     marketingName: 'Moto G86 Power 5G'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.6834.105
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; XT2553-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XT2553-2
     marketingName: 'Moto G100s'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; motorola razr 50s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Razr 50s'
     marketingName: 'Razr 50s'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1080
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.54
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; motorola edge 60s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.115 YaBrowser/26.4.4.115.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 60s 5G'
     marketingName: 'Edge 60s 5G'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.115
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; moto g100 pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G100 Pro'
     marketingName: 'Moto G100 Pro'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2712
       height: 1220
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.61
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; moto g06 power) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G06 Power'
     marketingName: 'Moto G06 Power'
     manufacturer: lenovo
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1640
       height: 720
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.51
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; Lenovo XT2091-7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XT2091-7
     marketingName: 'K12 Pro'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1640
       height: 720
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.61

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.4.3; en-us; KFSAWA Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFSAWA
     marketingName: 'Fire HDX 8.9" 4G (2014)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 4.5.1
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 4.5.1
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 37.0.2026.117
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; en-us; KFJWA Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.8 Safari/535.19 Silk-Accelerated=false'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFJWA
     marketingName: 'Kindle Fire HD 8.9" 4G (2nd Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: null
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: null
+    manufacturer: amazon
+    bits: 0
   engine:
     name: WebKit
     version: 535.19.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.4.3; KFTHWA Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/49.3.1 like Chrome/49.0.2623.105 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFTHWA
     marketingName: 'Kindle Fire HDX 7" 4G (2013)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -93,13 +91,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 4.5.1
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 4.5.1
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 49.0.2623.105
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 4.4.3; KFAPWA Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/49.3.1 like Chrome/49.0.2623.105 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFAPWA
     marketingName: 'Kindle Fire HDX 8.9" 4G (2013)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -131,13 +129,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 4.5.1
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 4.5.1
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 49.0.2623.105
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; KFJWA Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.47 like Chrome/37.0.2026.117 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFJWA
     marketingName: 'Kindle Fire HD 8.9" 4G (2nd Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -169,13 +167,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 3.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 3.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 37.0.2026.117
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; de-de; KFTHWA Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.8 Safari/535.19 Silk-Accelerated=true'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFTHWA
     marketingName: 'Kindle Fire HDX 7" 4G (2013)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -207,13 +205,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: null
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: null
+    manufacturer: amazon
+    bits: 0
   engine:
     name: WebKit
     version: 535.19.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; de-de; KFAPWA Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.8 Safari/535.19 Silk-Accelerated=true'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KFAPWA
     marketingName: 'Kindle Fire HDX 8.9" 4G (2013)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -245,13 +243,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: null
-    manufacturer: amazon
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: null
+    manufacturer: amazon
+    bits: 0
   engine:
     name: WebKit
     version: 535.19.0

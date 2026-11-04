@@ -5,13 +5,11 @@
     x-operamini-phone: '? # ?'
     user-agent: 'Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31762/35.3312; U; xx) Presto/2.8.119 Version/11.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Discover 135'
     marketingName: 'Discover 135'
     manufacturer: lava
     brand: lava
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -20,13 +18,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: null
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -34,7 +28,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: null
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119

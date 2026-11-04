@@ -1,14 +1,12 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; Windows aarch64 10718.88.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.118 Safari/537.36 CitrixChromeApp'
+    user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36 CitrixChromeApp'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Citrix Chrome App'
     modus: null
@@ -31,8 +25,14 @@
     manufacturer: citrix
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
-    version: 68.0.3440.118
+    version: 68.0.3440.106
     manufacturer: google

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; ASU2JS; Avant Browser; rv:11.0) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PC
     marketingName: PC
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 8.1'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Avant
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: avant-force
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 8.1'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; NP06; Avant Browser; chromeframe/21.0.1180.15)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PC
     marketingName: PC
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Avant
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: avant-force
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: null

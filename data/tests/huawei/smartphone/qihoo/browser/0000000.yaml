@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; BKQ-AN90 Build/HONORBKQ-ANXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.82 Mobile Safari/537.36 360 Aphone Browser (v10.1.7.145) GopSupport mso_sdk(1.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN90
     marketingName: 'Magic 8 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2808
       height: 1256
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: '360 Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: qihoo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.82
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; AAP-AN00 Build/HONORAAP-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.82 Mobile Safari/537.36 360 Aphone Browser (v10.1.7.160) GopSupport mso_sdk(1.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAP-AN00
     marketingName: Win
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: '360 Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: qihoo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.82
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; AAK-AN00 Build/HONORAAK-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.82 Mobile Safari/537.36 360 Aphone Browser (6.35.161) GopSupport'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAK-AN00
     marketingName: 'Win RT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: '360 Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: qihoo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.82

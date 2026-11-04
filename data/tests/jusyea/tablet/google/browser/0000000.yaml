@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; J10_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J10_EEA
     marketingName: J10
     manufacturer: jusyea
     brand: jusyea
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0

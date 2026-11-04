@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; cm_tenderloin Build/IMM76L; CyanogenMod-9) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 [FB_IAB/FB4A;FBAV/106.0.0.26.68;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Touchpad
     marketingName: Touchpad
     manufacturer: hp
     brand: hp
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 9.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 9.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0

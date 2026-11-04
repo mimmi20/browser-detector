@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 [FBAN/FBIOS;FBAV/52.0.0.46.157;FBBV/26424168;FBDV/iPad5,2;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.1;FBSS/2; FBCR/Vodafone.de;FBID/tablet;FBLC/de_DE;FBOP/1]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,2'
     marketingName: 'iPad Mini 4 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 601.1.46
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13D15 [FBAN/FBIOS;FBAV/51.0.0.52.154;FBBV/25351091;FBDV/iPad5,4;FBMD/iPad;FBSN/iPhone OS;FBSV/9.2.1;FBSS/2; FBCR/;FBID/tablet;FBLC/de_DE;FBOP/1]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,4'
     marketingName: 'iPad Air 2 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 601.1.46
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 [FBAN/FBIOS;FBAV/62.0.0.43.141;FBBV/36454510;FBRV/0;FBDV/iPad6,8;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.4;FBSS/2;FBCR/Vodafone.de;FBID/tablet;FBLC/de_DE;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,8'
     marketingName: 'iPad Pro 12.9" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -93,13 +91,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 601.1.46
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 11_0_2 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A421 [FBAN/FBIOS;FBAV/144.0.0.55.89;FBBV/74129168;FBDV/iPad6,12;FBMD/iPad;FBSN/iOS;FBSV/11.0.2;FBSS/2;FBCR/Vodafone.de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/74129168]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,12'
     marketingName: 'iPad 9.7" (5th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -131,13 +129,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.0.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.0.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 604.1.38
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 11_0_2 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A421 [FBAN/FBIOS;FBAV/143.0.0.76.90;FBBV/73343453;FBDV/iPad6,4;FBMD/iPad;FBSN/iOS;FBSV/11.0.2;FBSS/2;FBCR/iPad;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,4'
     marketingName: 'iPad Pro 9.7" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -169,13 +167,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.0.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.0.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 604.1.38
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 Instagram 27.0.0.13.98 (iPad5,4; iOS 10_3_2; de_DE; de-DE; scale=2.00; gamut=normal; 960x640)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,4'
     marketingName: 'iPad Air 2 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -207,13 +205,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.3.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.3.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 603.2.4
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 Instagram 27.0.0.13.98 (iPad4,2; iOS 10_3_2; de_DE; de-DE; scale=2.00; gamut=normal; 640x960)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 4,2'
     marketingName: 'iPad Air 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -245,13 +243,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.3.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.3.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 603.2.4
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 11_2_2 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C202 [FBAN/FBIOS;FBAV/153.0.0.53.87;FBBV/84268146;FBDV/iPad7,2;FBMD/iPad;FBSN/iOS;FBSV/11.2.2;FBSS/2;FBCR/;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,2'
     marketingName: 'iPad Pro 12.9" (2nd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -283,13 +281,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.2.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.2.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 604.4.7
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBIOS;FBAV/157.0.0.42.96;FBBV/90008621;FBDV/iPad7,4;FBMD/iPad;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/Telekom.de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/90008621]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,4'
     marketingName: 'iPad Pro 10.5" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2224
       height: 1668
@@ -321,13 +319,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.2.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.2.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 604.5.6
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 [FBAN/MessengerForiOS;FBAV/164.0.0.60.91;FBBV/105889540;FBDV/iPad5,2;FBMD/iPad;FBSN/iOS;FBSV/11.3.1;FBSS/2;FBCR/o2-de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,2'
     marketingName: 'iPad Mini 4 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -359,13 +357,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A404 Instagram 69.0.0.16.95 (iPad7,6; iOS 12_0_1; de_DE; de-DE; scale=2.00; gamut=normal; 750x1334; 129075087)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad7,6'
     marketingName: 'iPad 9.7" (6th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -397,13 +395,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 12.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 12.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16B92 Instagram 73.0.0.14.186 (iPad6,8; iOS 12_1; de_DE; de-DE; scale=2.00; gamut=normal; 1334x750; 133181238)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,8'
     marketingName: 'iPad Pro 12.9" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -435,13 +433,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 12.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 12.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C50 Instagram 64.0.0.12.96 (iPad7,4; iOS 12_1_1; de_DE; de; scale=2.00; gamut=wide; 1334x750; 124976489)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,4'
     marketingName: 'iPad Pro 10.5" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2224
       height: 1668
@@ -473,13 +471,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 12.1.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 12.1.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 116.0.0.24.361 (iPad7,6; iOS 13_1_2; de_DE; de-DE; scale=2.00; 750x1334; 178418958)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad7,6'
     marketingName: 'iPad 9.7" (6th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -511,13 +509,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.1.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.1.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 118.0.0.25.121 (iPad8,7; iOS 13_2; de_DE; de-DE; scale=2.00; 1334x750; 180988914)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,7'
     marketingName: 'iPad Pro 12.9" (3rd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -549,13 +547,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,4;FBMD/iPad;FBSN/iOS;FBSV/13.2;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.11.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,4'
     marketingName: 'iPad Pro 10.5" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2224
       height: 1668
@@ -587,13 +585,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/206.0.0.35.103;FBBV/140132201;FBDV/iPad5,4;FBMD/iPad;FBSN/iOS;FBSV/13.1.3;FBSS/2;FBCR/Telekom.de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,4'
     marketingName: 'iPad Air 2 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -625,13 +623,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.1.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.1.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,8;FBMD/iPad;FBSN/iOS;FBSV/13.1.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Carrier] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,8'
     marketingName: 'iPad Pro 12.9" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -663,13 +661,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.1.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.1.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_2_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad11,4;FBMD/iPad;FBSN/iOS;FBSV/13.2.2;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 11,4'
     marketingName: 'iPad Air 10.5" (3rd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2224
       height: 1668
@@ -701,13 +699,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.2.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.2.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad8,7;FBMD/iPad;FBSN/iOS;FBSV/13.1.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,7'
     marketingName: 'iPad Pro 12.9" (3rd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -739,13 +737,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.1.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.1.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad11,2;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 11,2'
     marketingName: 'iPad Mini 7.9" (5th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -777,13 +775,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,4;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/o2 - de] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,4'
     marketingName: 'iPad Pro 9.7" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -815,13 +813,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 123.0.0.24.115 (iPad5,4; iOS 13_3; de_DE; de-DE; scale=2.00; 750x1334; 188362626) comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,4'
     marketingName: 'iPad Air 2 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -853,13 +851,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,2;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/iPad] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,2'
     marketingName: 'iPad Pro 12.9" (2nd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -891,13 +889,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,12;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/o2 - de] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,12'
     marketingName: 'iPad 9.7" (5th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -929,13 +927,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 [FBAN/MessengerForiOS;FBAV/70.0.0.30.56;FBBV/29580657;FBRV/0;FBDV/iPad6,8;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.1;FBSS/2;FBCR/vodafoneUK;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,8'
     marketingName: 'iPad Pro 12.9" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -967,13 +965,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 601.1.46
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A456 [FBAN/MessengerForiOS;FBAV/90.0.0.24.70;FBBV/39954546;FBRV/0;FBDV/iPad4,5;FBMD/iPad;FBSN/iOS;FBSV/10.0.2;FBSS/2;FBCR/vodafoneUK;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 4,5'
     marketingName: 'iPad Mini 2 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1005,13 +1003,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.0.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.0.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 602.1.50
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/MessengerForiOS;FBAV/140.0.0.65.91;FBBV/75768478;FBDV/iPad6,12;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Telenor;FBID/tablet;FBLC/nb_NO;FBOP/5;FBRV/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,12'
     marketingName: 'iPad 9.7" (5th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -1043,13 +1041,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.3.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.3.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 603.3.8
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad8,3;FBMD/iPad;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Vodafone.de] comdirect/1.0 (appVersion:20.2.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,3'
     marketingName: 'iPad Pro 11" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2388
       height: 1668
@@ -1081,13 +1079,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,6;FBMD/iPad;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/tablet;FBLC/ru_RU;FBOP/5;FBCR/o2 - de]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad7,6'
     marketingName: 'iPad 9.7" (6th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1119,13 +1117,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 135.1.0.23.118 (iPad8,3; iOS 13_4; de_DE; de-DE; scale=2.00; 750x1334; 206833405) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,3'
     marketingName: 'iPad Pro 11" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2388
       height: 1668
@@ -1157,13 +1155,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 135.1.0.23.118 (iPad11,4; iOS 13_3_1; de_DE; de-DE; scale=2.00; 750x1334; 206833405) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 11,4'
     marketingName: 'iPad Air 10.5" (3rd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2224
       height: 1668
@@ -1195,13 +1193,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 135.1.0.23.118 (iPad7,4; iOS 13_4; de_DE; de-DE; scale=2.00; 1334x750; 206833405) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,4'
     marketingName: 'iPad Pro 10.5" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2224
       height: 1668
@@ -1233,13 +1231,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 137.0.0.30.124 (iPad5,2; iOS 13_3_1; de_DE; de-DE; scale=2.00; 750x1334; 208685371) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,2'
     marketingName: 'iPad Mini 4 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1271,13 +1269,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 136.0.0.22.123 (iPad6,4; iOS 13_4_1; de_DE; de-DE; scale=2.00; 1334x750; 207451752) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,4'
     marketingName: 'iPad Pro 9.7" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1309,13 +1307,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,12;FBMD/iPad;FBSN/iOS;FBSV/13.4;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,12'
     marketingName: 'iPad 10.2" (7th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1620
@@ -1347,13 +1345,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 136.0.0.22.123 (iPad11,2; iOS 13_4; de_DE; de-DE; scale=2.00; 750x1334; 207451752) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 11,2'
     marketingName: 'iPad Mini 7.9" (5th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1385,13 +1383,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad8,10;FBMD/iPad;FBSN/iOS;FBSV/13.4;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,10'
     marketingName: 'iPad Pro 11" (2nd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2388
       height: 1668
@@ -1423,13 +1421,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/263.2.0.81.121;FBBV/213222891;FBDV/iPad6,4;FBMD/iPad;FBSN/iOS;FBSV/13.4.1;FBSS/2;FBCR/;FBID/tablet;FBLC/de_DE;FBOP/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,4'
     marketingName: 'iPad Pro 9.7" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1461,13 +1459,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger Lite'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 144.0.0.17.119 (iPad7,12; iOS 13_4_1; de_DE; de-DE; scale=2.00; 750x1334; 217426887) NW/1 comdirect/1.0 (appVersion:20.5.4;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,12'
     marketingName: 'iPad 10.2" (7th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1620
@@ -1499,13 +1497,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad5,2;FBMD/iPad;FBSN/iOS;FBSV/13.5.1;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5] comdirect/1.0 (appVersion:20.9.0;deviceName:apple ipad;deviceType:tablet)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,2'
     marketingName: 'iPad Mini 4 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1537,13 +1535,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 169.0.0.21.133 (iPad7,2; iOS 14_2; de_DE; de-DE; scale=2.00; 750x1334; 261791898)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,2'
     marketingName: 'iPad Pro 12.9" (2nd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -1575,13 +1573,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 14.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 14.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/291.2.0.30.111;FBBV/257403963;FBDV/iPad5,4;FBMD/iPad;FBSN/iOS;FBSV/14.2;FBSS/2;FBCR/;FBID/tablet;FBLC/de;FBOP/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,4'
     marketingName: 'iPad Air 2 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1613,13 +1611,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 14.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger Lite'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 14.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 12_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/294.0.0.60.128;FBBV/262406393;FBDV/iPad4,2;FBMD/iPad;FBSN/iOS;FBSV/12.5.1;FBSS/2;FBCR/;FBID/tablet;FBLC/de;FBOP/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 4,2'
     marketingName: 'iPad Air 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1651,13 +1649,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 12.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger Lite'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 12.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 112.0.0.17.121 (iPad5,2; iOS 12_4_1; ru_RU; ru-RU; scale=2.00; 750x1334; 173391461)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,2'
     marketingName: 'iPad Mini 4 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -1689,13 +1687,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 12.4.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 12.4.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad13,2;FBMD/iPad;FBSN/iOS;FBSV/14.2;FBSS/2;FBID/tablet;FBLC/it_IT;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,2'
     marketingName: 'iPad Air 10.9" (4rd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2360
       height: 1640
@@ -1727,13 +1725,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 14.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 14.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad14,2;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 14,2'
     marketingName: 'iPad Mini 8.3" (6th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2266
       height: 1488
@@ -1765,13 +1763,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad12,2;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 12,2'
     marketingName: 'iPad 10.2" (9th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1620
@@ -1803,13 +1801,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad13,9;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,9'
     marketingName: 'iPad Pro 12.9" (5th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -1841,13 +1839,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad13,11;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,11'
     marketingName: 'iPad Pro 12.9" (5th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -1879,13 +1877,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -1902,13 +1902,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad13,6;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,6'
     marketingName: 'iPad Pro 11" (3rd Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2388
       height: 1668
@@ -1917,13 +1915,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1931,7 +1925,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -1940,13 +1940,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad13,5;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,5'
     marketingName: 'iPad Pro 11" (3rd Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2388
       height: 1668
@@ -1955,13 +1953,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1969,7 +1963,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -1978,13 +1978,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad13,7;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,7'
     marketingName: 'iPad Pro 11" (3rd Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2388
       height: 1668
@@ -1993,13 +1991,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2007,7 +2001,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -2016,13 +2016,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad13,10;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,10'
     marketingName: 'iPad Pro 12.9" (5th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -2031,13 +2029,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2045,7 +2039,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -2054,13 +2054,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad13,17;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,17'
     marketingName: 'iPad Air 10.9" (5th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2360
       height: 1640
@@ -2069,13 +2067,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2083,45 +2077,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 605.1.15
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 254.0.0.15.109 (iPad8,10; iPadOS 15_6_1; de_DE; de-DE; scale=2.00; 750x1334; 401726258)'
-  device:
-    architecture: null
-    deviceName: 'iPad 8,10'
-    marketingName: 'iPad Pro 11" (2nd Gen) 4G'
-    manufacturer: apple
-    brand: apple
-    dualOrientation: true
-    simCount: 1
-    display:
-      width: 2388
-      height: 1668
-      touch: true
-      size: 11
-    type: fone-pad
-    ismobile: true
-    istv: false
-    bits: null
+    bits: 0
   os:
     name: iPadOS
     marketingName: iPadOS
-    version: 15.6.1
+    version: 15.4.0
     manufacturer: apple
-    bits: null
-  client:
-    name: 'Instagram App'
-    modus: null
-    version: 254.0.0.15.109
-    manufacturer: meta
-    type: mobile-application
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2130,13 +2092,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20D67 [FBAN/FBIOS;FBDV/iPad14,4;FBMD/iPad;FBSN/iPadOS;FBSV/16.3.1;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 14,4'
     marketingName: 'iPad Pro 11" (4th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2388
       height: 1668
@@ -2145,13 +2105,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 16.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2159,7 +2115,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 16.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2168,13 +2130,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 16_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20F75 [FBAN/FBIOS;FBAV/446.0.0.32.330;FBBV/554572428;FBDV/iPad8,8;FBMD/iPad;FBSN/iPadOS;FBSV/16.5.1;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/558132887]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,8'
     marketingName: 'iPad Pro 12.9" (3rd Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -2183,13 +2143,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 16.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2197,7 +2153,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 16.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2206,13 +2168,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 12_5_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16H50 [FBAN/FBIOS;FBDV/iPad4,9;FBMD/iPad;FBSN/iOS;FBSV/12.5.4;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 4,9'
     marketingName: 'iPad Mini 3 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -2221,13 +2181,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 12.5.4
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2235,7 +2191,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 12.5.4
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2244,13 +2206,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 12_5_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/358.0.0.12.127;FBBV/365620646;FBDV/iPad4,3;FBMD/iPad;FBSN/iOS;FBSV/12.5.5;FBSS/2;FBCR/;FBID/tablet;FBLC/vi;FBOP/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 4,3'
     marketingName: 'iPad Air 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2048
       height: 1536
@@ -2259,13 +2219,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 12.5.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger Lite'
     modus: null
@@ -2273,7 +2229,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 12.5.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2282,13 +2244,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU iPad OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 [FBAN/MessengerForiOS;FBAV/142.0.0.38.63;FBBV/77803202;FBDV/iPad8,4;FBMD/iPad;FBSN/iOS;FBSV/10.3.2;FBSS/2;FBCR/NOS;FBID/phone;FBLC/jv_ID;FBOP/5;FBRV/77803202]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,4'
     marketingName: 'iPad Pro 11" 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2388
       height: 1668
@@ -2297,13 +2257,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.3.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -2311,7 +2267,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.3.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 603.2.4
@@ -2320,13 +2282,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 [FBAN/FBIOS;FBAV/468.0.0.39.104;FBBV/609862394;FBDV/iPad14,9;FBMD/iPad;FBSN/iPadOS;FBSV/17.5.1;FBSS/2;FBID/tablet;FBLC/it_IT;FBOP/5;FBRV/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 14,9'
     marketingName: 'iPad Air M2 11" 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2360
       height: 1640
@@ -2335,13 +2295,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 17.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2349,7 +2305,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 17.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2358,13 +2320,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 [FBAN/FBIOS;FBAV/471.0.0.20.112;FBBV/618472162;FBDV/iPad14,11;FBMD/iPad;FBSN/iPadOS;FBSV/17.5.1;FBSS/2;FBID/tablet;FBLC/ja_JP;FBOP/5;FBRV/0]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 14,11'
     marketingName: 'iPad Air M2 13" 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -2373,13 +2333,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 17.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2387,7 +2343,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 17.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2396,13 +2358,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 [FBAN/FBIOS;FBAV/468.0.0.39.104;FBBV/609862394;FBDV/iPad16,4;FBMD/iPad;FBSN/iPadOS;FBSV/17.5.1;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/611504180]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 16,4'
     marketingName: 'iPad Pro M4 11" 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2420
       height: 1668
@@ -2411,13 +2371,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 17.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2425,7 +2381,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 17.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2434,13 +2396,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 [FBAN/FBIOS;FBAV/471.0.0.20.112;FBBV/618472162;FBDV/iPad16,6;FBMD/iPad;FBSN/iPadOS;FBSV/17.5.1;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/618993062]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 16,6'
     marketingName: 'iPad Pro M4 13" 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2752
       height: 2064
@@ -2449,13 +2409,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 17.5.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2463,7 +2419,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 17.5.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2472,13 +2434,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/22G86 [FBAN/FBIOS;FBAV/526.0.0.61.97;FBBV/776821927;FBDV/iPad11,7;FBMD/iPad;FBSN/iPadOS;FBSV/18.6;FBSS/2;FBID/tablet;FBLC/nl_NL;FBOP/5;FBRV/781263401]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 11,7'
     marketingName: 'iPad 10.2" (8th Gen) 4G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1620
@@ -2487,13 +2447,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 18.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2501,7 +2457,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 18.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2510,13 +2472,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,4;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 15,4'
     marketingName: 'iPad Air M3 11" 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2360
       height: 1640
@@ -2525,13 +2485,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2539,7 +2495,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2548,13 +2510,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,6;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 15,6'
     marketingName: 'iPad Air M3 13" 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2732
       height: 2048
@@ -2563,13 +2523,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2577,7 +2533,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2586,13 +2548,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad15,8;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 15,8'
     marketingName: 'iPad A16 11" (11th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2360
       height: 1640
@@ -2601,13 +2561,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2615,7 +2571,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -2624,13 +2586,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad16,2;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 16,2'
     marketingName: 'iPad Mini A17 Pro (7th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2266
       height: 1488
@@ -2639,13 +2599,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2653,7 +2609,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -2662,13 +2624,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad17,2;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 17,2'
     marketingName: 'iPad Pro M5 11" (6th Gen) 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2420
       height: 1668
@@ -2677,13 +2637,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2691,7 +2647,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0
@@ -2700,13 +2662,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_0_1 like Mac OS X) WebKit/8612 (KHTML, like Gecko) Mobile/19A348 [FBAN/FBIOS;FBDV/iPad17,4;FBMD/iPad;FBSN/iOS;FBSV/15.0.1;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 17,4'
     marketingName: 'iPad Pro M5 13" 5G'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2752
       height: 2064
@@ -2715,13 +2675,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.0.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2729,7 +2685,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.0.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 8612.0.0

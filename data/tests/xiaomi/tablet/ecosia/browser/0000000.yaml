@@ -12,13 +12,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 (Ecosia android@142.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22081283G
     marketingName: 'Redmi Pad'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -27,13 +25,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -41,7 +35,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.0
@@ -60,13 +60,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (Ecosia android@145.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23043RP34G
     marketingName: 'Pad 6'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2880
       height: 1800
@@ -75,13 +73,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -89,7 +83,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.0

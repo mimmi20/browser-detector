@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-us; Neon Ultra 2 O Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36 PHX/21.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Neon Ultra 2 O'
     marketingName: 'Neon Ultra 2'
     manufacturer: safaricom
     brand: safaricom
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-us; Neon Smarta 2 K Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.137 Mobile Safari/537.36 PHX/21.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Neon Smarta 2 K'
     marketingName: 'Neon Smarta 2'
     manufacturer: safaricom
     brand: safaricom
-    dualOrientation: true
-    simCount: 2
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.137

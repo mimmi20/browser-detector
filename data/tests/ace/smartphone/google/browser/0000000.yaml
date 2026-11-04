@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BUZZ 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 2'
     marketingName: 'Buzz 2'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.101
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BUZZ 2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 2 Lite'
     marketingName: 'Buzz 2 Lite'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.89
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; BUZZ 3 Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.78 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 3'
     marketingName: 'Buzz 3'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.78
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BUZZ 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 4'
     marketingName: 'Buzz 4'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BUZZ 4S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 4S'
     marketingName: 'Buzz 4S'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BUZZ 4Lite Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.123 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 4 Lite'
     marketingName: 'Buzz 4 Lite'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.123
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BUZZ 4 Prime) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 4 Prime'
     marketingName: 'Buzz 4 Prime'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BUZZ 5 Prime) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 5 Prime'
     marketingName: 'Buzz 5 Prime'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BUZZ 5 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 5 Pro'
     marketingName: 'Buzz 5 Pro'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BUZZ 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 5'
     marketingName: 'Buzz 5'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BUZZ 5 Note) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 5 Note'
     marketingName: 'Buzz 5 Note'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BUZZ 5 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 5 Ultra'
     marketingName: 'Buzz 5 Ultra'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.0.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BUZZ 7 Note) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.111 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 7 Note'
     marketingName: 'Buzz 7 Note'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -487,60 +481,26 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.111
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 14; BUZZ 6 Pro Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36;dubox;4.19.2;BUZZ+6+Pro;android-android;14;JSbridge1.0.10;jointbridge;1.1.39;'
-  device:
-    architecture: null
-    deviceName: 'Buzz 6 Pro'
-    marketingName: 'Buzz 6 Pro'
-    manufacturer: ace
-    brand: ace
-    dualOrientation: true
-    simCount: 2
-    display:
-      width: 1612
-      height: 720
-      touch: true
-      size: 6.6
-    type: smartphone
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 148.0.7778.215
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.215
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; BUZZ 6 Prime PLUS Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 6 Prime Plus'
     marketingName: 'Buzz 6 Prime Plus'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 2
     display:
       width: null
       height: null
@@ -549,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -563,7 +519,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -572,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; BUZZ 6 Prime Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 6 Prime'
     marketingName: 'Buzz 6 Prime'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -587,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -601,7 +557,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -610,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BUZZ 3 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 3 Lite'
     marketingName: 'Buzz 3 Lite'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -625,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -639,7 +595,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -651,13 +613,11 @@
     sec-ch-ua: '"Not)A;Brand";v="99.0.0.0", "Google Chrome";v="127.0.6533.64", "Chromium";v="127.0.6533.64"'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Buzz 6 Pro'
     marketingName: 'Buzz 6 Pro'
     manufacturer: ace
     brand: ace
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -666,13 +626,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -680,7 +636,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.64

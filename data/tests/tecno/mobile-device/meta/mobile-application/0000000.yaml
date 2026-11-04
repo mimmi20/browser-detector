@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; TECNO-Mobile CH9n Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.62 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/401.0.0.24.77;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tecno device'
     marketingName: 'general Tecno device'
     manufacturer: tecno
     brand: tecno
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 93.0.4577.62
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; TECNO L6502S Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36[FBAN/EMA;FBLC/es_LA;FBAV/346.0.0.8.76;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tecno device'
     marketingName: 'general Tecno device'
     manufacturer: tecno
     brand: tecno
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Facebook Lite'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.65

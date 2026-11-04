@@ -3,13 +3,11 @@
     x-requested-with: com.repotools.whatplay
     user-agent: 'Mozilla/5.0 (Linux; Android 11; MI 9 Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36 Whatplay'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi 9'
     marketingName: 'Mi 9'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -18,13 +16,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Whatplay
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: itech
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; Huawei MediaPad Build/JZO54K; CyanogenMod-10.0.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S7-301w
     marketingName: 'MediaPad 10 Link'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 10.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SHT-AL09 Build/HUAWEISHT-AL09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/75.0.3770.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SHT-AL09
     marketingName: 'MediaPad M5 8.4'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 75.0.3770.101
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; CMR-W09 Build/HUAWEICMR-W09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CMR-W09
     marketingName: 'MatePad M5 10.8" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -93,13 +91,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SCM-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SCM-W09
     marketingName: 'MediaPad M6 10.8 Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -131,13 +129,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.79
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MRX-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRX-W09
     marketingName: 'MatePad Pro 10.8" Wi-Fi (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -169,13 +167,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MRX-W19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRX-W19
     marketingName: 'MatePad Pro 10.8" Wi-Fi (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -207,13 +205,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BAH3-W09 Build/XXXXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BAH3-W09
     marketingName: 'MatePad 10.4" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -245,13 +243,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.89
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MRX-W09 Build/XXXXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRX-W09
     marketingName: 'MatePad Pro 10.8" Wi-Fi (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -283,13 +281,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.89
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; VRD-W10 Build/XXXXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VRD-W10
     marketingName: 'MediaPad M6 Turbo 8.4 Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -321,13 +319,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.89
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; JDN2-W09 Build/XXXXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JDN2-W09
     marketingName: 'MediaPad M5 Lite 8.0 (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -359,13 +357,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.89
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; JDN2-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JDN2-W09
     marketingName: 'MediaPad M5 Lite 8.0 (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -397,13 +395,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.101
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; AGR-W09 Build/HUAWEIAGR-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGR-W09
     marketingName: 'MediaPad T 10'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -435,13 +433,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; AGS3-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Safari/537.36 comdirect/1.0 (appVersion:21.4.2;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGS3-W09
     marketingName: 'MatePad T10s 10.1" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -473,13 +471,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 89.0.4389.105
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; KOB2-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KOB2-W09
     marketingName: 'MatePad T8 Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -511,13 +509,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.101
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BAH3-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.115 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BAH3-W09
     marketingName: 'MatePad 10.4" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -549,13 +547,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.115
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; BAH3-W09 Build/HUAWEIBAH3-W09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BAH3-W09
     marketingName: 'MatePad 10.4" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -587,13 +585,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SHT-W09 Build/HUAWEISHT-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SHT-W09
     marketingName: 'MediaPad M5 8.4'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -625,13 +623,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.45
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; SHT-W09 Build/HUAWEISHT-W09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SHT-W09
     marketingName: 'MediaPad M5 8.4'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -663,13 +661,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; SHT-AL09 Build/HUAWEISHT-AL09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SHT-AL09
     marketingName: 'MediaPad M5 8.4'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -701,13 +699,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BAH3-W59) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BAH3-W59
     marketingName: 'MatePad 10.4" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -739,13 +737,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 89.0.4389.90
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; WGR-W09 Build/XXXXX; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: WGR-W09
     marketingName: 'MatePad Pro 12.6" Wi-Fi (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -777,13 +775,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.106
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; MRX-W09 Build/HUAWEIMRX-W09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRX-W09
     marketingName: 'MatePad Pro 10.8" Wi-Fi (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -815,13 +813,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BZI-W00 Build/HUAWEIBZI-W00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BZI-W00
     marketingName: 'MatePad C5e 10.1" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -853,13 +851,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BAH4-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BAH4-W09
     marketingName: 'MatePad 10.4" Wi-Fi (2022)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -891,13 +889,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.127
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; HEY-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HEY-W09
     marketingName: 'Pad 8 12.0" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -929,13 +927,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.0.0
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MRR-W29 Build/HUAWEIMRR-W29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRR-W29
     marketingName: 'MatePad Pro 10.8" (2021) Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -967,13 +965,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; AGS3-W09 Build/HUAWEIAGS3-W09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGS3-W09
     marketingName: 'MatePad T10s 10.1" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -1005,13 +1003,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; AGS3K-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGS3K-W09
     marketingName: 'MatePad T10s 10.1" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -1043,13 +1041,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.105
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; AGS3K-W09 Build/HUAWEIAGS3K-W09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGS3K-W09
     marketingName: 'MatePad T10s 10.1" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -1081,13 +1079,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; AGM-W09HN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGM-W09HN
     marketingName: 'Pad X8 Lite Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -1119,13 +1117,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; AGR-W09 Build/HUAWEIAGR-W09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGR-W09
     marketingName: 'MediaPad T 10'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -1157,13 +1155,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; GOT-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GOT-W09
     marketingName: 'MatePad Pro 11 Wi-Fi (2022)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -1195,13 +1193,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.0
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BTK-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BTK-W09
     marketingName: 'MatePad 11.5" Wi-Fi (2023)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2200
       height: 1440
@@ -1233,13 +1231,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.0.0
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; ELN-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ELN-W09
     marketingName: 'Pad X9 11.5" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -1271,13 +1269,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; AGS3-W9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6282.197 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGS3-W9
     marketingName: 'MatePad T10s 10.1" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -1309,13 +1307,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6282.197
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; DBR-W10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DBR-W10
     marketingName: 'MatePad 11 Wi-Fi (2023)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -1347,13 +1345,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; AGS6-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGS6-W09
     marketingName: 'MatePad SE 11 2024 Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -1385,13 +1383,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 128.0.0.0
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; AGS3K-W09 Build/HUAWEIAGS3K-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.105 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGS3K-W09
     marketingName: 'MatePad T10s 10.1" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -1423,13 +1421,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.105
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; DBY-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DBY-W09
     marketingName: 'MatePad 11 Wi-Fi (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -1461,13 +1459,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.79
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; BAH3-W59 Build/HUAWEIBAH3-W59)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BAH3-W59
     marketingName: 'MatePad 10.4" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -1499,13 +1497,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 12; DBY-W09 Build/HUAWEIDBY-W09)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DBY-W09
     marketingName: 'MatePad 11 Wi-Fi (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -1537,13 +1535,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; HEY-W09 Build/HONORHEY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.67 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HEY-W09
     marketingName: 'Pad 8 12.0" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -1575,13 +1573,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.67
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; ROL-W60 Build/HONORROL-W60; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.82 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ROL-W60
     marketingName: 'Pad GT 11.5" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2800
       height: 1840
@@ -1613,13 +1611,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.82
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; ROD2-W69 Build/HONORROD2-W69; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ROD2-W69
     marketingName: 'Pad GT Pro 12.3" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3000
       height: 1920
@@ -1651,13 +1649,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.179
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BTKR-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BTKR-W09
     marketingName: 'MatePad 11.5" Wi-Fi (2024)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2200
       height: 1440
@@ -1689,13 +1687,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.0.0
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; AGS5-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGS5-AL00
     marketingName: 'MatePad 10.4" SE (2023)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -1727,13 +1725,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.0.0
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; AGR-W09 Build/HUAWEIAGR-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.105 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AGR-W09
     marketingName: 'MediaPad T 10'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -1765,13 +1763,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.105
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; HEY3-W00 Build/HONORHEY3-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.97 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HEY3-W00
     marketingName: 'Pad 10 12.1" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -1803,13 +1801,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.97
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BZI-W20 Build/HUAWEIBZI-W20; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BZI-W20
     marketingName: 'MatePad C5e 10.1" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -1841,13 +1839,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.98
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; WEB-W09 Build/HUAWEIWEB-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: WEB-W09
     marketingName: 'MatePad Pro 13.2" Wi-Fi (2025)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2880
       height: 1920
@@ -1879,13 +1877,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -1912,13 +1912,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NDL-W09
     marketingName: 'Pad X8a Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -1927,13 +1925,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1941,7 +1935,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0
@@ -1950,13 +1950,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-us; CGA-W00 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.177 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CGA-W00
     marketingName: 'MagicPad 3 13.3" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3200
       height: 2136
@@ -1965,13 +1963,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1979,7 +1973,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.177
@@ -1988,13 +1988,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; en-us; TXZ-W09 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.177 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TXZ-W09
     marketingName: 'MatePad 11.5" Wi-Fi (2025)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2456
       height: 1600
@@ -2003,13 +2001,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2017,60 +2011,26 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.177
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 9.0; bVRD-W10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: VRD-W10
-    marketingName: 'MediaPad M6 Turbo 8.4 Wi-Fi'
-    manufacturer: huawei
-    brand: huawei
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: 2560
-      height: 1600
-      touch: true
-      size: 8.4
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 91.0.4472.101
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 91.0.4472.101
-    manufacturer: google
--
-  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; NDL2-W09 Build/HONORNDL2-W09S; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NDL2-W09
     marketingName: 'Pad X8b Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -2079,13 +2039,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2093,7 +2049,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2102,13 +2064,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; CHG-W60 Build/HONORCGL-W60; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.82 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CHG-W60
-    marketingName: 'Pad GT2 Pro Wi-Fi'
+    marketingName: 'Pad GT2 Pro 12.5" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3045
       height: 2032
@@ -2117,13 +2077,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2131,7 +2087,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.82
@@ -2140,13 +2102,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; JMS-W09 Build/AQ3A.241229.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JMS-W09
     marketingName: 'Pad X7 8.7" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1340
       height: 800
@@ -2155,13 +2115,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2169,7 +2125,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -2178,13 +2140,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; JMS-W09 Build/AQ3A.241229.001) AppleWebKit/537.36 (KHTML, like Gecko) Crpafbnr/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JMS-W09
     marketingName: 'Pad X7 8.7" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1340
       height: 800
@@ -2193,13 +2153,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2207,7 +2163,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2216,13 +2178,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; HEY2-W09-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HEY2-W09
     marketingName: 'Pad 9 12.1" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -2231,13 +2191,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2245,7 +2201,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2254,13 +2216,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; TXZ-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TXZ-W09
     marketingName: 'MatePad 11.5" Wi-Fi (2025)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2456
       height: 1600
@@ -2269,13 +2229,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2283,7 +2239,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.149
@@ -2292,13 +2254,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; MRO-W00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRO-W00
     marketingName: 'MatePad Pro 12.2" Wi-Fi (2024)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2800
       height: 1840
@@ -2307,13 +2267,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2321,7 +2277,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.0.0
@@ -2330,13 +2292,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; MRDI-W00 Build/HUAWEIMRDI-W00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MRDI-W00
     marketingName: 'MatePad Pro 12.2" Wi-Fi (2025)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2800
       height: 1840
@@ -2345,13 +2305,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2359,7 +2315,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -2368,13 +2330,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; HarmonyOS; DBY2-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DBY2-W09
     marketingName: 'MatePad 11.5" Air Wi-Fi (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2800
       height: 1840
@@ -2383,13 +2343,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: null
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2397,7 +2353,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: null
+    manufacturer: huawei
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -2406,13 +2368,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BTK-W00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5013.1 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BTK-W00
     marketingName: 'MatePad 11.5" Wi-Fi (2023)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2200
       height: 1440
@@ -2421,13 +2381,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2435,7 +2391,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5013.1
@@ -2444,13 +2406,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BTKR-W00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BTKR-W00
     marketingName: 'MatePad 11.5" Wi-Fi (2024)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2200
       height: 1440
@@ -2459,13 +2419,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2473,7 +2429,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.0.0
@@ -2482,13 +2444,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MatePad Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MatePad Wi-Fi'
     marketingName: 'MatePad 10.4" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -2497,13 +2457,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2511,7 +2467,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -2520,13 +2482,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MatePad Pro Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MatePad Pro Wi-Fi'
     marketingName: 'MatePad Pro 10.8" Wi-Fi (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -2535,13 +2495,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2549,7 +2505,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -2558,13 +2520,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MatePad 10.8 Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MatePad 10.8 Wi-Fi'
     marketingName: 'MatePad 10.8" Wi-Fi'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -2573,13 +2533,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2587,7 +2543,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101

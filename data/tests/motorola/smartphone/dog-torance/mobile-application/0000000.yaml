@@ -2,13 +2,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 15; moto g54 5G Build/V1TDS35H.83-20-5-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G54 5G'
     marketingName: 'Moto G54 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.146
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; motorola edge 60 Build/W1VC36H.14-20-19; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.109 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 60'
     marketingName: 'Edge 60'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.109
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; motorola razr 50 ultra Build/W1UXS36H.72-45-10-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto Razr 50 Ultra'
     marketingName: 'Moto Razr 50 Ultra'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.132
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; motorola edge 60 fusion Build/W1VCS36H.14-20-19-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 60 Fusion'
     marketingName: 'Edge 60 Fusion'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.79
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.1 Mozilla/5.0 (Linux; Android 14; motorola edge 30 Build/U1RDS34.80-40-5-6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.65 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 30'
     marketingName: 'Edge 30'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.65
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 13; moto g84 5G Build/T3TCS33.18-48-6-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.177 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G84 5G'
     marketingName: 'Moto G84 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.177
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 13; moto g52 Build/T2SRS33.72-22-4-11; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.177 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G52'
     marketingName: 'Moto G52'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.177
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 15; moto g85 5G Build/V1UOS35H.74-16-4-14; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.55 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G85 5G'
     marketingName: 'Moto G85 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.55
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; motorola edge 50 ultra Build/W1UVS36H.61-25-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 50 Ultra'
     marketingName: 'Edge 50 Ultra'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.137
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 12; moto g200 5G Build/S1RXS32.50-13-25; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G200 5G'
     marketingName: 'Moto G200 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2460
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 14; moto g13 Build/UHAS34.29-41; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G13'
     marketingName: 'Moto G13'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 14; moto g14 Build/UTLBS34.102-91-5; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G14'
     marketingName: 'Moto G14'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; motorola edge 70 Build/W1WRS36.39-115-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 70'
     marketingName: 'Edge 70'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.181
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; moto g86 5G Build/W1VNS36H.60-66-8; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G86 5G'
     marketingName: 'Moto G86 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.181
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 12; moto g(30) Build/S0RCS32.41-10-19-23; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G30'
     marketingName: 'Moto G30'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.181
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 13; motorola edge 20 Build/T1RGS33.135-109-9-29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 20 (2021)'
     marketingName: 'Edge 20 (2021)'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.7922.199
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; motorola edge 50 neo Build/W1UIS36H.39-17-8; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 50 Neo'
     marketingName: 'Edge 50 Neo'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2670
       height: 1200
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.7922.199

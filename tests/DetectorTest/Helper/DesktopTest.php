@@ -145,6 +145,7 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari PrcmNovel_iOS/1.11.8'],
             ['CitrixReceiver/18.12.0.65534 (X11; Linux x86_64) Warthog/9.0.8024 (Release) X1Class CWACapable'],
             ['FortiGate (FortiOS 7.0) Chrome/ Safari/'],
+            ['ddg_win/0.176.2.0'],
         ];
     }
 
@@ -184,6 +185,7 @@ final class DesktopTest extends TestCase
             ['Mozilla/5.0 (Linux; U; Intel Mac OSX 10_6_3; 3.2; de-de; Xoom Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'],
             ['Apple AppleTV6,2 tvOS/17.1.0 Lifetime-tvOS/5.14.0 CFNetwork/1485'],
             ['H443NM7F8H.CBSSportsApp/1.0 iOS/9.0 model/AppleTV5,3 build/13T393'],
+            ['Mozilla/5.0 (Linux; Tizen 2.2.1.3; SM-R750) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.76 efl-webengine/0.1.1.1 Mobile Safari/537.36'],
         ];
     }
 }

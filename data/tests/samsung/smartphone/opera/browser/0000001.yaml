@@ -3,13 +3,11 @@
     x-requested-with: com.opera.gx
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M215F Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.78 Mobile Safari/537.36 OPX/1.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M215F
     marketingName: 'Galaxy M21'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -18,13 +16,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.78
@@ -48,13 +48,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.2.3606.65175'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S908B
     marketingName: 'Galaxy S22 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -63,13 +61,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -77,7 +71,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.0
@@ -93,13 +93,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A526B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.1.3606.65109'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A526B
     marketingName: 'Galaxy A52 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -108,13 +106,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -122,7 +116,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.0
@@ -131,13 +131,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.2.3606.65175'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S901B
     marketingName: 'Galaxy S22 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -146,13 +144,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -160,7 +154,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.127
@@ -169,13 +169,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G990B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.3.3606.65458'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -184,13 +182,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -198,7 +192,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.127
@@ -207,13 +207,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.71 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S908B
     marketingName: 'Galaxy S22 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -222,13 +220,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -236,7 +230,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.71
@@ -245,13 +245,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A225F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36 OPR/67.1.3508.63168'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A225F
     marketingName: 'Galaxy A22 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -260,13 +258,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -274,7 +268,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.104
@@ -283,13 +283,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A405FN Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.71 Mobile Safari/537.36 OPX/1.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A405FN
     marketingName: 'Galaxy A40'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -298,13 +296,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -312,7 +306,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.71
@@ -321,13 +321,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G988B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36 OPX/1.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G988B
     marketingName: 'Galaxy S20 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3200
       height: 1440
@@ -336,13 +334,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -350,7 +344,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.129
@@ -359,13 +359,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36 OPX/1.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S908B
     marketingName: 'Galaxy S22 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -374,13 +372,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -388,7 +382,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.129
@@ -397,13 +397,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-G9700) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.3.3606.65458'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G9700
     marketingName: 'Galaxy S10e (China)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -412,13 +410,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -426,7 +420,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.127
@@ -435,13 +435,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S906B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36 OPR/71.1.3718.67122'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S906B
     marketingName: 'Galaxy S22+ 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -450,13 +448,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -464,7 +458,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.97
@@ -473,13 +473,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A135F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66395'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A135F
     marketingName: 'Galaxy A13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -488,13 +486,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -502,7 +496,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.134
@@ -511,13 +511,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G715FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G715FN
     marketingName: 'Galaxy Xcover Pro'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -526,13 +524,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -540,7 +534,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.134
@@ -549,13 +549,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G960U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G960U1
     marketingName: 'Galaxy S9 (USA unlocked)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -564,13 +562,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -578,7 +572,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.134
@@ -587,13 +587,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A715F Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36 OPX/1.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A715F
     marketingName: 'Galaxy A71 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -602,13 +600,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -616,7 +610,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.129
@@ -625,13 +625,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A528B
     marketingName: 'Galaxy A52s 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -640,13 +638,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -654,7 +648,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.97
@@ -663,13 +663,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A326B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.136 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A326B
     marketingName: 'Galaxy A32 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -678,13 +676,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -692,7 +686,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -701,13 +701,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36 OPR/71.3.3718.67322'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A336B
     marketingName: 'Galaxy A33 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -716,13 +714,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -730,7 +724,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.97
@@ -747,13 +747,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Safari/537.36 OPR/88.0.4412.53'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G988B
     marketingName: 'Galaxy S20 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3200
       height: 1440
@@ -762,13 +760,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -776,7 +770,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.0
@@ -785,13 +785,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G780F Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G780F
     marketingName: 'Galaxy S20 FE 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -800,13 +798,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -814,7 +808,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -823,13 +823,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A536B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36 OPR/72.3.3767.68685'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A536B
     marketingName: 'Galaxy A53 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -838,13 +836,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -852,7 +846,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -861,13 +861,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A207F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36 OPR/62.3.3146.57763'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A207F
     marketingName: 'Galaxy A20s (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -876,13 +874,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -890,7 +884,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141
@@ -899,13 +899,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; SM-M127N Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36 OPR/64.0.2254.62635'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M127N
     marketingName: 'Galaxy M12 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -914,13 +912,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -928,7 +922,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.69
@@ -937,13 +937,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; SM-A042F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36 OPR/66.0.2254.63894'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A042F
     marketingName: 'Galaxy A04e'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -952,13 +950,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -966,7 +960,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.105
@@ -975,13 +975,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A536B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A536B
     marketingName: 'Galaxy A53 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -990,13 +988,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -1004,7 +998,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.128
@@ -1013,13 +1013,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A325F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36 OPR/72.5.3767.69342'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A325F
     marketingName: 'Galaxy A32 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1028,13 +1026,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1042,7 +1036,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -1051,13 +1051,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-M536B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.215 Mobile Safari/537.36 OPR/73.2.3844.69974'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M536B
     marketingName: 'Galaxy M53 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -1066,13 +1064,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1080,7 +1074,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.215
@@ -1089,13 +1089,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A725F Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.86 Mobile Safari/537.36 OPX/1.8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A725F
     marketingName: 'Galaxy A72'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1104,13 +1102,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -1118,7 +1112,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.86
@@ -1127,13 +1127,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G990B2 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.117 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B2
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1142,13 +1140,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -1156,7 +1150,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.117
@@ -1165,13 +1165,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G990B2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Mobile Safari/537.36 OPR/74.2.3922.71774'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B2
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1180,13 +1178,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1194,7 +1188,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.192
@@ -1203,13 +1203,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A736B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Mobile Safari/537.36 OPR/74.0.3922.70977'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A736B
     marketingName: 'Galaxy A73 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1218,13 +1216,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1232,7 +1226,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.192
@@ -1241,13 +1241,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.215 Mobile Safari/537.36 OPR/73.2.3844.69974'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S918B
     marketingName: 'Galaxy S23 Ultra (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -1256,13 +1254,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1270,7 +1264,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.215
@@ -1279,13 +1279,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S911B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Mobile Safari/537.36 OPR/74.0.3922.70977'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S911B
     marketingName: 'Galaxy S23 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1294,13 +1292,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1308,7 +1302,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.192
@@ -1317,13 +1317,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S908U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S908U1
     marketingName: 'Galaxy S22 Ultra 5G (USA unlocked)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -1332,13 +1330,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1346,7 +1340,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.134
@@ -1363,13 +1363,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Safari/537.36 OPR/96.0.4693.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G960F
     marketingName: 'Galaxy S9'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -1378,13 +1376,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -1392,7 +1386,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0
@@ -1402,13 +1402,11 @@
     x-requested-with: com.opera.browser
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; en-us; SM-A125F Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A125F
     marketingName: 'Galaxy A12 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -1417,13 +1415,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -1431,7 +1425,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 68.0.3440.91
@@ -1441,13 +1441,11 @@
     x-requested-with: com.opera.gx
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S901B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.154 Mobile Safari/537.36 OPX/1.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S901B
     marketingName: 'Galaxy S22 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1456,13 +1454,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -1470,7 +1464,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.154
@@ -1479,13 +1479,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G981B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.65 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G981B
     marketingName: 'Galaxy S20 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3200
       height: 1440
@@ -1494,13 +1492,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -1508,7 +1502,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.65
@@ -1517,13 +1517,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A137F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.135 Mobile Safari/537.36 OPR/75.3.3978.72666'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A137F
     marketingName: 'Galaxy A13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -1532,13 +1530,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1546,7 +1540,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -1555,13 +1555,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Mobile Safari/537.36 OPR/74.3.3922.71982'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M515F
     marketingName: 'Galaxy M51 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1570,13 +1568,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1584,7 +1578,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.192
@@ -1593,13 +1593,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G780G Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.77 Mobile Safari/537.36 OPX/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G780G
     marketingName: 'Galaxy S20 FE 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1608,13 +1606,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -1622,7 +1616,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.77
@@ -1631,13 +1631,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G996B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.162 Mobile Safari/537.36 OPX/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G996B
     marketingName: 'Galaxy S21+ 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1646,13 +1644,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -1660,7 +1654,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.162
@@ -1669,13 +1669,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-M526BR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Mobile Safari/537.36 OPR/74.3.3922.71982'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M526BR
     marketingName: 'Galaxy M52 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1684,13 +1682,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1698,7 +1692,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.192
@@ -1707,13 +1707,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G990B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.162 Mobile Safari/537.36 OPX/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1722,13 +1720,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -1736,7 +1730,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.162
@@ -1745,13 +1745,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G985F Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36 OPX/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G985F
     marketingName: 'Galaxy S20+ 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3200
       height: 1440
@@ -1760,13 +1758,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -1774,7 +1768,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -1783,13 +1783,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A336B Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36 OPX/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A336B
     marketingName: 'Galaxy A33 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -1798,13 +1796,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -1812,7 +1806,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -1821,13 +1821,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A236B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.130 Mobile Safari/537.36 OPR/76.1.4027.73300'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A236B
     marketingName: 'Galaxy A23 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -1836,13 +1834,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1850,7 +1844,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.130
@@ -1859,13 +1859,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S916B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.130 Mobile Safari/537.36 OPR/76.1.4027.73300'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S916B
     marketingName: 'Galaxy S23+ (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -1874,13 +1872,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1888,7 +1882,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.130
@@ -1897,13 +1897,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G781B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.131 Mobile Safari/537.36 OPX/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G781B
     marketingName: 'Galaxy S20 FE 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1912,13 +1910,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -1926,7 +1920,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.131
@@ -1935,13 +1935,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A546E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.135 Mobile Safari/537.36 OPR/75.4.3978.72990'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A546E
     marketingName: 'Galaxy A54 5G (Asia/Africa)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1950,13 +1948,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -1964,7 +1958,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -1973,13 +1973,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S901B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S901B
     marketingName: 'Galaxy S22 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1988,13 +1986,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -2002,7 +1996,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -2011,13 +2011,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A526T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A526T
     marketingName: 'Galaxy A52 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2026,13 +2024,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2040,7 +2034,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -2049,13 +2049,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-M236B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36 OPX/1.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M236B
     marketingName: 'Galaxy M23 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2064,13 +2062,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -2078,7 +2072,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -2087,13 +2087,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A047F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.167 Mobile Safari/537.36 OPR/77.0.4095.74331'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A047F
     marketingName: 'Galaxy A04s 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -2102,13 +2100,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2116,7 +2110,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.167
@@ -2125,13 +2125,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S918B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S918B
     marketingName: 'Galaxy S23 Ultra (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -2140,13 +2138,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -2154,7 +2148,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -2163,13 +2163,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A346B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.167 Mobile Safari/537.36 OPR/77.1.4095.74475'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A346B
     marketingName: 'Galaxy A34 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2178,13 +2176,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2192,7 +2186,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.167
@@ -2201,13 +2201,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G781N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Mobile Safari/537.36 OPR/74.1.3922.71199'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G781N
     marketingName: 'Galaxy S20 FE 5G (Korea)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2216,13 +2214,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2230,7 +2224,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.192
@@ -2239,13 +2239,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A546B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36 OPR/76.2.4027.73374'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A546B
     marketingName: 'Galaxy A54 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2254,13 +2252,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2268,7 +2262,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -2277,13 +2277,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G9980) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.167 Mobile Safari/537.36 OPR/77.4.4095.74896'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G9980
     marketingName: 'Galaxy S21 Ultra 5G (China)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3200
       height: 1440
@@ -2292,13 +2290,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2306,7 +2300,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.167
@@ -2315,13 +2315,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S918B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36 OPX/2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S918B
     marketingName: 'Galaxy S23 Ultra (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -2330,13 +2328,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -2344,7 +2338,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -2353,13 +2353,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A546B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A546B
     marketingName: 'Galaxy A54 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2368,13 +2366,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -2382,7 +2376,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.0.0
@@ -2391,13 +2391,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A536B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.66 Mobile Safari/537.36 OPX/2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A536B
     marketingName: 'Galaxy A53 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2406,13 +2404,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -2420,7 +2414,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.66
@@ -2429,13 +2429,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S911B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.66 Mobile Safari/537.36 OPX/2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S911B
     marketingName: 'Galaxy S23 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2444,13 +2442,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -2458,7 +2452,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.66
@@ -2467,13 +2467,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; SM-A032F Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.144 Mobile Safari/537.36 OPR/76.0.2254.69201'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A032F
     marketingName: 'Galaxy A03 Core'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -2482,13 +2480,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2496,7 +2490,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.144
@@ -2505,13 +2505,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-M307FN Build/RP1A.200720.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.163 Mobile Safari/537.36 OPX/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M307FN
     marketingName: 'Galaxy M30s (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2520,13 +2518,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -2534,7 +2528,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.163
@@ -2543,13 +2543,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A145R) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.154 Mobile Safari/537.36 OPR/78.6.4143.76259'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A145R
     marketingName: 'Galaxy A14 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2558,13 +2556,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2572,7 +2566,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.5938.154
@@ -2581,13 +2581,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-M325FV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Mobile Safari/537.36 OPR/79.3.4195.76674'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M325FV
     marketingName: 'Galaxy M32'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2596,13 +2594,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2610,7 +2604,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.193
@@ -2619,13 +2619,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S901U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Mobile Safari/537.36 OPR/79.2.4195.76518'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S901U
     marketingName: 'Galaxy S22 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2634,13 +2632,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2648,7 +2642,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.193
@@ -2657,13 +2657,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A025G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36 OPR/80.1.4244.77335'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A025G
     marketingName: 'Galaxy A02s'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -2672,13 +2670,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2686,7 +2680,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -2695,13 +2695,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G781V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.280 Mobile Safari/537.36 OPR/80.4.4244.77866'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G781V
     marketingName: 'Galaxy S20 FE 5G (Verizon)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2710,13 +2708,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2724,7 +2718,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.280
@@ -2733,13 +2733,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A156B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.180 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A156B
     marketingName: 'Galaxy A15 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -2748,13 +2746,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -2762,7 +2756,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.180
@@ -2771,13 +2771,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A346E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Mobile Safari/537.36 OPR/79.5.4195.76987'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A346E
     marketingName: 'Galaxy A34 5G (Asia/Africa)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -2786,13 +2784,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2800,7 +2794,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.193
@@ -2809,13 +2809,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-S928B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.64 Mobile Safari/537.36 OPX/2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S928B
     marketingName: 'Galaxy S24 Ultra'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3120
       height: 1440
@@ -2824,13 +2822,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -2838,7 +2832,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.64
@@ -2847,13 +2847,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G960F Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36 OPX/2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G960F
     marketingName: 'Galaxy S9'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -2862,13 +2860,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -2876,7 +2870,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -2885,13 +2885,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S135DL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.154 Mobile Safari/537.36 OPR/78.5.4143.75924'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S135DL
     marketingName: 'Galaxy A03s 4G (Canada)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2900,13 +2898,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2914,7 +2908,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.5938.154
@@ -2923,13 +2923,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S711U Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.66 Mobile Safari/537.36 OPX/2.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S711U
     marketingName: 'Galaxy S23 FE (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -2938,13 +2936,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -2952,7 +2946,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.66
@@ -2961,13 +2961,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A556B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/81.2.4292.78581'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A556B
     marketingName: 'Galaxy A55 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -2976,13 +2974,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -2990,7 +2984,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -2999,13 +2999,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-E546B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.280 Mobile Safari/537.36 OPR/80.6.4244.78244'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-E546B
     marketingName: 'Galaxy F54 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3014,13 +3012,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3028,7 +3022,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.280
@@ -3037,13 +3037,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A256B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/81.1.4292.78446'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A256B
     marketingName: 'Galaxy A25 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3052,13 +3050,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3066,7 +3060,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -3075,13 +3075,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A2360) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/81.2.4292.78581'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A2360
     marketingName: 'Galaxy A23 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -3090,13 +3088,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3104,7 +3098,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -3113,13 +3113,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A156U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/81.1.4292.78446'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A156U1
     marketingName: 'Galaxy A15 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3128,13 +3126,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3142,7 +3136,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -3151,13 +3151,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A156B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.3.4292.78688'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A156B
     marketingName: 'Galaxy A15 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3166,13 +3164,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3180,7 +3174,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.149
@@ -3189,13 +3189,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; SM-S921B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.144 Mobile Safari/537.36 OPR/78.0.2254.70362'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S921B
     marketingName: 'Galaxy S24'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3204,13 +3202,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3218,7 +3212,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.144
@@ -3227,13 +3227,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-S921U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.280 Mobile Safari/537.36 OPR/80.5.4244.78163'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S921U1
     marketingName: 'Galaxy S24 (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3242,13 +3240,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3256,7 +3250,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.280
@@ -3265,13 +3265,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-S928Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.5.4292.78980'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S928Q
     marketingName: 'Galaxy S24 Ultra (Japan)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3120
       height: 1440
@@ -3280,13 +3278,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3294,7 +3288,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.149
@@ -3303,13 +3303,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-S921Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.5.4292.78980'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S921Q
     marketingName: 'Galaxy S24 (Japan)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3318,13 +3316,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3332,7 +3326,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.149
@@ -3341,13 +3341,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-F707U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.3.4292.78688'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-F707U
     marketingName: 'Galaxy Z Flip 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2636
       height: 1080
@@ -3356,13 +3354,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3370,7 +3364,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.149
@@ -3379,13 +3379,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-E156B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.113 Mobile Safari/537.36 OPR/82.2.4342.79505'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-E156B
     marketingName: 'Galaxy F15 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3394,13 +3392,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3408,7 +3402,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.113
@@ -3417,13 +3417,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; SM-A022M Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.124 Mobile Safari/537.36 OPR/81.0.2254.71797'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A022M
     marketingName: 'Galaxy A02'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3432,13 +3430,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3446,7 +3440,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.124
@@ -3455,13 +3455,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-G950U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.6.4292.79147'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G950U1
     marketingName: 'Galaxy S8 (US Unlocked)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -3470,13 +3468,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3484,7 +3478,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.149
@@ -3493,13 +3493,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G7810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Mobile Safari/537.36 OPR/81.2.4292.78581'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G7810
     marketingName: 'Galaxy S20 FE 5G (China, Hong Kong)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -3508,13 +3506,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3522,7 +3516,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -3531,13 +3531,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G988U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Mobile Safari/537.36 OPR/81.6.4292.79147'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G988U1
     marketingName: 'Galaxy S20 Ultra 5G (USA unlocked)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3200
       height: 1440
@@ -3546,13 +3544,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3560,7 +3554,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.149
@@ -3569,13 +3569,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-G990B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.40 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3584,13 +3582,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -3598,7 +3592,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.40
@@ -3607,13 +3607,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-S921B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.123 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S921B
     marketingName: 'Galaxy S24'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3622,13 +3620,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -3636,7 +3630,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.123
@@ -3645,13 +3645,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-S928B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Mobile Safari/537.36 OPT/2.9'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S928B
     marketingName: 'Galaxy S24 Ultra'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3120
       height: 1440
@@ -3660,13 +3658,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Touch'
     modus: null
@@ -3674,7 +3668,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -3683,13 +3683,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-A546B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.134 Mobile Safari/537.36 OPX/2.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A546B
     marketingName: 'Galaxy A54 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3698,13 +3696,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -3712,7 +3706,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.134
@@ -3721,13 +3721,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-S916B Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36 OPX/2.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S916B
     marketingName: 'Galaxy S23+ (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -3736,13 +3734,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera GX'
     modus: null
@@ -3750,7 +3744,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.103
@@ -3767,13 +3767,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A146P
     marketingName: 'Galaxy A14 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -3782,13 +3780,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3796,7 +3790,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0
@@ -3813,13 +3813,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A145F
     marketingName: 'Galaxy A14 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -3828,13 +3826,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -3842,7 +3836,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0

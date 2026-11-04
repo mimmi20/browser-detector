@@ -172,6 +172,35 @@ final class UseragentClientCodeTest extends TestCase
     }
 
     /** @throws Exception */
+    public function testWithUas7(): void
+    {
+        $value = 'WhatsApp/2.2587.9 N';
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $normalizer = $this->createMock(NormalizerInterface::class);
+        $normalizer
+            ->expects(self::once())
+            ->method('normalize')
+            ->with($value)
+            ->willReturn($value);
+
+        $useragentClientCode = new UseragentClientCode(
+            browserParser: $browserParser,
+            normalizer: $normalizer,
+        );
+
+        self::assertTrue($useragentClientCode->hasClientCode($value));
+        self::assertSame(
+            'whatsapp-web',
+            $useragentClientCode->getClientCode($value),
+        );
+    }
+
+    /** @throws Exception */
     public function testWithUas4(): void
     {
         $value = 'A/8.1.0/ANS/L51/msm8909/unknown/QCX3/l3584062258010650401/-/+490760838/-/ANS/110712/110713/-/2.5/1/W';

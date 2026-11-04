@@ -6,13 +6,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Q10_EEA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.207 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Q10-EEA
     marketingName: Q10
     manufacturer: facetel
     brand: facetel
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -21,13 +19,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'App Lock'
     modus: null
@@ -35,7 +29,13 @@
     manufacturer: unknown
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.0
@@ -48,13 +48,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Q6_EEA Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Q6-EEA
     marketingName: Q6
     manufacturer: facetel
     brand: facetel
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -63,13 +61,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'App Lock'
     modus: null
@@ -77,7 +71,13 @@
     manufacturer: unknown
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.0

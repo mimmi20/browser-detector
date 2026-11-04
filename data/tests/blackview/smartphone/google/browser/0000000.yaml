@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; A90 Build/MocorDroid2.3.5) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A90
     marketingName: A90
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MocorDroid
-    marketingName: MocorDroid
-    version: 2.3.5
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.3.5
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 533.1.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9700Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV9700 Pro'
     marketingName: 'BV9700 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 77.0.3865.116
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; A60Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.62 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A60 Pro'
     marketingName: 'A60 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 600
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.62
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9600) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9600
     marketingName: BV9600
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2248
       height: 1080
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.96
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV5500Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV5500 Pro'
     marketingName: 'BV5500 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV5500Pro Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.121 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV5500 Pro'
     marketingName: 'BV5500 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 72.0.3626.121
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9100
     marketingName: BV9100
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV5900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV5900
     marketingName: BV5900
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1520
       height: 720
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.136
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9500Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV9500 Plus'
     marketingName: 'BV9500 Plus'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.99
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; A60Pro Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A60 Pro'
     marketingName: 'A60 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 600
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; A80Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A80 Pro'
     marketingName: 'A80 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9900Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.83 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV9900 Pro'
     marketingName: 'BV9900 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2280
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.83
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9800Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.6.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV9800 Pro'
     marketingName: 'BV9800 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.106
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9900
     marketingName: BV9900
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.99
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV6100 Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6100
     marketingName: BV6100
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1352
       height: 640
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9600 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.111 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9600
     marketingName: BV9600
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2248
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.111
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV5500Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV5500 Plus'
     marketingName: 'BV5500 Plus'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.99
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV6900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6900
     marketingName: BV6900
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2280
       height: 1080
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.101
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV6300Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.99 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV6300 Pro'
     marketingName: 'BV6300 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 86.0.4240.99
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9800) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9800
     marketingName: BV9800
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; BV9900 Build/PPR1.180610.011)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9900
     marketingName: BV9900
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; BV9700Pro Build/PPR1.180610.011)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV9700 Pro'
     marketingName: 'BV9700 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV6100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6100
     marketingName: BV6100
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1352
       height: 640
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 90.0.4430.210
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV6600) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6600
     marketingName: BV6600
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BL6000Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BL6000 Pro'
     marketingName: 'BL6000 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2300
       height: 1080
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.120
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV4900Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV4900 Pro'
     marketingName: 'BV4900 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.120
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; BV9900E Build/QP1A.190711.020)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9900E
     marketingName: BV9900E
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2280
       height: 1080
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; BV6300Pro Build/QP1A.190711.020)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV6300 Pro'
     marketingName: 'BV6300 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV9900E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9900E
     marketingName: BV9900E
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2280
       height: 1080
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.131
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV4900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.115 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV4900
     marketingName: BV4900
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.115
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; BV9100 Build/PPR1.180610.011)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9100
     marketingName: BV9100
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1157,13 +1155,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV6300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.120 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6300
     marketingName: BV6300
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -1195,13 +1193,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.120
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; A80Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A80 Plus'
     marketingName: 'A80 Plus'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -1233,13 +1231,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.159
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; A70) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A70
     marketingName: A70
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1271,13 +1269,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 93.0.4577.82
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV5500 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV5500
     marketingName: BV5500
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -1309,13 +1307,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.131
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV5100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV5100
     marketingName: BV5100
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -1347,13 +1345,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 95.0.4638.74
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; A90) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A90
     marketingName: A90
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -1385,13 +1383,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.104
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; A60Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A60 Plus'
     marketingName: 'A60 Plus'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 600
@@ -1423,13 +1421,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; A80S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.88 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A80S
     marketingName: A80S
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1520
       height: 720
@@ -1461,13 +1459,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.88
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV9900E Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9900E
     marketingName: BV9900E
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2280
       height: 1080
@@ -1499,13 +1497,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 95.0.4638.74
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 9; A60Pro Build/PPR1.180610.011)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A60 Pro'
     marketingName: 'A60 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 600
@@ -1537,13 +1535,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; A70 Build/RP1A.201005.001)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A70
     marketingName: A70
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1575,13 +1573,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; BV8800) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV8800
     marketingName: BV8800
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -1613,13 +1611,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; A70 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.58 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A70 Pro'
     marketingName: 'A70 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1651,13 +1649,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; A55 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.59 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A55 Pro'
     marketingName: 'A55 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1689,13 +1687,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.59
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; BV4900s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV4900s
     marketingName: BV4900s
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -1727,13 +1725,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.0.0
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV7100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV7100
     marketingName: BV7100
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -1765,13 +1763,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.0.0
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; A80Pro Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.79 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A80 Pro'
     marketingName: 'A80 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -1803,13 +1801,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.79
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV4900Pro Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV4900 Pro'
     marketingName: 'BV4900 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -1841,13 +1839,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV6600 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6600
     marketingName: BV6600
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -1879,13 +1877,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.141
@@ -1903,13 +1903,11 @@
     x-requested-with: XMLHttpRequest
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV6900 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6900
     marketingName: BV6900
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2280
       height: 1080
@@ -1918,13 +1916,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1932,7 +1926,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.105
@@ -1941,13 +1941,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV5200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV5200
     marketingName: BV5200
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -1956,13 +1954,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1970,7 +1964,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -1979,13 +1979,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV7200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV7200
     marketingName: BV7200
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -1994,13 +1992,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2008,7 +2002,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -2017,13 +2017,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9700Pro Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV9700 Pro'
     marketingName: 'BV9700 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -2032,13 +2030,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2046,7 +2040,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.128
@@ -2055,13 +2055,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV9200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9200
     marketingName: BV9200
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2070,13 +2068,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2084,7 +2078,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -2093,13 +2093,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BV5500Plus Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV5500 Plus'
     marketingName: 'BV5500 Plus'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -2108,13 +2106,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2122,7 +2116,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.128
@@ -2131,13 +2131,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV5200 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV5200 Pro'
     marketingName: 'BV5200 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2146,13 +2144,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2160,7 +2154,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0
@@ -2169,13 +2169,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; A52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A52
     marketingName: A52
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2184,13 +2182,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2198,7 +2192,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0
@@ -2214,13 +2214,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 11; A95) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A95
     marketingName: A95
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2229,13 +2227,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2243,7 +2237,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0
@@ -2252,13 +2252,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; A70 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.130 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A70
     marketingName: A70
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2267,13 +2265,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2281,7 +2275,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.130
@@ -2296,13 +2296,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV8900
     marketingName: BV8900
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2311,13 +2309,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2325,7 +2319,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.5938.60
@@ -2334,13 +2334,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; BV8800 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.66 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV8800
     marketingName: BV8800
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2349,13 +2347,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2363,7 +2357,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.66
@@ -2372,13 +2372,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV9200 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.193 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9200
     marketingName: BV9200
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2387,13 +2385,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2401,7 +2395,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.193
@@ -2410,13 +2410,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; A52 Pro Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.105 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A52 Pro'
     marketingName: 'A52 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2425,13 +2423,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2439,7 +2433,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.105
@@ -2448,13 +2448,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; BV9900 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.105 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9900
     marketingName: BV9900
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -2463,13 +2461,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2477,7 +2471,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.105
@@ -2486,13 +2486,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; BV8800 Build/RP1A.200720.011)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV8800
     marketingName: BV8800
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -2501,13 +2499,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -2515,7 +2509,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -2533,13 +2533,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A85
     marketingName: A85
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2548,13 +2546,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2562,7 +2556,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.0
@@ -2571,13 +2571,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BV6200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6200
     marketingName: BV6200
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2586,13 +2584,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2600,7 +2594,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -2609,13 +2609,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BL9000 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.147 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BL9000
     marketingName: BL9000
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -2624,13 +2622,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2638,7 +2632,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 125.0.6422.147
@@ -2647,13 +2647,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; BV8100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV8100
     marketingName: BV8100
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2662,13 +2660,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2676,7 +2670,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -2685,13 +2685,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; HERO 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Hero 10'
     marketingName: 'Hero 10'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2560
       height: 1080
@@ -2700,13 +2698,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2714,7 +2708,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -2723,13 +2723,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; A52 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'A52 Pro'
     marketingName: 'A52 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2738,13 +2736,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2752,7 +2746,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 125.0.0.0
@@ -2761,13 +2761,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV7200 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.120 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV7200
     marketingName: BV7200
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2776,13 +2774,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2790,7 +2784,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.120
@@ -2799,13 +2799,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV5300 Pro Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.186 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV5300 Pro'
     marketingName: 'BV5300 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2814,13 +2812,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2828,7 +2822,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.186
@@ -2837,13 +2837,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; BV6600 Build/QP1A.190711.020)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6600
     marketingName: BV6600
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -2852,13 +2850,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -2866,7 +2860,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -2875,13 +2875,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV9300 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.58 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV9300
     marketingName: BV9300
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -2890,13 +2888,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2904,7 +2898,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.58
@@ -2913,13 +2913,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; COLOR 8 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Color 8'
     marketingName: 'Color 8'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2928,13 +2926,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2942,7 +2936,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.107
@@ -2951,13 +2951,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; WAVE 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Wave 8'
     marketingName: 'Wave 8'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2966,13 +2964,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2980,7 +2974,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -2989,13 +2989,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; BL8800Pro Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BL8800 Pro'
     marketingName: 'BL8800 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -3004,13 +3002,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3018,7 +3012,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.107
@@ -3027,13 +3027,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; N6000 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'N6000 SE'
     marketingName: 'N6000 SE'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1200
       height: 540
@@ -3042,13 +3040,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3056,7 +3050,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -3065,13 +3065,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; A85 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A85
     marketingName: A85
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3080,13 +3078,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3094,7 +3088,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.107
@@ -3103,13 +3103,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SHARK 8 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.135 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Shark 8'
     marketingName: 'Shark 8'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -3118,13 +3116,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3132,7 +3126,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.6778.135
@@ -3141,13 +3141,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Blackview A96) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A96
     marketingName: A96
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -3156,13 +3154,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3170,7 +3164,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.0.0
@@ -3179,13 +3179,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BV6200 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.123 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV6200
     marketingName: BV6200
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3194,13 +3192,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3208,7 +3202,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.6834.123
@@ -3217,13 +3217,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; WAVE 8C Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.88 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Wave 8C'
     marketingName: 'Wave 8C'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3232,13 +3230,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3246,7 +3240,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.88
@@ -3255,13 +3255,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; BV9300 Pro Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV9300 Pro'
     marketingName: 'BV9300 Pro'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -3270,13 +3268,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3284,7 +3278,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.116
@@ -3293,13 +3293,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; N6000 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N6000
     marketingName: N6000
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1200
       height: 540
@@ -3308,13 +3306,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3322,7 +3316,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.60
@@ -3341,13 +3341,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV5300 Plus'
     marketingName: 'BV5300 Plus'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -3356,13 +3354,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3370,7 +3364,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.0
@@ -3379,13 +3379,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; WAVE 8C Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Wave 8C'
     marketingName: 'Wave 8C'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3394,13 +3392,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3408,7 +3402,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.179
@@ -3417,13 +3417,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SHARK 9 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Shark 9'
     marketingName: 'Shark 9'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -3432,13 +3430,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3446,7 +3440,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.122
@@ -3455,13 +3455,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; BV6200 Plus Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV6200 Plus'
     marketingName: 'BV6200 Plus'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3470,13 +3468,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3484,7 +3478,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.171
@@ -3493,13 +3493,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; FORT 1 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fort 1'
     marketingName: 'Fort 1'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3508,13 +3506,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3522,7 +3516,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.59
@@ -3531,13 +3531,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; BV7100 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV7100
     marketingName: BV7100
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -3546,13 +3544,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3560,7 +3554,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.59
@@ -3579,13 +3579,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BV6200 Plus'
     marketingName: 'BV6200 Plus'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3594,13 +3592,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3608,7 +3602,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.0
@@ -3617,13 +3617,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; WAVE 8 Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.14 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Wave 8'
     marketingName: 'Wave 8'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3632,13 +3630,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3646,7 +3640,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.14
@@ -3665,13 +3665,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Shark 8'
     marketingName: 'Shark 8'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -3680,13 +3678,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3694,7 +3688,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0
@@ -3713,13 +3713,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Shark 9'
     marketingName: 'Shark 9'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -3728,13 +3726,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3742,7 +3736,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0
@@ -3761,13 +3761,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BV5300
     marketingName: BV5300
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -3776,13 +3774,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3790,7 +3784,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0
@@ -3799,13 +3799,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-us; ROCK 1 Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Rock 1'
     marketingName: 'Rock 1'
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -3814,13 +3812,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3828,7 +3822,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 95.0.4638.74
@@ -3837,13 +3837,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; A90 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A90
     marketingName: A90
     manufacturer: blackview
     brand: blackview
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -3852,13 +3850,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3866,7 +3860,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91

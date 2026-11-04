@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/3.0(WILLCOM;KYOCERA/WX01K/2;1.0.11.14.000000/1/C256) NetFront/3.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: WX01K
     marketingName: WX01K
     manufacturer: kyocera
     brand: kyocera
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: NetFront
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: access
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: NetFront
     version: 3.4.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (MobilePhone; NMCS/3.4; like Gecko/20060901;KYOCERA/WX340K/2;3.0.3.11.000000/1) NetFront/3.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: WX340K
     marketingName: WX340K
     manufacturer: kyocera
     brand: kyocera
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: NetFront
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: access
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: NetFront
     version: 3.4.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/3.0(WILLCOM;KYOCERA/WX02K/2;1.0.0.7.000000/1/C256) NetFront/3.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: WX02K
     marketingName: Sweetia
     manufacturer: kyocera
     brand: willcom
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: NetFront
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: access
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: NetFront
     version: 3.4.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/3.0(WILLCOM;KYOCERA/402KC/2;3.1.2.24.000000/1/C256) NetFront/3.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 402KC
     marketingName: 402KC
     manufacturer: kyocera
     brand: kyocera
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: NetFront
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: access
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: NetFront
     version: 3.4.0

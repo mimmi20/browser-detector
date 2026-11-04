@@ -12,9 +12,9 @@
     size: null
   type: car-entertainment-system
   platform: null
-'byd carpad':
-  deviceName: CarPad
-  marketingName: CarPad
+'byd dilink 5.0':
+  deviceName: 'DiLink 5.0'
+  marketingName: 'DiLink 5.0'
   manufacturer: byd
   brand: byd
   dualOrientation: false
@@ -43,6 +43,20 @@
 'byd dilink 3.0':
   deviceName: 'DiLink 3.0'
   marketingName: 'DiLink 3.0'
+  manufacturer: byd
+  brand: byd
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: null
+    height: null
+    touch: true
+    size: null
+  type: car-entertainment-system
+  platform: null
+'byd dilink 4.0':
+  deviceName: 'DiLink 4.0'
+  marketingName: 'DiLink 4.0'
   manufacturer: byd
   brand: byd
   dualOrientation: false

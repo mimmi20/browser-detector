@@ -2,13 +2,11 @@
   headers:
     user-agent: Alcatel-OH1C
   device:
-    architecture: null
+    architecture: ''
     deviceName: OH1C
     marketingName: OH1C
     manufacturer: tcl
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: TCL-Q550
   device:
-    architecture: null
+    architecture: ''
     deviceName: Q550
     marketingName: Q550
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: TCL-MOBO898/260/WAP-2.0/MIDP-1.0/CLDC-1.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MOBO 898'
     marketingName: 'MOBO 898'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'TCL-MOBO858/210/wap 2.0/MIDP 1.0/CLDC 1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MOBO 858'
     marketingName: 'MOBO 858'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'TCL-MOBO650/SW-07.02.05/WAP-1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MOBO 650'
     marketingName: 'MOBO 650'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'TCL-E767/OC02-1-1.58-0618/WAP-2.0/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E767
     marketingName: E767
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'TCL-e767 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E767
     marketingName: E767
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: TCL-E767
   device:
-    architecture: null
+    architecture: ''
     deviceName: E767
     marketingName: E767
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: TCL-D628
   device:
-    architecture: null
+    architecture: ''
     deviceName: D628
     marketingName: D628
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: TCL-D368/W05.12/WAP-1.2.1
   device:
-    architecture: null
+    architecture: ''
     deviceName: D368
     marketingName: D368
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'TCL-758/SW-08.03.01/WAP-1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '758'
     marketingName: '758'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: TCL-728
   device:
-    architecture: null
+    architecture: ''
     deviceName: '728'
     marketingName: '728'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -435,13 +433,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: TCL-718
   device:
-    architecture: null
+    architecture: ''
     deviceName: '718'
     marketingName: '718'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -473,13 +471,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: TCL-3199
   device:
-    architecture: null
+    architecture: ''
     deviceName: '3199'
     marketingName: '3199'
     manufacturer: tcl
     brand: tcl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 128
       height: 96
@@ -511,13 +509,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

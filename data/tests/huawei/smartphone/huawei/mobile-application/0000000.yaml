@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ART-L29 Build/HUAWEIART-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 PetalSearch/11.0.1.303 comdirect/1.0 (appVersion:21.1.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ART-L29
     marketingName: 'P40 Lite E'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; PPA-LX2 Build/HUAWEIPPA-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 PetalSearch/11.0.1.303'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PPA-LX2
     marketingName: 'P smart 4G (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; DRA-LX9 Build/HUAWEIDRA-LX9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 PetalSearch/11.0.1.305'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DRA-LX9
     marketingName: Y5p
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 PetalSearch/11.0.1.305 comdirect/1.0 (appVersion:21.2.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JNY-LX1
     marketingName: 'P40 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2310
       height: 1080
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MED-LX9N Build/HUAWEIMED-LX9N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 PetalSearch/11.0.3.303 comdirect/1.0 (appVersion:21.4.2;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MED-LX9N
     marketingName: 'Y6p (2020)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ELS-NX9 Build/HUAWEIELS-N29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 PetalSearch/11.0.3.303'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ELS-NX9
     marketingName: 'P40 Pro 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2640
       height: 1200
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; PPA-LX2 Build/HUAWEIPPA-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/11.1.1.310 HMSCore/6.0.0.305'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PPA-LX2
     marketingName: 'P smart 4G (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/11.1.1.310 HMSCore/6.0.1.305'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JNY-LX1
     marketingName: 'P40 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2310
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ART-L29 Build/HUAWEIART-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/11.1.1.310 HMSCore/6.0.1.305'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ART-L29
     marketingName: 'P40 Lite E'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; NOH-NX9 Build/HUAWEINOH-N29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/11.1.3.310 HMSCore/6.0.1.306'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NOH-NX9
     marketingName: 'Mate 40 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2772
       height: 1344
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; PPA-LX1 Build/HUAWEIPPA-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/11.1.3.310 HMSCore/6.0.1.305'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PPA-LX1
     marketingName: 'P smart 4G (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ELS-NX9 Build/HUAWEIELS-N29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/11.1.3.310 HMSCore/6.0.1.306'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ELS-NX9
     marketingName: 'P40 Pro 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2640
       height: 1200
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MED-LX9N Build/HUAWEIMED-LX9N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/11.1.1.310 HMSCore/6.0.1.305'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MED-LX9N
     marketingName: 'Y6p (2020)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; VOG-L29 Build/HUAWEIVOG-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36 HuaweiBrowser/11.1.3.310 HMSCore/6.1.0.306 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VOG-L29
     marketingName: 'P30 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 93.0.4577.82
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ANA-NX9 Build/HUAWEIANA-N29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 HuaweiBrowser/11.1.5.311 HMSCore/6.2.0.302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ANA-NX9
     marketingName: 'P40 5G Dual'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2310
       height: 1080
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; LIO-AN00 Build/HUAWEILIO-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 HuaweiBrowser/11.1.5.311 HMSCore/6.2.0.302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LIO-AN00
     marketingName: 'Mate 30 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1176
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; MHA-L29 Build/HUAWEIMHA-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36 HuaweiBrowser/11.1.5.311 HMSCore/6.2.0.301'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MHA-L29
     marketingName: 'Mate 9'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1920
       height: 1080
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.45
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; DRA-LX9 Build/HUAWEIDRA-LX9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 HuaweiBrowser/11.1.5.311 HMSCore/6.2.0.301'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DRA-LX9
     marketingName: Y5p
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; NEN-LX1 Build/HUAWEINEN-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 HuaweiBrowser/11.1.5.311 HMSCore/6.2.0.302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NEN-LX1
     marketingName: 'Nova 8i'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2376
       height: 1080
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.106
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ANE-LX1 Build/HUAWEIANE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.87 Mobile Safari/537.36HiSearch/21.1.11.300'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ANE-LX1
     marketingName: 'P20 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.87
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; PPA-LX1 Build/HUAWEIPPA-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36HiSearch/21.1.11.300'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PPA-LX1
     marketingName: 'P smart 4G (2021)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36HiSearch/21.1.11.303'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JNY-LX1
     marketingName: 'P40 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2310
       height: 1080
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; AQM-LX1 Build/HUAWEIAQM-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 HuaweiBrowser/12.0.1.302 HMSCore/6.3.0.331'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AQM-LX1
     marketingName: Y8p
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; VTR-L09 Build/HUAWEIVTR-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.105 Mobile Safari/537.36HiSearch/21.1.11.303'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VTR-L09
     marketingName: P10
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 89.0.4389.105
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HarmonyOS; GLK-AL00; HMSCore 6.2.0.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.51 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GLK-AL00
     marketingName: 'Nova 5i (China)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2310
       height: 1080
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: HarmonyOS
-    marketingName: HarmonyOS
-    version: null
-    manufacturer: huawei
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: HarmonyOS
+    marketingName: HarmonyOS
+    version: null
+    manufacturer: huawei
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.51
@@ -955,13 +955,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HarmonyOS; GLK-AL00; HMSCore 6.2.0.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.51 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GLK-AL00
     marketingName: 'Nova 5i (China)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2310
       height: 1080
@@ -970,13 +968,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -984,7 +978,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 98.0.0
@@ -993,13 +993,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; NAM-LX9 Build/HUAWEINAM-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 HuaweiBrowser/12.0.1.302 HMSCore/6.4.0.312'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NAM-LX9
     marketingName: 'Nova 9'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1008,13 +1006,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -1022,7 +1016,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -1032,13 +1032,11 @@
     x-requested-with: com.huawei.appmarket
     user-agent: 'Mozilla/5.0 (Linux; Android 10; JNY-LX1 Build/HUAWEIJNY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JNY-LX1
     marketingName: 'P40 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2310
       height: 1080
@@ -1047,13 +1045,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: AppGallery
     modus: null
@@ -1061,7 +1055,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -1070,13 +1070,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; VOG-L29 Build/HUAWEIVOG-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.88 Mobile Safari/537.36HiSearch/22.0.3.303'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VOG-L29
     marketingName: 'P30 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -1085,13 +1083,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -1099,7 +1093,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.88
@@ -1109,13 +1109,11 @@
     x-requested-with: com.huawei.fastapp
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ELS-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ELS-NX9
     marketingName: 'P40 Pro 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2640
       height: 1200
@@ -1124,13 +1122,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Quick App Center'
     modus: null
@@ -1138,7 +1132,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116
@@ -1148,13 +1148,11 @@
     x-requested-with: com.huawei.fastapp
     user-agent: 'Mozilla/5.0 (Linux; Android 10; NOH-NX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NOH-NX9
     marketingName: 'Mate 40 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2772
       height: 1344
@@ -1163,13 +1161,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Quick App Center'
     modus: null
@@ -1177,7 +1171,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116
@@ -1186,13 +1186,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; JLN-LX1 Build/HUAWEIJLN-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 PetalSearch/11.0.1.324'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JLN-LX1
     marketingName: 'Nova 9 SE'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -1201,13 +1199,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -1215,7 +1209,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -1224,13 +1224,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MAR-LX1A Build/HUAWEIMAR-L21A; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 HMSCore/6.4.0.311'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MAR-LX1A
     marketingName: 'P30 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2312
       height: 1080
@@ -1239,13 +1237,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -1253,7 +1247,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.41
@@ -1263,13 +1263,11 @@
     x-requested-with: com.huawei.search
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MAR-LX1A Build/HUAWEIMAR-L21A; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.78 Mobile Safari/537.36HiSearch/22.0.4.309'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MAR-LX1A
     marketingName: 'P30 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2312
       height: 1080
@@ -1278,13 +1276,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -1292,7 +1286,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.78
@@ -1302,13 +1302,11 @@
     x-requested-with: com.huawei.hwsearch
     user-agent: 'Mozilla/5.0 (Linux; Android 10; YAL-L21 Build/HUAWEIYAL-L61; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36 HuaweiBrowser/12.0.4.304 HMSCore/6.5.0.312'
   device:
-    architecture: null
+    architecture: ''
     deviceName: YAL-L21
     marketingName: 'Honor 20'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -1317,13 +1315,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -1331,7 +1325,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1341,13 +1341,11 @@
     x-requested-with: com.huawei.hwsearch
     user-agent: 'Mozilla/5.0 (Linux; Android 9; FIG-LX1 Build/HUAWEIFIG-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36 HuaweiBrowser/12.0.3.314 HMSCore/6.5.0.311'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FIG-LX1
     marketingName: 'P Smart'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -1356,13 +1354,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -1370,7 +1364,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1380,13 +1380,11 @@
     x-requested-with: com.huawei.fastapp
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ART-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ART-L29
     marketingName: 'P40 Lite E'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -1395,13 +1393,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Quick App Center'
     modus: null
@@ -1409,7 +1403,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116
@@ -1418,13 +1418,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; FIG-LX1 Build/HUAWEIFIG-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36 HuaweiBrowser/12.0.3.314 HMSCore/6.5.0.311'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FIG-LX1
     marketingName: 'P Smart'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -1433,13 +1431,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -1447,7 +1441,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1456,13 +1456,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; YAL-L21 Build/HUAWEIYAL-L61; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36 HuaweiBrowser/12.0.4.304 HMSCore/6.5.0.312'
   device:
-    architecture: null
+    architecture: ''
     deviceName: YAL-L21
     marketingName: 'Honor 20'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -1471,13 +1469,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -1485,7 +1479,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1494,13 +1494,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ANE-LX1 Build/HUAWEIANE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36 HMSCore/6.6.0.331'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ANE-LX1
     marketingName: 'P20 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -1509,13 +1507,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -1523,7 +1517,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.129
@@ -1532,13 +1532,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; CLT-L29 Build/HUAWEICLT-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36HiSearch/22.0.6.305'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CLT-L29
     marketingName: 'P20 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2240
       height: 1080
@@ -1547,13 +1545,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -1561,7 +1555,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.69
@@ -1570,13 +1570,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MAR-LX1B Build/HUAWEIMAR-L21B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.69 Mobile Safari/537.36 HuaweiBrowser/12.1.0.303 HMSCore/6.6.0.331'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MAR-LX1B
     marketingName: 'P30 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2312
       height: 1080
@@ -1585,13 +1583,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -1599,7 +1593,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.69
@@ -1608,13 +1608,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MAR-LX1B Build/HUAWEIMAR-L21B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36HiSearch/22.0.6.311'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MAR-LX1B
     marketingName: 'P30 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2312
       height: 1080
@@ -1623,13 +1621,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -1637,7 +1631,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -1646,13 +1646,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; LIO-L29 Build/HUAWEILIO-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 HuaweiBrowser/12.1.1.324 HMSCore/6.7.0.322'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LIO-L29
     marketingName: 'Mate 30 Pro 4G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1176
@@ -1661,13 +1659,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -1675,7 +1669,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -1684,13 +1684,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ELS-NX9 Build/HUAWEIELS-N29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36HiSearch/22.0.6.313'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ELS-NX9
     marketingName: 'P40 Pro 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2640
       height: 1200
@@ -1699,13 +1697,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -1713,7 +1707,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -1723,13 +1723,11 @@
     x-requested-with: com.huawei.hwsearch
     user-agent: 'Mozilla/5.0 (Linux; Android 9; ANE-LX1 Build/HUAWEIANE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36 HuaweiBrowser/12.1.0.303 HMSCore/6.6.0.331'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ANE-LX1
     marketingName: 'P20 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -1738,13 +1736,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -1752,7 +1746,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.125
@@ -1762,13 +1762,11 @@
     x-requested-with: com.huawei.hwsearch
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MAR-LX1B Build/HUAWEIMAR-L21B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.69 Mobile Safari/537.36 HuaweiBrowser/12.1.0.303 HMSCore/6.6.0.331'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MAR-LX1B
     marketingName: 'P30 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2312
       height: 1080
@@ -1777,13 +1775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -1791,7 +1785,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.69
@@ -1800,13 +1800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SNE-LX1 Build/HUAWEISNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36 HuaweiBrowser/12.1.3.304 HMSCore/6.8.0.332'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SNE-LX1
     marketingName: 'Mate 20 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1815,13 +1813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -1829,7 +1823,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.128
@@ -1839,13 +1839,11 @@
     x-requested-with: com.huawei.hwsearch
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SNE-LX1 Build/HUAWEISNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36 HuaweiBrowser/12.1.3.304 HMSCore/6.8.0.332'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SNE-LX1
     marketingName: 'Mate 20 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1854,13 +1852,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -1868,7 +1862,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.128
@@ -1877,13 +1877,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; STK-L21 Build/HUAWEISTK-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36HiSearch/22.0.6.317'
   device:
-    architecture: null
+    architecture: ''
     deviceName: STK-L21
     marketingName: 'Y9 Prime (2019)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1892,13 +1890,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -1906,7 +1900,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.118
@@ -1915,13 +1915,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HMA-L09 Build/HUAWEIHMA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36HiSearch/22.0.6.317'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HMA-L09
     marketingName: 'Mate 20 (Global)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2244
       height: 1080
@@ -1930,13 +1928,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -1944,7 +1938,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -1954,13 +1954,11 @@
     x-requested-with: com.huawei.fastapp
     user-agent: 'Mozilla/5.0 (Linux; Android 10; BND-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BND-AL00
     marketingName: 'Honor 7X'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1080
@@ -1969,13 +1967,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Quick App Center'
     modus: null
@@ -1983,7 +1977,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116
@@ -1992,13 +1992,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SNE-LX1 Build/HUAWEISNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36HiSearch/22.0.6.317'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SNE-LX1
     marketingName: 'Mate 20 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2007,13 +2005,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -2021,7 +2015,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -2030,13 +2030,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ART-L29N Build/HUAWEIART-L29N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/14.0.0.365 HMSCore/6.12.0.301'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ART-L29N
     marketingName: 'P40 Lite E'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2045,13 +2043,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -2059,7 +2053,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -2069,13 +2069,11 @@
     x-requested-with: com.huawei.hwsearch
     user-agent: 'Mozilla/5.0 (Linux; Android 10; HMA-L29 Build/HUAWEIHMA-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.125 Mobile Safari/537.36 HMSCore/6.5.1.302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HMA-L29
     marketingName: 'Mate 20 (Global)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2244
       height: 1080
@@ -2084,13 +2082,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: PetalSearch
     modus: null
@@ -2098,7 +2092,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.125
@@ -2107,13 +2107,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; JAD-LX9 Build/HUAWEIJAD-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 Mobile Safari/537.36 HuaweiBrowser/14.0.2.311 HMSCore/6.13.0.302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JAD-LX9
     marketingName: 'P50 Pro 4G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2700
       height: 1228
@@ -2122,13 +2120,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -2136,7 +2130,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.105
@@ -2145,13 +2145,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; DCO-LX9 Build/HUAWEIDCO-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 Mobile Safari/537.36 HuaweiBrowser/14.0.2.311 HMSCore/6.13.0.302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DCO-LX9
     marketingName: 'Mate 50 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2616
       height: 1212
@@ -2160,13 +2158,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -2174,7 +2168,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.105
@@ -2183,13 +2183,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; MNA-LX9 Build/HUAWEIMNA-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36 HuaweiBrowser/14.0.5.302 HMSCore/6.14.0.302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MNA-LX9
     marketingName: 'P60 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2700
       height: 1220
@@ -2198,13 +2196,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -2212,7 +2206,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 99.0.4844.88
@@ -2222,13 +2222,11 @@
     x-requested-with: com.huawei.search
     user-agent: 'Mozilla/5.0 (Linux; Android 10; ART-L29 Build/HUAWEIART-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.105 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ART-L29
     marketingName: 'P40 Lite E'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2237,13 +2235,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'HUAWEI AI Search'
     modus: null
@@ -2251,7 +2245,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.105
@@ -2260,13 +2260,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; HBP-LX9 Build/HUAWEIHBP-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36 HuaweiBrowser/16.0.6.300 HMSCore/6.15.4.322'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HBP-LX9
     marketingName: 'Pura 70 Ultra'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2844
       height: 1260
@@ -2275,13 +2273,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -2289,7 +2283,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -2298,13 +2298,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; MAR-LX1M Build/HUAWEIMAR-L01MEA; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.143 Mobile Safari/537.36 HMSCore/6.13.0.302'
   device:
-    architecture: null
+    architecture: ''
     deviceName: MAR-LX1M
     marketingName: 'P30 Lite'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2312
       height: 1080
@@ -2313,13 +2311,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Huawei Mobile Services'
     modus: null
@@ -2327,7 +2321,13 @@
     manufacturer: huawei
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.143

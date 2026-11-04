@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Palmscape/3.0J [ja] (v. 3.5.2H1.5; 153x130; c8)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general HP device'
     marketingName: 'general HP device'
     manufacturer: hp
     brand: hp
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: PalmOS
-    marketingName: PalmOS
-    version: null
-    manufacturer: palm
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Palmscape
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: PalmOS
+    marketingName: PalmOS
+    version: null
+    manufacturer: palm
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H8166 Build/52.0.A.8.83) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8166
     marketingName: 'Xperia XZ2 Premium Dual'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.128
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H8266 Build/52.0.A.8.131) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8266
     marketingName: 'Xperia XZ2'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.128
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; G8141 Build/47.2.A.10.107) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128) comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G8141
     marketingName: 'Xperia XZ Premium'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3840
       height: 2160
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.128
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H9436 Build/52.1.A.2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H9436
     marketingName: 'Xperia XZ3'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2880
       height: 1440
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.128
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H8296 Build/52.1.A.3.49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8296
     marketingName: 'Xperia XZ2'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.128
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H8216 Build/52.1.A.3.49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8216
     marketingName: 'Xperia XZ2'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.128
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; I4113) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I4113
     marketingName: 'Xperia 10'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.127
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H3213) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127) comdirect/1.0 (appVersion:20.12.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H3213
     marketingName: 'Xperia XA2 Ultra'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.127
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H8314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8314
     marketingName: 'Xperia XZ2 Compact'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.127
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; I3113) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I3113
     marketingName: 'Xperia 10'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.127
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; J9110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J9110
     marketingName: 'Xperia 1'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3840
       height: 1644
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.127
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; J8210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J8210
     marketingName: 'Xperia 5'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H4113) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H4113
     marketingName: 'Xperia XA2 Dual'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; J9210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J9210
     marketingName: 'Xperia 5'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; XQ-BT52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-BT52
     marketingName: 'Xperia 10 III'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2520
       height: 1080
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; XQ-AU52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-AU52
     marketingName: 'Xperia 10 II'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; XQ-BQ52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-BQ52
     marketingName: 'Xperia 5 III'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; XQ-BC52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-BC52
     marketingName: 'Xperia 1 III'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3840
       height: 1644
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.41
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; XQ-AS52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-AS52
     marketingName: 'Xperia 5 II 5G'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.41
@@ -734,13 +734,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36 (Ecosia android@143.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-DE54
     marketingName: 'Xperia 5 V 5G'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2520
       height: 1080
@@ -749,13 +747,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -763,7 +757,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.0
@@ -782,13 +782,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36 (Ecosia android@149.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-DC54
     marketingName: 'Xperia 10 V'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2520
       height: 1080
@@ -797,13 +795,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -811,7 +805,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.0
@@ -830,13 +830,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36 (Ecosia android@150.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SOG06
     marketingName: 'Xperia 1 IV'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3840
       height: 1644
@@ -845,13 +843,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -859,7 +853,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0

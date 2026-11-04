@@ -2,13 +2,11 @@
   headers:
     user-agent: SIE-EL71
   device:
-    architecture: null
+    architecture: ''
     deviceName: EL71
     marketingName: EL71
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: SIE-M65
   device:
-    architecture: null
+    architecture: ''
     deviceName: M65
     marketingName: M65
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 176
       height: 132
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: SIE-M65I
   device:
-    architecture: null
+    architecture: ''
     deviceName: M65
     marketingName: M65
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 176
       height: 132
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: SIE-SK65
   device:
-    architecture: null
+    architecture: ''
     deviceName: SK65
     marketingName: SK65
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 176
       height: 132
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'BenQ P31/R101 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P31
     marketingName: P31
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 208
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'BenQ P30/R101 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P30
     marketingName: P30
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 208
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

@@ -12,13 +12,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83  Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -27,13 +25,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: emporiaAPP
     modus: null
@@ -41,7 +35,13 @@
     manufacturer: emporia
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0
@@ -54,13 +54,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83  Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -69,13 +67,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: emporiaAPP
     modus: null
@@ -83,7 +77,13 @@
     manufacturer: emporia
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0

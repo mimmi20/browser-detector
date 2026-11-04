@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; PEAQ PET 100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'PET 100'
     marketingName: 'PET 100'
     manufacturer: peaq
     brand: peaq
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116
@@ -48,13 +48,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'PET 101-H232E'
     marketingName: 'PET 101'
     manufacturer: peaq
     brand: peaq
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -63,13 +61,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -77,7 +71,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.0
@@ -86,13 +86,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; PET 101-H232E-13 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.261 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'PET 101-H232E-13'
     marketingName: 'PET 101'
     manufacturer: peaq
     brand: peaq
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -101,13 +99,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -115,7 +109,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.6778.261

@@ -221,7 +221,7 @@ rules:
   /softbank/i: softbank
   /formuler/i: aloys
   /oukitel/i: oukitel
-  /kyocera/i: kyocera
+  /kyocera|kwc-/i: kyocera
   /logicom/i: logicom
   /pantech/i: pantech
   /alcatel/i: alcatel
@@ -565,7 +565,7 @@ rules:
   /voix/i: voix
   /heji/i: heji
   /h96_/i: h96
-  /itel/i: itel
+  /(?<!h)itel/i: itel
   /veon/i: veon
   /econ(?![st])/i: econ
   /meu/i: meu

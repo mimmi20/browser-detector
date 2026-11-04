@@ -2,13 +2,11 @@
   headers:
     user-agent: 'SonyEricssonP910i/R3A SEMC-Browser/Symbian/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P910i
     marketingName: P910
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 208
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'SonyEricssonK750i/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K750i
     marketingName: K750i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'SonyEricssonD750i/R1A Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: D750i
     marketingName: D750i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'SonyEricssonF500i/R1A SEMC-Browser/4.0 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: F500i
     marketingName: F500i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'SonyEricssonJ300a/R2BA SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J300a
     marketingName: J300a
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'SonyEricssonJ300c/R2AL SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J300c
     marketingName: J300c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'SonyEricssonJ300i/R2AL SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J300i
     marketingName: J300i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'SonyEricssonK300/R2AJ SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K300
     marketingName: K300
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'SonyEricssonK300c/R2AJ SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K300c
     marketingName: K300c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'SonyEricssonK300i/R1A SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K300i
     marketingName: K300i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'SonyEricssonK500c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K500c
     marketingName: K500c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -397,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'SonyEricssonK506c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K506c
     marketingName: K506c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -435,13 +433,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'SonyEricssonK508c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K508c
     marketingName: K508c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -473,13 +471,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'SonyEricssonK508i/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K508i
     marketingName: K508i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -511,13 +509,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'SonyEricssonK600/R2B Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K600
     marketingName: K600
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -549,13 +547,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'SonyEricssonK600c/R2G Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K600c
     marketingName: K600c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -587,13 +585,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'SonyEricssonK600i/R1K Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K600i
     marketingName: K600i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -625,13 +623,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'SonyEricssonK608i/R1K Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K608i
     marketingName: K608i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -663,13 +661,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'CELKON.C297.SonyEricssonK700c/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K700c
     marketingName: K700c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -701,13 +699,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'SonyEricssonK758c/R1AA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K758c
     marketingName: K758c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -739,13 +737,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'SonyEricssonK858c/R2N SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K858c
     marketingName: K858c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -777,13 +775,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'SonyEricssonP900i/R2J Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P900
     marketingName: P900
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 208
@@ -815,13 +813,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'SonyEricssonP910a/R2A SEMC-Browser/Symbian/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P910a
     marketingName: P910
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 208
@@ -853,13 +851,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'SonyEricssonP910c/R2A SEMC-Browser/Symbian/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P910c
     marketingName: P910
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 208
@@ -891,13 +889,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'SonyEricssonS700c/R3B SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S700c
     marketingName: S700c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -929,13 +927,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'SonyEricssonS700i/R3B SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S700i
     marketingName: S700i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -967,13 +965,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'SonyEricssonS710a/R1A SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S710a
     marketingName: S710a
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1005,13 +1003,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'SonyEricssonV600i/R2AB Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V600i
     marketingName: V600i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1043,13 +1041,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'SonyEricssonV800/R1A Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V800
     marketingName: V800
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1081,13 +1079,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'SonyEricssonW700c/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W700c
     marketingName: W700c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1119,13 +1117,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'SonyEricssonW750i/R1BD Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W750i
     marketingName: W750i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1157,13 +1155,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'SonyEricssonw810i/R1AA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W810i
     marketingName: W810i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1195,13 +1193,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'SonyEricssonW980i/R1X Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W980i
     marketingName: W980i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -1233,13 +1231,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'SonyEricssonZ500a/R1A SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z500a
     marketingName: Z500a
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -1271,13 +1269,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'SonyEricssonZ500i/R3A SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z500i
     marketingName: Z500i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -1309,13 +1307,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'SonyEricssonZ520c/R1N Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z520c
     marketingName: Z520c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -1347,13 +1345,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'SonyEricssonZ520i/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z520i
     marketingName: Z520i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -1385,13 +1383,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'SonyEricssonZ800c/R1A Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z800
     marketingName: Z800
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1423,13 +1421,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'SonyEricssonZ520a/R3K Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z520a
     marketingName: Z520a
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -1461,13 +1459,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'SonyEricssonZ1010/R1K SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Z1010
     marketingName: Z1010
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1499,13 +1497,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'SonyEricssonW800i/R1NA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W800i
     marketingName: W800i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1537,13 +1535,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'SonyEricssonW800c/R1N Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W800c
     marketingName: W800c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1575,13 +1573,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'SonyEricssonW700i/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0 UP.Link/6.3.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: W700i
     marketingName: W700i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1613,13 +1611,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'SonyEricssonT610/R2L SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T610
     marketingName: T610
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -1651,13 +1649,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'SonyEricssonK750c/R1N Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K750c
     marketingName: K750c
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1689,13 +1687,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'SonyEricssonK700i/R2Y SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K700i
     marketingName: K700i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1727,13 +1725,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'SonyEricssonK700/R2A SEMC-Browser/4.0 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K700
     marketingName: K700
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -1765,13 +1763,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'SonyEricssonK500i/R2Y SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K500i
     marketingName: K500i
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -1803,13 +1801,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'SonyEricssonK300a/R2BA SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K300a
     marketingName: K300a
     manufacturer: sony-ericsson
     brand: sony-ericsson
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -1841,13 +1839,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: SEMC-Browser
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: sony-ericsson
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

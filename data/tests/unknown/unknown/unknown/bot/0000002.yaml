@@ -1,128 +1,12 @@
 -
   headers:
-    user-agent: fidget-spinner-bot
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: fidget-spinner-bot
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: bot
-    isbot: true
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: test-bot
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: test-bot
-    modus: null
-    version: null
-    manufacturer: unknown
-    type: bot
-    isbot: true
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; impendoom-bot/0.1.0; +https://impendoom.com/) Safari/537.36'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: impendoom-bot
-    modus: null
-    version: 0.1.0
-    manufacturer: unknown
-    type: bot
-    isbot: true
-    bits: null
-  engine:
-    name: WebKit
-    version: 537.36.0
-    manufacturer: apple
--
-  headers:
     user-agent: my-tiny-bot
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +15,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: my-tiny-bot
     modus: null
@@ -145,7 +25,13 @@
     manufacturer: unknown
     type: bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +40,11 @@
   headers:
     user-agent: thesis-research-bot
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +53,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: thesis-research-bot
     modus: null
@@ -183,85 +63,13 @@
     manufacturer: unknown
     type: bot
     isbot: true
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    sec-ch-ua-platform: '"Windows"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'AccordResearchBot/1.0 (T1-Authority-Marker-Audit; mailto:13fisch@web.de)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
+    bits: 0
   os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
-  client:
-    name: ResearchBot
-    modus: null
-    version: 1.0.0
-    manufacturer: unknown
-    type: bot
-    isbot: true
-    bits: null
-  engine:
     name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'ImpressumResearchBot/0.1 (+mailto:budzislaw7@gmail.com; academic research, DE e-commerce Impressum study)'
-  device:
-    architecture: null
-    deviceName: null
     marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
     version: null
-    manufacturer: mediatek
-    bits: null
-  client:
-    name: ResearchBot
-    modus: null
-    version: 0.1.0
     manufacturer: unknown
-    type: bot
-    isbot: true
-    bits: null
+    bits: 0
   engine:
     name: null
     version: null

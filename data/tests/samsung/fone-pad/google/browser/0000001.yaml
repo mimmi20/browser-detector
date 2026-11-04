@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 13; SM-X706B Build/TP1A.220624.014)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X706B
     marketingName: 'Galaxy Tab S8 11.0" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-X205N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X205N
     marketingName: 'Galaxy Tab A8 10.5" LTE (2021)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-T738T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T738T
     marketingName: 'Galaxy Tab S7 FE 12.4" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -93,13 +91,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.150
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-T738V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T738V
     marketingName: 'Galaxy Tab S7 FE 12.4" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -131,13 +129,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-T735C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T735C
     marketingName: 'Galaxy Tab S7 FE 12.4" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -169,13 +167,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 68.0.3440.106
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-P619 Build/SP2A.220305.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-P619
     marketingName: 'Galaxy Tab S6 Lite 10.4" LTE (2022)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -207,13 +205,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.125
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-T636B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T636B
     marketingName: 'Galaxy Tab Active 4 Pro 10.1" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -245,13 +243,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-T597V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T597V
     marketingName: 'Galaxy Tab A 10.5" LTE (2018)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -283,13 +281,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.81
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-T597P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T597P
     marketingName: 'Galaxy Tab A 10.5" LTE (2018)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -321,13 +319,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.106
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-T225N Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T225N
     marketingName: 'Galaxy Tab A7 Lite 8.7" 4G (Korea, 2021)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -359,13 +357,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.153
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X616B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X616B
     marketingName: 'Galaxy Tab S9 FE+ 12.4" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -397,13 +395,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X816B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X816B
     marketingName: 'Galaxy Tab S9+ 12.4" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2800
       height: 1752
@@ -435,13 +433,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X916B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X916B
     marketingName: 'Galaxy Tab S9 Ultra 14.6" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1848
@@ -473,13 +471,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X518U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X518U
     marketingName: 'Galaxy Tab S9 FE 10.9" 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2304
       height: 1440
@@ -511,13 +509,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X516B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X516B
     marketingName: 'Galaxy Tab S9 FE 10.9" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2304
       height: 1440
@@ -549,13 +547,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X306B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X306B
     marketingName: 'Galaxy Tab Active 5 8.0" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -587,13 +585,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X218U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X218U
     marketingName: 'Galaxy Tab A9+ 11.0" 5G (USA, 2023)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -625,13 +623,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-T225 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.123 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T225
     marketingName: 'Galaxy Tab A7 Lite 8.7" 4G (2021)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -663,13 +661,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.123
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X216B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X216B
     marketingName: 'Galaxy Tab A9+ 11.0" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -701,13 +699,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-T295 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.186 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T295
-    marketingName: 'Galaxy Tab A 8.0" LTE (2019, Global)'
+    marketingName: 'Galaxy Tab A 8.0" 4G (2019, Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -739,13 +737,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.186
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X716B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/128.0.6613.146 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X716B
     marketingName: 'Galaxy Tab S9 12.4" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -777,13 +775,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 128.0.6613.146
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-us; SM-X926B Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.111 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X926B
     marketingName: 'Galaxy Tab S10 Ultra 14.6" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1848
@@ -815,13 +813,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.111
@@ -846,13 +846,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X216B
     marketingName: 'Galaxy Tab A9+ 11.0" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -861,13 +859,9 @@
     type: fone-pad
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -875,7 +869,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0
@@ -892,13 +892,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X216B
     marketingName: 'Galaxy Tab A9+ 11.0" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -907,13 +905,9 @@
     type: fone-pad
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chromium
     modus: null
@@ -921,7 +915,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0
@@ -930,13 +930,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-X215) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X215
     marketingName: 'Galaxy Tab A9+ 11.0" LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -945,13 +943,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -959,7 +953,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.0.0
@@ -968,13 +968,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 14; SM-X115 Build/UP1A.231005.007)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X115
     marketingName: 'Galaxy Tab A9 8.7" 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -983,13 +981,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -997,7 +991,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1006,13 +1006,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X115 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.111 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X115
     marketingName: 'Galaxy Tab A9 8.7" 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -1021,13 +1019,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1035,7 +1029,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.7049.111
@@ -1044,13 +1044,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X218U Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.137 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X218U
     marketingName: 'Galaxy Tab A9+ 11.0" 5G (USA, 2023)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -1059,13 +1057,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1073,7 +1067,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.6943.137
@@ -1082,13 +1082,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 14; SM-X516B Build/UP1A.231005.007)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X516B
     marketingName: 'Galaxy Tab S9 FE 10.9" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2304
       height: 1440
@@ -1097,13 +1095,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -1111,7 +1105,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1120,13 +1120,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-T867U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T867U
     marketingName: 'Galaxy Tab S6 10.5" LTE (T-Mobile)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -1135,13 +1133,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1149,7 +1143,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.117
@@ -1158,13 +1158,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-X626B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X626B
     marketingName: 'Galaxy Tab S10 FE+ 13.1" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2880
       height: 1800
@@ -1173,13 +1171,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1187,7 +1181,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.103
@@ -1196,13 +1196,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-T387W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T387W
     marketingName: 'Galaxy Tab A 8.0" (2018, Canada)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -1211,13 +1209,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1225,7 +1219,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -1234,13 +1234,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-X516B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.94 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X516B
     marketingName: 'Galaxy Tab S9 FE 10.9" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2304
       height: 1440
@@ -1249,13 +1247,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1263,7 +1257,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 139.0.7258.94
@@ -1272,13 +1272,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X826B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X826B
     marketingName: 'Galaxy Tab S10+ 12.4" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2800
       height: 1752
@@ -1287,13 +1285,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1301,7 +1295,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.122
@@ -1310,13 +1310,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-X406 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X406
     marketingName: 'Galaxy Tab S10 Lite 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2112
       height: 1320
@@ -1325,13 +1323,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1339,7 +1333,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.122
@@ -1348,13 +1348,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X826B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X826B
     marketingName: 'Galaxy Tab S10+ 12.4" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2800
       height: 1752
@@ -1363,13 +1361,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1377,7 +1371,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -1386,13 +1386,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X926B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X926B
     marketingName: 'Galaxy Tab S10 Ultra 14.6" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1848
@@ -1401,13 +1399,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1415,7 +1409,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -1424,13 +1424,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X626B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X626B
     marketingName: 'Galaxy Tab S10 FE+ 13.1" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2880
       height: 1800
@@ -1439,13 +1437,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1453,7 +1447,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.193
@@ -1462,13 +1462,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X526B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X526B
     marketingName: 'Galaxy Tab S10 FE 10.9" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2304
       height: 1440
@@ -1477,13 +1475,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1491,7 +1485,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.193
@@ -1500,13 +1500,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-P625) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-P625
     marketingName: 'Galaxy Tab S6 Lite 10.4" (2024) LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -1515,13 +1513,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1529,7 +1523,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 125.0.0.0
@@ -1538,13 +1538,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X356B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X356B
     marketingName: 'Galaxy Tab Active 5 Pro 10.1" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1920
       height: 1200
@@ -1553,13 +1551,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1567,7 +1561,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.0.0
@@ -1576,13 +1576,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-T636B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T636B
     marketingName: 'Galaxy Tab Active 4 Pro 10.1" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -1591,13 +1589,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1605,7 +1599,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -1614,13 +1614,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; SM-X216R) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X216R
     marketingName: 'Galaxy Tab A9+ 11.0" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -1629,13 +1627,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1643,7 +1637,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.0.0
@@ -1652,13 +1652,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-T509) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T509
     marketingName: 'Galaxy Tab A7 10.4" LTE (2022)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -1667,13 +1665,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1681,7 +1675,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -1690,13 +1690,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-P625 Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.193 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-P625
     marketingName: 'Galaxy Tab S6 Lite 10.4" (2024) LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -1705,13 +1703,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1719,7 +1713,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.193
@@ -1728,13 +1728,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-X906C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X906C
     marketingName: 'Galaxy Tab S8 Ultra 14.6" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1848
@@ -1743,13 +1741,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1757,7 +1751,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.0.0
@@ -1776,13 +1776,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X115
     marketingName: 'Galaxy Tab A9 8.7" 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -1791,13 +1789,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1805,7 +1799,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.0
@@ -1814,13 +1814,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X936B Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.55 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X936B
     marketingName: 'Galaxy Tab S11 Ultra 14.6" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2960
       height: 1848
@@ -1829,13 +1827,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1843,7 +1837,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.55
@@ -1862,13 +1862,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X356B
     marketingName: 'Galaxy Tab Active 5 Pro 10.1" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1920
       height: 1200
@@ -1877,13 +1875,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chromium
     modus: null
@@ -1891,7 +1885,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.0
@@ -1900,13 +1900,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X936B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X936B
     marketingName: 'Galaxy Tab S11 Ultra 14.6" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2960
       height: 1848
@@ -1915,13 +1913,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1929,7 +1923,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0.0
@@ -1938,13 +1938,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X936N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X936N
     marketingName: 'Galaxy Tab S11 Ultra 14.6" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2960
       height: 1848
@@ -1953,13 +1951,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1967,7 +1961,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0.0
@@ -1976,13 +1976,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X736) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X736
     marketingName: 'Galaxy Tab S11 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2560
       height: 1600
@@ -1991,13 +1989,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2005,7 +1999,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0.0
@@ -2014,13 +2014,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X736B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X736B
     marketingName: 'Galaxy Tab S11 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2560
       height: 1600
@@ -2029,13 +2027,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2043,7 +2037,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0.0
@@ -2052,13 +2052,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-X406) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X406
     marketingName: 'Galaxy Tab S10 Lite 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2112
       height: 1320
@@ -2067,13 +2065,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2081,7 +2075,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -2090,13 +2090,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-X406B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X406B
     marketingName: 'Galaxy Tab S10 Lite 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2112
       height: 1320
@@ -2105,13 +2103,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2119,7 +2113,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -2128,13 +2128,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X236B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X236B
     marketingName: 'Galaxy Tab A11+ 11" 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1920
       height: 1200
@@ -2143,13 +2141,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2157,7 +2151,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0.0
@@ -2166,13 +2166,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-X135) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X135
     marketingName: 'Galaxy Tab A11 8.7" LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -2181,13 +2179,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2195,7 +2189,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -2204,13 +2204,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; SM-X135F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X135F
     marketingName: 'Galaxy Tab A11 8.7" LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -2219,13 +2217,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2233,7 +2227,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -2242,13 +2242,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X135F Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X135F
     marketingName: 'Galaxy Tab A11 8.7" LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1340
       height: 800
@@ -2257,13 +2255,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2271,7 +2265,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.178
@@ -2280,13 +2280,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X306B Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X306B
     marketingName: 'Galaxy Tab Active 5 8.0" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -2295,13 +2293,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2309,7 +2303,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2318,13 +2318,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9.0; SM-T866N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.121 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T866N
-    marketingName: 'Galaxy Tab S6 10.5" LTE'
+    marketingName: 'Galaxy Tab S6 10.5" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -2333,13 +2331,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2347,7 +2341,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.121
@@ -2356,13 +2356,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X528U Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X528U
     marketingName: 'Galaxy Tab S10 FE 5G 10.9" (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2304
       height: 1440
@@ -2371,13 +2369,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2385,7 +2379,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2394,13 +2394,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; SM-X406B Build/BP4A.251205.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X406B
     marketingName: 'Galaxy Tab S10 Lite 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2112
       height: 1320
@@ -2409,13 +2407,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2423,7 +2417,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2432,13 +2432,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-T738A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T738A
     marketingName: 'Galaxy Tab S7 FE 12.4" 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -2447,13 +2445,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2461,7 +2455,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.101
@@ -2470,13 +2470,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-T577) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.70 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T577
     marketingName: 'Galaxy Tab Active 3 8.0" 4G (2021)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -2485,13 +2483,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2499,7 +2493,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.6778.70
@@ -2508,13 +2508,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-T507) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.86 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T507
     marketingName: 'Galaxy Tab A7 10.4" LTE (2020)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -2523,13 +2521,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2537,7 +2531,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.6778.86
@@ -2546,13 +2546,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-P615N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.128 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-P615N
     marketingName: 'Galaxy Tab S6 Lite 10.4" LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -2561,13 +2559,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2575,7 +2569,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 139.0.7258.128
@@ -2584,13 +2584,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 16; SM-X916B Build/BP4A.251205.006)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-X916B
     marketingName: 'Galaxy Tab S9 Ultra 14.6" 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1848
@@ -2599,13 +2597,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -2613,7 +2607,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null

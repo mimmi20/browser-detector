@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 SRAF/3.6 HbbTV/1.2.1 (; SCBC; SCBC586; V8-MS86MNA-LF1V222; v1.0; 2017); CE-HTML/1.0 FXM-U2FsdGVkX18/qJnarUpuFwHFd0tSNHcGRueOm2uKNO/tM94gQvAIG4uikII5zrTI-END'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SCBC586
     marketingName: SCBC586
     manufacturer: tcl
     brand: tcl
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Sraf
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: seraphic
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 39.0.2171.71
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 SRAF/3.6 HbbTV/1.2.1 (; SCBC; 43D1850; V8-MS586NA-LF1V015; v1.0; 2017); CE-HTML/1.0 FXM-U2FsdGVkX1 Uw45LmWObO4CbjLJDnO/tZe5Lfui3TYV61sZIjrwrpy29D30Dv1s1-END'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43D1850
     marketingName: 43D1850
     manufacturer: tcl
     brand: tcl
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Sraf
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: seraphic
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 39.0.2171.71

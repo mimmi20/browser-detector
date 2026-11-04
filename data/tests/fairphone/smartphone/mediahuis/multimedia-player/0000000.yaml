@@ -2,13 +2,11 @@
   headers:
     user-agent: 'DS podcast/1.0.5 (be.standaard.audio; build:6; Android 11; Sdk:30; Manufacturer:Fairphone; Model: FP3) OkHttp/4.9.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FP3
     marketingName: FP3
     manufacturer: fairphone
     brand: fairphone
-    dualOrientation: null
-    simCount: 1
     display:
       width: 2160
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: 'De Standaard'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mediahuis
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

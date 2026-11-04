@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Roku SoundBridge/3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Roku4640X/DVP-7.70 (297.70E04154A)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Roku OS'
-    marketingName: 'Roku OS'
-    version: 7.70.0
-    manufacturer: roku
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Roku OS'
+    marketingName: 'Roku OS'
+    version: 7.70.0
+    manufacturer: roku
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Roku/Pluto-9.40 (069.40E04200A) v5.3.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Roku OS'
-    marketingName: 'Roku OS'
-    version: 9.40.0
-    manufacturer: roku
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Roku OS'
+    marketingName: 'Roku OS'
+    version: 9.40.0
+    manufacturer: roku
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'RokuOS/9.4.0.4200, Ignition X/11.8.2021022414, Roku'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Roku OS'
-    marketingName: 'Roku OS'
-    version: 9.4.0.4200
-    manufacturer: roku
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Roku OS'
+    marketingName: 'Roku OS'
+    version: 9.4.0.4200
+    manufacturer: roku
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'RokuOS/3.0.0|Roku 3930X|STB|RokuOS 9.4.0 4200'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 3930X
     marketingName: Express
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Roku OS'
-    marketingName: 'Roku OS'
-    version: 3.0.0
-    manufacturer: roku
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Roku OS'
+    marketingName: 'Roku OS'
+    version: 3.0.0
+    manufacturer: roku
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Sacred Sounds/2.2.1 (Roku 13.0.0; en_US; Roku Express 4K+; Build/24056)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Sacred Sounds/2.2.1 (Roku 13.0.0; en_US; Roku Ultra; Build/24056)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Satisfying Sleep/2.2.1 (Roku 13.0.0; en_US; Roku Express; Build/24056)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Satisfying Sleep/2.2.1 (Roku 13.0.0; en_US; Roku Express 4K+; Build/24056)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Sacred Sounds/2.2.1 (Roku 13.0.0; en_US; Roku Express; Build/24056)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'The Roku Channel/13.10.5 (Roku 14.6.4; en_US; 100012587; Build/9916)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null

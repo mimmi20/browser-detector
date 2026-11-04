@@ -2,13 +2,11 @@
   headers:
     user-agent: 'HbbTV/1.1.1 (;;;;) Mozilla/5.0 (compatible; ANTGalio/3.0.2.1.22.43.08; Linux2.6.18-7.1/7405d0-smp)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: 2.6.18.7.1
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ANTGalio
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ant
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: 2.6.18.7.1
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'HbbTV/1.1.1 (+PVR+RTSP;HANDAN;ST7108HBB;;;) ANTGalio/3.2.1.25.09'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ANTGalio
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ant
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'HbbTV/1.1.1 (+PVR+RTSP;HANDAN;ST7108HBB;;;) ANTGalio/3.3.0.26.05.devel'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ANTGalio
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: ant
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'HbbTV/1.1.1 ( PVR RTSP;vendorName;modelName;3.2.0.25.05.devel;hw_v_1_1_1;) ANTGalio/3.2.0.25.05.devel.50029'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ANTGalio
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: ant
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null

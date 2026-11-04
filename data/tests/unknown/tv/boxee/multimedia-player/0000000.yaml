@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Boxee/1.0.1 bxapi/7.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Boxee
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: boxee
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 533.4.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux i686; xx) AppleWebKit/533.4 (KHTML, like Gecko) Boxee/1.0.1 bxapi/7.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Boxee
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: boxee
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 533.4.0

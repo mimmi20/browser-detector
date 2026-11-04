@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; zh-Hans-CN; YAL-AL50 Build/HUAWEIYAL-AL50) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.6.6.211 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: YAL-AL50
     marketingName: 'Honor 20 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; DCO-AL00 Build/HUAWEIDCO-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/6.0.0.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DCO-AL00
     marketingName: 'Mate 50 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2616
       height: 1212
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; CET-AL00 Build/HUAWEICET-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/6.0.1.231 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CET-AL00
     marketingName: 'Mate 50'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; zh-Hans-CN; AVA-PA00 Build/TDTechAVA-PA00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/6.0.1.231 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AVA-PA00
     marketingName: 'TD Tech P50'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; RMO-AN00 Build/HONORRMO-TN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/6.0.1.231 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMO-AN00
     marketingName: X40
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; zh-Hans-CN; VNE-AN00 Build/HONORVNE-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/6.0.0.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VNE-AN00
     marketingName: X8b
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; RKY-AN00 Build/HONORRKY-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/6.0.2.232 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RKY-AN00
     marketingName: 'Play 40 Plus'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; zh-Hans-CN; NTH-AN00 Build/HONORNTH-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.4.9.201 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NTH-AN00
     marketingName: '50 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; zh-Hans-CN; SPN-AL00 Build/HUAWEISPN-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.4.9.201 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SPN-AL00
     marketingName: 'Nova 5i Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; zh-Hans-CN; PGT-AN00 Build/HONORPGT-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/6.11.0.530 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PGT-AN00
     marketingName: 'Magic 5'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1224
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; HBP-AL00 Build/HUAWEIHBP-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/6.12.0.550 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HBP-AL00
     marketingName: 'Pura 70 Ultra'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2844
       height: 1260
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; zh-Hans-CN; FRI-AN00 Build/HONORFRI-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/6.12.0.550 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: FRI-AN00
     marketingName: 'Magic Vs 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2272
       height: 1984
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; HBN-AL10 Build/HUAWEIHBN-AL10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/6.12.0.550 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HBN-AL10
     marketingName: 'Pura 70 Pro+'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2844
       height: 1260
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; zh-Hans-CN; VCE-AL00 Build/HUAWEIVCE-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.4.9.201 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VCE-AL00
     marketingName: 'Nova 4'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2310
       height: 1080
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; PLR-AL00 Build/HUAWEIPLR-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 Quark/7.11.0.810 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PLR-AL00
     marketingName: 'Mate 70 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2832
       height: 1316
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; CLS-AL00 Build/HUAWEICLS-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/7.14.8.883 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CLS-AL00
     marketingName: 'Mate 70 5G (China)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1216
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; CLS-AL30 Build/HUAWEICLS-AL30) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 Quark/7.14.8.883 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CLS-AL30
     marketingName: 'Mate 70 5G (China)'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2688
       height: 1216
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; JAD-AL50 Build/HUAWEIJAD-AL50) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/7.6.5.720 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JAD-AL50
     marketingName: 'P50 Pro 4G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2700
       height: 1228
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; PLR-AL30 Build/HUAWEIPLR-AL30) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 Quark/7.17.0.920 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PLR-AL30
     marketingName: 'Mate 70 Pro'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2832
       height: 1316
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-GB; BKQ-AN00 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN00
     marketingName: 'Magic 8 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; VKJ-AN90 Build/HONORVKJ-AN90) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.11.1.1086 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKJ-AN90
     marketingName: '600'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; VKJ-AN00 Build/HONORVKJ-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/10.12.2.1097 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VKJ-AN00
     marketingName: '600'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2728
       height: 1264
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; PNM-AN10 Build/HONORPNM-AN10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.3.1098 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PNM-AN10
     marketingName: 'Magic V6'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2352
       height: 2172
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; LDY-AN00 Build/HONORLDY-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.3.1098 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LDY-AN00
     marketingName: 'Magic8 Pro Air'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2640
       height: 1216
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; BKQ-AN90 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN90
     marketingName: 'Magic 8 Pro'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2808
       height: 1256
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; BKQ-AN80 Build/HONORBKQ-ANXX) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BKQ-AN80
     marketingName: 'Magic 8 5G'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2760
       height: 1256
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; AAP-AN00 Build/HONORAAP-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.9.0.1065 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAP-AN00
     marketingName: Win
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-Hans-CN; AAK-AN00 Build/HONORAAK-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.9.5.1070 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AAK-AN00
     marketingName: 'Win RT'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2800
       height: 1272
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; zh-Hans-CN; NLA-AN00 Build/HONORNLA-AN00X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NLA-AN00
     marketingName: 'Honor Play 60A 5G'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; BRE-AL00b Build/HUAWEIBRE-AL00b) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.2.1097 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BRE-AL00b
     marketingName: 'Enjoy 70X Energy'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2700
       height: 1224
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86

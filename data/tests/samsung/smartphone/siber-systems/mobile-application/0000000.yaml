@@ -6,13 +6,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 16; Samsung Galaxy Z Fold Special Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.120 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Galaxy Z Fold Special'
     marketingName: 'Galaxy Z Fold Special'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2184
       height: 1968
@@ -21,13 +19,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'RoboForm Passwort Manager'
     modus: null
@@ -35,7 +29,13 @@
     manufacturer: siber-systems
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.0

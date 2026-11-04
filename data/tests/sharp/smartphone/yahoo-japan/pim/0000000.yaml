@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SH-M26 Build/SB069; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.100 Mobile Safari/537.36 YJApp-ANDROID jp.co.yahoo.android.ymail/5.3.17'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH-M26
     marketingName: 'Aquos Sense 8'
     manufacturer: sharp
     brand: sharp
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yahoo! Mail'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yahoo-japan
     type: pim
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.6668.100

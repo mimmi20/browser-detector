@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; S88Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 YaApp_Android/21.23.1 YaSearchBrowser/21.23.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S88 Pro'
     marketingName: 'S88 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.182
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; S40Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 YaApp_Android/21.23.1 YaSearchBrowser/21.23.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S40 Pro'
     marketingName: 'S40 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.182
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; X95Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 YaApp_Android/20.122.1 YaSearchBrowser/20.122.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'X95 Pro'
     marketingName: 'X95 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1200
       height: 540
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; X96Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 YaApp_Android/21.66.1 YaSearchBrowser/21.66.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'X96 Pro'
     marketingName: 'X96 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.164
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; S98Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.167 YaApp_Android/22.78.1 YaSearchBrowser/22.78.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S98 Pro'
     marketingName: 'S98 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.167
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 9; Y8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 YaBrowser/20.6.2.104.00 SA/1 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Y8
     marketingName: Y8
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 600
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; S61) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 YaBrowser/22.11.3.89.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S61
     marketingName: S61
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.0.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; N30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 YaApp_Android/22.50.1 YaSearchBrowser/22.50.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N30
     marketingName: N30
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.127
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; V Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.2.86.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'V Max'
     marketingName: 'V Max'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; V30T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 YaBrowser/23.5.0.256.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V30T
     marketingName: V30T
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; V30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 YaBrowser/23.5.0.256.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V30
     marketingName: V30
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; S100Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaSearchBrowser/23.75.1 BroPP/1.0 YaSearchApp/23.75.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S100 Pro'
     marketingName: 'S100 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.0.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; V31GT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2332 YaApp_Android/23.110.1 YaSearchBrowser/23.110.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V31GT
     marketingName: V31GT
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.5993.2332
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; Smini) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.94 YaBrowser/24.1.8.94.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S Mini'
     marketingName: 'S Mini'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 480
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.94
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 9; N20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.324 YaApp_Android/24.19.1 YaSearchBrowser/24.19.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N20
     marketingName: N20
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2280
       height: 1080
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.324
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; V20Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.324 YaApp_Android/24.19.1 YaSearchBrowser/24.19.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'V20 Pro'
     marketingName: 'V20 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.324
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; S41 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.300 YaBrowser/24.4.0.300.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S41 Max'
     marketingName: 'S41 Max'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.300
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; N55 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.447 YaApp_Android/24.45.1 YaSearchBrowser/24.45.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'N55 Pro'
     marketingName: 'N55 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.447
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; S118) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.518 YaApp_Android/24.65.1 YaSearchBrowser/24.65.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S118
     marketingName: S118
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.518
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; S41T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.120 YaSearchBrowser/24.66.1 BroPP/1.0 YaSearchApp/24.66.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S41T
     marketingName: S41T
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.120
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; S200 X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.67 YaSearchBrowser/24.106 BroPP/1.0 YaSearchApp/24.106 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S200 X'
     marketingName: 'S200 X'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 128.0.6613.67
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Blade GT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.31 YaBrowser/24.12.5.31.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade GT'
     marketingName: 'Blade GT'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.31
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Blade10 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.974 YaSearchBrowser/24.124.1 BroPP/1.0 YaSearchApp/24.124.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade 10 Ultra'
     marketingName: 'Blade 10 Ultra'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.974
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Fire 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.722 YaSearchBrowser/24.121.1 BroPP/1.0 YaSearchApp/24.121.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 6'
     marketingName: 'Fire 6'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.722
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; V40 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.261 YaBrowser/25.4.0.261.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'V40 Pro'
     marketingName: 'V40 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.261
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Fire 6 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.6834.38 YaBrowser/25.3.0.38.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 6 Max'
     marketingName: 'Fire 6 Max'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.6834.38
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Blade10 Power) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.261 YaBrowser/25.4.0.261.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade 10 Power'
     marketingName: 'Blade 10 Power'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.261
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; S Punk Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.77 YaBrowser/25.4.5.77.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S Punk Pro'
     marketingName: 'S Punk Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.77
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; S cyber Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.77 YaBrowser/25.4.5.77.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S Cyber Pro'
     marketingName: 'S Cyber Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.77
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; V Max S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.52 YaBrowser/25.6.6.52.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'V Max S'
     marketingName: 'V Max S'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.52
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; S119) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.98 YaSearchBrowser/25.66.1 BroPP/1.0 YaSearchApp/25.66.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S119
     marketingName: S119
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1157,13 +1155,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.98
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 3 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.270 YaBrowser/25.10.0.270.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 3 Pro'
     marketingName: 'Fire 3 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -1195,13 +1193,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.270
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 3 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.886 YaSearchBrowser/25.101.1 BroPP/1.0 YaSearchApp/25.101.1 webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 3 Ultra'
     marketingName: 'Fire 3 Ultra'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -1233,13 +1231,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.886
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.108 YaBrowser/25.10.1.108.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 3'
     marketingName: 'Fire 3'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -1271,13 +1269,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.108
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Blade20 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.108 YaBrowser/25.10.1.108.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade 20 Ultra'
     marketingName: 'Blade 20 Ultra'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1309,13 +1307,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.108
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Blade GT Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.114 YaBrowser/25.10.1.114.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade GT Pro'
     marketingName: 'Blade GT Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1347,13 +1345,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.114
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; Blade GT Play) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.118 YaBrowser/25.10.1.118.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade GT Play'
     marketingName: 'Blade GT Play'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1385,13 +1383,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.118
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; Blade20 Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/141.0.7390.97 YaBrowser/25.2.0.51 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade 20'
     marketingName: 'Blade 20'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1423,13 +1421,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.97
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; V Max Play) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.1898 YaApp_Android/25.80.1 YaSearchBrowser/25.80.1 BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'V Max Play'
     marketingName: 'V Max Play'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -1461,13 +1459,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.1898
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Note56 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.964 YaSearchBrowser/25.123.1 BroPP/1.0 YaSearchApp/25.123.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Note 56 Plus'
     marketingName: 'Note 56 Plus'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1499,13 +1497,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.964
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.213 YaBrowser/25.12.3.213.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 7'
     marketingName: 'Fire 7'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1537,13 +1535,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.213
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 5 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.964 YaSearchBrowser/25.123.1 BroPP/1.0 YaSearchApp/25.123.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 5 Pro'
     marketingName: 'Fire 5 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1575,13 +1573,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.964
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 3 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.1044 YaSearchBrowser/25.122.1 BroPP/1.0 YaSearchApp/25.122.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 3 Max'
     marketingName: 'Fire 3 Max'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -1613,13 +1611,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.1044
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 9; X6 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'X6 Pro'
     marketingName: 'X6 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1651,13 +1649,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 12; X50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 YaBrowser/22.3.1.86.00 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X50
     marketingName: X50
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 480
@@ -1689,13 +1687,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.102
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 12; X50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.424 YaSearchBrowser/25.128.1 BroPP/1.0 YaSearchApp/25.128.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X50
     marketingName: X50
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 480
@@ -1727,13 +1725,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.424
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; X7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'X7 Pro'
     marketingName: 'X7 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1765,13 +1763,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.51
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; X5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X5
     marketingName: X5
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 720
@@ -1803,13 +1801,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm; Android 10; X5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.64 YaSearchBrowser/26.45.1 BroPP/1.0 YaSearchApp/26.45.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X5
     marketingName: X5
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 720
@@ -1841,13 +1839,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.64
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 9; S61) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S61
     marketingName: S61
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1879,13 +1877,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -1902,13 +1902,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 9.0; X20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.0.330.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X20
     marketingName: X20
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -1917,13 +1915,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -1931,7 +1925,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0
@@ -1940,13 +1940,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 16; Fire 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.51 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 3'
     marketingName: 'Fire 3'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -1955,13 +1953,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -1969,7 +1963,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.51
@@ -1978,13 +1978,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; S200 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S200 Ultra'
     marketingName: 'S200 Ultra'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1993,13 +1991,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2007,7 +2001,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.61
@@ -2016,13 +2016,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; S200 Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.54 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'S200 Max'
     marketingName: 'S200 Max'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2031,13 +2029,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2045,7 +2039,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.54
@@ -2054,13 +2054,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 7 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1 YaSearchBrowser/26.60.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 7 Ultra'
     marketingName: 'Fire 7 Ultra'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2069,13 +2067,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2083,7 +2077,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -2092,13 +2092,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.2244 YaApp_Android/26.40.1 YaSearchBrowser/26.40.1 BroPP/1.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 7 Pro'
     marketingName: 'Fire 7 Pro'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2107,13 +2105,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2121,7 +2115,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.2244
@@ -2130,13 +2130,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 5 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 5 Ultra'
     marketingName: 'Fire 5 Ultra'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2145,13 +2143,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2159,7 +2153,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.307
@@ -2168,13 +2168,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Fire 5 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.56 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Fire 5 Ultra'
     marketingName: 'Fire 5 Ultra'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -2183,13 +2181,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2197,7 +2191,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.56
@@ -2206,13 +2206,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Blade10 Pro Energy) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.43 YaSearchBrowser/26.47.1 BroPP/1.0 YaSearchApp/26.47.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Blade 10 Pro Energy'
     marketingName: 'Blade 10 Pro Energy'
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2221,13 +2219,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2235,7 +2229,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.43
@@ -2244,13 +2244,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; S89) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.56 YaSearchBrowser/26.46.1 BroPP/1.0 YaSearchApp/26.46.1 webOmni Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S89
     marketingName: S89
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2259,13 +2257,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2273,7 +2267,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.56
@@ -2282,13 +2282,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; X30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.7559.119 YaBrowser/26.3.5.119.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X30
     marketingName: X30
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -2297,13 +2295,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2311,7 +2305,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.119
@@ -2320,13 +2320,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 11; X30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.144 YaApp_Android/26.60.1/apad YaSearchBrowser/26.60.1/apad BroPP/1.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X30
     marketingName: X30
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -2335,13 +2333,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2349,7 +2343,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.144
@@ -2358,13 +2358,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; S86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.49 YaApp_Android/26.61.1 YaSearchBrowser/26.61.1 BroPP/1.0 (beta) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S86
     marketingName: S86
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2373,13 +2371,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -2387,7 +2381,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.49
@@ -2396,13 +2396,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 10; S86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.00 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S86
     marketingName: S86
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2411,13 +2409,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -2425,7 +2419,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.304
@@ -2434,13 +2434,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; X50 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/91.0.4472.114 YaBrowser/25.2.0.51 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X50
     marketingName: X50
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 960
       height: 480
@@ -2449,13 +2447,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -2463,7 +2457,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.114
@@ -2472,13 +2472,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; X5 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/88.0.4324.181 YaBrowser/24.1.1.23 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X5
     marketingName: X5
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 720
@@ -2487,13 +2485,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -2501,7 +2495,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.181
@@ -2510,13 +2510,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; X30 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X30
     marketingName: X30
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -2525,13 +2523,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -2539,7 +2533,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2548,13 +2548,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; S86 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/149.0.7827.91 YaBrowser/25.12.0.63 (lite) Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S86
     marketingName: S86
     manufacturer: doogee
     brand: doogee
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -2563,13 +2561,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -2577,7 +2571,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91

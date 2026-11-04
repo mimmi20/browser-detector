@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Opera/9.80 (BREW; Opera Mini/6.0.3/27.2339; U; xx) Presto/2.8.119 320X240 LG VN530'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VN530
     marketingName: Octane
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Brew
+    marketingName: Brew
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'LG-GT550/V11b; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.18377; U; en-US) Opera 9.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GT550
     marketingName: Encore
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'LG-GW370/V10c; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.17086; U; en) Opera 9.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GW370
     marketingName: 'Rumour Plus'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'lg-kf750-v10a browser/obigo-q05a/3.12 mms/lg-mms-v1.0/1.2 java/asvm/1.1 profile/midp-2.1 configuration/cldc-1.1; Opera/9.50 (J2ME/MIDP; Opera Mini/4.0.10269/546; de; U)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KF750
     marketingName: Secret
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Opera/9.80 (BREW; Opera Mini/5.0.0030/18.1318; U; en) Presto/2.4.15 240X320 LG VN250'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VN250
     marketingName: Cosmos
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Brew
+    marketingName: Brew
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: 2.4.15
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Opera/9.80 (BREW; Opera Mini/5.20/24.1084; U; en) Presto/2.5.25 800X480 LG VX1100000d'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VX11000
     marketingName: 'Env Touch'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.5.25
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Opera/9.80 (BREW; Opera Mini/5.1/27.2213; U; en) Presto/2.8.119 176X220 LG VX5600DM8992d'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VX5600
     marketingName: VX5600
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 220
       height: 176
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Brew
+    marketingName: Brew
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'LG-GD710/V10f; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14812; U; en) Opera 9.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GD710
     marketingName: 'Shine II'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Opera/9.80 (BREW; Opera Mini/6.0.3/27.2370; U; en) Presto/2.8.119 240X400 LG VN280'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VN280
     marketingName: 'Extravert 2'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Brew
-    marketingName: Brew
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Brew
+    marketingName: Brew
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Presto
     version: 2.8.119
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'LG-A340/V10d; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.22250; U; en-US) Opera 9.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A340
     marketingName: A340
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mini'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: opera
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Presto
     version: null

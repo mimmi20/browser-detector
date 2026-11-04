@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; Linux; InfegyAtlas/1.0; en-US; collection@infegy.com)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: InfegyAtlas
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: infegy
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36 collection@infegy.com'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Infegy Bot'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: infegy
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Blink
     version: 47.0.2526.73

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (PSP (PlayStation Portable); 2.00)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'PlayStation Portable'
     marketingName: 'PlayStation Portable'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 0
     display:
       width: 480
       height: 272
@@ -17,13 +15,9 @@
     type: mobile-console
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Playstation Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: sony
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'MSIE PSP (PlayStation Portable); 2.00'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'PlayStation Portable'
     marketingName: 'PlayStation Portable'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 0
     display:
       width: 480
       height: 272
@@ -55,13 +53,9 @@
     type: mobile-console
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Playstation Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: sony
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Trident
     version: null

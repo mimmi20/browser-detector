@@ -2,13 +2,11 @@
   headers:
     user-agent: 'chompSMS 5.97 (9059722)  [Model Number: Archos 80 Xenon,  Android OS version: 3.4.0+, Device ID: c989a15e13a99ee08b5485dac5f68244, Origin: 170141051, Firmware Version: 16]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '80 Xenon'
     marketingName: '80 Xenon'
     manufacturer: archos
     brand: archos
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Origin In-Game Overlay'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: electronic-arts
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

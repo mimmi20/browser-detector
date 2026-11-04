@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android 15; Mobile; rv:120.0) Gecko/120.0 Firefox/120.0 ArtisReader/35.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile Phone'
     marketingName: 'general Mobile Phone'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: ArtisBrowser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: artist-scope
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 120.0.0

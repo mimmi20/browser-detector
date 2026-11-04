@@ -10,13 +10,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Safari/537.36 OPR/88.0.4412.53'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPlay 40'
     marketingName: 'iPlay 40'
     manufacturer: alldocube
     brand: alldocube
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2000
       height: 1200
@@ -25,13 +23,9 @@
     type: fone-pad
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -39,7 +33,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.0
@@ -48,13 +48,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; iPlay50_mini_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Safari/537.36 OPR/81.3.4292.78688'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPlay 50 Mini Pro'
     marketingName: 'iPlay 50 Mini Pro'
     manufacturer: alldocube
     brand: alldocube
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -63,13 +61,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -77,7 +71,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.149
@@ -86,13 +86,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; T811) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.113 Safari/537.36 OPR/82.2.4342.79505'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T811
     marketingName: 'Kidz Pad Pro'
     manufacturer: alldocube
     brand: alldocube
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -101,13 +99,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -115,7 +109,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.113
@@ -124,13 +124,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; iPlay80miniUltra Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36 OPR/99.2.2254.731'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPlay 80 Mini Ultra'
     marketingName: 'iPlay 80 Mini Ultra'
     manufacturer: alldocube
     brand: alldocube
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2560
       height: 1600
@@ -139,13 +137,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -153,7 +147,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91

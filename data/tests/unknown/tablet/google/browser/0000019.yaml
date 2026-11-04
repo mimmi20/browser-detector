@@ -1,131 +1,15 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 10.0.99; EPLAY-11G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.88 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.99
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 91.0.4472.88
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 91.0.4472.88
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 10.0; 9560 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 63.0.3239.111
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 63.0.3239.111
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 150.0.0.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 150.0.0.0
-    manufacturer: google
--
-  headers:
     sec-ch-ua-platform: '"Android"'
     sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -134,183 +18,23 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 150.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: Android
     marketingName: Android
     version: 10.0.0
     manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 150.0.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 150.0.0
-    manufacturer: google
--
-  headers:
-    sec-ch-ua-platform: '"Windows"'
-    sec-ch-ua: '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 149.0.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.0
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/56.0.851.0 Safari/534.0'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: true
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 56.0.851.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 56.0.851.0
-    manufacturer: google
--
-  headers:
-    x-requested-with: XMLHttpRequest
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 150.0.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 150.0.0
-    manufacturer: google
--
-  headers:
-    sec-ch-ua-platform: '"Android"'
-    sec-ch-ua: '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"'
-    sec-ch-ua-mobile: '?0'
-    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general Tablet'
-    marketingName: 'general Tablet'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: true
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: true
-      size: null
-    type: tablet
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: Chrome
-    modus: null
-    version: 150.0.0
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0
@@ -319,13 +43,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12.1) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/22.0.802.0 Safari/535.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -334,13 +56,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -348,7 +66,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 535.2.0
@@ -357,13 +81,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/58.0.842.0 Safari/531.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -372,13 +94,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -386,7 +104,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 58.0.842.0
@@ -395,13 +119,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/48.0.842.0 Safari/533.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -410,13 +132,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -424,7 +142,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 48.0.842.0
@@ -433,13 +157,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12.1) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/48.0.841.0 Safari/535.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -448,13 +170,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -462,7 +180,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 48.0.841.0
@@ -471,13 +195,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/43.0.816.0 Safari/531.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -486,13 +208,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -500,7 +218,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 43.0.816.0
@@ -509,13 +233,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12.1) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/44.0.827.0 Safari/532.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -524,13 +246,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -538,7 +256,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 44.0.827.0
@@ -550,13 +274,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -565,13 +287,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -579,7 +297,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.0
@@ -588,13 +312,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -603,13 +325,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -617,7 +335,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -626,13 +350,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -641,13 +363,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -655,7 +373,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.0.0
@@ -664,13 +388,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12.1) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/33.0.831.0 Safari/535.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -679,13 +401,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -693,7 +411,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 33.0.831.0
@@ -702,13 +426,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -717,13 +439,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -731,7 +449,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 82.0.0.0
@@ -740,13 +464,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; TAB10_ROW Build/UP1A.231105.003.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.71 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -755,13 +477,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -769,7 +487,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.7922.71
@@ -778,13 +502,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -793,13 +515,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -807,7 +525,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 152.0.0.0
@@ -819,13 +543,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -834,13 +556,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chromium
     modus: null
@@ -848,7 +566,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0
@@ -866,13 +590,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -881,13 +603,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -895,7 +613,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.0
@@ -907,13 +631,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -922,13 +644,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -936,7 +654,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.0
@@ -945,13 +669,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/15.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -960,13 +682,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -974,7 +692,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -986,13 +710,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1001,13 +723,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1015,7 +733,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 131.0.0
@@ -1024,13 +748,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1039,13 +761,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1053,7 +771,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.0.0
@@ -1062,13 +786,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1077,13 +799,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1091,7 +809,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.0.0
@@ -1100,13 +824,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1115,13 +837,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1129,7 +847,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -1138,13 +862,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; x64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/14.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1153,13 +875,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -1167,7 +885,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -1176,13 +900,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1191,13 +913,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1205,7 +923,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.0.0
@@ -1214,13 +938,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; TAB10_ROW Build/UP1A.231105.003.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1229,13 +951,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1243,7 +961,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.7922.199
@@ -1252,13 +976,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/12.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1267,13 +989,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -1281,7 +999,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -1293,13 +1017,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1308,13 +1030,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1322,7 +1040,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.0
@@ -1334,13 +1058,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1349,13 +1071,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1363,7 +1081,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 152.0.0
@@ -1375,13 +1099,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1390,13 +1112,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1404,7 +1122,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 152.0.0
@@ -1422,13 +1146,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1437,13 +1159,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1451,7 +1169,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 152.0.0
@@ -1463,13 +1187,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1478,13 +1200,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1492,7 +1210,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0
@@ -1504,13 +1228,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1519,13 +1241,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1533,7 +1251,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 152.0.0
@@ -1545,13 +1269,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1560,13 +1282,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1574,7 +1292,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.0
@@ -1583,13 +1307,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1598,13 +1320,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1612,7 +1330,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 154.0.0.0
@@ -1624,13 +1348,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1639,13 +1361,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1653,7 +1371,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 154.0.0
@@ -1665,13 +1389,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1680,13 +1402,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1694,7 +1412,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.0
@@ -1712,13 +1436,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,13 +1449,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1741,7 +1459,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.0
@@ -1750,13 +1474,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,13 +1487,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1779,7 +1497,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.0.0
@@ -1788,13 +1512,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,13 +1525,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1817,7 +1535,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.0.0
@@ -1829,13 +1553,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1844,13 +1566,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1858,7 +1576,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 154.0.0
@@ -1870,13 +1594,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1885,13 +1607,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1899,7 +1617,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 154.0.0
@@ -1908,13 +1632,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1923,13 +1645,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1937,7 +1655,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 155.0.0.0
@@ -1946,13 +1670,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -1961,13 +1683,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1975,7 +1693,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.0.0
@@ -1987,13 +1711,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -2002,13 +1724,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2016,7 +1734,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 155.0.0
@@ -2028,13 +1752,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -2043,13 +1765,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2057,7 +1775,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.0
@@ -2075,13 +1799,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Tablet'
     marketingName: 'general Tablet'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: true
-    simCount: 0
     display:
       width: null
       height: null
@@ -2090,13 +1812,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -2104,8 +1822,128 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.0
     manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general Tablet'
+    marketingName: 'general Tablet'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: tablet
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 157.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 157.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/63.0.810.0 Safari/534.0'
+  device:
+    architecture: ''
+    deviceName: 'general Tablet'
+    marketingName: 'general Tablet'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: tablet
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 63.0.810.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 63.0.810.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/11.0.0.0 Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general Tablet'
+    marketingName: 'general Tablet'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: true
+      size: null
+    type: tablet
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Android Webkit'
+    modus: null
+    version: 11.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: WebKit
+    version: 537.36.0
+    manufacturer: apple

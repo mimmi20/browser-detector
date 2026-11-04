@@ -2,13 +2,11 @@
   headers:
     user-agent: 'LG-CU920/V1.0s Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Nokia6233/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '6233'
     marketingName: '6233'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Obigo Q'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: Teleca
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(6) play Build/PPPS29.55-35-12-5; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 Mobile Safari/537.36 GSA/10.85.11.21.arm'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G6 Play'
     marketingName: 'Moto G6 Play'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.62
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(7) plus Build/PPWS29.98-111-5; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.93 Mobile Safari/537.36 GSA/10.89.13.21.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G7 Plus'
     marketingName: 'Moto G7 Plus'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2270
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.93
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; motorola one action Build/QSBS30.62-29-11-10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.70 Mobile Safari/537.36 GoogleApp/12.48.23.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'One Action'
     marketingName: 'One Action'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.70
@@ -117,13 +117,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 10; motorola one zoom Build/QPHS30.29-Q3-28-13-10-10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'One Zoom'
     marketingName: 'One Zoom'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -132,13 +130,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -146,7 +140,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -156,13 +156,11 @@
     x-requested-with: com.google.android.gms
     user-agent: 'Mozilla/5.0 (Linux; Android 10; moto e(7i) power Build/QOJ30.303-8; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 MinuteMaid'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E7i Power'
     marketingName: 'Moto E7i Power'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -171,13 +169,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Play Services'
     modus: null
@@ -185,7 +179,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.101
@@ -195,13 +195,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 11; moto e30 Build/ROP31.166-37) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.78 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E30'
     marketingName: 'Moto E30'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -210,13 +208,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -224,7 +218,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.78
@@ -234,13 +234,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 11; moto e20 Build/RON31.267-22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E20'
     marketingName: 'Moto E20'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -249,13 +247,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -263,7 +257,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -273,13 +273,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 10; moto e(7i) power Build/QOJ30.299-3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E7i Power'
     marketingName: 'Moto E7i Power'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -288,13 +286,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -302,7 +296,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.101
@@ -311,13 +311,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; moto g(30) Build/S0RCS32.41-10-9-2-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 GSA/13.22.15.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G30'
     marketingName: 'Moto G30'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -326,13 +324,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -340,7 +334,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.125
@@ -349,13 +349,11 @@
   headers:
     user-agent: 'com.google.android.googlequicksearchbox/301198847 (Linux; U; Android 12; de_DE; moto g(30); Build/S0RCS32.41-10-9-2-2; Cronet/102.0.5005.50)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G30'
     marketingName: 'Moto G30'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -364,13 +362,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google App'
     modus: null
@@ -378,7 +372,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -388,13 +388,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 9; moto e(6) plus Build/PTAS29.401-58-8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.79 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E6 Plus'
     marketingName: 'Moto E6 Plus'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -403,13 +401,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -417,7 +411,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.79
@@ -427,13 +427,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 10; moto e(6i) Build/QOHS30.280-19-3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E6i'
     marketingName: 'Moto E6i'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1560
       height: 720
@@ -442,13 +440,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -456,7 +450,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -466,13 +466,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 12; moto e22i Build/SOW32.121-15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E22i'
     marketingName: 'Moto E22i'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -481,13 +479,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -495,7 +489,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -504,13 +504,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; motorola edge 30 Build/S1RDS32.55-106-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 GoogleApp/14.12.12.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 30'
     marketingName: 'Edge 30'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -519,13 +517,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -533,7 +527,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -543,13 +543,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 13; moto e13 Build/TLA33.105-42-3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E13'
     marketingName: 'Moto E13'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -558,13 +556,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -572,7 +566,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -581,13 +581,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; motorola edge 20 lite Build/S2RKS32.92-11-21-13; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36 GoogleApp/14.17.19.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 20 Lite'
     marketingName: 'Edge 20 Lite'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -596,13 +594,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -610,7 +604,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -619,13 +619,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; moto g(8) power Build/RPES31.Q4U-47-35-12; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36 GoogleApp/14.16.27.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G8 Power'
     marketingName: 'Moto G8 Power'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2300
       height: 1080
@@ -634,13 +632,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -648,7 +642,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -658,13 +658,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 12; motorola razr 5G Build/S2PS32.57-23-21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.14 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Razr 5G'
     marketingName: 'Razr 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2142
       height: 876
@@ -673,13 +671,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -687,7 +681,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.14
@@ -696,13 +696,11 @@
   headers:
     user-agent: 'com.google.android.apps.searchlite/849424 (Linux; U; Android 13; de_DE; moto e13; Build/TLA33.105-257; Cronet/114.0.5735.33)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E13'
     marketingName: 'Moto E13'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -711,13 +709,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -725,7 +719,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -734,13 +734,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; motorola edge 40 pro Build/U1TRS34.8-30-13-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.121 Mobile Safari/537.36 GoogleApp/15.16.35.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 40 Pro'
     marketingName: 'Edge 40 Pro'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -749,13 +747,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -763,7 +757,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.121
@@ -772,13 +772,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; moto g54 5G Build/U1TDS34.94-12-7-6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36 GoogleApp/15.34.35.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G54 5G'
     marketingName: 'Moto G54 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -787,13 +785,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -801,7 +795,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.103
@@ -810,13 +810,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; moto g84 5G Build/U1TC34.22-64-18; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36 GoogleApp/15.25.32.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G84 5G'
     marketingName: 'Moto G84 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -825,13 +823,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -839,7 +833,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.71
@@ -848,13 +848,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; motorola edge 40 neo Build/U1TMS34.107-34-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36 GoogleApp/15.31.31.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 40 Neo'
     marketingName: 'Edge 40 Neo'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -863,13 +861,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -877,7 +871,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.103
@@ -886,13 +886,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; motorola edge 50 fusion Build/U2UUIS34.40-64-1-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36 GoogleApp/15.34.35.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 50 Fusion'
     marketingName: 'Edge 50 Fusion'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -901,13 +899,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -915,7 +909,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.103
@@ -924,13 +924,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; motorola edge 30 pro Build/T1SHS33.35-23-20-16; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.71 Mobile Safari/537.36 GoogleApp/15.38.49.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 30 Pro'
     marketingName: 'Edge 30 Pro'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -939,13 +937,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -953,7 +947,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.6668.71
@@ -962,13 +962,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; motorola edge 30 neo Build/U1SSMS34.31-64-4-13; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.39 Mobile Safari/537.36 GoogleApp/15.48.39.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 30 Neo'
     marketingName: 'Edge 30 Neo'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -977,13 +975,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -991,7 +985,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.6778.39
@@ -1000,13 +1000,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; moto g(9) play Build/RPXS31.Q2-58-17-7-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.137 Mobile Safari/537.36 GoogleApp/16.8.37.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G9 Play'
     marketingName: 'Moto G9 Play'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1015,13 +1013,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1029,7 +1023,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.6943.137
@@ -1038,13 +1038,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; moto g82 5G Build/T1SUS33.1-124-6-14; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.122 Mobile Safari/537.36 GoogleApp/16.6.28.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G82 5G'
     marketingName: 'Moto G82 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1053,13 +1051,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1067,7 +1061,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.6943.122
@@ -1076,13 +1076,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; moto g(6) plus Build/PPW29.116-20-28; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.38 Mobile Safari/537.36 GoogleApp/16.14.40.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G6 Plus'
     marketingName: 'Moto G6 Plus'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1080
@@ -1091,13 +1089,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1105,7 +1099,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.7049.38
@@ -1114,13 +1114,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; moto g14 Build/UTLB34.102-72; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36 GoogleApp/16.19.43.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G14'
     marketingName: 'Moto G14'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1129,13 +1127,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1143,7 +1137,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.60
@@ -1152,13 +1152,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; moto g31(w) Build/S3RWDS32.123-29-8-2-10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36 GoogleApp/16.42.64.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G31w'
     marketingName: 'Moto G31w'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1167,13 +1165,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1181,7 +1175,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.122
@@ -1190,13 +1190,11 @@
   headers:
     user-agent: 'com.google.android.apps.searchlite/889769 (Linux; U; Android 11; de­_DE; moto e20; Build/RONS31.267-94-14; Cronet/122.0.6238.4)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E20'
     marketingName: 'Moto E20'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1205,13 +1203,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -1219,7 +1213,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -1228,13 +1228,11 @@
   headers:
     user-agent: 'com.google.android.googlequicksearchbox/301216757 (Linux; U; Android 13; de­_DE; moto g13; Build/THA33.31-24; Cronet/113.0.5672.51)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G13'
     marketingName: 'Moto G13'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1243,13 +1241,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google App'
     modus: null
@@ -1257,7 +1251,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1266,13 +1266,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; moto g24 power Build/UTAS34.82-113-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.159 Mobile Safari/537.36 GoogleApp/17.8.62.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G24 Power'
     marketingName: 'Moto G24 Power'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -1281,13 +1279,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1295,7 +1289,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.159
@@ -1304,13 +1304,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; moto e15 Build/UUTB34.40-36; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.97 Mobile Safari/537.36 NSTNWV/3.129.815524762.31release.go'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E15'
     marketingName: 'Moto E15'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -1319,13 +1317,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Android Go'
-    marketingName: 'Android Go'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -1333,7 +1327,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android Go'
+    marketingName: 'Android Go'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.97
@@ -1342,13 +1342,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; motorola edge 50 neo Build/W1UIS36H.39-17-4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 GoogleApp/17.38.11.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 50 Neo'
     marketingName: 'Edge 50 Neo'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2670
       height: 1200
@@ -1357,13 +1355,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1371,7 +1365,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -1380,13 +1380,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; moto g22 Build/STAS32.79-77-28-63-9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Mobile Safari/537.36 GoogleApp/17.44.13.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G22'
     marketingName: 'Moto G22'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1395,13 +1393,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1409,7 +1403,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.181
@@ -1418,13 +1418,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; motorola edge 60 Build/W1VCS36H.14-20-19-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Mobile Safari/537.36 GoogleApp/17.48.16.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 60'
     marketingName: 'Edge 60'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -1433,13 +1431,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1447,7 +1441,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.181

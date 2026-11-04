@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MaCoCu; +https://www.clarin.si/info/macocu-massive-collection-and-curation-of-monolingual-and-bilingual-data/)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: MaCoCu
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: jozef-stefan-institute
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; CLASSLA-web; +https://www.clarin.si/info/classla-web-crawler/)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: CLASSLA-web
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: jozef-stefan-institute
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null

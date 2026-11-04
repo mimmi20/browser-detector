@@ -2,13 +2,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/347.0.0.28.237;FBBV/337279621;FBDM/{density=2.0,width=720,height=1280};FBLC/ro_RO;FBRV/339429283;FBCR/Lebara;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-J530F;FBSV/9;FBOP/19;FBCA/armeabi-v7a:armeabi;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-J530F
     marketingName: 'Galaxy J5 (2017)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-A707F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A707F
     marketingName: 'Galaxy A70s'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.98
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G998B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 Instagram 220.0.0.16.115 Android (31/12; 450dpi; 1080x2190; samsung; SM-G998B; p3s; exynos2100; de_DE; 348183237)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G998B
     marketingName: 'Galaxy S21 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3200
       height: 1440
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.98
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A426B Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 Instagram 220.0.0.16.115 Android (30/11; 300dpi; 720x1458; samsung; SM-A426B; a42xq; qcom; de_DE; 348183237)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A426B
     marketingName: 'Galaxy A42 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G996B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G996B
     marketingName: 'Galaxy S21+ 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-M127F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M127F
     marketingName: 'Galaxy M12 4G (Europe)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A022G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A022G
     marketingName: 'Galaxy A02'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A725F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A725F
     marketingName: 'Galaxy A72'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A715F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/288.0.0.11.115;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A715F
     marketingName: 'Galaxy A71 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Lite'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.104
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A315G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A315G
     marketingName: 'Galaxy A31'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G965F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/289.0.0.18.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G965F
     marketingName: 'Galaxy S9+ (Europe, Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Lite'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36[FBAN/EMA;FBLC/bg_BG;FBAV/289.0.0.18.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A528B
     marketingName: 'Galaxy A52s 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Lite'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-G965U1 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G965U1
     marketingName: 'Galaxy S9+ (USA unlocked)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2960
       height: 1440
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-A013G Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36[FBAN/EMA;FBLC/pl_PL;FBAV/289.0.0.18.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A013G
     marketingName: 'Galaxy A01 Core'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1480
       height: 720
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Lite'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A325F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36[FBAN/EMA;FBLC/es_ES;FBAV/288.0.0.11.115;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A325F
     marketingName: 'Galaxy A32 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Lite'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-A515F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/289.0.0.18.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A515F
     marketingName: 'Galaxy A51 4G (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Lite'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-G525F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G525F
     marketingName: 'Galaxy Xcover 5'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1480
       height: 720
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.98
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A037F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A037F
     marketingName: 'Galaxy A03s 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.98
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G990B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-M515F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/351.0.0.38.117;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M515F
     marketingName: 'Galaxy M51 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A037G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A037G
     marketingName: 'Galaxy A03s 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-A022F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.159 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/334.0.0.32.119;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A022F
     marketingName: 'Galaxy A02'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.159
@@ -838,13 +838,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/353.0.0.34.116;FBBV/349723355;FBDM/{density=2.625,width=1080,height=2131};FBLC/de_DE;FBRV/350408148;FBCR/o2 - de+;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-M315F;FBSV/11;FBOP/19;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M315F
     marketingName: 'Galaxy M31'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/353.0.0.34.116;FBBV/349723355;FBDM/{density=3.0,width=1080,height=2168};FBLC/de_DE;FBRV/0;FBCR/o2 - de+;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G781B;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G781B
     marketingName: 'Galaxy S20 FE 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/353.0.0.34.116;FBBV/349723355;FBDM/{density=3.375,width=1080,height=2150};FBLC/ar_AR;FBRV/350638598;FBCR/o2 - de+;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G780F;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G780F
     marketingName: 'Galaxy S20 FE 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/353.0.0.34.116;FBBV/349723104;FBDM/{density=1.75,width=720,height=1471};FBLC/de_DE;FBRV/350459751;FBCR/vodafone.de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A326B;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A326B
     marketingName: 'Galaxy A32 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184967;FBDM/{density=3.0,width=1080,height=2168};FBLC/de_DE;FBRV/350032442;FBCR/vodafone.de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A528B;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A528B
     marketingName: 'Galaxy A52s 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184967;FBDM/{density=2.625,width=1080,height=2194};FBLC/de_DE;FBRV/350032442;FBCR/vodafone.de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G991B;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G991B
     marketingName: 'Galaxy S21 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184966;FBDM/{density=2.0,width=720,height=1410};FBLC/sr_RS;FBRV/349512297;FBCR/MEDIONmobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A207F;FBSV/11;FBOP/19;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A207F
     marketingName: 'Galaxy A20s (Global)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-G991B Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.71 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/338.1.0.11.117;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G991B
     marketingName: 'Galaxy S21 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 94.0.4606.71
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A725F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/348.0.0.11.110;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A725F
     marketingName: 'Galaxy A72'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1157,13 +1155,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.58 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/351.1.0.12.114;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A528B
     marketingName: 'Galaxy A52s 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1195,13 +1193,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 99.0.4844.58
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.73 Mobile Safari/537.36 Instagram 227.0.0.12.117 Android (31/12; 600dpi; 1440x2808; samsung; SM-S908B; b0s; s5e9925; de_DE; 358645676)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S908B
     marketingName: 'Galaxy S22 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -1233,13 +1231,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 99.0.4844.73
@@ -1257,13 +1257,11 @@
     x-requested-with: com.facebook.katana
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-A105M Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.50 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/357.0.0.23.115;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A105M
     marketingName: 'Galaxy A10'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1520
       height: 720
@@ -1272,13 +1270,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1286,7 +1280,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 95.0.4638.50
@@ -1296,13 +1296,11 @@
     x-requested-with: com.facebook.orca
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A525M Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/349.0.0.7.108;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A525M
     marketingName: 'Galaxy A52 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1311,13 +1309,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1325,7 +1319,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141
@@ -1335,13 +1335,11 @@
     x-requested-with: com.instagram.android
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A325M Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 Instagram 222.0.0.15.114 Android (30/11; 420dpi; 1080x2195; samsung; SM-A325M; a32; mt6769t; es_US; 350971657)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A325M
     marketingName: 'Galaxy A32 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1350,13 +1348,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1364,7 +1358,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -1373,13 +1373,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A405FN Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/359.0.0.6.112;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A405FN
     marketingName: 'Galaxy A40'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1388,13 +1386,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1402,7 +1396,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.45
@@ -1411,13 +1411,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; SM-A107F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36 Instagram 240.2.0.18.107 Android (29/10; 280dpi; 720x1439; samsung; SM-A107F; a10s; mt6762; tr_TR; 378116727)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A107F
     marketingName: 'Galaxy A10s'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1520
       height: 720
@@ -1426,13 +1424,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1440,7 +1434,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1449,13 +1449,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S901B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 Instagram 241.1.0.18.114 Android (31/12; 480dpi; 1080x2115; samsung; SM-S901B; r0s; s5e9925; de_DE; 379517355)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S901B
     marketingName: 'Galaxy S22 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1464,13 +1462,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1478,7 +1472,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.125
@@ -1487,13 +1487,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S901B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/376.0.0.12.108;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S901B
     marketingName: 'Galaxy S22 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1502,13 +1500,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1516,7 +1510,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.71
@@ -1525,13 +1525,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A325F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/376.0.0.12.108;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A325F
     marketingName: 'Galaxy A32 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1540,13 +1538,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1554,7 +1548,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.71
@@ -1563,13 +1563,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A217F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/368.0.0.12.109;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A217F
     marketingName: 'Galaxy A21s (2020, International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -1578,13 +1576,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1592,7 +1586,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.71
@@ -1601,13 +1601,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G770F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/368.0.0.12.109;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G770F
     marketingName: 'Galaxy S10 Lite'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1440
@@ -1616,13 +1614,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1630,7 +1624,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.71
@@ -1639,13 +1639,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M326B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/382.0.0.33.111;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M326B
     marketingName: 'Galaxy M32 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1654,13 +1652,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1668,7 +1662,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.97
@@ -1677,13 +1677,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/381.0.0.29.105;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S908B
     marketingName: 'Galaxy S22 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -1692,13 +1690,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1706,7 +1700,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 99.0.4844.88
@@ -1715,13 +1715,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A426B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/377.0.0.22.107;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A426B
     marketingName: 'Galaxy A42 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -1730,13 +1728,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1744,7 +1738,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.125
@@ -1753,13 +1753,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/382.0.0.33.111;FBBV/394408923;FBDM/{density=1.75,width=720,height=1382};FBLC/pt_BR;FBRV/395813334;FBCR/vodafone.de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A105M;FBSV/10;FBOP/19;FBCA/armeabi-v7a:armeabi;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A105M
     marketingName: 'Galaxy A10'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1520
       height: 720
@@ -1768,13 +1766,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1782,7 +1776,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -1791,13 +1791,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M135M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/385.0.0.32.114;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M135M
     marketingName: 'Galaxy M13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2408
       height: 1080
@@ -1806,13 +1804,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1820,7 +1814,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -1829,13 +1829,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G990B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36 Instagram 257.1.0.16.110 Android (31/12; 420dpi; 1080x2115; samsung; SM-G990B; r9q; qcom; en_US; 409942498)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -1844,13 +1842,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1858,7 +1852,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 106.0.5249.126
@@ -1867,13 +1867,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A415F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Instagram 255.1.0.17.102 Android (31/12; 420dpi; 1080x2184; samsung; SM-A415F; a41; mt6768; de_DE; 405431927)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A415F
     marketingName: 'Galaxy A41'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1882,13 +1880,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1896,7 +1890,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -1905,13 +1905,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A536B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Instagram 255.0.0.15.102 Android (31/12; 450dpi; 1080x2177; samsung; SM-A536B; a53x; s5e8825; de_DE; 404547868)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A536B
     marketingName: 'Galaxy A53 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1920,13 +1918,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1934,7 +1928,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -1943,13 +1943,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A528B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Instagram 254.0.0.19.109 Android (31/12; 420dpi; 1080x2186; samsung; SM-A528B; a52sxq; qcom; de_DE; 402584968)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A528B
     marketingName: 'Galaxy A52s 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1958,13 +1956,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1972,7 +1966,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -1981,13 +1981,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A536B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/385.0.0.32.114;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A536B
     marketingName: 'Galaxy A53 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -1996,13 +1994,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2010,7 +2004,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -2019,13 +2019,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A226B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Instagram 253.0.0.23.114 Android (31/12; 450dpi; 1080x2160; samsung; SM-A226B; a22x; mt6833; de_DE; 399993162)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A226B
     marketingName: 'Galaxy A22 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2034,13 +2032,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2048,7 +2042,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -2057,13 +2057,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A135F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 Instagram 252.0.0.17.111 Android (31/12; 450dpi; 1080x2208; samsung; SM-A135F; a13; exynos850; tr_TR; 397702037)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A135F
     marketingName: 'Galaxy A13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2072,13 +2070,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2086,7 +2080,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.79
@@ -2095,13 +2095,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A135F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/382.0.0.33.111;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A135F
     marketingName: 'Galaxy A13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2110,13 +2108,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2124,7 +2118,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.97
@@ -2133,13 +2133,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/382.0.0.33.111;FBBV/394408287;FBDM/{density=2.8125,width=1080,height=2208};FBLC/uk_UA;FBRV/395322387;FBCR/vodafone.de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A135F;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A135F
     marketingName: 'Galaxy A13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2148,13 +2146,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2162,7 +2156,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -2171,13 +2171,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G996B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/382.0.0.20.105;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G996B
     marketingName: 'Galaxy S21+ 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2186,13 +2184,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -2200,7 +2194,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.125
@@ -2209,13 +2209,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S908B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/387.0.0.22.106;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S908B
     marketingName: 'Galaxy S22 Ultra 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -2224,13 +2222,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -2238,7 +2232,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.141
@@ -2247,13 +2247,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G990B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/386.2.0.22.106;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2262,13 +2260,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -2276,7 +2270,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.105
@@ -2286,13 +2286,11 @@
     x-requested-with: com.instagram.android
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A235F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Instagram 261.0.0.21.111 Android (31/12; 450dpi; 1080x2207; samsung; SM-A235F; a23; qcom; tr_TR; 418951310)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A235F
     marketingName: 'Galaxy A23 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2301,13 +2299,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2315,7 +2309,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -2324,13 +2324,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/408.1.0.36.103;FBBV/460978424;FBDM/{density=3.375,width=1080,height=2148};FBLC/de_DE;FBRV/462601649;FBCR/o2 - de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A415F;FBSV/10;FBOP/19;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A415F
     marketingName: 'Galaxy A41'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2339,13 +2337,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2353,7 +2347,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -2362,13 +2362,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A336B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/373.0.0.31.112;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A336B
     marketingName: 'Galaxy A33 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2377,13 +2375,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2391,7 +2385,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 102.0.5005.125
@@ -2400,13 +2400,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A035F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/407.0.0.30.97;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A035F
     marketingName: 'Galaxy A03'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -2415,13 +2413,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2429,7 +2423,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 104.0.5112.97
@@ -2438,13 +2438,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M127G Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/407.0.0.30.97;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M127G
     marketingName: 'Galaxy M12 4G (India)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2453,13 +2451,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2467,7 +2461,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -2476,13 +2476,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A137F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/407.0.0.30.97;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A137F
     marketingName: 'Galaxy A13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2491,13 +2489,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2505,7 +2499,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.58
@@ -2514,13 +2514,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A047F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.67 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/405.0.0.23.72;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A047F
     marketingName: 'Galaxy A04s 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -2529,13 +2527,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2543,7 +2537,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.67
@@ -2552,13 +2552,11 @@
   headers:
     user-agent: '[FBAN/FB4A;FBAV/407.0.0.30.97;FBBV/458543270;FBDM/{density=2.8125,width=1080,height=2160};FBLC/de_DE;FBRV/459709388;FBCR/vodafone.de;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A226B;FBSV/13;FBOP/1;FBCA/arm64-v8a:;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A226B
     marketingName: 'Galaxy A22 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2567,13 +2565,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2581,7 +2575,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -2590,13 +2590,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M515F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.154 Mobile Safari/537.36 Instagram 274.0.0.26.90 Android (31/12; 480dpi; 1080x2165; samsung; SM-M515F; m51; qcom; de_DE; 456141810)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M515F
     marketingName: 'Galaxy M51 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2605,13 +2603,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2619,7 +2613,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.154
@@ -2628,13 +2628,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A236B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/405.0.0.23.72;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A236B
     marketingName: 'Galaxy A23 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -2643,13 +2641,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2657,7 +2651,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.58
@@ -2666,13 +2666,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M317F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/408.1.0.36.103;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M317F
     marketingName: 'Galaxy M31s'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2681,13 +2679,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -2695,7 +2689,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -2704,13 +2704,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A505F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 Instagram 277.0.0.17.107 Android (30/11; 420dpi; 1080x2131; samsung; SM-A505F; a50; exynos9610; tr_TR; 462178165)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A505F
     marketingName: 'Galaxy A50'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2719,13 +2717,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2733,7 +2727,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.116
@@ -2742,13 +2742,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S916B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.101 Mobile Safari/537.36 Instagram 279.0.0.23.112 Android (33/13; 480dpi; 1080x2122; samsung; SM-S916B; dm2q; qcom; de_DE; 466535817)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S916B
     marketingName: 'Galaxy S23+ (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -2757,13 +2755,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2771,7 +2765,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.101
@@ -2780,13 +2780,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A536E Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.76 Mobile Safari/537.36 Instagram 284.0.0.22.85 Android (33/13; 450dpi; 1080x2177; samsung; SM-A536E; a53x; s5e8825; tr_TR; 477443866)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A536E
     marketingName: 'Galaxy A53 5G (Asia/Africa)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2795,13 +2793,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2809,7 +2803,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.76
@@ -2818,13 +2818,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G990B2 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36 Instagram 284.0.0.22.85 Android (33/13; 450dpi; 1080x2241; samsung; SM-G990B2; r9q; qcom; en_US; 477443883)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990B2
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2833,13 +2831,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2847,7 +2841,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -2856,13 +2856,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-G990E Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36 Instagram 282.0.0.22.119 Android (33/13; 510dpi; 1080x2088; samsung; SM-G990E; r9s; exynos2100; tr_TR; 472968075)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G990E
     marketingName: 'Galaxy S21 FE 5G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -2871,13 +2869,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2885,7 +2879,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -2894,13 +2894,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A525F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/406.0.0.13.115;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A525F
     marketingName: 'Galaxy A52 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -2909,13 +2907,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -2923,7 +2917,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -2932,13 +2932,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A127F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 Mobile Safari/537.36 Instagram 284.0.0.22.85 Android (33/13; 320dpi; 720x1461; samsung; SM-A127F; a12s; exynos850; de_DE; 477443866)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A127F
     marketingName: 'Galaxy A12 (India)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -2947,13 +2945,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2961,7 +2955,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -2970,13 +2970,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-G975U Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36 Instagram 292.0.0.31.110 Android (30/11; 480dpi; 1080x2029; samsung; SM-G975U; beyond2q; qcom; de_DE; 495673913)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G975U
     marketingName: 'Galaxy S10+ (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3040
       height: 1440
@@ -2985,13 +2983,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -2999,7 +2993,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -3008,13 +3008,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A025G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/412.0.0.15.69;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A025G
     marketingName: 'Galaxy A02s'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3023,13 +3021,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3037,7 +3031,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.162
@@ -3046,13 +3046,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A045F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.210 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/422.0.0.26.76;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A045F
     marketingName: 'Galaxy A04 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3061,13 +3059,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -3075,7 +3069,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.210
@@ -3084,13 +3084,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A136B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36 Instagram 291.1.0.34.111 Android (33/13; 300dpi; 720x1465; samsung; SM-A136B; a13x; mt6833; de_DE; 494078146)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A136B
     marketingName: 'Galaxy A13 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3099,13 +3097,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -3113,7 +3107,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.141
@@ -3122,13 +3122,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A045F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/99.0.4844.88 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/382.0.0.20.105;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A045F
     marketingName: 'Galaxy A04 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3137,13 +3135,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3151,7 +3145,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 99.0.4844.88
@@ -3160,13 +3160,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A042M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/417.0.0.12.64;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A042M
     marketingName: 'Galaxy A04e'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3175,13 +3173,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3189,7 +3183,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -3198,13 +3198,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A137F Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36 Instagram 290.0.0.13.76 Android (33/13; 450dpi; 1080x2301; samsung; SM-A137F; a13ve; mt6768; de_DE; 491057529)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A137F
     marketingName: 'Galaxy A13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -3213,13 +3211,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -3227,7 +3221,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -3236,13 +3236,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S906B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/427.0.0.31.63;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S906B
     marketingName: 'Galaxy S22+ 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3251,13 +3249,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -3265,7 +3259,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.166
@@ -3274,13 +3274,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G970U1 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 Instagram 297.0.0.33.109 Android (31/12; 480dpi; 1080x2020; samsung; SM-G970U1; beyond0q; qcom; de_DE; 507536348)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G970U1
     marketingName: 'Galaxy S10e (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -3289,13 +3287,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -3303,7 +3297,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.166
@@ -3312,13 +3312,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A125F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/414.0.0.17.61;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A125F
     marketingName: 'Galaxy A12 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3327,13 +3325,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3341,7 +3335,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.128
@@ -3350,13 +3350,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A515U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/421.0.0.12.61;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A515U
     marketingName: 'Galaxy A51 4G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -3365,13 +3363,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3379,7 +3373,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.166
@@ -3388,13 +3388,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A037F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/421.0.0.12.61;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A037F
     marketingName: 'Galaxy A03s 4G'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -3403,13 +3401,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3417,7 +3411,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.138
@@ -3426,13 +3426,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A236B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 Instagram 295.0.0.32.109 Android (33/13; 450dpi; 1080x2208; samsung; SM-A236B; a23xq; qcom; de_DE; 502546257)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A236B
     marketingName: 'Galaxy A23 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -3441,13 +3439,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -3455,7 +3449,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.166
@@ -3464,13 +3464,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-M215F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/421.0.0.12.61;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-M215F
     marketingName: 'Galaxy M21'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3479,13 +3477,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3493,7 +3487,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.166
@@ -3502,13 +3502,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-A336B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.139 Mobile Safari/537.36 Instagram 295.0.0.32.109 Android (33/13; 450dpi; 1080x2185; samsung; SM-A336B; a33x; s5e8825; hr_HR; 502546257)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A336B
     marketingName: 'Galaxy A33 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -3517,13 +3515,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -3531,7 +3525,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.139
@@ -3540,13 +3540,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-S901B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.139 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/421.0.0.12.61;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S901B
     marketingName: 'Galaxy S22 5G (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -3555,13 +3553,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3569,7 +3563,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.139
@@ -3578,13 +3578,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A135F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/406.0.0.13.115;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A135F
     marketingName: 'Galaxy A13'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2408
       height: 1080
@@ -3593,13 +3591,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3607,7 +3601,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 95.0.4638.74
@@ -3616,13 +3616,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SM-S918B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 Instagram 294.0.0.33.87 Android (33/13; 420dpi; 1080x2115; samsung; SM-S918B; dm3q; qcom; de_DE; 500160575)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-S918B
     marketingName: 'Galaxy S23 Ultra (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3088
       height: 1440
@@ -3631,13 +3629,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -3645,7 +3639,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.138
@@ -3654,13 +3654,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-G781U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/419.0.0.10.49;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-G781U
     marketingName: 'Galaxy S20 FE 5G (USA)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -3669,13 +3667,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3683,7 +3677,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.138
@@ -3692,13 +3692,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A127F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.85 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/413.0.0.14.72;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A127F
     marketingName: 'Galaxy A12 (India)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3707,13 +3705,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3721,7 +3715,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.85
@@ -3730,13 +3730,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-A217F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.147 Mobile Safari/537.36 Instagram 288.1.0.22.66 Android (30/11; 280dpi; 720x1448; samsung; SM-A217F; a21s; exynos850; sq_AL; 487359358)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A217F
     marketingName: 'Galaxy A21s (2020, International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3745,13 +3743,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -3759,7 +3753,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.147
@@ -3768,13 +3768,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SM-A032M Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.130 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/417.0.0.12.64;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A032M
     marketingName: 'Galaxy A03 Core'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -3783,13 +3781,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -3797,7 +3791,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.130

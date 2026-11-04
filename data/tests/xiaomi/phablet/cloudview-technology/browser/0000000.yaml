@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; en-; 2312DRA50G Build/AQ3A.240912.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.66 Mobile Safari/537.36 PHX/19.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2312DRA50G
     marketingName: 'Redmi Note 13 Pro 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -17,13 +15,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.66
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-us; 2510ERA8BI Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36 PHX/21.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2510ERA8BI
     marketingName: 'Redmi Note 15 Pro+ 5G (India)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2772
       height: 1280
@@ -55,13 +53,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; ar-eg; 25098RA98G Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.115 Mobile Safari/537.36 PHX/21.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25098RA98G
     marketingName: 'Redmi Note 15 5G (International)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -93,13 +91,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.115
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; ar-eg; 25080RABDG Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.177 Mobile Safari/537.36 PHX/21.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25080RABDG
     marketingName: 'Redmi Note 15 Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2772
       height: 1220
@@ -131,13 +129,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.177

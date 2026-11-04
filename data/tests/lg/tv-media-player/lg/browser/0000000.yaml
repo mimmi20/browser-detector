@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; U; Linux 7631; en) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ LG Browser/4.1.4(+NO_NUM; LGE; Media/ST600; ST.8.79.207.F; 0x00000001;); LG NetCast.Media-2011'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ST600
     marketingName: ST600
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: 7631.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: 7631.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; U; Linux 7631; en) AppleWebKit/531.2  (KHTML, like Gecko) Safari/531.2  LG Browser/4.1.4( NO_NUM; LGE; Media/SP520; ST.3.97.409.F; 0x00000001;); LG NetCast.Media-2011'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SP520
     marketingName: SP520
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: 7631.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: 7631.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; U; Linux armv6l; en) AppleWebKit/531.2  (KHTML, like Gecko) Safari/531.2  LG Browser/4.1.4( BDP; LGE; Media/BD660; 6970; abc;); LG NetCast.Media-2011'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BD660
     marketingName: BD660
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0

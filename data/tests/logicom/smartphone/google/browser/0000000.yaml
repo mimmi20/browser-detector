@@ -8,13 +8,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Elio
     marketingName: Elio
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -23,13 +21,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -37,7 +31,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.60
@@ -46,13 +46,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Le Link) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Le Link'
     marketingName: 'Le Link'
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -61,13 +59,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -75,7 +69,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.0.0
@@ -84,13 +84,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Five Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Five Pro'
     marketingName: 'Five Pro'
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -99,13 +97,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -113,7 +107,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.0.0
@@ -122,13 +122,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Solar Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Solar Pro'
     marketingName: 'Solar Pro'
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 2
     display:
       width: null
       height: null
@@ -137,13 +135,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -151,7 +145,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0.0
@@ -160,13 +160,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Lunar Pro Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.134 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lunar Pro'
     marketingName: 'Lunar Pro'
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -175,13 +173,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -189,7 +183,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.134
@@ -198,13 +198,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; SOLAR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Solar
     marketingName: Solar
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 2
     display:
       width: null
       height: null
@@ -213,13 +211,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -227,7 +221,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -236,13 +236,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; LUNAR Build/S00812) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Lunar
     marketingName: Lunar
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 2
     display:
       width: null
       height: null
@@ -251,13 +249,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -265,7 +259,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.103
@@ -274,13 +274,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Five Pro 32) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Five Pro 32'
     marketingName: 'Five Pro 32'
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -289,13 +287,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -303,7 +297,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.0.0
@@ -312,13 +312,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Yuno) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Yuno
     marketingName: Yuno
     manufacturer: logicom
     brand: logicom
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -327,13 +325,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -341,7 +335,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.0.0

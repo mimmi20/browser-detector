@@ -5,13 +5,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Pixel 4a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.75 Mobile Safari/537.36 ABB/3.0.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 4a'
     marketingName: 'Pixel 4a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -20,13 +18,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -34,7 +28,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 93.0.0
@@ -50,13 +50,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Pixel 3a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.75 Mobile Safari/537.36 ABB/3.0.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 3a'
     marketingName: 'Pixel 3a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2220
       height: 1080
@@ -65,13 +63,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -79,7 +73,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 93.0.0
@@ -88,13 +88,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 ABB/3.4.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8 Pro'
     marketingName: 'Pixel 8 Pro'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2992
       height: 1344
@@ -103,13 +101,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'AdBlock Browser'
     modus: null
@@ -117,7 +111,13 @@
     manufacturer: eyeo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0

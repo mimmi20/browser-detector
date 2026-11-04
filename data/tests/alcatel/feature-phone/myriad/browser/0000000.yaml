@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Alcatel-OH5/1.0 UP.Browser/6.1.0.7.7 (GUI) MMP/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: OH5
     marketingName: OH5
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Alcatel-BF5/1.0 UP.Browser/5.0.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BF5
     marketingName: BF5
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Alcatel-BH4R/1.0 UP.Browser/6.2.ALCATEL MMP/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BH4R
     marketingName: 'OneTouch 735i'
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Alcatel-CTH3/1.0 UP.Browser/6.2.ALCATEL MMP/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TH3
     marketingName: TH3
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Alcatel-OT-C552a/1.0 UP.Browser/7.1 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: OT-C552a
     marketingName: OT-C552a
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Alcatel-BG3/1.0 UP.Browser/5.0.3.1.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BG3
     marketingName: BG3
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Alcatel-TH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TH4
     marketingName: TH4
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: OT-C552
     marketingName: OT-C552
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Alcatel-BH4/1.0 UP.Browser/6.2.ALCATEL MMP/1.0 UP.Link/6.2.3.14'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BH4
     marketingName: 'OneTouch 735'
     manufacturer: alcatel
     brand: alcatel
-    dualOrientation: false
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

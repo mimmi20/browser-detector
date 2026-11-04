@@ -3,13 +3,11 @@
     x-requested-with: com.tencent.mtt
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; zh-cn; NX659J Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0   MQQBrowser/9.6 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NX659J
     marketingName: 'Nubia Red Magic 5G'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -18,13 +16,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'QQ Browser'
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: tencent
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0

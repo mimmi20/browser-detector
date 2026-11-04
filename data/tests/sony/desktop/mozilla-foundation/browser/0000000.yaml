@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:19.0) Gecko/20100101 Firefox/19.0 (f26masa)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PC
     marketingName: PC
     manufacturer: sony
     brand: sony
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Gecko
     version: 19.0.0

@@ -9,13 +9,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: COCP20GOLD
     marketingName: COCP20GOLD
     manufacturer: coopers
     brand: coopers
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -24,13 +22,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -38,7 +32,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.119

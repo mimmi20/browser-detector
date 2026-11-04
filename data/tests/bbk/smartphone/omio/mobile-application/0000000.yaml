@@ -2,13 +2,11 @@
   headers:
     user-agent: 'GoEuroAndroid/9.39.3 (Realme RMX3366; Android 14; okhttp/4.9.3) WebView'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RMX3366
     marketingName: 'GT Master Edition'
     manufacturer: bbk
     brand: realme
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: GoEuro
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: omio
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

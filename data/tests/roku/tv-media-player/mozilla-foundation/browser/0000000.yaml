@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (QSP; Roku; AP; 6.2.80.2752)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Digital Video Player'
     marketingName: 'Digital Video Player'
     manufacturer: roku
     brand: roku
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Roku OS'
-    marketingName: 'Roku OS'
-    version: 6.2.80.2752
-    manufacturer: roku
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Roku OS'
+    marketingName: 'Roku OS'
+    version: 6.2.80.2752
+    manufacturer: roku
+    bits: 0
   engine:
     name: Gecko
     version: null

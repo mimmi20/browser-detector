@@ -2,13 +2,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; Pt-BR; maui e800) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Maui E800'
     marketingName: 'Maui E800'
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -43,13 +43,11 @@
     x-ucbrowser-device: 'maui e800'
     user-agent: 'UCWEB/2.0 (Java; U; MIDP-2.0; Pt-BR; maui e800) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile UNTRUSTED/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Maui E800'
     marketingName: 'Maui E800'
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -58,13 +56,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -72,7 +66,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: U2
     version: 1.0.0

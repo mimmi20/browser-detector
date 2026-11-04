@@ -1,0 +1,39 @@
+-
+  headers:
+    x-requested-with: com.hisense.odinbrowser
+    user-agent: 'Mozilla/5.0 (X11;Linux x86_64;rv:78.0) Gecko/20100101 Firefox/78.0'
+  device:
+    architecture: ''
+    deviceName: X11
+    marketingName: X11
+    manufacturer: cubot
+    brand: cubot
+    display:
+      width: 1280
+      height: 720
+      touch: true
+      size: 5.5
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 1
+    bits: 0
+  client:
+    name: 'Odin Browser'
+    modus: null
+    version: null
+    manufacturer: hisense
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
+  engine:
+    name: Gecko
+    version: 78.0.0
+    manufacturer: mozilla

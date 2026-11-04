@@ -2,13 +2,11 @@
   headers:
     user-agent: '(compatible;PetalBot;+https://aspiegel.com/petalbot)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PetalBot
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: aspiegel
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -43,13 +43,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (compatible;PetalBot;+https://webmaster.petalsearch.com/site/petalbot)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -58,13 +56,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: PetalBot
     modus: null
@@ -72,7 +66,13 @@
     manufacturer: aspiegel
     type: crawler
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0

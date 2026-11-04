@@ -1,14 +1,12 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K SMART TV Build/UKN4.250714.123; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; android TV Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,389 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 101.0.4951.61
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: 'Android TV'
     marketingName: 'Android TV'
     version: 14.0.0
     manufacturer: google
-    bits: null
+    bits: 0
+  engine:
+    name: Blink
+    version: 101.0.4951.61
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; AndroidTV Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.62  Safari/537.36 OpenBrowser/2.2.1.979 smartTV CTV/MetaX'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 93.0.4577.62
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 93.0.4577.62
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; AndroidTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.87 Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 98.0.4758.87
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 98.0.4758.87
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Androidtv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 93.0.4577.62
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 93.0.4577.62
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; AndroidTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 93.0.4577.62
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 93.0.4577.62
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 89.0.4389.72
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 89.0.4389.72
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 89.0.4389.72
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 89.0.4389.72
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 89.0.4389.72
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 89.0.4389.72
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; Androidtv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 72.0.3626.121
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 72.0.3626.121
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 72.0.3626.121
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 72.0.3626.121
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K SMART TV Build/UKN4.250714.123; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -31,7 +405,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -40,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K SMART TV Build/UKN1.240806.050; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +433,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -69,7 +443,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -78,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K SA Google TV Build/UKNV.260317.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +471,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -107,7 +481,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -116,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K PA Google TV Build/UKNV.260316.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +509,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -145,7 +519,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -154,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K PA Google TV Build/UKNV.260316.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +547,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -183,7 +557,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -192,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K PA Google TV Build/UKNV.260316.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +585,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -221,7 +595,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.34
@@ -230,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Google TV Box Build/UKG3.251130.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +623,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -259,7 +633,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -268,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Google TV Box Build/UKG3.250518.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +661,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -297,7 +671,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -306,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Google TV Box Build/UKG3.250518.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +699,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -335,7 +709,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -344,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Google TV Box Build/UKG3.250518.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +737,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -373,7 +747,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.217
@@ -382,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Google TV Box Build/UKG3.250115.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +775,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -411,7 +785,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.59
@@ -420,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Android TV Box Build/UKG3.250826.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +813,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -449,7 +823,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -458,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Android TV Box Build/UKG3.250826.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +851,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -487,7 +861,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -496,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Android TV Box Build/UKG3.250115.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +889,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -525,7 +899,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -534,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 4K Android TV Box Build/UKG3.250115.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/136.0.7103.60 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +927,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -563,7 +937,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 136.0.7103.60
@@ -572,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K US Google TV Build/UKNV.260316.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +965,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -601,7 +975,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -610,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K SMART TV Build/UKN6.260116.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +1003,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -639,7 +1013,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -648,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K SMART TV Build/UKN4.250714.046; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +1041,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -677,7 +1051,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -686,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K SMART TV Build/UKN3.250415.018; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +1079,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -715,7 +1089,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -724,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K SA Google TV Build/UKNV.260316.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +1117,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -753,7 +1127,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -762,13 +1142,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K PA Smart TV Build/UKNV.260410.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +1155,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -791,7 +1165,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -800,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K PA Smart TV Build/UKNV.260410.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +1193,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -829,7 +1203,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.34
@@ -838,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K PA Google TV Build/UKNV.260316.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -853,13 +1231,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -867,7 +1241,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -876,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K PA Google TV Build/UKNV.260316.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +1269,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -905,7 +1279,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -914,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2K PA Google TV Build/UKNV.260316.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +1307,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -943,7 +1317,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215
@@ -952,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14.1; TV BOX Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -967,13 +1345,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.1.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -981,7 +1355,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.1.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -990,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14.0; TV BOX Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1005,13 +1383,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1019,7 +1393,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1028,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14.0; TV BOX Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +1421,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1057,7 +1431,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1066,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14.0; TVBOX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +1459,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1095,7 +1469,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.77
@@ -1104,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14.0; Android TV Build/QP1A.191105.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +1497,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1133,22 +1507,26 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 14.0; Android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 14.0; androidtv Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.62  Safari/537.36 OpenBrowser/2.2.1.979 smartTV CTV/MetaX'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1535,161 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 93.0.4577.62
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: 'Android TV'
     marketingName: 'Android TV'
     version: 14.0.0
     manufacturer: google
-    bits: null
+    bits: 0
+  engine:
+    name: Blink
+    version: 93.0.4577.62
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14.0; AndroidTV Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.62 Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Chrome WebView'
+    modus: null
+    version: 93.0.4577.62
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 93.0.4577.62
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14.0; AndroidTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 93.0.4577.62
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 93.0.4577.62
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14.0; androidtv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 93.0.4577.62
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 93.0.4577.62
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 14.0; Android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1171,7 +1697,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 75.0.3770.101
@@ -1180,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14.0; android TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +1725,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1209,7 +1735,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 72.0.3626.121
@@ -1218,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 00269 Build/UD2A.240505.001.W1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.51 SALUTEBRO/1.8.2 TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +1763,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1247,7 +1773,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.51
@@ -1256,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; TVBOX) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1271,13 +1801,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1285,7 +1811,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 75.0.3770.101
@@ -1294,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SMART_TV Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1309,13 +1839,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1323,7 +1849,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1332,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SmartTV Build/AML962T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1347,13 +1877,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1361,7 +1887,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -1370,13 +1902,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1385,13 +1915,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1399,7 +1925,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.101
@@ -1408,13 +1940,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; SMART_TV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1423,13 +1953,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1437,7 +1963,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 73.0.3683.90
@@ -1446,13 +1978,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13.0; TVBOX Build/NHG47K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,13 +1991,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -1475,22 +2001,26 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.193
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; TV Box Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 13.0; AndroidTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1499,13 +2029,47 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 75.0.3770.101
     manufacturer: google
-    bits: null
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 75.0.3770.101
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 12; TV Box Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'general TV device'
+    marketingName: 'general TV device'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1513,7 +2077,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -1522,13 +2092,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; TV Box Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1537,13 +2105,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1551,7 +2115,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -1560,13 +2130,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; TV Box Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1575,13 +2143,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1589,7 +2153,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -1598,13 +2168,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; TV Box Build/STTC.230104.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1613,13 +2181,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1627,7 +2191,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.217
@@ -1636,13 +2206,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; tvbox Build/STT5.251221.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,13 +2219,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1665,7 +2229,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -1674,13 +2244,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; tvbox Build/STT5.251221.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,13 +2257,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1703,7 +2267,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -1712,13 +2282,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.28 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,13 +2295,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1741,7 +2305,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.28
@@ -1750,13 +2320,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,13 +2333,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1779,7 +2343,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -1788,13 +2358,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.92 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,13 +2371,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1817,7 +2381,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.92
@@ -1826,13 +2396,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1841,13 +2409,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1855,7 +2419,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -1864,13 +2434,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1879,13 +2447,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1893,7 +2457,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -1902,13 +2472,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.96 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1917,13 +2485,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1931,7 +2495,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.96
@@ -1940,13 +2510,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.225 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1955,13 +2523,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -1969,7 +2533,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.225
@@ -1978,13 +2548,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1993,13 +2561,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2007,7 +2571,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.217
@@ -2016,13 +2586,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2031,13 +2599,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2045,7 +2609,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215
@@ -2054,13 +2624,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2069,13 +2637,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2083,7 +2647,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.178
@@ -2092,13 +2662,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.119 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2107,13 +2675,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2121,7 +2685,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.7680.119
@@ -2130,13 +2700,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2145,13 +2713,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2159,7 +2723,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.34
@@ -2168,13 +2738,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2183,13 +2751,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2197,7 +2761,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.179
@@ -2206,13 +2776,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.100 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2221,13 +2789,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2235,7 +2799,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.7049.100
@@ -2244,13 +2814,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2259,13 +2827,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2273,7 +2837,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -2282,13 +2852,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 ZIB/106-9.8.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2297,13 +2865,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2311,7 +2875,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2320,13 +2890,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2335,13 +2903,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2349,7 +2913,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2358,13 +2928,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2373,13 +2941,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2387,7 +2951,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.171
@@ -2396,13 +2966,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2411,13 +2979,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2425,7 +2989,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -2434,13 +3004,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.230203.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2449,13 +3017,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2463,7 +3027,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.193
@@ -2472,13 +3042,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.28 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2487,13 +3055,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2501,7 +3065,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.28
@@ -2510,13 +3080,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2525,13 +3093,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2539,7 +3103,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -2548,13 +3118,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2563,13 +3131,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2577,7 +3141,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -2586,13 +3156,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.163 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2601,13 +3169,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2615,7 +3179,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.163
@@ -2624,13 +3194,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2639,13 +3207,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2653,7 +3217,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.159
@@ -2662,13 +3232,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2677,13 +3245,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2691,7 +3255,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.217
@@ -2700,13 +3270,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2715,13 +3283,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2729,7 +3293,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215
@@ -2738,13 +3308,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.120 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2753,13 +3321,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2767,7 +3331,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.120
@@ -2776,13 +3346,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.138 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2791,13 +3359,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2805,7 +3369,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.138
@@ -2814,13 +3384,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2829,13 +3397,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2843,7 +3407,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.137
@@ -2852,13 +3422,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.111 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2867,13 +3435,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2881,7 +3445,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.111
@@ -2890,13 +3460,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2905,13 +3473,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2919,7 +3483,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.59
@@ -2928,13 +3498,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2943,13 +3511,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2957,7 +3521,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.34
@@ -2966,13 +3536,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2981,13 +3549,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -2995,7 +3559,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.122
@@ -3004,13 +3574,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.158 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3019,13 +3587,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3033,7 +3597,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 139.0.7258.158
@@ -3042,13 +3612,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3057,13 +3625,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3071,7 +3635,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.230
@@ -3080,13 +3650,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3095,13 +3663,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3109,7 +3673,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.132
@@ -3118,13 +3688,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Pro Build/STT2.221228.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.225 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3133,13 +3701,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -3147,7 +3711,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.225
@@ -3156,13 +3726,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3171,13 +3739,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3185,7 +3749,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -3194,13 +3764,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3209,13 +3777,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -3223,578 +3787,14 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 149.0.7827.159
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.159
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 148.0.7778.217
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.217
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 148.0.7778.215
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.215
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 148.0.7778.178
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.178
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.120 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 148.0.7778.120
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 148.0.7778.120
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.137 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 147.0.7727.137
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 147.0.7727.137
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.80 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 145.0.7632.80
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 145.0.7632.80
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.109 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 144.0.7559.109
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.109
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.192 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 143.0.7499.192
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 143.0.7499.192
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.102 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 142.0.7444.102
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 142.0.7444.102
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 120.0.6099.230
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 120.0.6099.230
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.132 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 144.0.7559.132
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 144.0.7559.132
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.230203.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 120.0.6099.230
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 120.0.6099.230
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; Smart TV Build/STT2.221228.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 149.0.7827.91
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 149.0.7827.91
-    manufacturer: google
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 12; SMART_TV Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.114 Safari/537.36'
-  device:
-    architecture: null
-    deviceName: 'general TV device'
-    marketingName: 'general TV device'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: tv
-    ismobile: false
-    istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 12.0.0
-    manufacturer: google
-    bits: null
-  client:
-    name: 'Chrome WebView'
-    modus: null
-    version: 91.0.4472.114
-    manufacturer: google
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Blink
-    version: 91.0.4472.114
     manufacturer: google

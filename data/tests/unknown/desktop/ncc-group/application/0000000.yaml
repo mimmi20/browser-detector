@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; en-gb) AppleWebKit/418.9.1 (KHTML, like Gecko) SiteCon/8.10.22'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: SiteCon
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ncc-group
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 418.9.1

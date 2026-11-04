@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; U; Linux mips; en) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+ LG Browser/4.0.10(+SCREEN+TUNER; LGE; 42LE5500-SA; 04.02.02; 0x00000001;); LG NetCast.TV-2010'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LE5500-SA
     marketingName: 42LE5500-SA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ LG Browser/5.00.00(+mouse+3D+SCREEN+TUNER; LGE; 47LM9600-NA; 06.00.00; 0x00000001;); LG NetCast.TV-2012 0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LM9600-NA
     marketingName: 47LM9600-NA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -69,22 +63,64 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.26.0
     manufacturer: apple
 -
   headers:
+    user-agent: 'LG Browser/5.0.0 InettvBrowser/2.2 (00E091;LGE2D2012M;01;00)'
+  device:
+    architecture: ''
+    deviceName: 'general LG TV'
+    marketingName: 'general LG TV'
+    manufacturer: lg
+    brand: lg
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'LG Browser'
+    modus: null
+    version: 5.0.0
+    manufacturer: lg
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+mouse+3D+PORTAL_KEY+SCREEN+TUNER; LGE; 47LA660S-ZA; 02.01.07; 0x00000001;); LG NetCast.TV-2013'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LA660S-ZA
     marketingName: 47LA660S-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -107,7 +139,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 537.1.0
@@ -116,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+mouse+3D+SCREEN+TUNER; LGE; 27MT93S-PZQ; 04.22.07; 0x00000001;); LG NetCast.TV-2013 /04.22.07 (LG, 27MT93S-PZQ, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NetCast
     marketingName: NetCast
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +167,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -145,7 +177,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 537.1.0
@@ -154,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+mouse+3D+SCREEN+TUNER; LGE; 47LA790W-ZA; 04.28.13; 0x00000001;); LG NetCast.TV-2013 /04.28.13 (LG, 47LA790W-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LA790W-ZA
     marketingName: 47LA790W-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -169,13 +205,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -183,7 +215,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 537.1.0
@@ -192,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 32LH590U-ZE; 03.01.00; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 32LH590U-ZE, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 32LH590U-ZE
     marketingName: 32LH590U-ZE
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -207,13 +243,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -221,7 +253,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -230,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 32LH604V-ZB; 03.00.75; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 32LH604V-ZB, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 32LH604V-ZB
     marketingName: 32LH604V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -245,13 +281,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -259,7 +291,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -268,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 40UH630V-ZA; 03.00.41; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 40UH630V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 40UH630V-ZA
     marketingName: 40UH630V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -283,13 +319,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -297,7 +329,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -306,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43LH590V-ZD; 03.00.85; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43LH590V-ZD, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43LH590V-ZD
     marketingName: 43LH590V-ZD
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -321,13 +357,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -335,7 +367,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -344,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43LH604V-ZB; 03.00.80; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43LH604V-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43LH604V-ZB
     marketingName: 43LH604V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -359,13 +395,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -373,7 +405,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -382,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH6109-ZB; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH6109-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH6109-ZB
     marketingName: 43UH6109-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -397,13 +433,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -411,7 +443,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -420,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH610V-ZA; 02.02.00; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH610V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH610V-ZA
     marketingName: 43UH610V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -435,13 +471,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -449,7 +481,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -458,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH620V-ZA; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH620V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH620V-ZA
     marketingName: 43UH620V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -473,13 +509,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -487,7 +519,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -496,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH6500-SB; 02.02.78; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH6500-SB, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH6500-SB
     marketingName: 43UH6500-SB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -511,13 +547,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -525,7 +557,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -534,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH650V-ZB; 03.20.05; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH650V-ZB, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH650V-ZB
     marketingName: 43UH650V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -549,13 +585,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -563,7 +595,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -572,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH661V-ZF; 03.05.10; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH661V-ZF, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH661V-ZF
     marketingName: 43UH661V-ZF
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -587,13 +623,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -601,7 +633,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -610,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH664V-ZC; 03.20.05; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH664V-ZC, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH664V-ZC
     marketingName: 43UH664V-ZC
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -625,13 +661,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -639,7 +671,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -648,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH668V-ZA; 03.00.80; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH668V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH668V-ZA
     marketingName: 43UH668V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -663,13 +699,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -677,7 +709,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -686,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 43UH750V-ZA; 03.00.75; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 43UH750V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 43UH750V-ZA
     marketingName: 43UH750V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -701,13 +737,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -715,7 +747,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -724,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49LH590V-ZD; 03.00.85; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49LH590V-ZD, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49LH590V-ZD
     marketingName: 49LH590V-ZD
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -739,13 +775,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -753,7 +785,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -762,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49LH604V-ZB; 03.00.80; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49LH604V-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49LH604V-ZB
     marketingName: 49LH604V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -777,13 +813,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -791,7 +823,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -800,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH610V-ZB; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH610V-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH610V-ZB
     marketingName: 49UH610V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -815,13 +851,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -829,7 +861,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -838,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH6200-ND; 02.02.70; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH6200-ND, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH6200-ND
     marketingName: 49UH6200-ND
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -853,13 +889,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -867,7 +899,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -876,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH620V-ZA; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH620V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH620V-ZA
     marketingName: 49UH620V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -891,13 +927,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -905,7 +937,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -914,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH650V-ZB; 03.00.75; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH650V-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH650V-ZB
     marketingName: 49UH650V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -929,13 +965,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -943,7 +975,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -952,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH661V-ZF; 03.00.87; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH661V-ZF, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH661V-ZF
     marketingName: 49UH661V-ZF
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -967,13 +1003,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -981,7 +1013,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -990,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH664V-ZC; 03.00.75; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH664V-ZC, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH664V-ZC
     marketingName: 49UH664V-ZC
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1005,13 +1041,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1019,7 +1051,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1028,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH668V-ZA; 03.00.87; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH668V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH668V-ZA
     marketingName: 49UH668V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1043,13 +1079,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1057,7 +1089,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1066,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH7500-UA; 03.00.30; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH7500-UA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH7500-UA
     marketingName: 49UH7500-UA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1081,13 +1117,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1095,7 +1127,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1104,13 +1142,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH750V-ZA; 03.00.41; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH750V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH750V-ZA
     marketingName: 49UH750V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1119,13 +1155,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1133,7 +1165,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1142,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH770V-ZA; 03.00.25; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH770V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH770V-ZA
     marketingName: 49UH770V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1157,13 +1193,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1171,7 +1203,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1180,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 49UH850V-ZA; 03.00.76; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 49UH850V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UH850V-ZA
     marketingName: 49UH850V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1195,13 +1231,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1209,7 +1241,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1218,13 +1256,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 50UH635V-ZA; 03.01.10; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 50UH635V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50UH635V-ZA
     marketingName: 50UH635V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1233,13 +1269,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1247,7 +1279,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1256,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55LH604V-ZB; 03.00.85; 1; DTV_W16R); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55LH604V-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55LH604V-ZB
     marketingName: 55LH604V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -1271,13 +1307,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1285,7 +1317,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1294,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH6159-ZB; 03.20.05; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH6159-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH6159-ZB
     marketingName: 55UH6159-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1309,13 +1345,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1323,7 +1355,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1332,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH615V-ZB; 03.05.10; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH615V-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH615V-ZB
     marketingName: 55UH615V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1347,13 +1383,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1361,7 +1393,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1370,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH625V-ZA; 03.00.75; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH625V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH625V-ZA
     marketingName: 55UH625V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1385,13 +1421,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1399,7 +1431,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1408,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH650V-ZB; 03.20.05; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH650V-ZB, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH650V-ZB
     marketingName: 55UH650V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1423,13 +1459,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1437,7 +1469,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1446,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH661V-ZF; 03.00.87; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH661V-ZF, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH661V-ZF
     marketingName: 55UH661V-ZF
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1461,13 +1497,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1475,7 +1507,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1484,13 +1522,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH668V-ZA; 03.00.87; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH668V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH668V-ZA
     marketingName: 55UH668V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1499,13 +1535,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1513,7 +1545,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1522,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH750V-ZA; 03.01.00; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH750V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH750V-ZA
     marketingName: 55UH750V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1537,13 +1573,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1551,7 +1583,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1560,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH7709-ZA; 03.17.06; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH7709-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH7709-ZA
     marketingName: 55UH7709-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1575,13 +1611,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1589,7 +1621,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1598,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH770V-ZA; 03.00.09; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH770V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH770V-ZA
     marketingName: 55UH770V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1613,13 +1649,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1627,7 +1659,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1636,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH850V-ZA; 03.00.12; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH850V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH850V-ZA
     marketingName: 55UH850V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1651,13 +1687,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1665,7 +1697,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1674,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 55UH950V-ZA; 03.00.76; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 55UH950V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55UH950V-ZA
     marketingName: 55UH950V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1689,13 +1725,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1703,7 +1735,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1712,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 58UH635V-ZA; 03.00.41; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 58UH635V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 58UH635V-ZA
     marketingName: 58UH635V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1727,13 +1763,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1741,7 +1773,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1750,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 60UH770V-ZA; 03.00.25; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 60UH770V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 60UH770V-ZA
     marketingName: 60UH770V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1765,13 +1801,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1779,7 +1811,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1788,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 60UH850V-ZA; 03.00.50; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 60UH850V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 60UH850V-ZA
     marketingName: 60UH850V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1803,13 +1839,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1817,7 +1849,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1826,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH615V-ZB; 03.20.05; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH615V-ZB, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH615V-ZB
     marketingName: 65UH615V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1841,13 +1877,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1855,7 +1887,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1864,13 +1902,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH625V-ZA; 03.00.80; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH625V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH625V-ZA
     marketingName: 65UH625V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1879,13 +1915,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1893,7 +1925,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1902,13 +1940,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH661V-ZF; 03.01.10; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH661V-ZF, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH661V-ZF
     marketingName: 65UH661V-ZF
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1917,13 +1953,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1931,7 +1963,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1940,13 +1978,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH668V-ZA; 03.20.05; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH668V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH668V-ZA
     marketingName: 65UH668V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1955,13 +1991,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -1969,7 +2001,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -1978,13 +2016,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH750V-ZA; 03.20.05; 1; DTV_W16N); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH750V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH750V-ZA
     marketingName: 65UH750V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -1993,13 +2029,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2007,7 +2039,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2016,13 +2054,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH7709-ZA; 03.17.06; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH7709-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH7709-ZA
     marketingName: 65UH7709-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -2031,13 +2067,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2045,7 +2077,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2054,13 +2092,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH770V-ZA; 03.00.33; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH770V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH770V-ZA
     marketingName: 65UH770V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -2069,13 +2105,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2083,7 +2115,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2092,13 +2130,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH850V-ZA; 03.00.50; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH850V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH850V-ZA
     marketingName: 65UH850V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -2107,13 +2143,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2121,7 +2153,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2130,13 +2168,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 65UH950V-ZA; 03.00.75; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 65UH950V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65UH950V-ZA
     marketingName: 65UH950V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -2145,13 +2181,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2159,7 +2191,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2168,13 +2206,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 70UH700V-ZA; 03.10.23; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 70UH700V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 70UH700V-ZA
     marketingName: 70UH700V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -2183,13 +2219,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2197,7 +2229,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2206,13 +2244,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 75UH780V-ZC; 03.15.10; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 75UH780V-ZC, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 75UH780V-ZC
     marketingName: 75UH780V-ZC
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -2221,13 +2257,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2235,7 +2267,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2244,13 +2282,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 75UH855V-ZA; 03.15.10; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 75UH855V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 75UH855V-ZA
     marketingName: 75UH855V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -2259,13 +2295,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2273,7 +2305,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2282,13 +2320,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; 86UH955V-ZA; 03.15.10; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, 86UH955V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 86UH955V-ZA
     marketingName: 86UH955V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -2297,13 +2333,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2311,7 +2343,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2320,13 +2358,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; OLED55B6V-Z; 03.10.23; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, OLED55B6V-Z, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NetCast
     marketingName: NetCast
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2335,13 +2371,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2349,7 +2381,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2358,13 +2396,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; OLED55C6V-Z; 03.10.17; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, OLED55C6V-Z, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: OLED55C6V-Z
     marketingName: OLED55C6V-Z
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2373,13 +2409,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2387,7 +2419,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2396,13 +2434,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; OLED55E6V-Z; 03.05.20; 1; DTV_W16M); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, OLED55E6V-Z, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: OLED55E6V-Z
     marketingName: OLED55E6V-Z
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2411,13 +2447,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2425,7 +2457,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2434,13 +2472,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; OLED65B6V-Z; 03.10.23; 1; DTV_W16K); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, OLED65B6V-Z, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: OLED65B6V-Z
     marketingName: OLED65B6V-Z
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2449,13 +2485,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2463,7 +2495,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2472,13 +2510,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.2.1 Chr0me/38.0.2125.122 Safari/537.36 LG Browser/8.00.00(LGE; WEBOS3; 02.02.00; 1; DTV_W16P); webOS.TV-2016; LG NetCast.TV-2013 Compatible (LGE, WEBOS3, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: webOSTV
     marketingName: webOSTV
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2487,13 +2523,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 3.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2501,7 +2533,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 3.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 38.0.2125.122
@@ -2510,13 +2548,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 32LB650V-ZN; 03.00.72; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 32LB650V-ZN, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 32LB650V-ZN
     marketingName: 32LB650V-ZN
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2525,13 +2561,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2539,7 +2571,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2548,13 +2586,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 32LB652V-ZA; 05.00.55; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 32LB652V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: NetCast
     marketingName: NetCast
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2563,13 +2599,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2577,7 +2609,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2586,13 +2624,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB630V-ZA; 03.00.56; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB630V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LB630V-ZA
     marketingName: 42LB630V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2601,13 +2637,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2615,7 +2647,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2624,13 +2662,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB650V-ZN; 03.00.65; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB650V-ZN, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LB650V-ZN
     marketingName: 42LB650V-ZN
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2639,13 +2675,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2653,7 +2685,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2662,13 +2700,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB670V-ZA; 03.23.36; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB670V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LB670V-ZA
     marketingName: 42LB670V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2677,13 +2713,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2691,7 +2723,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2700,13 +2738,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB671V-ZB; 03.23.38; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB671V-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LB671V-ZB
     marketingName: 42LB671V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2715,13 +2751,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2729,7 +2761,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2738,13 +2776,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB700V-ZG; 03.23.15; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB700V-ZG, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LB700V-ZG
     marketingName: 42LB700V-ZG
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2753,13 +2789,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2767,7 +2799,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2776,13 +2814,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB730V-ZD; 03.00.69; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB730V-ZD, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LB730V-ZD
     marketingName: 42LB730V-ZD
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2791,13 +2827,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2805,7 +2837,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2814,13 +2852,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 42LB731V-ZE; 04.41.32; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 42LB731V-ZE, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LB731V-ZE
     marketingName: 42LB731V-ZE
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2829,13 +2865,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2843,7 +2875,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2852,13 +2890,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 47LB630V-ZA; 03.23.38; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 47LB630V-ZA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LB630V-ZA
     marketingName: 47LB630V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2867,13 +2903,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2881,7 +2913,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2890,13 +2928,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 47LB650V-ZN; 03.00.84; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 47LB650V-ZN, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LB650V-ZN
     marketingName: 47LB650V-ZN
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2905,13 +2941,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2919,7 +2951,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2928,13 +2966,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 47LB671V-ZB; 03.23.24; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 47LB671V-ZB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LB671V-ZB
     marketingName: 47LB671V-ZB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -2943,13 +2979,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2957,7 +2989,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -2966,13 +3004,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 47LB731V-ZE; 03.23.24; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 47LB731V-ZE, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LB731V-ZE
     marketingName: 47LB731V-ZE
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2981,13 +3017,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -2995,7 +3027,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -3004,13 +3042,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 49UB850V-ZD; 03.13.33; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 49UB850V-ZD, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 49UB850V-ZD
     marketingName: 49UB850V-ZD
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -3019,13 +3055,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3033,7 +3065,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -3042,13 +3080,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 50LB650V-ZN; 03.23.18; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 50LB650V-ZN, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50LB650V-ZN
     marketingName: 50LB650V-ZN
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3057,13 +3093,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3071,7 +3103,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -3080,13 +3118,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 55LB650V-ZN; 03.23.36; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 55LB650V-ZN, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55LB650V-ZN
     marketingName: 55LB650V-ZN
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3095,13 +3131,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3109,7 +3141,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -3118,13 +3156,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 55LB731V-ZE; 03.23.24; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 55LB731V-ZE, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 55LB731V-ZE
     marketingName: 55LB731V-ZE
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3133,13 +3169,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3147,7 +3179,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -3156,13 +3194,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 60LB650V-ZN; 03.00.84; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 60LB650V-ZN, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 60LB650V-ZN
     marketingName: 60LB650V-ZN
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3171,13 +3207,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3185,7 +3217,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -3194,13 +3232,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; WEBOS1; 04.41.32; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, WEBOS1, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: webOSTV
     marketingName: webOSTV
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3209,13 +3245,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 1.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3223,22 +3255,26 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 1.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'LG Browser/7.00.00(LGE; WEBOS1; 00.00.00) webOS.TV-2015)'
+    user-agent: 'LG Browser/5.0.0 InettvBrowser/2.2 (00E091;LGE3D2012M;01;00)'
   device:
-    architecture: null
-    deviceName: webOSTV
-    marketingName: webOSTV
+    architecture: ''
+    deviceName: 'NetCast 2012'
+    marketingName: 'NetCast 2012'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3247,13 +3283,47 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'LG Browser'
+    modus: null
+    version: 5.0.0
+    manufacturer: lg
+    type: browser
+    isbot: false
+    bits: 0
   os:
-    name: webOS
-    marketingName: webOS
-    version: 1.0.0
-    manufacturer: hp
-    bits: null
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'LG Browser/7.00.00(LGE; WEBOS1; 00.00.00) webOS.TV-2015)'
+  device:
+    architecture: ''
+    deviceName: webOSTV
+    marketingName: webOSTV
+    manufacturer: lg
+    brand: lg
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3261,7 +3331,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: webOS
+    marketingName: webOS
+    version: 1.0.0
+    manufacturer: hp
+    bits: 0
   engine:
     name: null
     version: null
@@ -3270,13 +3346,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; Linux armv7l) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ LG Browser/5.00.00(+mouse+SCREEN+TUNER; LGE; 42LP860H-ZA; 03.03.02; 0x00000001;); LG NetCast.TV-2012'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LP860H-ZA
     marketingName: 42LP860H-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -3285,13 +3359,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3299,7 +3369,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.26.0
@@ -3308,13 +3384,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; Linux i686) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+ LG Browser/5.00.00(+mouse+3D+PORTAL_KEY+SCREEN+TUNER; LGE; 47LM9600-NC; 09.00.00; 0x00000001;); LG NetCast.TV-2012'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LM9600-NC
     marketingName: 47LM9600-NC
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -3323,13 +3397,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3337,7 +3407,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.26.0
@@ -3346,13 +3422,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; U; Linux i686; en-us) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+; CNS_UA; LG Browser/4.05; AD_LOGON=4C47452E4E4554; HbbTV/1.1.1 (; LGE; GLOBAL_PLAT3; 1.0; 1.0;)'
   device:
-    architecture: null
-    deviceName: 'general LG TV'
-    marketingName: 'general LG TV'
+    architecture: ''
+    deviceName: 'GLOBAL PLAT3'
+    marketingName: 'GLOBAL PLAT3'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3361,13 +3435,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3375,7 +3445,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -3384,13 +3460,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (DirectFB; U; Linux mips; en) AppleWebKit/531.2+ (KHTML, like Gecko, Safari/531.2+); LG Browser/4.0.9(+mouse+3D+SCREEN+TUNER; LGE; 42LE7500-ZA; 03.05.04; 0x00000001;); LG NetCast.TV-2011'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LE7500-ZA
     marketingName: 42LE7500-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -3399,13 +3473,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3413,7 +3483,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 531.2.0
@@ -3422,13 +3498,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+mouse+3D+SCREEN+TUNER; LGE; 42LA660V-ZA; 04.22.07; 0x00000001;); LG NetCast.TV-2013 /04.22.07 (LG, 42LA660V-ZA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 42LA660V-ZA
     marketingName: 42LA660V-ZA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -3437,13 +3511,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3451,7 +3521,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 537.1.0
@@ -3460,13 +3536,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ LG Browser/6.00.00(+mouse+3D+SCREEN+TUNER; LGE; 47LA6900-NA; 04.00.33; 0x00000001;); LG NetCast.TV-2013 /04.00.33 (LG, 47LA6900-NA, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 47LA6900-NA
     marketingName: 47LA6900-NA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -3475,13 +3549,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3489,7 +3559,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 537.1.0
@@ -3498,13 +3574,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Unknown; Linux) AppleWebKit/537.41 (KHTML, like Gecko) Safari/537.41 LG Browser/7.00.00(LGE; WEBOS1; 257; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, WEBOS1, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: webOSTV
     marketingName: webOSTV
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3513,13 +3587,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: webOS
-    marketingName: webOS
-    version: 1.0.0
-    manufacturer: hp
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3527,7 +3597,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: webOS
+    marketingName: webOS
+    version: 1.0.0
+    manufacturer: hp
+    bits: 0
   engine:
     name: WebKit
     version: 537.41.0
@@ -3536,13 +3612,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/53.0.2785.34 Safari/537.36 LG Browser/8.00.00(LGE; 32LM6300PLA; 05.40.45; 1; DTV_W19R); webOS.TV-2019; LG NetCast.TV-2013 Compatible (LGE, 32LM6300PLA, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 32LM6300PLA
     marketingName: 32LM6300PLA
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -3551,13 +3625,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 4.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3565,7 +3635,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 4.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.34
@@ -3574,13 +3650,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chr0me/94.0.4606.128 Safari/537.36 LG Browser/8.00.00(LGE; 65QNED756RB; 13.40.97; 0x00000001; DTV_W23M); webOS.TV-2022; LG NetCast.TV-2013 Compatible (LGE, 65QNED756RB, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 65QNED756RB
     marketingName: 65QNED756RB
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -3589,13 +3663,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 23.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'LG Browser'
     modus: null
@@ -3603,7 +3673,13 @@
     manufacturer: lg
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 23.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 94.0.4606.128

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'MD-Browser 2.4 (compatible; MSIE 8.0; Gomo SE 1.0.3; Trident/4.0; (1und1/1.1.0.22); SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; (1und1/1.1.0.22); SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Sogou Explorer'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: sogou
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0

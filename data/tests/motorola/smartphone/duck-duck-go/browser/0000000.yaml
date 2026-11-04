@@ -11,13 +11,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G20'
     marketingName: 'Moto G20'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -26,13 +24,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -40,7 +34,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.0
@@ -58,13 +58,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E13'
     marketingName: 'Moto E13'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -73,13 +71,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -87,7 +81,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.0
@@ -105,13 +105,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G84 5G'
     marketingName: 'Moto G84 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -120,13 +118,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -134,7 +128,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.0
@@ -152,13 +152,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 50 Neo'
     marketingName: 'Edge 50 Neo'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2670
       height: 1200
@@ -167,13 +165,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -181,7 +175,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.0
@@ -201,13 +201,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G54 5G'
     marketingName: 'Moto G54 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -216,13 +214,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -230,7 +224,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.0
@@ -250,13 +250,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G14'
     marketingName: 'Moto G14'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -265,13 +263,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -279,7 +273,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.0
@@ -299,13 +299,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto E7 Plus'
     marketingName: 'Moto E7 Plus'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -314,13 +312,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -328,7 +322,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.0
@@ -348,13 +348,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G42'
     marketingName: 'Moto G42'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -363,13 +361,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -377,7 +371,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.0
@@ -397,13 +397,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 50'
     marketingName: 'Edge 50'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2712
       height: 1220
@@ -412,13 +410,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -426,7 +420,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.0
@@ -446,13 +446,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G82 5G'
     marketingName: 'Moto G82 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -461,13 +459,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -475,7 +469,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.0
@@ -495,13 +495,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 30 Neo'
     marketingName: 'Edge 30 Neo'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -510,13 +508,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -524,7 +518,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.0
@@ -544,13 +544,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 20 Lite'
     marketingName: 'Edge 20 Lite'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -559,13 +557,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -573,7 +567,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.0
@@ -593,13 +593,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G62 5G'
     marketingName: 'Moto G62 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -608,13 +606,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -622,7 +616,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.0
@@ -642,13 +642,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G75 5G'
     marketingName: 'Moto G75 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2388
       height: 1080
@@ -657,13 +655,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -671,7 +665,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 146.0.0
@@ -691,13 +691,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 50 Fusion'
     marketingName: 'Edge 50 Fusion'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -706,13 +704,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -720,7 +714,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0
@@ -740,13 +740,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G24'
     marketingName: 'Moto G24'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -755,13 +753,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -769,7 +763,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0
@@ -789,13 +789,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Edge 60 Pro'
     marketingName: 'Edge 60 Pro'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2712
       height: 1220
@@ -804,13 +802,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -818,7 +812,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.0
@@ -838,13 +838,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G56 5G'
     marketingName: 'Moto G56 5G'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 152.0.0
@@ -887,13 +887,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Moto G72'
     marketingName: 'Moto G72'
     manufacturer: motorola
     brand: motorola
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -902,13 +900,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -916,8 +910,63 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.0
+    manufacturer: google
+-
+  headers:
+    sec-ch-ua-model: '"moto g51 5G"'
+    x-requested-with: com.duckduckgo.mobile.android
+    sec-ch-ua-platform: '"Android"'
+    sec-ch-ua-platform-version: '"12.0.0"'
+    sec-ch-ua: '"Chromium";v="154", "DuckDuckGo";v="154", "Not A(Brand";v="99"'
+    sec-ch-ua-full-version: '"154.0.8037.107"'
+    sec-ch-ua-bitness: '""'
+    sec-ch-ua-arch: '""'
+    sec-ch-ua-form-factors: '"Mobile"'
+    sec-ch-ua-mobile: '?1'
+    sec-ch-ua-wow64: '?0'
+    user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: 'Moto G51 5G'
+    marketingName: 'Moto G51 5G'
+    manufacturer: motorola
+    brand: motorola
+    display:
+      width: 2400
+      height: 1080
+      touch: true
+      size: 6.8
+    type: smartphone
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 2
+    bits: 0
+  client:
+    name: 'DuckDuckGo Privacy Browser'
+    modus: null
+    version: 154.0.8037.107
+    manufacturer: duck-duck-go
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 154.0.0
     manufacturer: google

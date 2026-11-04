@@ -2,13 +2,11 @@
   headers:
     user-agent: 'DoCoMo/1.0/P502i/c10 (Google CHTML Proxy/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P502i
     marketingName: P502i
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 96
       height: 95
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Google CHTML Proxy'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

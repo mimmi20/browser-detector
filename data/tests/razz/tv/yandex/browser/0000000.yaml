@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; K55USY23 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: K55USY23
     marketingName: K55USY23
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; H43QSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H43QSY24F
     marketingName: H43QSY24F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; CE32FSA26F Build/TP1A.220905.004.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CE32FSA26F
     marketingName: CE32FSA26F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.61
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; HC55USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HC55USY26F
     marketingName: HC55USY26F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; HC50USY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HC50USY26F
     marketingName: HC50USY26F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -169,13 +167,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; HC43FSY26F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HC43FSY26F
     marketingName: HC43FSY26F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -207,13 +205,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; CA24HSY25F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: CA24HSY25F
     marketingName: CA24HSY25F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -245,13 +243,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; C50QSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C50QSY25F
     marketingName: C50QSY25F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -283,13 +281,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; C32HSY24F Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C32HSY24F
     marketingName: C32HSY24F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1280
       height: 720
@@ -321,13 +319,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; C32FSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C32FSY25F
     marketingName: C32FSY25F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -359,13 +357,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; C24HSY25F Build/RD2A.211001.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.163 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C24HSY25F
     marketingName: C24HSY25F
     manufacturer: razz
     brand: razz
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -397,13 +395,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.163

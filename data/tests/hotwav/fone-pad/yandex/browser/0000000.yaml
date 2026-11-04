@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 13; TAB R6 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.80 YaBrowser/24.1.6.80.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Tab R6 Ultra'
     marketingName: 'Tab R6 Ultra'
     manufacturer: hotwav
     brand: hotwav
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.80
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; TAB R9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.261 YaBrowser/25.4.0.261.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Tab R9 Pro'
     marketingName: 'Tab R9 Pro'
     manufacturer: hotwav
     brand: hotwav
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1920
       height: 1200
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.261
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14; TAB R8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.1898 YaSearchBrowser/25.40/apad BroPP/1.0 YaSearchApp/25.40/apad webOmni SA/3 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Tab R8'
     marketingName: 'Tab R8'
     manufacturer: hotwav
     brand: hotwav
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -93,13 +91,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.1898
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; TAB R5 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.1898 YaSearchBrowser/25.40/apad BroPP/1.0 YaSearchApp/25.40/apad webOmni SA/3 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Tab R5 Pro'
     marketingName: 'Tab R5 Pro'
     manufacturer: hotwav
     brand: hotwav
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1280
       height: 800
@@ -131,13 +129,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.1898

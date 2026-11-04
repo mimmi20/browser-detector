@@ -2,13 +2,11 @@
   headers:
     user-agent: 'luminary.next/1.25 (Linux;Android 9) ExoPlayerLib/2.10.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Next
     marketingName: Next
     manufacturer: nextbook
     brand: nextbook
-    dualOrientation: null
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: ExoPlayerLib
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'radio.next/1.5.6 (Linux;Android 11) ExoPlayerLib/2.15.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Next
     marketingName: Next
     manufacturer: nextbook
     brand: nextbook
-    dualOrientation: null
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Radio App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

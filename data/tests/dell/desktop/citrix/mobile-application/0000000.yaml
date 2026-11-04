@@ -2,13 +2,11 @@
   headers:
     user-agent: 'CitrixReceiver WTOS/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PC
     marketingName: PC
     manufacturer: dell
     brand: dell
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ThinOS
-    marketingName: ThinOS
-    version: 1.0.0
-    manufacturer: dell
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Citrix Workspace'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: citrix
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ThinOS
+    marketingName: ThinOS
+    version: 1.0.0
+    manufacturer: dell
+    bits: 0
   engine:
     name: null
     version: null

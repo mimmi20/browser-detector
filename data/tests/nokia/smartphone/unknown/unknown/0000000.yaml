@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Lumia 510'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-898
     marketingName: 'Lumia 510'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Mobile OS'
-    marketingName: 'Windows Mobile OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Mobile OS'
+    marketingName: 'Windows Mobile OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null

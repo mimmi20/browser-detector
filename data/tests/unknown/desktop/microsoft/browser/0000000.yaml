@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0; SunOS 5.10 sun4u; X11)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: 5.10.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: 5.10.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.4; OfficeLivePatch.1.3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 4.01; Digital AlphaServer 1000A 4/233; Windows NT; Powered By 64-Bit Alpha Processor)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows NT'
-    marketingName: 'Windows NT'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows NT'
+    marketingName: 'Windows NT'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 12.10240.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; ARM; Trident/6.0; Touch; .NET4.0E; .NET4.0C; Tablet PC 2.0; ARMAJS)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows RT'
-    marketingName: 'Windows RT'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows RT'
+    marketingName: 'Windows RT'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux i686; it)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,51 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
-  client:
-    name: 'Internet Explorer'
-    modus: null
-    version: 6.0.0
-    manufacturer: microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Trident
-    version: null
-    manufacturer: microsoft
--
-  headers:
-    user-agent: 'Mozilla/4.0 (X11; MSIE 6.0; i686; .NET CLR 1.1.4322; .NET CLR 2.0.50727; FDM)'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: false
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -297,7 +253,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -306,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/6.0 (compatible; MSIE 7.01; Amiga-AWeb)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -335,7 +291,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Amiga OS'
+    marketingName: 'Amiga OS'
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -344,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.36 (KHTML, like Gecko) Edge/12.10240'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -373,7 +329,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Edge
     version: 12.10240.0
@@ -382,13 +344,11 @@
   headers:
     user-agent: 'OS/2 (OS/2 Explorer; IBM OS/2 4Warp; Trident/7.0; rv:11.0) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +357,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: OS/2
-    marketingName: OS/2
-    version: 4.0.0
-    manufacturer: ibm
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -411,7 +367,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OS/2
+    marketingName: OS/2
+    version: 4.0.0
+    manufacturer: ibm
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -420,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.6; X11; CrOS i686 1193.158.0; Trident/5.0; Media Center PC 6.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +395,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 1193.158.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -449,7 +405,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 1193.158.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -458,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.5; SaferSurf)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +433,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -487,7 +443,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -496,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Hong Kong ICable)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +471,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 98'
-    version: 98.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -525,7 +481,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 98'
+    version: 98.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: iCab
     version: null
@@ -534,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.5; SaferSurf; DigExt)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +509,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -563,7 +519,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -572,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.5; Amiga-AWeb/3.4APL)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +547,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -601,7 +557,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Amiga OS'
+    marketingName: 'Amiga OS'
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -610,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT; Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; Usuarios de Multicanal))'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +585,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows NT'
-    marketingName: 'Windows NT'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -639,7 +595,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows NT'
+    marketingName: 'Windows NT'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -648,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0; SunOS 5.9 sun4u; X11)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +623,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: 5.9.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -677,7 +633,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: 5.9.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -686,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0; SunOS 5.7 sun4u; X11)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +661,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: 5.7.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -715,7 +671,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: 5.7.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -724,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0; SP1; SunOS 5.8 sun4u; X11)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +699,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: 5.8.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -753,7 +709,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: 5.8.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -762,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0; SaferSurf; DigExt)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +737,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -791,7 +747,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -800,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 6.1 (Mozilla); Debian Linux 2.4.17)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +775,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 2.4.17
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -829,7 +785,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 2.4.17
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -838,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/4.0(comptible;MSIE 6.0;Linux;proxy scaner by DrBIOS)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -853,13 +813,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -867,7 +823,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -876,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; SaferSurf)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +851,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -905,7 +861,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -914,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Unix; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; InfoPath.2; Tablet PC 2.0; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0E)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +889,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Unix
-    marketingName: Unix
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -943,7 +899,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Unix
+    marketingName: Unix
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -952,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; SaferSurf)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -967,13 +927,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -981,7 +937,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -990,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 9.0; SaferSurf)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1005,13 +965,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1019,7 +975,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1028,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; OpenVAS)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +1003,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1057,7 +1013,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1066,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 9.0; SaferSurf; x64)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +1041,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1095,7 +1051,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1104,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 9.0; Win64; SaferSurf; x64)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +1079,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1133,7 +1089,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1142,13 +1104,11 @@
   headers:
     user-agent: 'Microsoft Pocket Internet Explorer/0.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1117,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1171,7 +1127,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1180,13 +1142,11 @@
   headers:
     user-agent: 'Microsoft Visio MSIE'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +1155,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1209,7 +1165,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1218,13 +1180,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Win XP SP3; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; ms-office; MSOffice 14)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +1193,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1247,7 +1203,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1256,13 +1218,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux i686) Konqueror/3.4 (KHTML, like Gecko)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1271,13 +1231,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1285,7 +1241,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: KHTML
     version: null
@@ -1294,13 +1256,11 @@
   headers:
     user-agent: 'MSIE/6.0; (Spoofed by Amiga-AWeb/3.4APL)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1309,13 +1269,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1323,7 +1279,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Amiga OS'
+    marketingName: 'Amiga OS'
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1332,13 +1294,11 @@
   headers:
     user-agent: 'Mozilla/8.0 (compatible; MSIE 6.0; Win2000; WinXP)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1347,13 +1307,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1361,7 +1317,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1370,13 +1332,11 @@
   headers:
     user-agent: 'Mozilla/7.0 (compatible; MSIE 6.0; Win2K; WinXP)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1385,13 +1345,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1399,7 +1355,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1408,13 +1370,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; GO-Plugin; ms-office; MSOffice 14)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1423,13 +1383,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1437,7 +1393,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1446,13 +1408,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; X11)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,13 +1421,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1475,7 +1431,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1484,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 5.01; Win2000)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1499,13 +1459,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1513,7 +1469,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1522,13 +1484,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Unix; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; InfoPath.2; Tablet PC 2.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1537,13 +1497,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Unix
-    marketingName: Unix
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1551,7 +1507,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Unix
+    marketingName: Unix
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1560,13 +1522,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; SaferSurf)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1575,13 +1535,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1589,7 +1545,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1598,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; SaferSurf; x64)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1613,13 +1573,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1627,7 +1583,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -1636,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.2; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,13 +1611,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1665,7 +1621,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1674,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,13 +1649,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1703,7 +1659,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1712,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,13 +1687,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1741,7 +1697,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1750,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.4; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,13 +1725,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1779,7 +1735,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1788,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; BRI/2; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,13 +1763,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1817,7 +1773,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1826,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1841,13 +1801,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1855,7 +1811,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1864,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET4.0E; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1879,13 +1839,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1893,7 +1849,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1902,13 +1864,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1917,13 +1877,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1931,7 +1887,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 4.0.0
@@ -1940,13 +1902,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1955,13 +1915,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -1969,7 +1925,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -1978,13 +1940,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; BOIE9;ENUS; Solaris 9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1993,13 +1953,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2007,7 +1963,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 5.0.0
@@ -2016,13 +1978,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; SunOS 5.5; FDM)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2031,13 +1991,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: 5.5.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2045,7 +2001,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: 5.5.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2055,13 +2017,11 @@
     baidu-flyflow: 'Microsoft Windows NT 8.10.14219.0;4.0.30508.0;HUAWEI;HUAWEI W2-U00;4a1b5d7105057f0c0208d83c699276ff92cedbff;2.5.0.12'
     user-agent: 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HUAWEI; W2-U00)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2070,13 +2030,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -2084,7 +2040,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 6.0.0
@@ -2094,13 +2056,11 @@
     ua-os: 'Windows CE (Pocket PC) - Version 5.2'
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; XV6975)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2109,13 +2069,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: 5.2.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2123,7 +2079,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 5.2.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2132,13 +2094,11 @@
   headers:
     user-agent: 'Arexx (compatible; MSIE 6.0; AmigaOS5.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2147,13 +2107,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: 5.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2161,7 +2117,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Amiga OS'
+    marketingName: 'Amiga OS'
+    version: 5.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2170,13 +2132,11 @@
   headers:
     user-agent: 'Lynx (compatible; MSIE 6.0; )'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2185,13 +2145,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2199,7 +2155,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2208,13 +2170,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; AmigaOs)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2223,13 +2183,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2237,7 +2193,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Amiga OS'
+    marketingName: 'Amiga OS'
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2246,13 +2208,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; NetBSD)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2261,13 +2221,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: NetBSD
-    marketingName: NetBSD
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2275,7 +2231,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: NetBSD
+    marketingName: NetBSD
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2284,13 +2246,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (Compatible; MSIE 6.0; SunOS 5.8)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2299,13 +2259,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: SunOS
-    marketingName: SunOS
-    version: 5.8.0
-    manufacturer: oracle
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2313,7 +2269,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: SunOS
+    marketingName: SunOS
+    version: 5.8.0
+    manufacturer: oracle
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2322,13 +2284,11 @@
   headers:
     user-agent: 'S.E.K-Tron Systems(compatible; MSIE 6.0; Matrix; SEK-Tron Systems; AmigaOS)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2337,13 +2297,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Amiga OS'
-    marketingName: 'Amiga OS'
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2351,7 +2307,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Amiga OS'
+    marketingName: 'Amiga OS'
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2360,13 +2322,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Slackware)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2375,13 +2335,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Slackware Linux'
-    marketingName: 'Slackware Linux'
-    version: null
-    manufacturer: slackware
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2389,7 +2345,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Slackware Linux'
+    marketingName: 'Slackware Linux'
+    version: null
+    manufacturer: slackware
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -2398,13 +2360,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36 EdgA/41.0.0.1561'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2413,13 +2373,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -2427,7 +2383,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 63.0.3239.111
@@ -2436,13 +2398,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3731.0 Safari/537.36 Edg/75.0.99.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2451,13 +2411,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2465,7 +2421,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 75.0.3731.0
@@ -2474,13 +2436,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; Trident/7.0; rv:11.0) like Gecko'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2489,13 +2449,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -2503,7 +2459,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -2512,13 +2474,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Safari/537.36 Edg/77.12.4.5125'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2527,13 +2487,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2541,60 +2497,26 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 77.0.3865.116
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6'
-  device:
-    architecture: null
-    deviceName: 'general Desktop'
-    marketingName: 'general Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
-  client:
-    name: Edge
-    modus: null
-    version: 17.10859.0
-    manufacturer: microsoft
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Edge
-    version: 17.10859.0
-    manufacturer: microsoft
--
-  headers:
     user-agent: 'Mozilla/5.0 (Ubuntu 4953; Linux 45.4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/13.10586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2603,13 +2525,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2617,7 +2535,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: Edge
     version: 13.10586.0
@@ -2626,13 +2550,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2641,13 +2563,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2655,7 +2573,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 12.10240.0
@@ -2667,13 +2591,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2682,13 +2604,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge WebView'
     modus: null
@@ -2696,7 +2614,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 112.0.0
@@ -2705,13 +2629,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Edg/114.0.1823.67'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2720,13 +2642,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2734,7 +2652,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -2743,13 +2667,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; CrOS i686 0.13.507) AppleWebKit/537.36 (KHTML, like Gecko) 42.0.2311.135 Safari/537.36 Edge/12.246'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2758,13 +2680,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 0.13.507
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2772,7 +2690,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 0.13.507
+    manufacturer: google
+    bits: 0
   engine:
     name: Edge
     version: 12.246.0
@@ -2794,8 +2718,6 @@
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2804,12 +2726,8 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: 64
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
+    dualOrientation: false
+    simCount: 0
     bits: 64
   client:
     name: 'Edge Side Panel'
@@ -2819,6 +2737,12 @@
     type: browser
     isbot: false
     bits: 64
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 64
   engine:
     name: Blink
     version: 122.0.0
@@ -2827,13 +2751,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2842,13 +2764,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fedora Linux'
-    marketingName: 'Fedora Linux'
-    version: null
-    manufacturer: redhat
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2856,7 +2774,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fedora Linux'
+    marketingName: 'Fedora Linux'
+    version: null
+    manufacturer: redhat
+    bits: 0
   engine:
     name: Blink
     version: 121.0.0.0
@@ -2868,13 +2792,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.2651.74 Safari/537.36 HeadlessEdg/127.0.2651.74'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2883,13 +2805,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Headless Edge'
     modus: null
@@ -2897,7 +2815,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 127.0.0
@@ -2906,13 +2830,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.3; arm64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/87.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2921,13 +2843,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Windows RT'
-    marketingName: 'Windows RT'
-    version: 8.1.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2935,7 +2853,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows RT'
+    marketingName: 'Windows RT'
+    version: 8.1.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Edge
     version: 87.0.0.0
@@ -2947,13 +2871,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2962,13 +2884,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -2976,7 +2894,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 99.0.0
@@ -2985,13 +2909,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edg/121.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3000,13 +2922,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -3014,7 +2932,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -3023,13 +2947,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 EdgA/126.0.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3038,13 +2960,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -3052,7 +2970,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0.0
@@ -3064,13 +2988,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.82 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3079,13 +3001,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Edge
     modus: null
@@ -3093,7 +3011,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: Blink
     version: 121.0.0
@@ -3102,13 +3026,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Intel Braswell Chromebook Build/R90-13816.55.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Mobile Safari/537.36 EdgA/90.0.818.46'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -3117,13 +3039,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: ChromeOS
-    marketingName: ChromeOS
-    version: 13816.55.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Edge Mobile for Android'
     modus: null
@@ -3131,7 +3049,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ChromeOS
+    marketingName: ChromeOS
+    version: 13816.55.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 90.0.4430.85

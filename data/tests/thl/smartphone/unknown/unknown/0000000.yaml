@@ -2,13 +2,11 @@
   headers:
     user-agent: 'thl T9 Build/MRA58K'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T9
     marketingName: T9
     manufacturer: thl
     brand: thl
-    dualOrientation: null
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

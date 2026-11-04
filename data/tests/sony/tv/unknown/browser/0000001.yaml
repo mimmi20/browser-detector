@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KDL32W700C; CC/IND) Presto/2.12.407 Version/12.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: KDL-32W700C
     marketingName: KDL-32W700C
     manufacturer: sony
     brand: sony
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.12.407
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KDL40W705C; CC/RUS) Presto/2.12.407 Version/12.50'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Sony TV'
     marketingName: 'general Sony TV'
     manufacturer: sony
     brand: sony
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.12.407
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL32W603A; CC/RUS) Presto/2.12.362 Version/12.11'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Sony TV'
     marketingName: 'general Sony TV'
     manufacturer: sony
     brand: sony
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Presto
     version: 2.12.362

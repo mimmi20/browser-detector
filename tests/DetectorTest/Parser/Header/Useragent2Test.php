@@ -66,26 +66,35 @@ final class Useragent2Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    #[DataProvider(methodName: 'providerUa3')]
-    public function testData3(
+    #[DataProvider(methodName: 'providerUa7')]
+    public function testDataWithFindingADevice2(
         string $ua,
         string $normalizedUa,
         bool $hasDeviceInfo,
-        string $deviceUa,
-        string $deviceCode,
+        string | null $deviceCode,
         bool $hasClientInfo,
         string | null $clientCode,
         bool $hasClientVersion,
         string | null $clientVersion,
         bool $hasPlatformInfo,
-        Os $os,
+        string $platformUa,
+        Os $platformCode,
         bool $hasPlatformVersion,
         string | null $platformVersion,
         bool $hasEngineInfo,
+        string $engineUa,
         \BrowserDetector\Data\Engine $engine,
         bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
+        $os = new \UaResult\Os\Os(
+            name: $platformCode->getName(),
+            marketingName: $platformCode->getMarketingName(),
+            manufacturer: new Company(type: 'unknown', name: null, brandname: null),
+            version: (new VersionBuilder())->set((string) $platformVersion),
+            bits: Bits::unknown,
+        );
+
         $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
@@ -116,8 +125,10 @@ final class Useragent2Test extends TestCase
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
-            ->expects(self::never())
-            ->method('parse');
+            ->expects(self::atLeastOnce())
+            ->method('parse')
+            ->with($platformUa)
+            ->willReturn($platformCode);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -128,7 +139,7 @@ final class Useragent2Test extends TestCase
         $engineParser
             ->expects(self::atLeastOnce())
             ->method('parse')
-            ->with($normalizedUa)
+            ->with($engineUa)
             ->willReturn($engine);
 
         $browserLoader = $this->createMock(BrowserLoaderInterface::class);
@@ -141,8 +152,10 @@ final class Useragent2Test extends TestCase
             ->expects(self::never())
             ->method('load');
         $platformLoader
-            ->expects(self::never())
-            ->method('loadFromOs');
+            ->expects(self::atLeastOnce())
+            ->method('loadFromOs')
+            ->with($platformCode, $platformUa)
+            ->willReturn($os);
 
         $engineLoader = $this->createMock(EngineLoaderInterface::class);
         $engineLoader
@@ -162,18 +175,11 @@ final class Useragent2Test extends TestCase
 
         $mappingFileParser = $this->createMock(MappingfileLoaderInterface::class);
         $mappingFileParser
-            ->expects(self::once())
+            ->expects(self::never())
             ->method('init');
         $mappingFileParser
-            ->expects(self::exactly(3))
-            ->method('getItem')
-            ->willReturnMap(
-                [
-                    ['xiaomi; 24030pn60g', null],
-                    [$deviceUa, $deviceCode],
-                    [$ua, null],
-                ],
-            );
+            ->expects(self::never())
+            ->method('getItem');
 
         $normalizerFactory = new NormalizerFactory();
         $normalizerChain   = $normalizerFactory->build();
@@ -218,7 +224,7 @@ final class Useragent2Test extends TestCase
 
         self::assertSame($ua, $fullHeader->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
-            $ua,
+            $normalizedUa,
             $fullHeader->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
@@ -294,7 +300,7 @@ final class Useragent2Test extends TestCase
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $os,
+            $platformCode,
             $fullHeader->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
@@ -358,24 +364,25 @@ final class Useragent2Test extends TestCase
      *
      * @phpcs:disable SlevomatCodingStandard.Functions.FunctionLength.FunctionLength
      */
-    public static function providerUa3(): array
+    public static function providerUa7(): array
     {
         return [
             [
-                'ua' => 'Instagram 396.0.0.46.242 Android (35/15; 420dpi; 1080x2400; Xiaomi; 24030PN60G; aurora; qcom; de_DE; 785863896)',
-                'normalizedUa' => 'Instagram 396.0.0.46.242 Android (35/15; 420dpi; 1080x2400; Xiaomi; 24030PN60G; aurora; qcom; 785863896)',
+                'ua' => 'Mozilla/5.0 (Linux; Android 14; ZRnsYAf5vy; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.42 Mobile Safari/537.36',
+                'normalizedUa' => 'Mozilla/5.0 (Linux; Android 14; ZRnsYAf5vy; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.42 Mobile Safari/537.36',
                 'hasDeviceInfo' => true,
-                'deviceUa' => '24030pn60g',
-                'deviceCode' => 'A369i',
+                'deviceCode' => 'unknown=general mobile phone',
                 'hasClientInfo' => true,
-                'clientCode' => 'instagram app',
+                'clientCode' => 'avast secure browser',
                 'hasClientVersion' => true,
-                'clientVersion' => '396.0.0.46.242',
+                'clientVersion' => null,
                 'hasPlatformInfo' => true,
-                'os' => Os::android,
+                'platformUa' => 'Mozilla/5.0 (Linux; Android 14; ZRnsYAf5vy) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.42 Mobile Safari/537.36',
+                'platformCode' => Os::android,
                 'hasPlatformVersion' => true,
-                'platformVersion' => '15.0.0',
+                'platformVersion' => '14.0.0',
                 'hasEngineInfo' => true,
+                'engineUa' => 'Mozilla/5.0 (Linux; Android 14; ZRnsYAf5vy) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.42 Mobile Safari/537.36',
                 'engine' => \BrowserDetector\Data\Engine::webkit,
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31.0',

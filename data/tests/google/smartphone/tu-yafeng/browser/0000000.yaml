@@ -3,13 +3,11 @@
     x-requested-with: mark.via.gp
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Pixel 4a Build/TP1A.220905.004;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 4a'
     marketingName: 'Pixel 4a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -18,13 +16,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Via Browser'
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: tu-yafeng
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -45,13 +45,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 7'
     marketingName: 'Pixel 7'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -60,13 +58,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Via Browser'
     modus: null
@@ -74,7 +68,13 @@
     manufacturer: tu-yafeng
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.0
@@ -94,13 +94,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 17; Pixel 8 Build/CP2A.260705.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8'
     marketingName: 'Pixel 8'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -109,13 +107,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Via Browser'
     modus: null
@@ -123,7 +117,13 @@
     manufacturer: tu-yafeng
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0

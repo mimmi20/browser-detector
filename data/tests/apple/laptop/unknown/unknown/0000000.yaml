@@ -2,13 +2,11 @@
   headers:
     user-agent: 'server-bag [Mac OS X,10.14.6,18G8022,MacBookPro15,4]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacBook Pro 15,4'
     marketingName: 'MacBook Pro 13" (2019)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1600
@@ -17,13 +15,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'server-bag [macOS,11.6.1,20G224,MacBookAir6,2]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacBook Air 6,2'
     marketingName: 'MacBook Air 13" (2013)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1440
       height: 900
@@ -55,13 +53,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'ZohoTridentMac/1.11.0;D:Mac14,2;OS:macOS;OSVersion: 15.2.0;T:Light;F:System Font;L:de;DTZ:GMT 3600(Europe/Berlin);OAuth:1;Dist:Direct-Apple;BNo:840'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mac 14,2'
     marketingName: 'MacBook Air M2 13" (2022)'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: 2560
       height: 1664
@@ -93,13 +91,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'SonicWALL Mobile Connect for OS X 6.2.01 (MacBookPro98,1; OS X 13.3.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MacBook Pro'
     marketingName: 'MacBook Pro'
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: laptop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 13.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: null
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 13.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: null
     version: null

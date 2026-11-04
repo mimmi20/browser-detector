@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPod touch; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) FxiOS/1.2 Mobile/13C75 Safari/601.1.46'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPod Touch'
     marketingName: 'iPod Touch'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 480
       height: 320
@@ -17,13 +15,9 @@
     type: mobile-media-player
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Firefox Mobile for iOS'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 601.1.46

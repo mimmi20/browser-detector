@@ -2,13 +2,11 @@
   headers:
     user-agent: 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Facebook Crawler'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: facebookcatalog/1.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Facebook Catalog'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -81,13 +81,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: facebookexternalhit/1.1
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -96,13 +94,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Facebook Crawler'
     modus: null
@@ -110,7 +104,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 126.0.0
@@ -119,13 +119,11 @@
   headers:
     user-agent: 'meta-externalfetcher/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -134,13 +132,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Meta-ExternalFetcher
     modus: null
@@ -148,7 +142,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -157,13 +157,11 @@
   headers:
     user-agent: 'meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -172,13 +170,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Meta External Ads'
     modus: null
@@ -186,7 +180,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -195,13 +195,11 @@
   headers:
     user-agent: meta-webindexer
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -210,13 +208,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Meta-WebIndexer
     modus: null
@@ -224,7 +218,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -236,13 +236,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -251,13 +249,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Facebook Crawler'
     modus: null
@@ -265,7 +259,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0
@@ -277,13 +277,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'meta-webindexer/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -292,13 +290,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Meta-WebIndexer
     modus: null
@@ -306,7 +300,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 151.0.0
@@ -315,13 +315,11 @@
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; facebookexternalhit/1.1; +http://www.facebook.com/externalhit_uatext.php)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -330,13 +328,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Facebook Crawler'
     modus: null
@@ -344,7 +338,13 @@
     manufacturer: meta
     type: social-media-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0

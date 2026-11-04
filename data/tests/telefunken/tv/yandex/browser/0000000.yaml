@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; TF-LED65S03T2SU Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 YaBrowser/24.12.0.453 (lite) TV Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF-LED65S03T2SU
     marketingName: TF-LED65S03T2SU
     manufacturer: telefunken
     brand: telefunken
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -31,22 +25,140 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.117
     manufacturer: google
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; TF-LED55S11T2SU Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: TF-LED55S11T2SU
+    marketingName: TF-LED55S11T2SU
+    manufacturer: telefunken
+    brand: telefunken
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: 55
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 83.0.4103.120
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; TF-LED55S10T2SU Build/PTT1.190222.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 YaBrowser/25.10.1.638 (lite) Safari/537.36 TV'
+  device:
+    architecture: ''
+    deviceName: TF-LED55S10T2SU
+    marketingName: TF-LED55S10T2SU
+    manufacturer: telefunken
+    brand: telefunken
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: 55
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 25.10.1.638
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 138.0.7204.179
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 9; TF-LED50S03T2SU-1 Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.1.2.86 (lite) TV Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: TF-LED50S03T2SU-1
+    marketingName: TF-LED50S03T2SU
+    manufacturer: telefunken
+    brand: telefunken
+    display:
+      width: 3840
+      height: 2160
+      touch: false
+      size: 50
+    type: tv
+    ismobile: false
+    istv: true
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Yandex Browser Lite'
+    modus: null
+    version: 24.1.2.86
+    manufacturer: yandex
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 83.0.4103.120
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; TF-LED43S90T2S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/25.7.1.605 (lite) Safari/537.36 TV'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF-LED43S90T2S
     marketingName: TF-LED43S90T2S
     manufacturer: telefunken
     brand: telefunken
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -55,13 +167,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -69,7 +177,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.120
@@ -78,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; TF-LED32S18T2S Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.120 YaBrowser/24.12.0.453 (lite) Safari/537.36 TV'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF-LED32S18T2S
     marketingName: TF-LED32S18T2S
     manufacturer: telefunken
     brand: telefunken
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -93,13 +205,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser Lite'
     modus: null
@@ -107,7 +215,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.120

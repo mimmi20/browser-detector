@@ -2,13 +2,11 @@
   headers:
     user-agent: 'GoogleSoftwareUpdate/1.3.16.180 CFNetwork/1325.0.1 Darwin/21.1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 15.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome Update'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 15.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1325.0.1

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.74.9 (KHTML, like Gecko) Version/2.9.1 Sandvox'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.9.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Sandvox
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: karelia-software
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.9.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 537.74.9

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; HM NOTE 1S Build/KTU84P) U2/1.0.0 UCBrowser/10.5.2.582 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'HM NOTE 1S'
     marketingName: 'Redmi Note 4G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -17,13 +15,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; en-US; Redmi Note 7 Build/PKQ1.180904.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.2.0.1296 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi Note 7'
     marketingName: 'Redmi Note 7'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -55,13 +53,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; zh-CN; M2002J9E Build/QKQ1.191222.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.5.5.1035 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2002J9E
     marketingName: 'Mi 10 Youth 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -93,13 +91,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 9; zh-CN; Redmi Note 7 Pro Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.9.1.1071 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi Note 7 Pro'
     marketingName: 'Redmi Note 7 Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -131,13 +129,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; zh-CN; Redmi K30 Build/QKQ1.190825.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.1.3.1093 Mobile Safari/537.36,gzip(gfe)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi K30'
     marketingName: 'Redmi K30'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -169,13 +167,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 10; en-US; Redmi Note 9 Pro Build/QKQ1.191215.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.0.1302 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi Note 9 Pro'
     marketingName: 'Redmi Note 9 Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -207,13 +205,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; Mi Note 10 Pro Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.12.10.1227 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi Note 10 Pro'
     marketingName: 'Mi Note 10 Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -245,13 +243,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; Mi Note 10 Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi Note 10'
     marketingName: 'Mi Note 10'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -283,13 +281,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; ru; Redmi Note 9S Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.10.0.1163 UCTurbo/1.10.3.900 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi Note 9S'
     marketingName: 'Redmi Note 9S'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -321,13 +319,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser Turbo'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 57.0.2987.108
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; M2103K19C Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.8.1305 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2103K19C
     marketingName: 'Redmi Note 10 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -359,13 +357,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-CN; 22041216C Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.8.1128 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22041216C
     marketingName: 'Redmi Note 11T Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -397,13 +395,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-CN; 22041216UC Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/15.0.1.1191 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22041216UC
     marketingName: 'Redmi Note 11T Pro+'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -435,13 +433,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (MIDP-2.0; U; Adr 9; ru; Redmi_Note_8_Pro) U2/1.0.0 UCBrowser/11.0.6.1040 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi Note 8 Pro'
     marketingName: 'Redmi Note 8 Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -473,13 +471,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; en-US; Mi Note 10 Lite;iPhone: Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.3.5.1304 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi Note 10 Lite'
     marketingName: 'Mi Note 10 Lite'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -511,13 +509,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (MIDP-2.0; U; Adr 9; ru; Redmi_Note_8) U2/1.0.0 UCBrowser/11.1.2.1113 U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi Note 8'
     marketingName: 'Redmi Note 8'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -549,13 +547,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-US; 2312DRA50I Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/13.6.8.1318 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2312DRA50I
     marketingName: 'Redmi Note 13 Pro 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -587,13 +585,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; 24115RA8EI Build/UKQ1.240523.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 24115RA8EI
     marketingName: 'Redmi Note 14 Pro+ 5G (India)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -625,13 +623,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.108
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Redmi Note 9) AppleWebKit/537.36 (KHTML, like Gecko) UCBrowser/13.4.0.1306 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi Note 9'
     marketingName: 'Redmi Note 9'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -663,13 +661,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; M2101K7AI Build/RKQ1.201022.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36UC Browser1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2101K7AI
     marketingName: 'Redmi Note 10'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -701,13 +699,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; es-LA; 2510DRA23L Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2510DRA23L
     marketingName: 'Redmi Note 15 4G (Latin America)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -739,13 +737,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; es-LA; 25080RABDG Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25080RABDG
     marketingName: 'Redmi Note 15 Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2772
       height: 1220
@@ -777,13 +775,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; 2510ERA8BI Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2510ERA8BI
     marketingName: 'Redmi Note 15 Pro+ 5G (India)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2772
       height: 1280
@@ -815,13 +813,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; 25100RA69G Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 UCBrowser/12.3.0.1290 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25100RA69G
     marketingName: 'Redmi Note 15 Pro 4G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -853,13 +851,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; 25098RA98T Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.8.1394 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25098RA98T
     marketingName: 'Redmi Note 15 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -891,13 +889,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; 25098RA98I Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.0.4.1380 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25098RA98I
     marketingName: 'Redmi Note 15 5G (India)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -929,13 +927,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; 25098RA98G Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25098RA98G
     marketingName: 'Redmi Note 15 5G (International)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -967,13 +965,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; en-US; 24040RA98R Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/15.1.9.1395 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 24040RA98R
     marketingName: 'Redmi Note 13 Pro+ 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -1005,13 +1003,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; zh-CN; 25098RA98C Build/AQ3A.250226.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/18.9.0.1516 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25098RA98C
     marketingName: 'Redmi Note 15 5G (China)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -1043,13 +1041,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; Redmi Note 13 Pro Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 UCBrowser/13.4.0.1306 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi Note 13 Pro 4G'
     marketingName: 'Redmi Note 13 Pro 4G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1081,13 +1079,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0

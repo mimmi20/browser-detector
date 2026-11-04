@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 (Ecosia ios@3.0.1.533)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.0.3
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.0.3
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 604.1.38
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) (Ecosia ios@4.0.6.795)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.1.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.1.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.2.1; zh-cn; Nexus 7 Build/JOP40D; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Nexus 7'
     marketingName: 'Nexus 7'
     manufacturer: asus
     brand: google
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 10.1.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.1.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; Transformer Prime TF300T Build/IMM76I; CyanogenMod-9.0.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF300T
     marketingName: 'Transformer Pad TF300T'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 9.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 9.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; ASUS Transformer Pad TF700T Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/10.2.0/tf700t'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF700T
     marketingName: 'Transformer Prime'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -93,13 +91,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 10.2.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.2.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; Transformer Prime TF201 Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF201
     marketingName: 'Transformer Prime'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -131,13 +129,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 10.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; Transformer TF101 Build/IMM76I; CyanogenMod-9.0.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF101
     marketingName: 'Eee Pad Transformer TF101'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -169,13 +167,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 9.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 9.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Linux Ventana; de-de; Transformer TF101 Build/HTK75) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/8.0 Safari/534.13'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TF101
     marketingName: 'Eee Pad Transformer TF101'
     manufacturer: asus
     brand: asus
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -207,13 +205,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Ventana Linux'
-    marketingName: 'Ventana Linux'
-    version: null
-    manufacturer: ventana
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Ventana Linux'
+    marketingName: 'Ventana Linux'
+    version: null
+    manufacturer: ventana
+    bits: 0
   engine:
     name: WebKit
     version: 534.13.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; 4.4.4; Nexus 7 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 Obigo/W20A.42'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Nexus 7'
     marketingName: 'Nexus 7'
     manufacturer: asus
     brand: google
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -245,13 +243,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 42.0.2311.107

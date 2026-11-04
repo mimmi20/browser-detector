@@ -17,8 +17,6 @@
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -27,12 +25,8 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: 64
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 26.3.0
-    manufacturer: apple
+    dualOrientation: false
+    simCount: 0
     bits: 64
   client:
     name: 'The Enterprise Browser'
@@ -41,6 +35,12 @@
     manufacturer: island
     type: browser
     isbot: false
+    bits: 64
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 26.3.0
+    manufacturer: apple
     bits: 64
   engine:
     name: Blink
@@ -51,13 +51,11 @@
     sec-ch-ua: '"Island";v="147", "Not.A/Brand";v="8", "Chromium";v="147"'
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -66,13 +64,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.15.7
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'The Enterprise Browser'
     modus: null
@@ -80,7 +74,13 @@
     manufacturer: island
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.15.7
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 147.0.0

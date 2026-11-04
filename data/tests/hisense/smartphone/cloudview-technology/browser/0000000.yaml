@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-za; Hisense E71 Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.61 Mobile Safari/537.36 PHX/19.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E71
     marketingName: E71
     manufacturer: hisense
     brand: hisense
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1612
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.61
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-za; Hisense U53 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.91 Mobile Safari/537.36 PHX/21.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: U53
     marketingName: U53
     manufacturer: hisense
     brand: hisense
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 13; en-za; Hisense M72 Pro Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.215 Mobile Safari/537.36 PHX/21.7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'M72 Pro'
     marketingName: 'M72 Pro'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Phoenix Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: cloudview-technology
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.215

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; U; CPU OS 60 like Mac OS X; en-us) AppleWebKit/534.46.0 (KHTML like Gecko) CriOS/19.0.1084.60 Mobile/10A403 Safari/7534.48.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 60.0.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome for iOS'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 60.0.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 534.46.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPI OS 6_1_3 linke Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) CriOS/27.0.1453.10 Mobile/10B329 Safari/8536.25'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome for iOS'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 536.26.0
@@ -79,13 +79,11 @@
     x-puffin-ua: 'iPhone OS/iPad4,1/1536x2048'
     user-agent: 'Mozilla/5.0 (X11; U; Linux x86_64; xx) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 4,1'
     marketingName: 'iPad Air Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2048
       height: 1536
@@ -94,13 +92,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -108,22 +102,26 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Chrome/60.0'
+    user-agent: 'Mozilla/5.0 (ipad Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.6 (KHTML, like Gecko) Chrome/7.0.498.0 Safari/534.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -132,13 +130,47 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 7.0.498.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
   os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.6.0
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
+  engine:
+    name: WebKit
+    version: 534.6.0
     manufacturer: apple
-    bits: null
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (iPad; CPU OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Chrome/60.0'
+  device:
+    architecture: ''
+    deviceName: iPad
+    marketingName: iPad
+    manufacturer: apple
+    brand: apple
+    display:
+      width: 1024
+      height: 768
+      touch: true
+      size: 9.7
+    type: tablet
+    ismobile: true
+    istv: false
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -146,7 +178,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -155,13 +193,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU iPad OS 3_2_2 like Mac OS X) AppleWebKit/533.1 (KHTML, like Gecko) CriOS/32.0.828.0 Mobile/46G889 Safari/533.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -170,13 +206,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.2.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome for iOS'
     modus: null
@@ -184,7 +216,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.2.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 533.1.0

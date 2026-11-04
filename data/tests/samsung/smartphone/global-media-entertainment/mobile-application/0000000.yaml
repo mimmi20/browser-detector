@@ -2,13 +2,11 @@
   headers:
     user-agent: 'LBC/65.0.0 Android 12/samsung SM-A125F'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-A125F
     marketingName: 'Galaxy A12 (International)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: LBC
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: global-media-entertainment
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

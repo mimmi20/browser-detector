@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Spice M6800  Opera/9.80 (MTK; Nucleus; U; xx) Presto/2.4.18 Version/10.00'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M-6800
     marketingName: Flo
     manufacturer: spice
     brand: spice
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Nucleus OS'
-    marketingName: Nucleus
-    version: null
-    manufacturer: acceleratedTechnology
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Nucleus OS'
+    marketingName: Nucleus
+    version: null
+    manufacturer: acceleratedTechnology
+    bits: 0
   engine:
     name: Presto
     version: 2.4.18
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; hi-IN) Presto/2.5.28 Version/10.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M5885
     marketingName: M5885
     manufacturer: spice
     brand: spice
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Nucleus OS'
-    marketingName: Nucleus
-    version: null
-    manufacturer: acceleratedTechnology
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Opera Mobile'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Nucleus OS'
+    marketingName: Nucleus
+    version: null
+    manufacturer: acceleratedTechnology
+    bits: 0
   engine:
     name: Presto
     version: 2.5.28

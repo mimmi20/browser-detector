@@ -2,13 +2,11 @@
   headers:
     user-agent: 'BlackBerrySiemens SK65/3.8.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SK65
     marketingName: SK65
     manufacturer: benq
     brand: benq
-    dualOrientation: false
-    simCount: 1
     display:
       width: 176
       height: 132
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'RIM OS'
-    marketingName: 'RIM OS'
-    version: null
-    manufacturer: rim
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'BlackBerry Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: rim
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'RIM OS'
+    marketingName: 'RIM OS'
+    version: null
+    manufacturer: rim
+    bits: 0
   engine:
     name: blackberry
     version: null

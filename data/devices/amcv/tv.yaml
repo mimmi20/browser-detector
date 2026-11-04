@@ -1,0 +1,42 @@
+'general amcv device':
+  deviceName: 'general AMCV device'
+  marketingName: 'general AMCV device'
+  manufacturer: amcv
+  brand: amcv
+  dualOrientation: null
+  simCount: null
+  display:
+    width: null
+    height: null
+    touch: false
+    size: null
+  type: tv
+  platform: android
+'amcv le-50ztus32':
+  deviceName: LE-50ZTUS32
+  marketingName: LE-50ZTUS32
+  manufacturer: amcv
+  brand: amcv
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 3840
+    height: 2160
+    touch: false
+    size: 50
+  type: tv
+  platform: android
+'amcv le-43ztfs25':
+  deviceName: LE-43ZTFS25
+  marketingName: LE-43ZTFS25
+  manufacturer: amcv
+  brand: amcv
+  dualOrientation: false
+  simCount: 0
+  display:
+    width: 1920
+    height: 1080
+    touch: false
+    size: 43
+  type: tv
+  platform: android

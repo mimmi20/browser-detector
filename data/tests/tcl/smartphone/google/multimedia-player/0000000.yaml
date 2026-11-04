@@ -2,13 +2,11 @@
   headers:
     user-agent: 'com.google.android.apps.youtube.music/9.29.54(Linux; U; Android 15; es_US; T452B Build/AP3A.240905.015.A2) gzip'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T452B
     marketingName: A11
     manufacturer: tcl
     brand: alcatel
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Youtube Music'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

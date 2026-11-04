@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 ()Pad; CPU OS 9_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/11.1.66360 Mobile/13C75 Safari/600.1.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 600.1.4
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Google/226.2.468926351 CFNetwork/1335.0.3 Darwin/21.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 15.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 15.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1335.0.3
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Google/236.0.484392333 CFNetwork/1399 Darwin/22.1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1399.0.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Google/249.0.504450501 CFNetwork/1402.0.8 Darwin/22.2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1402.0.8
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Google/262.0.527316235 CFNetwork/1402.0.8 Darwin/22.2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1402.0.8
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'SearchWithLens/267.0.537056344 CFNetwork/1408.0.4 Darwin/22.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Lens
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1408.0.4
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Google/271.3.546369769 CFNetwork/1408.0.4 Darwin/22.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1408.0.4
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'SearchWithLens/273.0.547966426 CFNetwork/1408.0.4 Darwin/22.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Lens
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1408.0.4
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Google/276.1.554948670 CFNetwork/1410.0.3 Darwin/22.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1410.0.3
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'SearchWithLens/280.1.563130340 CFNetwork/1410.0.3 Darwin/22.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Lens
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1410.0.3
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Google/278.0.557984068 CFNetwork/1410.0.3 Darwin/22.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1410.0.3
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Google/293.0.586189917 CFNetwork/1485 Darwin/23.1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 17.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 17.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1485.0.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'SearchWithLens/294.0.588955078 CFNetwork/1399 Darwin/22.1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Lens
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1399.0.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Google/293.0.586189917 CFNetwork/1410.0.3 Darwin/22.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +509,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1410.0.3
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Google/304.0.607401217 CFNetwork/1492.0.1 Darwin/23.3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 17.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 17.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1492.0.1
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Google/315.0.630091404 CFNetwork/1333.0.4 Darwin/21.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 15.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 15.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1333.0.4
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Google/314.2.628428250 CFNetwork/1494.0.7 Darwin/23.4.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 17.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 17.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1494.0.7
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Google/322.0.643848676 CFNetwork/1496.0.7 Darwin/23.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 17.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 17.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1496.0.7
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Google/331.0.665236494 CFNetwork/1498.700.2 Darwin/23.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +699,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 17.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 17.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1498.700.2
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Google/337.1.683747349 CFNetwork/1402.0.8 Darwin/22.2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +737,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1402.0.8
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Google/343.0.695551749 CFNetwork/1399 Darwin/22.1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +775,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1399.0.0
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Google/362.0.741018905 CFNetwork/1568.200.51 Darwin/24.1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +813,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 18.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 18.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1568.200.51
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Google/358.1.731895952 CFNetwork/3826.400.120 Darwin/24.3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -853,13 +851,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 18.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 18.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 3826.400.120
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Google/367.0.752095380 CFNetwork/3826.500.131 Darwin/24.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +889,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 18.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 18.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 3826.500.131
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Google/374.0.773146746 CFNetwork/3826.500.131 Darwin/24.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +927,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 18.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 18.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 3826.500.131
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Google/380.0.788317806 CFNetwork/1498.700.2 Darwin/23.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -967,13 +965,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 17.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 17.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1498.700.2
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Google/406.0.862495628 CFNetwork/3860.300.31 Darwin/25.2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1005,13 +1003,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 26.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 26.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 3860.300.31
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Google/419.4.905781065 CFNetwork/3860.500.112 Darwin/25.4.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +1041,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 26.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 26.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 3860.500.112
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Google/303.0.605094169 CFNetwork/1410.1 Darwin/22.6.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +1079,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1410.1.0
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'SearchWithLens/289.0.577695730 CFNetwork/1404.0.5 Darwin/22.3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +1117,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 16.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Lens
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 16.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 1404.0.5
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'Google/428.4.939275213 CFNetwork/3860.600.12 Darwin/25.5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Apple device'
     marketingName: 'general Apple device'
     manufacturer: apple
     brand: apple
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1155,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 26.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 26.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 3860.600.12

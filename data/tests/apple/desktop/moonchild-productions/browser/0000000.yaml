@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:25.4) Gecko/20150502 PaleMoon/25.4.0b3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.12.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PaleMoon
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: moonchild-productions
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.12.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: Gecko
     version: 25.4.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:45.9) Gecko/20100101 Goanna/3.2 Firefox/45.9 PaleMoon/27.3.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: 10.6.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PaleMoon
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: moonchild-productions
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: 10.6.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: Goanna
     version: 3.2.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:52.9) Gecko/20100101 Goanna/4.1 Firefox/52.9 PaleMoon/28.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Macintosh
     marketingName: Macintosh
     manufacturer: apple
     brand: apple
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: macOS
-    marketingName: macOS
-    version: 10.12.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: PaleMoon
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: moonchild-productions
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: macOS
+    marketingName: macOS
+    version: 10.12.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: Goanna
     version: 4.1.0

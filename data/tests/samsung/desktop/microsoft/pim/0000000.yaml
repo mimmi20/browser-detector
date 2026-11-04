@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Outlook-Express/7.0 (MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; MASMJS; TmstmpExt)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PC
     marketingName: PC
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 8'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Windows Live Mail'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: pim
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 8'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/2; MASM; .NET4.0C; InfoPath.3; .NET4.0E; GWX:QUALIFIED; Microsoft Outlook 14.0.7168; ms-office; MSOffice 14)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PC
     marketingName: PC
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Outlook
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: pim
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: 7.0.0

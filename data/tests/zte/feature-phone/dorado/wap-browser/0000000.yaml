@@ -2,13 +2,11 @@
   headers:
     user-agent: 'ZTE S519/1.0 Threadx/4.0 Mocor/W12 Realease/01.01.2013 Browser/Dorado1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S519
     marketingName: S519
     manufacturer: zte
     brand: zte
-    dualOrientation: false
-    simCount: 2
     display:
       width: 128
       height: 128
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: ThreadX
-    marketingName: ThreadX
-    version: 4.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 2
+    bits: 0
   client:
     name: 'Dorado WAP Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: dorado
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: ThreadX
+    marketingName: ThreadX
+    version: 4.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 2.3.5; zh-CN; HS-T912 Build/MocorDroid2.3.5) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.3.2.559 U3/0.8.0 Mobile Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HS-T912
     marketingName: HS-T912
     manufacturer: hisense
     brand: hisense
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MocorDroid
-    marketingName: MocorDroid
-    version: 2.3.5
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MocorDroid
+    marketingName: MocorDroid
+    version: 2.3.5
+    manufacturer: unknown
+    bits: 0
   engine:
     name: U3
     version: 0.8.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; en-US; Hisense U62 Pro Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 UCBrowser/14.0.5.1339 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'U62 Pro'
     marketingName: 'U62 Pro'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58

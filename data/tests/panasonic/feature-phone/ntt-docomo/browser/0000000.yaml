@@ -2,13 +2,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P03B'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P03B
     marketingName: P03B
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 327
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P04A(c100;TB;W24H15)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P04A
     marketingName: P04A
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 427
       height: 240
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P05A(c100;TB;W20H13)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P05A
     marketingName: P05A
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 427
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P900i(c100;TB;W24H11)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P900i
     marketingName: P900i
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 160
       height: 128
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P901i'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P901i
     marketingName: P901i
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P901iS'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P901iS
     marketingName: P901iS
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P902i'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P902i
     marketingName: P902i
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P903iTV'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P903iTV
     marketingName: P903iTV
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -283,13 +281,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P905i(c100;TB;W20H13)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P905i
     marketingName: P905i
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -321,13 +319,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'DoCoMo/2.0 P906i(c100;TB;W16H10)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P906i
     marketingName: P906i
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -359,13 +357,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: DoCoMo/1.0/P504iS/c10/TB
   device:
-    architecture: null
+    architecture: ''
     deviceName: P504iS
     marketingName: P504iS
     manufacturer: panasonic
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 176
       height: 132
@@ -397,13 +395,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'DoCoMo Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: ntt-docomo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'BlackBerry7520/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3 UP.Link/5.1.2.12 (Google WAP Proxy/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'BlackBerry 7520'
     marketingName: 'BlackBerry 7520'
     manufacturer: rim
     brand: rim
-    dualOrientation: false
-    simCount: 1
     display:
       width: 240
       height: 160
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'RIM OS'
-    marketingName: 'RIM OS'
-    version: 4.0.0
-    manufacturer: rim
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'RIM OS'
+    marketingName: 'RIM OS'
+    version: 4.0.0
+    manufacturer: rim
+    bits: 0
   engine:
     name: blackberry
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Zeasn/2.0 NETTV/4.5.0 Mozilla/5.0 (Linux;CE-HTML/1.0;U;en), Chrome/49.0.2623.87 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_UNKONWN/V8-S586T05-LF1V020 (HITACHI,50P65US,wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50P65US
     marketingName: 50P65US
     manufacturer: hitachi
     brand: hitachi
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Whale OS'
-    marketingName: 'Whale OS'
-    version: null
-    manufacturer: whaleTV
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: TBrowser
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: browser-edson-thiago
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Whale OS'
+    marketingName: 'Whale OS'
+    version: null
+    manufacturer: whaleTV
+    bits: 0
   engine:
     name: Blink
     version: 49.0.2623.87

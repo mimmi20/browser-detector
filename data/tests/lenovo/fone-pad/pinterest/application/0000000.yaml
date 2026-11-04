@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Pinterest for Android Tablet/4.3.1 (A7600-H; 4.4.2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A7600-H
     marketingName: 'A10-70 A7600 Wi-Fi + 3G'
     manufacturer: lenovo
     brand: lenovo
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Pinterest App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: pinterest
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

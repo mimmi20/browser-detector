@@ -13,13 +13,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ROD2-W09
     marketingName: 'MagicPad 2 12.3" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3000
       height: 1920
@@ -28,13 +26,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -42,7 +36,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0
@@ -62,13 +62,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: ELN2-W29
     marketingName: 'Pad X9a 11.5" Wi-Fi'
     manufacturer: huawei
     brand: honor
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2508
       height: 1504
@@ -77,13 +75,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'DuckDuckGo Privacy Browser'
     modus: null
@@ -91,7 +85,13 @@
     manufacturer: duck-duck-go
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0

@@ -1,14 +1,50 @@
 -
   headers:
+    user-agent: 'Mozilla/5.0 (Linux; Tizen 2.2.1.3; SM-R750) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.76 efl-webengine/0.1.1.1 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: SM-R750
+    marketingName: 'Gear S (40mm)'
+    manufacturer: samsung
+    brand: samsung
+    display:
+      width: 480
+      height: 360
+      touch: true
+      size: 2
+    type: smart-watch
+    ismobile: true
+    istv: false
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 34.0.1847.76
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 2.2.1.3
+    manufacturer: linux-foundation
+    bits: 0
+  engine:
+    name: Blink
+    version: 34.0.1847.76
+    manufacturer: google
+-
+  headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R760) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R760
     marketingName: 'Galaxy Gear S3 Frontier (46mm, Wi-Fi)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -17,13 +53,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0
@@ -40,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R855F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R855F
     marketingName: 'Galaxy Watch 3 (41mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -55,13 +91,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 5.5.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -69,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 5.5.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.106
@@ -78,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R840) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R840
     marketingName: 'Galaxy Watch 3 (45mm, Wi-Fi)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -93,13 +129,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 5.5.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -107,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 5.5.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.106
@@ -116,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R830) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R830
     marketingName: 'Galaxy Watch Active 2 (40mm, Wi-Fi)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -131,13 +167,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -145,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0
@@ -154,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R765V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R765V
     marketingName: 'Galaxy Gear S3 Frontier (46mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -169,13 +205,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -183,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0
@@ -192,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R815F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R815F
     marketingName: 'Galaxy Watch (42mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -207,13 +243,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 5.5.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -221,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 5.5.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.106
@@ -230,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R810
     marketingName: 'Galaxy Watch (42mm)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -245,13 +281,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -259,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0
@@ -268,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R805U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R805U
     marketingName: 'Galaxy Watch (46mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -283,13 +319,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -297,7 +329,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0
@@ -306,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R815U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R815U
     marketingName: 'Galaxy Watch (42mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -321,13 +357,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -335,7 +367,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0
@@ -344,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R825U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R825U
     marketingName: 'Galaxy Watch Active 2 (44mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -359,13 +395,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -373,7 +405,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0
@@ -382,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R835F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R835F
     marketingName: 'Galaxy Watch Active 2 (40mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -397,13 +433,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 5.5.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -411,7 +443,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 5.5.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.106
@@ -420,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R835U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R835U
     marketingName: 'Galaxy Watch Active 2 (40mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -435,13 +471,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 5.5.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -449,7 +481,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 5.5.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.106
@@ -458,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R815W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R815W
     marketingName: 'Galaxy Watch (42mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -473,13 +509,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 4.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -487,7 +519,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 4.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 56.0.2924.0
@@ -496,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R825F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R825F
     marketingName: 'Galaxy Watch Active 2 (44mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -511,13 +547,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 5.5.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -525,7 +557,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 5.5.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.106
@@ -534,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R845U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R845U
     marketingName: 'Galaxy Watch 3 (45mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 360
       height: 360
@@ -549,13 +585,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 5.5.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -563,22 +595,26 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 5.5.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 69.0.3497.106
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R925F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R870) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
-    deviceName: SM-R925F
-    marketingName: 'Galaxy Watch 5 Pro (45mm, LTE)'
+    architecture: ''
+    deviceName: SM-R870
+    marketingName: 'Galaxy Watch 4 (44mm)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 450
       height: 450
@@ -587,13 +623,47 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 112.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: 'Wear OS'
     marketingName: 'Wear OS'
     version: null
     manufacturer: google
-    bits: null
+    bits: 0
+  engine:
+    name: Blink
+    version: 112.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R860) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: SM-R860
+    marketingName: 'Galaxy Watch 4 (40mm)'
+    manufacturer: samsung
+    brand: samsung
+    display:
+      width: 396
+      height: 396
+      touch: true
+      size: 1.2
+    type: smart-watch
+    ismobile: true
+    istv: false
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -601,7 +671,51 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Wear OS'
+    marketingName: 'Wear OS'
+    version: null
+    manufacturer: google
+    bits: 0
+  engine:
+    name: Blink
+    version: 110.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R925F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: SM-R925F
+    marketingName: 'Galaxy Watch 5 Pro (45mm, LTE)'
+    manufacturer: samsung
+    brand: samsung
+    display:
+      width: 450
+      height: 450
+      touch: true
+      size: 1.4
+    type: smart-watch
+    ismobile: true
+    istv: false
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 110.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: 'Wear OS'
+    marketingName: 'Wear OS'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.0.0
@@ -610,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R915U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R915U
     marketingName: 'Galaxy Watch 5 (44mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 450
       height: 450
@@ -625,13 +737,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Wear OS'
-    marketingName: 'Wear OS'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -639,22 +747,26 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Wear OS'
+    marketingName: 'Wear OS'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.0.0
     manufacturer: google
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R895U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36'
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R910) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
-    deviceName: SM-R895U
-    marketingName: 'Galaxy Watch 4 Classic (46mm, LTE)'
+    architecture: ''
+    deviceName: SM-R910
+    marketingName: 'Galaxy Watch 5 (44mm)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 450
       height: 450
@@ -663,13 +775,47 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Chrome
+    modus: null
+    version: 111.0.0.0
+    manufacturer: google
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: 'Wear OS'
     marketingName: 'Wear OS'
     version: null
     manufacturer: google
-    bits: null
+    bits: 0
+  engine:
+    name: Blink
+    version: 111.0.0.0
+    manufacturer: google
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R895U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36'
+  device:
+    architecture: ''
+    deviceName: SM-R895U
+    marketingName: 'Galaxy Watch 4 Classic (46mm, LTE)'
+    manufacturer: samsung
+    brand: samsung
+    display:
+      width: 450
+      height: 450
+      touch: true
+      size: 1.4
+    type: smart-watch
+    ismobile: true
+    istv: false
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -677,7 +823,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Wear OS'
+    marketingName: 'Wear OS'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.4951.41
@@ -686,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; SM-R895N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.7305.55 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R895N
     marketingName: 'Galaxy Watch 4 Classic (46mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 450
       height: 450
@@ -701,13 +851,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Wear OS'
-    marketingName: 'Wear OS'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -715,7 +861,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Wear OS'
+    marketingName: 'Wear OS'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.7305.55
@@ -724,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-R895F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-R895F
     marketingName: 'Galaxy Watch 4 Classic (46mm, LTE)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: 450
       height: 450
@@ -739,13 +889,9 @@
     type: smart-watch
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Wear OS'
-    marketingName: 'Wear OS'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -753,7 +899,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Wear OS'
+    marketingName: 'Wear OS'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.0.0

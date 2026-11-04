@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android v1.02_14.13-CH-2011.01.13; xx; ONDA_VI10 Build/ECLAIR) UC AppleWebKit/530  (KHTML, like Gecko) Mobile Safari/530'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VI10
     marketingName: VI10
     manufacturer: onda
     brand: onda
-    dualOrientation: true
-    simCount: 0
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 530.0.0

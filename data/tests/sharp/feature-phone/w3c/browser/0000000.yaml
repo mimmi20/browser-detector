@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (jig browser core; SH03B)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH03B
     marketingName: SH03B
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Jig Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: w3c
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (jig browser9i 1.1.9; SH01A; 2061)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH01A
     marketingName: SH01A
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Jig Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: w3c
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (jig browser9 1.1.5; SH903i; 2061)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH903i
     marketingName: SH903i
     manufacturer: sharp
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Jig Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: w3c
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (jig browser web; 1.0.4; SH902iS)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH902i
     marketingName: SH902i
     manufacturer: sharp
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Jig Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: w3c
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (jig browser web; 1.0.4; SH3C)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH3C
     marketingName: SH3C
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Jig Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: w3c
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (jig browser web; 1.0.4; 911SH)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 911SH
     marketingName: 911SH
     manufacturer: sharp
     brand: softbank
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -207,13 +205,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Jig Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: w3c
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (jig browser9i 1.4.8; SH01B; 1007)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SH01B
     marketingName: SH01B
     manufacturer: sharp
     brand: sharp
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -245,13 +243,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Jig Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: w3c
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

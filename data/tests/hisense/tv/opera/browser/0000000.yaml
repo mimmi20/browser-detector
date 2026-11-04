@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Hisense; SmartTV_2015; V00.01.00a.G0816; HE65M7000UWTSG; )) Presto/2.12.407 Version/12.51 year/2016'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HE65M7000
     marketingName: HE65M7000
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Presto
     version: 2.12.407
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Hisense; SmartTV; V00.01.00a.E0923; LHD32K370WTEU; )) Presto/2.12.407 Version/12.51'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LHD32K370WTEU
     marketingName: LHD32K370WTEU
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Presto
     version: 2.12.407
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Hisense; SmartTV_2015; V00.01.00a.G0806; LTDN58K700XWTSEU3D_1; )) Presto/2.12.407 Version/12.51 year/2016'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LTDN58K700XWTSEU3D
     marketingName: LTDN58K700XWTSEU3D
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Presto
     version: 2.12.407
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.3.54.Catcher2.147 HbbTV/1.5.1 ( DRM; Eurofins_Digital_Testing; Terminal_Model_A_2019-01-25;V0000.01.00A.K0529;HE55A6103FUWTS; Terminal_Model_A_2019-01-25;) FVC/4.0 ( Eurofins_Digital_Testing; Terminal_Model_'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HE55A6103FUWTS
     marketingName: HE55A6103FUWTS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 77.0.3865.120
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.1.75.Honey.64 HbbTV/1.5.1 ( DRM;Hisense;SmartTV_2021;V0000.01.00E.K1111;50ADEVTOOL;SmartTV_2021;) FVC/5.0 (Hisense;SmartTV_2021;) LaTivu_1.0.1_2021'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50ADEVTOOL
     marketingName: 50ADEVTOOL
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.1.75.Honey.64 HbbTV/1.5.1 ( DRM;Hisense;SmartTV_2021;V0000.01.00M.K1104;50A683FEVS;SmartTV_2021;) FVC/5.0 (Hisense;SmartTV_2021;) LaTivu_1.0.1_2021'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50A683FEVS
     marketingName: 50A683FEVS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -207,13 +205,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU55A6107UW;V0000.01.00a.N0412) MST6586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HU55A6107UW
     marketingName: HU55A6107UW
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -245,13 +243,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.143
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU55A6100UW;V0000.01.00a.N0412) MST6586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HU55A6100UW
     marketingName: HU55A6100UW
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -283,13 +281,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.143
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU50A6107UW;V0000.01.00a.N0412) MST6586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HU50A6107UW
     marketingName: HU50A6107UW
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -321,13 +319,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.143
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU50A6100UW_0001;V0000.01.00a.K1130) MST6586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HU50A6100UW
     marketingName: HU50A6100UW
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -359,13 +357,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.143
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.4.112.Catcher4.69 Model/Hisense-MT9602 VIDAA/5.0(Hisense;SmartTV;55A52FEVS;MTK9602/V0000.01.00R.M0531;UHD;55A5FE;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general HiSense TV'
     marketingName: 'general HiSense TV'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'VIDAA OS'
-    marketingName: 'VIDAA OS'
-    version: 5.0.0
-    manufacturer: vidaa
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'VIDAA OS'
+    marketingName: 'VIDAA OS'
+    version: 5.0.0
+    manufacturer: vidaa
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.237.Martell-2.312 Model/Hisense-MT5658-SDK4-9 MT5658 (;Hisense;SmartTV;V0000.01.00a.J0211;HE43A6500UWTS) FXM-U2FsdGVkX18/+ceY1oqH8mnezkZ/ZlbriwD7ixl/Ho5dsOsPG6/PhIre4h8t42z4-END'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HE43A6500UWTS
     marketingName: HE43A6500UWTS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -435,13 +433,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.143
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.3.54.Catcher2.205 Model/Hisense-MSD6886 VIDAA/4.0(Hisense;SmartTV;HE55A6803FUWTS;mstar6886/V0000.01.00K.M0518;UHD)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general HiSense TV'
     marketingName: 'general HiSense TV'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'VIDAA OS'
-    marketingName: 'VIDAA OS'
-    version: 4.0.0
-    manufacturer: vidaa
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'VIDAA OS'
+    marketingName: 'VIDAA OS'
+    version: 4.0.0
+    manufacturer: vidaa
+    bits: 0
   engine:
     name: Blink
     version: 77.0.3865.120
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU43A6100UW;V0000.01.00a.N0412) MST6586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HU43A6100UW
     marketingName: HU43A6100UW
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -511,13 +509,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.143
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.2.50.Honey.189 HbbTV/1.5.1 (+DRM;Hisense;SmartTV_2021;V0000.01.00U.M0421;50A60GEVS_0003;SmartTV_2021;) FVC/5.0 (Hisense;SmartTV_2021;) LaTivu_1.0.1_2021'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 50A60GEVS
     marketingName: 50A60GEVS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -549,13 +547,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.2.50.Honey.136 HbbTV/1.5.1 (+DRM;Hisense;SmartTV_2021_FHD;V0000.01.00R.L0209;40A35EEVS;SmartTV_2021_FHD;) FVC/5.0 (Hisense;SmartTV_2021_FHD;) LaTivu_1.0.1_2021'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 40A35EEVS
     marketingName: 40A35EEVS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -587,13 +585,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU65A6107UW;V0000.01.00a.N0411) MST6586'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HU65A6107UW
     marketingName: HU65A6107UW
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -625,13 +623,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 53.0.2785.143
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.4.112.Catcher4.66 HbbTV/1.5.1 (+DRM;Hisense;SmartTV_2021_51;V0302.01.00P.N0907;VS0355UC1;SmartTV_2021_51;) FVC/5.0 (Hisense;SmartTV_2021_51;) LaTivu_1.0.1_2021'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Smart TV (2021)'
     marketingName: 'Smart TV (2021)'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.2.50.Honey.220 Model/Hisense-NT72671D'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general HiSense TV'
     marketingName: 'general HiSense TV'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +699,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.2.50.Honey.214 Model/Hisense-NT72671D'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general HiSense TV'
     marketingName: 'general HiSense TV'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +737,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.2.50.Honey.220 Model/Hisense-NT72671D TV Store/4.21'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general HiSense TV'
     marketingName: 'general HiSense TV'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +775,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Opera TV'
-    marketingName: 'Opera TV'
-    version: 4.21.0
-    manufacturer: opera
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Opera TV'
+    marketingName: 'Opera TV'
+    version: 4.21.0
+    manufacturer: opera
+    bits: 0
   engine:
     name: Blink
     version: 84.0.4147.140
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/4.11.3.57.Martell-3.136 Model/Hisense-MT5659-SDK4-11 (;Hisense;SmartTV;V0100.01.00A.N0410;HE40E5600FFWTS) FXM-U2FsdGVkX18XByJW1bnLA8wOBJqub175wrYOO4ha1V6Gf+ZJ8c/jpLnKpr7kqlYp-END'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HE40E5600FFWTS
     marketingName: HE40E5600FFWTS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -815,13 +813,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 59.0.3071.115
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/4.11.3.57.Martell-3.136 Model/Hisense-MT5659-SDK4-11 (;Hisense;SmartTV;V0000.01.00A.N0328;HE32A5600HWTS) FXM-U2FsdGVkX1+MCm7toH1cD1KjDak8mTDrdvLQmdqVVi2yPnBJzkmLCMdp3FVeJbMf-END'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HE32A5600HWTS
     marketingName: HE32A5600HWTS
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1366
       height: 768
@@ -853,13 +851,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 59.0.3071.115
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/4.11.3.57.Martell-3.118 Model/Hisense-MT5659-SDK4-11 (;Hisense;SmartTV;V0000.01.00A.J1105;43E5600EE) FXM-U2FsdGVkX19sJrRWrVZFrf/K+E/dzfyWCMhSEl8JhDq0LNWUZdyzRj9LbDplLH+E-END'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general HiSense TV'
     marketingName: 'general HiSense TV'
     manufacturer: hisense
     brand: hisense
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +889,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Opera Devices'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 59.0.3071.115

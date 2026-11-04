@@ -10,13 +10,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M30_EEA
     marketingName: M30
     manufacturer: pritom
     brand: pritom
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -25,13 +23,9 @@
     type: tablet
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -39,7 +33,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0
@@ -48,13 +48,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; M10_C01_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'M10 C01 EEA'
     marketingName: 'M10 C01'
     manufacturer: pritom
     brand: pritom
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -63,13 +61,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -77,7 +71,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.0.0
@@ -86,13 +86,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; TOUCH 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Touch 7'
     marketingName: 'Touch 7'
     manufacturer: pritom
     brand: pritom
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -101,13 +99,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -115,7 +109,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0
@@ -124,13 +124,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; M10_R04) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'M10 R04'
     marketingName: 'M10 R04'
     manufacturer: pritom
     brand: pritom
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -139,13 +137,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -153,7 +147,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.0.0

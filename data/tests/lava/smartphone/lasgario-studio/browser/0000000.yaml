@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 13; LAVA LXX510 Build/TP1A.220624.014) AppleWebKit [SX/378] (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LXX510
     marketingName: 'Yuva 5G'
     manufacturer: lava
     brand: lava
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: SecureX
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: lasgario-studio
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.0.0

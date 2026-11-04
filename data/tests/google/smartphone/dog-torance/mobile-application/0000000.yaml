@@ -2,13 +2,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro Build/SP2A.220505.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 6 Pro'
     marketingName: 'Pixel 6 Pro'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3120
       height: 1440
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 95.0.4638.74
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 14; Pixel 5a Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.136 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 5a'
     marketingName: 'Pixel 5a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.136
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 11; Pixel 4a Build/RP1A.201105.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 4a'
     marketingName: 'Pixel 4a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.106
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro Build/BP4A.251205.006.A4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.115 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 10 Pro'
     marketingName: 'Pixel 10 Pro'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2856
       height: 1280
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.115
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 7a Build/BP3A.251105.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 7a'
     marketingName: 'Pixel 7a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.34
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 8 Pro Build/BP3A.251105.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8 Pro'
     marketingName: 'Pixel 8 Pro'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2992
       height: 1344
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.34
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 10 Build/BD3A.251105.010.E1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 10'
     marketingName: 'Pixel 10'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2424
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.146
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 12; Pixel 3a Build/SP2A.220505.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 3a'
     marketingName: 'Pixel 3a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2220
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.34
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 9 Pro Build/BP4A.251205.006.A4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.192 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 9 Pro'
     marketingName: 'Pixel 9 Pro'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2856
       height: 1280
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.192
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 7 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.192 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 7'
     marketingName: 'Pixel 7'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.192
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 8 Build/BP3A.251105.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8'
     marketingName: 'Pixel 8'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.146
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 9 Build/BP3A.251105.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.147 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 9'
     marketingName: 'Pixel 9'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2424
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.147
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 6 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.60 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 6'
     marketingName: 'Pixel 6'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.60
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 7 Pro Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 7 Pro'
     marketingName: 'Pixel 7 Pro'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3120
       height: 1440
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.59
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 6a Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.109 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 6a'
     marketingName: 'Pixel 6a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.109
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 8a Build/BP4A.260105.004.E1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.109 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 8a'
     marketingName: 'Pixel 8a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.109
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 9 Pro XL Build/BP4A.260205.002.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 9 Pro XL'
     marketingName: 'Pixel 9 Pro XL'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2992
       height: 1344
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.59
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 9a Build/BP4A.260205.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 9a'
     marketingName: 'Pixel 9a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2424
       height: 1080
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.79
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro XL Build/BP4A.260205.001.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 10 Pro XL'
     marketingName: 'Pixel 10 Pro XL'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2992
       height: 1344
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.79
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 10a Build/CP1A.260505.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.225 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 10a'
     marketingName: 'Pixel 10a'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2424
       height: 1080
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.7778.225
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 11 Build/CD1A.260714.001.A9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.218 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 11'
     marketingName: 'Pixel 11'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2424
       height: 1080
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.218
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 17; Pixel 11 Pro Build/CD1A.260714.001.A9; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.218 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pixel 11 Pro'
     marketingName: 'Pixel 11 Pro'
     manufacturer: google
     brand: google
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2856
       height: 1280
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 17.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Dogtorance
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: dog-torance
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 17.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 145.0.7632.218

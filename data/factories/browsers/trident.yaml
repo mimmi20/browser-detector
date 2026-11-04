@@ -39,7 +39,7 @@ rules:
   /s~virustotalcloud/i: virus-total-cloud
   /appengine-google/i: 'google app engine'
   /crystalsemanticsbot/i: crystalsemanticsbot
-  /360se/i: '360 secure browser'
+  /(?<!\.)360se/i: '360 secure browser'
   /theworld/i: theworld
   '/(?<!u)ptst/i': webpagetest
   /mathplayer/i: mathplayer
@@ -62,7 +62,7 @@ rules:
   /greenbrowser/i: greenbrowser
   /juzibrowser/i: juzibrowser
   /lbbrowser/i: cheetah-browser
-  '/(?<!_)aol(?!tv)/i': 'aol explorer'
+  '/(?<![_p])aol(?!tv)/i': 'aol explorer'
   /zune/i: zune
   /browzar/i: browzar
   /360spider/i: 360spider

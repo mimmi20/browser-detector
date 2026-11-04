@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-CN; 22081283C Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/6.1.3.240 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22081283C
     marketingName: 'Redmi Pad'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2000
       height: 1200
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; zh-CN; 24091RPADC Build/AQ3A.240801.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 Quark/7.7.5.740 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 24091RPADC
     marketingName: 'Pad 7 Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3200
       height: 2136
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.80
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-CN; 25097RP43C Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25097RP43C
     marketingName: 'Redmi Pad 8 11.2" Wi-Fi (China)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3200
       height: 2136
@@ -93,13 +91,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-CN; 25091RP04C Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.11.1.1086 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25091RP04C
     marketingName: 'Redmi Pad 8 11.2" Wi-Fi'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3200
       height: 2136
@@ -131,13 +129,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-CN; 25079RPDCC Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.12.0.1095 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25079RPDCC
     marketingName: 'Redmi K Pad 8.8" Wi-Fi'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3008
       height: 1880
@@ -169,13 +167,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 16; zh-CN; 25053RP5CC Build/BP2A.250605.031.A3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.86 Quark/10.9.0.1065 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25053RP5CC
     marketingName: 'Pad 7S Pro 12.5" Wi-Fi'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3200
       height: 2136
@@ -207,13 +205,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.7559.86
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 15; zh-CN; 25032RP42C Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/10.5.5.1030 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25032RP42C
     marketingName: 'Pad 7 Ultra 14 Wi-Fi'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 0
     display:
       width: 3200
       height: 2136
@@ -245,13 +243,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Quark
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: quark-team
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.58

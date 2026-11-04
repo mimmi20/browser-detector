@@ -25,13 +25,10 @@
     failOnWarning="true"
     bootstrap="vendor/autoload.php"
     enforceTimeLimit="false"
-    executionOrder="depends,random"
     resolveDependencies="true"
     requireCoverageMetadata="true"
     colors="true"
-    cacheResult="true"
-    cacheDirectory="./.reports/.coverage-cache"
-    columns="119"
+    columns="121"
 >
     <php>
         <ini name="error_reporting" value="-1"/>

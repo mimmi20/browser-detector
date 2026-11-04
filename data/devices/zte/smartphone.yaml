@@ -1510,6 +1510,20 @@
     size: 6.26
   type: smartphone
   platform: android
+'zte blade v10 vita ru':
+  deviceName: 'Blade V10 Vita RU'
+  marketingName: 'Blade V10 Vita RU'
+  manufacturer: zte
+  brand: zte
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 1520
+    height: 720
+    touch: true
+    size: 6.26
+  type: smartphone
+  platform: android
 'zte v1000':
   deviceName: V1000
   marketingName: 'Blade V10 Vita'
@@ -1525,8 +1539,8 @@
   type: smartphone
   platform: android
 'zte blade v1000':
-  deviceName: 'Blade V1000'
-  marketingName: 'Blade V1000'
+  deviceName: 'Blade V10'
+  marketingName: 'Blade V10'
   manufacturer: zte
   brand: zte
   dualOrientation: true
@@ -8732,5 +8746,19 @@
     height: 720
     touch: true
     size: 5.2
+  type: smartphone
+  platform: android
+'zte axon 40 pro':
+  deviceName: 'Axon 40 Pro'
+  marketingName: 'Axon 40 Pro 5G'
+  manufacturer: zte
+  brand: zte
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.67
   type: smartphone
   platform: android

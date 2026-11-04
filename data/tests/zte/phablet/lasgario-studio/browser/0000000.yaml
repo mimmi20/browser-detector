@@ -3,13 +3,11 @@
     x-requested-with: com.securex.browser
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 10; ZTE 8010 Build/QP1A.190711.020) AppleWebKit [HB/29]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '8010'
     marketingName: 'Blade V2020 Smart'
     manufacturer: zte
     brand: zte
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1640
       height: 720
@@ -18,13 +16,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: SecureX
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: lasgario-studio
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null

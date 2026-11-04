@@ -2,13 +2,11 @@
   headers:
     user-agent: 'EpicGamesLauncher/12.0.8-15573162   Portal Release-Live Windows/10.0.19041.1.768.64bit'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.19041.1.768
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Epic Games Launcher'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: epic-games
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.19041.1.768
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; JVC Android TV Build/RTM3.211215.232)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Smart TV'
     marketingName: 'Smart TV'
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: smarttv_AFTSO001_Build_535062120_Chromium_59.0.2883.91
   device:
-    architecture: null
+    architecture: ''
     deviceName: AFTSO001
     marketingName: 'Fire TV 4K (2019)'
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: null
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chromium
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: null
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 59.0.2883.91
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; AFTJULI1 Build/PS7652.3558N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.197 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AFTJULI1
     marketingName: 'Fire TV 4K (2021)'
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.197
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/JPE/JVC; LT-65NQ7155; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LT-65NQ7155
     marketingName: LT-65NQ7155
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 22.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 22.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.88
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/SILICONPLAYER/JVC; LT-50NQ7155; WEBOS22 04.42.26; W22_K8LP; DTV_C22P;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: LT-50NQ7155
     marketingName: LT-50NQ7155
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -169,13 +167,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'lg webOS'
-    marketingName: 'lg webOS'
-    version: 22.0.0
-    manufacturer: lg
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'lg webOS'
+    marketingName: 'lg webOS'
+    version: 22.0.0
+    manufacturer: lg
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.88
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; JVC 4K Smart TV NZ Build/RTT2.220103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '4K Smart TV NZ'
     marketingName: '4K Smart TV'
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -207,13 +205,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; JVC 4K ISDB TV Build/RTM7.230903.140; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.93 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '4K ISDB TV'
     marketingName: 4K
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -245,13 +243,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.93
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; JVC 4K ATSC TV Build/RTMA.250416.131; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '4K ATSC TV'
     marketingName: 4K
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -283,13 +281,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.7827.91
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; JVC 2K Android TV Build/RTO8.250919.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.171 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general JVC device'
     marketingName: 'general JVC device'
     manufacturer: jvc
     brand: jvc
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.7444.171

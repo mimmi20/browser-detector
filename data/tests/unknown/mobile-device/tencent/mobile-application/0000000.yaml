@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) MicroMessenger/5.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: MicroMessenger
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Phone; OpenHarmony 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Mobile MicroMessenger/8.0.9.39(0xf3100927) Weixin NetType/WIFI Language/zh_CN MMWEBID/2777 MMWEBSDK/202507060011 XWEB/1140307'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: OpenHarmony
-    marketingName: OpenHarmony
-    version: 5.1.0
-    manufacturer: openatomFoundation
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WeChat App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: tencent
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: OpenHarmony
+    marketingName: OpenHarmony
+    version: 5.1.0
+    manufacturer: openatomFoundation
+    bits: 0
   engine:
     name: ArkWeb
     version: 4.1.6.1

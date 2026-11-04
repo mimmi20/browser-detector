@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaE7-00/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E7-00
     marketingName: E7
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.1.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/014.002; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.4 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N8-00
     marketingName: N8
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 525.0.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (MeeGo; NokiaN9) AppleWebKit/534.13 (KHTML, like Gecko) NokiaBrowser/8.5.0 Mobile Safari/534.13'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N9
     marketingName: N9
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MeeGo
-    marketingName: MeeGo
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MeeGo
+    marketingName: MeeGo
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.13.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (X11; U; Linux armv7l; pt-PT; rv:1.9.2.3pre) Gecko/20100723 Firefox/3.5 Maemo Browser 1.7.4.8 RX-51 N900'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N900
     marketingName: N900
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Maemo
-    marketingName: Maemo
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: MicroB
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Maemo
+    marketingName: Maemo
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Gecko
     version: 1.9.2.3
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.5 Nokia808PureView/113.010.1508; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.2.21 Mobile Safari/535.1 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '808 PureView'
     marketingName: '808 PureView'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.1.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.5 Nokia700/113.010.1506; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.2.21 Mobile Safari/535.1 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '700'
     marketingName: '700'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.1.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaC7-00/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C7-00
     marketingName: C7
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.1.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00/10.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C6-00
     marketingName: C6
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 525.0.0
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.3 Nokia701/111.010.1009; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.1.12 Mobile Safari/533.4 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '701'
     marketingName: '701'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 533.4.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5530c-2/32.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5530 XpressMusic'
     marketingName: '5530 XpressMusic'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 525.0.0
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaC6-01/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C6-01
     marketingName: C6
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.1.0
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5235/12.6.092; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '5235'
     marketingName: '5235'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 413.0.0
@@ -458,13 +458,11 @@
   headers:
     user-agent: '3gpp-gba Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN8-00-1/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N8-00
     marketingName: N8
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 525.0.0
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'NokiaN92-1/2.0 (2.0646.0.0.2) S60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N9
     marketingName: N9
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Nokia 7100 Supernova'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 710'
     marketingName: 'Lumia 710'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.2 Nokia808PureView/112.020.0309; Profile/MIDP-2.1 Configuration/C'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '808 PureView'
     marketingName: '808 PureView'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'NokiaC600/2.05(0)MailforExchange 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C6
     marketingName: C6
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: '3gpp-gba Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC7-00-1/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C7-00
     marketingName: C7
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 525.0.0
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'NokiaC700/1.00(0)ActiveSync 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C7
     marketingName: C7
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla 5.0 (Symbian/3; U; E7-00; de-DE; NokiaE7-00) AppleWebKit/534.3 (KHTML, like Gecko) Shazam Mobile Safari/534.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E7-00
     marketingName: E7
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.3.0
@@ -762,13 +762,11 @@
   headers:
     user-agent: '3gpp-gba Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaE7-00-1/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E7-00
     marketingName: E7
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 525.0.0
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'NokiaMapsWP7/1.0.45.86 (Microsoft Windows CE 7.10.81077.10.8107; NOKIA; Lumia 800; de-DE)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-819
     marketingName: 'Lumia 800'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: 7.10.81077.10.8107
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 7.10.81077.10.8107
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Nokia-N8-00/Unknown_FVersion Encoding/UTF-8 Lang/ar Caps/223 Morange/6.1.1 CS60/6.11.58 S60/50 PI/bb8c926f183ad2d16ca6bf706c7c011f Domain/@voda_egypt'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N8-00
     marketingName: N8
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'WindowsPhoneMMS/1.0 WindowsPhoneOS/8.0-9903 NOKIA-RM-825'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-825
     marketingName: 'Lumia 820'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.9903
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.9903
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: Youku;1.9;WindowsPhone;8.0.10517.0;NOKIARM-867_apac_prc_277
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-867
     marketingName: 'Lumia 920T'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X6
     marketingName: X6
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: NokiaX600/3.00(39)MailforExchange
   device:
-    architecture: null
+    architecture: ''
     deviceName: X6
     marketingName: X6
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: null
       height: null
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'PlacesDll Win32/SWchBvQ89wHhZhZGPH7ADQ:WVUjTbxpusEz-rl7htSN/3.2.214.8 (Windows Phone OS/8.0; NOKIA:Lumia 520; de-DE)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-914
     marketingName: 'Lumia 520'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'ODML/1.0 (WinCE; 7.10.8773; NOKIA; Lumia 610)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-835
     marketingName: 'Lumia 610'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Mobile OS'
-    marketingName: 'Windows Mobile OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Mobile OS'
+    marketingName: 'Windows Mobile OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'PlacesDll Win32/SWchBvQ89wHhZhZGPH7ADQ:WVUjTbxpusEz-rl7htSN/3.0.113.8 (Windows Phone OS/8.0; NOKIA:Lumia 620; de-DE)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-846
     marketingName: 'Lumia 620'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'PlacesDll Win32/x4dXIL4zf4fEINN8j7e8GA:c5f40ce19e9659484ed40cba84c12227/3.4.422.8 (Windows Phone OS/8.0; NOKIA:Lumia 625; de-DE)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 625'
     marketingName: 'Lumia 625'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1157,13 +1155,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'ODML/1.0 (WinCE; 7.10.8107; NOKIA; Lumia 710)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 710'
     marketingName: 'Lumia 710'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1195,13 +1193,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Mobile OS'
-    marketingName: 'Windows Mobile OS'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Mobile OS'
+    marketingName: 'Windows Mobile OS'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'PlacesDll Win32/x4dXIL4zf4fEINN8j7e8GA:c5f40ce19e9659484ed40cba84c12227/3.4.422.8 (Windows Phone OS/8.0; NOKIA:Lumia 720; en-US)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 720'
     marketingName: 'Lumia 720'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1233,13 +1231,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'PlacesDll Win32/SWchBvQ89wHhZhZGPH7ADQ:WVUjTbxpusEz-rl7htSN/3.0.113.8 (Windows Phone OS/8.0; NOKIA:Lumia 820; de-DE)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 820'
     marketingName: 'Lumia 820'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1271,13 +1269,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'MobilePlugin (Microsoft Windows CE 7.10.8862 ; Lumia 900 112.1914.2.0 2175.2905.8853.12440 NOKIA)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-823
     marketingName: 'Lumia 900'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1309,13 +1307,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: 7.10.8862
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: 7.10.8862
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'PlacesDll Win32/SWchBvQ89wHhZhZGPH7ADQ:WVUjTbxpusEz-rl7htSN/3.1.177.8 (Windows Phone OS/8.0; NOKIA:Lumia 920; it-IT)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Lumia 920'
     marketingName: 'Lumia 920'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1347,13 +1345,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'PlacesDll Win32/SWchBvQ89wHhZhZGPH7ADQ:WVUjTbxpusEz-rl7htSN/3.2.315.8 (Windows Phone OS/8.0; NOKIA:Lumia 925; de-DE)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: RM-892
     marketingName: 'Lumia 925'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 768
@@ -1385,13 +1383,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 8.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 8.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'iRAPP/3.5.0 NokiaN8-00/111.040.1511 Series60/5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N8-00
     marketingName: N8
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1423,13 +1421,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 5.3.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 5.3.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaX5-01/043.016; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X
     marketingName: X
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1461,13 +1459,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.2.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.2.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: WebKit
     version: 525.0.0
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'NokiaN93-1/20.0.041 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N9
     marketingName: N9
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -1499,13 +1497,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.0.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.0.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaC7-00/012.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) A'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C7-00
     marketingName: C7
     manufacturer: nokia
     brand: nokia
-    dualOrientation: false
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1537,13 +1535,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/111.040.1511; Profile/MIDP-2.1 Configuration/CLDC-1.'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N8-00
     marketingName: N8
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1575,13 +1573,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; U; Nokia700; xx) AppleWebKit/534.3 (KHTML, like Gecko) NokiaWebview/1.0 Mobile Safari/534.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '700'
     marketingName: '700'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1613,13 +1611,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.3.0
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; U; Nokia701; xx) AppleWebKit/534.3 (KHTML, like Gecko) NokiaWebview/1.0 Mobile Safari/534.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '701'
     marketingName: '701'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1651,13 +1649,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.3.0
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; U; Nokia808 PureView; xx) AppleWebKit/534.3 (KHTML, like Gecko) NokiaWebview/1.0 Mobile Safari/534.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: '808 PureView'
     marketingName: '808 PureView'
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1689,13 +1687,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.3.0
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Symbian/3; U; NokiaC6-01; xx) AppleWebKit/534.3 (KHTML, like Gecko) NokiaWebview/1.0 Mobile Safari/534.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C6-01
     marketingName: C6
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 640
       height: 360
@@ -1727,13 +1725,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Symbian OS'
-    marketingName: 'Symbian OS'
-    version: null
-    manufacturer: symbianFoundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Symbian OS'
+    marketingName: 'Symbian OS'
+    version: null
+    manufacturer: symbianFoundation
+    bits: 0
   engine:
     name: WebKit
     version: 534.3.0
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaX5-01/043.016; Profile/MIDP-2.1 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X
     marketingName: X
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -1765,13 +1763,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Series 60'
-    marketingName: 'Series 60'
-    version: 3.2.0
-    manufacturer: nokia
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia OSS Browser'
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Series 60'
+    marketingName: 'Series 60'
+    version: 3.2.0
+    manufacturer: nokia
+    bits: 0
   engine:
     name: null
     version: null
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (MeeGo; NokiaN9)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N9
     marketingName: N9
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -1803,13 +1801,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MeeGo
-    marketingName: MeeGo
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Nokia Browser'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: nokia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MeeGo
+    marketingName: MeeGo
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null

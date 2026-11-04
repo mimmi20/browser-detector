@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/4.08 (N905imyu_W;FOMA;c500;TB)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: N905imyu
     marketingName: N905imyu
     manufacturer: nec
     brand: ntt-docomo
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Maemo
-    marketingName: Maemo
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Maemo
+    marketingName: Maemo
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Gecko
     version: null

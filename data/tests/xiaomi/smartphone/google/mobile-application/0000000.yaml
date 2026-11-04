@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; MI 8 Build/PKQ1.180729.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36 GSA/9.72.4.21.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MI 8'
     marketingName: 'MI 8'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2248
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.136
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Mi 9 SE Build/PKQ1.181121.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.121 Mobile Safari/537.36 GSA/9.51.8.21.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi 9 SE'
     marketingName: 'Mi 9 SE'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 72.0.3626.121
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Mi 9T Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36 GSA/11.1.9.21.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi 9T'
     marketingName: 'Mi 9T'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.149
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; Redmi 7A Build/PKQ1.190319.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36 GSA/11.2.9.21.arm'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi 7A'
     marketingName: 'Redmi 7A'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1440
       height: 720
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.149
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Mi A3 Build/QKQ1.190910.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 GSA/11.16.13.21.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi A3'
     marketingName: 'Mi A3'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.106
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Mi 10 Build/QKQ1.191117.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36 GSA/12.1.9.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi 10'
     marketingName: 'Mi 10'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 88.0.4324.93
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Mi A2 Lite Build/QKQ1.191002.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 GSA/12.1.9.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'MI A2 Lite'
     marketingName: 'MI A2 Lite'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.101
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; M2007J3SG Build/QKQ1.200419.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36 GSA/12.21.12.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2007J3SG
     marketingName: 'Mi 10T Pro 5G (Global)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.101
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; M2007J20CG Build/QKQ1.200512.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.120 Mobile Safari/537.36 GSA/12.23.16.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2007J20CG
     marketingName: 'X3 NFC'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.120
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; M2101K9G Build/RKQ1.201112.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 GSA/12.46.21.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2101K9G
     marketingName: 'Mi 11 Lite 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.45
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; MI 9 Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.70 Mobile Safari/537.36 GSA/12.48.23.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi 9'
     marketingName: 'Mi 9'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2280
       height: 1080
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 97.0.4692.70
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; M2102J20SG Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 GSA/13.5.13.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2102J20SG
     marketingName: 'X3 Pro'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; 2109119DG Build/RKQ1.210503.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 GSA/13.5.13.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2109119DG
     marketingName: '11 Lite 5G NE'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; POCOPHONE F1 Build/QKQ1.190828.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 GoogleApp/13.7.7.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Pocophone F1'
     marketingName: 'Pocophone F1'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2246
       height: 1080
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.101
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; M2007J17G Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 GSA/13.15.10.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2007J17G
     marketingName: 'Mi 10T Lite 5G (Global)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.127
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; M2002J9G Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 GSA/13.16.8.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2002J9G
     marketingName: 'Mi 10 Lite 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 100.0.4896.127
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; Redmi 8 Build/QKQ1.191014.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 GSA/12.22.8.23.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Redmi 8'
     marketingName: 'Redmi 8'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1520
       height: 720
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.101
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'com.google.android.googlequicksearchbox/301201217 (Linux; U; Android 11; de_DE; M2007J20CG; Build/RKQ1.200826.002; Cronet/104.0.5108.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2007J20CG
     marketingName: 'X3 NFC'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google App'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; M2004J19C Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 GoogleApp/13.27.8.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2004J19C
     marketingName: 'Redmi 9'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.71
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 2107113SG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 GoogleApp/13.29.14.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2107113SG
     marketingName: 'Mi 11T Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.129
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; 21081111RG Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 GoogleApp/13.48.11.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 21081111RG
     marketingName: 11T
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 108.0.5359.128
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 2201123G Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36 GoogleApp/13.47.8.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2201123G
     marketingName: '12'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.141
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; 22011119UY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36 GoogleApp/13.47.13.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22011119UY
     marketingName: 'Redmi 10 (2022)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.141
@@ -877,13 +877,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 220733SG Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.141 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 220733SG
     marketingName: 'Redmi A1'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -892,13 +890,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -906,7 +900,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 107.0.5304.141
@@ -915,13 +915,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 22081212UG Build/SKQ1.220303.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.85 Mobile Safari/537.36 GoogleApp/13.48.11.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22081212UG
     marketingName: '12T Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2712
       height: 1220
@@ -930,13 +928,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -944,7 +938,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.85
@@ -953,13 +953,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; Mi 9T Pro Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.85 Mobile Safari/537.36 GoogleApp/14.3.9.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Mi 9T Pro'
     marketingName: 'Mi 9T Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2340
       height: 1080
@@ -968,13 +966,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -982,7 +976,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.85
@@ -991,13 +991,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; 2201116PG Build/RKQ1.211001.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 Mobile Safari/537.36 GoogleApp/14.4.6.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2201116PG
     marketingName: 'X4 Pro 5G'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1006,13 +1004,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1020,7 +1014,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.117
@@ -1030,13 +1030,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 220733SFG Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.118 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 220733SFG
     marketingName: 'Redmi A1+'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1045,13 +1043,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -1059,7 +1053,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 109.0.5414.118
@@ -1068,13 +1068,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 2203129G Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.58 Mobile Safari/537.36 GoogleApp/14.11.16.26.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2203129G
     marketingName: '12 Lite 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1083,13 +1081,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1097,7 +1091,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 111.0.5563.58
@@ -1107,13 +1107,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 10; M2006C3LG Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.154 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2006C3LG
     marketingName: 'Redmi 9A (Global)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1122,13 +1120,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -1136,7 +1130,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.154
@@ -1145,13 +1145,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 21061119DG Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 Mobile Safari/537.36 GoogleApp/14.17.34.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 21061119DG
     marketingName: 'Redmi 10'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1160,13 +1158,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1174,7 +1168,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.131
@@ -1183,13 +1183,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; POCO F2 Pro Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.76 Mobile Safari/537.36 GoogleApp/14.17.34.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'F2 Pro'
     marketingName: 'F2 Pro'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1198,13 +1196,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1212,7 +1206,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.76
@@ -1221,13 +1221,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 2201117PG Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36 GoogleApp/14.20.11.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2201117PG
     marketingName: 'M4 Pro'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1236,13 +1234,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1250,7 +1244,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 113.0.5672.162
@@ -1260,13 +1260,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 23028RN4DG Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.135 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23028RN4DG
     marketingName: 'Redmi A2'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1275,13 +1273,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -1289,7 +1283,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.135
@@ -1298,13 +1298,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; M2006C3LG Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.130 Mobile Safari/537.36 GoogleApp/14.24.9.28.arm'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2006C3LG
     marketingName: 'Redmi 9A (Global)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1313,13 +1311,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1327,7 +1321,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.130
@@ -1336,13 +1336,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 2201122G Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36 GoogleApp/14.25.13.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2201122G
     marketingName: '12 Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3200
       height: 1440
@@ -1351,13 +1349,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1365,7 +1359,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -1374,13 +1374,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; M2011K2G Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36 GoogleApp/14.24.9.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2011K2G
     marketingName: 'Mi 11'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3200
       height: 1440
@@ -1389,13 +1387,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1403,7 +1397,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.131
@@ -1413,13 +1413,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 12; M2007J3SG Build/SKQ1.211006.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.60 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2007J3SG
     marketingName: 'Mi 10T Pro 5G (Global)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1428,13 +1426,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -1442,7 +1436,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.60
@@ -1451,13 +1451,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; M2012K11AG Build/TKQ1.220829.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 GoogleApp/14.31.22.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2012K11AG
     marketingName: F3
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1466,13 +1464,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1480,7 +1474,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.166
@@ -1489,13 +1489,11 @@
   headers:
     user-agent: 'com.google.android.googlequicksearchbox/301212707 (Linux; U; Android 12; de_DE; 21081111RG; Build/SP1A.210812.016; Cronet/107.0.5284.2)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 21081111RG
     marketingName: 11T
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1504,13 +1502,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google App'
     modus: null
@@ -1518,7 +1512,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1527,13 +1527,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 220333QNY Build/SKQ1.211103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 GoogleApp/14.33.12.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 220333QNY
     marketingName: 'Redmi 10C'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1650
       height: 720
@@ -1542,13 +1540,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1556,7 +1550,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 115.0.5790.166
@@ -1565,13 +1565,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; M2006C3MG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 GoogleApp/14.38.23.28.arm'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2006C3MG
     marketingName: 'Redmi 9C (Global)'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1580,13 +1578,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1594,7 +1588,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 117.0.0.0
@@ -1603,13 +1603,11 @@
   headers:
     user-agent: 'com.google.android.googlequicksearchbox/301269887 (Linux; U; Android 12; de_DE; 2107113SG; Build/SKQ1.211006.001; Cronet/114.0.5735.84)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2107113SG
     marketingName: 'Mi 11T Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1618,13 +1616,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google App'
     modus: null
@@ -1632,7 +1626,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1641,13 +1641,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; M2010J19SY Build/QKQ1.200830.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.144 Mobile Safari/537.36 GoogleApp/14.49.40.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2010J19SY
     marketingName: 'Redmi 9T'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2340
       height: 1080
@@ -1656,13 +1654,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1670,7 +1664,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.144
@@ -1679,13 +1679,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 2112123AG Build/TKQ1.220829.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.43 Mobile Safari/537.36 GoogleApp/14.49.40.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2112123AG
     marketingName: 12X
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1694,13 +1692,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1708,7 +1702,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.43
@@ -1717,13 +1717,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 2306EPN60G Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.144 Mobile Safari/537.36 GoogleApp/14.49.40.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2306EPN60G
     marketingName: 13T
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -1732,13 +1730,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1746,7 +1740,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.6099.144
@@ -1755,13 +1755,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 22071212AG Build/UP1A.230620.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 GoogleApp/14.47.35.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22071212AG
     marketingName: 12T
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -1770,13 +1768,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1784,7 +1778,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 118.0.0.0
@@ -1793,13 +1793,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 2210129SG Build/TKQ1.220829.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.64 Mobile Safari/537.36 GoogleApp/15.8.40.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2210129SG
     marketingName: '12 Lite NE'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1808,13 +1806,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1822,7 +1816,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.64
@@ -1831,13 +1831,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 23053RN02Y Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.64 Mobile Safari/537.36 GoogleApp/15.8.40.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23053RN02Y
     marketingName: 'Redmi 12'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -1846,13 +1844,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1860,7 +1854,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.64
@@ -1869,13 +1869,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 22021211RG Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.54 Mobile Safari/537.36 GoogleApp/15.15.39.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22021211RG
     marketingName: F4
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -1884,13 +1882,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1898,7 +1892,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 124.0.6367.54
@@ -1907,13 +1907,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 23076RN8DY Build/TKQ1.221114.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.100 Mobile Safari/537.36 GoogleApp/15.14.36.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23076RN8DY
     marketingName: 'Redmi 12 5G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -1922,13 +1920,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1936,7 +1930,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.100
@@ -1945,13 +1945,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 23078PND5G Build/UP1A.230905.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.118 Mobile Safari/537.36 GoogleApp/15.15.39.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23078PND5G
     marketingName: '13T Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -1960,13 +1958,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -1974,7 +1968,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 123.0.6312.118
@@ -1983,13 +1983,11 @@
   headers:
     user-agent: 'com.google.android.apps.searchlite/950587 (Linux; U; Android 12; de_DE; 220733SG; Build/SP1A.210812.016; Cronet/121.0.6167.71)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 220733SG
     marketingName: 'Redmi A1'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -1998,13 +1996,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -2012,7 +2006,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -2021,13 +2021,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 23127PN0CG Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36 GoogleApp/15.34.35.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23127PN0CG
     marketingName: '14'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2670
       height: 1200
@@ -2036,13 +2034,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2050,7 +2044,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 127.0.6533.103
@@ -2059,13 +2059,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 22126RN91Y Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.70 Mobile Safari/537.36 GoogleApp/15.38.49.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 22126RN91Y
     marketingName: 'Redmi 12C'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1650
       height: 720
@@ -2074,13 +2072,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2088,7 +2082,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.6668.70
@@ -2097,13 +2097,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 23108RN04Y Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.81 Mobile Safari/537.36 GoogleApp/15.40.32.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23108RN04Y
     marketingName: 'Redmi 13C'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2112,13 +2110,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2126,7 +2120,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.6668.81
@@ -2135,13 +2135,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 2311DRK48G Build/UP1A.230905.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.100 Mobile Safari/537.36 GoogleApp/15.41.35.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2311DRK48G
     marketingName: 'X6 Pro 5G'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -2150,13 +2148,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2164,7 +2158,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.6668.100
@@ -2173,13 +2173,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 23122PCD1G Build/UKQ1.231003.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36 GoogleApp/15.45.39.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23122PCD1G
     marketingName: 'X6 5G'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -2188,13 +2186,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2202,7 +2196,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.107
@@ -2211,13 +2211,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; M2006C3LVG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.107 Mobile Safari/537.36 GoogleApp/15.46.36.ve.arm'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2006C3LVG
     marketingName: 'Redmi 9AT'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2226,13 +2224,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2240,7 +2234,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.107
@@ -2249,13 +2249,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 21091116AG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.104 Mobile Safari/537.36 GoogleApp/15.48.39.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 21091116AG
     marketingName: 'M4 Pro 5G'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2264,13 +2262,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2278,7 +2272,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 131.0.6778.104
@@ -2287,13 +2287,11 @@
   headers:
     user-agent: 'com.google.android.apps.searchlite/889771 (Linux; U; Android 13; de_DE; 23028RN4DG; Build/TP1A.220624.014; Cronet/132.0.6808.3)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23028RN4DG
     marketingName: 'Redmi A2'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2302,13 +2300,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -2316,7 +2310,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -2325,13 +2325,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; 2209116AG Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.38 Mobile Safari/537.36 GoogleApp/16.13.46.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2209116AG
     marketingName: 'Redmi Note 12 Pro 4G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2340,13 +2338,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2354,7 +2348,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 135.0.7049.38
@@ -2363,13 +2363,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; 2407FPN8EG Build/AP3A.240617.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/134.0.6998.135 Mobile Safari/537.36 GoogleApp/16.13.42.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2407FPN8EG
     marketingName: '14T Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -2378,13 +2376,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2392,7 +2386,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 134.0.6998.135
@@ -2401,13 +2401,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; M2012K11AI Build/TKQ1.221114.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36 GoogleApp/16.5.37.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M2012K11AI
     marketingName: 'Mi 11X'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -2416,13 +2414,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2430,7 +2424,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.6834.163
@@ -2439,13 +2439,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; 24040RN64Y Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36 GoogleApp/16.3.37.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 24040RN64Y
     marketingName: 'Redmi 13 4G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -2454,13 +2452,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2468,7 +2462,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 132.0.6834.163
@@ -2477,13 +2477,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; 25010PN30G Build/AQ3A.240912.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.115 Mobile Safari/537.36 GoogleApp/16.23.71.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25010PN30G
     marketingName: '15 Ultra'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3200
       height: 1440
@@ -2492,13 +2490,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2506,7 +2500,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.115
@@ -2515,13 +2515,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; 2406APNFAG Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.115 Mobile Safari/537.36 GoogleApp/16.22.53.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2406APNFAG
     marketingName: 14T
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -2530,13 +2528,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2544,7 +2538,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.115
@@ -2553,13 +2553,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; 24122RKC7G Build/AQ3A.240829.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.158 Mobile Safari/537.36 GoogleApp/16.34.61.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 24122RKC7G
     marketingName: 'F7 Ultra'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 3200
       height: 1440
@@ -2568,13 +2566,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2582,7 +2576,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 139.0.7258.158
@@ -2601,13 +2601,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 15; 25028RN03Y Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.122 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25028RN03Y
     marketingName: 'Redmi A5 4G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1640
       height: 720
@@ -2616,13 +2614,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -2630,7 +2624,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.0
@@ -2639,13 +2639,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; 23129RN51X Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.192 Mobile Safari/537.36 GoogleApp/17.0.4.ve.arm'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23129RN51X
     marketingName: 'Redmi A3'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1650
       height: 720
@@ -2654,13 +2652,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2668,7 +2662,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.7499.192
@@ -2677,13 +2677,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; 25028RN03Y Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/147.0.7727.112 Mobile Safari/537.36 NSTNWV/3.138.897146626.31release.go'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 25028RN03Y
     marketingName: 'Redmi A5 4G'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1640
       height: 720
@@ -2692,13 +2690,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Android Go'
-    marketingName: 'Android Go'
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -2706,7 +2700,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android Go'
+    marketingName: 'Android Go'
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 147.0.7727.112
@@ -2715,13 +2715,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; 23053RN02Y Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.124 Mobile Safari/537.36 OcIdWebView ({\"os\":\"Android\",\"osVersion\":\"35\",\"app\":\"com.google.android.gms\",\"appVersion\":\"262634001\",\"style\":3,\"callingAppId\":\"com.google.android.googlequicksearchbox\",\"isDarkTheme\":false})'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23053RN02Y
     marketingName: 'Redmi 12'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -2730,13 +2728,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google App'
     modus: null
@@ -2744,7 +2738,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.7871.124
@@ -2757,13 +2757,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 13; 23028RN4DG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.124 Mobile Safari/537.36 YouTube'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23028RN4DG
     marketingName: 'Redmi A2'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2772,13 +2770,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Youtube App'
     modus: null
@@ -2786,7 +2780,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0
@@ -2799,13 +2799,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 16; 23127PN0CG Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.46 Mobile Safari/537.36 YouTube'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23127PN0CG
     marketingName: '14'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2670
       height: 1200
@@ -2814,13 +2812,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Youtube App'
     modus: null
@@ -2828,7 +2822,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 150.0.0
@@ -2841,13 +2841,11 @@
     sec-ch-ua-mobile: '?1'
     user-agent: 'Mozilla/5.0 (Linux; Android 12; 220733SG Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.159 Mobile Safari/537.36 YouTube'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 220733SG
     marketingName: 'Redmi A1'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -2856,13 +2854,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Youtube App'
     modus: null
@@ -2870,7 +2864,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 149.0.0
@@ -2879,13 +2879,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 16; 23078PND5G Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.83 Mobile Safari/537.36 OcIdWebView ({\"os\":\"Android\",\"osVersion\":\"36\",\"app\":\"com.google.android.gms\",\"appVersion\":\"263234001\",\"style\":3,\"callingAppId\":\"com.google.android.googlequicksearchbox\",\"isDarkTheme\":true})'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 23078PND5G
     marketingName: '13T Pro'
     manufacturer: xiaomi
     brand: xiaomi
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -2894,13 +2892,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google App'
     modus: null
@@ -2908,7 +2902,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 151.0.7922.83
@@ -2917,13 +2917,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 15; 2412DPC0AG Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.39 Mobile Safari/537.36 GoogleApp/17.62.10.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 2412DPC0AG
     marketingName: 'X7 Pro'
     manufacturer: xiaomi
     brand: poco
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2712
       height: 1220
@@ -2932,13 +2930,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 15.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -2946,7 +2940,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 15.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 153.0.8010.39

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux mips; U;HbbTV/1.1.1 (+RTSP;DMM;Dreambox;0.1a;1.0;) CE-HTML/1.0; en) AppleWebKit/535.19 no/Volksbox QtWebkit/2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: QtWebkit
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.19.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Standard; NF34SW/1.1; like Gecko) NetFront/3.4 InettvBrowser/2.2C (000087;IP03-01;0100;0000)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: NetFront
     version: 3.4.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux mips; U;HbbTV/1.1.1 (+RTSP;DMM;Dreambox;0.1a;1.0;) CE-HTML/1.0; en) AppleWebKit/535.19 QtWebkit/2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: QtWebkit
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.19.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux mips; U;HbbTV/1.1.1 (+RTSP;Dream Property GmbH;Dreambox;0.1a;1.0;) CE-HTML/1.0; en) AppleWebKit/535.19 no/Volksbox QtWebkit/2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: QtWebkit
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.19.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux mips; U;HbbTV/1.1.1 (+RTSP;Dream Property GmbH;Dreambox;1.1;1.0;) CE-HTML/1.0; en) AppleWebKit/538.1 no/Volksbox QtWebkit OIPF/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: QtWebkit
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 538.1.0
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0 compatible; Device Mosaic 5.0; OpenTV) InettvBrowser/1.0 (008045;DCH505;3.15;00000)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 5.0 compatible; Device Mosaic 5.0; OpenTV) InettvBrowser/1.0 (008045;MHD500;1.09;00000)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0 compatible; Device Mosaic 5.2.2; OpenTV) InettvBrowser/2.2 (008045;PANATV1115;2.21;10000) TvpsExtInfo/A05B15 (7A050002020000BDF19E;22;F)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux mips; U;HbbTV/1.1.1 (+RTSP;DMM;Dreambox;0.1a;1.0;) CE-HTML/1.0; xx) AppleWebKit/535.19 no/Volksbox QtWebkit/2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: QtWebkit
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 535.19.0
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'InettvBrowser/1.0 (00A0B0;VIP1200J;001;000) TvpsExtInfo/A07F91 (6A07000000000001;10) (compatible; MSIE 6.0; Win32)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 95'
-    version: 95.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 95'
+    version: 95.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0 compatible; Device Mosaic 5.2.1;OpenTV) InettvBrowser/2.3 (008045;V750;1.01;10000) TvpsExtInfo/A05001 (7A050002020100004D1B;23;FP)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0 compatible; Device Mosaic 5.2.2; OpenTV) InettvBrowser/2.3 (008045;PANATV0934;1.32;10000)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general TV device'
     marketingName: 'general TV device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: InettvBrowser
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: unknown
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Trident
     version: null

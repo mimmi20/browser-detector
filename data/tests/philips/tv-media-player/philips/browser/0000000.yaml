@@ -2,13 +2,11 @@
   headers:
     user-agent: 'WebKit/3.7.6, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.19 (Philips, BDP5600, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BDP5600
     marketingName: BDP5600
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.7.6
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'WebKit/3.7.1, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB5570D, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB5570D
     marketingName: HTB5570D
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.7.1
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.21 (Philips, BDP3490, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BDP3490
     marketingName: BDP3490
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.8.5
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB3570, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB3570
     marketingName: HTB3570
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.8.5
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB4150B, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB4150B
     marketingName: HTB4150B
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.8.5
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB5540D, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB5540D
     marketingName: HTB5540D
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.8.5
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'WebKit/3.8.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB6251D, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB6251D
     marketingName: HTB6251D
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.8.5
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'WebKit/3.9.11, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.37 (Philips, BDP7750, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BDP7750
     marketingName: BDP7750
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.9.11
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'WebKit/3.9.11, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.36 (Philips, BDP3490M, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BDP3490M
     marketingName: BDP3490M
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.9.11
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'WebKit/3.9.11, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/2.64 (Philips, HTB5510D, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB5510D
     marketingName: HTB5510D
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.9.11
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'WebKit/3.9.4, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/4.26 (Philips, HTB7250D, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB7250D
     marketingName: HTB7250D
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.9.4
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'WebKit/3.9.4, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/4.26 (Philips, HTB9225D, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB9225D
     marketingName: 'Fidelio SoundHub 2.1'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.9.4
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'WebKit/3.9.4, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/4.26 (Philips, HTB9245D, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB9245D
     marketingName: 'Fidelio SoundHub 2.1'
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 3.9.4
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'WebKit/4.1.9, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.16 (Philips, HTB5260G, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB5260G
     marketingName: HTB5260G
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +509,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 4.1.9
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'WebKit/4.1.9, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.17 (Philips, BDP5700, wireless)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: BDP5700
     marketingName: BDP5700
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 4.1.9
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'WebKit/4.2.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.28 (Philips, HTB3520G, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB3520G
     marketingName: HTB3520G
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 4.2.5
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'WebKit/4.2.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.28 (Philips, HTB3550G, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB3550G
     marketingName: HTB3550G
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 4.2.5
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'WebKit/4.2.5, (CE-HTML/1.0 NETTV/3.3.0 NewB) PHILIPS-AVM-2013/1.28 (Philips, HTB5520G, wired)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: HTB5520G
     marketingName: HTB5520G
     manufacturer: philips
     brand: philips
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: NewB
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: philips
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 4.2.5

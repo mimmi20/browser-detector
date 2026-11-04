@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Apache/2.4.10 (Debian) mod_fcgid/2.3.9 Phusion_Passenger/4.0.53 mod_python/3.3.1 Python/2.7.9 OpenSSL/1.0.1t (internal dummy connection)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: null
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Apache
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: apache
     type: service-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: null
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Apache/2.4.34 (Ubuntu) OpenSSL/1.1.1 (internal dummy connection)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Apache
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: apache
     type: service-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Apache/2.2.2 (Fedora) (internal dummy connection)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fedora Linux'
-    marketingName: 'Fedora Linux'
-    version: null
-    manufacturer: redhat
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Apache
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: apache
     type: service-agent
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: 'Fedora Linux'
+    marketingName: 'Fedora Linux'
+    version: null
+    manufacturer: redhat
+    bits: 0
   engine:
     name: null
     version: null

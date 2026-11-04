@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; A200 Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A200
     marketingName: 'Picasso E'
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 10.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; A500 Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A500
     marketingName: Picasso
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 10.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; Iconia A501 Build/IMM76L; CyanogenMod-Tegraowners ICS ROM v170 (thor & digetx)) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A501
     marketingName: Picasso
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -93,13 +91,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; A100 Build/JZO54K; CyanogenMod-10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A100
     marketingName: Vangogh
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -131,13 +129,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 10.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Webkit'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 10.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Dalvik/2.1.0 (Linux; U; Android 11; A100 Build/RP1A.200720.011)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A100
     marketingName: Vangogh
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 600
@@ -169,13 +167,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Android Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; A10-21_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A10-21_EEA
     marketingName: 'Iconia A10 M1'
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -207,13 +205,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 138.0.0.0
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; M10-11 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/141.0.7390.122 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M10-11
     marketingName: 'Iconia Tab M10'
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -245,13 +243,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Chrome WebView'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 141.0.7390.122
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; M10-11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: M10-11
     marketingName: 'Iconia Tab M10'
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -283,13 +281,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0

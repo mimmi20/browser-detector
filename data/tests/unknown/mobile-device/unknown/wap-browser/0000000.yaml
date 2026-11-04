@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Tiphone T67/1.0 Browser/wap2.0 Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'KKT20/MIDP-2.0 Configuration/CLDC-1.1/Screen-240x320'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'MOT-MT716_TD/1.0 OMS/2.0 (Linux; Android) Release/8.31.2010 Browser/WAP 2.0 (AppleWebKit 528+) Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: WebKit
     version: 528.0.0
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'ZEN M72_MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'ZEN M9 Mini/MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'ZEN X20/MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'HEXING60D_11B_HW (MRE/3.1.00(64);MAUI/_CPU1_V01.07_R015_V01;BDATE/2013/08/29 11:04;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/HEXING60D_11B_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM/007;KKFUN/008;) L30_1_CPU1_V01.07_R015_V01 Release/2013.08.29 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.00.64
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.00.64
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'HONGYU50_COSMOS_11B_HW (MRE\\3.0.00(2500) resolution\\240400 chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) C790B_JX02_P8_TINMO_20121129 Release/2012.11.29 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: null
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: null
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'HUAQIN60A_6464_11B_HW|0816 (MRE/3.1.00(1536);MAUI/PA_089A_V8_0_9;BDATE/2013/08/16 14:02;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/HUAQIN60A_6464_11B_HW|0816;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;) ZS628PA_089A_V8_0_9 Release/2013.08.16 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.00.1536
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.00.1536
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'TINNO50_12864_W1224_11B_HW (MRE\2.5.00(3072) resolution\320480 chipset\MT6250 touch\1 tpannel\1 camera\1 gsensor\0 keyboard\reduced) F7100B_PP_F4_PK_F2_02_V11 Release/2013.03.07 WAP Browser/MAUI (HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'SAGETEL60D_UL61_HW (MRE/3.1.00(800);MAUI/130619_UL61_T363_MP;BDATE/2013/06/19 08:48;LCD/176220;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/SAGETEL60D_UL61_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM/007;KKFUN/008) V05_M130619_UL61_T363_MP Release/2013.06.19 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.00.800
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.00.800
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'TINNO50_6464_W1224_11B_HW (MRE\2.5.00(800) resolution\240320 chipset\MT6250 touch\1 tpannel\1 camera\1 gsensor\0 keyboard\normal) F7013B_PP_F2_PK_V9 Release/2013.02.27 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 2.5.00
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 2.5.00
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'True phone Super Ultra 1 WAP-Browser/1.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +509,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'KP26_11B_HW (MRE\3.0.00(20480) resolution\320480 chipset\MT6255 touch\1 tpannel\1 camera\0 gsensor\0 keyboard\reduced) V10_M130104_KP26_T731_MP Release/2013.01.05 WAP Browser/MAUI (HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'KL01L V06-M131211-KL01L-T605-MP Release/2013.12.13 WAP Browser/MAUI Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'SYM.SL10.HEXING60A_11B_HW (MRE/3.1.00(1280);MAUI/1_XXX_V01.01_R032_V012;BDATE/2014/08/15 17:54;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/HEXING60A_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MO) SL10_1_XXX_V01.01_R032_V012 Release/2014.08.15 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'MOT-A732/(2005.09.16)SW1.000/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'MOT-A732/(2005.09.13)SW0.270/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +699,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'MOT-A732/(2005.09. 2)SW0.235/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +737,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mitsu-M800/(2005.01.19)VER_04.06.25/WAP1.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +775,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mitsu-M800/(2005.01.18)VER_04.06.27/WAP1.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +813,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mitsu-M800/(2005.01.12)VER_04.06.24/WAP1.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -853,13 +851,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mitsu-M760/(2005.01.27)95AH4121/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 MMP/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +889,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mitsu-M760/(2004.12.28)95AH4061/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 MMP/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +927,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mitsu-M520/(2004.12.2)VER_EN_05.33/WAP1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -967,13 +965,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mitsu-M520/(2004.11.22)TF_DRGM_VER_01.13_P/WAP1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1005,13 +1003,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mitsu-M520/(2004.11.09)VER_CH_05.20/WAP1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +1041,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'MAUI WAP Browser UP.Link/5.1.2.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +1079,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'MAUI WAP Browser UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +1117,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'MAUI WAP Browser Novarra-Vision/8.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1155,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'MAUI WAP Browser MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +1193,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'KAA-A59/KAA59DZ1.12.B23/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +1231,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'KAA-A59/KAA59DZ1.12.B09/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1271,13 +1269,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'KAA-A59/KAA59DZ1.11.B02/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1309,13 +1307,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'KAA-A59/KAA59DZ1.10.B1/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1347,13 +1345,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'KAA-A59/KAA59DZ1.10.A28/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1385,13 +1383,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'KAA-A59/KAA59DZ1.09.A18/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1423,13 +1421,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'KAA-A59/KAA59DZ1.08.A13/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,13 +1459,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'KAA-A59/KAA59DZ1.07.A11/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1499,13 +1497,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'IAC-S858/20040326aIOL20301341/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1537,13 +1535,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: G1251C/(2005.11.23)1.0/WAP2.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1575,13 +1573,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'EZOS - M5 AlphaCell WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1613,13 +1611,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'ESATCOM-ES2100/(2005.9.13)SW3.0/WAP2.0 MIDP/MIDP2.0 CLDC/CLDC1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,13 +1649,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'E2808/1.0.0.0(2004.09.09)/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,13 +1687,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'E28/1.0.0.0(2005.09.20)/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1,E28/1.0.0.0(2005.09.20)/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,13 +1725,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'e28/1.0.0.0(2005.09.20)/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,13 +1763,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'E28-MPG1/A.2.8.0.0/WAP1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,13 +1801,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'E28-MPG1/2.6.0.0 Browser/WAP Profile/MIDP-1.0 Configuration/CLDC-1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1841,13 +1839,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'CTL/(2004.07.01)SW2.0.0/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1879,13 +1877,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1902,13 +1902,11 @@
   headers:
     user-agent: 'CTL-ROCKET/1.0/WAP1.2 Profile/MIDP-1.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1917,13 +1915,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1931,7 +1925,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1940,13 +1940,11 @@
   headers:
     user-agent: ccWAP-Browser
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1955,13 +1953,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -1969,7 +1963,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -1978,13 +1978,11 @@
   headers:
     user-agent: 'YJG-V400-02/L6A4202.1.0/WAP2.0 Profile UP.Link/1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1993,13 +1991,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2007,7 +2001,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2016,13 +2016,11 @@
   headers:
     user-agent: 'UT-s18/1.0.0.0(2005.11.18)/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2031,13 +2029,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2045,7 +2039,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2054,13 +2054,11 @@
   headers:
     user-agent: 'Unknown WAP browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2069,13 +2067,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2083,7 +2077,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2092,13 +2092,11 @@
   headers:
     user-agent: 'SOUTEC-V68/(2004.07.01)SW2.0.0/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2107,13 +2105,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2121,7 +2115,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2130,13 +2130,11 @@
   headers:
     user-agent: 'ZEN M72* Wap Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2145,13 +2143,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2159,7 +2153,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2168,13 +2168,11 @@
   headers:
     user-agent: 'ZEN P46 Elite/MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2183,13 +2181,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2197,7 +2191,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2206,13 +2206,11 @@
   headers:
     user-agent: 'ZEN X10-MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2221,13 +2219,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2235,7 +2229,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2244,13 +2244,11 @@
   headers:
     user-agent: 'Earth_A2_Maui Wap Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2259,13 +2257,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2273,7 +2267,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2282,13 +2282,11 @@
   headers:
     user-agent: 'Earth_Colors_Maui Wap Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2297,13 +2295,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2311,7 +2305,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2320,13 +2320,11 @@
   headers:
     user-agent: 'FOX_Sly_Wap Browser/1.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2335,13 +2333,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2349,7 +2343,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2358,13 +2358,11 @@
   headers:
     user-agent: 'G4040_MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2373,13 +2371,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2387,7 +2381,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2396,13 +2396,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; MAUI WAP Browser; MT6228)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2411,13 +2409,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2425,7 +2419,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2434,13 +2434,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; WAP Browser; MTK6225)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2449,13 +2447,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Nucleus OS'
-    marketingName: Nucleus
-    version: 6225.0.0
-    manufacturer: acceleratedTechnology
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2463,7 +2457,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Nucleus OS'
+    marketingName: Nucleus
+    version: 6225.0.0
+    manufacturer: acceleratedTechnology
+    bits: 0
   engine:
     name: null
     version: null
@@ -2472,13 +2472,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; WAP Browser; PDA)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2487,13 +2485,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2501,7 +2495,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2510,13 +2510,11 @@
   headers:
     user-agent: 'Zen M39/MAUI WAP Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2525,13 +2523,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: JavaOS
-    marketingName: JavaOS
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2539,7 +2533,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: JavaOS
+    marketingName: JavaOS
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -2548,13 +2548,11 @@
   headers:
     user-agent: 'WAP_Browser_Larus_TV1 MRE/3.1.001536;MAUI/LARUS_TV1_V008_2015-05-05;BDATE/2015/05/18 17:46;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/WAP_Browser_Larus_TV1;WAP Browser/MAUI HTTP PGDL;HTTPS;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;S'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2563,13 +2561,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.001536
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2577,7 +2571,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.001536
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -2586,13 +2586,11 @@
   headers:
     user-agent: 'TIANQIN61M_11C_HW (MRE/3.1.00(64);MAUI/_T19A_MAXVI_P11_MTK6261D_V02_20180721;BDATE/2018/07/21 11:50;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2601,13 +2599,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Nucleus OS'
-    marketingName: Nucleus
-    version: 6261.0.0-dev
-    manufacturer: acceleratedTechnology
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2615,7 +2609,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Nucleus OS'
+    marketingName: Nucleus
+    version: 6261.0.0-dev
+    manufacturer: acceleratedTechnology
+    bits: 0
   engine:
     name: null
     version: null
@@ -2624,13 +2624,11 @@
   headers:
     user-agent: 'TIANQIN61M_11C_HW (MRE/3.1.00(64);MAUI/_Maxvi_K10_20170817;BDATE/2017/08/17 09:47;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;M'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2639,13 +2637,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.00.64
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2653,7 +2647,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.00.64
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -2662,13 +2662,11 @@
   headers:
     user-agent: 'TIANQIN61M_11C_HW (MRE/3.1.00(64);MAUI/_Maxvi_X300_20170623;BDATE/2017/06/23 14:22;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2677,13 +2675,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.00.64
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2691,7 +2685,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.00.64
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -2700,13 +2700,11 @@
   headers:
     user-agent: 'TIANQIN61M_11C_HW MRE/3.1.0064;MAUI/_Maxvi_X500_20170816;BDATE/2017/08/16 13:43;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ;GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2715,13 +2713,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.0064
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2729,7 +2723,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.0064
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -2738,13 +2738,11 @@
   headers:
     user-agent: 'TIANQIN61M_11C_HW (MRE/3.1.00(64);MAUI/_Maxvi_X800_20170609;BDATE/2017/06/09 16:47;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/TIANQIN61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2753,13 +2751,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.00.64
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2767,7 +2761,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.00.64
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -2776,13 +2776,11 @@
   headers:
     user-agent: 'HONGYU61M_11C_HW (MRE/3.1.00(64);MAUI/_LD2409_WINMAX_BD45_180108;BDATE/2018/01/08 18:11;LCD/240320;CHIP/MT6261;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/HONGYU61M_11C_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2791,13 +2789,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: MRE
-    marketingName: 'MAUI Runtime Environment'
-    version: 3.1.00.64
-    manufacturer: mediatek
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'MAUI Wap Browser'
     modus: null
@@ -2805,7 +2799,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: MRE
+    marketingName: 'MAUI Runtime Environment'
+    version: 3.1.00.64
+    manufacturer: mediatek
+    bits: 0
   engine:
     name: null
     version: null
@@ -2814,13 +2814,11 @@
   headers:
     user-agent: 'G-Fone777/Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Mobile device'
     marketingName: 'general Mobile device'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2829,13 +2827,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'WAP Browser'
     modus: null
@@ -2843,7 +2837,13 @@
     manufacturer: unknown
     type: wap-browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

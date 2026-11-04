@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Classic FM/65.0.0 Android 12/vivo V2111'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V2111
     marketingName: Y21
     manufacturer: bbk
     brand: vivo
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Classic FM'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: multimedios-digital
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

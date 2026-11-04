@@ -2,13 +2,11 @@
   headers:
     user-agent: 'UCWEB/2.0 (MIDP-2.0; U; zh-CN; tolino tab 8.9) U2/1.0.0 UCBrowser/3.4.3.532  U2/1.0.0 Mobile'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Tab 8.9'
     marketingName: 'Tab 8.9'
     manufacturer: tolino
     brand: tolino
-    dualOrientation: null
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: U2
     version: 1.0.0

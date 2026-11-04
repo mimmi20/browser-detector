@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (SMART-TV; LINUX; Tizen 3.0) AppleWebKit/538.1 (KHTML, like Gecko) Version/3.0 TV Safari/538.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Smart TV'
     marketingName: 'Smart TV'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Tizen
-    marketingName: Tizen
-    version: 3.0.0
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Tizen Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: linux-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Tizen
+    marketingName: Tizen
+    version: 3.0.0
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 538.1.0

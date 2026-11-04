@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Microsoft Office OneNote/16.0.13328.20478 (Windows/10.0; Desktop x64; en-GB; Universal app; Microsoft Corporation/Surface Pro 4)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Surface Pro 4'
     marketingName: 'Surface Pro 4'
     manufacturer: microsoft
     brand: microsoft
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2736
       height: 1824
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: OneNote
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null

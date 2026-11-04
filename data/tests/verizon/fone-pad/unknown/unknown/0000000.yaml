@@ -2,13 +2,11 @@
   headers:
     user-agent: 'QMV7A Build/JDQ39'
   device:
-    architecture: null
+    architecture: ''
     deviceName: QMV7A
     marketingName: 'Ellipsis 7 4G'
     manufacturer: verizon
     brand: verizon
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'QTAQZ3 Build/KOT49H'
   device:
-    architecture: null
+    architecture: ''
     deviceName: QTAQZ3
     marketingName: 'Ellipsis 8'
     manufacturer: verizon
     brand: verizon
-    dualOrientation: null
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'QTAQZ3 Build/LMY47V'
   device:
-    architecture: null
+    architecture: ''
     deviceName: QTAQZ3
     marketingName: 'Ellipsis 8'
     manufacturer: verizon
     brand: verizon
-    dualOrientation: null
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -93,13 +91,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; G8341 Build/47.2.A.10.28; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 Instagram 87.0.0.18.99 Android (28/9; 480dpi; 1080x1776; Sony; G8341; G8341; qcom; de_DE; 148324051)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G8341
     marketingName: 'Xperia XZ1'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 73.0.3683.90
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; G8141 Build/47.2.A.10.62; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/224.0.0.33.114;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G8141
     marketingName: 'Xperia XZ Premium'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3840
       height: 2160
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.157
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; G8341 Build/47.2.A.11.228; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/246.0.0.49.121;] comdirect/1.0 (appVersion:19.10.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G8341
     marketingName: 'Xperia XZ1'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -93,13 +91,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 78.0.3904.96
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; I4113 Build/53.0.A.8.71; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.93 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/251.0.0.31.111;] comdirect/1.0 (appVersion:19.12.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I4113
     marketingName: 'Xperia 10'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -131,13 +129,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.93
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H8416 Build/52.0.A.11.32; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.79 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/251.0.0.31.111;] comdirect/1.0 (appVersion:19.12.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8416
     marketingName: 'Xperia XZ3'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2880
       height: 1440
@@ -169,13 +167,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.79
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H8266 Build/52.0.A.10.6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.93 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/251.0.0.31.111;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8266
     marketingName: 'Xperia XZ2'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -207,13 +205,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.93
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H9436 Build/52.1.A.0.532; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/257.0.0.44.118;] comdirect/1.0 (appVersion:20.2.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H9436
     marketingName: 'Xperia XZ3'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2880
       height: 1440
@@ -245,13 +243,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.99
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H4413 Build/50.2.A.3.22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/260.0.0.42.118;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H4413
     marketingName: 'Xperia XA2+'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1080
@@ -283,13 +281,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.132
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H4213 Build/50.2.A.3.22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/260.0.0.42.118;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H4213
     marketingName: 'Xperia XA2 Ultra'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -321,13 +319,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.132
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; J9210 Build/55.1.A.3.49; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/260.0.0.42.118;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J9210
     marketingName: 'Xperia 5'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -359,13 +357,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 80.0.3987.132
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; G8441 Build/47.2.A.11.228; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36 Instagram 125.0.0.20.126 Android (28/9; 320dpi; 720x1184; Sony; G8441; G8441; qcom; de_DE; 194383424) comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G8441
     marketingName: 'Xperia XZ1 Compact'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 720
@@ -397,13 +395,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 74.0.3729.136
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H3113 Build/50.2.A.3.22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/266.0.0.64.124;] comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H3113
     marketingName: 'Xperia XA2'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -435,13 +433,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.111
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H3113 Build/50.2.A.3.22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.96 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/260.0.0.22.122;] comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H3113
     marketingName: 'Xperia XA2'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -473,13 +471,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.96
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H8324 Build/52.1.A.0.672; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.96 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/266.0.0.56.124;] comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8324
     marketingName: 'Xperia XZ2 Compact'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1080
@@ -511,13 +509,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.96
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; I3113 Build/53.0.A.14.47; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 Instagram 140.0.0.30.126 Android (28/9; 408dpi; 1080x2398; Sony; I3113; I3113; qcom; de_DE; 212676898)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I3113
     marketingName: 'Xperia 10'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -549,13 +547,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; I4213 Build/53.0.A.14.47; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.60 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/271.0.0.55.109;] comdirect/1.0 (appVersion:20.5.2;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I4213
     marketingName: 'Xperia 10 Plus'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -587,13 +585,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.60
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H8324 Build/52.1.A.2.1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.83 Mobile Safari/537.36 Instagram 143.0.0.25.121 Android (29/10; 480dpi; 1080x2016; Sony; H8324; H8324; qcom; de_DE; 216817344)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8324
     marketingName: 'Xperia XZ2 Compact'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1080
@@ -625,13 +623,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.83
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H4113 Build/50.2.A.3.55; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/272.0.0.50.125;] comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H4113
     marketingName: 'Xperia XA2 Dual'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -663,13 +661,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; J9110 Build/55.1.A.3.149; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/272.0.0.50.125;] comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J9110
     marketingName: 'Xperia 1'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3840
       height: 1644
@@ -701,13 +699,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H9436 Build/52.1.A.2.1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.83 Mobile Safari/537.36 Instagram 143.0.0.25.121 Android (29/10; 560dpi; 1440x2712; Sony; H9436; H9436; qcom; de_DE; 216817357) comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H9436
     marketingName: 'Xperia XZ3'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2880
       height: 1440
@@ -739,13 +737,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.83
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; G8141 Build/47.2.A.10.107; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 Instagram 142.0.0.34.110 Android (28/9; 480dpi; 1080x1776; Sony; G8141; G8141; qcom; de_DE; 215464400) comdirect/1.0 (appVersion:20.5.2;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G8141
     marketingName: 'Xperia XZ Premium'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3840
       height: 2160
@@ -777,13 +775,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.138
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H8314 Build/52.1.A.2.1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/272.0.0.50.125;] comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8314
     marketingName: 'Xperia XZ2 Compact'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2160
       height: 1080
@@ -815,13 +813,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 83.0.4103.83
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; I3113 Build/53.1.A.3.57; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.101 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/288.1.0.47.123;] comdirect/1.0 (appVersion:20.9.2;deviceType:mobile)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: I3113
     marketingName: 'Xperia 10'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -853,13 +851,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 85.0.4183.101
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; XQ-BT52 Build/62.0.A.3.109; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.71 Mobile Safari/537.36 Instagram 207.0.0.39.120 Android (30/11; 420dpi; 1080x2394; Sony; XQ-BT52; XQ-BT52; qcom; de_DE; 321039152)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-BT52
     marketingName: 'Xperia 10 III'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2520
       height: 1080
@@ -891,13 +889,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 94.0.4606.71
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; H3213 Build/50.2.A.3.77; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/347.0.0.28.237;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H3213
     marketingName: 'Xperia XA2 Ultra'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -929,13 +927,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 96.0.4664.92
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; XQ-AD52 Build/57.0.A.2.300; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-AD52
     marketingName: 'Xperia L4'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1680
       height: 720
@@ -967,13 +965,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 98.0.4758.87
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; J9110 Build/55.2.A.4.332; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36 Instagram 255.1.0.17.102 Android (30/11; 420dpi; 1096x2434; Sony; J9110; J9110; qcom; de_DE; 405431927)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: J9110
     marketingName: 'Xperia 1'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 3840
       height: 1644
@@ -1005,13 +1003,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; G8343 Build/47.2.A.10.107; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.111 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/229.1.0.17.118;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G8343
     marketingName: 'Xperia XZ1'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -1043,13 +1041,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook Messenger App'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 76.0.3809.111
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; XQ-CC54 Build/65.0.A.0.1185; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/400.0.0.37.76;]'
   device:
-    architecture: null
+    architecture: ''
     deviceName: XQ-CC54
     marketingName: 'Xperia 10 IV'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2520
       height: 1080
@@ -1081,13 +1079,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Facebook App'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 103.0.5060.129
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 10; H8266 Build/52.1.A.0.672; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.117 Mobile Safari/537.36 Instagram 140.0.0.30.126 Android (29/10; 408dpi; 1080x2038; Sony; H8266; H8266; qcom; ru_RU; 212676898)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H8266
     marketingName: 'Xperia XZ2'
     manufacturer: sony
     brand: sony
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2160
       height: 1080
@@ -1119,13 +1117,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 10.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Instagram App'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: meta
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 10.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.117

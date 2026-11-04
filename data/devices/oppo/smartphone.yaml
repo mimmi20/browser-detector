@@ -1862,7 +1862,7 @@
   platform: android
 'oppo r11st':
   deviceName: R11st
-  marketingName: R11st
+  marketingName: R11s
   manufacturer: bbk
   brand: oppo
   dualOrientation: true
@@ -2702,7 +2702,7 @@
   platform: android
 'oppo r9 plusm a':
   deviceName: 'R9 Plusm A'
-  marketingName: 'R9 Plusm A'
+  marketingName: 'R9 Plus'
   manufacturer: bbk
   brand: oppo
   dualOrientation: true
@@ -8858,5 +8858,33 @@
     height: 1080
     touch: true
     size: 6
+  type: smartphone
+  platform: android
+'oppo reno ace':
+  deviceName: 'Reno Ace'
+  marketingName: 'Reno Ace'
+  manufacturer: bbk
+  brand: oppo
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.5
+  type: smartphone
+  platform: android
+'oppo reno ace 2':
+  deviceName: 'Reno Ace 2'
+  marketingName: 'Reno Ace 2'
+  manufacturer: bbk
+  brand: oppo
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2400
+    height: 1080
+    touch: true
+    size: 6.55
   type: smartphone
   platform: android

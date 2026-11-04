@@ -2,13 +2,11 @@
   headers:
     user-agent: 'LG-V410 Build/LRX22G'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V410
     marketingName: 'G Pad 7.0" LTE (AT&T)'
     manufacturer: lg
     brand: lg
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'LG-V495 Build/LRX22G'
   device:
-    architecture: null
+    architecture: ''
     deviceName: V495
     marketingName: 'G Pad F 8.0" 4G'
     manufacturer: lg
     brand: lg
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'VK810 4G Build/LRX22G'
   device:
-    architecture: null
+    architecture: ''
     deviceName: VK810
     marketingName: 'G Pad 8.3" LTE'
     manufacturer: lg
     brand: lg
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -93,13 +91,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: null
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: unknown
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: null
     version: null

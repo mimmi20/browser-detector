@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 12; T26-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.447 YaApp_Android/24.45/apad YaSearchBrowser/24.45/apad BroPP/1.0 SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T26-EEA
     marketingName: T26
     manufacturer: toscido
     brand: toscido
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1200
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 122.0.6261.447
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 14.0; T181-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.264 YaBrowser/24.12.0.264.01 (beta) Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: T181-EEA
     marketingName: T181
     manufacturer: toscido
     brand: toscido
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2000
       height: 1200
@@ -55,13 +53,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.264

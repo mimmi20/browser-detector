@@ -2,13 +2,11 @@
   headers:
     user-agent: 'XBMC/14.0-ALPHA3 (Linux; Android 4.2.2; AFTB Build/JDQ39) XBMC_CPU/armv7l XBMC_BITNESS/32 Version/14.0-ALPHA3-Git:2014-09-01-d6c3ef3-dirty'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AFTB
     marketingName: 'Fire TV (1st Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 3.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'XBMC Media Center'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: xbmc-foundation
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 3.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Kodi/14.0 (Linux; Android 4.2.2; AFTB Build/JDQ39) Android/4.2.2 Sys_CPU/armv7l App_Bitness/32 Version/14.0-Git:2014-12-23-ad747d9-dirty'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AFTB
     marketingName: 'Fire TV (1st Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: tv-media-player
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 3.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Kodi Media Center'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: xbmc-foundation
     type: multimedia-player
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 3.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: null
     version: null

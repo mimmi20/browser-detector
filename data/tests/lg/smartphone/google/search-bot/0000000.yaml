@@ -13,8 +13,6 @@
     marketingName: 'Nexus 5X'
     manufacturer: lg
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -23,13 +21,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Bot'
     modus: null
@@ -37,7 +31,13 @@
     manufacturer: google
     type: search-bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Blink
     version: 41.0.0
@@ -49,13 +49,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.224 Mobile Safari/537.36 (compatible; Google-InspectionTool/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Nexus 5X'
     marketingName: 'Nexus 5X'
     manufacturer: lg
     brand: google
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1920
       height: 1080
@@ -64,13 +62,9 @@
     type: smartphone
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Mac OS X'
-    marketingName: 'Mac OS X'
-    version: null
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Google-InspectionTool
     modus: null
@@ -78,7 +72,13 @@
     manufacturer: google
     type: search-bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: 'Mac OS X'
+    marketingName: 'Mac OS X'
+    version: null
+    manufacturer: apple
+    bits: 0
   engine:
     name: Blink
     version: 124.0.0

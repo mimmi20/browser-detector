@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-CN; Infinix X677 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 HiBrowser/v2.6.4.1 UWS/ Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X677
     marketingName: 'Note 12i (2022)'
     manufacturer: infinix
     brand: infinix
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Hi Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: redfoxunitedinc
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.131
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 12; zh-CN; Infinix X6815C Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 HiBrowser/v2.6.3.1 UWS/ Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X6815C
     marketingName: 'Zero 5G (2023)'
     manufacturer: infinix
     brand: infinix
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2460
       height: 1080
@@ -55,13 +53,9 @@
     type: phablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Hi Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: redfoxunitedinc
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 92.0.4515.131

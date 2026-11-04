@@ -5,13 +5,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Andr0id 11; TY55_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.56 Safari/537.36 OMI/4.24.3.23.StableAVB_Telly.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TY55-1
     marketingName: TY55-1
     manufacturer: telly
     brand: telly
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -20,13 +18,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Vewd Core'
     modus: null
@@ -34,7 +28,13 @@
     manufacturer: tivo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.0
@@ -44,13 +44,11 @@
     sec-ch-ua: '"Not_A Brand";v="8", "Chromium";v="120", "Vewd Core";v="4.24"'
     user-agent: 'Mozilla/5.0 (Linux; Andr0id 11; TY55_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.56 Safari/537.36 OMI/4.24.3.23.StableAVB_Telly.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: TY55-1
     marketingName: TY55-1
     manufacturer: telly
     brand: telly
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -59,13 +57,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: 'Android TV'
-    marketingName: 'Android TV'
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Vewd Core'
     modus: null
@@ -73,7 +67,13 @@
     manufacturer: tivo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Android TV'
+    marketingName: 'Android TV'
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 120.0.0

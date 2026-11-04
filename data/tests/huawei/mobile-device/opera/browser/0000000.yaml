@@ -2,13 +2,11 @@
   headers:
     user-agent: 'HUAWEI-M735/001.00 Opera/9.70'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Huawei device'
     marketingName: 'general Huawei device'
     manufacturer: huawei
     brand: huawei
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: mobile-device
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Opera
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: opera
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Presto
     version: null

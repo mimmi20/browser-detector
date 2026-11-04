@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_F900'
   device:
-    architecture: null
+    architecture: ''
     deviceName: F900
     marketingName: F900
     manufacturer: acer
     brand: acer
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Acer_P400 1.023h.00'
   device:
-    architecture: null
+    architecture: ''
     deviceName: P400
     marketingName: 'neoTouch P400'
     manufacturer: acer
     brand: acer
-    dualOrientation: false
-    simCount: 1
     display:
       width: 480
       height: 320
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.O; windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_S200'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S200
     marketingName: 'neoTouch S200'
     manufacturer: acer
     brand: acer
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'acer_S200 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: S200
     marketingName: 'neoTouch S200'
     manufacturer: acer
     brand: acer
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -131,13 +129,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 6.5.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Internet Explorer'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 6.5.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_E100'
   device:
-    architecture: null
+    architecture: ''
     deviceName: E100
     marketingName: 'beTouch E100'
     manufacturer: acer
     brand: acer
-    dualOrientation: false
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -169,13 +167,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows CE'
-    marketingName: 'Windows CE'
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: IEMobile
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: microsoft
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows CE'
+    marketingName: 'Windows CE'
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Trident
     version: null

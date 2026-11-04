@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Switch OLED) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.122 YaBrowser/25.10.1.122.01 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Switch OLED'
     marketingName: 'Switch OLED'
     manufacturer: nintendo
     brand: nintendo
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1280
       height: 720
@@ -17,13 +15,9 @@
     type: mobile-console
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Lineage OS'
-    marketingName: 'Lineage OS'
-    version: 22.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Lineage OS'
+    marketingName: 'Lineage OS'
+    version: 22.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.122
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Switch Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.854 YaSearchBrowser/25.101.1/apad BroPP/1.0 YaSearchApp/25.101.1/apad webOmni SA/3 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Switch Lite'
     marketingName: 'Switch Lite'
     manufacturer: nintendo
     brand: nintendo
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1280
       height: 720
@@ -55,13 +53,9 @@
     type: mobile-console
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Lineage OS'
-    marketingName: 'Lineage OS'
-    version: 22.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Lineage OS'
+    marketingName: 'Lineage OS'
+    version: 22.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Blink
     version: 140.0.7339.854
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; arm_64; Android 15; Switch) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.405 YaSearchBrowser/25.89.1/apad BroPP/1.0 YaSearchApp/25.89.1/apad webOmni SA/3 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Switch
     marketingName: Switch
     manufacturer: nintendo
     brand: nintendo
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1280
       height: 720
@@ -93,13 +91,9 @@
     type: mobile-console
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Lineage OS'
-    marketingName: 'Lineage OS'
-    version: 22.0.0
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Yandex Search Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: yandex
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Lineage OS'
+    marketingName: 'Lineage OS'
+    version: 22.0.0
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Blink
     version: 138.0.7204.405

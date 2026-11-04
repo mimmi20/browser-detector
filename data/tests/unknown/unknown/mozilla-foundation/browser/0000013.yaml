@@ -1,14 +1,12 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 (000000000; 0; 00000 000 00 0 000000; 00000) 000000000000000000000 0000000 0000 000000 0000000000000 0000000000000000'
+    user-agent: '''Mozilla\\Project25499_OnlyScans'''
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,47 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: null
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Mobile)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -31,22 +63,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/4.0 (compatible; RSS Reader)'
+    user-agent: 'Firefox 21.0.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +91,351 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 21.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Firefox 2.0.0.10'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 2.0.0.10
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: null
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ACHE/1.1; +https://github.com/ViDA-NYU/ache) comdirect/1.0 (appVersion:21.9.1)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; HT/3.4.0-20200518conf_v3 +https://www.webdepozit.sk/)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ImageFetcher/9.0; +http://images.weserv.nl/)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; seocompany/0.6; +; ) comdirect/1.0 (appVersion:21.11.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ImageFetcher/7.0; +http://images.weserv.nl/)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ImageFetcher/8.0; +http://images.weserv.nl/)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible; ipMonitor 9.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -69,22 +443,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (en) Gecko/20070515 Firefox/2.0.0.4'
+    user-agent: 'Mozilla/5.0 (compatible; ACHE/1.2; +https://github.com/ViDA-NYU/ache)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,74 +471,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 2.0.0.4
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: Mozilla/3.01+(compatible;)
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
-    version: 3.01.0
+    version: 5.0.0
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/4.0 (compatible; RSS Popper)'
+    user-agent: 'Mozilla/5.0 (undefined; rv:95.0) Gecko/20100101 Firefox/95.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +509,313 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 95.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: 95.0.0
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Namoroka 3.6.9pre'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 3.6.9-dev
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Firefox 1.1.16'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 1.1.16
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Firefox 3.5.6'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 3.5.6
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla 1.3b'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 1.3.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 scpitspi-rs'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Inboxb0t-Image/2.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Firefox 40.1'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 40.1.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/4.0 (compatible;)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -183,22 +823,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/4.0                                                                                                       .1.3; OfficeLivePatch.0.0)'
+    user-agent: 'Mozilla/4.0 (compatible;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +851,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -221,22 +861,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (000000000; 0; 000 000 00 0 0000; 00; 00000000000) 0000000000000000 00000000000000'
+    user-agent: 'Mozilla/4.0 (compatible; snomD862-SIP 8.10.0.11  00041396C740)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,203 +889,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'C:\\Programme\\Mozilla\\Firefox\\firefox.exe'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: null
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'gosospider Mozilla/5.0 (compatible; GosoSpider; +http://www.goso.cn/spider.html)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'FireFox 4'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 4.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Gecko/20100101 Firefox/4.0'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 4.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatibl'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -449,22 +899,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla 1.7'
+    user-agent: Mozilla-BugBounty
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,51 +927,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 1.7.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla oder so'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -525,22 +937,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.1 (compatible; Firefox/1.5;)'
+    user-agent: 'Mozilla/5.0 Gecko/20100101 Firefox/47.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,36 +965,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Firefox
     modus: null
-    version: 1.5.0
+    version: 47.0.0
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'gosospider Mozilla/5.0 (compatible; GosoSpider; +http://www.goso.cn/aboutus.html)'
+    user-agent: 'Mozilla/4.0 (compatible) Wormly SSL Tester'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,1039 +1003,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: Firefox/3.6.8
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 3.6.8
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (000000000; 00000 000 00 0 0000; 000000) DDDDDDDDDDDDDD DDDDDDDDDDD'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; DomainEncore/1.0; http://www.domainencore.com)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; AutomaticSiteMap)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; PatchOneSpider/2.0; http://www.patchone.se)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (tarakas)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/6.0 (OSX 4.1; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 6.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; webkicks-Robot +http://www.webkicks.de)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; GazoPabot/1.0; +http://www.gazopa.com/gazopa_bot)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; MS-DOS 3.30; service pack 5)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; FriendFeedBot/0.1; +Http://friendfeed.com/about/bot; 9 subscribers; feed-id=4487133656574773276)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Gecko/20091102 Firefox/3.5.5'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 3.5.5
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Firefox Ver.3  http://www.ourradio.de'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: null
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; POGS/2.0; http://www.patchone.se)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; Presansbot/1.0 +http://www.presans.com)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; OnetSzukaj/5.0; http://szukaj.onet.pl)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; Twitturls; +http://twitturls.com)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/6.8 (OSX 5.4; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 6.8.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/3.7 (OSX 4.6; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 3.7.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/4.3 (OSX 5.4; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 4.3.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/7.9 (OSX 7.1; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 7.9.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/8.3 (OSX 5.4; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 8.3.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/8.7 (OSX 2.1; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 8.7.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/6.6 (OSX 1.2; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 6.6.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; BZ/1.0; +http://berliner.bz/)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: Firefox/3.05
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 3.05.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; UrlShorter BOT; http://xlurl.de/)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -1627,22 +1013,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; MarketwireBot/1.0; +http://www.marketwire.com)'
+    user-agent: 'Mozilla/4.0 (compatible;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,13 +1041,47 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 4.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; MatchorySearch/1.3; +https://www.matchory.com)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -1665,22 +1089,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; wicken/1.0.0 +http://spider.neofonie.de)'
+    user-agent: 'Mozilla/5.0 Gecko/20111005 Firefox/9.0a2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,13 +1117,47 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 9.0.0-alpha+2
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; U; Fymp) Factory Media Production GmbH/3.0.2'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -1703,22 +1165,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: Mozilla/bintellibot
+    user-agent: 'Mozilla/4.0 (compatible;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,36 +1193,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
-    version: null
+    version: 4.0.0
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (000000000; 0; 00000 000 00 0 0000; 00000; 00000000000) 00000000000000 00000000000000'
+    user-agent: 'Mozilla/5.0 Firefox/3.5.6 Tapatalk/4.15.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,36 +1231,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
-    name: 'Mozilla Application Suite'
+    name: Firefox
     modus: null
-    version: 5.0.0
+    version: 3.5.6
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; PrintfulBot/1.0; +http://printful.com/bot.html)'
+    user-agent: 'Mozilla/5.0 (compatible; YourApp/1.0; +https://example.com)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,127 +1269,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/7.1 (OSX 3.7; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 7.1.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/1.8 (OSX 7.0; )'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 1.8.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'SocialSearcher/0.1 Mozilla/5.0'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -1931,22 +1279,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; findobot/2.0 +http://www.findo.de/bot.html)'
+    user-agent: 'Mozilla 1.6a'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1955,13 +1307,85 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 1.6.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla Canary12345%0d%0ASet-Cookie: CanaryCookie=12345UA; path=/; secure; httponly'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: null
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Artax)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -1969,22 +1393,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla Firefox 3'
+    user-agent: 'Mozilla/4.0 (compatible;)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -1993,13 +1421,1377 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 4.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 infrawatch/0.1'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: null
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; CascadeCMS/20240425)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ImageFetcher/9.0; +http://wsrv.nl/)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (ZOOM.Win 10.0 x64)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: '\\''Mozilla/5.0'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'rv:109.0) Gecko/20100101 Firefox/118.0'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 118.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: 109.0.0
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla 10.9'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 10.9.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 Keydrop'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; ShopifyThemeDetector/2.0;)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 3.6.10 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 3.6.10
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AGU/0.8.4)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0(compatible;MatchorySearch/1.3;+https://www.matchory.com)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0+(compatible; MonSpark/1.0; http://www.monspark.com/)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 OnlyScans'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0; Keydrop.io/1.0(onlyscans.com/about);'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; WPDetector/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Trance/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AGU/0.8.6)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; CMSDetector/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Godzilla/5.4 Firefoxy (XU; Pinguin i353; en-US; rv:1.9.8.4) Gecko/10214711 TOHO/0.8.1.5-3tos'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 1.9.8.4
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: 1.9.8.4
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 1.0.4 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 1.0.4
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 3.5.2 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 3.5.2
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (mitsec)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; SeoWebStat/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AbnormalImageFetcher/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (+domain reachability; contact: dev@dinnova.ch)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; WP-Detector/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 WP-Audit/3.2 (+https://example.local)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 WP-Audit/3.1 (+https://example.local)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 WP-Audit/3.0 (+https://example.local)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 WP-Audit/2.0 (+https://example.local)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 WP-Audit/1.0 (+https://example.local)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; FastWPJ/2.2)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 2.0.0.12 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 2.0.0.12
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 3.0 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -2007,22 +2799,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'tl;dr firefox'
+    user-agent: 'Mozilla/5.0 (Finder-TP)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2031,36 +2827,112 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; PrestaDetector/4.3; +https://example.invalid)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: 'Mozilla Application Suite'
+    modus: null
+    version: 5.0.0
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 2.0.0.14 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Firefox
     modus: null
-    version: null
+    version: 2.0.0.14
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'theHell/4.0 (DOS0.1;U)Big Gecko [br]'
+    user-agent: 'Mozilla/5.0 (Stop!Hacker!; rv:24.0) Gecko/20130524 Firefox/24.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2069,36 +2941,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Firefox
     modus: null
-    version: null
+    version: 24.0.0
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
-    version: null
+    version: 24.0.0
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Shmozilla/v9.14 Platinum'
+    user-agent: 'More Firefox 1.0.1 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2107,682 +2979,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: null
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Shmozilla/9.14 Platinum'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 9.14.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Schmozilla/v9.14 Platinum'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: null
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Phoenix Browscap Updater'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Phoenix
-    modus: null
-    version: null
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'ozilla/4.7 (compatible; Whizbang)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 4.7.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: Mozzila/4.0
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 4.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/9.0 (compatible; OzzyBrowse 1.0; DOS 7.1)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 9.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/8.1 (Cool-OS; 1024-bit)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 8.1.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: Mozilla/7.0
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 7.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/6.0 (compatible; arameda.com Spider)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 6.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: Mozilla/5.5
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.5.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: Mozilla/5.001
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.001.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0(compatible;+MrBoar.com/1.0;++http://DomainUni.com)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 wgao@genieknows.com'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 usww.com-Spider-for-w8.net'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 NewsFox/1.0.5'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Mozilla@mail.com'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Gecko20070713'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: Firefox
     modus: null
-    version: null
+    version: 1.0.1
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 Gecko/20100125 Firefox/3.6'
+    user-agent: 'More Firefox 1.5.0.9 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2791,36 +3017,36 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Firefox
     modus: null
-    version: 3.6.0
+    version: 1.5.0.9
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 Gecko/2008101315 Firefox/3.0.3'
+    user-agent: 'Mozilla/5.0 (Laravel Reaver .env Presence)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -2829,279 +3055,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 3.0.3
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Gecko/20021029 Phoenix/0.4'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Phoenix
-    modus: null
-    version: 0.4.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Gecko/20021013 Chimera/0.5'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Chimera
-    modus: null
-    version: 0.5.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Gecko->FireFox (Acp; UA Auth; rv1.0) Hx/fca3e2a0cdfff92c58ff107a05f6b6f2'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: null
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Gecko'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: null
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Firefox/3.0.0.0'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 3.0.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 Firefox 0.8 webdesign'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 0.8.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 CostaCider Search http://www.costacider.com/bot/'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3109,22 +3065,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 CodeName DomainFinder'
+    user-agent: 'Mozilla/5.0 (bang2013@atomicmail.io)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3133,13 +3093,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3147,22 +3103,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 [Internet Explorer]'
+    user-agent: 'More Firefox 3.5.9 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3171,13 +3131,123 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 3.5.9
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 1.5.0.11 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 1.5.0.11
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 2.0.0.3 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 2.0.0.3
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; myjob/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3185,22 +3255,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Your site may have been hijacked - See http://markup.fr/Une-liste-de-sites-compromis-ou-detournes)'
+    user-agent: 'More Firefox 3.0.5 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3209,13 +3283,85 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 3.0.5
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'More Firefox 3.0.11 user agents strings -->>'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 3.0.11
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; Prefetcher/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3223,22 +3369,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (Yahoo-Test/4.0; ysm-keystone-crawl-support@yahoo-inc.com)'
+    user-agent: 'More Firefox 3.0.8 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3247,13 +3397,47 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Firefox
+    modus: null
+    version: 3.0.8
+    manufacturer: mozilla-foundation
+    type: browser
+    isbot: false
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; AW-WB-Filter/1.0)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3261,60 +3445,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (Yahoo-Test/4.0; yahoo-ysm-ks@yahoo-inc.com)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 5.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.20) Gecko/20081217 Firefox/2.0.0.20 <b></b>'
+    user-agent: 'More Firefox 2.0.0.20 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3323,13 +3473,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -3337,75 +3483,37 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 1.8.1.20
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7 <b></b>'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
-  client:
-    name: Firefox
-    modus: null
-    version: 1.5.0.7
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: 1.8.0.7
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (000000000; 0; 00000 000 00 0 0000; 00000; 0000000000) DDDDDDDDDDDDDD DDDDDDDDDDDDD'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
+    bits: 0
   os:
     name: null
     marketingName: null
     version: null
     manufacturer: unknown
-    bits: null
+    bits: 0
+  engine:
+    name: Gecko
+    version: null
+    manufacturer: mozilla
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (compatible; LLMC/1.3.4; +https://llmc.domainsproject.org)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3413,22 +3521,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (000000000; 0; 00000 000 00 0 000000; 00000) 00000000000000000000 0000000 0000 000000 0000000000000 000000000000000'
+    user-agent: 'Mozilla/5.0 (compatible; OpenEASM/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3437,13 +3549,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3451,22 +3559,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; bush-crawler +http://whitehouse.gov)'
+    user-agent: 'Mozilla/5.0 (compatible; TechScan/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3475,13 +3587,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3489,22 +3597,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (000000000; 0; 00000 000 00 0 0000; 00000; 00000000000) DDDDDDDDDDDDDD DDDDDDDDDDDDDD DDDDDD'
+    user-agent: 'Mozilla/5.0 (compatible; fortifp/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3513,13 +3625,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3527,22 +3635,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/4.0 (compatible; Getleft 1.2)'
+    user-agent: 'Mozilla/5.0 (BugBountyRecon/8.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3551,51 +3663,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 4.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; NerdByNature.Bot; http://www.nerdbynature.net/bot)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3603,22 +3673,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/5.0 (compatible; AMZNKAssocBot/4.0)'
+    user-agent: 'Mozilla/5.0 (compatible; DesignProbe/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3627,13 +3701,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3641,22 +3711,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'Mozilla/4.0 (compatible; Arachmo)'
+    user-agent: 'Mozilla/5.0 +(chakal1337)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3665,89 +3739,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 4.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/4.0 (compatible; voodoo-it/6.0; http://www.voodoo-it.com/spider.html)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: 'Mozilla Application Suite'
-    modus: null
-    version: 4.0.0
-    manufacturer: mozilla-foundation
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: Gecko
-    version: null
-    manufacturer: mozilla
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; loc-crawler/0.11.0 +http://loc.gov)'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3755,22 +3749,26 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null
     manufacturer: mozilla
 -
   headers:
-    user-agent: 'mozilla/5.0 qunarbot/1.0'
+    user-agent: 'Mozilla/5.0 (compatible; EdgeWatch/1.1; https://about.edgewatch.com/)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -3779,13 +3777,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: 'Mozilla Application Suite'
     modus: null
@@ -3793,7 +3787,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: Gecko
     version: null

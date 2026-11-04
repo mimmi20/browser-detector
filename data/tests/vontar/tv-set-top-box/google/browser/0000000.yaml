@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 11; VONTAR X2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Vontar device'
     marketingName: 'general Vontar device'
     manufacturer: vontar
     brand: vontar
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.0.0
@@ -46,13 +46,11 @@
     sec-ch-ua-mobile: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'HK1 RBox X4'
     marketingName: 'HK1 RBox X4'
     manufacturer: vontar
     brand: vontar
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -61,13 +59,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -75,7 +69,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.188
@@ -84,13 +84,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; VONTAR H728) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H728
     marketingName: H728
     manufacturer: vontar
     brand: vontar
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -99,13 +97,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -113,7 +107,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116
@@ -122,13 +122,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; VONTAR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Vontar device'
     marketingName: 'general Vontar device'
     manufacturer: vontar
     brand: vontar
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -137,13 +135,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 9.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -151,7 +145,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 9.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 81.0.4044.129
@@ -160,13 +160,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; DQ08 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: DQ08
     marketingName: DQ08
     manufacturer: vontar
     brand: vontar
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -175,13 +173,9 @@
     type: tv-set-top-box
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Chrome
     modus: null
@@ -189,7 +183,13 @@
     manufacturer: google
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 79.0.3945.116

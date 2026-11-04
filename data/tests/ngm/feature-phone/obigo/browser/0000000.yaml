@@ -2,13 +2,11 @@
   headers:
     user-agent: 'NGM_Coffee/ObigoInternetBrowser/QO3C Profile/MIDP2.0 Configuration/CLDC-1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: Coffee
     marketingName: Coffee
     manufacturer: ngm
     brand: ngm
-    dualOrientation: false
-    simCount: 1
     display:
       width: 400
       height: 240
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'Obigo Q'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: obigo
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: Teleca
     version: null

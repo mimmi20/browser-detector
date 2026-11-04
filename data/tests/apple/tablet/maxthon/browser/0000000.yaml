@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) Maxthon AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'iPhone OS'
-    marketingName: 'iPhone OS'
-    version: 3.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Maxthon
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: maxthon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'iPhone OS'
+    marketingName: 'iPhone OS'
+    version: 3.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 531.21.10
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Maxthon 6.1.2 rv:261 (iPad; iPadOS 15.7; de_DE)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 15.7.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: Maxthon
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: maxthon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 15.7.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null

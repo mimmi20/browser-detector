@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 14; zh-cn; SNP-AN00 Build/WIKOSNP-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SNP-AN00
     marketingName: 'Hi Enjoy 80 Plus 5G'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1604
       height: 720
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'QQ Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: tencent
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.71
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 11; zh-az; JEY-AN00 Build/WIKOJEY-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.71 MQQBrowser/20.3 Mobile Safari/537.36 COVC/048801'
   device:
-    architecture: null
+    architecture: ''
     deviceName: JEY-AN00
     marketingName: 'Hi Enjoy 70 Plus'
     manufacturer: wiko
     brand: wiko
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -55,13 +53,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'QQ Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: tencent
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 121.0.6167.71

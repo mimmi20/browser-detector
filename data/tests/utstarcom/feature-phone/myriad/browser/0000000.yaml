@@ -2,13 +2,11 @@
   headers:
     user-agent: 'utstargz1s/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: gz1s
     marketingName: "G'zOne Type-S"
     manufacturer: utstarcom
     brand: utstarcom
-    dualOrientation: null
-    simCount: 1
     display:
       width: 120
       height: 120
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'UTStarcom-G26/1.0 UP.Browser/6.2.2.7.c.1.103 (GUI) MMP/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G26
     marketingName: G26
     manufacturer: utstarcom
     brand: utstarcom
-    dualOrientation: null
-    simCount: 1
     display:
       width: 128
       height: 128
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'utstarc711/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C711
     marketingName: C711
     manufacturer: utstarcom
     brand: utstarcom
-    dualOrientation: null
-    simCount: 1
     display:
       width: 320
       height: 240
@@ -93,13 +91,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: null
+    simCount: 1
+    bits: 0
   client:
     name: 'Openwave Mobile Browser'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: myriad
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: null
     version: null

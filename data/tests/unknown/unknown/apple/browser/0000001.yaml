@@ -1,14 +1,12 @@
 -
   headers:
-    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; robotstestbot; +https://johnmu.com/robotstestbot)'
+    user-agent: 'Mozilla / Safari Browser'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -31,7 +25,355 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: Safari/18614.3.7.1.5
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: 16.2.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: 9.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: WebKit
+    version: 601.1.46
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/WebKit_version (KHTML, like Gecko)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: Safari/18615.3.12.11.2
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: 16.6.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: WebKit
+    version: null
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Zulu5 (KHTML, like Gecko)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: KHTML
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Fleebsbot/1.0;)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: WebKit
+    version: 537.36.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 (Smartsign Player) AppleWebKit/534.7 (KHTML, like Gecko) Safari/534.7'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: 4.0.0
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: WebKit
+    version: 534.7.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: WebKit
+    version: 537.36.0
+    manufacturer: apple
+-
+  headers:
+    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; robotstestbot; +https://johnmu.com/robotstestbot)'
+  device:
+    architecture: ''
+    deviceName: null
+    marketingName: null
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: unknown
+    ismobile: false
+    istv: false
+    dualOrientation: null
+    simCount: 0
+    bits: 0
+  client:
+    name: Safari
+    modus: null
+    version: null
+    manufacturer: apple
+    type: browser
+    isbot: false
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -40,13 +382,11 @@
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +395,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -69,7 +405,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -78,13 +420,11 @@
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; web_fetcher/1.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +433,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -107,7 +443,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -116,13 +458,11 @@
   headers:
     user-agent: 'More Safari 4.0 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +471,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -145,7 +481,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -154,13 +496,11 @@
   headers:
     user-agent: 'More Safari 2.0.3 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +509,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -183,7 +519,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -192,13 +534,11 @@
   headers:
     user-agent: 'More Safari 5.0.4 user agents strings -->>'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +547,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -221,7 +557,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -230,13 +572,11 @@
   headers:
     user-agent: 'AppleWebKit/538.38 (KHTML, like Gecko111)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +585,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -259,7 +595,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 538.38.0
@@ -268,13 +610,11 @@
   headers:
     user-agent: 'AppleWebKit/531.31 (KHTML, like Gecko111)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +623,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -297,60 +633,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 531.31.0
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; AzureAI-SearchBot/1.0;'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 537.36.0
-    manufacturer: apple
--
-  headers:
     user-agent: 'AppleWebKit/537.37 (KHTML, like Gecko111)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +661,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -373,7 +671,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.37.0
@@ -382,13 +686,11 @@
   headers:
     user-agent: 'AppleWebKit/539.39 (KHTML, like Gecko111)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +699,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -411,7 +709,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 539.39.0
@@ -420,13 +724,11 @@
   headers:
     user-agent: 'AppleWebKit/532.32 (KHTML, like Gecko111)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +737,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -449,7 +747,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 532.32.0
@@ -458,13 +762,11 @@
   headers:
     user-agent: 'AppleWebKit/535.35 (KHTML, like Gecko111)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +775,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -487,7 +785,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 535.35.0
@@ -496,13 +800,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Nodejs 18; Vungle) AppleWebKit/605.1.15'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +813,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -525,60 +823,26 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
     manufacturer: apple
 -
   headers:
-    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; Shap-User/0.1.0'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: null
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 537.36.0
-    manufacturer: apple
--
-  headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ReyilBot/0.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +851,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -601,7 +861,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -610,13 +876,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (compatible; UseAI/1.0; +https://agents.urls.use.ai) AppleWebKit/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,51 +889,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 537.36.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; SEOJuice-SearchBot/1.0; +https://seojuice.io/bot'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -677,7 +899,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -686,13 +914,11 @@
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; n85bot/2.0; +https://n85bot.com)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +927,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -715,7 +937,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -724,13 +952,11 @@
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GrokBot/1.0; +https://x.ai/grokbot)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +965,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: null
+    simCount: 0
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -753,7 +975,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -762,13 +990,11 @@
   headers:
     user-agent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GrokBot/1.0; +https://x.ai/grokbot'
   device:
-    architecture: null
+    architecture: ''
     deviceName: null
     marketingName: null
     manufacturer: unknown
     brand: unknown
-    dualOrientation: null
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,51 +1003,9 @@
     type: unknown
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
-  client:
-    name: Safari
-    modus: null
-    version: null
-    manufacturer: apple
-    type: browser
-    isbot: false
-    bits: null
-  engine:
-    name: WebKit
-    version: 537.36.0
-    manufacturer: apple
--
-  headers:
-    user-agent: 'Mozilla/5.0 (compatible; MoonrankBot/1.0; +https://moonrank.ai/bot) AppleWebKit/537.36'
-  device:
-    architecture: null
-    deviceName: null
-    marketingName: null
-    manufacturer: unknown
-    brand: unknown
     dualOrientation: null
     simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: unknown
-    ismobile: false
-    istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -829,7 +1013,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0

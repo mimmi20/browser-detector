@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 5.1.1; AEOBP) AppleWebKit/537.36 (KHTML, like Gecko) Silk/91.3.4 like Chrome/91.0.4472.133 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEOBP
     marketingName: 'Echo Show (2nd Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: smart-display
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 5.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 5.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 91.0.4472.133
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 7.1.2; AEOCW) AppleWebKit/537.36 (KHTML, like Gecko) Silk/94.4.4 like Chrome/94.0.4606.128 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEOCW
     marketingName: 'Echo Show 8 (2023)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: smart-display
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 6.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 6.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 94.0.4606.128
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 7.1.2; AEOCN) AppleWebKit/537.36 (KHTML, like Gecko) Silk/110.6.7 like Chrome/110.0.5481.212 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEOCN
     marketingName: 'Echo Show 5 (2nd Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: smart-display
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 6.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 6.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 110.0.5481.212
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; AEOHY) AppleWebKit/537.36 (KHTML, like Gecko) Silk/94.3.10 like Chrome/94.0.4606.126 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEOHY
     marketingName: 'Echo Show 15 (2021)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1920
       height: 1080
@@ -131,13 +129,9 @@
     type: smart-display
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 94.0.4606.126
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; AEOAT) AppleWebKit/537.36 (KHTML, like Gecko) Silk/112.6.3 like Chrome/112.0.5615.213 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEOAT
     marketingName: 'Echo Show 8 (2nd Gen)'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: 1280
       height: 800
@@ -169,13 +167,9 @@
     type: smart-display
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 112.0.5615.213
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 9; AEORH) AppleWebKit/537.36 (KHTML, like Gecko) Silk/130.5.2 like Chrome/130.0.6723.142 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEORH
     marketingName: 'Echo Show 8'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: smart-display
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 7.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 7.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 130.0.6723.142
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 7.1.2; AEOHP Build/NS6546;) AppleWebKit/537.36 (KHTML, like Gecko) Silk/126.3.601 like Chrome/126.0.6478.242 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: AEOHP
     marketingName: 'Echo Show 5'
     manufacturer: amazon
     brand: amazon
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: smart-display
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: 'Fire OS'
-    marketingName: 'Fire OS'
-    version: 6.0.0
-    manufacturer: amazon
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Silk
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: amazon
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Fire OS'
+    marketingName: 'Fire OS'
+    version: 6.0.0
+    manufacturer: amazon
+    bits: 0
   engine:
     name: Blink
     version: 126.0.6478.242

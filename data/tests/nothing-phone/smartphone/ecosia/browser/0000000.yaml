@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 12; A063) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A063
     marketingName: 'Phone 1'
     manufacturer: nothing-phone
     brand: nothing-phone
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -17,13 +15,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 101.0.0.0
@@ -50,13 +50,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36 (Ecosia android@143.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A059
     marketingName: 'Phone 3a'
     manufacturer: nothing-phone
     brand: nothing-phone
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -65,13 +63,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -79,7 +73,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 143.0.0
@@ -98,13 +98,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36 (Ecosia android@142.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A065
     marketingName: 'Phone 2'
     manufacturer: nothing-phone
     brand: nothing-phone
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2412
       height: 1080
@@ -113,13 +111,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -127,7 +121,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 142.0.0
@@ -146,13 +146,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36 (Ecosia android@144.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A059P
     marketingName: 'Phone 3a Pro'
     manufacturer: nothing-phone
     brand: nothing-phone
-    dualOrientation: true
-    simCount: 2
     display:
       width: 2392
       height: 1080
@@ -161,13 +159,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 16.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -175,7 +169,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 16.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 144.0.0

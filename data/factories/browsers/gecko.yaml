@@ -93,6 +93,7 @@ rules:
   /slurp/i: slurp
   /nutch/i: nutch
   '/mobile vr.+firefox/i': firefox-reality
+  /^firefox$/i: generic-bot
   /firefox|minefield|shiretoko|bonecho|namoroka|granparadiso|lorentz/i: firefox
   '/xml sitemaps generator/i': 'xml sitemaps generator'
   /lightningquail/i: lightningquail

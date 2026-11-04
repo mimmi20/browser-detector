@@ -12,13 +12,11 @@
     sec-ch-ua-wow64: '?0'
     user-agent: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36 (Ecosia android@148.0.0.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: H2022
     marketingName: H2022
     manufacturer: iiif150
     brand: iiif150
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1440
       height: 720
@@ -27,13 +25,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: Ecosia
     modus: null
@@ -41,7 +35,13 @@
     manufacturer: ecosia
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 148.0.0

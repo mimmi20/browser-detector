@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; U; Android 4.4.4; ru-ru; A701 Build/JLS36I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 CyanogenMod/4.4.4/a701 Mobile UCBrowser/3.4.3.532'
   device:
-    architecture: null
+    architecture: ''
     deviceName: A701
     marketingName: 'Iconia Tab A701'
     manufacturer: acer
     brand: acer
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1920
       height: 1200
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: CyanogenMod
-    marketingName: CyanogenMod
-    version: 4.4.4
-    manufacturer: unknown
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'UC Browser'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: ucweb
     type: transcoder
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: CyanogenMod
+    marketingName: CyanogenMod
+    version: 4.4.4
+    manufacturer: unknown
+    bits: 0
   engine:
     name: WebKit
     version: 534.30.0

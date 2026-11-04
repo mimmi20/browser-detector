@@ -2,13 +2,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/23.0.0 iPad/10.2.1 hw/iPad4_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 4,1'
     marketingName: 'iPad Air Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2048
       height: 1536
@@ -17,13 +15,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/24.0.0 iPad/10.2.1 hw/iPad5_3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 5,3'
     marketingName: 'iPad Air 2 Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2048
       height: 1536
@@ -55,13 +53,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/48.0.0 iPad/11.3 hw/iPad6_11'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,11'
     marketingName: 'iPad 9.7" (5th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2732
       height: 2048
@@ -93,13 +91,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.3.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.3.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/48.0.0 iPad/10.2.1 hw/iPad3_4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 3,4'
     marketingName: 'iPad (4th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2048
       height: 1536
@@ -131,13 +129,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 10.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 10.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/43.0.0 iPad/11.4.1 hw/iPad7_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,1'
     marketingName: 'iPad Pro 12.9" (2nd Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2732
       height: 2048
@@ -169,13 +167,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.4.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.4.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/63.0.0 iPad/11.2.1 hw/iPad6_7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 6,7'
     marketingName: 'iPad Pro 12.9" Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2732
       height: 2048
@@ -207,13 +205,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 11.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 11.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/42.0.0 iPad/9.3.5 hw/iPad3_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 3,1'
     marketingName: 'iPad (3rd Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2048
       height: 1536
@@ -245,13 +243,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 13_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/81.0.264749124 Mobile/17A5821e Safari/604.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -283,13 +281,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -306,13 +306,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/84.0.0 iPad/13.1 hw/iPad7_11'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,11'
     marketingName: 'iPad 10.2" (7th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2160
       height: 1620
@@ -321,13 +319,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.1.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.1.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/42.0.0 iPad/9.3.5 hw/iPad2_4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 2,4'
     marketingName: 'iPad (2nd Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -359,13 +357,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/40.1.0 iPad/9.3.5 hw/iPad2_5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 2,5'
     marketingName: 'iPad Mini Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -397,13 +395,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/42.0.0 iPad/9.3.5 hw/iPad2_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 2,1'
     marketingName: 'iPad (2nd Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -435,13 +433,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iOS
-    marketingName: iOS
-    version: 9.3.5
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iOS
+    marketingName: iOS
+    version: 9.3.5
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/101.0 iPad/13.4.1 hw/iPad7_3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,3'
     marketingName: 'iPad Pro 10.5" Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2224
       height: 1668
@@ -473,13 +471,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: 'com.google.Drive.ShareExtension/4.2023.40228 iPad/16.6.1 hw/iPad7_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,1'
     marketingName: 'iPad Pro 12.9" (2nd Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2732
       height: 2048
@@ -511,13 +509,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 16.6.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Drive ShareExtension'
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 16.6.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: 'com.google.Drive.ShareExtension/4.2023.44229 iPad/17.1.1 hw/iPad12_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 12,1'
     marketingName: 'iPad 10.2" (9th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2160
       height: 1620
@@ -549,13 +547,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 17.1.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Drive ShareExtension'
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 17.1.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (iPad; CPU OS 16.4.1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GoogleWv/1.0 (WKWebView) OPA/1.9.108501 CoreAssistant/com.google.OPA'
   device:
-    architecture: null
+    architecture: ''
     deviceName: iPad
     marketingName: iPad
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 1024
       height: 768
@@ -587,13 +585,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 16.4.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Assistant'
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 16.4.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: 605.1.15
@@ -610,13 +610,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/393.0 iPad/18.5 hw/iPad11_6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 11,6'
     marketingName: 'iPad 10.2" (8th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2160
       height: 1620
@@ -625,13 +623,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 18.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 18.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/398.0 iPad/18.6.2 hw/iPad15_7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 15,7'
     marketingName: 'iPad A16 11" (11th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2360
       height: 1640
@@ -663,13 +661,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 18.6.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 18.6.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/398.0 iPad/18.6.2 hw/iPad13_18'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,18'
     marketingName: 'iPad 10.9" (10th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2360
       height: 1640
@@ -701,13 +699,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 18.6.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 18.6.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/404.0 iPad/26.2 hw/iPad13_16'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,16'
     marketingName: 'iPad Air 10.9" (5th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2360
       height: 1640
@@ -739,13 +737,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.2.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.2.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/407.0 iPad/26.2.1 hw/iPad14_5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 14,5'
     marketingName: 'iPad Pro 12.9" (6th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2732
       height: 2048
@@ -777,13 +775,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.2.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.2.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/416.4 iPad/26.3.1 hw/iPad14_8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 14,8'
     marketingName: 'iPad Air M2 11" Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2360
       height: 1640
@@ -815,13 +813,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.3.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.3.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/416.4 iPad/18.7.7 hw/iPad12_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 12,1'
     marketingName: 'iPad 10.2" (9th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2160
       height: 1620
@@ -853,13 +851,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 18.7.7
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 18.7.7
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/416.4 iPad/26.4.2 hw/iPad16_3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 16,3'
     marketingName: 'iPad Pro M4 11" Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2420
       height: 1668
@@ -891,13 +889,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.4.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.4.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/99.0 iPad/13.4 hw/iPad7_5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 7,5'
     marketingName: 'iPad 9.7" (6th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2048
       height: 1536
@@ -929,13 +927,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 13.4.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 13.4.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/422.6 iPad/26.5 hw/iPad8_11'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,11'
     marketingName: 'iPad Pro 12.9" (4th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2732
       height: 2048
@@ -967,13 +965,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/432.8 iPad/26.5 hw/iPad14_10'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 14,10'
     marketingName: 'iPad Air M2 13" Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2732
       height: 2048
@@ -1005,13 +1003,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.5.0
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.5.0
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'com.google.Drive.ShareExtension/4.2636.41401 iPad/26.6.1 hw/iPad8_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 8,1'
     marketingName: 'iPad Pro 11" Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2388
       height: 1668
@@ -1043,13 +1041,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.6.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Drive ShareExtension'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.6.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/414.0 iPad/26.6.1 hw/iPad13_8'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,8'
     marketingName: 'iPad Pro 12.9" (5th Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2732
       height: 2048
@@ -1081,13 +1079,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.6.1
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.6.1
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'com.google.GoogleMobile/437.4 iPad/26.6.2 hw/iPad13_1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'iPad 13,1'
     marketingName: 'iPad Air 10.9" (4rd Gen) Wi-Fi'
     manufacturer: apple
     brand: apple
-    dualOrientation: true
-    simCount: 0
     display:
       width: 2360
       height: 1640
@@ -1119,13 +1117,9 @@
     type: tablet
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: iPadOS
-    marketingName: iPadOS
-    version: 26.6.2
-    manufacturer: apple
-    bits: null
+    dualOrientation: true
+    simCount: 0
+    bits: 0
   client:
     name: 'Google Mobile App'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: iPadOS
+    marketingName: iPadOS
+    version: 26.6.2
+    manufacturer: apple
+    bits: 0
   engine:
     name: WebKit
     version: null

@@ -3,13 +3,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 12; Nokia C12 Build/SP1A.210812.016) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.136 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C12
     marketingName: C12
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 2
     display:
       width: 1600
       height: 720
@@ -18,13 +16,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 12.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 2
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -32,7 +26,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 12.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 105.0.5195.136
@@ -42,13 +42,11 @@
     x-requested-with: com.google.android.apps.searchlite
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Nokia C22 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C22
     marketingName: C22
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -57,13 +55,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Go'
     modus: null
@@ -71,7 +65,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 114.0.5735.196
@@ -80,13 +80,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Nokia X20 Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 GoogleApp/14.34.24.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X20
     marketingName: X20
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -95,13 +93,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -109,7 +103,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 116.0.0.0
@@ -118,13 +118,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Nokia G50 Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.67 Mobile Safari/537.36 GoogleApp/14.46.33.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G50
     marketingName: G50
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1560
       height: 720
@@ -133,13 +131,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -147,7 +141,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 119.0.6045.67
@@ -156,13 +156,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Nokia X10 Build/UKQ1.231003.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.81 Mobile Safari/537.36 GoogleApp/15.39.41.28.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: X10
     marketingName: X10
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2400
       height: 1080
@@ -171,13 +169,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -185,7 +179,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 129.0.6668.81
@@ -194,13 +194,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 13; Nokia G20 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.122 Mobile Safari/537.36 GoogleApp/16.6.28.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G20
     marketingName: G20
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -209,13 +207,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 13.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -223,7 +217,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 13.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 133.0.6943.122
@@ -232,13 +232,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux; Android 14; Nokia G22 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.115 Mobile Safari/537.36 GoogleApp/16.26.67.ve.arm64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: G22
     marketingName: G22
     manufacturer: nokia
     brand: nokia
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1600
       height: 720
@@ -247,13 +245,9 @@
     type: smartphone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 14.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Google Search App'
     modus: null
@@ -261,7 +255,13 @@
     manufacturer: google
     type: mobile-application
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 14.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 137.0.7151.115

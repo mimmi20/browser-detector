@@ -2,13 +2,11 @@
   headers:
     user-agent: 'rest-client/2.0.0 (linux-gnu x86_64) ruby/2.4.4p296'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -17,13 +15,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'REST Client for Ruby'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'curl/7.9.3 (powerpc-ibm-aix4.3.3.0) libcurl 7.9.3 (OpenSSL 0.9.6m)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: AIX
-    marketingName: AIX
-    version: 4.3.3.0
-    manufacturer: ibm
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: AIX
+    marketingName: AIX
+    version: 4.3.3.0
+    manufacturer: ibm
+    bits: 0
   engine:
     name: null
     version: null
@@ -78,13 +78,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.2.1-1+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -93,13 +91,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -107,7 +101,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -116,13 +116,11 @@
   headers:
     user-agent: 'curl/7.19.6 (i686-pc-cygwin) libcurl/7.19.6 OpenSSL/0.9.8n zlib/1.2.3 libidn/1.18 libssh2/1.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -131,13 +129,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -145,7 +139,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -154,13 +154,11 @@
   headers:
     user-agent: 'curl/7.19.5 (i586-pc-mingw32msvc) libcurl/7.19.5 zlib/1.2.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -169,13 +167,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cURL
     modus: null
@@ -183,7 +177,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -192,13 +192,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.2.9-1+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -207,13 +205,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -221,7 +215,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -230,13 +230,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 SlimerJS/0.9.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -245,13 +243,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 7'
-    version: 7.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: SlimerJS
     modus: null
@@ -259,7 +253,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 7'
+    version: 7.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: Gecko
     version: 38.0.0
@@ -268,13 +268,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.2.8-1+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -283,13 +281,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -297,7 +291,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -306,13 +306,11 @@
   headers:
     user-agent: Lavf/57.56.101
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -321,13 +319,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -335,7 +329,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -344,13 +344,11 @@
   headers:
     user-agent: Lavf/57.71.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -359,13 +357,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -373,7 +367,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -382,13 +382,11 @@
   headers:
     user-agent: Lavf/56.40.101
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -397,13 +395,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -411,7 +405,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -420,13 +420,11 @@
   headers:
     user-agent: Lavf/57.52.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -435,13 +433,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -449,7 +443,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -458,13 +458,11 @@
   headers:
     user-agent: Lavf/56.40.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -473,13 +471,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -487,7 +481,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -496,13 +496,11 @@
   headers:
     user-agent: Lavf52.104.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -511,13 +509,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -525,7 +519,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -534,13 +534,11 @@
   headers:
     user-agent: Lavf/56.1.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -549,13 +547,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -563,7 +557,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -572,13 +572,11 @@
   headers:
     user-agent: Lavf54.29.104
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -587,13 +585,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -601,7 +595,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -610,13 +610,11 @@
   headers:
     user-agent: Lavf/57.83.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -625,13 +623,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -639,7 +633,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -648,13 +648,11 @@
   headers:
     user-agent: 'Lavf 53.32.100'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -663,13 +661,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -677,7 +671,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -686,13 +686,11 @@
   headers:
     user-agent: Lavf54.2.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -701,13 +699,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -715,7 +709,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -724,13 +724,11 @@
   headers:
     user-agent: Lavf/56.4.101
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -739,13 +737,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -753,7 +747,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -762,13 +762,11 @@
   headers:
     user-agent: Lavf/55.37.102
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -777,13 +775,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -791,7 +785,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -800,13 +800,11 @@
   headers:
     user-agent: Lavf52.111.0
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -815,13 +813,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -829,7 +823,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -838,13 +838,11 @@
   headers:
     user-agent: Lavf/55.12.102
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -853,13 +851,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -867,7 +861,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
   engine:
     name: null
     version: null
@@ -876,13 +876,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.35.0 PHP/7.0.33-1+ubuntu14.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -891,13 +889,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -905,7 +899,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -914,13 +914,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.0.33-0ubuntu0.16.04.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -929,13 +927,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -943,7 +937,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -952,13 +952,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.61.0 PHP/7.2.15-1+ubuntu18.10.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -967,13 +965,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -981,7 +975,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -990,13 +990,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.61.0 PHP/7.3.3-1+ubuntu18.10.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1005,13 +1003,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1019,7 +1013,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1028,13 +1028,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.58.0 PHP/7.2.15-0ubuntu0.18.04.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1043,13 +1041,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1057,7 +1051,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1066,13 +1066,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.58.0 PHP/7.2.17-0ubuntu0.18.04.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1081,13 +1079,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1095,7 +1089,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1104,13 +1104,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.3.3-1+ubuntu14.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1119,13 +1117,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1133,7 +1127,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1142,13 +1142,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.3.4-1+ubuntu16.04.1+deb.sury.org+3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1157,13 +1155,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1171,7 +1165,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1180,13 +1180,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.0.33-8+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1195,13 +1193,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1209,7 +1203,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1218,13 +1218,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.0.33-0ubuntu0.16.04.5'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1233,13 +1231,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1247,7 +1241,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1256,13 +1256,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.3.4-1+ubuntu16.04.1+deb.sury.org+3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1271,13 +1269,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1285,7 +1279,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1294,13 +1294,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.52.1 PHP/7.2.22-1+0~20190902.26+debian9~1.gbpd64eb7'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1309,13 +1307,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 9.0.0
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1323,7 +1317,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 9.0.0
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: null
     version: null
@@ -1332,13 +1332,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.58.0 PHP/7.2.19-0ubuntu0.18.04.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1347,13 +1345,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1361,7 +1355,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1370,13 +1370,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.58.0 PHP/7.2.24-0ubuntu0.18.04.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1385,13 +1383,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1399,7 +1393,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1408,13 +1408,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.52.1 PHP/7.3.11-1+0~20191026.48+debian9~1.gbpf71ca0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1423,13 +1421,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 9.0.0
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1437,7 +1431,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 9.0.0
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: null
     version: null
@@ -1446,13 +1446,11 @@
   headers:
     user-agent: 'Embarcadero URI Client/1.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1461,13 +1459,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: Windows
-    version: null
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Embarcadero URI Client'
     modus: null
@@ -1475,7 +1469,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: Windows
+    version: null
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null
@@ -1484,13 +1484,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.47.0 PHP/7.2.22-1+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1499,13 +1497,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1513,7 +1507,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1522,13 +1522,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.58.0 PHP/7.2.24-1+ubuntu18.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1537,13 +1535,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1551,7 +1545,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1560,13 +1560,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.58.0 PHP/7.2.24-0ubuntu0.18.04.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1575,13 +1573,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1589,7 +1583,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1598,13 +1598,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.58.0 PHP/7.2.24-0ubuntu0.18.04.3'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1613,13 +1611,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1627,7 +1621,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1636,13 +1636,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.64.0 PHP/7.3.15-4+0~20200224.55+debian10~1.gbpbea824'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1651,13 +1649,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 10.0.0
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1665,7 +1659,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 10.0.0
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: null
     version: null
@@ -1674,13 +1674,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.64.0 PHP/7.3.16-1+0~20200320.56+debian10~1.gbp370a75'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1689,13 +1687,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Debian
-    marketingName: Debian
-    version: 10.0.0
-    manufacturer: softwareInThePublicInterest
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1703,7 +1697,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Debian
+    marketingName: Debian
+    version: 10.0.0
+    manufacturer: softwareInThePublicInterest
+    bits: 0
   engine:
     name: null
     version: null
@@ -1712,13 +1712,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.3.16-1+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1727,13 +1725,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1741,7 +1735,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1750,13 +1750,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (linux) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.2.2'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1765,13 +1763,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: jsdom
     modus: null
@@ -1779,7 +1773,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -1788,13 +1788,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.58.0 PHP/7.2.24-0ubuntu0.18.04.4'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1803,13 +1801,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1817,7 +1811,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1826,13 +1826,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/15.1.1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1841,13 +1839,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 95'
-    version: 95.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: jsdom
     modus: null
@@ -1855,7 +1849,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 95'
+    version: 95.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: WebKit
     version: 537.36.0
@@ -1864,13 +1864,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.58.0 PHP/7.2.24-0ubuntu0.18.04.6'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1879,13 +1877,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1893,7 +1887,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1902,13 +1902,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.2.30-1+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1917,13 +1915,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1931,7 +1925,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1940,13 +1940,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.3.3 curl/7.47.0 PHP/7.2.33-1+ubuntu16.04.1+deb.sury.org+1'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1955,13 +1953,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -1969,7 +1963,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -1978,13 +1978,11 @@
   headers:
     user-agent: 'GuzzleHttp/6.5.1 curl/7.58.0 PHP/7.2.5-1+ubuntu18.04.1+deb.sury.org+1 comdirect/1.0 (appVersion:20.11.0)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -1993,13 +1991,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Guzzle Http Client'
     modus: null
@@ -2007,45 +2001,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
-  engine:
-    name: null
-    version: null
-    manufacturer: unknown
--
-  headers:
-    user-agent: 'URL/Emacs Emacs/26.1 (X11; x86_64-pc-linux-gnu)'
-  device:
-    architecture: null
-    deviceName: 'Linux Desktop'
-    marketingName: 'Linux Desktop'
-    manufacturer: unknown
-    brand: unknown
-    dualOrientation: false
-    simCount: 0
-    display:
-      width: null
-      height: null
-      touch: false
-      size: null
-    type: desktop
-    ismobile: false
-    istv: false
-    bits: null
+    bits: 0
   os:
-    name: Linux
-    marketingName: Linux
+    name: Ubuntu
+    marketingName: Ubuntu
     version: null
-    manufacturer: linux-foundation
-    bits: null
-  client:
-    name: Emacs
-    modus: null
-    version: 26.1.0
-    manufacturer: unknown
-    type: library
-    isbot: false
-    bits: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -2054,13 +2016,11 @@
   headers:
     user-agent: 'PHP-Curl-Class/9.13.1 (+https://github.com/php-curl-class/php-curl-class) PHP/7.4.3-4ubuntu2.17 curl/7.68.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2069,13 +2029,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Ubuntu
-    marketingName: Ubuntu
-    version: null
-    manufacturer: canonical
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'PHP cURL Class'
     modus: null
@@ -2083,7 +2039,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Ubuntu
+    marketingName: Ubuntu
+    version: null
+    manufacturer: canonical
+    bits: 0
   engine:
     name: null
     version: null
@@ -2092,13 +2054,11 @@
   headers:
     user-agent: Lavf/60.3.100
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'general Desktop'
     marketingName: 'general Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2107,13 +2067,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: null
-    marketingName: null
-    version: null
-    manufacturer: unknown
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: ffmpeg
     modus: null
@@ -2121,7 +2077,51 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: null
+    marketingName: null
+    version: null
+    manufacturer: unknown
+    bits: 0
+  engine:
+    name: null
+    version: null
+    manufacturer: unknown
+-
+  headers:
+    user-agent: 'URL/Emacs Emacs/28.2 (TTY; x86_64-pc-linux-gnu)'
+  device:
+    architecture: ''
+    deviceName: 'Linux Desktop'
+    marketingName: 'Linux Desktop'
+    manufacturer: unknown
+    brand: unknown
+    display:
+      width: null
+      height: null
+      touch: false
+      size: null
+    type: desktop
+    ismobile: false
+    istv: false
+    dualOrientation: false
+    simCount: 0
+    bits: 0
+  client:
+    name: Emacs
+    modus: null
+    version: 28.2.0
+    manufacturer: unknown
+    type: library
+    isbot: false
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2130,13 +2130,11 @@
   headers:
     user-agent: 'cri-o/1.16.1 go/go1.12.17 os/linux arch/amd64'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Linux Desktop'
     marketingName: 'Linux Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2145,13 +2143,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: cri-o
     modus: null
@@ -2159,7 +2153,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: null
     version: null
@@ -2168,13 +2168,11 @@
   headers:
     user-agent: 'Cygwin-Setup/2.932 (Windows NT 10.0.20348;x86_64;0409;SymLinkPriv)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: 'Windows Desktop'
     marketingName: 'Windows Desktop'
     manufacturer: unknown
     brand: unknown
-    dualOrientation: false
-    simCount: 0
     display:
       width: null
       height: null
@@ -2183,13 +2181,9 @@
     type: desktop
     ismobile: false
     istv: false
-    bits: null
-  os:
-    name: Windows
-    marketingName: 'Windows 10'
-    version: 10.0.0
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: 'Cygwin Setup'
     modus: null
@@ -2197,7 +2191,13 @@
     manufacturer: unknown
     type: library
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Windows
+    marketingName: 'Windows 10'
+    version: 10.0.0
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null

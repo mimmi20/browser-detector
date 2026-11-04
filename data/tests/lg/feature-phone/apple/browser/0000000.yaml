@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG/GD880 Browser/AppleWebKit/531 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GD880
     marketingName: GD880
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 854
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0
@@ -40,13 +40,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (LG-C510 AppleWebKit/531 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1),gzip(gfe),gzip(gfe)'
   device:
-    architecture: null
+    architecture: ''
     deviceName: C510
     marketingName: C510
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: null
       height: null
@@ -55,13 +53,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Java ME'
-    marketingName: 'Java ME'
-    version: null
-    manufacturer: sun
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: Safari
     modus: null
@@ -69,7 +63,13 @@
     manufacturer: apple
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: 'Java ME'
+    marketingName: 'Java ME'
+    version: null
+    manufacturer: sun
+    bits: 0
   engine:
     name: WebKit
     version: 531.0.0

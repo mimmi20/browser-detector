@@ -2,13 +2,11 @@
   headers:
     user-agent: 'WindowsPhoneMMS/1.0 WindowsPhoneOS/7.0-6403 LG-GW910'
   device:
-    architecture: null
+    architecture: ''
     deviceName: GW910
     marketingName: 'Optimus 7'
     manufacturer: lg
     brand: lg
-    dualOrientation: false
-    simCount: 1
     display:
       width: 800
       height: 480
@@ -17,13 +15,9 @@
     type: feature-phone
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: 'Windows Phone OS'
-    marketingName: 'Windows Phone OS'
-    version: 7.0.6403
-    manufacturer: microsoft
-    bits: null
+    dualOrientation: false
+    simCount: 1
+    bits: 0
   client:
     name: 'WSP Bot'
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: unknown
     type: bot
     isbot: true
-    bits: null
+    bits: 0
+  os:
+    name: 'Windows Phone OS'
+    marketingName: 'Windows Phone OS'
+    version: 7.0.6403
+    manufacturer: microsoft
+    bits: 0
   engine:
     name: null
     version: null

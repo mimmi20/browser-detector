@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Android; Tablet: SAMSUNG-SGH-I467; rv:20.0) Gecko/20.0 Firefox/20.0'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SGH-I467
     marketingName: 'Galaxy Note 8.0" 4G (AT&T)'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 1280
       height: 800
@@ -17,13 +15,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: null
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: Firefox
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: null
+    manufacturer: google
+    bits: 0
   engine:
     name: Gecko
     version: 20.0.0
@@ -41,13 +41,11 @@
     x-requested-with: org.mozilla.rocket
     user-agent: 'Mozilla/5.0 (Linux; Android 11; SM-T725 Build/RP1A.200720.012; rv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Rocket/2.6.0(20651) Chrome/87.0.4280.141 Safari/537.36'
   device:
-    architecture: null
+    architecture: ''
     deviceName: SM-T725
     marketingName: 'Galaxy Tab S5e 10.5" LTE'
     manufacturer: samsung
     brand: samsung
-    dualOrientation: true
-    simCount: 1
     display:
       width: 2560
       height: 1600
@@ -56,13 +54,9 @@
     type: fone-pad
     ismobile: true
     istv: false
-    bits: null
-  os:
-    name: Android
-    marketingName: Android
-    version: 11.0.0
-    manufacturer: google
-    bits: null
+    dualOrientation: true
+    simCount: 1
+    bits: 0
   client:
     name: 'Firefox Rocket'
     modus: null
@@ -70,7 +64,13 @@
     manufacturer: mozilla-foundation
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Android
+    marketingName: Android
+    version: 11.0.0
+    manufacturer: google
+    bits: 0
   engine:
     name: Blink
     version: 87.0.4280.141

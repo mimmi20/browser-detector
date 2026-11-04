@@ -2,13 +2,11 @@
   headers:
     user-agent: 'Mozilla/5.0 (Linux;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0 (; SERAPHIC; SERAPHIC; v4.0; v1.0; ); CE-HTML/1.0 hbbtv PHILCO/PH60D16DSGWN4K DeviceID/60748d863766 NETRANGEMMH Arcelik Grundig SMART-TV'
   device:
-    architecture: null
+    architecture: ''
     deviceName: PH60D16DSGWN4K
     marketingName: PH60D16DSGWN4K
     manufacturer: philco
     brand: philco
-    dualOrientation: false
-    simCount: 0
     display:
       width: 3840
       height: 2160
@@ -17,13 +15,9 @@
     type: tv
     ismobile: false
     istv: true
-    bits: null
-  os:
-    name: Linux
-    marketingName: Linux
-    version: null
-    manufacturer: linux-foundation
-    bits: null
+    dualOrientation: false
+    simCount: 0
+    bits: 0
   client:
     name: Sraf
     modus: null
@@ -31,7 +25,13 @@
     manufacturer: seraphic
     type: browser
     isbot: false
-    bits: null
+    bits: 0
+  os:
+    name: Linux
+    marketingName: Linux
+    version: null
+    manufacturer: linux-foundation
+    bits: 0
   engine:
     name: Blink
     version: 47.0.2526.106
