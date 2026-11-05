@@ -327,7 +327,7 @@ final class DetectorTest extends TestCase
     public static function providerGetBrowser(): array
     {
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('data/tests/'));
-        $files    = new FilterIterator($iterator, 'yaml');
+        $files    = new FilterIterator($iterator, 'json');
 
         $data = [];
 
@@ -338,9 +338,27 @@ final class DetectorTest extends TestCase
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
+            assert($file instanceof SplFileInfo);
+
+            $pathName = $file->getPathname();
+            $filepath = str_replace('\\', '/', $pathName);
+            assert(is_string($filepath));
+
+            $content = file_get_contents($filepath);
+
+            if (in_array($content, [false, '', PHP_EOL], strict: true)) {
+                continue;
+            }
+
             try {
-                $tests = Yaml::parseFile($filepath);
-            } catch (ParseException) {
+                $tests = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
+            } catch (JsonException $e) {
+                echo new \Exception(
+                    sprintf('could not decode file %s', $file),
+                    0,
+                    $e,
+                ), PHP_EOL;
+
                 continue;
             }
 
