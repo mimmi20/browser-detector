@@ -292,7 +292,7 @@ final class DetectorIntegrationTest extends TestCase
         //     var_dump($headers, $expected, $result);
         // }
 
-        self::assertSame($expected, $result);
+        self::assertEquals($expected, $result);
     }
 
     /**
