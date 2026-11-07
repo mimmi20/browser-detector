@@ -35,14 +35,15 @@ use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 use Stringable;
-use Symfony\Component\Yaml\Exception\ParseException;
-use Symfony\Component\Yaml\Yaml;
 
 use function assert;
+use function file_get_contents;
+use function in_array;
 use function is_array;
 use function is_iterable;
 use function is_scalar;
 use function is_string;
+use function json_decode;
 use function json_encode;
 use function sprintf;
 use function str_replace;
@@ -353,7 +354,7 @@ final class DetectorTest extends TestCase
             try {
                 $tests = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
             } catch (JsonException $e) {
-                echo new \Exception(
+                echo new Exception(
                     sprintf('could not decode file %s', $file),
                     0,
                     $e,
