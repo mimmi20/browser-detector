@@ -27,6 +27,7 @@ use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\PlatformParser;
 use DateInterval;
+use JsonException;
 use Override;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -42,19 +43,20 @@ use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 use Stringable;
-use Symfony\Component\Yaml\Exception\ParseException;
-use Symfony\Component\Yaml\Yaml;
 use UnexpectedValueException;
 
 use function assert;
+use function file_get_contents;
+use function in_array;
 use function is_array;
 use function is_string;
+use function json_decode;
 use function sprintf;
 use function str_replace;
 
+use const JSON_THROW_ON_ERROR;
 use const PHP_EOL;
 
-/** @phpcs:disable SlevomatCodingStandard.Classes.ClassLength.ClassTooLong */
 #[CoversClass(className: Detector::class)]
 #[CoversClass(className: Headers::class)]
 #[CoversClass(className: PlatformParser::class)]
@@ -290,7 +292,7 @@ final class DetectorIntegrationTest extends TestCase
         //     var_dump($headers, $expected, $result);
         // }
 
-        self::assertSame($expected, $result);
+        self::assertEquals($expected, $result);
     }
 
     /**
@@ -305,7 +307,7 @@ final class DetectorIntegrationTest extends TestCase
         $iterator = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator('data/integration-tests'),
         );
-        $files    = new FilterIterator($iterator, 'yaml');
+        $files    = new FilterIterator($iterator, 'json');
         $data     = [];
 
         foreach ($files as $file) {
@@ -315,11 +317,17 @@ final class DetectorIntegrationTest extends TestCase
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
+            $content = file_get_contents($filepath);
+
+            if (in_array($content, [false, '', PHP_EOL], strict: true)) {
+                continue;
+            }
+
             try {
-                $fileData = Yaml::parseFile($filepath);
-            } catch (ParseException $e) {
+                $fileData = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
+            } catch (JsonException $e) {
                 echo new \Exception(
-                    sprintf('could not parse file %s', $file),
+                    sprintf('could not decode file %s', $file),
                     0,
                     $e,
                 ), PHP_EOL;

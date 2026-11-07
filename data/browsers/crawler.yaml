@@ -8485,3 +8485,305 @@ nsfw-go-placeholder-filter:
     search:
       - nsfw-go-placeholder-filter
   engine: unknown
+finbot:
+  name: finbot
+  manufacturer: finax
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+thumbshotsbot:
+  name: ThumbShotsBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+httpclient:
+  name: httpclient
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HTTPClient
+  engine: unknown
+'getintent crawler':
+  name: 'Getintent Crawler'
+  manufacturer: getintent
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+'infohelfer webcrawler':
+  name: 'Infohelfer Webcrawler'
+  manufacturer: itam
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Infohelfer
+  engine: unknown
+yodaobot-image:
+  name: YodaoBot-Image
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YodaoBot\-Image
+  engine: unknown
+'beehive crawler':
+  name: 'Beehive Crawler'
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+srccn!spider:
+  name: SRCCN!Spider
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SRCCN\!Spider
+  engine: unknown
+'rdf crawler':
+  name: 'RDF Crawler'
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+vm-crawler:
+  name: VM-Crawler
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+'wume crawler':
+  name: 'wume crawler'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - wume_crawler
+  engine: unknown
+infuzappbot:
+  name: InfuzAppBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - InfuzApp
+  engine: unknown
+fatbot:
+  name: FatBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FatBot
+  engine: unknown
+adnormcrawler:
+  name: AdnormCrawler
+  manufacturer: adnorm
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+crawllybot:
+  name: Crawllybot
+  manufacturer: adnorm
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Crawllybot
+  engine: unknown
+'xenus link sleuth':
+  name: 'Xenus Link Sleuth'
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+'online link validator':
+  name: 'online link validator'
+  manufacturer: dead-links
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+linksmanager:
+  name: LinksManager
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+yodaobot:
+  name: YodaoBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YodaoBot
+  engine: unknown
+synoobot:
+  name: Synoobot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Synoobot
+  engine: unknown
+dcrawl:
+  name: dcrawl
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - dcrawl
+  engine: unknown
+orbiter:
+  name: 'Orbiter Bot'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Orbiter
+  engine: unknown
+irlbot:
+  name: IRLbot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - IRLbot
+  engine: unknown
+iccrawler:
+  name: iCCrawler
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+'ht://dig':
+  name: 'ht://Dig'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - htdig
+  engine: unknown
+gurujibot:
+  name: GurujiBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GurujiBot
+  engine: unknown
+fyberspider:
+  name: FyberSpider
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FyberSpider
+  engine: unknown
+'fdse robot':
+  name: 'FDSE Robot'
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+unimatrix-zero:
+  name: Unimatrix-Zero
+  manufacturer: unknown
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+intelligent-search-assistant:
+  name: 'intelligent search assistant'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - isa
+      - intelligentsearchassistant
+  engine: unknown
+ucrawlr:
+  name: uCrawlr
+  manufacturer: ucoz
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - uCrawlr
+  engine: unknown
+simplescraper:
+  name: SimpleScraper
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SimpleScraper
+  engine: unknown
+rankingbot2:
+  name: RankingBot2
+  manufacturer: varocarbas
+  type: crawler
+  version:
+    class: null
+    search: null
+  engine: unknown
+outclicksbot:
+  name: OutclicksBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OutclicksBot
+  engine: unknown
+onbbot:
+  name: ONBbot
+  manufacturer: 'oesterreichische nationalbibliothek'
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ONBbot
+  engine: unknown
