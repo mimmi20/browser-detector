@@ -1628,3 +1628,12 @@ vexel-search-bot:
       - VexelSearchBot\-
       - VexelSearchBot
   engine: unknown
+qwantbot:
+  name: Qwantbot
+  manufacturer: qwant
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Qwantbot
+  engine: unknown

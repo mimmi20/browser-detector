@@ -1033,15 +1033,6 @@ privacy-policy-bot:
     search:
       - PrivacyPolicyBot
   engine: unknown
-qwantbot:
-  name: Qwantbot
-  manufacturer: qwant
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Qwantbot
-  engine: unknown
 terracotta:
   name: TerraCotta
   manufacturer: ceramic
