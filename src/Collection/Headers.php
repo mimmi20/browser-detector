@@ -477,6 +477,9 @@ final readonly class Headers
                         case 'perplexity-bot':
                         case 'sender-bot':
                         case 'kakao-bot':
+                        case 'reconx-l2s':
+                        case 'deepseek-bot':
+                        case 'ai2bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

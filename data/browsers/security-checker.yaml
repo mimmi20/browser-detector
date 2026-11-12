@@ -524,3 +524,12 @@ safe-cve-2026-87902-checker:
     search:
       - Safe-CVE-2026-87902-Checker
   engine: unknown
+reconx-l2s:
+  name:  ReconX-L2S
+  manufacturer: reconx-labs
+  type: security-checker
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ReconX-L2S
+  engine: unknown
