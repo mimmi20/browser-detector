@@ -202,6 +202,7 @@ rules:
   /maklerlistebayern/i: makler-liste-bayern
   /magpie-crawler/i: 'magpie crawler'
   /oai-searchbot/i: oai-searchbot
+  /oai-adsbot/i: oai-ads-bot
   /uptimerobot/i: uptimerobot
   '/fdse robot/i': 'fdse robot'
   /ethicrawl/i: ethicrawl
@@ -1321,8 +1322,12 @@ rules:
   /com\.tencent\.mm/i: 'wechat app'
   /sindresorhus\/got/i: got
   /everyfeed\-spider/i: everyfeed
+  /ecommercelab-catalog-research/i: ecommercelab-catalog-research
   /genbutsu-research-crawler/i: genbutsu-research-crawler
+  /eyeworld-python-research/i: eyeworld-python-research
   /indexbot\/.*serviceform/i: serviceform-index-bot
+  /prospeqt-saas-research/i: prospeqt-saas-research
+  /secincyte-categorybot/i: secincyte-categorybot
   /adsbot-google-mobile/i: 'adsbot google-mobile'
   /smarttech-imageproxy/i: smarttech-image-proxy
   '/sogou orion spider/i': sogou-orion-spider
@@ -1344,6 +1349,7 @@ rules:
   /googleadstxtchecker/i: google-ads-txt-checker
   /geo-score-validator/i: geo-score-validator
   /finanzplanrecherche/i: finanzplan-recherche
+  /seotrust-seocrawler/i: seotrust-seocrawler
   /steamchaturllookup/i: steam-chat-url-lookup
   /dynatracesynthetic/i: dynatrace-synthetic
   /cpanel-http-client/i: cpanel-http-client
@@ -1364,6 +1370,7 @@ rules:
   /seojuice-searchbot/i: seo-juice-search-bot
   /haveinlistenricher/i: have-in-list-enricher
   /webcache-mdream-rs/i: webcache-mdream-rs
+  /fresh-domain-watch/i: fresh-domain-watch
   /digitalshadowsbot/i: digital-shadows-bot
   /netpeakcheckerbot/i: netpeak-checker-bot
   /seoscanners\.net/i: seoscanners-net
@@ -1459,6 +1466,7 @@ rules:
   /hub-crawler-eino/i: hub-crawler-eino
   /livedomainfinder/i: live-domain-finder
   /alpinefyresearch/i: alpinefy-research
+  /documentfetchbot/i: document-fetch-bot
   /copyviodetector/i: copyvio-detector
   /statistikhessen/i: statistik-hessen
   /yadirectfetcher/i: ya-direct-fetcher
@@ -1601,6 +1609,7 @@ rules:
   /deadweb-prober/i: deadweb-prober
   /cartalys-intel/i: cartalys-intel
   /cybercheck-bot/i: cyber-check-bot
+  /12marktanalyse/i: 12-markt-analyse
   /censysinspect/i: censysinspect
   /t3versionsbot/i: t3-versions-bot
   '/acorn phoenix/i': acorn-phoenix
@@ -1658,6 +1667,7 @@ rules:
   /warp-research/i: warp-research
   /clearscopebot/i: clearscope-bot
   /novumresearch/i: novum-research
+  /wsa-sitecheck/i: wsa-sitecheck
   /researchscan/i: researchscan
   /dataprovider/i: dataprovider-spider
   '/inet browser/i': inet-browser
@@ -1847,6 +1857,7 @@ rules:
   /statuscheck/i: status-check
   /rankariabot/i: rankaria-bot
   /ibisbrowser/i: ibisbrowser
+  /tritonisbot/i: tritonis-bot
   /domainscan/i: domainscan-server-monitoring
   /jobroboter/i: jobroboter
   /webwikibot/i: webwikibot
@@ -1941,6 +1952,8 @@ rules:
   /leadfinder/i: lead-finder
   /lightspeed/i: 'lightspeed systems crawler'
   /gontzalbot/i: gontzal-bot
+  /seo-parser/i: seo-parser
+  /startcobot/i: start-co-bot
   /kozmonavt|kocmohabt/i: kozmonavt
   /stractbot/i: stract-bot
   /screpybot/i: screpy-bot
@@ -2040,6 +2053,9 @@ rules:
   /domainbot/i: domain-bot
   /puritybot/i: purity-bot
   /zoeka-bot/i: zoeka-bot
+  /kelogsbot/i: kelogs-bot
+  /amzn-user/i: amzn-user
+  /stophybot/i: stophy-bot
   /neevabot/i: neevabot
   /msoffice/i: office
   /centuryb/i: centuryb
@@ -2157,6 +2173,7 @@ rules:
   /rivrybot/i: rivry-bot
   /geosurge/i: geo-surge
   /urlcheck/i: url-check
+  /kessybot/i: kessy-bot
   /whatcms/i: what-cms
   /phoenix/i: phoenix
   /kagibot/i: kagi-bot
@@ -2194,6 +2211,7 @@ rules:
   /aeverly/i: aeverly
   /ads-txt/i: ads-txt
   /recscan/i: rec-scan
+  /exauser/i: exa-user
   /onbbot/i: onbbot
   /orbbot/i: orbbot
   /edg\//i: edge
