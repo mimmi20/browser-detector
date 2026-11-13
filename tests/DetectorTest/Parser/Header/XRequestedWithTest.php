@@ -674,6 +674,7 @@ final class XRequestedWithTest extends TestCase
             ['com.fevdev.nakedbrowser', true, 'naked-browser', true, null, false, Os::unknown],
             ['com.fevdev.nakedbrowserlts', true, 'naked-browser', true, null, false, Os::unknown],
             ['com.fevdev.nakedbrowserpro', true, 'naked-browser-pro', true, null, false, Os::unknown],
+            ['com.ksmobile.launcher', true, 'cm-launcher', true, null, false, Os::unknown],
         ];
     }
 }

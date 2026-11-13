@@ -480,6 +480,8 @@ final readonly class Headers
                         case 'reconx-l2s':
                         case 'deepseek-bot':
                         case 'ai2bot':
+                        case 'oai-ads-bot':
+                        case 'oai-searchbot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -513,6 +515,7 @@ final readonly class Headers
                         case 'snapchat-ads':
                         case 'clearscope-bot':
                         case 'quillbot':
+                        case 'branchenbuch-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

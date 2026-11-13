@@ -7523,6 +7523,7 @@ research-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - ResearchBot
+      - research-bot
   engine: unknown
 yisouspider:
   name: YisouSpider
@@ -13853,4 +13854,157 @@ jaddjabot:
   version:
     class: null
     search: null
-  engine: unknown  
+  engine: unknown
+branchenbuch-bot:
+  name: BranchenbuchBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BranchenbuchBot
+  engine: unknown
+oai-ads-bot:
+  name: OAI-AdsBot
+  manufacturer: openai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OAI-AdsBot
+  engine: unknown
+dns-explorer-check:
+  name: DNSExplorer-Check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DNSExplorer-Check
+  engine: unknown
+smarttech-image-proxy:
+  name: SmartTech-ImageProxy
+  manufacturer: smart-technologies
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SmartTech-ImageProxy
+  engine: unknown
+cyber-check-bot:
+  name: CyberCheck-Bot
+  manufacturer: nxt-you
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CyberCheck-Bot
+  engine: unknown
+novum-research:
+  name: NovumResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NovumResearch
+  engine: unknown
+serviceform-index-bot:
+  name: 'Serviceform IndexBot'
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - IndexBot
+  engine: unknown
+alpinefy-research:
+  name: AlpinefyResearch
+  manufacturer: lukas-kubala
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AlpinefyResearch
+  engine: unknown
+koso-bot:
+  name: KosoBot
+  manufacturer: ideanab-private
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KosoBot
+  engine: unknown
+work-buddy-app:
+  name: WorkBuddyApp
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WorkBuddyApp
+  engine: unknown
+tritonis-bot:
+  name: TritonisBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TritonisBot
+  engine: unknown
+genbutsu-research-crawler:
+  name: genbutsu-research-crawler
+  manufacturer: tilt-smes
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - genbutsu-research-crawler
+  engine: unknown
+finanzplan-recherche:
+  name: FinanzplanRecherche
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FinanzplanRecherche
+  engine: unknown
+gontzal-bot:
+  name: GontzalBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GontzalBot
+  engine: unknown
+url-check:
+  name: UrlCheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - UrlCheck
+  engine: unknown
+zoeka-bot:
+  name: Zoeka-bot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Zoeka-bot
+  engine: unknown
+featurebase-link-safety:
+  name: FeaturebaseLinkSafety
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FeaturebaseLinkSafety
+  engine: unknown

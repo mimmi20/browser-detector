@@ -481,6 +481,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.zhiliaoapp.musically' => 'tiktok',
             'com.fevdev.nakedbrowser', 'com.fevdev.nakedbrowserlts' => 'naked-browser',
             'com.fevdev.nakedbrowserpro' => 'naked-browser-pro',
+            'com.ksmobile.launcher' => 'cm-launcher',
             default => null,
         };
     }
