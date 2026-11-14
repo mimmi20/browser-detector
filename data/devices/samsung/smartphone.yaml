@@ -36372,7 +36372,7 @@
   platform: android
 'samsung galaxy m56':
   deviceName: 'Galaxy M56'
-  marketingName: 'Galaxy M56 (International)'
+  marketingName: 'Galaxy M56'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -36396,5 +36396,75 @@
     height: 1440
     touch: true
     size: 6.9
+  type: smartphone
+  platform: android
+'samsung sm-a276b':
+  deviceName: SM-A276B
+  marketingName: 'Galaxy A27 5G (International)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-a276e':
+  deviceName: SM-A276E
+  marketingName: 'Galaxy A27 5G'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-a276u':
+  deviceName: SM-A276U
+  marketingName: 'Galaxy A27 5G (USA)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-a276u1':
+  deviceName: SM-A276U1
+  marketingName: 'Galaxy A27 5G (USA)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-a276w':
+  deviceName: SM-A276W
+  marketingName: 'Galaxy A27 5G (Canada)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
   type: smartphone
   platform: android
