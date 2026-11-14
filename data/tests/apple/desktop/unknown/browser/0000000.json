@@ -91,7 +91,7 @@
   },
   {
     "headers": {
-      "user-agent": "ELinks/0.11.3 (textmode; Darwin 10.7.0 i386; 236x64-2)"
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 1stBrowser/45.0.2454.146 Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -113,54 +113,9 @@
       "bits": 0
     },
     "client": {
-      "name": "ELinks",
+      "name": "1st Browser",
       "modus": null,
-      "version": "0.11.3",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Text",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ELinks/0.10.5 (textmode; Darwin 8.2.0 Power Macintosh; 115x40-2)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "PowerMac",
-      "marketingName": "PowerMac",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ELinks",
-      "modus": null,
-      "version": "0.10.5",
+      "version": "45.0.2454.146",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false,
@@ -169,59 +124,14 @@
     "os": {
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
-      "version": null,
+      "version": "10.10.3",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
-      "name": "Text",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; da-DK; rv:1.7.5) Gecko/20041217 MultiZilla/1.7.0.2b"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "MultiZilla",
-      "modus": null,
-      "version": "1.7.0.2-beta",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.7.5",
-      "manufacturer": "mozilla"
+      "name": "Blink",
+      "version": "45.0.2454.101",
+      "manufacturer": "google"
     }
   },
   {
@@ -271,7 +181,7 @@
   },
   {
     "headers": {
-      "user-agent": "IBrowse/2.4 (MorphOS 2.2; PPC; AmigaOS 68K build)"
+      "user-agent": "IBrowse/2.5beta (AmigaOS 4.1; PPC)"
     },
     "device": {
       "architecture": "",
@@ -295,7 +205,7 @@
     "client": {
       "name": "IBrowse",
       "modus": null,
-      "version": "2.4.0",
+      "version": "2.5.0-beta",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false,
@@ -304,7 +214,7 @@
     "os": {
       "name": "Amiga OS",
       "marketingName": "Amiga OS",
-      "version": "68.0.0",
+      "version": "4.1.0",
       "manufacturer": "unknown",
       "bits": 0
     },
@@ -312,96 +222,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:13.0) Gecko/20100101 conkeror/1.0pre"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Conkeror",
-      "modus": null,
-      "version": "1.0.0-dev",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.7.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "13.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Galeon/1.3.7 (IE4 compatible; I; Mac_PowerPC)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Galeon",
-      "modus": null,
-      "version": "1.3.7",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
     }
   },
   {

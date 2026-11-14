@@ -91,7 +91,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_43_96) AppleWebKit/533.92.55 (KHTML, like Gecko) Chrome/57.5.0459.5721 Safari/530.63 Edge/34.69008"
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3782.0 Safari/537.36 Edg/76.0.152.0"
     },
     "device": {
       "architecture": "",
@@ -115,7 +115,7 @@
     "client": {
       "name": "Edge",
       "modus": null,
-      "version": "34.69008.0",
+      "version": "76.0.152.0",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false,
@@ -124,19 +124,19 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.43.96",
+      "version": "10.14.5",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
-      "name": "Edge",
-      "version": "34.69008.0",
-      "manufacturer": "microsoft"
+      "name": "Blink",
+      "version": "76.0.3782.0",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (MSIE 7.0; Macintosh; U; SunOS; X11; gu; SV1; InfoPath.2; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648)"
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_34_87) AppleWebKit/532.93.46 (KHTML, like Gecko) Chrome/57.4.0589.5851 Safari/534.54 Edge/34.69299"
     },
     "device": {
       "architecture": "",
@@ -158,30 +158,33 @@
       "bits": 0
     },
     "client": {
-      "name": "Internet Explorer",
+      "name": "Edge",
       "modus": null,
-      "version": "7.0.0",
+      "version": "34.69299.0",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "SunOS",
-      "marketingName": "SunOS",
-      "version": null,
-      "manufacturer": "oracle",
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.34.87",
+      "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
-      "name": "Trident",
-      "version": null,
+      "name": "Edge",
+      "version": "34.69299.0",
       "manufacturer": "microsoft"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4 (compatible; MSIE 7.0)"
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Microsoft Edge\";v=\"133\", \"Chromium\";v=\"133\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0"
     },
     "device": {
       "architecture": "",
@@ -203,9 +206,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Internet Explorer",
+      "name": "Edge",
       "modus": null,
-      "version": "7.0.0",
+      "version": "133.0.0",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false,
@@ -214,19 +217,19 @@
     "os": {
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
-      "version": "10.6.4",
+      "version": "10.15.7",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
-      "name": "WebKit",
-      "version": "533.19.4",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "133.0.0",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3794.0 Safari/537.36 Edg/76.0.161.0"
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15 Edg/114.0.1823.79"
     },
     "device": {
       "architecture": "",
@@ -250,7 +253,7 @@
     "client": {
       "name": "Edge",
       "modus": null,
-      "version": "76.0.161.0",
+      "version": "114.0.1823.79",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false,
@@ -259,19 +262,19 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.14.4",
+      "version": "13.4.1",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "76.0.3794.0",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/10.1 Safari/602.1 EdgiOS/44.5.1"
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/148 Version/16.0 Safari/605.1.15"
     },
     "device": {
       "architecture": "",
@@ -295,7 +298,7 @@
     "client": {
       "name": "Edge Mobile for iOS",
       "modus": null,
-      "version": "44.5.1",
+      "version": "148.0.0",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false,
@@ -304,156 +307,13 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.12.4",
+      "version": "10.15.7",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "604.3.5",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; MSIE 7.0; Macintosh; .NET CLR 3.2.27004; Intel Mac OS X 11_3_2) comdirect/1.0 (appVersion:21.9.1;deviceType:desktop)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "11.3.2",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-platform": "\"macOS\"",
-      "sec-ch-ua-platform-version": "\"12.2.1\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.1108.62\", \"Microsoft Edge\";v=\"98.0.1108.62\"",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Microsoft Edge\";v=\"98\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-arch": "\"arm\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62"
-    },
-    "device": {
-      "architecture": "arm",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 64
-    },
-    "client": {
-      "name": "Edge",
-      "modus": null,
-      "version": "98.0.1108.62",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false,
-      "bits": 64
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "12.2.1",
-      "manufacturer": "apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "98.0.1108.62",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Edg/117.0.2045.43"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Edge",
-      "modus": null,
-      "version": "117.0.2045.43",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "13.2.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },

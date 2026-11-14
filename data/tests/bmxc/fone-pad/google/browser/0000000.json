@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; M863-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.86 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M863-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -13,7 +13,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 10
+        "size": 10.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -25,7 +25,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "89.0.4389.86",
+      "version": "101.0.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
@@ -40,7 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "89.0.4389.86",
+      "version": "101.0.0.0",
       "manufacturer": "google"
     }
   }

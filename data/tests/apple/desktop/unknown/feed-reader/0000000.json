@@ -1,96 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Newsflow/29 CFNetwork/807.2.14 Darwin/16.4.0 (x86_64)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Newsflow",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "feed-reader",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.12.4",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "807.2.14",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Pulp/2.1.2 (Mac OS X; http://www.acrylicapps.com/pulp/)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Pulp",
-      "modus": null,
-      "version": "2.1.2",
-      "manufacturer": "unknown",
-      "type": "feed-reader",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Reeder/1000.02.01 CFNetwork/454.11.5 Darwin/10.5.0 (i386) (Macmini2)"
     },
     "device": {
@@ -136,51 +46,6 @@
   },
   {
     "headers": {
-      "user-agent": "Reeder/5000.39.03 CFNetwork/1128.0.2 Darwin/19.6.0 (x86_64)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Reeder",
-      "modus": null,
-      "version": "5000.39.03",
-      "manufacturer": "unknown",
-      "type": "feed-reader",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.15.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "1128.0.2",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Reeder/1020.09.00 CFNetwork/596.3.3 Darwin/12.3.0 (x86_64) (iMac9%2C1)"
     },
     "device": {
@@ -193,7 +58,7 @@
         "width": 1680,
         "height": 1050,
         "touch": false,
-        "size": 20
+        "size": 20.0
       },
       "type": "desktop",
       "ismobile": false,
@@ -266,6 +131,51 @@
     "engine": {
       "name": "WebKit",
       "version": "596.2.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Reeder/3.2 Safari/605.1.15"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Reeder",
+      "modus": null,
+      "version": "3.2.0",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.6",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },

@@ -71,7 +71,7 @@
       - '360 Browser'
       - '360 Aphone Browser \('
   engine: webkit
-'360 secure browser':
+360-secure-browser:
   name: '360 Secure Browser'
   manufacturer: qihoo
   type: browser
@@ -313,7 +313,7 @@ avant:
     search:
       - AVG
   engine: null
-'ccleaner browser':
+ccleaner-browser:
   name: 'CCleaner Browser'
   manufacturer: piriform
   type: browser
@@ -753,7 +753,7 @@ cornowser:
     search:
       - COSBrowser
   engine: webkit
-'crazy browser':
+crazy-browser:
   name: 'Crazy Browser'
   manufacturer: crazy-browser
   type: browser
@@ -780,7 +780,7 @@ dalvik:
     search:
       - Dalvik
   engine: webkit
-'deepnet explorer':
+deepnet-explorer:
   name: 'Deepnet Explorer'
   manufacturer: deepnet-security
   type: browser
@@ -1650,7 +1650,7 @@ konqueror:
     search:
       - LeBrowser
   engine: blink
-'lg browser':
+lg-browser:
   name: 'LG Browser'
   manufacturer: lg
   type: browser
@@ -2159,7 +2159,7 @@ oculus-browser:
     search:
       - Odd
   engine: webkit
-'odyssey web browser':
+odyssey-web-browser:
   name: 'Odyssey Web Browser'
   manufacturer: 'fabien coeurjoly'
   type: browser
@@ -2311,7 +2311,7 @@ origin:
     search:
       - Origin
   engine: null
-'origyn web browser':
+origyn-web-browser:
   name: 'Origyn Web Browser'
   manufacturer: sand-labs
   type: browser
@@ -3147,7 +3147,7 @@ tinybrowser:
     search:
       - TinyBrowser
   engine: null
-'tizen browser':
+tizen-browser:
   name: 'Tizen Browser'
   manufacturer: linux-foundation
   type: browser
@@ -3952,7 +3952,7 @@ fiery-browser:
     factory: null
     search: null
   engine: null
-'aol desktop':
+aol-desktop:
   name: 'AOL Desktop'
   manufacturer: aol
   type: browser
@@ -4675,7 +4675,7 @@ gog-galaxy-client:
     search:
       - GOGGalaxyClient
   engine: null
-'xchaos arachne':
+xchaos-arachne:
   name: Arachne
   manufacturer: unknown
   type: browser

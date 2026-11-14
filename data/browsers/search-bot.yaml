@@ -265,7 +265,7 @@ yacybot:
     search:
       - 'Sogou web spider'
   engine: unknown
-'adsbot google':
+adsbot-google:
   name: 'AdsBot Google'
   manufacturer: google
   type: search-bot
@@ -274,7 +274,7 @@ yacybot:
     search:
       - AdsBot\-Google
   engine: unknown
-'adsbot google-mobile':
+adsbot-google-mobile:
   name: 'AdsBot Google-Mobile'
   manufacturer: google
   type: search-bot
@@ -510,7 +510,7 @@ voilabot:
       - 'VoilaBot BETA'
       - Voilabot
   engine: unknown
-'sogou spider':
+sogou-spider:
   name: 'Sogou Spider'
   manufacturer: sogou
   type: search-bot
@@ -1636,4 +1636,49 @@ qwantbot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Qwantbot
+  engine: unknown
+claude-searchbot:
+  name: Claude-SearchBot
+  manufacturer: anthropic
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Claude-SearchBot
+  engine: unknown
+oai-searchbot:
+  name: OAI-SearchBot
+  manufacturer: openai
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OAI-SearchBot
+  engine: null
+amzn-search-bot:
+  name: Amzn-SearchBot
+  manufacturer: amazon
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Amzn-SearchBot
+  engine: unknown
+kimi-search-bot:
+  name: Kimi-SearchBot
+  manufacturer: moonshot-ai
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Kimi-SearchBot
+  engine: unknown
+azureai-searchbot:
+  name: AzureAI-SearchBot
+  manufacturer: unknown
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AzureAI-SearchBot
   engine: unknown

@@ -11,7 +11,7 @@ rules:
   /googletoolbar/i: 'google toolbar'
   '/websitepulse checker/i': website-pulse-checker
   /netscape/i: netscape
-  /lightspeedsystems/i: 'lightspeed systems crawler'
+  /lightspeedsystems/i: lightspeed-systems-crawler
   '/sl commerce client/i': 'second live commerce client'
   '/uc ?browser|ucweb/i': ucbrowser
   /baidubrowser|bdbrowser/i: 'baidu browser'
@@ -27,8 +27,8 @@ rules:
   /outlook/i: outlook
   '/microsoft office mobile/i': 'office mobile'
   '/microsoft office/i': office
-  '/crazy browser/i': 'crazy browser'
-  '/deepnet explorer/i': 'deepnet explorer'
+  '/crazy browser/i': crazy-browser
+  '/deepnet explorer/i': deepnet-explorer
   /kkman/i: kkman
   /ilunascape/i: ilunascape
   /lunascape/i: lunascape
@@ -39,7 +39,7 @@ rules:
   /s~virustotalcloud/i: virus-total-cloud
   /appengine-google/i: 'google app engine'
   /crystalsemanticsbot/i: crystalsemanticsbot
-  /(?<!\.)360se/i: '360 secure browser'
+  /(?<!\.)360se/i: 360-secure-browser
   /theworld/i: theworld
   '/(?<!u)ptst/i': webpagetest
   /mathplayer/i: mathplayer
@@ -47,7 +47,7 @@ rules:
   /eudoraweb/i: eudora-web
   '/daumoa|msie or firefox mutant/i': daumoa
   /foma|sh05c/i: sharp
-  '/sogou-spider|sogou inst spider/i': 'sogou spider'
+  '/sogou-spider|sogou inst spider/i': sogou-spider
   /simplepie/i: simplepie
   /argclrint/i: argclrint
   '/(?<!via )wayback save page/i': 'wayback archive bot'

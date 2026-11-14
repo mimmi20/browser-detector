@@ -1,25 +1,26 @@
 [
   {
     "headers": {
-      "user-agent": "portalmmm/2.0 my700Xi(c20;TB)"
+      "x-requested-with": "yuce.browser.mini",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.89 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "C20",
-      "marketingName": "C20",
+      "deviceName": "1811",
+      "marketingName": "1811",
       "manufacturer": "bbk",
-      "brand": "realme",
+      "brand": "vivo",
       "display": {
-        "width": 1600,
-        "height": 720,
+        "width": null,
+        "height": null,
         "touch": true,
-        "size": 6.5
+        "size": null
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "bits": 0
     },
     "client": {
@@ -34,37 +35,38 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "8.1.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "84.0.4147.89",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "portalmmm/2.0 M430i(c20;TB)"
+      "x-requested-with": "com.browser.pintar",
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; CPH1701 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "C20",
-      "marketingName": "C20",
+      "deviceName": "CPH1701",
+      "marketingName": "A57",
       "manufacturer": "bbk",
-      "brand": "realme",
+      "brand": "oppo",
       "display": {
-        "width": 1600,
+        "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 6.5
+        "size": 5.2
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "bits": 0
     },
     "client": {
@@ -79,14 +81,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
     }
   },
   {
@@ -178,6 +180,52 @@
     "engine": {
       "name": "Blink",
       "version": "89.0.4389.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.kiddoware.kidsafebrowser",
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1610 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.70 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "1610",
+      "marketingName": "1610",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.70",
       "manufacturer": "google"
     }
   },
@@ -316,6 +364,52 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.swiftariel.browser.cherry",
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; en-us; HD1910 Build/JOP24G) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/534.30 agentweb/4.0.2 UCBrowser/11.6.4.950"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "HD1910",
+      "marketingName": "7T Pro",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.65",
       "manufacturer": "google"
     }
   },
@@ -592,6 +686,52 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "x-requested-with": "com.foxylab.airfox",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; vivo 1817) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "1817",
+      "marketingName": "1817",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
       "manufacturer": "google"
     }
   },

@@ -7,7 +7,7 @@
     search:
       - 1Password
   engine: webkit
-'wechat app':
+wechat-app:
   name: 'WeChat App'
   manufacturer: tencent
   type: mobile-application
@@ -197,7 +197,7 @@ msn-app:
     search:
       - NewsSapphire
   engine: null
-'spotify app':
+spotify-app:
   name: Spotify
   manufacturer: spotify
   type: mobile-application
@@ -1123,6 +1123,7 @@ google-maps:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - com\.google\.Maps
+      - AndroidMapsWebView
   engine: null
 xos-launcher:
   name: 'XOS Launcher'

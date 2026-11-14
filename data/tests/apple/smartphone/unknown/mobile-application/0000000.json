@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "browser/42010 CFNetwork/758.3.15 Darwin/15.4.0"
+      "user-agent": "Pulse/4.0.5 (iPhone; iOS 7.0.6; Scale/2.00)"
     },
     "device": {
       "architecture": "",
@@ -23,9 +23,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Browser App",
+      "name": "Pulse",
       "modus": null,
-      "version": "42010.0.0",
+      "version": "4.0.5",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -34,148 +34,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.3.0",
+      "version": "7.0.6",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "758.3.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ActionExtension/5.2.2 CFNetwork/758.2.8 Darwin/15.0.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "ActionExtension",
-      "modus": null,
-      "version": "5.2.2",
-      "manufacturer": "unknown",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.2.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "758.2.8",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "browser/20376 CFNetwork/459 Darwin/10.0.0d3"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Browser App",
-      "modus": null,
-      "version": "20376.0.0",
-      "manufacturer": "unknown",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iPhone OS",
-      "marketingName": "iPhone OS",
-      "version": "3.1.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "459.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; U; CPU iPhone 4_2_1 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Mobile/7E18 Grindr/1.8.5 (iPhone1,2/4.2.1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Grindr",
-      "modus": null,
-      "version": "1.8.5",
-      "manufacturer": "unknown",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
       "version": null,
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "528.18.0",
       "manufacturer": "apple"
     }
   },
@@ -226,7 +91,7 @@
   },
   {
     "headers": {
-      "user-agent": "Luminary/70 CFNetwork/978.0.7 Darwin/18.5.0"
+      "user-agent": "ActionExtension/34.2.2 CFNetwork/808.3 Darwin/16.3.0"
     },
     "device": {
       "architecture": "",
@@ -248,9 +113,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Luminary",
+      "name": "ActionExtension",
       "modus": null,
-      "version": "70.0.0",
+      "version": "34.2.2",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -259,13 +124,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.2.0",
+      "version": "10.3.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "978.0.7",
+      "version": "808.3.0",
       "manufacturer": "apple"
     }
   },
@@ -496,7 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "Twitterrific/2.1.1 CFNetwork/459 Darwin/10.0.0d3"
+      "user-agent": "Instapaper/7.8.3.3; CFNetwork/1128.0.1; Darwin/19.6.0"
     },
     "device": {
       "architecture": "",
@@ -518,30 +383,75 @@
       "bits": 0
     },
     "client": {
-      "name": "Twitterrific",
+      "name": "Instapaper",
       "modus": null,
-      "version": "2.1.1",
+      "version": "7.8.3.3",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "iPhone OS",
-      "marketingName": "iPhone OS",
-      "version": "3.1.0",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.6.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "459.0.0",
+      "version": "1128.0.1",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Client/15076 CFNetwork/1335.0.3 Darwin/21.6.0"
+      "user-agent": "Pic%20Collage/7.31.14 CFNetwork/889.9 Darwin/17.2.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Pic Collage",
+      "modus": null,
+      "version": "7.31.14",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "889.9.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Client/29283 CFNetwork/1404.0.5 Darwin/22.3.0"
     },
     "device": {
       "architecture": "",
@@ -565,7 +475,7 @@
     "client": {
       "name": "Client",
       "modus": null,
-      "version": "15076.0.0",
+      "version": "29283.0.0",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -574,19 +484,64 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "15.6.0",
+      "version": "16.3.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "1335.0.3",
+      "version": "1404.0.5",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "NPR%20One/234 CFNetwork/1197 Darwin/20.0.0"
+      "user-agent": "Instacast Instacast/4.5.4 CFNetwork/672.1.14 Darwin/14.0.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instacast",
+      "modus": null,
+      "version": "4.5.4",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "7.1.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "672.1.14",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NPR%20One/371 CFNetwork/1402.0.8 Darwin/22.2.0"
     },
     "device": {
       "architecture": "",
@@ -610,7 +565,7 @@
     "client": {
       "name": "NPR",
       "modus": null,
-      "version": "234.0.0",
+      "version": "371.0.0",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -619,19 +574,19 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "14.0.0",
+      "version": "16.2.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "1197.0.0",
+      "version": "1402.0.8",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Adori/1 CFNetwork/978.0.7 Darwin/18.7.0"
+      "user-agent": "Adori-Dev/7 CFNetwork/974.2.1 Darwin/18.0.0"
     },
     "device": {
       "architecture": "",
@@ -655,7 +610,7 @@
     "client": {
       "name": "Adori",
       "modus": null,
-      "version": "1.0.0",
+      "version": "7.0.0",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -664,13 +619,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.4.0",
+      "version": "12.0.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "978.0.7",
+      "version": "974.2.1",
       "manufacturer": "apple"
     }
   },
@@ -901,7 +856,7 @@
   },
   {
     "headers": {
-      "user-agent": "Anybox/55 CFNetwork/1399.4 Darwin/22.1.0"
+      "user-agent": "Anybox/74 CFNetwork/1402.0.8 Darwin/22.2.0"
     },
     "device": {
       "architecture": "",
@@ -925,7 +880,7 @@
     "client": {
       "name": "Anybox",
       "modus": null,
-      "version": "55.0.0",
+      "version": "74.0.0",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -934,13 +889,58 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "16.1.0",
+      "version": "16.2.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "1399.4.0",
+      "version": "1402.0.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Apollo/11.28 CFNetwork/1085.4 Darwin/19.0.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Apollo",
+      "modus": null,
+      "version": "11.28.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.0.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1085.4.0",
       "manufacturer": "apple"
     }
   },
@@ -986,6 +986,51 @@
     "engine": {
       "name": "WebKit",
       "version": "1404.0.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Audio/105 CFNetwork/548.1.4 Darwin/11.0.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Audio",
+      "modus": null,
+      "version": "105.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "5.1.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "548.1.4",
       "manufacturer": "apple"
     }
   },
@@ -1351,6 +1396,51 @@
   },
   {
     "headers": {
+      "user-agent": "Browser/21060 CFNetwork/887 Darwin/17.0.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Browser App",
+      "modus": null,
+      "version": "21060.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "887.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "BrowserPlus/21066 CFNetwork/978.0.7 Darwin/18.5.0"
     },
     "device": {
@@ -1621,7 +1711,7 @@
   },
   {
     "headers": {
-      "user-agent": "Cosmicast/1 CFNetwork/1107.1 Darwin/19.0.0"
+      "user-agent": "Cosmicast/1 CFNetwork/1404.0.5 Darwin/22.3.0"
     },
     "device": {
       "architecture": "",
@@ -1654,13 +1744,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "13.0.0",
+      "version": "16.3.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "1107.1.0",
+      "version": "1404.0.5",
       "manufacturer": "apple"
     }
   },
@@ -2026,6 +2116,51 @@
   },
   {
     "headers": {
+      "user-agent": "Gold/1528207522 CFNetwork/902.2 Darwin/17.7.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Gold",
+      "modus": null,
+      "version": "1528207522.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.4.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "902.2.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Guacamole/1528207522 CFNetwork/811.5.4 Darwin/16.7.0"
     },
     "device": {
@@ -2116,7 +2251,7 @@
   },
   {
     "headers": {
-      "user-agent": "HardCast/11 CFNetwork/978.0.7 Darwin/18.7.0"
+      "user-agent": "HardCast/11 CFNetwork/1410.0.3 Darwin/22.6.0"
     },
     "device": {
       "architecture": "",
@@ -2149,13 +2284,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.4.0",
+      "version": "16.6.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "978.0.7",
+      "version": "1410.0.3",
       "manufacturer": "apple"
     }
   },
@@ -2296,7 +2431,7 @@
   },
   {
     "headers": {
-      "user-agent": "Himalaya/2.4.41 (iPhone; iOS 14.0.1; Scale/3.00; CFNetwork; iPhone9,4)"
+      "user-agent": "Himalaya/2.6.32 (iPhone; iOS 16.5.1; Scale/3.00; CFNetwork; iPhone13,4)"
     },
     "device": {
       "architecture": "",
@@ -2320,7 +2455,7 @@
     "client": {
       "name": "Himalaya",
       "modus": null,
-      "version": "2.4.41",
+      "version": "2.6.32",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -2329,7 +2464,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "14.0.1",
+      "version": "16.5.1",
       "manufacturer": "apple",
       "bits": 0
     },
@@ -2521,7 +2656,7 @@
   },
   {
     "headers": {
-      "user-agent": "KKBOX/7.10.70/iOS/14.2"
+      "user-agent": "KKBOX/7.17.22/iOS/16.4.1"
     },
     "device": {
       "architecture": "",
@@ -2545,7 +2680,7 @@
     "client": {
       "name": "KKBOX",
       "modus": null,
-      "version": "7.10.70",
+      "version": "7.17.22",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -2554,7 +2689,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "14.2.0",
+      "version": "16.4.1",
       "manufacturer": "apple",
       "bits": 0
     },
@@ -2701,7 +2836,7 @@
   },
   {
     "headers": {
-      "user-agent": "Menucast/1.52 CFNetwork/1220.1 Darwin/20.3.0"
+      "user-agent": "LuminaryPreprod/27 CFNetwork/976 Darwin/18.2.0"
     },
     "device": {
       "architecture": "",
@@ -2723,9 +2858,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Menucast",
+      "name": "Luminary",
       "modus": null,
-      "version": "1.52.0",
+      "version": "27.0.0",
       "manufacturer": "unknown",
       "type": "mobile-application",
       "isbot": false,
@@ -2734,13 +2869,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "14.4.0",
+      "version": "12.1.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "1220.1.0",
+      "version": "976.0.0",
       "manufacturer": "apple"
     }
   },
@@ -2786,51 +2921,6 @@
     "engine": {
       "name": "WebKit",
       "version": "1107.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mimir/142 CFNetwork/1335.0.3 Darwin/21.6.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mimir",
-      "modus": null,
-      "version": "142.0.0",
-      "manufacturer": "unknown",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.6.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "1335.0.3",
       "manufacturer": "apple"
     }
   },
@@ -3556,96 +3646,6 @@
   },
   {
     "headers": {
-      "user-agent": "Snagit/98356 CFNetwork/1566.100.1 Darwin/24.0.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Snagit",
-      "modus": null,
-      "version": "98356.0.0",
-      "manufacturer": "unknown",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "18.0.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "1566.100.1",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ChatBox/1.75.663.0 CFNetwork/3826.500.131 Darwin/24.5.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "ChatBox",
-      "modus": null,
-      "version": "1.75.663.0",
-      "manufacturer": "unknown",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "18.5.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "3826.500.131",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "ShopeeVN/2.40.11 CFNetwork/978.0.7 Darwin/18.6.0"
     },
     "device": {
@@ -3781,6 +3781,51 @@
   },
   {
     "headers": {
+      "user-agent": "Wattpad/8.42.2.0 CFNetwork/1120 Darwin/19.0.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Wattpad",
+      "modus": null,
+      "version": "8.42.2.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.0.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1120.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "WH%20Questions/2.2 CFNetwork/887 Darwin/17.0.0"
     },
     "device": {
@@ -3911,6 +3956,51 @@
     "engine": {
       "name": "WebKit",
       "version": "1206.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Twitterrific/977 CFNetwork/1128.0.1 Darwin/19.6.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Twitterrific",
+      "modus": null,
+      "version": "977.0.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.6.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1128.0.1",
       "manufacturer": "apple"
     }
   },
@@ -4091,6 +4181,51 @@
     "engine": {
       "name": "WebKit",
       "version": "3826.400.120",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ChatBox/1.116.15.0 CFNetwork/3860.700.1 Darwin/25.6.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "ChatBox",
+      "modus": null,
+      "version": "1.116.15.0",
+      "manufacturer": "unknown",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.6.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "3860.700.1",
       "manufacturer": "apple"
     }
   },

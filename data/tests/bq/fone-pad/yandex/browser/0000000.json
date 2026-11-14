@@ -13,7 +13,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -148,7 +148,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -238,7 +238,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 9
+        "size": 9.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -283,7 +283,7 @@
         "width": 1200,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -311,6 +311,51 @@
     "engine": {
       "name": "Blink",
       "version": "112.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; BQru-7083 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36 YaApp_Android/10.61 YaSearchBrowser/10.61"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "BQru-7083",
+      "marketingName": "7083",
+      "manufacturer": "bq",
+      "brand": "bq",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "10.61.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.117",
       "manufacturer": "google"
     }
   }

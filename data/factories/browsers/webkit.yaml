@@ -36,7 +36,7 @@ rules:
   /qword/i: 'qword browser'
   /mxbrowser|maxthon|myie/i: maxthon
   /superbird/i: superbird
-  /micromessenger|com\.tencent\.mm|^wechat\//i: 'wechat app'
+  /micromessenger|com\.tencent\.mm|^wechat\//i: wechat-app
   /pinterestbot/i: 'pinterest bot'
   /pinterest/i: 'pinterest app'
   '/lite baiduboxapp/i': 'baidu box app lite'
@@ -60,8 +60,8 @@ rules:
   /edgios/i: 'edge mobile for ios'
   '/opera news/i': 'opera news'
   /com\.apple\.mobilenotes/i: 'apple mobilenotes'
-  '/tizen ?browser|slp browser/i': 'tizen browser'
-  '/tizen.*version.*(safari|mobile)/i': 'tizen browser'
+  '/tizen ?browser|slp browser/i': tizen-browser
+  '/tizen.*version.*(safari|mobile)/i': tizen-browser
   /iemobile|wpdesktop|zunewp7|xblwp7/i: iemobile
   '/360 aphone browser|360 ?browser/i': '360 browser'
   '/(?:obigointernetbrowser|obigo-browser|obigo|telecabrowser|teleca)[\/-]qo?\d+/i': 'obigo q'
@@ -135,7 +135,7 @@ rules:
   /acheetahi/i: 'cm browser'
   /outlook/i: outlook
   /sraf\//i: sraf
-  /(?<!\.)360se/i: '360 secure browser'
+  /(?<!\.)360se/i: 360-secure-browser
   /newb/i: newb
   /chromium/i: chromium
   /surfbrowser|surf\//i: surfbrowser
@@ -150,7 +150,7 @@ rules:
   /newsflow/i: newsflow
   /qqmusic/i: qq-music
   /(flow|ekioh)\//i: flow-browser
-  '/lg browser/i': 'lg browser'
+  '/lg browser/i': lg-browser
   /seznam\.cz|sznprohlizec/i: 'seznam browser'
   /sogoumobilebrowser/i: 'sogou mobile browser'
   /heliummobilebrowser/i: heliummobilebrowser
@@ -163,7 +163,7 @@ rules:
   /vlc/i: 'vlc media player'
   /netnewswire/i: netnewswire
   /goodreader/i: goodreader
-  '/espn app|espn radio/i': 'espn radio'
+  '/espn app|espn radio/i': espn-radio
   /listnr\.au\.com\.podcastoneaustralia/i: listnr
   /broadwaypodcastnetwork/i: broadway-podcast-network
   '/podcast overhaul/i': overhaul-fm
@@ -216,9 +216,9 @@ rules:
   '/(?:aliyunos|yunos).*safari|com\.aliyun\.mobile\.browser/i': aliyun-browser
   '/qwant(mobile)?\/|qwantios/i': qwant-mobile
   '/sunrisebrowser|sunrise[\/ ]/i': sunrise
-  '/odyssey web browser/i': 'odyssey web browser'
+  '/odyssey web browser/i': odyssey-web-browser
   /ddg-ios-|duckduckgo/i: 'duckduck app'
-  '/origyn web browser/i': 'origyn web browser'
+  '/origyn web browser/i': origyn-web-browser
   /safariviewservice/i: safari-view-service
   /grapeshotcrawler/i: grapeshotcrawler
   /anthropic-claude/i: claude-bot
@@ -272,8 +272,8 @@ rules:
   /jsdom/i: jsdom
   /zite/i: zite
   /uzbl/i: uzbl
-  /Mstar;OWB/: 'origyn web browser'
-  /OWB/: 'odyssey web browser'
+  /Mstar;OWB/: origyn-web-browser
+  /OWB/: odyssey-web-browser
   '/(?:like android|windows ce|symbos).*safari/i': safari
   /samsungbrowser/i: samsungbrowser
   '/google web preview/i': 'google web preview'
@@ -372,13 +372,13 @@ rules:
   /dreamweaver/i: dreamweaver
   /akregator/i: akregator
   /installatron/i: installatron
-  /quora-bot/i: 'quora bot'
+  /quora-bot/i: quora-bot
   /quora/i: 'quora app'
   /google-adwords-instant/i: google-adwords-instant
   '/rocky chatwork mobile/i': 'rocky chatwork mobile'
-  /adsbot-google-mobile/i: 'adsbot google-mobile'
+  /adsbot-google-mobile/i: adsbot-google-mobile
   /momentleadsbot/i: moment-leads-bot
-  /adsbot-google/i: 'adsbot google'
+  /adsbot-google/i: adsbot-google
   /adsbot/i: adsbot
   /epiphany/i: epiphany
   /rekonq/i: rekonq
@@ -438,7 +438,7 @@ rules:
   /morningscore/i: morningscore-bot
   /keenablebot/i: keenable-bot
   /worldbot/i: world-bot
-  /spotify/i: 'spotify app'
+  /spotify/i: spotify-app
   /shapbot/i: shap-bot
   /safari/i: safari
   /grindr/i: grindr

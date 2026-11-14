@@ -390,7 +390,7 @@ final readonly class Headers
                         case 'edge':
                         case 'google-search':
                         case 'iron':
-                        case 'aol desktop':
+                        case 'aol-desktop':
                         case 'qtwebengine':
                         case 'pumoxbot':
                         case 'sogou web spider':
@@ -456,7 +456,7 @@ final readonly class Headers
                         case 'lighthouse':
                         case 'pageburst':
                         case 'brightedge crawler':
-                        case 'adsbot google-mobile':
+                        case 'adsbot-google-mobile':
                         case 'quark':
                         case 'seolyt-bot':
                         case 'bingsearch':
