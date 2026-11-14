@@ -101,9 +101,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/89.0.4447.51"
     },
     "expected": {
@@ -1073,7 +1073,7 @@
           "width": 1920,
           "height": 1200,
           "touch": false,
-          "size": 17
+          "size": 17.0
         },
         "type": "laptop",
         "ismobile": false,
@@ -1173,7 +1173,7 @@
           "width": null,
           "height": null,
           "touch": false,
-          "size": 15
+          "size": 15.0
         },
         "type": "laptop",
         "ismobile": false,
@@ -1723,7 +1723,7 @@
           "width": 2408,
           "height": 1506,
           "touch": false,
-          "size": 13
+          "size": 13.0
         },
         "type": "laptop",
         "ismobile": false,
@@ -1973,7 +1973,7 @@
           "width": 2304,
           "height": 1440,
           "touch": false,
-          "size": 12
+          "size": 12.0
         },
         "type": "laptop",
         "ismobile": false,

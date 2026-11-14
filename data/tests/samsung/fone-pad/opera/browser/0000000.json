@@ -1,12 +1,102 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-T725 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36 OPR/53.0.2569.141117"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-P3100 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36 OPR/20.0.1396.73172"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-T725",
-      "marketingName": "Galaxy Tab S5e 10.5\" LTE",
+      "deviceName": "GT-P3100",
+      "marketingName": "Galaxy Tab 2 7.0\" 3G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "20.0.1396.73172",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.1750.166",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-T311 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.99 Safari/537.36 OPR/35.0.2070.100283"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T311",
+      "marketingName": "Galaxy Tab 3 8.0\" 3G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "35.0.2070.100283",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "48.0.2564.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-T805 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.105088"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T805",
+      "marketingName": "Galaxy Tab S 10.5\" LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -25,7 +115,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "53.0.2569.141117",
+      "version": "37.0.2192.105088",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -34,69 +124,24 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "5.0.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "74.0.3729.157",
+      "version": "50.0.2661.94",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-T835 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36 OPR/53.0.2569.141117"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-T585 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 OPR/42.7.2246.114996"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-T835",
-      "marketingName": "Galaxy Tab S4 10.5\" LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "53.0.2569.141117",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "74.0.3729.157",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-T515) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Safari/537.36 OPR/55.2.2719.50740 comdirect/1.0 (appVersion:19.12.0;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T515",
-      "marketingName": "Galaxy Tab A 10.1\" LTE (2019)",
+      "deviceName": "SM-T585",
+      "marketingName": "Galaxy Tab A 10.1\" LTE (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -115,7 +160,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "55.2.2719.50740",
+      "version": "42.7.2246.114996",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -124,31 +169,31 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "77.0.3865.116",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-T595 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Safari/537.36 OPR/47.2.2249.130937"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-P5200 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.105088"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-T595",
-      "marketingName": "Galaxy Tab A 10.5\" LTE (2018)",
+      "deviceName": "GT-P5200",
+      "marketingName": "Galaxy Tab 3 10.1\" 3G",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": 10.5
+        "size": 10.1
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -160,7 +205,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "47.2.2249.130937",
+      "version": "37.0.2192.105088",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -169,31 +214,31 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "66.0.3359.158",
+      "version": "50.0.2661.94",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-T865) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36 OPR/59.1.2926.54067"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-N5100 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 OPR/42.5.2246.114172"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-T865",
-      "marketingName": "Galaxy Tab S6 10.5\" LTE",
+      "deviceName": "GT-N5100",
+      "marketingName": "Galaxy Note 8.0\" 3G",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2560,
-        "height": 1600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": 10.5
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -205,7 +250,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "59.1.2926.54067",
+      "version": "42.5.2246.114172",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -214,19 +259,199 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "83.0.4103.106",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-P615) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Safari/537.36 OPR/60.2.3004.55409"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SM-T111 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.105088"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T111",
+      "marketingName": "Galaxy Tab 3 Lite 7.0\" 3G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "37.0.2192.105088",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.94",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; SM-T719 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Safari/537.36 OPR/18.0.2254.106542"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T719",
+      "marketingName": "Galaxy Tab S2 8.0\" LTE (2016)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "18.0.2254.106542",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-T235 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 OPR/42.7.2246.114996"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T235",
+      "marketingName": "Galaxy Tab 4 7.0\" LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "42.7.2246.114996",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SM-T111NQ Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4591.0 Safari/537.36 OPR/50.4.2426.146257"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T111NQ",
+      "marketingName": "Galaxy Tab 3 Lite 7.0\" 3G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "50.4.2426.146257",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4591.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-P615) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.193 Safari/537.36 OPR/79.5.4195.76987"
     },
     "device": {
       "architecture": "",
@@ -250,375 +475,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "60.2.3004.55409",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-T505) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 OPR/61.2.3076.56749"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T505",
-      "marketingName": "Galaxy Tab A7 10.4\" LTE (2020)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 10.4
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "61.2.3076.56749",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "86.0.4240.198",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T875) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Safari/537.36 OPR/68.2.3557.64219"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T875",
-      "marketingName": "Galaxy Tab S7 11.0\" 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 11
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "68.2.3557.64219",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.88",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T976B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Safari/537.36 OPR/68.2.3557.64219"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T976B",
-      "marketingName": "Galaxy Tab S7+ 12.4\" 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2800,
-        "height": 1752,
-        "touch": true,
-        "size": 12.4
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "68.2.3557.64219",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.88",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Safari/537.36 OPR/68.3.3557.64528"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T575",
-      "marketingName": "Galaxy Tab Active 3 8.0\" 4G (2021)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "68.3.3557.64528",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.88",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T736B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Safari/537.36 OPR/71.3.3718.67322"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T736B",
-      "marketingName": "Galaxy Tab S7 FE 12.4\" 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 12.4
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "71.3.3718.67322",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "104.0.5112.97",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"SM-T865\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"99\", \"Chromium\";v=\"106\"",
-      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Safari/537.36 OPR/92.0.4561.11"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T865",
-      "marketingName": "Galaxy Tab S6 10.5\" LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "fone-pad",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "92.0.4561.11",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "106.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-T395) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Safari/537.36 OPR/74.1.3922.71199"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T395",
-      "marketingName": "Galaxy Tab Active 2 8.0\"",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "74.1.3922.71199",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "110.0.5481.192",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-X706B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.135 Safari/537.36 OPR/75.3.3978.72666"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-X706B",
-      "marketingName": "Galaxy Tab S8 11.0\" 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 11
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "75.3.3978.72666",
+      "version": "79.5.4195.76987",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -633,7 +490,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "112.0.5615.135",
+      "version": "119.0.6045.193",
       "manufacturer": "google"
     }
   },
@@ -684,7 +541,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-X716B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Safari/537.36 OPR/80.1.4244.77335"
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-X716B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.154 Safari/537.36 OPR/78.5.4143.75924"
     },
     "device": {
       "architecture": "",
@@ -696,7 +553,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -708,7 +565,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "80.1.4244.77335",
+      "version": "78.5.4143.75924",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -723,55 +580,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "120.0.6099.230",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Chromium\";v=\"122\", \"Opera\";v=\"108\", \" Not A;Brand\";v=\"99\", \"OperaMobile\";v=\"81\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-P619) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.119 Safari/537.36 OPR/81.1.4292.78446"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-P619",
-      "marketingName": "Galaxy Tab S6 Lite 10.4\" LTE (2022)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 10.4
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "81.0.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "122.0.0",
+      "version": "117.0.5938.154",
       "manufacturer": "google"
     }
   },
@@ -789,7 +598,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -867,28 +676,19 @@
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"SM-X205\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"14\"",
-      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Opera\";v=\"126\", \"OperaMobile\";v=\"93\", \"Chromium\";v=\"142\"",
-      "sec-ch-ua-full-version": "\"93.4.4906.86552\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 OPR/93.0.0.0"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-P607T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/58.4.2878.56737"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-X205",
-      "marketingName": "Galaxy Tab A8 10.5\" LTE (2021)",
+      "deviceName": "SM-P607T",
+      "marketingName": "Galaxy Note 10.1\" (2014)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 2560,
+        "height": 1600,
         "touch": true,
-        "size": 10.5
+        "size": 10.1
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -900,7 +700,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "93.4.4906.86552",
+      "version": "58.4.2878.56737",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -909,40 +709,31 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "14.0.0",
+      "version": "4.4.4",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "142.0.0",
+      "version": "81.0.4044.138",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "sec-ch-ua-model": "\"SM-P625\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"16\"",
-      "sec-ch-ua": "\"Chromium\";v=\"145\", \" Not;A Brand\";v=\"99\", \"Opera\";v=\"129\", \"OperaMobile\";v=\"96\"",
-      "sec-ch-ua-full-version": "\"96.2.5010.87779\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 OPR/96.0.0.0"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; SM-P555 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Safari/537.36 OPR/47.2.2254.147957"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-P625",
-      "marketingName": "Galaxy Tab S6 Lite 10.4\" (2024) LTE",
+      "deviceName": "SM-P555",
+      "marketingName": "Galaxy Tab A 9.7\" LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2000,
-        "height": 1200,
+        "width": 1024,
+        "height": 768,
         "touch": true,
-        "size": 10.4
+        "size": 9.7
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -954,7 +745,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "96.2.5010.87779",
+      "version": "47.2.2254.147957",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -963,13 +754,58 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "16.0.0",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "145.0.0",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; SM-T355) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Safari/537.36 OPR/55.0.2703.50096"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T355",
+      "marketingName": "Galaxy Tab A 8.0\" 3G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "55.0.2703.50096",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.116",
       "manufacturer": "google"
     }
   },
@@ -987,7 +823,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -1032,7 +868,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -1122,7 +958,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -1212,7 +1048,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -1240,6 +1076,51 @@
     "engine": {
       "name": "Blink",
       "version": "91.0.4472.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-T575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.122 Mobile Safari/537.36 OPR/121.0.5600.38"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T575",
+      "marketingName": "Galaxy Tab Active 3 8.0\" 4G (2021)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "121.0.5600.38",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "137.0.7151.122",
       "manufacturer": "google"
     }
   }

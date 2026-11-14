@@ -451,9 +451,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"136\", \"Brave\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
     },
     "expected": {
@@ -476,7 +476,7 @@
           "size": 3.5
         },
         "type": "smartphone",
-        "ismobile": false,
+        "ismobile": true,
         "istv": false,
         "dualOrientation": true,
         "simCount": 1,
@@ -657,9 +657,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "Mac OS X",
       "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"602\", \"Chromium\";v=\"602\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "Mac OS X",
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e YisouSpider/5.0 Safari/602.1"
     },
     "expected": {
@@ -713,9 +713,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"iOS\"",
       "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"HeadlessChrome\";v=\"138\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"iOS\"",
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1"
     },
     "expected": {
@@ -738,7 +738,7 @@
           "size": 3.5
         },
         "type": "smartphone",
-        "ismobile": false,
+        "ismobile": true,
         "istv": false,
         "dualOrientation": true,
         "simCount": 1,
@@ -769,9 +769,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"iOS\"",
       "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Chromium\";v=\"148\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"iOS\"",
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1"
     },
     "expected": {
@@ -1341,7 +1341,7 @@
           "width": 1334,
           "height": 750,
           "touch": true,
-          "size": 4
+          "size": 4.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -2179,9 +2179,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Samsung Internet\";v=\"30.0\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1"
     },
     "expected": {
@@ -3501,7 +3501,7 @@
           "width": 2732,
           "height": 2048,
           "touch": true,
-          "size": 13
+          "size": 13.0
         },
         "type": "tablet",
         "ismobile": true,
@@ -3551,7 +3551,7 @@
           "width": 2388,
           "height": 1668,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "tablet",
         "ismobile": true,
@@ -4285,9 +4285,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"142.0.7444.171\", \"Google Chrome\";v=\"142.0.7444.171\", \"Not_A Brand\";v=\"99.0.0.0\"",
       "sec-ch-ua-model": "artfone SMART_500",
       "sec-ch-ua-platform-version": "12.0.0",
+      "sec-ch-ua": "\"Chromium\";v=\"142.0.7444.171\", \"Google Chrome\";v=\"142.0.7444.171\", \"Not_A Brand\";v=\"99.0.0.0\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -4307,7 +4307,7 @@
           "width": 1280,
           "height": 720,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -4341,9 +4341,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not(A:Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"144.0.7559.90\", \"Google Chrome\";v=\"144.0.7559.90\"",
       "sec-ch-ua-model": "Astech S8",
       "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"144.0.7559.90\", \"Google Chrome\";v=\"144.0.7559.90\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -4397,9 +4397,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not=A?Brand\";v=\"24.0.0.0\", \"Chromium\";v=\"140.0.7339.208\"",
       "sec-ch-ua-model": "Astech S9",
       "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua": "\"Not=A?Brand\";v=\"24.0.0.0\", \"Chromium\";v=\"140.0.7339.208\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -4453,9 +4453,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"140.0.7339.207\", \"Not=A?Brand\";v=\"24.0.0.0\", \"Google Chrome\";v=\"140.0.7339.207\"",
       "sec-ch-ua-model": "Astech IRIS",
       "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua": "\"Chromium\";v=\"140.0.7339.207\", \"Not=A?Brand\";v=\"24.0.0.0\", \"Google Chrome\";v=\"140.0.7339.207\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -4659,15 +4659,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.214\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"ASUS_AI2202\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.214\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
@@ -4829,15 +4829,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"152.0.7977.124\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"ASUS_AI2202\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.124\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36"
     },
@@ -4899,9 +4899,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"143.0.7499.109\", \"Chromium\";v=\"143.0.7499.109\", \"Not A(Brand\";v=\"24.0.0.0\"",
       "sec-ch-ua-model": "U656AA",
       "sec-ch-ua-platform-version": "15.0.0",
+      "sec-ch-ua": "\"Google Chrome\";v=\"143.0.7499.109\", \"Chromium\";v=\"143.0.7499.109\", \"Not A(Brand\";v=\"24.0.0.0\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -4955,9 +4955,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Microsoft Edge\";v=\"131.0.2903.48\", \"Chromium\";v=\"131.0.6778.70\", \"Not_A Brand\";v=\"24.0.0.0\"",
       "sec-ch-ua-model": "U572AA",
       "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"131.0.2903.48\", \"Chromium\";v=\"131.0.6778.70\", \"Not_A Brand\";v=\"24.0.0.0\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36 EdgA/131.0.0.0"
     },
     "expected": {
@@ -5011,11 +5011,11 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Android WebView\";v=\"131.0.6778.200\", \"Chromium\";v=\"131.0.6778.200\", \"Not_A Brand\";v=\"24.0.0.0\"",
       "sec-ch-ua-model": "U655AA",
+      "x-requested-with": "com.oh.brop",
       "sec-ch-ua-platform-version": "14.0.0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; U655AA Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36",
-      "x-requested-with": "com.oh.brop"
+      "sec-ch-ua": "\"Android WebView\";v=\"131.0.6778.200\", \"Chromium\";v=\"131.0.6778.200\", \"Not_A Brand\";v=\"24.0.0.0\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; U655AA Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.200 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {

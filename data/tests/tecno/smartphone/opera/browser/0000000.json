@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; TECNO KE6j Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 OPR/63.0.2254.62069"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; PTM-Z-mini Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36 OPR/42.2.2246.112987"
     },
     "device": {
       "architecture": "",
-      "deviceName": "KE6j",
-      "marketingName": "Spark 6 Air",
+      "deviceName": "PTM-Z Mini",
+      "marketingName": "Phantom Z Mini",
       "manufacturer": "tecno",
       "brand": "tecno",
       "display": {
-        "width": 1640,
+        "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 7
+        "size": 5.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -25,7 +25,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "63.0.2254.62069",
+      "version": "42.2.2246.112987",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -34,13 +34,148 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "103.0.5060.71",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; TECNO-C8 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Mobile Safari/537.36 OPR/37.0.2192.105088"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Camon C8",
+      "marketingName": "Camon C8",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "37.0.2192.105088",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.94",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.0; TECNO Camon CX Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 OPR/20.0.2254.109835"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Camon CX",
+      "marketingName": "Camon CX",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "20.0.2254.109835",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.0; TECNO CX Air Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 OPR/32.0.2254.122976"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Camon CX Air",
+      "marketingName": "Camon CX Air",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "32.0.2254.122976",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
       "manufacturer": "google"
     }
   },
@@ -401,6 +536,51 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.0; TECNO LA6 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 OPR/47.1.2254.147528"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "LA6",
+      "marketingName": "Pouvoir 3",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "display": {
+        "width": 1500,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "47.1.2254.147528",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
       "manufacturer": "google"
     }
   },

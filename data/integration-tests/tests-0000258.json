@@ -501,9 +501,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "Android",
       "sec-ch-ua": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"114\", \"Chromium\";v=\"114\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "Android",
       "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -573,7 +573,7 @@
           "width": 2340,
           "height": 1080,
           "touch": true,
-          "size": 6
+          "size": 6.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -1473,7 +1473,7 @@
           "width": 1920,
           "height": 1080,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -1623,7 +1623,7 @@
           "width": 2880,
           "height": 1440,
           "touch": true,
-          "size": 6
+          "size": 6.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -1957,15 +1957,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.92\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 10a\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.92\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
     },
@@ -2277,15 +2277,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"155.0.8059.39\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 11 Pro\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"155.0.8059.39\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36"
     },
@@ -2347,15 +2347,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"155.0.8059.39\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 10\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"155.0.8059.39\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36"
     },
@@ -2417,15 +2417,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.127\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 9 Pro XL\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.127\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
     },
@@ -2487,15 +2487,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 10 Pro\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
     },
@@ -2757,14 +2757,14 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"OperaMobile\";v=\"102\", \"Opera\";v=\"137\", \"Chromium\";v=\"152\", \" Not A;Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"102.4.5206.90738\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 6a\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17\"",
+      "sec-ch-ua": "\"OperaMobile\";v=\"102\", \"Opera\";v=\"137\", \"Chromium\";v=\"152\", \" Not A;Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"102.4.5206.90738\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 OPR/102.0.0.0"
     },
@@ -3375,15 +3375,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.127\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"VOG-L29\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.127\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
     },
@@ -3495,15 +3495,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"155.0.8059.84\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"LYA-L29\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"155.0.8059.84\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36"
     },
@@ -3565,15 +3565,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"157.0.8103.5\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"MAR-LX1A\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Google Chrome\";v=\"157\", \"Chromium\";v=\"157\"",
+      "sec-ch-ua-full-version": "\"157.0.8103.5\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Mobile Safari/537.36"
     },
@@ -3635,15 +3635,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"155.0.8059.39\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"TFY-LX1\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"155.0.8059.39\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36"
     },
@@ -4071,7 +4071,7 @@
           "width": 2560,
           "height": 1600,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "tablet",
         "ismobile": true,
@@ -4105,15 +4105,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.57\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"Lenovo TB-X606F\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.57\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
     },
@@ -4275,15 +4275,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"153.0.8010.52\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"moto g54 5G\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-full-version": "\"153.0.8010.52\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
     },
@@ -4445,15 +4445,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"moto g42\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
     },
@@ -4665,15 +4665,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"155.0.8059.39\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"moto g84 5G\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"155.0.8059.39\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36"
     },
@@ -4785,15 +4785,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"153\", \"Google Chrome\";v=\"153\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"153.0.0.0\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"moto g power (2022)\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"11.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"153\", \"Google Chrome\";v=\"153\"",
+      "sec-ch-ua-full-version": "\"153.0.0.0\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36 Chrome-Lighthouse"
     },
@@ -4855,15 +4855,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"155\", \"Google Chrome\";v=\"155\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"155.0.0.0\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"moto g power (2022)\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"11.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"155\", \"Google Chrome\";v=\"155\"",
+      "sec-ch-ua-full-version": "\"155.0.0.0\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit/537.36 (KHTML like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36 PTST/261003.223935"
     },
@@ -4975,15 +4975,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"A059\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
     },
@@ -5145,15 +5145,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.57\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"SM-P619\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.57\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
     },
@@ -5265,15 +5265,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"SM-T505\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
     },
@@ -5351,7 +5351,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,

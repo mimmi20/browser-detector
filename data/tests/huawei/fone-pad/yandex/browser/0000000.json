@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 8.0.0; BAH2-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 YaBrowser/19.7.7.115.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "BAH2-L09",
+      "marketingName": "MediaPad M5 Lite 10.1\" LTE",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "19.7.7.115.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "75.0.3770.143",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm; Android 10; KOB2-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 YaBrowser/20.6.0.211.00 SA/1 Mobile Safari/537.36"
     },
     "device": {
@@ -13,7 +58,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -58,7 +103,7 @@
         "width": 2480,
         "height": 2200,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -176,6 +221,96 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.102",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 6.0; HUAWEI M2-803L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.114 YaBrowser/22.9.3.82.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "M2-803L",
+      "marketingName": "MediaPad M2 8.0 3G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "22.9.3.82.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.114",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI M2-A01L Build/HUAWEIM2-A01L; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 YaBrowser/22.8.0.212 (lite) Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "M2-A01L",
+      "marketingName": "MediaPad M2 10.1\" 4G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser Lite",
+      "modus": null,
+      "version": "22.8.0.212",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.121",
       "manufacturer": "google"
     }
   },
@@ -406,6 +541,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; KOB-L09 Build/HUAWEIKOB-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.76 Mobile Safari/537.36 YaApp_Android/9.00 YaSearchBrowser/9.00"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "KOB-L09",
+      "marketingName": "MediaPad T3 8.0 LTE",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "9.00.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "72.0.3626.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm; Android 9; MatePad Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.61 YaBrowser/26.4.6.61.00 Mobile Safari/537.36"
     },
     "device": {
@@ -508,7 +688,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -553,7 +733,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "fone-pad",
       "ismobile": true,

@@ -367,7 +367,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -417,7 +417,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -917,7 +917,7 @@
           "width": 2760,
           "height": 1320,
           "touch": true,
-          "size": 7
+          "size": 7.0
         },
         "type": "phablet",
         "ismobile": true,
@@ -3851,15 +3851,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.59\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"VOG-L29\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.59\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36 (Ecosia android@149.0.0.0)"
     },

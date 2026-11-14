@@ -46,6 +46,51 @@
   },
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 8.1.0; Multilaser_E Build/V7_20200305)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "E",
+      "marketingName": "E",
+      "manufacturer": "multilaser",
+      "brand": "multilaser",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 4.0
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; Multilaser_G_Pro Build/V9_20200420; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
     },
     "device": {
@@ -226,6 +271,51 @@
   },
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 8.1.0; Multilaser_E_Lite Build/V6_20200415)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "E Lite",
+      "marketingName": "E Lite",
+      "manufacturer": "multilaser",
+      "brand": "multilaser",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 4.0
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Android Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; Multilaser_F_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36"
     },
     "device": {
@@ -328,7 +418,7 @@
         "width": null,
         "height": null,
         "touch": true,
-        "size": 4
+        "size": 4.0
       },
       "type": "smartphone",
       "ismobile": true,

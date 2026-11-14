@@ -1,52 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; FP3 Build/8901.2.A.0110.20200109) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "FP3",
-      "marketingName": "FP3",
-      "manufacturer": "fairphone",
-      "brand": "fairphone",
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.65
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "69.0.3497.128",
-      "manufacturer": "ecosia",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.128",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; FP4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; FP4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
     },
     "device": {
       "architecture": "",
@@ -70,7 +25,7 @@
     "client": {
       "name": "Ecosia",
       "modus": null,
-      "version": "88.0.4324.181",
+      "version": "101.0.4951.41",
       "manufacturer": "ecosia",
       "type": "browser",
       "isbot": false,
@@ -85,60 +40,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "88.0.4324.181",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"FP5\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "sec-ch-ua": "\"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
-      "sec-ch-ua-full-version": "\"119.0.6045.163\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 (Ecosia android@119)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "FP5",
-      "marketingName": "5",
-      "manufacturer": "fairphone",
-      "brand": "fairphone",
-      "display": {
-        "width": 2700,
-        "height": 1224,
-        "touch": true,
-        "size": 6.46
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "119.0.0",
-      "manufacturer": "ecosia",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "119.0.0",
+      "version": "101.0.4951.41",
       "manufacturer": "google"
     }
   },
@@ -146,15 +48,15 @@
     "headers": {
       "sec-ch-ua-model": "\"Fairphone 6\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"15.0.0\"",
-      "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
-      "sec-ch-ua-full-version": "\"145.0.7632.45\"",
+      "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-form-factors": "\"Mobile\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36 (Ecosia android@145.0.0.0)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 (Ecosia android@152.0.0.0)"
     },
     "device": {
       "architecture": "",
@@ -178,7 +80,7 @@
     "client": {
       "name": "Ecosia",
       "modus": null,
-      "version": "145.0.0.0",
+      "version": "152.0.0.0",
       "manufacturer": "ecosia",
       "type": "browser",
       "isbot": false,
@@ -187,13 +89,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "15.0.0",
+      "version": "16.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "145.0.0",
+      "version": "152.0.0",
       "manufacturer": "google"
     }
   }

@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; JKM-LX1 Build/HUAWEIJKM-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/261.0.0.52.126;] comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 6P Build/MHC19I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/68.0.0.37.59;]"
     },
     "device": {
       "architecture": "",
-      "deviceName": "JKM-LX1",
-      "marketingName": "Y9 (2019)",
+      "deviceName": "Nexus 6P",
+      "marketingName": "Nexus 6P",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 2340,
-        "height": 1080,
+        "width": 2560,
+        "height": 1440,
         "touch": true,
-        "size": 6.5
+        "size": 5.7
       },
       "type": "phablet",
       "ismobile": true,
@@ -25,7 +25,7 @@
     "client": {
       "name": "Facebook App",
       "modus": null,
-      "version": "261.0.0.52.126",
+      "version": "68.0.0.37.59",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -34,31 +34,76 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "74.0.3729.136",
+      "version": "48.0.2564.106",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; JKM-LX2 Build/HUAWEIJKM-LX2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.162 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/266.0.0.56.124;] comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Nexus 6P Build/N4F26I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/102.0.0.10.68;]"
     },
     "device": {
       "architecture": "",
-      "deviceName": "JKM-LX2",
-      "marketingName": "Y9 (2019)",
+      "deviceName": "Nexus 6P",
+      "marketingName": "Nexus 6P",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 2340,
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "102.0.0.10.68",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; HUAWEI MT7-L09 Build/HuaweiMT7-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/133.0.0.19.83;]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "MT7-L09",
+      "marketingName": "Ascend Mate 7",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 6.5
+        "size": 6.0
       },
       "type": "phablet",
       "ismobile": true,
@@ -70,7 +115,7 @@
     "client": {
       "name": "Facebook App",
       "modus": null,
-      "version": "266.0.0.56.124",
+      "version": "133.0.0.19.83",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -79,149 +124,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "6.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "80.0.3987.162",
+      "version": "59.0.3071.125",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; JKM-LX3 Build/HUAWEIJKM-L23; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/271.0.0.55.109;] comdirect/1.0 (appVersion:20.5.2;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "JKM-LX3",
-      "marketingName": "Y9 (2019)",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "271.0.0.55.109",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CDY-NX9A Build/HUAWEICDY-N29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/345.0.0.34.118;]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "CDY-NX9A",
-      "marketingName": "P40 Lite 5G",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "345.0.0.34.118",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "[FBAN/FB4A;FBAV/345.0.0.34.118;FBBV/332957703;FBDM/{density=3.0,width=1080,height=2172};FBLC/ro_RO;FBRV/336326830;FBCR/;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/CDY-NX9A;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "CDY-NX9A",
-      "marketingName": "P40 Lite 5G",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "345.0.0.34.118",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {

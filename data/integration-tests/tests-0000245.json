@@ -3801,9 +3801,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)"
     },
     "expected": {
@@ -4407,9 +4407,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"148\", \"HeadlessChrome\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "SaferPageCrawler/0.3 (+https://saferpage.de/bot; schedules passive DACH website checks; report examples: https://saferpage.de/tests; kostenloser Report: https://saferpage.de/geld.de)"
     },
     "expected": {
@@ -4463,15 +4463,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"138.0.7204.179\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"K9\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"",
+      "sec-ch-ua-full-version": "\"138.0.7204.179\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
     },
@@ -4502,7 +4502,7 @@
           "size": null
         },
         "type": "unknown",
-        "ismobile": true,
+        "ismobile": false,
         "istv": false,
         "dualOrientation": null,
         "simCount": null,
@@ -4533,9 +4533,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
     },
     "expected": {
@@ -4589,9 +4589,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
     },
     "expected": {
@@ -4895,9 +4895,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)"
     },
     "expected": {

@@ -1,59 +1,6 @@
 [
   {
     "headers": {
-      "sec-ch-ua-model": "\"M30_EEA\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-ua": "\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"",
-      "sec-ch-ua-full-version": "\"116.0.5845.114\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "M30_EEA",
-      "marketingName": "M30",
-      "manufacturer": "pritom",
-      "brand": "pritom",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "116.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "116.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; M10_C01_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
     },
     "device": {
@@ -111,7 +58,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,

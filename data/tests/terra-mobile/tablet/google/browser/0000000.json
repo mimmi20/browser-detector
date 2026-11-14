@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "PAD701 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Gpad701) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -13,7 +13,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -25,23 +25,23 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "11.0.696.34",
+      "version": "80.0.3987.87",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": "WebKit",
-      "version": "534.24.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "80.0.3987.87",
+      "manufacturer": "google"
     }
   }
 ]

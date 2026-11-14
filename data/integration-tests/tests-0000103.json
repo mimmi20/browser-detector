@@ -1401,9 +1401,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "Audisto Crawler (mobile; essential; +https://audisto.com/bot)"
     },
     "expected": {
@@ -1426,7 +1426,7 @@
           "size": null
         },
         "type": "mobile-device",
-        "ismobile": false,
+        "ismobile": true,
         "istv": false,
         "dualOrientation": null,
         "simCount": 0,

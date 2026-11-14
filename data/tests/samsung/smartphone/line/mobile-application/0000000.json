@@ -1,19 +1,64 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A105FN Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 Line/11.3.1/IAB"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 Line/6.9.4/IAB"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-A105FN",
-      "marketingName": "Galaxy A10",
+      "deviceName": "SM-G920F",
+      "marketingName": "Galaxy S6 (Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1520,
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Line",
+      "modus": null,
+      "version": "6.9.4",
+      "manufacturer": "line",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-J700F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 Line/7.5.2/IAB"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-J700F",
+      "marketingName": "Galaxy J7 4G (India, Thailand)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 6.2
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -25,7 +70,7 @@
     "client": {
       "name": "Line",
       "modus": null,
-      "version": "11.3.1",
+      "version": "7.5.2",
       "manufacturer": "line",
       "type": "mobile-application",
       "isbot": false,
@@ -34,31 +79,31 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "88.0.4324.181",
+      "version": "57.0.2987.132",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S9010 Build/UP1A.241005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.162 Mobile Safari/537.36 Line/15.6.1/IAB"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G950F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 Line/7.6.2/IAB"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-S9010",
-      "marketingName": "Galaxy S22 5G (China)",
+      "deviceName": "SM-G950F",
+      "marketingName": "Galaxy S8 (Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2340,
-        "height": 1080,
+        "width": 2960,
+        "height": 1440,
         "touch": true,
-        "size": 6.1
+        "size": 5.8
       },
       "type": "smartphone",
       "ismobile": true,
@@ -70,7 +115,7 @@
     "client": {
       "name": "Line",
       "modus": null,
-      "version": "15.6.1",
+      "version": "7.6.2",
       "manufacturer": "line",
       "type": "mobile-application",
       "isbot": false,
@@ -79,43 +124,43 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "14.0.0",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "132.0.6834.162",
+      "version": "59.0.3071.125",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-S9210 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/131.0.6778.262 Mobile Safari/537.36 Line/15.0.0/IAB"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N915FY Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 Line/7.16.1/IAB"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-S9210",
-      "marketingName": "Galaxy S24 (China)",
+      "deviceName": "SM-N915FY",
+      "marketingName": "Galaxy Note Edge (Europe)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2340,
-        "height": 1080,
+        "width": 2560,
+        "height": 1600,
         "touch": true,
-        "size": 6.2
+        "size": 5.6
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "bits": 0
     },
     "client": {
       "name": "Line",
       "modus": null,
-      "version": "15.0.0",
+      "version": "7.16.1",
       "manufacturer": "line",
       "type": "mobile-application",
       "isbot": false,
@@ -124,13 +169,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "14.0.0",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "131.0.6778.262",
+      "version": "62.0.3202.84",
       "manufacturer": "google"
     }
   },

@@ -51,12 +51,12 @@
   },
   {
     "headers": {
+      "sec-ch-ua-model": "Fairphone 6",
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform-version": "15.0.0",
       "sec-ch-ua": "\"Not)A;Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"138.0.7204.179\", \"DuckDuckGo\";v=\"138.0.7204.179\"",
       "sec-ch-ua-full-version": "138.0.7204.179",
-      "sec-ch-ua-model": "Fairphone 6",
-      "sec-ch-ua-platform-version": "15.0.0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -111,18 +111,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"DuckDuckGo\";v=\"151\", \"Chromium\";v=\"151\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"151.0.7922.199\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"FP4\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"DuckDuckGo\";v=\"151\", \"Chromium\";v=\"151\"",
+      "sec-ch-ua-full-version": "\"151.0.7922.199\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -183,18 +183,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"DuckDuckGo\";v=\"152\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"152.0.7977.64\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"FP5\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"DuckDuckGo\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.64\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -255,15 +255,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"FP4\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 (Ecosia android@152.0.0.0)"
     },
@@ -325,15 +325,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Fairphone 6\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 (Ecosia android@152.0.0.0)"
     },
@@ -545,15 +545,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Fairphone 6\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
@@ -615,15 +615,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"153.0.8010.47\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"FP4\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-full-version": "\"153.0.8010.47\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
     },
@@ -685,15 +685,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"151\", \"Not=A?Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"151.0.7922.108\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Fairphone 6\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"151\", \"Not=A?Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"151.0.7922.108\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36"
     },
@@ -755,15 +755,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"FP5\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.126\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
     },
@@ -825,14 +825,14 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"OperaMobile\";v=\"101\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"151\", \"Opera\";v=\"136\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"101.1.5178.89889\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Fairphone 6\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16\"",
+      "sec-ch-ua": "\"OperaMobile\";v=\"101\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"151\", \"Opera\";v=\"136\"",
+      "sec-ch-ua-full-version": "\"101.1.5178.89889\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36 OPR/101.0.0.0"
     },
@@ -893,18 +893,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Android WebView\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.181\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Fairphone 6\"",
+      "x-requested-with": "com.swisscows.search",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Android WebView\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.181\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; Fairphone 6 Build/FP6.QREL.16.95.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Mobile Safari/537.36",
-      "x-requested-with": "com.swisscows.search"
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Fairphone 6 Build/FP6.QREL.16.95.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.181 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -1015,9 +1015,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"150.0.7871.186\", \"Google Chrome\";v=\"150.0.7871.186\"",
       "sec-ch-ua-model": "FreeYond P6",
       "sec-ch-ua-platform-version": "13.0.0",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"150.0.7871.186\", \"Google Chrome\";v=\"150.0.7871.186\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
     },
     "expected": {
@@ -1137,7 +1137,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 75
+          "size": 75.0
         },
         "type": "tv",
         "ismobile": false,
@@ -1321,15 +1321,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Google Chrome\";v=\"152\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"E940-2878-03\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Google Chrome\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36"
     },
@@ -3391,18 +3391,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"DuckDuckGo\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.181\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 8a\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"DuckDuckGo\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.181\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -3463,18 +3463,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"DuckDuckGo\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.181\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 8\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"DuckDuckGo\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.181\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -3535,18 +3535,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"DuckDuckGo\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.181\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 9a\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"DuckDuckGo\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.181\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -3607,18 +3607,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"DuckDuckGo\";v=\"151\", \"Chromium\";v=\"151\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"151.0.7922.199\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 9 Pro\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"DuckDuckGo\";v=\"151\", \"Chromium\";v=\"151\"",
+      "sec-ch-ua-full-version": "\"151.0.7922.199\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -3679,18 +3679,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"DuckDuckGo\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"153.0.8010.36\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 9 Pro XL\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-full-version": "\"153.0.8010.36\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -3751,18 +3751,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"DuckDuckGo\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.106\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 10 Pro\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"DuckDuckGo\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.106\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -3823,15 +3823,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.63\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 7 Pro\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.63\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36 (Ecosia android@150.0.0.0)"
     },
@@ -3893,15 +3893,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.63\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 10a\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.63\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36 (Ecosia android@150.0.0.0)"
     },
@@ -3963,15 +3963,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 8a\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 (Ecosia android@152.0.0.0)"
     },
@@ -4033,15 +4033,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 8 Pro\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36 (Ecosia android@152.0.0.0)"
     },
@@ -4169,7 +4169,7 @@
           "width": 2340,
           "height": 1080,
           "touch": true,
-          "size": 6
+          "size": 6.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -5269,7 +5269,7 @@
           "width": 2340,
           "height": 1080,
           "touch": true,
-          "size": 6
+          "size": 6.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -5353,15 +5353,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 10\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
@@ -5423,15 +5423,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Pixel 9 Pro\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },

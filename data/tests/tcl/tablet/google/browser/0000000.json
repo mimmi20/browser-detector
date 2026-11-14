@@ -1,6 +1,501 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fr-be; onetouch EVO7 Build/MAIN_01) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Evo 7",
+      "marketingName": "OneTouch Evo 7",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; ONE TOUCH EVO7HD Build/JRO03H) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Evo 7 HD",
+      "marketingName": "OneTouch Evo 7 HD",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "26.0.1410.58",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; I213 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "I213",
+      "marketingName": "OneTouch Pixi 7",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "36.0.1985.135",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "36.0.1985.135",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; one touch T10 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "T10",
+      "marketingName": "OneTouch T10",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fr-fr; one touch T20 Build/MAIN) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "T20",
+      "marketingName": "OneTouch T20",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; ONE TOUCH TAB 7 Build/GSDT011) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "OT-TAB7",
+      "marketingName": "OneTouch Tab 7",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "18.0.1025.166",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; fr-fr; ONE TOUCH TAB 7HD Build/SDT016) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "OT-TAB7HD",
+      "marketingName": "OneTouch Tab 7 HD",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; Telekom Puls Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Puls",
+      "marketingName": "Puls",
+      "manufacturer": "tcl",
+      "brand": "telekom",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "68.0.3440.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 9020A Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "9020A",
+      "marketingName": "Trek HD",
+      "manufacturer": "tcl",
+      "brand": "at-t",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; TCL Xess P17AA Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "P17AA",
+      "marketingName": "Xess",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 17.3
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "48.0.2564.95",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "48.0.2564.95",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 9009G Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "9009G",
+      "marketingName": "1T 7\" Wi-Fi",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "68.0.3440.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "68.0.3440.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; 9013A Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Safari/537.36"
     },
     "device": {
@@ -13,7 +508,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -46,6 +541,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 8082) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "8082",
+      "marketingName": "1T 10\" Wi-Fi",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "85.0.4183.81",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; 8052) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36"
     },
     "device": {
@@ -58,7 +598,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -103,7 +643,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -136,19 +676,19 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; 8091_EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 9009A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "8091_EEA",
-      "marketingName": "1T 10\" Wi-Fi (2020)",
+      "deviceName": "9009A",
+      "marketingName": "1T 7\" Wi-Fi",
       "manufacturer": "tcl",
       "brand": "alcatel",
       "display": {
-        "width": 1280,
-        "height": 800,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": 10.1
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -169,7 +709,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "8.1.0",
       "manufacturer": "google",
       "bits": 0
     },
@@ -271,6 +811,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; 8091_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "8091_EEA",
+      "marketingName": "1T 10\" Wi-Fi (2020)",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "101.0.4951.41",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; 9029W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
     },
     "device": {
@@ -283,7 +868,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -373,7 +958,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -469,7 +1054,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -514,7 +1099,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -559,7 +1144,7 @@
         "width": 1024,
         "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -638,15 +1223,6 @@
   {
     "headers": {
       "sec-ch-ua-model": "\"9445X\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"16.0.0\"",
-      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
-      "sec-ch-ua-full-version": "\"154.0.8037.57\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
     },
     "device": {
@@ -671,7 +1247,7 @@
     "client": {
       "name": "Chrome",
       "modus": null,
-      "version": "154.0.0",
+      "version": "154.0.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
@@ -680,13 +1256,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "16.0.0",
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "154.0.0",
+      "version": "154.0.0.0",
       "manufacturer": "google"
     }
   }

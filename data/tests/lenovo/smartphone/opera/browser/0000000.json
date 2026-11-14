@@ -1,12 +1,12 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A319 Build/MocorDroid4.4.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36 OPR/30.0.1856.93524"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.0; Lenovo A1000 Build/S100; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 OPR/19.0.2254.108926"
     },
     "device": {
       "architecture": "",
-      "deviceName": "A319",
-      "marketingName": "RocStar",
+      "deviceName": "A1000",
+      "marketingName": "A1000",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "display": {
@@ -25,40 +25,40 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "30.0.1856.93524",
+      "version": "19.0.2254.108926",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "MocorDroid",
-      "marketingName": "MocorDroid",
-      "version": "4.4.2",
-      "manufacturer": "unknown",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "43.0.2357.78",
+      "version": "53.0.2785.124",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto g(6)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36 OPR/54.3.2672.50220 comdirect/1.0 (appVersion:19.11.0;deviceName:nokia 6;deviceType:mobile)"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0; Lenovo K50-t5 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36 OPR/19.0.2254.108926"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Moto G6",
-      "marketingName": "Moto G6",
+      "deviceName": "K50 T5",
+      "marketingName": "K3 Note",
       "manufacturer": "lenovo",
-      "brand": "motorola",
+      "brand": "lenovo",
       "display": {
-        "width": 2160,
+        "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -70,7 +70,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "54.3.2672.50220",
+      "version": "19.0.2254.108926",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -79,76 +79,31 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "6.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "76.0.3809.132",
+      "version": "46.0.2490.76",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Moto Z3 Play Build/PPWS29.131-27-1-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36 OPT/2.0.87"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Lenovo P1ma40 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36 OPR/42.7.2246.114996"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Moto Z3 Play",
-      "marketingName": "Moto Z3 Play",
+      "deviceName": "P1ma40",
+      "marketingName": "Vibe P1m",
       "manufacturer": "lenovo",
-      "brand": "motorola",
+      "brand": "lenovo",
       "display": {
-        "width": 2160,
-        "height": 1080,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": 6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Touch",
-      "modus": null,
-      "version": "2.0.87",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto z4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36 OPR/61.2.3076.56749"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Moto Z4",
-      "marketingName": "Moto Z4",
-      "manufacturer": "lenovo",
-      "brand": "motorola",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
+        "size": null
       },
       "type": "smartphone",
       "ismobile": true,
@@ -160,7 +115,7 @@
     "client": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "61.2.3076.56749",
+      "version": "42.7.2246.114996",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -169,31 +124,31 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "5.1.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "86.0.4240.198",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto g(6) Build/PPSS29.55-37-7-10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 OPT/2.9"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Lenovo A7020a48 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 OPR/43.0.2246.121183"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Moto G6",
-      "marketingName": "Moto G6",
+      "deviceName": "A7020a48",
+      "marketingName": "Vibe K5 Note",
       "manufacturer": "lenovo",
-      "brand": "motorola",
+      "brand": "lenovo",
       "display": {
-        "width": 2160,
+        "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -203,9 +158,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Opera Touch",
+      "name": "Opera Mobile",
       "modus": null,
-      "version": "2.9.0",
+      "version": "43.0.2246.121183",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -214,13 +169,148 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "6.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "88.0.4324.181",
+      "version": "59.0.3071.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Lenovo A6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36 OPR/63.3.3216.58675"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "A6000",
+      "marketingName": "A6000",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "63.3.3216.58675",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.0; Lenovo A7600 Build/LRX21M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36 OPR/55.1.2254.56965"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "A760",
+      "marketingName": "A760",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "55.1.2254.56965",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 8.0.0; Lenovo K520 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.50 Mobile Safari/537.36 OPR/60.0.2254.59405"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "K520",
+      "marketingName": "K520",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.65
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "60.0.2254.59405",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.50",
       "manufacturer": "google"
     }
   },
@@ -266,6 +356,51 @@
     "engine": {
       "name": "Blink",
       "version": "76.0.3809.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; A6020a46 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "A6020a46",
+      "marketingName": "Vibe K5 Plus",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "77.0.4054.90",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.101",
       "manufacturer": "google"
     }
   },
@@ -418,7 +553,7 @@
         "width": 1440,
         "height": 720,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -446,51 +581,6 @@
     "engine": {
       "name": "Blink",
       "version": "74.0.3729.157",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto z4 Build/QPFS30.130-15-11-23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.155 Mobile Safari/537.36 OPX/3.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Moto Z4",
-      "marketingName": "Moto Z4",
-      "manufacturer": "lenovo",
-      "brand": "motorola",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera GX",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "140.0.7339.155",
       "manufacturer": "google"
     }
   },
@@ -716,60 +806,6 @@
     "engine": {
       "name": "Blink",
       "version": "128.0.6613.186",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"moto g06\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"15\"",
-      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Opera\";v=\"129\", \" Not A;Brand\";v=\"99\", \"OperaMobile\";v=\"97\"",
-      "sec-ch-ua-full-version": "\"97.3.5038.88255\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36 OPR/97.0.0.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Moto G06",
-      "marketingName": "Moto G06",
-      "manufacturer": "lenovo",
-      "brand": "motorola",
-      "display": {
-        "width": 1640,
-        "height": 720,
-        "touch": true,
-        "size": 6.88
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "97.3.5038.88255",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "15.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "146.0.0",
       "manufacturer": "google"
     }
   }

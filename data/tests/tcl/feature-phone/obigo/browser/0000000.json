@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Alcatel-OH1C/1.0 ObigoInternetBrowser/2.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "OH1C",
-      "marketingName": "OH1C",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Obigo",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "obigo",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "ALCATEL_3020D/1.0 ObigoInternetBrowser/Q03C"
     },
     "device": {
@@ -58,7 +13,7 @@
         "width": 220,
         "height": 176,
         "touch": false,
-        "size": 2
+        "size": 2.0
       },
       "type": "feature-phone",
       "ismobile": true,

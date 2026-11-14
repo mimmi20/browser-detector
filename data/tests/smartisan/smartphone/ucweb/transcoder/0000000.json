@@ -136,7 +136,52 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; zh-CN; SM919 Build/MXB48T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/11.9.5.975 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.1; zh-CN; OS105 Build/NGI77B) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.9.8.1078 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "OS105",
+      "marketingName": "Nut Pro 2",
+      "manufacturer": "smartisan",
+      "brand": "smartisan",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.9.8.1078",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; zh-CN; SM919 Build/MXB48T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.4.9.941 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -160,7 +205,7 @@
     "client": {
       "name": "UC Browser",
       "modus": null,
-      "version": "11.9.5.975",
+      "version": "11.4.9.941",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false,
@@ -175,53 +220,8 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "57.0.2987.108",
+      "version": "40.0.2214.89",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1.1; zh-CN; SM801 Build/LMY48Z) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.4.846 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM801",
-      "marketingName": "T2",
-      "manufacturer": "smartisan",
-      "brand": "smartisan",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "11.0.4.846",
-      "manufacturer": "ucweb",
-      "type": "transcoder",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Smartisan OS",
-      "marketingName": "Smartisan OS",
-      "version": "2.5.0",
-      "manufacturer": "smartisan",
-      "bits": 0
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
     }
   }
 ]

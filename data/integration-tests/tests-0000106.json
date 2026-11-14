@@ -1301,11 +1301,11 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"DuckDuckGo\";v=\"140\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -1359,11 +1359,11 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"DuckDuckGo\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -1417,9 +1417,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"DuckDuckGo\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -1473,17 +1473,17 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Android WebView\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"Android WebView\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.159 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.159 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -1543,11 +1543,11 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Android WebView\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.159 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.159 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -1601,11 +1601,11 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.duckduckgo.mobile.android",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Chromium\";v=\"148\", \"Android WebView\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -1659,9 +1659,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Chromium\";v=\"148\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36 (Ecosia android@148.0.0.0)"
     },
     "expected": {
@@ -1715,17 +1715,17 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Android WebView\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"\"",
+      "x-requested-with": "com.emporia.emporiaapprebuild",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Android WebView\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36",
-      "x-requested-with": "com.emporia.emporiaapprebuild"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -1785,11 +1785,11 @@
   },
   {
     "headers": {
+      "x-requested-with": "com.emporia.emporiaapprebuild",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Android WebView\";v=\"150\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36",
-      "x-requested-with": "com.emporia.emporiaapprebuild"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -1993,9 +1993,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -2049,9 +2049,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -2105,9 +2105,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -2161,9 +2161,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -2267,9 +2267,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -2423,11 +2423,11 @@
   },
   {
     "headers": {
+      "x-requested-with": "XMLHttpRequest",
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
-      "x-requested-with": "XMLHttpRequest"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
       "headers": {

@@ -1,17 +1,18 @@
 [
   {
     "headers": {
-      "user-agent": "Vienna/2.3.0.2301"
+      "x-requested-with": "privacy.explorer.fast.safe.browser",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Ulefone_S1 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Vienna",
-      "marketingName": "Vienna",
+      "deviceName": "S1",
+      "marketingName": "S1",
       "manufacturer": "ulefone",
       "brand": "ulefone",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 960,
+        "height": 480,
         "touch": true,
         "size": 5.5
       },
@@ -34,194 +35,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "8.1.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vienna/2.5.0.2501"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Vienna",
-      "marketingName": "Vienna",
-      "manufacturer": "ulefone",
-      "brand": "ulefone",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vienna/2.4.0.2401"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Vienna",
-      "marketingName": "Vienna",
-      "manufacturer": "ulefone",
-      "brand": "ulefone",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vienna/2.3.4.2305"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Vienna",
-      "marketingName": "Vienna",
-      "manufacturer": "ulefone",
-      "brand": "ulefone",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Vienna/2.2.2.2212"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Vienna",
-      "marketingName": "Vienna",
-      "manufacturer": "ulefone",
-      "brand": "ulefone",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "google"
     }
   }
 ]

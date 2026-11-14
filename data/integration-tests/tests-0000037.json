@@ -1,9 +1,9 @@
 [
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -57,9 +57,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -113,9 +113,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"148\", \"HeadlessChrome\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "SaferPageCrawler/0.3 (+https://saferpage.de/bot; schedules passive German-content website checks; report examples: https://saferpage.de/tests; kostenloser Report: https://saferpage.de/geld.de)"
     },
     "expected": {
@@ -169,9 +169,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -225,9 +225,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -381,9 +381,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -437,9 +437,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "AtlasBot/1.0 (+https://atlas.harmoniamix.com/bot)"
     },
     "expected": {
@@ -493,9 +493,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -549,9 +549,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -605,9 +605,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not)A;Brand\";v=\"99\", \"Google Chrome\";v=\"127\", \"Chromium\";v=\"127\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -761,9 +761,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -817,9 +817,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "MerchantResearchBot/1.0 (+https://example.org/crawler; contact: abuse@example.org)"
     },
     "expected": {
@@ -923,9 +923,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PageSourceSearchBot/1.0; +https://pagesourcesearch.com/bot) Chrome/128.0.0.0 Safari/537.36"
     },
     "expected": {
@@ -1083,9 +1083,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not:A-Brand\";v=\"8\", \"Google Chrome\";v=\"146\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -2239,9 +2239,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; HubSpot Crawler; +https://www.hubspot.com) Chrome/131.0.0.0 Safari/537.36"
     },
     "expected": {
@@ -2971,12 +2971,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Generic Bot",
+        "name": null,
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "crawler",
-        "isbot": true,
+        "type": "unknown",
+        "isbot": false,
         "bits": 0
       },
       "os": {
@@ -3645,9 +3645,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"HeadlessChrome\";v=\"152\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"
     },
     "expected": {
@@ -3801,9 +3801,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Microsoft Edge\";v=\"145\", \"Chromium\";v=\"145\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -3857,9 +3857,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Microsoft Edge\";v=\"146\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -3913,9 +3913,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Microsoft Edge\";v=\"126\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -3969,9 +3969,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Microsoft Edge\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -4375,9 +4375,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (keys-so-bot)"
     },
     "expected": {
@@ -5007,12 +5007,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Generic Bot",
+        "name": "Mozilla Application Suite",
         "modus": null,
-        "version": null,
-        "manufacturer": "unknown",
-        "type": "crawler",
-        "isbot": true,
+        "version": "5.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
         "bits": 0
       },
       "os": {
@@ -5023,9 +5023,9 @@
         "bits": 0
       },
       "engine": {
-        "name": null,
+        "name": "Gecko",
         "version": null,
-        "manufacturer": "unknown"
+        "manufacturer": "mozilla"
       }
     }
   },
@@ -5057,12 +5057,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Generic Bot",
+        "name": "Mozilla Application Suite",
         "modus": null,
-        "version": null,
-        "manufacturer": "unknown",
-        "type": "crawler",
-        "isbot": true,
+        "version": "5.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
         "bits": 0
       },
       "os": {
@@ -5073,9 +5073,9 @@
         "bits": 0
       },
       "engine": {
-        "name": null,
+        "name": "Gecko",
         "version": null,
-        "manufacturer": "unknown"
+        "manufacturer": "mozilla"
       }
     }
   },

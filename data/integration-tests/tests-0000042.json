@@ -431,7 +431,7 @@
         "modus": null,
         "version": "2.0.0",
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -481,7 +481,7 @@
         "modus": null,
         "version": "1.1.0",
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -531,7 +531,7 @@
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -581,7 +581,7 @@
         "modus": null,
         "version": "1.0.0",
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -631,7 +631,7 @@
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -731,7 +731,7 @@
         "modus": null,
         "version": "0.3.0",
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -836,10 +836,10 @@
         "bits": 0
       },
       "os": {
-        "name": "MRE",
-        "marketingName": "MAUI Runtime Environment",
+        "name": null,
+        "marketingName": null,
         "version": null,
-        "manufacturer": "mediatek",
+        "manufacturer": "unknown",
         "bits": 0
       },
       "engine": {
@@ -881,7 +881,7 @@
         "modus": null,
         "version": "1.0.0",
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -931,7 +931,7 @@
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -977,12 +977,12 @@
         "bits": 0
       },
       "client": {
-        "name": "generic spider",
+        "name": null,
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "bot",
-        "isbot": true,
+        "type": "unknown",
+        "isbot": false,
         "bits": 0
       },
       "os": {
@@ -1651,8 +1651,8 @@
   },
   {
     "headers": {
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-mobile": "?0",
       "user-agent": "broker-db-crawler/0.1 (broker enrichment; +https://github.com/prosperity-life/broker-db)"
     },
     "expected": {
@@ -1705,9 +1705,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"148\", \"HeadlessChrome\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "HanaleiBot runid=beta-stage-integration-test"
     },
     "expected": {
@@ -2411,9 +2411,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"iOS\"",
       "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"iOS\"",
       "user-agent": "Scrapy/2.11.2 (+https://scrapy.org)"
     },
     "expected": {
@@ -2436,7 +2436,7 @@
           "size": null
         },
         "type": "unknown",
-        "ismobile": true,
+        "ismobile": false,
         "istv": false,
         "dualOrientation": null,
         "simCount": 0,

@@ -201,15 +201,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"141.0.7150.0\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"\"",
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua-platform-version": "\"19.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+      "sec-ch-ua-full-version": "\"141.0.7150.0\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Iron Safari/537.36"
     },
@@ -228,7 +228,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Iron Safari/537.36"
       },
       "device": {
-        "architecture": "x86",
+        "architecture": "",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -801,7 +801,7 @@
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -851,7 +851,7 @@
         "modus": null,
         "version": "4.1.1",
         "manufacturer": "unknown",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -871,9 +871,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"YaBrowser\";v=\"24.10\", \"Yowser\";v=\"2.5\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 YaBrowser/24.10.0.0 Safari/537.36"
     },
     "expected": {
@@ -1127,15 +1127,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"147\", \"Not.A/Brand\";v=\"8\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"147.0.7727.118\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"\"",
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua-platform-version": "\"7.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"147\", \"Not.A/Brand\";v=\"8\"",
+      "sec-ch-ua-full-version": "\"147.0.7727.118\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Pumoxbot"
     },
@@ -1154,7 +1154,7 @@
         "user-agent": "Pumoxbot"
       },
       "device": {
-        "architecture": "x86",
+        "architecture": "",
         "deviceName": null,
         "marketingName": null,
         "manufacturer": "unknown",
@@ -2547,9 +2547,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Chromium\";v=\"151\", \"Google Chrome\";v=\"151\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/151.0.0.0 Safari/537.36 PTST/260802.202201"
     },
     "expected": {
@@ -4453,15 +4453,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.63\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"\"",
       "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.63\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 (Ecosia android@150.0.0.0)"
     },
@@ -4480,7 +4480,7 @@
         "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 (Ecosia android@150.0.0.0)"
       },
       "device": {
-        "architecture": "x86",
+        "architecture": "",
         "deviceName": "general Mobile device",
         "marketingName": "general Mobile device",
         "manufacturer": "unknown",
@@ -4523,9 +4523,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 (Ecosia android@150.0.0.0)"
     },
     "expected": {
@@ -4548,7 +4548,7 @@
           "size": null
         },
         "type": "mobile-device",
-        "ismobile": false,
+        "ismobile": true,
         "istv": false,
         "dualOrientation": null,
         "simCount": 0,

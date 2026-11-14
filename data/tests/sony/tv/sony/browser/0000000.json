@@ -103,7 +103,7 @@
         "width": 1920,
         "height": 1080,
         "touch": false,
-        "size": 42
+        "size": 42.0
       },
       "type": "tv",
       "ismobile": false,
@@ -328,7 +328,7 @@
         "width": 1920,
         "height": 1080,
         "touch": false,
-        "size": 32
+        "size": 32.0
       },
       "type": "tv",
       "ismobile": false,
@@ -373,7 +373,7 @@
         "width": 1920,
         "height": 1080,
         "touch": false,
-        "size": 55
+        "size": 55.0
       },
       "type": "tv",
       "ismobile": false,
@@ -643,7 +643,7 @@
         "width": 1920,
         "height": 1080,
         "touch": false,
-        "size": 47
+        "size": 47.0
       },
       "type": "tv",
       "ismobile": false,
@@ -716,51 +716,6 @@
     "engine": {
       "name": "Presto",
       "version": "2.10.287",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; Opera TV Store/6222) Presto/2.12.407 Version/12.50 Model/Sony-KJ-48W700C SonyCEBrowser/1.0 (KJ-48W700C; CTV/PKG2.401JPA; JPN)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "SonyCEBrowser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "sony",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Opera TV",
-      "marketingName": "Opera TV",
-      "version": "6222.0.0",
-      "manufacturer": "opera",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
       "manufacturer": "opera"
     }
   },

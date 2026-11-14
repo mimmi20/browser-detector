@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Snapchat/10.85.5.74 (SM-A405FN; Android 9#A405FNXXU2ASJ1#28; gzip) V/MUSHROOM"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G928F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 Snapchat/10.22.7.0 (SM-G928F; Android 7.0#G928FXXU3CQH4#24; gzip)"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-A405FN",
-      "marketingName": "Galaxy A40",
+      "deviceName": "SM-G928F",
+      "marketingName": "Galaxy S6 Edge+ LTE (Europe)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2340,
-        "height": 1080,
+        "width": 2560,
+        "height": 1440,
         "touch": true,
-        "size": 5.9
+        "size": 5.7
       },
       "type": "smartphone",
       "ismobile": true,
@@ -25,7 +25,232 @@
     "client": {
       "name": "Snapchat",
       "modus": null,
-      "version": "10.85.5.74",
+      "version": "10.22.7.0",
+      "manufacturer": "snap",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G950F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 Snapchat/10.21.0.0 (SM-G950F; Android 7.0#G950FXXU1AQH3#24; gzip)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-G950F",
+      "marketingName": "Galaxy S8 (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "10.21.0.0",
+      "manufacturer": "snap",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G930F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 Snapchat/10.23.11.0 (SM-G930F; Android 7.0#G930FXXU1DQJ3#24; gzip)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-G930F",
+      "marketingName": "Galaxy S7",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "10.23.11.0",
+      "manufacturer": "snap",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G920F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 Snapchat/10.24.5.0 (SM-G920F; Android 7.0#G920FXXS5EQL5#24; gzip)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-G920F",
+      "marketingName": "Galaxy S6 (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "10.24.5.0",
+      "manufacturer": "snap",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 Snapchat/10.23.1.0 (SM-G935F; Android 7.0#G935FXXS1DQGK#24; gzip)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-G935F",
+      "marketingName": "Galaxy S7 Edge (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "10.23.1.0",
+      "manufacturer": "snap",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-A530W Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.121 Mobile Safari/537.36 Snapchat/12.85.1.0 (SM-A530W; Android 9#A530WVLSICUJ2#28; gzip; panda; )"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-A530W",
+      "marketingName": "Galaxy A8 (2018)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2220,
+        "height": 1080,
+        "touch": true,
+        "size": 5.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "12.85.1.0",
       "manufacturer": "snap",
       "type": "mobile-application",
       "isbot": false,
@@ -39,26 +264,26 @@
       "bits": 0
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "123.0.6312.121",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Snapchat/10.86.0.55 (SM-A705FN; Android 10#A705FNXXU5BTF1#29; gzip) V/MUSHROOM"
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-A146U Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.124 Mobile Safari/537.36 Snapchat/12.70.0.34 (SM-A146U; Android 14#A146USQS6CXC1#34; gzip; panda; )"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-A705FN",
-      "marketingName": "Galaxy A70 (Global)",
+      "deviceName": "SM-A146U",
+      "marketingName": "Galaxy A14 5G (USA)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2400,
+        "width": 2408,
         "height": 1080,
         "touch": true,
-        "size": 6.7
+        "size": 6.6
       },
       "type": "smartphone",
       "ismobile": true,
@@ -70,7 +295,7 @@
     "client": {
       "name": "Snapchat",
       "modus": null,
-      "version": "10.86.0.55",
+      "version": "12.70.0.34",
       "manufacturer": "snap",
       "type": "mobile-application",
       "isbot": false,
@@ -79,14 +304,61 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "14.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "124.0.6367.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-A146U Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.124 Mobile Safari/537.36 Snapchat/12.70.0.34 (SM-A146U; Android 14#A146USQS6CXC1#34; gzip; panda; )"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-A146U",
+      "marketingName": "Galaxy A14 5G (USA)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "12.70.0.34",
+      "manufacturer": "snap",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "14.0.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.124",
+      "manufacturer": "google"
     }
   }
 ]

@@ -401,9 +401,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Quetta\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -507,9 +507,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Samsung Internet\";v=\"24.0\", \"Chromium\";v=\"117\", \"Not;A=Brand\";v=\"8\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/24.0 Chrome/117.0.0.0 Mobile Safari/537.36"
     },
     "expected": {

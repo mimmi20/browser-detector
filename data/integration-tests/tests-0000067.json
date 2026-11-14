@@ -51,15 +51,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.201\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"Tab 60 Pro\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.201\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
     },
@@ -171,14 +171,14 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Opera\";v=\"134\", \"Chromium\";v=\"149\", \";Not A Brand\";v=\"99\", \"OperaMobile\";v=\"100\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"100.1.5122.89271\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"MEGA 1\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"13\"",
+      "sec-ch-ua": "\"Opera\";v=\"134\", \"Chromium\";v=\"149\", \";Not A Brand\";v=\"99\", \"OperaMobile\";v=\"100\"",
+      "sec-ch-ua-full-version": "\"100.1.5122.89271\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 OPR/100.0.0.0"
     },
@@ -255,7 +255,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -405,7 +405,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -455,7 +455,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -505,7 +505,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1005,7 +1005,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1355,7 +1355,7 @@
           "width": 1280,
           "height": 720,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -1689,15 +1689,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.114\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"FORT 1\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.114\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36"
     },
@@ -1759,15 +1759,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.128\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"BL9000\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.128\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
@@ -1879,15 +1879,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.63\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"FORT 2\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.63\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
@@ -2065,7 +2065,7 @@
           "width": 1280,
           "height": 720,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -3765,7 +3765,7 @@
           "width": 2000,
           "height": 1200,
           "touch": true,
-          "size": 12
+          "size": 12.0
         },
         "type": "tablet",
         "ismobile": true,
@@ -4165,7 +4165,7 @@
           "width": 854,
           "height": 480,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -4515,7 +4515,7 @@
           "width": 1920,
           "height": 1080,
           "touch": false,
-          "size": 43
+          "size": 43.0
         },
         "type": "tv",
         "ismobile": false,
@@ -4565,7 +4565,7 @@
           "width": 1366,
           "height": 768,
           "touch": false,
-          "size": 32
+          "size": 32.0
         },
         "type": "tv",
         "ismobile": false,
@@ -4615,7 +4615,7 @@
           "width": 1366,
           "height": 768,
           "touch": false,
-          "size": 32
+          "size": 32.0
         },
         "type": "tv",
         "ismobile": false,

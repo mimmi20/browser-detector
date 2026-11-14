@@ -1981,7 +1981,7 @@
         "modus": null,
         "version": "2.0.0.0",
         "manufacturer": "company-spotter",
-        "type": "bot",
+        "type": "crawler",
         "isbot": true,
         "bits": 0
       },
@@ -3151,9 +3151,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)"
     },
     "expected": {
@@ -3257,9 +3257,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "DuckDuckBot/1.0; (+http://duckduckgo.com/duckduckbot.html)"
     },
     "expected": {
@@ -4013,9 +4013,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Chromium\";v=\"151\", \"Not=A?Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
     },
     "expected": {
@@ -4319,9 +4319,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"HeadlessChrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "quillbot.com"
     },
     "expected": {
@@ -4375,9 +4375,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"HeadlessChrome\";v=\"134\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "pc"
     },
     "expected": {
@@ -4400,7 +4400,7 @@
           "size": null
         },
         "type": "unknown",
-        "ismobile": true,
+        "ismobile": false,
         "istv": false,
         "dualOrientation": null,
         "simCount": 0,
@@ -4431,9 +4431,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"HeadlessChrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "YisouSpider"
     },
     "expected": {
@@ -4487,9 +4487,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "kagi-fetcher/1.0"
     },
     "expected": {
@@ -4643,14 +4643,14 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"HeadlessChrome\";v=\"133\", \"Chromium\";v=\"133\"",
-      "sec-ch-ua-arch": "\"x64\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-full-version": "\"133.0.6943.16\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"\"",
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"HeadlessChrome\";v=\"133\", \"Chromium\";v=\"133\"",
+      "sec-ch-ua-full-version": "\"133.0.6943.16\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x64\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (compatible; Clearscopebot/1.0)"
     },
@@ -4668,7 +4668,7 @@
         "user-agent": "Mozilla/5.0 (compatible; Clearscopebot/1.0)"
       },
       "device": {
-        "architecture": "x64",
+        "architecture": "",
         "deviceName": null,
         "marketingName": null,
         "manufacturer": "unknown",
@@ -4811,9 +4811,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -4867,9 +4867,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"146\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -4923,9 +4923,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -4979,9 +4979,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {
@@ -5035,9 +5035,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SenderBot/1.0; Sender Online Marketing GmbH; +https://sender-marketing.de/bot)"
     },
     "expected": {

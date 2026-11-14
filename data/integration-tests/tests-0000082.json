@@ -117,7 +117,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 50
+          "size": 50.0
         },
         "type": "tv",
         "ismobile": false,
@@ -167,7 +167,7 @@
           "width": 1920,
           "height": 1080,
           "touch": false,
-          "size": 43
+          "size": 43.0
         },
         "type": "tv",
         "ismobile": false,
@@ -1517,7 +1517,7 @@
           "width": 854,
           "height": 480,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -1617,7 +1617,7 @@
           "width": 2560,
           "height": 1600,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1667,7 +1667,7 @@
           "width": 2560,
           "height": 1600,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1801,9 +1801,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
       "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"macOS\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Nexus 6 Build/NBD92G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"
     },
     "expected": {
@@ -1823,10 +1823,10 @@
           "width": 2560,
           "height": 1440,
           "touch": true,
-          "size": 6
+          "size": 6.0
         },
         "type": "phablet",
-        "ismobile": false,
+        "ismobile": true,
         "istv": false,
         "dualOrientation": true,
         "simCount": 1,
@@ -2357,15 +2357,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.59\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"moto g(30)\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.59\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36 (Ecosia android@149.0.0.0)"
     },
@@ -3043,7 +3043,7 @@
           "width": 1280,
           "height": 720,
           "touch": true,
-          "size": 4
+          "size": 4.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -4727,15 +4727,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.200\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"moto g(7) power\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.200\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36"
     },
@@ -4997,15 +4997,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.114\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"moto g23\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.114\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },

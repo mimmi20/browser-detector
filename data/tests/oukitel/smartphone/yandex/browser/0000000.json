@@ -136,6 +136,96 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 8.1.0; K7 Power) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaApp_Android/21.110.1 YaSearchBrowser/21.110.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "K7 Power",
+      "marketingName": "K7 Power",
+      "manufacturer": "oukitel",
+      "brand": "oukitel",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 6.0
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "21.110.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 8.1.0; WP1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 YaApp_Android/21.90.1 YaSearchBrowser/21.90.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "WP1",
+      "marketingName": "WP1",
+      "manufacturer": "oukitel",
+      "brand": "oukitel",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "21.90.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4577.82",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; WP16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 YaApp_Android/22.31.1 YaSearchBrowser/22.31.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -221,51 +311,6 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.154",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; WP21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.3.88.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "WP21",
-      "marketingName": "WP21",
-      "manufacturer": "oukitel",
-      "brand": "oukitel",
-      "display": {
-        "width": 2460,
-        "height": 1080,
-        "touch": true,
-        "size": 6.78
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "23.3.3.88.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "110.0.0.0",
       "manufacturer": "google"
     }
   },
@@ -1363,7 +1408,7 @@
         "width": 1152,
         "height": 576,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1858,7 +1903,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": 5
+        "size": 5.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1903,7 +1948,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": 5
+        "size": 5.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2083,7 +2128,7 @@
         "width": 1152,
         "height": 576,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2128,7 +2173,7 @@
         "width": 1152,
         "height": 576,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2398,7 +2443,7 @@
         "width": 1152,
         "height": 576,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2443,7 +2488,7 @@
         "width": 1152,
         "height": 576,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2533,7 +2578,7 @@
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": 5
+        "size": 5.0
       },
       "type": "smartphone",
       "ismobile": true,

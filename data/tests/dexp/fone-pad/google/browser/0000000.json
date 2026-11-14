@@ -1,31 +1,31 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; S110 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.94 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; DEXP Ursus 9EV 3G Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.68 Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "S110",
-      "marketingName": "Ursus S110",
+      "deviceName": "Ursus 9EV 3G",
+      "marketingName": "Ursus 9EV 3G",
       "manufacturer": "dexp",
       "brand": "dexp",
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1024,
+        "height": 768,
         "touch": true,
-        "size": 10.1
+        "size": 9.7
       },
       "type": "fone-pad",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "bits": 0
     },
     "client": {
-      "name": "Chrome WebView",
+      "name": "Chrome",
       "modus": null,
-      "version": "139.0.7258.94",
+      "version": "54.0.2840.68",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
@@ -34,13 +34,58 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "13.0.0",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "139.0.7258.94",
+      "version": "54.0.2840.68",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Ursus NS370i) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Ursus NS370i",
+      "marketingName": "Ursus NS370i",
+      "manufacturer": "dexp",
+      "brand": "dexp",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "77.0.3865.92",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.92",
       "manufacturer": "google"
     }
   }

@@ -3701,9 +3701,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not=A?Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"151.0.7922.137\", \"Chromium\";v=\"151.0.7922.137\"",
       "sec-ch-ua-model": "UE010",
       "sec-ch-ua-platform-version": "16.0.0",
+      "sec-ch-ua": "\"Not=A?Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"151.0.7922.137\", \"Chromium\";v=\"151.0.7922.137\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -3757,9 +3757,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not A(Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"132.0.6834.79\", \"Google Chrome\";v=\"132.0.6834.79\"",
       "sec-ch-ua-model": "UB101",
       "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua": "\"Not A(Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"132.0.6834.79\", \"Google Chrome\";v=\"132.0.6834.79\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -3813,9 +3813,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not A(Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"132.0.6834.79\", \"Google Chrome\";v=\"132.0.6834.79\"",
       "sec-ch-ua-model": "UB202",
       "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua": "\"Not A(Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"132.0.6834.79\", \"Google Chrome\";v=\"132.0.6834.79\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -3869,9 +3869,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"141.0.7390.122\", \"Not?A_Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"141.0.7390.122\"",
       "sec-ch-ua-model": "UB501",
       "sec-ch-ua-platform-version": "15.0.0",
+      "sec-ch-ua": "\"Google Chrome\";v=\"141.0.7390.122\", \"Not?A_Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"141.0.7390.122\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -3941,7 +3941,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 65
+          "size": 65.0
         },
         "type": "tv",
         "ismobile": false,
@@ -3975,15 +3975,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"Volla Phone 22\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"24\", \"Chromium\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.7977.82\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Mobile Safari/537.36"
     },
@@ -4061,7 +4061,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 55
+          "size": 55.0
         },
         "type": "tv",
         "ismobile": false,
@@ -4111,7 +4111,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 65
+          "size": 65.0
         },
         "type": "tv",
         "ismobile": false,
@@ -4145,15 +4145,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"W-V755-EEA\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },

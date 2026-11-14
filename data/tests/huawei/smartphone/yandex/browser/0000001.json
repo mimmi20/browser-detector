@@ -1,154 +1,64 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; MEP-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7339.710 YaApp_Android/25.104.1 YaSearchBrowser/25.104.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 5.1; TIT-L01) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "MEP-AN00",
-      "marketingName": "500 Pro",
-      "manufacturer": "huawei",
-      "brand": "honor",
-      "display": {
-        "width": 2736,
-        "height": 1264,
-        "touch": true,
-        "size": 6.55
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Search Browser",
-      "modus": null,
-      "version": "25.104.1",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "140.0.7339.710",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; MEY-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.102 YaBrowser/25.6.1.102.00 SA/3 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "MEY-AN00",
-      "marketingName": "500",
-      "manufacturer": "huawei",
-      "brand": "honor",
-      "display": {
-        "width": 2736,
-        "height": 1264,
-        "touch": true,
-        "size": 6.55
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "25.6.1.102.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "136.0.7103.102",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 16; BKQ-N49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.7444.220 YaBrowser/25.12.3.220.00 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "BKQ-N49",
-      "marketingName": "Magic 8 Pro",
-      "manufacturer": "huawei",
-      "brand": "honor",
-      "display": {
-        "width": 2808,
-        "height": 1256,
-        "touch": true,
-        "size": 6.71
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "25.12.3.220.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "142.0.7444.220",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm; Android 9; JAT-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaApp_Android/10.63 YaSearchBrowser/10.63 BroPP/1.0 SA/1 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "JAT-LX1",
-      "marketingName": "Honor 8A Pro",
+      "deviceName": "TIT-L01",
+      "marketingName": "Y6 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 1560,
+        "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 6.09
+        "size": 5.0
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "20.3.5.90.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; AUM-L41 Build/HONORAUM-L41) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 YaApp_Android/10.61 YaSearchBrowser/10.61"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "AUM-L41",
+      "marketingName": "Honor 7A",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
       },
       "type": "smartphone",
       "ismobile": true,
@@ -160,7 +70,7 @@
     "client": {
       "name": "Yandex Search Browser",
       "modus": null,
-      "version": "10.63.0",
+      "version": "10.61.0",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false,
@@ -169,13 +79,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "79.0.3945.117",
+      "version": "81.0.4044.138",
       "manufacturer": "google"
     }
   },
@@ -266,6 +176,51 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.96 YaBrowser/20.4.0.191.00 (beta) SA/0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "JSN-L21",
+      "marketingName": "Honor 8X",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "20.4.0.191.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.96",
       "manufacturer": "google"
     }
   },

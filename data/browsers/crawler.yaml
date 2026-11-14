@@ -14143,3 +14143,300 @@ seotrust-seocrawler:
     search:
       - SEOTRUST-seocrawler
   engine: unknown
+apply-hustle-bot:
+  name: ApplyHustleBot
+  manufacturer: start-2-solve
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ApplyHustleBot
+  engine: unknown
+down-site-now-bot:
+  name: DownSiteNowBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DownSiteNowBot
+  engine: unknown
+tech-trace-bot:
+  name: TechTraceBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TechTraceBot
+  engine: unknown
+de-domains:
+  name: deDomains
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - deDomains
+  engine: unknown
+phi9-dataset:
+  name: phi9-dataset
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - phi9-dataset
+  engine: unknown
+mailbot-ispdb:
+  name: Mailbot-ISPDB
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Mailbot-ISPDB
+  engine: unknown
+docminto-praxissuche:
+  name: docminto-praxissuche
+  manufacturer: timo-rende
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - docminto-praxissuche
+  engine: unknown
+akquise-werning-branchentext:
+  name: akquise-werning-branchentext
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - akquise-werning-branchentext
+  engine: unknown
+fokals-bot:
+  name: FokalsBot
+  manufacturer: vertex-innovation-collective
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FokalsBot
+  engine: unknown
+job-index-measurement:
+  name: JobIndexMeasurement
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - JobIndexMeasurement
+  engine: unknown
+tourbus-crawler:
+  name: TourbusCrawler
+  manufacturer: tourbus
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TourbusCrawler
+  engine: unknown
+refund-tam-check:
+  name: refund-tam-check
+  manufacturer: lex-hub
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - refund-tam-check
+  engine: unknown
+job-search-bot:
+  name: JobsearchBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - JobsearchBot
+  engine: unknown
+sr-image-research:
+  name: SR-image-research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SR-image-research
+  engine: unknown
+agentwebmap-bot:
+  name: agentwebmap-bot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - agentwebmap-bot
+  engine: unknown
+kaizr-registry:
+  name: kAIzr-registry
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - kAIzr-registry
+  engine: unknown
+taktikapp-linkcheck:
+  name: taktikapp-linkcheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - taktikapp-linkcheck
+  engine: unknown
+wp-defence-scanner:
+  name: wp-defence-scanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - wp-defence-scanner
+  engine: unknown
+salvo-bot:
+  name: SalvoBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SalvoBot
+  engine: unknown
+company-commercial-research:
+  name: CompanyCommercialResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CompanyCommercialResearch
+  engine: unknown
+donabase-psp-research:
+  name: donabase-psp-research
+  manufacturer: minds-and-meals
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - donabase-psp-research
+  engine: unknown
+redline-impressum-check:
+  name: RedlineImpressumCheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RedlineImpressumCheck
+  engine: unknown
+nensha-tdm-check:
+  name: nensha-tdm-check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - nensha-tdm-check
+  engine: unknown
+search-score-bot:
+  name: SearchScoreBot
+  manufacturer: product-specialists
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SearchScoreBot
+  engine: unknown
+surfing-dog-bot:
+  name: SurfingDogBot
+  manufacturer: surfing-dog
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SurfingDogBot
+  engine: unknown
+cloud-anchor-content-subject-pilot:
+  name: CloudAnchor-ContentSubjectPilot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - CloudAnchor-ContentSubjectPilot
+  engine: unknown
+wp-runet-census:
+  name: WPRunetCensus
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WPRunetCensus
+  engine: unknown
+triumviry-media-research:
+  name: TriumviryMediaResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TriumviryMediaResearch
+  engine: unknown
+cl0q-node:
+  name: cl0q-node
+  manufacturer: cl0q
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - cl0q-node
+  engine: unknown
+firmen-crm-research:
+  name: FirmenCRM-Research
+  manufacturer: uwe-kerner
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FirmenCRM-Research
+  engine: unknown
+novaflow-sourcing:
+  name: NovaflowSourcing
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NovaflowSourcing
+  engine: unknown
+content-engine-bot:
+  name: ContentEngineBot
+  manufacturer: workcentrix
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ContentEngineBot
+  engine: unknown
+onlinewachsen-messung:
+  name: onlinewachsen-Messung
+  manufacturer: onlinewachsen
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - onlinewachsen-Messung
+  engine: unknown

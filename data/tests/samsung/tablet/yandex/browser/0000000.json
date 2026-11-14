@@ -1,17 +1,17 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm; Android 9; SM-T510) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 YaBrowser/20.2.6.114.01 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-N8010 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 YaBrowser/17.10.2.135.01 Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-T510",
-      "marketingName": "Galaxy Tab A 10.1\" Wi-Fi (2019)",
+      "deviceName": "GT-N8010",
+      "marketingName": "Galaxy Note 10.1\" Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1280,
+        "height": 800,
         "touch": true,
         "size": 10.1
       },
@@ -25,7 +25,7 @@
     "client": {
       "name": "Yandex Browser",
       "modus": null,
-      "version": "20.2.6.114.01",
+      "version": "17.10.2.135.01",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false,
@@ -34,148 +34,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "4.1.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "79.0.3945.136",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm; Android 9; SM-T590) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 YaBrowser/20.4.5.63.01 Safari/537.36 comdirect/1.0 (appVersion:20.6.0;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T590",
-      "marketingName": "Galaxy Tab A 10.5\" Wi-Fi (2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "20.4.5.63.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; SM-T860) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 YaBrowser/20.4.5.63.01 Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T860",
-      "marketingName": "Galaxy Tab S6 10.5\" Wi-Fi",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "20.4.5.63.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; SM-T500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 YaBrowser/20.9.4.99.01 Safari/537.36 comdirect/1.0 (appVersion:20.11.0;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T500",
-      "marketingName": "Galaxy Tab A7 10.4\" Wi-Fi (2020)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 10.4
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "20.9.4.99.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.127",
+      "version": "61.0.3163.100",
       "manufacturer": "google"
     }
   },
@@ -283,7 +148,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -406,51 +271,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-T733) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.303 YaBrowser/24.7.0.303.01 Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-T733",
-      "marketingName": "Galaxy Tab S7 FE 12.4\" Wi-Fi",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 12.4
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "24.7.0.303.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "126.0.6478.303",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; SM-X710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.123 YaBrowser/24.10.2.123.01 Safari/537.36"
     },
     "device": {
@@ -463,7 +283,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -733,7 +553,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -761,6 +581,51 @@
     "engine": {
       "name": "Blink",
       "version": "146.0.7680.51",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; SM-T860) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.307 YaBrowser/26.6.0.307.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T860",
+      "marketingName": "Galaxy Tab S6 10.5\" Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.6.0.307.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.307",
       "manufacturer": "google"
     }
   },

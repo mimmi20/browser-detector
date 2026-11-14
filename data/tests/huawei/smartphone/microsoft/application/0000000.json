@@ -1,31 +1,31 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; CLT-L09 Build/HUAWEICLT-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36 BingWeb/9.8.27189406"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; VIE-L09 Build/HUAWEIVIE-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 BingWeb/6.9.25207603"
     },
     "device": {
       "architecture": "",
-      "deviceName": "CLT-L09",
-      "marketingName": "P20 Pro",
+      "deviceName": "VIE-L09",
+      "marketingName": "P9 Plus",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 2240,
+        "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 6.1
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "bits": 0
     },
     "client": {
       "name": "BingWeb App",
       "modus": null,
-      "version": "9.8.27189406",
+      "version": "6.9.25207603",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false,
@@ -34,58 +34,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "70.0.3538.110",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; VOG-L29 Build/HUAWEIVOG-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 BingWeb/11.2.28197602"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "VOG-L29",
-      "marketingName": "P30 Pro",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.47
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "BingWeb App",
-      "modus": null,
-      "version": "11.2.28197602",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
+      "version": "59.0.3071.125",
       "manufacturer": "google"
     }
   }

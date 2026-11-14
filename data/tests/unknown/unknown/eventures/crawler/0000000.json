@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "e.ventures Investment Crawler (eventures.vc)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "e.ventures Investment Crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "e.ventures",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
     },
     "device": {
@@ -92,9 +47,9 @@
   {
     "headers": {
       "sec-ch-ua-platform": "\"Linux\"",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
       "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/legal/crawler)"
+      "user-agent": "Mozilla/5.0 (compatible; ev-crawler/1.0; +https://headline.com/web-crawler)"
     },
     "device": {
       "architecture": "",
@@ -133,7 +88,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "119.0.0",
+      "version": "136.0.0",
       "manufacturer": "google"
     }
   }

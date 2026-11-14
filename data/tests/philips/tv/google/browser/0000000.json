@@ -1,19 +1,64 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l; HbbTV/1.2.1 (; Philips; 55PUS780912; ; PHILIPSTV; CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/014.002.026.129 (PhilipsTV, 3.1.1,)en)) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; AND1E TV Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.80 Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "55PUS7809/12",
-      "marketingName": "55PUS7809/12",
+      "deviceName": "AND1E TV",
+      "marketingName": "AND1E TV",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": false,
+        "size": 21.0
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "29.0.1547.80",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "29.0.1547.80",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QV151E Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "QV151E",
+      "marketingName": "QV151E",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
         "width": 3840,
         "height": 2160,
         "touch": false,
-        "size": 55
+        "size": 55.0
       },
       "type": "tv",
       "ismobile": false,
@@ -25,22 +70,67 @@
     "client": {
       "name": "Chrome WebView",
       "modus": null,
-      "version": "51.0.2704.81",
+      "version": "46.0.2490.76",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
-      "version": null,
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "51.0.2704.81",
+      "version": "46.0.2490.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QM152E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "QM152E",
+      "marketingName": "QM152E",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49.0
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "47.0.2526.83",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.83",
       "manufacturer": "google"
     }
   },
@@ -131,6 +221,51 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11;Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36 HbbTV/1.6.1 (+DRM; Philips;Philips;43PUS8808/12; R.001.000.096.000; _TV_MT9972_2023;) FVC/8.0 (Philips; com.tpv-tech.TPM231WW;) LaTivu_1.0.1_2023"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "43PUS8808/12",
+      "marketingName": "43PUS8808/12",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 43.0
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "73.0.3683.75",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "73.0.3683.75",
       "manufacturer": "google"
     }
   },

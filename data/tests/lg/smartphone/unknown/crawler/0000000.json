@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Vortex"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36 +https://sitebulb.com"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Vortex",
-      "marketingName": "Vortex",
+      "deviceName": "Nexus 5X",
+      "marketingName": "Nexus 5X",
       "manufacturer": "lg",
-      "brand": "lg",
+      "brand": "google",
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 3.2
+        "size": 5.2
       },
       "type": "smartphone",
       "ismobile": true,
@@ -23,7 +23,7 @@
       "bits": 0
     },
     "client": {
-      "name": "Vortex",
+      "name": "Sitebulb",
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
@@ -34,14 +34,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Blink",
+      "version": "109.0.0.0",
+      "manufacturer": "google"
     }
   }
 ]

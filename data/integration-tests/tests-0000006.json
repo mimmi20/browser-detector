@@ -3951,9 +3951,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Chrome OS\"",
       "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Chrome OS\"",
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 365.0.0.24.109 (iPhone17,4; iOS 18.7; es_ES; es-ES; scale=3.00; 1290x2796; 785195381)"
     },
     "expected": {
@@ -3976,7 +3976,7 @@
           "size": 6.7
         },
         "type": "phablet",
-        "ismobile": false,
+        "ismobile": true,
         "istv": false,
         "dualOrientation": true,
         "simCount": 1,
@@ -4123,7 +4123,7 @@
           "width": 448,
           "height": 368,
           "touch": true,
-          "size": 2
+          "size": 2.0
         },
         "type": "smart-watch",
         "ismobile": true,
@@ -4223,7 +4223,7 @@
           "width": 448,
           "height": 368,
           "touch": true,
-          "size": 2
+          "size": 2.0
         },
         "type": "smart-watch",
         "ismobile": true,
@@ -4273,7 +4273,7 @@
           "width": 448,
           "height": 368,
           "touch": true,
-          "size": 2
+          "size": 2.0
         },
         "type": "smart-watch",
         "ismobile": true,
@@ -4373,7 +4373,7 @@
           "width": 446,
           "height": 374,
           "touch": true,
-          "size": 2
+          "size": 2.0
         },
         "type": "smart-watch",
         "ismobile": true,
@@ -4573,7 +4573,7 @@
           "width": 446,
           "height": 374,
           "touch": true,
-          "size": 2
+          "size": 2.0
         },
         "type": "smart-watch",
         "ismobile": true,
@@ -4673,7 +4673,7 @@
           "width": 446,
           "height": 374,
           "touch": true,
-          "size": 2
+          "size": 2.0
         },
         "type": "smart-watch",
         "ismobile": true,

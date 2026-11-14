@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; GM 8 d Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.87 Mobile Safari/537.36 Instagram 128.0.0.26.128 Android (28/9; 320dpi; 720x1344; General Mobile/GM; GM 8 d; GM8_d_sprout; qcom; tr_TR; 197825254)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; GM 5 Plus d Build/OSR18O; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/263.1.0.35.125;]"
     },
     "device": {
       "architecture": "",
-      "deviceName": "GM 8",
-      "marketingName": "GM 8",
+      "deviceName": "GM 5 Plus D",
+      "marketingName": "GM 5 Plus",
       "manufacturer": "general-mobile",
       "brand": "general-mobile",
       "display": {
-        "width": 1440,
-        "height": 720,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -23,9 +23,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Instagram App",
+      "name": "Facebook Messenger App",
       "modus": null,
-      "version": "128.0.0.26.128",
+      "version": "263.1.0.35.125",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -34,13 +34,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "80.0.3987.87",
+      "version": "81.0.4044.138",
       "manufacturer": "google"
     }
   }

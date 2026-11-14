@@ -1,31 +1,31 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; NOTE 20 PRO Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.128 Mobile Safari/537.36 XiaoMi/Mint Browser/3.7.2"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-tw; Nibiru H1 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Note 20 Pro",
-      "marketingName": "Note 20 Pro",
+      "deviceName": "H1",
+      "marketingName": "H1",
       "manufacturer": "cubot",
       "brand": "cubot",
       "display": {
-        "width": 1600,
+        "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 6.5
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "bits": 0
     },
     "client": {
-      "name": "Mint Browser",
+      "name": "Mi Browser",
       "modus": null,
-      "version": "3.7.2",
+      "version": "1.0.0",
       "manufacturer": "xiaomi",
       "type": "browser",
       "isbot": false,
@@ -34,14 +34,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.128",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]

@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia X10 Build/TKQ1.220807.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 Maxthon/7.0.2.2600"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-gb; Nokia_XL Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 MxBrowser/4.3.4.2000"
     },
     "device": {
       "architecture": "",
-      "deviceName": "X10",
-      "marketingName": "X10",
+      "deviceName": "RM-1030",
+      "marketingName": "XL",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": 2400,
-        "height": 1080,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": 6.67
+        "size": 5.0
       },
       "type": "smartphone",
       "ismobile": true,
@@ -25,7 +25,7 @@
     "client": {
       "name": "Maxthon",
       "modus": null,
-      "version": "7.0.2.2600",
+      "version": "4.3.4.2000",
       "manufacturer": "maxthon",
       "type": "browser",
       "isbot": false,
@@ -34,14 +34,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "13.0.0",
+      "version": "4.1.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "115.0.5790.138",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]

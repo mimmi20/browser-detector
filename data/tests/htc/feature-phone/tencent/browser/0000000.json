@@ -1,64 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "MQQBrowser/Mini2.4 (HTC Touch Diamond P3700)"
+      "user-agent": "MQQBrowser/20 Mozilla/5.0 (Linux; U; Android 1.6; zh-cn; HTC TOUCH DUAL Build/DRC83) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
     },
     "device": {
       "architecture": "",
-      "deviceName": "P3700",
-      "marketingName": "Touch Diamond",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "QQ Browser Mini",
-      "modus": null,
-      "version": "2.4.0",
-      "manufacturer": "tencent",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MQQBrowser/Mini2.8 (HTC Touch Viva T2223)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "T2223",
-      "marketingName": "Touch Viva",
+      "deviceName": "Touch Dual",
+      "marketingName": "Touch Dual",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": 2.8
+        "size": 2.6
       },
       "type": "feature-phone",
       "ismobile": true,
@@ -68,25 +23,25 @@
       "bits": 0
     },
     "client": {
-      "name": "QQ Browser Mini",
+      "name": "QQ Browser",
       "modus": null,
-      "version": "2.8.0",
+      "version": "20.0.0",
       "manufacturer": "tencent",
       "type": "browser",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "1.6.0",
+      "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
     }
   }
 ]

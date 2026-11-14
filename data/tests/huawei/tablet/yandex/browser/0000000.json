@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; CMR-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 YaBrowser/20.2.1.120.01 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 8.0.0; BAH2-W19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 YaBrowser/19.7.6.137.01 Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "CMR-W09",
-      "marketingName": "MatePad M5 10.8\" Wi-Fi",
+      "deviceName": "BAH2-W19",
+      "marketingName": "MediaPad M5 Lite 10.1\" Wi-Fi",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 2560,
-        "height": 1600,
+        "width": 1920,
+        "height": 1200,
         "touch": true,
-        "size": 10.8
+        "size": 10.1
       },
       "type": "tablet",
       "ismobile": true,
@@ -25,7 +25,7 @@
     "client": {
       "name": "Yandex Browser",
       "modus": null,
-      "version": "20.2.1.120.01",
+      "version": "19.7.6.137.01",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false,
@@ -34,58 +34,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "79.0.3945.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; SCM-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 YaBrowser/20.4.2.101.01 Safari/537.36 comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SCM-W09",
-      "marketingName": "MediaPad M6 10.8 Wi-Fi",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.8
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "20.4.2.101.01",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
+      "version": "75.0.3770.143",
       "manufacturer": "google"
     }
   },
@@ -148,7 +103,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -283,7 +238,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -305,6 +260,51 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.114",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 6.0; HUAWEI M2-801W) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.114 YaSearchBrowser/22.94/apad BroPP/1.0 YaSearchApp/22.94/apad webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "M2-801W",
+      "marketingName": "MediaPad M2 8.0 Wi-Fi",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "22.94.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
       "manufacturer": "google",
       "bits": 0
     },
@@ -508,7 +508,7 @@
         "width": 2880,
         "height": 1840,
         "touch": true,
-        "size": 13
+        "size": 13.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -733,7 +733,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -1036,19 +1036,19 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SHT-AL09 Build/HUAWEISHT-AL09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 YaApp_Android/10.61 YaSearchBrowser/10.61"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; BAH2-W19 Build/HUAWEIBAH2-W19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36 YaApp_Android/10.61/apad YaSearchBrowser/10.61"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SHT-AL09",
-      "marketingName": "MediaPad M5 8.4",
+      "deviceName": "BAH2-W19",
+      "marketingName": "MediaPad M5 Lite 10.1\" Wi-Fi",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 2560,
-        "height": 1600,
+        "width": 1920,
+        "height": 1200,
         "touch": true,
-        "size": 8.4
+        "size": 10.1
       },
       "type": "tablet",
       "ismobile": true,
@@ -1069,13 +1069,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "81.0.4044.138",
+      "version": "81.0.4044.117",
       "manufacturer": "google"
     }
   },
@@ -1138,7 +1138,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -1183,7 +1183,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -2083,7 +2083,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -2128,7 +2128,7 @@
         "width": 2560,
         "height": 1600,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -2263,7 +2263,7 @@
         "width": 2800,
         "height": 1840,
         "touch": true,
-        "size": 12
+        "size": 12.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -2308,7 +2308,7 @@
         "width": 2800,
         "height": 1840,
         "touch": true,
-        "size": 12
+        "size": 12.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -2443,7 +2443,7 @@
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 11
+        "size": 11.0
       },
       "type": "tablet",
       "ismobile": true,

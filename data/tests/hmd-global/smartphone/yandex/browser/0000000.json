@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Nokia 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 YaBrowser/19.3.7.195.00 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "6.1",
-      "marketingName": "6.1",
-      "manufacturer": "hmd-global",
-      "brand": "nokia",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "19.3.7.195.00",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "72.0.3626.119",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; Nokia 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.216 YaBrowser/21.5.4.119.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -176,51 +131,6 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.102",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; TA-1021 Build/PKQ1.181105.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.44 YaBrowser/22.8.0.214 (lite) Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "TA-1021",
-      "marketingName": "6",
-      "manufacturer": "hmd-global",
-      "brand": "nokia",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Yandex Browser Lite",
-      "modus": null,
-      "version": "22.8.0.214",
-      "manufacturer": "yandex",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "109.0.5414.44",
       "manufacturer": "google"
     }
   },
@@ -361,7 +271,52 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; TA-1004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 YaBrowser/20.3.5.90.00 SA/1 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 8.1.0; Nokia 2.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 YaBrowser/20.3.0.276.00 Mobile SA/1 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "2.1",
+      "marketingName": "2.1",
+      "manufacturer": "hmd-global",
+      "brand": "nokia",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "20.3.0.276.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.122",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; TA-1004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 YaBrowser/20.2.5.140.00 Mobile SA/1 Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -385,7 +340,7 @@
     "client": {
       "name": "Yandex Browser",
       "modus": null,
-      "version": "20.3.5.90.00",
+      "version": "20.2.5.140.00",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false,
@@ -400,7 +355,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "80.0.3987.132",
+      "version": "79.0.3945.136",
       "manufacturer": "google"
     }
   },

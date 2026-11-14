@@ -917,7 +917,7 @@
           "width": 7680,
           "height": 4320,
           "touch": false,
-          "size": 75
+          "size": 75.0
         },
         "type": "tv",
         "ismobile": false,
@@ -1117,7 +1117,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 50
+          "size": 50.0
         },
         "type": "tv",
         "ismobile": false,
@@ -1167,7 +1167,7 @@
           "width": 1366,
           "height": 768,
           "touch": false,
-          "size": 32
+          "size": 32.0
         },
         "type": "tv",
         "ismobile": false,
@@ -1867,7 +1867,7 @@
           "width": 854,
           "height": 480,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -1917,7 +1917,7 @@
           "width": 854,
           "height": 480,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -2017,7 +2017,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 55
+          "size": 55.0
         },
         "type": "tv",
         "ismobile": false,
@@ -2067,7 +2067,7 @@
           "width": 1920,
           "height": 1080,
           "touch": false,
-          "size": 32
+          "size": 32.0
         },
         "type": "tv",
         "ismobile": false,
@@ -2651,15 +2651,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"146.0.7680.119\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"T Phone 3\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"",
+      "sec-ch-ua-full-version": "\"146.0.7680.119\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36"
     },
@@ -2721,15 +2721,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.102\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"T Phone Pro\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.102\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36"
     },
@@ -3891,15 +3891,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"TTablet2\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.186\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
     },
@@ -4427,7 +4427,7 @@
           "width": 960,
           "height": 480,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -4927,7 +4927,7 @@
           "width": 1092,
           "height": 540,
           "touch": true,
-          "size": 6
+          "size": 6.0
         },
         "type": "smartphone",
         "ismobile": true,

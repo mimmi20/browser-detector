@@ -43,5 +43,50 @@
       "version": "2.0.0",
       "manufacturer": "baidu"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; IUSAI X2 Build/JLS36C) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baiduboxapp/5.0 (Baidu; P1 4.3)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "II X2",
+      "marketingName": "II X2",
+      "manufacturer": "opsson",
+      "brand": "opsson",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "T5",
+      "version": "2.0.0",
+      "manufacturer": "baidu"
+    }
   }
 ]

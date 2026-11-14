@@ -1,15 +1,10 @@
 [
   {
     "headers": {
-      "sec-ch-ua-model": "\"kukui\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"9.0.0\"",
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"99\", \"Chromium\";v=\"106\"",
-      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Safari/537.36 OPR/92.0.4561.11"
+      "sec-ch-ua-model": "kukui",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-platform-version": "9.0.0",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Safari/537.36 OPR/90.0.4480.54"
     },
     "device": {
       "architecture": "",
@@ -24,7 +19,7 @@
         "size": null
       },
       "type": "tablet",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "dualOrientation": true,
       "simCount": 0,
@@ -33,7 +28,7 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "92.0.4561.11",
+      "version": "90.0.4480.54",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -48,7 +43,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "106.0.0",
+      "version": "104.0.5112.97",
       "manufacturer": "google"
     }
   }

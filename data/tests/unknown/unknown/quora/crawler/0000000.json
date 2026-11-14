@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "Quora-Bot"
+      "user-agent": "Quora-Bot/1.0 (http://www.quora.com)"
     },
     "device": {
       "architecture": "",
@@ -70,7 +70,7 @@
     "client": {
       "name": "Quora Bot",
       "modus": null,
-      "version": null,
+      "version": "1.0.0",
       "manufacturer": "quora",
       "type": "crawler",
       "isbot": true,

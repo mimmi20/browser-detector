@@ -58,7 +58,7 @@
         "width": 800,
         "height": 480,
         "touch": false,
-        "size": 3
+        "size": 3.0
       },
       "type": "feature-phone",
       "ismobile": true,
@@ -71,51 +71,6 @@
       "name": "Opera Mobile",
       "modus": null,
       "version": "9.5.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; SHARP/WS011SH; PPC; 480x800) Opera 8.7 [ja]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "WS011SH",
-      "marketingName": "Advanced W-Zero",
-      "manufacturer": "sharp",
-      "brand": "willcom",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": false,
-        "size": 3
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "8.7.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,

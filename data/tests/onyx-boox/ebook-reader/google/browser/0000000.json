@@ -1,6 +1,141 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; MC_DARWIN6 Build/2020-11-19_17-52_2.1.2_bd78f35) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Darwin 6",
+      "marketingName": "Darwin 6",
+      "manufacturer": "onyx-boox",
+      "brand": "onyx-boox",
+      "display": {
+        "width": 1448,
+        "height": 1072,
+        "touch": true,
+        "size": 6.0
+      },
+      "type": "ebook-reader",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "33.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; MC_DARWIN8 Build/2022-08-16_15-16_2.1.2_467fe95) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Darwin 8",
+      "marketingName": "Darwin 8",
+      "manufacturer": "onyx-boox",
+      "brand": "onyx-boox",
+      "display": {
+        "width": 1448,
+        "height": 1072,
+        "touch": true,
+        "size": 6.0
+      },
+      "type": "ebook-reader",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "33.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; MC_DARWIN7 Build/2022-01-17_21-12_2.1.2_5b90d57) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Darwin 7",
+      "marketingName": "Darwin 7",
+      "manufacturer": "onyx-boox",
+      "brand": "onyx-boox",
+      "display": {
+        "width": 1448,
+        "height": 1072,
+        "touch": true,
+        "size": 6.0
+      },
+      "type": "ebook-reader",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "33.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; DARWIN9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4178.0 Mobile Safari/537.36"
     },
     "device": {
@@ -13,7 +148,7 @@
         "width": 1448,
         "height": 1072,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "ebook-reader",
       "ismobile": true,
@@ -58,7 +193,7 @@
         "width": 1448,
         "height": 1072,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "ebook-reader",
       "ismobile": true,
@@ -103,7 +238,7 @@
         "width": 1448,
         "height": 1072,
         "touch": true,
-        "size": 6
+        "size": 6.0
       },
       "type": "ebook-reader",
       "ismobile": true,

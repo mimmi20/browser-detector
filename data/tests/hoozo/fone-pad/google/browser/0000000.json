@@ -1,40 +1,31 @@
 [
   {
     "headers": {
-      "sec-ch-ua-model": "\"F13_EEA\"",
-      "x-requested-with": "XMLHttpRequest",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"",
-      "sec-ch-ua-full-version": "\"122.0.6261.119\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; HOOZO MT232 Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "F13_EEA",
-      "marketingName": "F13",
+      "deviceName": "MT232",
+      "marketingName": "MT232",
       "manufacturer": "hoozo",
       "brand": "hoozo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "fone-pad",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "dualOrientation": true,
       "simCount": 1,
       "bits": 0
     },
     "client": {
-      "name": "Chrome",
+      "name": "Chrome WebView",
       "modus": null,
-      "version": "122.0.0",
+      "version": "70.0.3538.110",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
@@ -43,13 +34,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "13.0.0",
+      "version": "6.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "122.0.0",
+      "version": "70.0.3538.110",
       "manufacturer": "google"
     }
   }

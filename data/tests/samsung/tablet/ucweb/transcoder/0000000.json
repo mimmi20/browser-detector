@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; ru; SM-T2105) U2/1.0.0 UCBrowser/9.8.0.534 Mobile"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-CN; GT-P7300 Build/IMM76D) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.6.0.378 U3/0.8.0 Mobile Safari/533.1"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-T2105",
-      "marketingName": "Galaxy Tab 3 Kids",
+      "deviceName": "GT-P7300",
+      "marketingName": "Galaxy Tab 8.9\"",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1024,
-        "height": 600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": 7
+        "size": 8.9
       },
       "type": "tablet",
       "ismobile": true,
@@ -25,7 +25,7 @@
     "client": {
       "name": "UC Browser",
       "modus": null,
-      "version": "9.8.0.534",
+      "version": "9.6.0.378",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false,
@@ -34,31 +34,31 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "4.0.4",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": "U2",
-      "version": "1.0.0",
+      "name": "U3",
+      "version": "0.8.0",
       "manufacturer": "ucweb"
     }
   },
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-P600 Build/LMY47X) U2/1.0.0 UCBrowser/10.7.2.757 Mobile"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; SM-T231 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.7.0.636 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-P600",
-      "marketingName": "Galaxy Note 10.1\" Wi-Fi (2014)",
+      "deviceName": "SM-T231",
+      "marketingName": "Galaxy Tab 4 7.0\" 3G",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2560,
-        "height": 1600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": 10.1
+        "size": 7.0
       },
       "type": "tablet",
       "ismobile": true,
@@ -70,7 +70,7 @@
     "client": {
       "name": "UC Browser",
       "modus": null,
-      "version": "10.7.2.757",
+      "version": "10.7.0.636",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false,
@@ -79,14 +79,104 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": "U2",
-      "version": "1.0.0",
+      "name": "U3",
+      "version": "0.8.0",
       "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.0; en-US; SM-T710 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.12.3.1218 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T710",
+      "marketingName": "Galaxy Tab S2 8.0\" Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.12.3.1218",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.0; en-US; SM-T713 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.1.8.1295 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-T713",
+      "marketingName": "Galaxy Tab S2 8.0\" Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 8.0
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.1.8.1295",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "google"
     }
   },
   {
@@ -103,7 +193,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 8
+        "size": 8.0
       },
       "type": "tablet",
       "ismobile": true,

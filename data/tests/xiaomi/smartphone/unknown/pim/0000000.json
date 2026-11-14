@@ -1,31 +1,31 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2102J2SC Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 MailMaster_Android_Mobile/7.8.11/4"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; MIX Build/MXB48T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 mailapp/5.2.6"
     },
     "device": {
       "architecture": "",
-      "deviceName": "M2102J2SC",
-      "marketingName": "Mi 10S",
+      "deviceName": "Mi Mix",
+      "marketingName": "Mi Mix",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
-        "width": 2340,
+        "width": 2040,
         "height": 1080,
         "touch": true,
-        "size": 6.67
+        "size": 6.4
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "bits": 0
     },
     "client": {
-      "name": "Mail Master",
+      "name": "MailApp",
       "modus": null,
-      "version": "7.8.11",
+      "version": "5.2.6",
       "manufacturer": "unknown",
       "type": "pim",
       "isbot": false,
@@ -34,13 +34,58 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "97.0.4692.98",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; MI 5 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 MailMaster_Android_Mobile/6.0.4"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Mi 5",
+      "marketingName": "Mi 5",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.15
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Mail Master",
+      "modus": null,
+      "version": "6.0.4",
+      "manufacturer": "unknown",
+      "type": "pim",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   }

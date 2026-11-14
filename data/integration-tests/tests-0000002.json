@@ -51,9 +51,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Not_A Brand\";v=\"99\", \"Chromium\";v=\"142\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 16; bH1D6l9wTg; U; de) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/142.0.7444.138 Mobile Safari/537.36"
     },
     "expected": {
@@ -107,9 +107,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"Chromium\";v=\"145\", \"Not:A-Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; urlsuma/2.0; +https://urlsuma.de/bot.html)"
     },
     "expected": {
@@ -163,9 +163,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"Google Chrome\";v=\"151\", \"Chromium\";v=\"151\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0"
     },
     "expected": {
@@ -219,15 +219,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"153.0.8010.12\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"\"",
       "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-full-version": "\"153.0.8010.12\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "EverphoneContactBot/0.1 (+mailto:tamara.omomo@everphone.de) Chrome/124 Safari/537.36"
     },
@@ -246,7 +246,7 @@
         "user-agent": "EverphoneContactBot/0.1 (+mailto:tamara.omomo@everphone.de) Chrome/124 Safari/537.36"
       },
       "device": {
-        "architecture": "x86",
+        "architecture": "",
         "deviceName": "general Mobile device",
         "marketingName": "general Mobile device",
         "manufacturer": "unknown",
@@ -289,9 +289,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Chromium\";v=\"139\", \"Google Chrome\";v=\"139\", \"Not-A.Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux, Android 15, SM-S911U Build/AP3A.240905.015.A2, ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.158 Mobile Safari/537.36 musical_ly_2024105040 JsSdk/1.0 NetType/MOBILE Channel/googleplay AppName/musical_ly app_ver"
     },
     "expected": {
@@ -395,9 +395,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
       "sec-ch-ua": "\"HeadlessChrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Windows\"",
       "user-agent": "Mozilla/5.0 (compatible; SnapchatAds/1.0; +https://businesshelp.snapchat.com/s/article/adsbot-crawler)"
     },
     "expected": {
@@ -420,7 +420,7 @@
           "size": null
         },
         "type": "unknown",
-        "ismobile": true,
+        "ismobile": false,
         "istv": false,
         "dualOrientation": null,
         "simCount": 0,
@@ -451,9 +451,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
       "user-agent": "Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)"
     },
     "expected": {
@@ -623,7 +623,7 @@
           "width": 480,
           "height": 360,
           "touch": true,
-          "size": 2
+          "size": 2.0
         },
         "type": "smart-watch",
         "ismobile": true,
@@ -707,9 +707,9 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not)A;Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"127.0.6533.64\", \"Chromium\";v=\"127.0.6533.64\"",
       "sec-ch-ua-model": "BUZZ 6 Pro",
       "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua": "\"Not)A;Brand\";v=\"99.0.0.0\", \"Google Chrome\";v=\"127.0.6533.64\", \"Chromium\";v=\"127.0.6533.64\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36"
     },
     "expected": {
@@ -763,18 +763,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"Android WebView\";v=\"151\", \"Chromium\";v=\"151\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"151.0.7922.199\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"A171\"",
+      "x-requested-with": "com.casttotv.screenmirroring.smarttv.castvideo",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"Android WebView\";v=\"151\", \"Chromium\";v=\"151\"",
+      "sec-ch-ua-full-version": "\"151.0.7922.199\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; A171 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Safari/537.36",
-      "x-requested-with": "com.casttotv.screenmirroring.smarttv.castvideo"
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; A171 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -935,9 +935,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 9; KFTRWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/138.14.12 like Chrome/138.0.7204.244 Safari/537.36"
     },
     "expected": {
@@ -960,7 +960,7 @@
           "size": 10.1
         },
         "type": "tablet",
-        "ismobile": false,
+        "ismobile": true,
         "istv": false,
         "dualOrientation": true,
         "simCount": 0,
@@ -1057,7 +1057,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "tablet",
         "ismobile": true,
@@ -1157,7 +1157,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "tablet",
         "ismobile": true,
@@ -1191,14 +1191,14 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"95.0.4638.74\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"KFSUWI\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"5.1.1\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"95.0.4638.74\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFSUWI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36"
     },
     "expected": {
@@ -1226,7 +1226,7 @@
           "size": 9.4
         },
         "type": "tablet",
-        "ismobile": false,
+        "ismobile": true,
         "istv": false,
         "dualOrientation": true,
         "simCount": 0,
@@ -1273,7 +1273,7 @@
           "width": 2000,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "tablet",
         "ismobile": true,
@@ -1873,7 +1873,7 @@
           "width": 2560,
           "height": 1440,
           "touch": false,
-          "size": 27
+          "size": 27.0
         },
         "type": "desktop",
         "ismobile": false,
@@ -2657,14 +2657,14 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"\"",
       "sec-ch-ua-platform": "\"Linux\"",
       "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15"
     },
@@ -2725,9 +2725,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "Linux",
       "sec-ch-ua": "\"Not A(Brand\";v=\"99.0.0.0\", \"HeadlessChrome\";v=\"121.0.6167.57\", \"Chromium\";v=\"121.0.6167.57\"",
       "sec-ch-ua-full-version": "121.0.6167.57",
-      "sec-ch-ua-platform": "Linux",
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15"
     },
     "expected": {
@@ -2931,9 +2931,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:143.0) Gecko/20100101 Firefox/143.0"
     },
     "expected": {
@@ -2956,7 +2956,7 @@
           "size": null
         },
         "type": "desktop",
-        "ismobile": true,
+        "ismobile": false,
         "istv": false,
         "dualOrientation": false,
         "simCount": 0,
@@ -4003,7 +4003,7 @@
           "width": 5120,
           "height": 2880,
           "touch": false,
-          "size": 27
+          "size": 27.0
         },
         "type": "desktop",
         "ismobile": false,
@@ -4153,7 +4153,7 @@
           "width": 1440,
           "height": 900,
           "touch": false,
-          "size": 17
+          "size": 17.0
         },
         "type": "desktop",
         "ismobile": false,
@@ -4203,7 +4203,7 @@
           "width": 1440,
           "height": 900,
           "touch": false,
-          "size": 17
+          "size": 17.0
         },
         "type": "desktop",
         "ismobile": false,

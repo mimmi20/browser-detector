@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; MAX 2 Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.1; it-it; CUBOT ONE Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100501044"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Max 2",
-      "marketingName": "Max 2",
+      "deviceName": "One",
+      "marketingName": "One",
       "manufacturer": "cubot",
       "brand": "cubot",
       "display": {
-        "width": 1352,
-        "height": 640,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": 6.8
+        "size": 4.7
       },
       "type": "smartphone",
       "ismobile": true,
@@ -34,38 +34,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "4.2.1",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.119",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "x-requested-with": "com.ksmobile.cb",
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; QUEST Build/P00610; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; S200 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 ACHEETAHI/2100502066"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Quest",
-      "marketingName": "Quest",
+      "deviceName": "S200",
+      "marketingName": "S200",
       "manufacturer": "cubot",
       "brand": "cubot",
       "display": {
-        "width": 1440,
+        "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 5.5
+        "size": 5.0
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "bits": 0
     },
     "client": {
@@ -80,13 +79,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "44.0.2403.119",
+      "version": "30.0.0.0",
       "manufacturer": "google"
     }
   }

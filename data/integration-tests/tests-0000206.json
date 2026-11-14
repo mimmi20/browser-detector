@@ -567,7 +567,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 43
+          "size": 43.0
         },
         "type": "tv",
         "ismobile": false,
@@ -2051,9 +2051,9 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua": "\"OperaMobile\";v=\"85\", \"Opera\";v=\"114\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"129\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/85.0.0.0"
     },
     "expected": {
@@ -4623,7 +4623,7 @@
           "width": 3840,
           "height": 2160,
           "touch": false,
-          "size": 43
+          "size": 43.0
         },
         "type": "tv",
         "ismobile": false,

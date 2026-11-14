@@ -1,7 +1,142 @@
 [
   {
     "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/47.2-59120 (ZPS9)"
+      "user-agent": "Linux UPnP/1.0 Sonos/54.2-72031 (MDCR_MacBookPro14,1)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Smart Speaker",
+      "marketingName": "Smart Speaker",
+      "manufacturer": "sonos",
+      "brand": "sonos",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "smart-speaker",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Sonos",
+      "modus": null,
+      "version": "54.2.72031",
+      "manufacturer": "sonos",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Linux UPnP/1.0 Sonos/53.3-71050 (MDCR_Macmini8,1)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Smart Speaker",
+      "marketingName": "Smart Speaker",
+      "manufacturer": "sonos",
+      "brand": "sonos",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "smart-speaker",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Sonos",
+      "modus": null,
+      "version": "53.3.71050",
+      "manufacturer": "sonos",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Linux UPnP/1.0 Sonos/61.1-83170 (ZPS1)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "ZPS1",
+      "marketingName": "ZPS1",
+      "manufacturer": "sonos",
+      "brand": "sonos",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "smart-speaker",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Sonos",
+      "modus": null,
+      "version": "61.1.83170",
+      "manufacturer": "sonos",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Linux UPnP/1.0 Sonos/53.2-70100 (ZPS9)"
     },
     "device": {
       "architecture": "",
@@ -25,7 +160,7 @@
     "client": {
       "name": "Sonos",
       "modus": null,
-      "version": "47.2.59120",
+      "version": "53.2.70100",
       "manufacturer": "sonos",
       "type": "multimedia-player",
       "isbot": false,
@@ -46,7 +181,97 @@
   },
   {
     "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/47.2-59120 (ZPS3)"
+      "user-agent": "Linux UPnP/1.0 Sonos/54.2-72160 (ZPS5)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "ZPS5",
+      "marketingName": "ZPS5",
+      "manufacturer": "sonos",
+      "brand": "sonos",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "smart-speaker",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Sonos",
+      "modus": null,
+      "version": "54.2.72160",
+      "manufacturer": "sonos",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Linux UPnP/1.0 Sonos/56.0-76060 (ZPS6)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "ZPS6",
+      "marketingName": "ZPS6",
+      "manufacturer": "sonos",
+      "brand": "sonos",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "smart-speaker",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Sonos",
+      "modus": null,
+      "version": "56.0.76060",
+      "manufacturer": "sonos",
+      "type": "multimedia-player",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Linux UPnP/1.0 Sonos/56.0-76060 (ZPS3)"
     },
     "device": {
       "architecture": "",
@@ -70,7 +295,7 @@
     "client": {
       "name": "Sonos",
       "modus": null,
-      "version": "47.2.59120",
+      "version": "56.0.76060",
       "manufacturer": "sonos",
       "type": "multimedia-player",
       "isbot": false,
@@ -91,7 +316,7 @@
   },
   {
     "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/47.2-59120 (ZPS13)"
+      "user-agent": "Linux UPnP/1.0 Sonos/55.1-74250 (ZPS13)"
     },
     "device": {
       "architecture": "",
@@ -115,7 +340,7 @@
     "client": {
       "name": "Sonos",
       "modus": null,
-      "version": "47.2.59120",
+      "version": "55.1.74250",
       "manufacturer": "sonos",
       "type": "multimedia-player",
       "isbot": false,
@@ -136,7 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "Sonos"
+      "user-agent": "Sonos;Play5;9b377073ea334637b1406f329ce005de;;tpapi;3.81.91"
     },
     "device": {
       "architecture": "",
@@ -181,142 +406,7 @@
   },
   {
     "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/47.2-59120 (ZPS6)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "ZPS6",
-      "marketingName": "ZPS6",
-      "manufacturer": "sonos",
-      "brand": "sonos",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "smart-speaker",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Sonos",
-      "modus": null,
-      "version": "47.2.59120",
-      "manufacturer": "sonos",
-      "type": "multimedia-player",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/47.2-59120 (ZPS1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "ZPS1",
-      "marketingName": "ZPS1",
-      "manufacturer": "sonos",
-      "brand": "sonos",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "smart-speaker",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Sonos",
-      "modus": null,
-      "version": "47.2.59120",
-      "manufacturer": "sonos",
-      "type": "multimedia-player",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/46.3-57250 (ZPS5)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "ZPS5",
-      "marketingName": "ZPS5",
-      "manufacturer": "sonos",
-      "brand": "sonos",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "smart-speaker",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Sonos",
-      "modus": null,
-      "version": "46.3.57250",
-      "manufacturer": "sonos",
-      "type": "multimedia-player",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/47.2-59120 (ZP120)"
+      "user-agent": "Linux UPnP/1.0 Sonos/81.1-58074 (ZP120)"
     },
     "device": {
       "architecture": "",
@@ -340,7 +430,7 @@
     "client": {
       "name": "Sonos",
       "modus": null,
-      "version": "47.2.59120",
+      "version": "81.1.58074",
       "manufacturer": "sonos",
       "type": "multimedia-player",
       "isbot": false,
@@ -351,96 +441,6 @@
       "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/47.2-59120 (ZP90)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Smart Speaker",
-      "marketingName": "Smart Speaker",
-      "manufacturer": "sonos",
-      "brand": "sonos",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "smart-speaker",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Sonos",
-      "modus": null,
-      "version": "47.2.59120",
-      "manufacturer": "sonos",
-      "type": "multimedia-player",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Linux UPnP/1.0 Sonos/54.2-72031 (MDCR_MacBookPro14,1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Smart Speaker",
-      "marketingName": "Smart Speaker",
-      "manufacturer": "sonos",
-      "brand": "sonos",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "smart-speaker",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Sonos",
-      "modus": null,
-      "version": "54.2.72031",
-      "manufacturer": "sonos",
-      "type": "multimedia-player",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "apple",
       "bits": 0
     },
     "engine": {

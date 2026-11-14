@@ -267,7 +267,7 @@
           "width": null,
           "height": null,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -317,7 +317,7 @@
           "width": null,
           "height": null,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -367,7 +367,7 @@
           "width": null,
           "height": null,
           "touch": true,
-          "size": 5
+          "size": 5.0
         },
         "type": "smartphone",
         "ismobile": true,
@@ -567,7 +567,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -601,18 +601,18 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"DuckDuckGo\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.159\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"SM-T875\"",
+      "x-requested-with": "com.duckduckgo.mobile.android",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-ua": "\"DuckDuckGo\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.159\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
-      "x-requested-with": "com.duckduckgo.mobile.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
     },
     "expected": {
       "headers": {
@@ -639,7 +639,7 @@
           "width": 2560,
           "height": 1600,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -689,7 +689,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -789,7 +789,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1039,7 +1039,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1223,15 +1223,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.200\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"SM-T515\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.200\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
     },
@@ -1459,7 +1459,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1559,7 +1559,7 @@
           "width": 2560,
           "height": 1600,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1659,7 +1659,7 @@
           "width": 2560,
           "height": 1600,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1709,7 +1709,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "tablet",
         "ismobile": true,
@@ -1759,7 +1759,7 @@
           "width": 2560,
           "height": 1600,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -1909,7 +1909,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -2009,7 +2009,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -2109,7 +2109,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -2159,7 +2159,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -2209,7 +2209,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -2259,7 +2259,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -2659,7 +2659,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -2693,15 +2693,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Samsung Internet\";v=\"30.0\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"143.0.7499.194\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"SM-X716B\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Samsung Internet\";v=\"30.0\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"143.0.7499.194\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/30.0 Chrome/143.0.0.0 Safari/537.36"
     },
@@ -2729,7 +2729,7 @@
           "width": 2560,
           "height": 1600,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -2779,7 +2779,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -3229,7 +3229,7 @@
           "width": 1920,
           "height": 1200,
           "touch": true,
-          "size": 11
+          "size": 11.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -3429,7 +3429,7 @@
           "width": 1280,
           "height": 800,
           "touch": true,
-          "size": 8
+          "size": 8.0
         },
         "type": "fone-pad",
         "ismobile": true,
@@ -3779,7 +3779,7 @@
           "width": 2160,
           "height": 1584,
           "touch": true,
-          "size": 10
+          "size": 10.0
         },
         "type": "phablet",
         "ismobile": true,
@@ -4413,15 +4413,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"149.0.7827.197\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"SM-F721B\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"149.0.7827.197\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36"
     },
@@ -4933,15 +4933,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.114\"",
-      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-model": "\"SM-N981B\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.114\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
     },
@@ -5053,15 +5053,15 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-form-factors": "\"Desktop\"",
-      "sec-ch-ua-full-version": "\"150.0.7871.128\"",
-      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-model": "\"SM-F946B\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\", \"Google Chrome\";v=\"150\"",
+      "sec-ch-ua-full-version": "\"150.0.7871.128\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-wow64": "?0",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
     },

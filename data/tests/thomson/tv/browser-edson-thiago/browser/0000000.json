@@ -1,51 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Zeasn/2.0 NETTV/4.5.0 Mozilla/5.0 (Linux armv7i;CE-HTML/1.0;U;en), Chrome/42.0.2311.152 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_ms6586/V8-S586T02-LF1V130 (THOMSON,50UC63*6,wired)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "50UC63",
-      "marketingName": "50UC63",
-      "manufacturer": "thomson",
-      "brand": "thomson",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": false,
-        "size": 50
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "TBrowser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "browser-edson-thiago",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Whale OS",
-      "marketingName": "Whale OS",
-      "version": null,
-      "manufacturer": "whaleTV",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "42.0.2311.152",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 Zeasn/2.0 NETTV/4.5.0 Mozilla/5.0 (Linux armv7i;CE-HTML/1.0;U;en), Chrome/42.0.2311.152 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_MT5655/V8-S586T02-LF1V052 (THOMSON,55UC6306,wired)"
     },
     "device": {
@@ -103,7 +58,7 @@
         "width": 1920,
         "height": 1080,
         "touch": false,
-        "size": 32
+        "size": 32.0
       },
       "type": "tv",
       "ismobile": false,
@@ -148,7 +103,7 @@
         "width": 1920,
         "height": 1080,
         "touch": false,
-        "size": 40
+        "size": 40.0
       },
       "type": "tv",
       "ismobile": false,
@@ -193,7 +148,7 @@
         "width": 3840,
         "height": 2160,
         "touch": false,
-        "size": 55
+        "size": 55.0
       },
       "type": "tv",
       "ismobile": false,
@@ -418,7 +373,7 @@
         "width": 3840,
         "height": 2160,
         "touch": false,
-        "size": 55
+        "size": 55.0
       },
       "type": "tv",
       "ismobile": false,
@@ -509,51 +464,6 @@
         "height": null,
         "touch": false,
         "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "TBrowser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "browser-edson-thiago",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Whale OS",
-      "marketingName": "Whale OS",
-      "version": null,
-      "manufacturer": "whaleTV",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Zeasn/2.0 NETTV/4.5.0 Mozilla/5.0 (Linux;CE-HTML/1.0;U;en), Chrome/49.0.2623.87 Safari/537.36 AppleWebKit 537.36 (KHTML, like Gecko) Tbrowser/2.0, _TV_UNKONWN/V8-S586T02-LF1V445 (THOMSON,55UD66*6,wired)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "55UD66",
-      "marketingName": "55UD66",
-      "manufacturer": "thomson",
-      "brand": "thomson",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": false,
-        "size": 55
       },
       "type": "tv",
       "ismobile": false,
