@@ -2286,6 +2286,7 @@ google-lens:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - SearchWithLens
+      - GoogleApp
   engine: null
 nyt:
   name: 'The New York Times'

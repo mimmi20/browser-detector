@@ -1476,3 +1476,12 @@ jamf-pro-self-service-plus:
     search:
       - 'Self Service\\+'
   engine: null
+colloquy:
+  name: Colloquy
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Colloquy
+  engine: null

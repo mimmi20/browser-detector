@@ -3943,12 +3943,12 @@
         "bits": 0
       },
       "client": {
-        "name": "cURL",
+        "name": "curlie-linkcheck",
         "modus": null,
-        "version": null,
+        "version": "1.0.0",
         "manufacturer": "unknown",
-        "type": "library",
-        "isbot": false,
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -4043,12 +4043,12 @@
         "bits": 0
       },
       "client": {
-        "name": "cURL",
+        "name": "curl-proxy",
         "modus": null,
-        "version": null,
+        "version": "1.0.0",
         "manufacturer": "unknown",
-        "type": "library",
-        "isbot": false,
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {

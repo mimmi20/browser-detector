@@ -1682,3 +1682,30 @@ qwantify:
     search:
       - Qwantify
   engine: unknown
+mistral-ai-index:
+  name: 'MistralAI Index'
+  manufacturer: mistral-ai
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MistralAI-Index
+  engine: unknown
+go-guides-crawler:
+  name: GoGuidesCrawler
+  manufacturer: go-guides
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GoGuidesCrawler
+  engine: unknown
+goguides-discovery-bot:
+  name: GoGuidesDiscoveryBot
+  manufacturer: go-guides
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GoGuidesDiscoveryBot
+  engine: unknown

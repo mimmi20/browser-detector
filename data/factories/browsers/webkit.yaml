@@ -585,7 +585,7 @@ rules:
   /perplexity-user/i: perplexity-user
   /ksmobilebrowser/i: ks-mobile-browser
   /expediabookings/i: expedia-app
-  /self service\\+/i: jamf-pro-self-service-plus
+  '/self service\\+/i': jamf-pro-self-service-plus
   /searchwithlens/i: google-lens
   /allyoucanbooks/i: all-you-can-books
   /mistralai-user/i: mistral-ai-user
@@ -671,6 +671,7 @@ rules:
   /aharadio2/i: aha-radio-2
   '/cfr plus/i': faidr
   /shap-user/i: shap-user
+  /integrity/i: integrity
   /icatcher/i: icatcher
   /telegram/i: telegram-app
   /luminary/i: luminary
@@ -697,6 +698,7 @@ rules:
   /devcasts/i: dev-casts
   /shopeevn/i: shopee
   '/npr one/i': npr-one
+  /colloquy/i: colloquy
   /filebox/i: filebox
   '/podhero|swoot agent/i': pod-hero
   /listen5/i: just-listen
@@ -745,6 +747,7 @@ rules:
   /castro/i: castro
   /nscurl/i: nscurl
   /dubox;/i: terabox-app
+  /n85bot/i: n85bot
   /atbat/i: atbat
   /maven/i: maven
   /viber/i: viber
