@@ -1637,15 +1637,6 @@ qwantbot:
     search:
       - Qwantbot
   engine: unknown
-claude-searchbot:
-  name: Claude-SearchBot
-  manufacturer: anthropic
-  type: search-bot
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Claude-SearchBot
-  engine: unknown
 oai-searchbot:
   name: OAI-SearchBot
   manufacturer: openai
@@ -1681,4 +1672,13 @@ azureai-searchbot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - AzureAI-SearchBot
+  engine: unknown
+qwantify:
+  name: Qwantify
+  manufacturer: qwant
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Qwantify
   engine: unknown

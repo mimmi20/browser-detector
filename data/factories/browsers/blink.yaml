@@ -83,6 +83,7 @@ rules:
   /newssapphire/i: msn-app
   /bingsapphire|sapphire\//i: bingsearch
   /s~virustotalcloud/i: virus-total-cloud
+  /google-?lens/i: google-lens
   /gsa|googleapp/i: google-search
   /huohoubrowser/i: huohoubrowser
   /aliapp\(tb/i: taobao
@@ -468,6 +469,7 @@ rules:
   /sitebulb/i: sitebulb
   /geedobot/i: geedo-bot
   /vibemate/i: vibe-mate
+  /techscan/i: tech-scan-bot
   /arvin\//i: arvin-browser
   /sleepbot/i: sleep-bot
   /petalbot/i: petalbot

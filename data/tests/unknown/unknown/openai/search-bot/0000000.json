@@ -1,12 +1,12 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 (compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)"
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
+      "deviceName": null,
+      "marketingName": null,
       "manufacturer": "unknown",
       "brand": "unknown",
       "display": {
@@ -15,10 +15,10 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop",
+      "type": "unknown",
       "ismobile": false,
       "istv": false,
-      "dualOrientation": false,
+      "dualOrientation": null,
       "simCount": 0,
       "bits": 0
     },
@@ -27,31 +27,31 @@
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "openai",
-      "type": "crawler",
+      "type": "search-bot",
       "isbot": true,
       "bits": 0
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "linux-foundation",
+      "manufacturer": "unknown",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "134.0.0.0",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.4; robots.txt; +https://openai.com/searchbot) Chrome/148.0.4551.94 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (compatible; OAI-SearchBot/1.3; +https://openai.com/searchbot)"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
+      "deviceName": null,
+      "marketingName": null,
       "manufacturer": "unknown",
       "brand": "unknown",
       "display": {
@@ -60,43 +60,44 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop",
+      "type": "unknown",
       "ismobile": false,
       "istv": false,
-      "dualOrientation": false,
+      "dualOrientation": null,
       "simCount": 0,
       "bits": 0
     },
     "client": {
       "name": "OAI-SearchBot",
       "modus": null,
-      "version": "1.4.0",
+      "version": "1.3.0",
       "manufacturer": "openai",
-      "type": "crawler",
+      "type": "search-bot",
       "isbot": true,
       "bits": 0
     },
     "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "canonical",
+      "manufacturer": "unknown",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "148.0.4551.94",
-      "manufacturer": "google"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.8708.203 Safari/537.36; compatible; OAI-SearchBot/1.4; robots.txt; +https://openai.com/searchbot"
+      "sec-ch-ua": "\"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\", \"Not-A.Brand\";v=\"99\"",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
+      "deviceName": null,
+      "marketingName": null,
       "manufacturer": "unknown",
       "brand": "unknown",
       "display": {
@@ -105,32 +106,32 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop",
+      "type": "unknown",
       "ismobile": false,
       "istv": false,
-      "dualOrientation": false,
+      "dualOrientation": null,
       "simCount": 0,
       "bits": 0
     },
     "client": {
       "name": "OAI-SearchBot",
       "modus": null,
-      "version": "1.4.0",
+      "version": "1.0.0",
       "manufacturer": "openai",
-      "type": "crawler",
+      "type": "search-bot",
       "isbot": true,
       "bits": 0
     },
     "os": {
-      "name": "Windows",
-      "marketingName": "Windows 11",
-      "version": "11.0.0",
-      "manufacturer": "microsoft",
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "91.0.8708.203",
+      "version": "120.0.0",
       "manufacturer": "google"
     }
   }
