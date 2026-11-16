@@ -231,6 +231,7 @@ blitz:
   version:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
+      - com\\.google\\.GoogleMobile\\.SearchOnGoogleActionExtension
       - GoogleMobile
   engine: null
 'unity web player':

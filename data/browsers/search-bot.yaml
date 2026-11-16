@@ -1709,3 +1709,21 @@ goguides-discovery-bot:
     search:
       - GoGuidesDiscoveryBot
   engine: unknown
+'amazon bot':
+  name: 'Amazon Bot'
+  manufacturer: amazon
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Amazonbot
+  engine: unknown
+claude-searchbot:
+  name: Claude-SearchBot
+  manufacturer: anthropic
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Claude-SearchBot
+  engine: unknown

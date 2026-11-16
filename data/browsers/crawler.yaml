@@ -394,15 +394,6 @@ nutch:
       - Nutch
       - Nutch\-
   engine: unknown
-'amazon bot':
-  name: 'Amazon Bot'
-  manufacturer: amazon
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Amazonbot
-  engine: unknown
 'amazon video bot':
   name: 'Amazon Video Bot'
   manufacturer: amazon
@@ -14981,15 +14972,6 @@ mediayo-appadstxt-content-validator:
     search:
       - MediaYo-AppAdsTxt-Content-Validator
   engine: unknown
-claude-searchbot:
-  name: Claude-SearchBot
-  manufacturer: anthropic
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Claude-SearchBot
-  engine: unknown
 link-warden:
   name: Linkwarden
   manufacturer: unknown
@@ -16125,4 +16107,247 @@ de-crawler:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - DeCrawler
+  engine: unknown
+das-deutsche-net-crawler:
+  name: 'das-deutsche.net crawler'
+  manufacturer: bär-softwareentwicklung
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'das-deutsche\\.net crawler'
+  engine: unknown
+cred-scanner-ai:
+  name: credscanner-ai
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - credscanner-ai
+  engine: unknown
+public-www-bot:
+  name: PublicWWWBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PublicWWWBot
+  engine: unknown
+vuln-scanner:
+  name: vuln_scanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - vuln_scanner
+  engine: unknown
+favicon-check:
+  name: FaviconCheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FaviconCheck
+  engine: unknown
+appads-crawler:
+  name: appads-crawler
+  manufacturer: calebry-technologies
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - appads-crawler
+  engine: unknown
+ucp-crawler:
+  name: ucp-crawler
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ucp-crawler
+  engine: unknown
+loka-secret-scanner:
+  name: Loka-SecretScanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Loka-SecretScanner
+  engine: unknown
+forest-engine:
+  name: ForestEngine
+  manufacturer: forest
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ForestEngine
+  engine: unknown
+ch-domain-research:
+  name: ch-domain-research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ch-domain-research
+  engine: unknown
+elementor-pro-probe:
+  name: ElementorProProbe
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ElementorProProbe
+  engine: unknown
+kbcnet-bot:
+  name: KBCnetBot
+  manufacturer: tehnička-podrška
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KBCnetBot
+  engine: unknown
+website-predictor-bot:
+  name: WebsitePredictorBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WebsitePredictorBot
+  engine: unknown
+data-bot:
+  name: Databot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Databot
+  engine: unknown
+hacker-one-bug-bounty-researcher:
+  name: BugBountyResearcher
+  manufacturer: hacker-one
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BugBountyResearcher
+  engine: unknown
+seo-kb-crawler:
+  name: seo-kb-crawler
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - seo-kb-crawler
+  engine: unknown
+fraunhofer-sit-domain-intel:
+  name: FraunhoferSIT-DomainIntel
+  manufacturer: fraunhofer-institute-for-secure-information-technology
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FraunhoferSIT-DomainIntel
+  engine: unknown
+matze-fix-it-web-crawler:
+  name: WebCrawler
+  manufacturer: matze-fix-it
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WebCrawler
+  engine: unknown
+app-atlas-enrichment:
+  name: AppAtlasEnrichment
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AppAtlasEnrichment
+  engine: unknown
+enrich:
+  name: enrich
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - enrich
+  engine: unknown
+stultus-search-engine:
+  name: StultusSearchEngine
+  manufacturer: uwec
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StultusSearchEngine
+  engine: unknown
+orbit-scan-policy-scanner:
+  name: orbitScan-policy-scanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - orbitScan-policy-scanner
+  engine: unknown
+retro-document-research:
+  name: RetroDocumentResearch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RetroDocumentResearch
+  engine: unknown
+plytik-bot:
+  name: PlytikBot
+  manufacturer: plytik
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PlytikBot
+  engine: unknown
+unified-paths:
+  name: UnifiedPaths
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - UnifiedPaths
+  engine: unknown
+kitten-cv-web-company-scanner:
+  name: kitten-cv-web-company-scanner
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - kitten-cv-web-company-scanner
+  engine: unknown
+map-the-net-bot:
+  name: MapTheNetBot
+  manufacturer: jeremy-stephan
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MapTheNetBot
   engine: unknown

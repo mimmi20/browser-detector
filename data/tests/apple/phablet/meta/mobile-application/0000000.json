@@ -1936,6 +1936,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23D8133 Barcelona 379.0.0.26.99 (iPhone18,5; iOS 26_3_1; en_GB; en-GB; scale=3.00; 1170x2532; 729743846)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone 18,5",
+      "marketingName": "iPhone 17e",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2532,
+        "height": 1170,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Threads",
+      "modus": null,
+      "version": "379.0.0.26.99",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "26.3.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LightSpeed [FBAN/mLite;FBAV/171.0.0.53.116;FBBV/227057459;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iOS;FBSV/12.4.9;FBSS/3;FBCR/;FBID/phone;FBLC/vi_VN;FBOP/0]"
     },
     "device": {

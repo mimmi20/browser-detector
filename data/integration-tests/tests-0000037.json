@@ -3777,12 +3777,12 @@
         "bits": 0
       },
       "client": {
-        "name": "FrontPage",
+        "name": "FrontPageDomainPipeline",
         "modus": null,
-        "version": null,
-        "manufacturer": "microsoft",
-        "type": "application",
-        "isbot": false,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -4305,7 +4305,7 @@
         "modus": null,
         "version": "1.0.0",
         "manufacturer": "mistral-ai",
-        "type": "crawler",
+        "type": "search-bot",
         "isbot": true,
         "bits": 0
       },
