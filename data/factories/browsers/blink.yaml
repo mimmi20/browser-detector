@@ -348,7 +348,7 @@ rules:
   /flock/i: flock
   '/bromium safari/i': vsentry
   /pagepeeker|ppbot/i: pagepeeker
-  /whatsapp\/.+cloudapi/i: whatsapp-business
+  /whatsapp\/.+cloudapi|whatsappsmbiphone/i: whatsapp-business
   /bitdefendersafepay/i: 'bitdefender safepay'
   /stormcrawler/i: stormcrawler
   /whatsapp/i: whatsapp

@@ -17,6 +17,7 @@ rules:
   /icab/i: icab
   /phantomjs/i: phantomjs
   /salamweb/i: salamweb
+  /whatsappsmbiphone/i: whatsapp-business
   /(fban|fb_iab)\/(messengerlite|mlite)/i: 'facebook messenger lite'
   /(fban|fb_iab)\/(messenger|orca-android)/i: 'facebook messenger app'
   /(fban|fb_iab)\/groups/i: 'facebook groups'
@@ -97,12 +98,15 @@ rules:
   /dolfin|dolphin/i: dolfin
   /arora/i: arora
   '/(?<!like )twitterbot/i': twitterbot
+  /netcraftsurveyagent/i: 'netcraft survey agent'
   /google-extended/i: google-extended
   /trellodesktop/i: trello-desktop
   /blogbeatbot/i: blog-beat-bot
   /linkedinbot/i: linkedinbot
   /telegrambot/i: telegrambot
   /momowebview/i: momo
+  /bitsightbot/i: bitsightbot
+  /isonai-user/i: isonai-user
   /ilunascape/i: ilunascape
   /discordbot/i: discordbot
   /amiga-aweb/i: amiga-aweb

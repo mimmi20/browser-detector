@@ -91,6 +91,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'privatebrowsing' => 'private-browsing',
             'puffin' => 'puffin-cloud-browser',
             'reflectionbot' => 'reflection-bot',
+            'ccleaner browser' => 'ccleaner-browser',
             default => $code,
         };
     }

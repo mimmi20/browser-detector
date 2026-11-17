@@ -773,15 +773,6 @@ adbeat-publisher-description-fetcher:
     search:
       - adbeat-publisher-description-fetcher
   engine: unknown
-perplexity-bot:
-  name: PerplexityBot
-  manufacturer: perplexity
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - PerplexityBot
-  engine: unknown
 grapeshotcrawler:
   name: GrapeshotCrawler
   manufacturer: grapeshot

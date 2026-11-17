@@ -1736,3 +1736,12 @@ applebot:
     search:
       - Applebot
   engine: webkit
+perplexity-bot:
+  name: PerplexityBot
+  manufacturer: perplexity
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PerplexityBot
+  engine: unknown

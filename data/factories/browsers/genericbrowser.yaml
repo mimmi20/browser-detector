@@ -92,7 +92,7 @@ rules:
   /infegyatlas/i: infegyatlas
   /com\.sidhbalitech\.ninexplayer/i: xp-iptv
   '/hubspot marketing grader/i': 'hubspot marketing grader'
-  /whatsapp\/.+cloudapi/i: whatsapp-business
+  /whatsapp\/.+cloudapi|whatsappsmbiphone/i: whatsapp-business
   /yowhatsapp2plus/i: yo-whatsapp-2+
   /yofmwhatsapp/i: fm-whatsapp
   /yoyowhatsapp/i: yo-whatsapp
@@ -2667,6 +2667,7 @@ rules:
   /research/i: generic-bot
   /checker/i: generic-bot
   /scanner/i: generic-bot
+  /scraper/i: generic-bot
   /^searchbot\/[0-9\.]+$/i: search-bot
   /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot
   /^mozilla\/[0-9]\.0$/i: generic-bot
