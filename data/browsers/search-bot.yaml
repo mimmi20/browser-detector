@@ -1727,3 +1727,12 @@ claude-searchbot:
     search:
       - Claude-SearchBot
   engine: unknown
+applebot:
+  name: Applebot
+  manufacturer: apple
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Applebot
+  engine: webkit

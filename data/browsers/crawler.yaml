@@ -77,15 +77,6 @@ petalbot:
     search:
       - PetalBot
   engine: unknown
-applebot:
-  name: Applebot
-  manufacturer: apple
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Applebot
-  engine: webkit
 built-with-crawler:
   name: 'BuiltWith Crawler'
   manufacturer: builtwith

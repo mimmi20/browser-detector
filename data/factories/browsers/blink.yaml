@@ -14,6 +14,7 @@ rules:
   '/opera news/i': 'opera news'
   '/ omi\//i': 'opera devices'
   '/ mms\//i': 'opera neon'
+  /huaweibrowser/i: huawei-browser
   '/hmscore(?:[ \/][\d.]+)?(?!.*huaweibrowser)/i': huawei-mobile-services
   '/opera mobi|(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr\/)|(?:opera|opr\/).*(?:android|mtk|maui|samsung|windows ce|symbos)/i': 'opera mobile'
   /opr\//i: opera
@@ -60,7 +61,7 @@ rules:
   /alohalite/i: aloha-browser-lite
   /alohabrowser|aloha\//i: aloha-browser
   /vivobrowser/i: vivo-browser
-  /huaweibrowser|hbpc\//i: huawei-browser
+  /hbpc\//i: huawei-browser
   /bingweb/i: bingweb
   /sogousearch/i: sogou-search
   /mzbrowser/i: 'mz browser'
@@ -88,6 +89,7 @@ rules:
   /huohoubrowser/i: huohoubrowser
   /aliapp\(tb/i: taobao
   /dingtalk/i: ding-talk
+  /chrome\/\d+[.\d]+ .*agentweb.+ucbrowser/i: cool-browser
   /ucmini/i: 'ucbrowser mini'
   /ucturbo/i: 'ucbrowser turbo'
   /rokubrowser/i: roku-browser

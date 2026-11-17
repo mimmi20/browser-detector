@@ -5476,3 +5476,12 @@ naked-browser-pro:
     factory: null
     search: null
   engine: unknown
+cool-browser:
+  name: CoolBrowser
+  manufacturer: zooking-team
+  type: browser
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Chrome
+  engine: unknown
