@@ -1469,6 +1469,7 @@ rules:
   /loka-secretscanner/i: loka-secret-scanner
   /ch-domain-research/i: ch-domain-research
   /appatlasenrichment/i: app-atlas-enrichment
+  /iaskbot|iaskspider/i: i-ask-bot
   # @todo
   /digitalshadowsbot/i: digital-shadows-bot
   /netpeakcheckerbot/i: netpeak-checker-bot
@@ -1593,6 +1594,7 @@ rules:
   /consumer-scraper/i: consumer-scraper
   /republicresearch/i: republic-research
   /odyssey-viscacha/i: odyssey-viscacha
+  /patchmyphp-check/i: patch-my-php-check
   # @todo
   /copyviodetector/i: copyvio-detector
   /statistikhessen/i: statistik-hessen
@@ -1718,6 +1720,7 @@ rules:
   /adstxt-research/i: adstxt-research
   /showyourselfbot/i: show-yourself-bot
   /goguidescrawler/i: go-guides-crawler
+  /publisherfinder/i: publisher-finder
   # @todo
   /vexelsearchbot/i: vexel-search-bot
   /awariosmartbot/i: awario-smart-bot
@@ -1842,6 +1845,8 @@ rules:
   /nexusresearch/i: nexus-research
   /gd01-rsscheck/i: gd01-rss-check
   /luissearchbot/i: luis-search-bot
+  /solarguidebot/i: solar-guide-bot
+  /opencode-user/i: open-code-user
   # @todo
   /researchscan/i: rwth-aachen-researchscan
   /dataprovider/i: dataprovider-spider
@@ -1959,6 +1964,7 @@ rules:
   /forestengine/i: forest-engine
   /unifiedpaths/i: unified-paths
   /mapthenetbot/i: map-the-net-bot
+  /dmarcflowbot/i: dmarc-flow-bot
   # @todo
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
@@ -2075,6 +2081,9 @@ rules:
   /emanagerbot/i: emanager-bot
   /jobroutebot/i: job-route-bot
   /ucp-crawler/i: ucp-crawler
+  /enfiladebot/i: enfilade-bot
+  /viewsrc-bot/i: viewsrc-bot
+  /laboreyebot/i: labor-eye-bot
   # @todo
   /domainscan/i: domainscan-server-monitoring
   /jobroboter/i: jobroboter
@@ -2185,6 +2194,9 @@ rules:
   /de-scanner/i: de-scanner
   /leadrouter/i: lead-router
   /gitscan-go/i: gitscan-go
+  /reconx-l2s/i: reconx-l2s
+  /touristbot/i: tourist-bot
+  /sparklebot/i: sparkle-bot
   # @todo
   /kozmonavt|kocmohabt/i: kozmonavt
   /stractbot/i: stract-bot
@@ -2304,6 +2316,8 @@ rules:
   /decrawler/i: de-crawler
   /kbcnetbot/i: kbcnet-bot
   /plytikbot/i: plytik-bot
+  /scooterza/i: scooter-za
+  /eurolybot/i: euroly-bot
   # @todo:
   /neevabot/i: neevabot
   /msoffice/i: office
@@ -2435,6 +2449,7 @@ rules:
   /rankobot/i: ranko-bot
   /agentbot/i: agent-bot
   /xai-grok/i: xai-grok
+  /myfnbbot/i: my-fnb-bot
   # @todo:
   /whatcms/i: what-cms
   /phoenix/i: phoenix

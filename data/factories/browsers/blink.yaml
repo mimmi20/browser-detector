@@ -436,6 +436,7 @@ rules:
   '/com\.tcl\.browser|\d+\/tclwebkit\d+[.\d]*/i': browse-here
   /geedoproductsearch/i: geedo-product-search
   /googleagent-search/i: google-agent-search
+  /iaskbot|iaskspider/i: i-ask-bot
   /rakutenwebsearch/i: rakuten-web-search
   /yandexmedianabot/i: yandex-mediana-bot
   /microsoftpreview/i: microsoft-preview
@@ -477,7 +478,6 @@ rules:
   /petalbot/i: petalbot
   /flow\)/i: flowsurf
   /bluesky/i: bluesky
-  /iaskbot/i: i-ask-bot
   /probely/i: probely
   /sparrow/i: viasat-browser
   /seolyt/i: seolyt-bot

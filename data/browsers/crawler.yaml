@@ -1408,6 +1408,7 @@ i-ask-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - iAskBot
+      - iaskspider
   engine: unknown
 dormouse:
   name: Dormouse
@@ -16332,4 +16333,121 @@ map-the-net-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - MapTheNetBot
+  engine: unknown
+enfilade-bot:
+  name: EnfiladeBot
+  manufacturer: enfilade
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EnfiladeBot
+  engine: unknown
+scooter-za:
+  name: ScooterZA
+  manufacturer: tech-warrior
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ScooterZA
+  engine: unknown
+solar-guide-bot:
+  name: SolarGuideBot
+  manufacturer: schobel-digital
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SolarGuideBot
+  engine: unknown
+tourist-bot:
+  name: TouristBot
+  manufacturer: tourist
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - TouristBot
+  engine: unknown
+publisher-finder:
+  name: PublisherFinder
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PublisherFinder
+  engine: unknown
+dmarc-flow-bot:
+  name: DMARCFlowBot
+  manufacturer: ucar-solutions
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DMARCFlowBot
+  engine: unknown
+euroly-bot:
+  name: eurolyBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - eurolyBot
+  engine: unknown
+my-fnb-bot:
+  name: MyFnBBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MyFnBBot
+  engine: unknown
+patch-my-php-check:
+  name: PatchMyPHP-check
+  manufacturer: matt-dever
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PatchMyPHP-check
+  engine: unknown
+sparkle-bot:
+  name: SparkleBot
+  manufacturer: sparkle-technologies
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SparkleBot
+  engine: unknown
+viewsrc-bot:
+  name: viewsrc-bot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - viewsrc-bot
+  engine: unknown
+open-code-user:
+  name: OpenCode-User
+  manufacturer: anomaly
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OpenCode-User
+  engine: unknown
+labor-eye-bot:
+  name: LaborEyeBot
+  manufacturer: laborai-trabajadores
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LaborEyeBot
   engine: unknown
