@@ -482,6 +482,8 @@ final readonly class Headers
                         case 'ai2bot':
                         case 'oai-ads-bot':
                         case 'oai-searchbot':
+                        case 'yisouspider':
+                        case 'bonprix app':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -516,6 +518,8 @@ final readonly class Headers
                         case 'clearscope-bot':
                         case 'quillbot':
                         case 'branchenbuch-bot':
+                        case 'yisouspider':
+                        case 'kagi-fetcher':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

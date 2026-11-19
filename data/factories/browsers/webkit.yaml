@@ -436,6 +436,7 @@ rules:
   '/\[pb\//i': proxy-browser
   '/\[hs\//i': smartview-browser
   '/\[vd\//i': vd-browser
+  /viber/i: viber
   /dalvik/i: dalvik
   /android/i: 'android webkit'
   '/(?<!devicename:)nokia|nokiabrowser/i': nokiabrowser
@@ -758,7 +759,6 @@ rules:
   /n85bot/i: n85bot
   /atbat/i: atbat
   /maven/i: maven
-  /viber/i: viber
   /radio/i: 'radio app'
   /share/i: share-app
   /^siri/i: siri

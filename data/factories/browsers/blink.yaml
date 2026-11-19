@@ -60,6 +60,7 @@ rules:
   /sohunews/i: 'sohunews app'
   /alohalite/i: aloha-browser-lite
   /alohabrowser|aloha\//i: aloha-browser
+  /huaweicloudcontentsecurity/i: huawei-cloud-content-security
   /vivobrowser/i: vivo-browser
   /hbpc\//i: huawei-browser
   /bingweb/i: bingweb
@@ -487,7 +488,7 @@ rules:
   /vuhuv/i: vuhuv-app
   /hola\//i: hola
   /tusk\//i: tusk-browser
-  /testuseragent/i: generic-bot
+  /useragent/i: generic-bot
   /^chrome$/i: generic-bot
   '/(?<!t)chr[o0]me\//i': chrome
   /chromeframe/i: chrome-frame

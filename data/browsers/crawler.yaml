@@ -273,7 +273,7 @@ yak:
     class: null
     search: null
   engine: unknown
-'internet archive bot':
+internet-archive-bot:
   name: 'Internet Archive Bot'
   manufacturer: archive.org
   type: crawler
@@ -281,6 +281,7 @@ yak:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - ia_archiver
+      - IABot
   engine: unknown
 comscore:
   name: 'Comscore Crawler'
@@ -1015,15 +1016,6 @@ shap-bot:
     search:
       - ShapBot
   engine: unknown
-ibou-bot:
-  name: IbouBot
-  manufacturer: ibou
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - IbouBot
-  engine: unknown
 google-notebook-lm:
   name: 'Google NotebookLM'
   manufacturer: google
@@ -1526,15 +1518,6 @@ hgf-alpha-x-crawl:
     search:
       - hgfAlphaXCrawl
   engine: unknown
-claude-web:
-  name: Claude-Web
-  manufacturer: anthropic
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - Claude-Web
-  engine: unknown
 site-score-bot:
   name: SiteScoreBot
   manufacturer: unknown
@@ -1828,15 +1811,6 @@ deepfield-genome:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - 'semantic\-visions.com crawler'
-  engine: unknown
-you-bot:
-  name: YouBot
-  manufacturer: su-sea
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - YouBot
   engine: unknown
 scamadviser-external-hit:
   name: 'Scamadviser External Hit'
@@ -16549,4 +16523,139 @@ bapc-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - 4ort-nexus
+  engine: unknown
+k7-mlwc-bot:
+  name: K7MLWCBot
+  manufacturer: k7-computing
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - K7MLWCBot
+  engine: unknown
+ad-bot:
+  name: AdBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AdBot
+  engine: unknown
+kagi-fetcher:
+  name: kagi-fetcher
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - kagi-fetcher
+  engine: unknown
+domain-extractor:
+  name: DomainExtractor
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DomainExtractor
+  engine: unknown
+huawei-cloud-content-security:
+  name: HuaweiCloudContentSecurity
+  manufacturer: huawei
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HuaweiCloudContentSecurity
+  engine: unknown
+hrw-hubspot-company-check:
+  name: HRW-HubSpot-Company-Check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HRW-HubSpot-Company-Check
+  engine: unknown
+auro-quantis-outreach-bot:
+  name: AuroQuantisOutreachBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AuroQuantisOutreachBot
+  engine: unknown
+domaining-bot:
+  name: DomainingBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DomainingBot
+  engine: unknown
+bookmark-link-check:
+  name: BookmarkLinkCheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BookmarkLinkCheck
+  engine: unknown
+risikomonitor-php-awareness:
+  name: risikomonitor-php-awareness
+  manufacturer: risiko-monitor
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - risikomonitor-php-awareness
+  engine: unknown
+lesso-bot:
+  name: Lessobot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Lessobot
+  engine: unknown
+alpost-bot:
+  name: AlpostBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AlpostBot
+  engine: unknown
+greven-daten-anreicherung:
+  name: GrevenDatenanreicherung
+  manufacturer: greven-medien
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GrevenDatenanreicherung
+  engine: unknown
+shift-signal-bot:
+  name: ShiftSignalBot
+  manufacturer: magashop
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ShiftSignalBot
+  engine: unknown
+river-bot:
+  name: RiverBot
+  manufacturer: river-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RiverBot
   engine: unknown

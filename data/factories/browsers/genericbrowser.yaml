@@ -880,6 +880,7 @@ rules:
   /brokenlinkcheck\.com/i: brokenlinkcheck
   /taktikapp-linkcheck/i: taktikapp-linkcheck
   /backlink-check\.de/i: backlink-check-bot
+  /bookmarklinkcheck/i: bookmark-link-check
   /mailbot-ispdb/i: mailbot-ispdb
   /linkcheckbot/i: linkcheck-bot
   /linkcheck/i: linkcheck
@@ -1336,14 +1337,18 @@ rules:
   /fraunhofersit-securitytxtresearch/i: fraunhofer-sit-security-txt-research
   /cloudanchor-contentsubjectpilot/i: cloud-anchor-content-subject-pilot
   /url-classifier\/.*insidepacket/i: inside-packet-url-classifier
+  # @todo
   /ecommercelab-catalog-research/i: ecommercelab-catalog-research
   /atevesearchsourceurldiscovery/i: ateve-search-source-url-discovery
   /kitten-cv-web-company-scanner/i: kitten-cv-web-company-scanner
+  # @todo
   /akquise-werning-branchentext/i: akquise-werning-branchentext
   /searchbot\/.*theradicalparty/i: radical-search-bot
   /goodreports-compliance-audit/i: good-reports-compliance-audit
+  # @todo
   /physicalai-relaion5b-ingest/i: physicalai-relaion5b-ingest
   /megawika2-report-generation/i: megawika2-report-generation
+  /risikomonitor-php-awareness/i: risikomonitor-php-awareness
   # @todo
   /unternehmensdaten-pruefung/i: unternehmensdaten-pruefung
   /jobadpartner-companyverify/i: job-ad-partner-company-verify
@@ -1359,6 +1364,7 @@ rules:
   '/seekmyway lead connector/i': seek-my-way-lead-connector
   /email-eu-academic-crawler/i: email-eu-academic-crawler
   /fraunhofersit-domainintel/i: fraunhofer-sit-domain-intel
+  /hrw-hubspot-company-check/i: hrw-hubspot-company-check
   # @todo
   /eyeworld-python-research/i: eyeworld-python-research
   /artiwireevidenceverifier/i: artiwire-evidence-verifier
@@ -1373,6 +1379,7 @@ rules:
   /marketsizerdomainhealth/i: market-sizer-domain-health
   /glasswing-zone-research/i: glasswing-zone-research
   /ki-projekt-optout-check/i: ki-projekt-optout-check
+  /grevendatenanreicherung/i: greven-daten-anreicherung
   # @todo
   /prospeqt-saas-research/i: prospeqt-saas-research
   /triumvirymediaresearch/i: triumviry-media-research
@@ -1384,6 +1391,7 @@ rules:
   /tiny[ -]crawler[ -]101/i: tiny-crawler-101
   /contact-email-research/i: contact-email-research
   /europecompanycollector/i: europe-company-collector
+  /auroquantisoutreachbot/i: auro-quantis-outreach-bot
   # @todo
   /secincyte-categorybot/i: secincyte-categorybot
   /donabase-psp-research/i: donabase-psp-research
@@ -1729,6 +1737,7 @@ rules:
   /goguidescrawler/i: go-guides-crawler
   /publisherfinder/i: publisher-finder
   /mira-onboarding/i: mira-onboarding
+  /domainextractor/i: domain-extractor
   # @todo
   /vexelsearchbot/i: vexel-search-bot
   /awariosmartbot/i: awario-smart-bot
@@ -1778,6 +1787,7 @@ rules:
   /credscanner-ai/i: cred-scanner-ai
   /appads-crawler/i: appads-crawler
   /seo-kb-crawler/i: seo-kb-crawler
+  /shiftsignalbot/i: shift-signal-bot
   # @todo
   /censysinspect/i: censysinspect
   /t3versionsbot/i: t3-versions-bot
@@ -1973,6 +1983,8 @@ rules:
   /unifiedpaths/i: unified-paths
   /mapthenetbot/i: map-the-net-bot
   /dmarcflowbot/i: dmarc-flow-bot
+  /kagi-fetcher/i: kagi-fetcher
+  /domainingbot/i: domaining-bot
   # @todo
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
@@ -2327,6 +2339,8 @@ rules:
   /plytikbot/i: plytik-bot
   /scooterza/i: scooter-za
   /eurolybot/i: euroly-bot
+  /k7mlwcbot/i: k7-mlwc-bot
+  /alpostbot/i: alpost-bot
   # @todo:
   /neevabot/i: neevabot
   /msoffice/i: office
@@ -2459,6 +2473,8 @@ rules:
   /agentbot/i: agent-bot
   /xai-grok/i: xai-grok
   /myfnbbot/i: my-fnb-bot
+  /lessobot/i: lesso-bot
+  /riverbot/i: river-bot
   # @todo:
   /whatcms/i: what-cms
   /phoenix/i: phoenix
@@ -2671,6 +2687,9 @@ rules:
   /bsrpc/i: open-build-service
   /cri-o/i: cri-o
   /pa11y/i: pa11y
+  /adbot/i: ad-bot
+  /iabot/i: internet-archive-bot
+  # @todo
   /nmap/i: nmap
   /itms/i: itms
   /(?<![nr])ning/i: ning
@@ -2683,11 +2702,15 @@ rules:
   /w3m/i: w3m
   /^R\//: r
   /^np|npbot/i: name-protect-bot
+  # @todo
   /health-?check/i: generic-bot
   /verification/i: generic-bot
   /javascript:/i: generic-bot
+  /site-?check/i: generic-bot
+  /list-?check/i: generic-bot
   /classifier/i: generic-bot
   /validator/i: generic-bot
+  /useragent/i: generic-bot
   /resolver/i: generic-bot
   /research/i: generic-bot
   /checker/i: generic-bot
@@ -2695,6 +2718,8 @@ rules:
   /scraper/i: generic-bot
   /crawler/i: generic-bot
   /finder/i: generic-bot
+  /probe/i: generic-bot
+  /bot\//i: generic-bot
   /^searchbot\/[0-9\.]+$/i: search-bot
   /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot
   /^mozilla\/[0-9]\.0$/i: generic-bot
@@ -2702,5 +2727,4 @@ rules:
   /^firefox$/i: generic-bot
   /^chrome$/i: generic-bot
   /^node$/i: generic-bot
-  /mozilla/i: mozilla
 generic: unknown

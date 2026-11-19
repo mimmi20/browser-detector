@@ -1745,3 +1745,30 @@ perplexity-bot:
     search:
       - PerplexityBot
   engine: unknown
+ibou-bot:
+  name: IbouBot
+  manufacturer: ibou
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - IbouBot
+  engine: unknown
+claude-web:
+  name: Claude-Web
+  manufacturer: anthropic
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Claude-Web
+  engine: unknown
+you-bot:
+  name: YouBot
+  manufacturer: su-sea
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YouBot
+  engine: unknown
