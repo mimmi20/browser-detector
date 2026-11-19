@@ -572,3 +572,17 @@
     size: 6.9
   type: phablet
   platform: ios
+'apple iphone 19,4':
+  deviceName: 'iPhone 19,4'
+  marketingName: 'iPhone Duo'
+  manufacturer: apple
+  brand: apple
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2670
+    height: 1878
+    touch: true
+    size: 7.6
+  type: phablet
+  platform: ios
