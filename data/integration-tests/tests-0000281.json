@@ -1,0 +1,5102 @@
+[
+  {
+    "headers": {
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/136.0.0.0 Safari/537.36 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/116.0.1938.76 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "x-requested-with": "XMLHttpRequest",
+        "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/136.0.0.0 Safari/537.36 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/116.0.1938.76 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "BingBot",
+        "modus": null,
+        "version": "2.0.0",
+        "manufacturer": "microsoft",
+        "type": "search-bot",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "136.0.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/140.0.3485.71 Version/18.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/140.0.3485.71 Version/18.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Edge Mobile for iOS",
+        "modus": null,
+        "version": "140.0.3485.71",
+        "manufacturer": "microsoft",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.3.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.6.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "27.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.7 Mobile/15E148 Safari/604.1 Ddg/26.7"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.7 Mobile/15E148 Safari/604.1 Ddg/26.7"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "26.7.0",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.6.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.6.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Safari/605.1.15"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPad; CPU OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 1024,
+          "height": 768,
+          "touch": true,
+          "size": 9.7
+        },
+        "type": "tablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iPadOS",
+        "marketingName": "iPadOS",
+        "version": "26.6.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MJ12bot/v2.0.7; http://mj12bot.com/)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; MJ12bot/v2.0.7; http://mj12bot.com/)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "MJ12bot",
+        "modus": null,
+        "version": "2.0.7",
+        "manufacturer": "majestic-12",
+        "type": "search-bot",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/439.4.980558000 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/439.4.980558000 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "439.4.980558000",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.6.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_2_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_2_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "27.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Linux",
+        "marketingName": "Linux",
+        "version": null,
+        "manufacturer": "linux-foundation",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.5.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_7_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_7_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.7.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:156.0) Gecko/20100101 Firefox/156.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Ubuntu",
+        "marketingName": "Ubuntu",
+        "version": null,
+        "manufacturer": "canonical",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "156.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6.2 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6.2 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 1024,
+          "height": 768,
+          "touch": true,
+          "size": 9.7
+        },
+        "type": "tablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "26.6.2",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iPadOS",
+        "marketingName": "iPadOS",
+        "version": "26.6.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 OPR/136.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 OPR/136.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Opera",
+        "modus": null,
+        "version": "136.0.0.0",
+        "manufacturer": "opera",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "152.0.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.52 Safari/537.36 WP.com mShots"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.52 Safari/537.36 WP.com mShots"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Headless Chrome",
+        "modus": null,
+        "version": "153.0.8010.52",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Linux",
+        "marketingName": "Linux",
+        "version": null,
+        "manufacturer": "linux-foundation",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.8010.52",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:157.0) Gecko/20100101 Firefox/157.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox",
+        "modus": null,
+        "version": "157.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Linux",
+        "marketingName": "Linux",
+        "version": null,
+        "manufacturer": "linux-foundation",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "157.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604."
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604."
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "16.6.0",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "16.7.10",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13.1; rv:108.0) Gecko/20100101 Firefox/108.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13.1; rv:108.0) Gecko/20100101 Firefox/108.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox",
+        "modus": null,
+        "version": "108.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "13.1.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "108.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.7.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.7.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.1.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 27_0_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPad; CPU OS 27_0_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 1024,
+          "height": 768,
+          "touch": true,
+          "size": 9.7
+        },
+        "type": "tablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iPadOS",
+        "marketingName": "iPadOS",
+        "version": "27.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "128.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "14.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "128.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.4.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.3.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.6.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.6.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.5.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.5.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.5.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.4.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.4.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.3.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.3.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.1.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7_9 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7_9 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.7.9",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/153.0.8010.34 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/153.0.8010.34 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "153.0.8010.34",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.4.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.4.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.3.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.3.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.2.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7_9 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7_9 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.7.9",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.6.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.5.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.4.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "125.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "125.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.2.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.1.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.6.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.4.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.4.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.3.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.3.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.2.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.4.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.3.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.2.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.2.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.6.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.3.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.1.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/385.0.802777482 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_10 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/385.0.802777482 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "385.0.802777482",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "16.7.10",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "128.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "10.15.7",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "128.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.6.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.4.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.36 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.8010.36 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.8010.36",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.8010.36",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/156.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.7.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/152.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "152.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.6.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/155.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "155.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.6.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/154.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.6.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/153.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox Mobile for iOS",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.4.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "124.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Linux",
+        "marketingName": "Linux",
+        "version": null,
+        "manufacturer": "linux-foundation",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0 (compatible; meta-webindexer/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0 (compatible; meta-webindexer/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler))"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox",
+        "modus": null,
+        "version": "147.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Ubuntu",
+        "marketingName": "Ubuntu",
+        "version": null,
+        "manufacturer": "canonical",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "147.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 12.7; rv:131.0) Gecko/20100101 Firefox/131.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 12.7; rv:131.0) Gecko/20100101 Firefox/131.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox",
+        "modus": null,
+        "version": "131.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "12.7.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "131.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/125.0.6422.80 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/125.0.6422.80 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "125.0.6422.80",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "16.7.8",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Edge",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "microsoft",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"19.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.4258.37\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-platform-version": "\"19.0.0\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "\"154.0.4258.37\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"x86\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Edge",
+        "modus": null,
+        "version": "154.0.4258.37",
+        "manufacturer": "microsoft",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 11",
+        "version": "11.0.0",
+        "manufacturer": "microsoft",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Edge",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "microsoft",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-full-version": "\"153.0.4234.48\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-platform-version": "\"15.0.0\"",
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+        "sec-ch-ua-full-version": "\"153.0.4234.48\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"x86\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Edge",
+        "modus": null,
+        "version": "153.0.4234.48",
+        "manufacturer": "microsoft",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 11",
+        "version": "11.0.0",
+        "manufacturer": "microsoft",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"19.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.58\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-platform-version": "\"19.0.0\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "\"154.0.8037.58\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"x86\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 11",
+        "version": "11.0.0",
+        "manufacturer": "microsoft",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-full-version": "?1",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+        "sec-ch-ua-full-version": "?1",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-full-version": "\"153.0.8010.12\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"Linux\"",
+        "sec-ch-ua-platform-version": "\"\"",
+        "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+        "sec-ch-ua-full-version": "\"153.0.8010.12\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"x86\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Headless Chrome",
+        "modus": null,
+        "version": "153.0.8010.12",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Linux",
+        "marketingName": "Linux",
+        "version": null,
+        "manufacturer": "linux-foundation",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  }
+]

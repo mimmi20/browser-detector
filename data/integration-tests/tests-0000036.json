@@ -727,12 +727,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Safari",
+        "name": "GrokBot",
         "modus": null,
-        "version": null,
-        "manufacturer": "apple",
-        "type": "browser",
-        "isbot": false,
+        "version": "1.0.0",
+        "manufacturer": "x-ai",
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -777,12 +777,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Safari",
+        "name": "GrokBot",
         "modus": null,
-        "version": null,
-        "manufacturer": "apple",
-        "type": "browser",
-        "isbot": false,
+        "version": "1.0.0",
+        "manufacturer": "x-ai",
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -931,7 +931,7 @@
         "modus": null,
         "version": "0.1.0",
         "manufacturer": "apple",
-        "type": "crawler",
+        "type": "search-bot",
         "isbot": true,
         "bits": 0
       },
@@ -4463,12 +4463,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Headless Chrome",
+        "name": "YisouSpider",
         "modus": null,
-        "version": "141.0.0",
-        "manufacturer": "google",
-        "type": "browser",
-        "isbot": false,
+        "version": null,
+        "manufacturer": "yisou",
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {

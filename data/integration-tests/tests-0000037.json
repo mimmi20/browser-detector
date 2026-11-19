@@ -2425,7 +2425,7 @@
         "modus": null,
         "version": "1.0.0",
         "manufacturer": "ibou",
-        "type": "crawler",
+        "type": "search-bot",
         "isbot": true,
         "bits": 0
       },
@@ -2971,12 +2971,12 @@
         "bits": 0
       },
       "client": {
-        "name": null,
+        "name": "Generic Bot",
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "unknown",
-        "isbot": false,
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -5007,12 +5007,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Mozilla Application Suite",
+        "name": "Generic Bot",
         "modus": null,
-        "version": "5.0.0",
-        "manufacturer": "mozilla-foundation",
-        "type": "browser",
-        "isbot": false,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -5023,9 +5023,9 @@
         "bits": 0
       },
       "engine": {
-        "name": "Gecko",
+        "name": null,
         "version": null,
-        "manufacturer": "mozilla"
+        "manufacturer": "unknown"
       }
     }
   },
@@ -5057,12 +5057,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Mozilla Application Suite",
+        "name": "Generic Bot",
         "modus": null,
-        "version": "5.0.0",
-        "manufacturer": "mozilla-foundation",
-        "type": "browser",
-        "isbot": false,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -5073,9 +5073,9 @@
         "bits": 0
       },
       "engine": {
-        "name": "Gecko",
+        "name": null,
         "version": null,
-        "manufacturer": "mozilla"
+        "manufacturer": "unknown"
       }
     }
   },

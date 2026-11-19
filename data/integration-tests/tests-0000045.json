@@ -1127,12 +1127,12 @@
         "bits": 0
       },
       "client": {
-        "name": null,
+        "name": "vuln_scanner",
         "modus": null,
-        "version": null,
+        "version": "3.1.0",
         "manufacturer": "unknown",
-        "type": "unknown",
-        "isbot": false,
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -3127,12 +3127,12 @@
         "bits": 0
       },
       "client": {
-        "name": null,
+        "name": "ucp-crawler",
         "modus": null,
-        "version": null,
+        "version": "0.1.0",
         "manufacturer": "unknown",
-        "type": "unknown",
-        "isbot": false,
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {

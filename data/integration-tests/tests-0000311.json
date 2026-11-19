@@ -1,0 +1,5002 @@
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.5288.6 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.5288.6 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "144.0.5288.6",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "144.0.5288.6",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.5653.33 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.5653.33 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "140.0.5653.33",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.5653.33",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5584.96 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5584.96 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "149.0.5584.96",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.5584.96",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.5824.83 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.5824.83 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "140.0.5824.83",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.5824.83",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.5239.158 Mobile Safari/537.36 MicroMessenger/8.0.37(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.5239.158 Mobile Safari/537.36 MicroMessenger/8.0.37(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.37",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "155.0.5239.158",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5771.36 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5771.36 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "147.0.5771.36",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "147.0.5771.36",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5235.59 Mobile Safari/537.36 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5235.59 Mobile Safari/537.36 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.35",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "147.0.5235.59",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5319.117 Mobile Safari/537.36 MicroMessenger/8.0.33(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5319.117 Mobile Safari/537.36 MicroMessenger/8.0.33(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.33",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5319.117",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.5145.51 Mobile Safari/537.36 MicroMessenger/8.0.34(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.5145.51 Mobile Safari/537.36 MicroMessenger/8.0.34(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.34",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "155.0.5145.51",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.5118.94 Mobile Safari/537.36 MicroMessenger/8.0.43(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.5118.94 Mobile Safari/537.36 MicroMessenger/8.0.43(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.43",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.5118.94",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.40(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.40(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.40",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.49(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.49(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.49",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.3.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.47(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.47(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.47",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.3.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.46(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.46(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.46",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.3.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.35",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.47(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.47(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.47",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.41",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.36(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.36(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.36",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.3.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.33(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.33(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.33",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.34(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.34(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.34",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.1.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS_5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version 5.1 Mobile/9A334 Safari/7534.48.3"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPad; CPU OS_5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version 5.1 Mobile/9A334 Safari/7534.48.3"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 1024,
+          "height": 768,
+          "touch": true,
+          "size": 9.7
+        },
+        "type": "tablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "5.1.0",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "5.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "534.46.0",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/445.5.1006576801 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPad; CPU OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/445.5.1006576801 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 1024,
+          "height": 768,
+          "touch": true,
+          "size": 9.7
+        },
+        "type": "tablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "445.5.1006576801",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iPadOS",
+        "marketingName": "iPadOS",
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "eCommerceLAB-catalog-research/0.1 (+public storefront audit; no outreach)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "eCommerceLAB-catalog-research/0.1 (+public storefront audit; no outreach)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "eCommerceLAB-catalog-research",
+        "modus": null,
+        "version": "0.1.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; rv:89.0) Gecko/20100101 Firefox/89.0 anonymized by Abelssoft 1829001573"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; rv:89.0) Gecko/20100101 Firefox/89.0 anonymized by Abelssoft 1829001573"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "AntiBrowserSpy",
+        "modus": null,
+        "version": null,
+        "manufacturer": "abelssoft",
+        "type": "application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "89.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; rv:159.0) Gecko/20100101 Firefox/159.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; rv:159.0) Gecko/20100101 Firefox/159.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox",
+        "modus": null,
+        "version": "159.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "159.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CrawlFuseBench/1 (+https://crawlfuse.sapeloai.com; capacity measurement, discards bodies)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "CrawlFuseBench/1 (+https://crawlfuse.sapeloai.com; capacity measurement, discards bodies)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (TruffleHog-cPanel)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (TruffleHog-cPanel)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ECLAB-GEO-Verifier/1.0 (+internal evidence QA)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "ECLAB-GEO-Verifier/1.0 (+internal evidence QA)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "RevenueResearchBot/1.0 (company evidence research)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "RevenueResearchBot/1.0 (company evidence research)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "ResearchBot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; FeaturebaseLinkSafety/1.0; +https://featurebase.app)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; FeaturebaseLinkSafety/1.0; +https://featurebase.app)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "FeaturebaseLinkSafety",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Zoeka-bot/0.1 (Zoeka, European search engine coming soon)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Zoeka-bot/0.1 (Zoeka, European search engine coming soon)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Zoeka-bot",
+        "modus": null,
+        "version": "0.1.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.5952.45 Mobile Safari/537.36 MicroMessenger/8.0.37(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.5952.45 Mobile Safari/537.36 MicroMessenger/8.0.37(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.37",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.5952.45",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2188) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.5028.145 Mobile Safari/537.36 MicroMessenger/8.0.31(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2188) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.5028.145 Mobile Safari/537.36 MicroMessenger/8.0.31(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.31",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.5028.145",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5781.156 Mobile Safari/537.36 MicroMessenger/8.0.47(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5781.156 Mobile Safari/537.36 MicroMessenger/8.0.47(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.47",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "147.0.5781.156",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2184) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5505.89 Mobile Safari/537.36 MicroMessenger/8.0.40(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2184) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5505.89 Mobile Safari/537.36 MicroMessenger/8.0.40(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.40",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.5505.89",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2181) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5735.87 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2181) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5735.87 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "152.0.5735.87",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "152.0.5735.87",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5353.60 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5353.60 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "151.0.5353.60",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.5353.60",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5017.80 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5017.80 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "152.0.5017.80",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "152.0.5017.80",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5290.46 Mobile Safari/537.36 MicroMessenger/8.0.46(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5290.46 Mobile Safari/537.36 MicroMessenger/8.0.46(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.46",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.5290.46",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5406.57 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5406.57 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "150.0.5406.57",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.5406.57",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5952.100 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5952.100 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "147.0.5952.100",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "147.0.5952.100",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5367.56 Mobile Safari/537.36 MicroMessenger/8.0.46(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5367.56 Mobile Safari/537.36 MicroMessenger/8.0.46(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.46",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.5367.56",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; V2183) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5314.86 Mobile Safari/537.36 MicroMessenger/8.0.47(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; V2183) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5314.86 Mobile Safari/537.36 MicroMessenger/8.0.47(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.47",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5314.86",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; OPPO PCLM9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.5594.9 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; OPPO PCLM9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.5594.9 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "142.0.5594.9",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.5594.9",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; OPPO PCLM4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5138.42 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; OPPO PCLM4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5138.42 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.5138.42",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5138.42",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.5666.74 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.5666.74 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.5666.74",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.5666.74",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5486.84 Mobile Safari/537.36 MicroMessenger/8.0.49(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5486.84 Mobile Safari/537.36 MicroMessenger/8.0.49(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.49",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.5486.84",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.5275.121 Mobile Safari/537.36 MicroMessenger/8.0.34(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.5275.121 Mobile Safari/537.36 MicroMessenger/8.0.34(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.34",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "144.0.5275.121",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5577.48 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5577.48 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.5577.48",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5577.48",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5326.137 Mobile Safari/537.36 MicroMessenger/8.0.32(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5326.137 Mobile Safari/537.36 MicroMessenger/8.0.32(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.32",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "152.0.5326.137",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5107.147 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; M2102J20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5107.147 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.41",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.5107.147",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; V2184) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5974.91 Mobile Safari/537.36 MicroMessenger/8.0.31(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; V2184) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5974.91 Mobile Safari/537.36 MicroMessenger/8.0.31(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.31",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "143.0.5974.91",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; OPPO PCLM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5001.87 Mobile Safari/537.36 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; OPPO PCLM7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5001.87 Mobile Safari/537.36 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.35",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.5001.87",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; OPPO PCLM3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.5959.101 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; OPPO PCLM3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.5959.101 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "141.0.5959.101",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "141.0.5959.101",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; OPPO PCLM1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.5292.138 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; OPPO PCLM1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.5292.138 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "148.0.5292.138",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.5292.138",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; OPPO PCLM0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5547.102 Mobile Safari/537.36 MicroMessenger/8.0.44(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; OPPO PCLM0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5547.102 Mobile Safari/537.36 MicroMessenger/8.0.44(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.44",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.5547.102",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5926.31 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5926.31 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.5926.31",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5926.31",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5686.134 Mobile Safari/537.36 MicroMessenger/8.0.39(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J25) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5686.134 Mobile Safari/537.36 MicroMessenger/8.0.39(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.39",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5686.134",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5711.87 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5711.87 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "152.0.5711.87",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "152.0.5711.87",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.5919.152 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.5919.152 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "145.0.5919.152",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "145.0.5919.152",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5424.68 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; M2102J21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5424.68 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "151.0.5424.68",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.5424.68",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 22041216I Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.171 Mobile Safari/537.36 Instagram 329.0.0.41.93 Android (33/13; 440dpi; 1080x2316; Xiaomi/Redmi; 22041216I; xagain; mt6895; en_US; 593717597)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; 22041216I Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.171 Mobile Safari/537.36 Instagram 329.0.0.41.93 Android (33/13; 440dpi; 1080x2316; Xiaomi/Redmi; 22041216I; xagain; mt6895; en_US; 593717597)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "22041216I",
+        "marketingName": "Redmi K50i",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2460,
+          "height": 1080,
+          "touch": true,
+          "size": 6.6
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Instagram App",
+        "modus": null,
+        "version": "329.0.0.41.93",
+        "manufacturer": "meta",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.6367.171",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; V2186) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.5518.111 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; V2186) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.5518.111 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.41",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.5518.111",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; V2185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5835.17 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; V2185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5835.17 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "143.0.5835.17",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "143.0.5835.17",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5387.24 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5387.24 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.41",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.5387.24",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5452.23 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5452.23 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "143.0.5452.23",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "143.0.5452.23",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5501.42 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.5501.42 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.41",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "147.0.5501.42",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.5715.20 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.5715.20 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.5715.20",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.5715.20",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5877.49 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; OPPO PCLM0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.5877.49 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "152.0.5877.49",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "152.0.5877.49",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5523.88 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5523.88 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.5523.88",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5523.88",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.5202.29 Mobile Safari/537.36 MicroMessenger/8.0.44(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.5202.29 Mobile Safari/537.36 MicroMessenger/8.0.44(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.44",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "155.0.5202.29",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.5643.149 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; M2102J26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.5643.149 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "146.0.5643.149",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "146.0.5643.149",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/511.0.0.41.118;FBBV/770092029;FBDV/iPhone14,8;FBMD/iPhone;FBSN/iOS;FBSV/26.2;FBSS/3;FBID/phone;FBLC/vi_VN;FBOP/5]"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/511.0.0.41.118;FBBV/770092029;FBDV/iPhone14,8;FBMD/iPhone;FBSN/iOS;FBSV/26.2;FBSS/3;FBID/phone;FBLC/vi_VN;FBOP/5]"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone 14,8",
+        "marketingName": "iPhone 14 Plus",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 2778,
+          "height": 1284,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Facebook App",
+        "modus": null,
+        "version": "511.0.0.41.118",
+        "manufacturer": "meta",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 367.1.0.29.111 (iPhone14,2; iOS 18.7; ko_KR; ko-KR; scale=3.00; 1170x2532; 774722852)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 367.1.0.29.111 (iPhone14,2; iOS 18.7; ko_KR; ko-KR; scale=3.00; 1170x2532; 774722852)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone 14,2",
+        "marketingName": "iPhone 13 Pro",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 2532,
+          "height": 1170,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Instagram App",
+        "modus": null,
+        "version": "367.1.0.29.111",
+        "manufacturer": "meta",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.7.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.35",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.4.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.33(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.33(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.33",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.46(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.46(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.46",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.32(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.32(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.32",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.4.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.30(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.30(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.30",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "17.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.32(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.32(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.32",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "16.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.37(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1 MicroMessenger/8.0.37(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.37",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "16.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; UrlCheck/1.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; UrlCheck/1.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "UrlCheck",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; research-bot/1.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; research-bot/1.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "ResearchBot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Vivaldi/6.7"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Vivaldi/6.7"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Vivaldi",
+        "modus": null,
+        "version": "6.7.0",
+        "manufacturer": "vivaldi",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; zh-cn; OPPO R9m Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.3 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; zh-cn; OPPO R9m Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.3 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "R9m",
+        "marketingName": "R9",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 1920,
+          "height": 1080,
+          "touch": true,
+          "size": 5.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "QQ Browser",
+        "modus": null,
+        "version": "8.3.0",
+        "manufacturer": "tencent",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "5.1.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "57.0.2987.132",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5953.101 Mobile Safari/537.36 MicroMessenger/8.0.45(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5953.101 Mobile Safari/537.36 MicroMessenger/8.0.45(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.45",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "143.0.5953.101",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2187) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5526.82 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2187) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.5526.82 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "143.0.5526.82",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "143.0.5526.82",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.5975.148 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.5975.148 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "145.0.5975.148",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "145.0.5975.148",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2182) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.5754.61 Mobile Safari/537.36 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2182) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.5754.61 Mobile Safari/537.36 MicroMessenger/8.0.35(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.35",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "145.0.5754.61",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; V2181) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.5664.60 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; V2181) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.5664.60 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "140.0.5664.60",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "140.0.5664.60",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.5747.30 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.5747.30 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "142.0.5747.30",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.5747.30",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.5368.96 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.5368.96 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "142.0.5368.96",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "142.0.5368.96",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5018.1 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; OPPO PCLM2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5018.1 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Fake Device",
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.5018.1",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5018.1",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5095.105 Mobile Safari/537.36 MicroMessenger/8.0.30(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5095.105 Mobile Safari/537.36 MicroMessenger/8.0.30(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.30",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.5095.105",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5993.155 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.5993.155 Mobile Safari/537.36 MicroMessenger/8.0.41(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.41",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.5993.155",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.5991.90 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J26) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.5991.90 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "148.0.5991.90",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "148.0.5991.90",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.5578.136 Mobile Safari/537.36 MicroMessenger/8.0.36(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; M2102J22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.5578.136 Mobile Safari/537.36 MicroMessenger/8.0.36(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.36",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "146.0.5578.136",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; V2189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5258.96 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; V2189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5258.96 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "150.0.5258.96",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.5258.96",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; V2189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5503.65 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; V2189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.5503.65 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "149.0.5503.65",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.5503.65",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; V2186) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5238.95 Mobile Safari/537.36 MicroMessenger/8.0.42(0x18001B3F) NetType/WIFI Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; V2186) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.5238.95 Mobile Safari/537.36 MicroMessenger/8.0.42(0x18001B3F) NetType/WIFI Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "8.0.42",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.5238.95",
+        "manufacturer": "google"
+      }
+    }
+  }
+]

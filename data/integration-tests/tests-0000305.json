@@ -1,0 +1,5002 @@
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; WebFixStudio-onderzoek/1.0; +https://webfixstudio.be; clovis.deviaene@gmail.com)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; WebFixStudio-onderzoek/1.0; +https://webfixstudio.be; clovis.deviaene@gmail.com)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 18_7_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPad; CPU OS 18_7_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/154.0.8037.55 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 1024,
+          "height": 768,
+          "touch": true,
+          "size": 9.7
+        },
+        "type": "tablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "154.0.8037.55",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iPadOS",
+        "marketingName": "iPadOS",
+        "version": "18.7.8",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "443.5.997327796",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "443.5.997327796",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0; +https://parallel.ai/parallel-web-systems-bots"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ShapBot/0.1.0; +https://parallel.ai/parallel-web-systems-bots"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "ShapBot",
+        "modus": null,
+        "version": "0.1.0",
+        "manufacturer": "parallel-web-systems",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "537.36.0",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.47 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.47 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Nexus 5X",
+        "marketingName": "Nexus 5X",
+        "manufacturer": "lg",
+        "brand": "google",
+        "display": {
+          "width": 1920,
+          "height": 1080,
+          "touch": true,
+          "size": 5.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Bot",
+        "modus": null,
+        "version": "2.1.0",
+        "manufacturer": "google",
+        "type": "search-bot",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "6.0.1",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "156.0.8078.47",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; DomainIntelligence/1.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; DomainIntelligence/1.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; symfony-scanner)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; symfony-scanner)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "header-probe/2.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "header-probe/2.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2726.1861 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2726.1861 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "48.0.2726.1861",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "10.13.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "48.0.2726.1861",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604."
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604."
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "18.3.1",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.3.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Claude-User (claude-code/2.1.308; +https://support.anthropic.com/)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Claude-User (claude-code/2.1.308; +https://support.anthropic.com/)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Claude Code",
+        "modus": null,
+        "version": "2.1.308",
+        "manufacturer": "anthropic",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "443.5.997327796",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "27.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "risikomonitor-php-awareness/1.0 (+https://php.risikomonitor.com)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "risikomonitor-php-awareness/1.0 (+https://php.risikomonitor.com)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "risikomonitor-php-awareness",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "risiko-monitor",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Instagram 452.0.1.39.54 (iPhone14,5; iOS 26_6_2; tr_TR; tr; scale=3.00; 1170x2532; IABMV/1; 1093431980) Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/23G90 Instagram 452.0.1.39.54 (iPhone14,5; iOS 26_6_2; tr_TR; tr; scale=3.00; 1170x2532; IABMV/1; 1093431980) Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone 14,5",
+        "marketingName": "iPhone 13",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 2532,
+          "height": 1170,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Instagram App",
+        "modus": null,
+        "version": "452.0.1.39.54",
+        "manufacturer": "meta",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.6.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; GrevenDatenanreicherung/2.0; +https://www.greven.de)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; GrevenDatenanreicherung/2.0; +https://www.greven.de)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "GrevenDatenanreicherung",
+        "modus": null,
+        "version": "2.0.0",
+        "manufacturer": "greven-medien",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Claude-User (claude-code/2.1.309; +https://support.anthropic.com/)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Claude-User (claude-code/2.1.309; +https://support.anthropic.com/)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Claude Code",
+        "modus": null,
+        "version": "2.1.309",
+        "manufacturer": "anthropic",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Chrome/130.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 Chrome/130.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "130.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "130.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "443.5.997327796",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.5.2",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/155.0.8059.37 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/155.0.8059.37 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "155.0.8059.37",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.2.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; ReconBot/1.0; +https://scanner.insecurest.xyz/bot; abuse@insecurest.xyz)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; ReconBot/1.0; +https://scanner.insecurest.xyz/bot; abuse@insecurest.xyz)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "nbot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; AlpostBot/0.1; +https://alpost.ch/en/bot/)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; AlpostBot/0.1; +https://alpost.ch/en/bot/)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "AlpostBot",
+        "modus": null,
+        "version": "0.1.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LeadFinderBot/1.0 public business contact discovery"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "LeadFinderBot/1.0 public business contact discovery"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "LeadFinder",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 Chrome/154.0.8037.97 Safari/537.36 Google-Ads-Conversions"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 AppleWebKit/537.36 Chrome/154.0.8037.97 Safari/537.36 Google-Ads-Conversions"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Ads Conversions",
+        "modus": null,
+        "version": null,
+        "manufacturer": "google",
+        "type": "search-bot",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.8037.97",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Lessobot/1.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; Lessobot/1.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Lessobot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "FidwynCategoryResearch/1.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "FidwynCategoryResearch/1.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; MI 6X Build/PKQ1.180904.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044904 Mobile Safari/537.36 MMWEBID/6504 MicroMessenger/7.0.6.1460(0x27000637) Process/tools NetType/4G Language/zh_CN"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 9; MI 6X Build/PKQ1.180904.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044904 Mobile Safari/537.36 MMWEBID/6504 MicroMessenger/7.0.6.1460(0x27000637) Process/tools NetType/4G Language/zh_CN"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 6X",
+        "marketingName": "Mi 6X",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2160,
+          "height": 1080,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "WeChat App",
+        "modus": null,
+        "version": "7.0.6.1460",
+        "manufacturer": "tencent",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "9.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "66.0.3359.126",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.7 baiduboxapp/10.7.0.10 (Baidu; P1 7.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 7.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.7 baiduboxapp/10.7.0.10 (Baidu; P1 7.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "NXT-AL10",
+        "marketingName": "Mate 8",
+        "manufacturer": "huawei",
+        "brand": "huawei",
+        "display": {
+          "width": 1920,
+          "height": 1080,
+          "touch": true,
+          "size": 6.0
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Baidu Box App",
+        "modus": null,
+        "version": "10.7.0.10",
+        "manufacturer": "baidu",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "7.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "T7",
+        "version": "10.7.0",
+        "manufacturer": "baidu"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.3"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.3"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "general Mobile Phone",
+        "marketingName": "general Mobile Phone",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "133.0.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "133.0.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7.8 Safari/605.1.15"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.7.8 Safari/605.1.15"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "18.7.8",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "10.15.7",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/445.5.1006576801 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 26_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/445.5.1006576801 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "445.5.1006576801",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "26.2.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 27_2_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/157.0.8103.37 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPad; CPU OS 27_2_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/157.0.8103.37 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 1024,
+          "height": 768,
+          "touch": true,
+          "size": 9.7
+        },
+        "type": "tablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome for iOS",
+        "modus": null,
+        "version": "157.0.8103.37",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iPadOS",
+        "marketingName": "iPadOS",
+        "version": "27.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LeesteeContacts/1.0 (collecte de sites et e-mails publics d'entreprises; +https://leestee.com)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "LeesteeContacts/1.0 (collecte de sites et e-mails publics d'entreprises; +https://leestee.com)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "4ort-nexus/1.0 (+https://4ort.net/bot)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "4ort-nexus/1.0 (+https://4ort.net/bot)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "4ort-nexus",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "artificial-instincts",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; WebsiteResearchBot/1.0; automated company-profile research; respects robots.txt)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; WebsiteResearchBot/1.0; automated company-profile research; respects robots.txt)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "ResearchBot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": "JavaOS",
+        "marketingName": "JavaOS",
+        "version": null,
+        "manufacturer": "sun",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BAPCBot/0.1 (+https://keywords.bapc.app/bot)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "BAPCBot/0.1 (+https://keywords.bapc.app/bot)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "BAPCBot",
+        "modus": null,
+        "version": "0.1.0",
+        "manufacturer": "bakko-armour",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "RegistercheckBot/1.0 (+https://www.registercheck.de; Impressum-Abgleich neu eingetragener Firmen)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "RegistercheckBot/1.0 (+https://www.registercheck.de; Impressum-Abgleich neu eingetragener Firmen)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "RegistercheckBot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "open-law",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; KIM-CRM Address Assistant/1.0; +https://kim-crm.tdm.de)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; KIM-CRM Address Assistant/1.0; +https://kim-crm.tdm.de)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GlobalDirectoryBot/1.0 (+business directory contact enrichment; respects robots.txt)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "GlobalDirectoryBot/1.0 (+business directory contact enrichment; respects robots.txt)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "enrich",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "rolltheweb-crawler/2.2 (+https://rolltheweb.com/; homepage-only; obeys robots.txt)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "rolltheweb-crawler/2.2 (+https://rolltheweb.com/; homepage-only; obeys robots.txt)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PhysioLeadsBot/0.1 (Bewerbungsrecherche Physiotherapie; lokal; +https://easyapplication.app)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "PhysioLeadsBot/0.1 (Bewerbungsrecherche Physiotherapie; lokal; +https://easyapplication.app)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Adsbot",
+        "modus": null,
+        "version": "0.1.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NorthwiseStoreFinder/1.0 (read-only research; team@northwisehq.com)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "NorthwiseStoreFinder/1.0 (read-only research; team@northwisehq.com)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5553.693 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.5553.693 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "150.0.5553.693",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "150.0.5553.693",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Nexus 5",
+        "marketingName": "Nexus 5",
+        "manufacturer": "lg",
+        "brand": "google",
+        "display": {
+          "width": 1920,
+          "height": 1080,
+          "touch": true,
+          "size": 5.0
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "146.0.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "6.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "146.0.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MediaHomepageCheck/1.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "MediaHomepageCheck/1.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "MediaHomepageCheck",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "IndexerBot/1.0 (+https://webindexer.io/bot)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "IndexerBot/1.0 (+https://webindexer.io/bot)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "WebIndex",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": null,
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7833.32 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7833.32 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "149.0.7833.32",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Fedora Linux",
+        "marketingName": "Fedora Linux",
+        "version": null,
+        "manufacturer": "redhat",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "149.0.7833.32",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1; MI 6X Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043932 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 8.1; MI 6X Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043932 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 6X",
+        "marketingName": "Mi 6X",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2160,
+          "height": 1080,
+          "touch": true,
+          "size": null
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "QQ Browser",
+        "modus": null,
+        "version": "6.2.0",
+        "manufacturer": "tencent",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "8.1.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "57.0.2987.132",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; V2206 Build/TP1A.220624.014_SC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.108 Mobile Safari/537.36 Instagram 330.0.0.40.92 Android (33/13; 300dpi; 720x1568; vivo; V2206; V2206; qcom; es_MX; 596227461)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; V2206 Build/TP1A.220624.014_SC; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.108 Mobile Safari/537.36 Instagram 330.0.0.40.92 Android (33/13; 300dpi; 720x1568; vivo; V2206; V2206; qcom; es_MX; 596227461)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "V2206",
+        "marketingName": "Y22s",
+        "manufacturer": "bbk",
+        "brand": "vivo",
+        "display": {
+          "width": 1612,
+          "height": 720,
+          "touch": true,
+          "size": 6.55
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Instagram App",
+        "modus": null,
+        "version": "330.0.0.40.92",
+        "manufacturer": "meta",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.6367.108",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Safari",
+        "modus": null,
+        "version": "27.0.0",
+        "manufacturer": "apple",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "18.6.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TLM-Audit-Scanner/2.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "TLM-Audit-Scanner/2.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "TLM-Audit-Scanner",
+        "modus": null,
+        "version": "2.0.0",
+        "manufacturer": "unknown",
+        "type": "security-checker",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/409.0.872648028 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/409.0.872648028 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "409.0.872648028",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 26_5_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPad; CPU OS 26_5_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPad",
+        "marketingName": "iPad",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 1024,
+          "height": 768,
+          "touch": true,
+          "size": 9.7
+        },
+        "type": "tablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "443.5.997327796",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iPadOS",
+        "marketingName": "iPadOS",
+        "version": "26.5.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MIRA-Onboarding/1.0; +https://mira.2-28-237-123.sslip.io/datenschutz)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; MIRA-Onboarding/1.0; +https://mira.2-28-237-123.sslip.io/datenschutz)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "MIRA-Onboarding",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "squad-house",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PropensityAccountVectors/1.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "PropensityAccountVectors/1.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; BusinessWatchBot/1.0; +https://business.watch)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; BusinessWatchBot/1.0; +https://business.watch)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "BusinessWatchBot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "business-watch",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CorporateDomainExtractor/1.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "CorporateDomainExtractor/1.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "DomainExtractor",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "VeedelsLeadScanner/1.0 (+https://veedels-seiten.de; interne Recherche)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "VeedelsLeadScanner/1.0 (+https://veedels-seiten.de; interne Recherche)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Adscanner",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36 (compatible; DzzyXtract/1.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36 (compatible; DzzyXtract/1.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "128.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "128.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TrashHound-Wildcard-Resolver/1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "TrashHound-Wildcard-Resolver/1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36 acquisition-engine/0.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36 acquisition-engine/0.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "129.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "14.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "129.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; VeskonBot/1.0; +https://veskon.com/bot)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; VeskonBot/1.0; +https://veskon.com/bot)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "nbot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KI-Projekt-OptOut-Check/1.0 (prueft nur robots.txt und TDMRep, kein Crawling)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "KI-Projekt-OptOut-Check/1.0 (prueft nur robots.txt und TDMRep, kein Crawling)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "KI-Projekt-OptOut-Check",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebQuantumBot/1.0 (+https://crawl.webquantum.info/bot)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "WebQuantumBot/1.0 (+https://crawl.webquantum.info/bot)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "uMBot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "ubermetrics-technologies",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TrumpetSiteDiscovery/1.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "TrumpetSiteDiscovery/1.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.2253.191 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.2253.191 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "65.0.2253.191",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 8.1",
+        "version": "8.1.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "65.0.2253.191",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3429.184 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3429.184 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "68.0.3429.184",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows Vista",
+        "version": "6.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "68.0.3429.184",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "130.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "130.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "143.0.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "14.1.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "143.0.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "124.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "macOS",
+        "marketingName": "macOS",
+        "version": "10.15.7",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "124.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; DomainCategorizer/0.1; +https://1e2.org)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; DomainCategorizer/0.1; +https://1e2.org)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KI-Lab/1.1 (privates Lernprojekt; wellensittich@web.de)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "KI-Lab/1.1 (privates Lernprojekt; wellensittich@web.de)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "httpx.rb/1.8.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "httpx.rb/1.8.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "httpx",
+        "modus": null,
+        "version": null,
+        "manufacturer": "project-discovery",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; rv:156.0) Gecko/20100101 Firefox/156.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; rv:156.0) Gecko/20100101 Firefox/156.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox",
+        "modus": null,
+        "version": "156.0.0",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "156.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; vivo Y66L Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.1 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; vivo Y66L Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.1 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Y66L",
+        "marketingName": "Y66L",
+        "manufacturer": "bbk",
+        "brand": "vivo",
+        "display": {
+          "width": 1280,
+          "height": 720,
+          "touch": true,
+          "size": 5.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "QQ Browser",
+        "modus": null,
+        "version": "8.1.0",
+        "manufacturer": "tencent",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "6.0.1",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "57.0.2987.132",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-G960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.40 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-G960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.40 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G960F",
+        "marketingName": "Galaxy S9",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2960,
+          "height": 1440,
+          "touch": true,
+          "size": 5.8
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "102.0.5005.40",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "8.1.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "102.0.5005.40",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; vivo Y67L Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/35.0.1916.138 Mobile Safari/537.36 T7/7.4 baiduboxapp/8.2.5 (Baidu; P1 6.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 6.0; vivo Y67L Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/35.0.1916.138 Mobile Safari/537.36 T7/7.4 baiduboxapp/8.2.5 (Baidu; P1 6.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Y67L",
+        "marketingName": "Y67L",
+        "manufacturer": "bbk",
+        "brand": "vivo",
+        "display": {
+          "width": 1280,
+          "height": 720,
+          "touch": true,
+          "size": 5.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Baidu Box App",
+        "modus": null,
+        "version": "8.2.5",
+        "manufacturer": "baidu",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "6.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "T7",
+        "version": "7.4.0",
+        "manufacturer": "baidu"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 4a (5G)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.40 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 4a (5G)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.40 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 4a 5G",
+        "marketingName": "Pixel 4a 5G",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2340,
+          "height": 1080,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "102.0.5005.40",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "102.0.5005.40",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OpenCode-User/1.0; +https://opencode.ai"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OpenCode-User/1.0; +https://opencode.ai"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "OpenCode-User",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "anomaly",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "537.36.0",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "IndexBot/1.0 (+https://motormetry.com/methodology; hello@serviceform.com)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "IndexBot/1.0 (+https://motormetry.com/methodology; hello@serviceform.com)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Serviceform IndexBot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "eMClient/11.0.1267.0"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "eMClient/11.0.1267.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "eM Client",
+        "modus": null,
+        "version": "11.0.1267.0",
+        "manufacturer": "em-client",
+        "type": "pim",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "viewsrc-bot/0.1 (+https://viewsrc.io/bot)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "viewsrc-bot/0.1 (+https://viewsrc.io/bot)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "viewsrc-bot",
+        "modus": null,
+        "version": "0.1.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ShopContactCrawler/0.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "ShopContactCrawler/0.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "ShopContactCrawler",
+        "modus": null,
+        "version": "0.1.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3567.89 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3567.89 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "77.0.3567.89",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 7",
+        "version": "7.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "77.0.3567.89",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.2826.43 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.2826.43 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "64.0.2826.43",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows Vista",
+        "version": "6.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "64.0.2826.43",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) kundenmonitoring/0.1 (+https://guymax.de)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) kundenmonitoring/0.1 (+https://guymax.de)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; enyma-varys-check/1.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; enyma-varys-check/1.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; en; rv:2.0.0.0) Gecko/2009040101 Gentoo Firefox/4.0a1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; en; rv:2.0.0.0) Gecko/2009040101 Gentoo Firefox/4.0a1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Firefox",
+        "modus": null,
+        "version": "4.0.0-alpha+1",
+        "manufacturer": "mozilla-foundation",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Gentoo Linux",
+        "marketingName": "Gentoo Linux",
+        "version": null,
+        "manufacturer": "gentoo",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Gecko",
+        "version": "2.0.0.0",
+        "manufacturer": "mozilla"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "122.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "122.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.1; zh-cn; ONEPLUS A3000 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.2 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.1; zh-cn; ONEPLUS A3000 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.2 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "A3000",
+        "marketingName": "3",
+        "manufacturer": "bbk",
+        "brand": "oneplus",
+        "display": {
+          "width": 1920,
+          "height": 1080,
+          "touch": true,
+          "size": 5.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "QQ Browser",
+        "modus": null,
+        "version": "8.2.0",
+        "manufacturer": "tencent",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "7.1.1",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "57.0.2987.132",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; ALP-AL00 Build/HUAWEIALP-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/10.13 lite baiduboxapp/3.6.0.10 (Baidu; P1 8.0.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; ALP-AL00 Build/HUAWEIALP-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/10.13 lite baiduboxapp/3.6.0.10 (Baidu; P1 8.0.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "ALP-AL00",
+        "marketingName": "Mate 10",
+        "manufacturer": "huawei",
+        "brand": "huawei",
+        "display": {
+          "width": 2560,
+          "height": 1440,
+          "touch": true,
+          "size": 5.9
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Baidu Box App Lite",
+        "modus": null,
+        "version": "3.6.0.10",
+        "manufacturer": "baidu",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "8.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "T7",
+        "version": "10.13.0",
+        "manufacturer": "baidu"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; InfoPath.2; Zoom 3.6.0)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; InfoPath.2; Zoom 3.6.0)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Internet Explorer",
+        "modus": null,
+        "version": "11.0.0",
+        "manufacturer": "microsoft",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 8",
+        "version": "8.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Trident",
+        "version": "7.0.0",
+        "manufacturer": "microsoft"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_2_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 27_2_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/443.5.997327796 Mobile/15E148 Safari/604.1"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Google Search App",
+        "modus": null,
+        "version": "443.5.997327796",
+        "manufacturer": "google",
+        "type": "mobile-application",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "27.2.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "605.1.15",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; HR-ATS-Checker/1.0; company research; respects robots.txt)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Mozilla/5.0 (compatible; HR-ATS-Checker/1.0; company research; respects robots.txt)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Hugin/0.1 (+https://github.com/propaganda-media/hugin; contact via site owner)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "Hugin/0.1 (+https://github.com/propaganda-media/hugin; contact via site owner)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SparkleBot/1.0 (+https://sparkle.io/bot)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "SparkleBot/1.0 (+https://sparkle.io/bot)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "SparkleBot",
+        "modus": null,
+        "version": "1.0.0",
+        "manufacturer": "sparkle-technologies",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LexDinGlobal-firms/1 (+https://lexdin.global; public directory research)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "LexDinGlobal-firms/1 (+https://lexdin.global; public directory research)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CMSInventory/0.5 (public CMS metadata)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "CMSInventory/0.5 (public CMS metadata)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CIOAtlas/0.1 (+https://cio.strr.tech)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "CIOAtlas/0.1 (+https://cio.strr.tech)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": null,
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "unknown",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "baza-source/0.1 (research)"
+    },
+    "expected": {
+      "headers": {
+        "user-agent": "baza-source/0.1 (research)"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": null,
+        "marketingName": null,
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "unknown",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": null,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Generic Bot",
+        "modus": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
+        "bits": 0
+      },
+      "os": {
+        "name": null,
+        "marketingName": null,
+        "version": null,
+        "manufacturer": "unknown",
+        "bits": 0
+      },
+      "engine": {
+        "name": null,
+        "version": null,
+        "manufacturer": "unknown"
+      }
+    }
+  }
+]

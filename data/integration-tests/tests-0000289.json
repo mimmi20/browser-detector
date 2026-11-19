@@ -1,0 +1,5728 @@
+[
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2173; Build/AP3A.240206.23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2173; Build/AP3A.240206.23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2173",
+        "marketingName": "Find X3 Pro",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 3216,
+          "height": 1440,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"19.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Microsoft Edge\";v=\"152\"",
+      "sec-ch-ua-full-version": "\"152.0.4191.88\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-platform-version": "\"19.0.0\"",
+        "sec-ch-ua": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Microsoft Edge\";v=\"152\"",
+        "sec-ch-ua-full-version": "\"152.0.4191.88\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"x86\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Edge",
+        "modus": null,
+        "version": "152.0.4191.88",
+        "manufacturer": "microsoft",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 11",
+        "version": "11.0.0",
+        "manufacturer": "microsoft",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "152.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 11T; Build/QQ1B.190603.211) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 11T; Build/QQ1B.190603.211) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 11T",
+        "marketingName": "Mi 11T",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Edge",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "microsoft",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "?1",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "?1",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; CPH2207; Build/BP4A.251113.53) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; CPH2207; Build/BP4A.251113.53) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2207",
+        "marketingName": "Find X3 Neo 5G",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.55
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 6 Pro; Build/BP4A.251207.86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 6 Pro; Build/BP4A.251207.86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 6 Pro",
+        "marketingName": "Pixel 6 Pro",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 3120,
+          "height": 1440,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 4; Build/BP2A.260313.84) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 4; Build/BP2A.260313.84) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 4",
+        "marketingName": "Pixel 4",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2280,
+          "height": 1080,
+          "touch": true,
+          "size": 5.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 2 XL; Build/RQ1A.200907.66) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 2 XL; Build/RQ1A.200907.66) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 2 XL",
+        "marketingName": "Pixel 2 XL",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2880,
+          "height": 1440,
+          "touch": true,
+          "size": 6.0
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"27.0.1\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.58\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"arm\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"macOS\"",
+        "sec-ch-ua-platform-version": "\"27.0.1\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "\"154.0.8037.58\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"arm\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Mac OS X",
+        "marketingName": "Mac OS X",
+        "version": "27.0.1",
+        "manufacturer": "apple",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G985F; Build/RD1B.200805.232) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G985F; Build/RD1B.200805.232) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G985F",
+        "marketingName": "Galaxy S20+ 4G",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.93\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-platform-version": "\"10.0.0\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "\"154.0.8037.93\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"x86\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 10",
+        "version": "10.0.0",
+        "manufacturer": "microsoft",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 11 Lite; Build/QQ2A.190224.69) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 11 Lite; Build/QQ2A.190224.69) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 11 Lite",
+        "marketingName": "Mi 11 Lite",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.55
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"27.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.97\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"arm\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"macOS\"",
+        "sec-ch-ua-platform-version": "\"27.0.0\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "\"154.0.8037.97\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"arm\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Mac OS X",
+        "marketingName": "Mac OS X",
+        "version": "27.0.0",
+        "manufacturer": "apple",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G973F; Build/SQ1D.220423.194) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G973F; Build/SQ1D.220423.194) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G973F",
+        "marketingName": "Galaxy S10 (Global)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3040,
+          "height": 1440,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH1941; Build/BP1A.240211.37) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH1941; Build/BP1A.240211.37) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH1941",
+        "marketingName": "A9 (2020)",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 1600,
+          "height": 720,
+          "touch": true,
+          "size": 6.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"Pixel 9a\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"17.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.92\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"Pixel 9a\"",
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua-platform-version": "\"17.0.0\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "\"154.0.8037.92\"",
+        "sec-ch-ua-bitness": "\"\"",
+        "sec-ch-ua-arch": "\"\"",
+        "sec-ch-ua-form-factors": "\"Mobile\"",
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 9a",
+        "marketingName": "Pixel 9a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2424,
+          "height": 1080,
+          "touch": true,
+          "size": 6.3
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "17.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 3a; Build/BP3A.260816.74) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 3a; Build/BP3A.260816.74) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 3a",
+        "marketingName": "Pixel 3a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2220,
+          "height": 1080,
+          "touch": true,
+          "size": 5.6
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-G970U; Build/BP1A.250525.27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-G970U; Build/BP1A.250525.27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G970U",
+        "marketingName": "Galaxy S10e (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2280,
+          "height": 1080,
+          "touch": true,
+          "size": 5.8
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G981U; Build/SP1A.220124.201) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G981U; Build/SP1A.220124.201) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G981U",
+        "marketingName": "Galaxy S20 5G (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi K60; Build/SD1A.221023.125) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi K60; Build/SD1A.221023.125) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi K60",
+        "marketingName": "Redmi K60",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 12 Pro; Build/RD1B.201118.199) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 12 Pro; Build/RD1B.201118.199) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi Note 12 Pro",
+        "marketingName": "Redmi Note 12 Pro",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-S931B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"16.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.57\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"SM-S931B\"",
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua-platform-version": "\"16.0.0\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "\"154.0.8037.57\"",
+        "sec-ch-ua-bitness": "\"\"",
+        "sec-ch-ua-arch": "\"\"",
+        "sec-ch-ua-form-factors": "\"Mobile\"",
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-S931B",
+        "marketingName": "Galaxy S25 (International)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2340,
+          "height": 1080,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Chromium\";v=\"157\", \"Not-A.Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "sec-ch-ua": "\"Chromium\";v=\"157\", \"Not-A.Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Headless Chrome",
+        "modus": null,
+        "version": "157.0.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Linux",
+        "marketingName": "Linux",
+        "version": null,
+        "manufacturer": "linux-foundation",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "157.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Headless Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Linux",
+        "marketingName": "Linux",
+        "version": null,
+        "manufacturer": "linux-foundation",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2025; Build/QQ3A.200610.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2025; Build/QQ3A.200610.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2025",
+        "marketingName": "Find X2 Pro 5G",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 3168,
+          "height": 1440,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G980F; Build/QQ1A.190922.87) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G980F; Build/QQ1A.190922.87) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G980F",
+        "marketingName": "Galaxy S20 4G",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G965U; Build/RP1A.200125.170) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G965U; Build/RP1A.200125.170) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G965U",
+        "marketingName": "Galaxy S9+ (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2960,
+          "height": 1440,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; Pocophone F1; Build/AP4A.250712.183) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; Pocophone F1; Build/AP4A.250712.183) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pocophone F1",
+        "marketingName": "Pocophone F1",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2246,
+          "height": 1080,
+          "touch": true,
+          "size": 6.18
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 11T Pro; Build/RQ3A.210806.100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 11T Pro; Build/RQ3A.210806.100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 11T Pro",
+        "marketingName": "Mi 11T Pro",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G965F; Build/SD2A.210920.29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G965F; Build/SD2A.210920.29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G965F",
+        "marketingName": "Galaxy S9+ (Europe, Global)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2960,
+          "height": 1440,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 11 Pro; Build/QD1A.190408.24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 11 Pro; Build/QD1A.190408.24) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi Note 11 Pro 4G",
+        "marketingName": "Redmi Note 11 Pro 4G",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 8; Build/SD2A.221215.73) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 8; Build/SD2A.221215.73) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 8",
+        "marketingName": "Pixel 8",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 6a; Build/RQ1D.210420.36) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 6a; Build/RQ1D.210420.36) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 6a",
+        "marketingName": "Pixel 6a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; CPH2251; Build/BP3A.251202.251) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; CPH2251; Build/BP3A.251202.251) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2251",
+        "marketingName": "Reno 6 5G (International)",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.43
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G928F; Build/QQ1B.190604.210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G928F; Build/QQ1B.190604.210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G928F",
+        "marketingName": "Galaxy S6 Edge+ LTE (Europe)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2560,
+          "height": 1440,
+          "touch": true,
+          "size": 5.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; Pixel 3a; Build/BP1A.240808.87) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; Pixel 3a; Build/BP1A.240808.87) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 3a",
+        "marketingName": "Pixel 3a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2220,
+          "height": 1080,
+          "touch": true,
+          "size": 5.6
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5a; Build/RQ1D.210923.23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5a; Build/RQ1D.210923.23) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 5a",
+        "marketingName": "Pixel 5a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.34
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G965U; Build/TD1A.220413.27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G965U; Build/TD1A.220413.27) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G965U",
+        "marketingName": "Galaxy S9+ (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2960,
+          "height": 1440,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G996B; Build/SP1A.211206.42) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G996B; Build/SP1A.211206.42) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G996B",
+        "marketingName": "Galaxy S21+ 5G (International)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 3a XL; Build/RD2A.210704.69) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 3a XL; Build/RD2A.210704.69) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 3a XL",
+        "marketingName": "Pixel 3a XL",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2160,
+          "height": 1080,
+          "touch": true,
+          "size": 6.0
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 12 Pro; Build/QQ3A.190916.235) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 12 Pro; Build/QQ3A.190916.235) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi Note 12 Pro",
+        "marketingName": "Redmi Note 12 Pro",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 6a; Build/RQ1C.200513.50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 6a; Build/RQ1C.200513.50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 6a",
+        "marketingName": "Pixel 6a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 10 Lite 5G; Build/QD1A.191120.21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 10 Lite 5G; Build/QD1A.191120.21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 10 Lite 5G",
+        "marketingName": "Mi 10 Lite 5G",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.57
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi Note 11; Build/SQ3A.210924.211) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi Note 11; Build/SQ3A.210924.211) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi Note 11 5G",
+        "marketingName": "Redmi Note 11 5G",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.43
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G998N; Build/SQ1D.210607.78) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G998N; Build/SQ1D.210607.78) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G998N",
+        "marketingName": "Galaxy S21 Ultra 5G (Korea)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.8
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; CPH2021; Build/UD2A.240707.15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; CPH2021; Build/UD2A.240707.15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2021",
+        "marketingName": "A91",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": true,
+          "size": 6.4
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Redmi K70; Build/BP4A.260622.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Redmi K70; Build/BP4A.260622.40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi K70",
+        "marketingName": "Redmi K70",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; Mi 11 Pro; Build/AP4A.240812.165) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; Mi 11 Pro; Build/AP4A.240812.165) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 11 Pro",
+        "marketingName": "Mi 11 Pro",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.81
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2307; Build/RQ1A.211123.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2307; Build/RQ1A.211123.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2307",
+        "marketingName": "Find X5",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.55
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"Chrome\";v=\"151\", \"Chromium\";v=\"151\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"99\", \"Chrome\";v=\"151\", \"Chromium\";v=\"151\"",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Linux Desktop",
+        "marketingName": "Linux Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "151.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Linux",
+        "marketingName": "Linux",
+        "version": null,
+        "manufacturer": "linux-foundation",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "151.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 4 XL; Build/UQ1A.240526.136) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 4 XL; Build/UQ1A.240526.136) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 4 XL",
+        "marketingName": "Pixel 4 XL",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 3040,
+          "height": 1440,
+          "touch": true,
+          "size": 6.3
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-G930W8; Build/AD1A.241217.209) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-G930W8; Build/AD1A.241217.209) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G930W8",
+        "marketingName": "Galaxy S7 (Canada)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2560,
+          "height": 1440,
+          "touch": true,
+          "size": 5.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 2; Build/BP4A.250921.43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 2; Build/BP4A.250921.43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 2",
+        "marketingName": "Pixel 2",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 1920,
+          "height": 1080,
+          "touch": true,
+          "size": 5.0
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G990U; Build/SD1A.220403.218) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G990U; Build/SD1A.220403.218) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G990U",
+        "marketingName": "Galaxy S21 FE 5G (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2340,
+          "height": 1080,
+          "touch": true,
+          "size": 6.4
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 5a; Build/BP4A.260619.161) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 5a; Build/BP4A.260619.161) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 5a",
+        "marketingName": "Pixel 5a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.34
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G973U; Build/SQ1D.210303.150) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G973U; Build/SQ1D.210303.150) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G973U",
+        "marketingName": "Galaxy S10 (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3040,
+          "height": 1440,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2371; Build/AP4A.241117.112) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2371; Build/AP4A.241117.112) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2371",
+        "marketingName": "Reno 7 5G",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.43
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-G980F; Build/AP4A.240628.55) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-G980F; Build/AP4A.240628.55) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G980F",
+        "marketingName": "Galaxy S20 4G",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Pixel 2 XL; Build/TQ2B.220901.163) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; Pixel 2 XL; Build/TQ2B.220901.163) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 2 XL",
+        "marketingName": "Pixel 2 XL",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2880,
+          "height": 1440,
+          "touch": true,
+          "size": 6.0
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 6a; Build/BP4A.250305.141) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 6a; Build/BP4A.250305.141) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 6a",
+        "marketingName": "Pixel 6a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 5; Build/SQ3A.221013.80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 5; Build/SQ3A.221013.80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 5",
+        "marketingName": "Pixel 5",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2340,
+          "height": 1080,
+          "touch": true,
+          "size": 6.0
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-A125F",
+        "marketingName": "Galaxy A12 (International)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 1600,
+          "height": 720,
+          "touch": true,
+          "size": 6.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "108.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "108.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"10.15.8\"",
+      "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+      "sec-ch-ua-full-version": "\"128.0.6613.138\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"macOS\"",
+        "sec-ch-ua-platform-version": "\"10.15.8\"",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-full-version": "\"128.0.6613.138\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"x86\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Macintosh",
+        "marketingName": "Macintosh",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "128.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Mac OS X",
+        "marketingName": "Mac OS X",
+        "version": "10.15.8",
+        "manufacturer": "apple",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "128.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; Pixel 9a; Build/BP1A.241009.47) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; Pixel 9a; Build/BP1A.241009.47) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 9a",
+        "marketingName": "Pixel 9a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2424,
+          "height": 1080,
+          "touch": true,
+          "size": 6.3
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 8a; Build/RD2A.210510.48) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 8a; Build/RD2A.210510.48) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 8a",
+        "marketingName": "Pixel 8a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 8; Build/SQ3A.210514.214) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 8; Build/SQ3A.210514.214) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 8",
+        "marketingName": "Pixel 8",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 7a; Build/RQ1D.200105.200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 7a; Build/RQ1D.200105.200) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 7a",
+        "marketingName": "Pixel 7a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; Redmi K60; Build/AP4A.240211.233) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; Redmi K60; Build/AP4A.240211.233) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi K60",
+        "marketingName": "Redmi K60",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-G986B; Build/AP2A.230106.81) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-G986B; Build/AP2A.230106.81) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G986B",
+        "marketingName": "Galaxy S20+ 5G (International)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 9a; Build/SQ1D.221215.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 9a; Build/SQ1D.221215.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 9a",
+        "marketingName": "Pixel 9a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2424,
+          "height": 1080,
+          "touch": true,
+          "size": 6.3
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2023; Build/RQ1D.200710.250) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2023; Build/RQ1D.200710.250) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2023",
+        "marketingName": "Find X2",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 3168,
+          "height": 1440,
+          "touch": true,
+          "size": 6.78
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 9 Pro; Build/RQ1D.210728.224) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Pixel 9 Pro; Build/RQ1D.210728.224) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 9 Pro",
+        "marketingName": "Pixel 9 Pro",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2856,
+          "height": 1280,
+          "touch": true,
+          "size": 6.3
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G950U; Build/SD1A.220618.243) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G950U; Build/SD1A.220618.243) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G950U",
+        "marketingName": "Galaxy S8 (US Unlocked)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2960,
+          "height": 1440,
+          "touch": true,
+          "size": 5.8
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G930W8; Build/QD4A.200619.143) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G930W8; Build/QD4A.200619.143) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G930W8",
+        "marketingName": "Galaxy S7 (Canada)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2560,
+          "height": 1440,
+          "touch": true,
+          "size": 5.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G990U; Build/QQ3A.200109.68) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G990U; Build/QQ3A.200109.68) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G990U",
+        "marketingName": "Galaxy S21 FE 5G (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2340,
+          "height": 1080,
+          "touch": true,
+          "size": 6.4
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi Note 12 Pro; Build/SP2A.220122.72) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi Note 12 Pro; Build/SP2A.220122.72) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi Note 12 Pro",
+        "marketingName": "Redmi Note 12 Pro",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G986U; Build/TQ3A.231124.179) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G986U; Build/TQ3A.231124.179) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G986U",
+        "marketingName": "Galaxy S20+ 5G (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi K60; Build/SD2A.211101.43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi K60; Build/SD2A.211101.43) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi K60",
+        "marketingName": "Redmi K60",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 8; Build/SP2A.211211.227) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 8; Build/SP2A.211211.227) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 8",
+        "marketingName": "Pixel 8",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G981B; Build/TQ2A.230218.146) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G981B; Build/TQ2A.230218.146) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G981B",
+        "marketingName": "Galaxy S20 5G (International)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Mi 10T 5G; Build/SD1A.221104.251) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Mi 10T 5G; Build/SD1A.221104.251) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 10T",
+        "marketingName": "Mi 10T",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"iOS\"",
+      "sec-ch-ua": "\"Chromium\";v=\"136\", \"Not;A=Brand\";v=\"24\", \"Opera\";v=\"85\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 OPR/85.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"iOS\"",
+        "sec-ch-ua": "\"Chromium\";v=\"136\", \"Not;A=Brand\";v=\"24\", \"Opera\";v=\"85\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 OPR/85.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "iPhone",
+        "marketingName": "iPhone",
+        "manufacturer": "apple",
+        "brand": "apple",
+        "display": {
+          "width": 480,
+          "height": 320,
+          "touch": true,
+          "size": 3.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Opera",
+        "modus": null,
+        "version": "85.0.0",
+        "manufacturer": "opera",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "iOS",
+        "marketingName": "iOS",
+        "version": "14.0.0",
+        "manufacturer": "apple",
+        "bits": 0
+      },
+      "engine": {
+        "name": "WebKit",
+        "version": "136.0.0",
+        "manufacturer": "apple"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G981U; Build/QP1A.201102.149) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G981U; Build/QP1A.201102.149) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G981U",
+        "marketingName": "Galaxy S20 5G (USA)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 3a; Build/SP1A.210708.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 3a; Build/SP1A.210708.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 3a",
+        "marketingName": "Pixel 3a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2220,
+          "height": 1080,
+          "touch": true,
+          "size": 5.6
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G996B; Build/QD1A.200704.243) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G996B; Build/QD1A.200704.243) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G996B",
+        "marketingName": "Galaxy S21+ 5G (International)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "10.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 4; Build/SD1A.220728.146) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 4; Build/SD1A.220728.146) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 4",
+        "marketingName": "Pixel 4",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2280,
+          "height": 1080,
+          "touch": true,
+          "size": 5.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"SM-G996B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"154.0.8037.94\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-form-factors": "\"Mobile\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"SM-G996B\"",
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua-platform-version": "\"14.0.0\"",
+        "sec-ch-ua": "\"Chromium\";v=\"154\", \"Google Chrome\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+        "sec-ch-ua-full-version": "\"154.0.8037.94\"",
+        "sec-ch-ua-bitness": "\"\"",
+        "sec-ch-ua-arch": "\"\"",
+        "sec-ch-ua-form-factors": "\"Mobile\"",
+        "sec-ch-ua-mobile": "?1",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G996B",
+        "marketingName": "Galaxy S21+ 5G (International)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "154.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "154.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"19.0.0\"",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"99\", \"Opera GX\";v=\"123\", \"Chromium\";v=\"139\"",
+      "sec-ch-ua-full-version": "\"123.0.5669.57\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 OPR/123.0.0.0"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-model": "\"\"",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-ch-ua-platform-version": "\"19.0.0\"",
+        "sec-ch-ua": "\"Not;A=Brand\";v=\"99\", \"Opera GX\";v=\"123\", \"Chromium\";v=\"139\"",
+        "sec-ch-ua-full-version": "\"123.0.5669.57\"",
+        "sec-ch-ua-bitness": "\"64\"",
+        "sec-ch-ua-arch": "\"x86\"",
+        "sec-ch-ua-form-factors": "\"Desktop\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-wow64": "?0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 OPR/123.0.0.0"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Windows Desktop",
+        "marketingName": "Windows Desktop",
+        "manufacturer": "unknown",
+        "brand": "unknown",
+        "display": {
+          "width": null,
+          "height": null,
+          "touch": false,
+          "size": null
+        },
+        "type": "desktop",
+        "ismobile": false,
+        "istv": false,
+        "dualOrientation": false,
+        "simCount": 0,
+        "bits": 64
+      },
+      "client": {
+        "name": "Opera GX",
+        "modus": null,
+        "version": "123.0.5669.57",
+        "manufacturer": "opera",
+        "type": "browser",
+        "isbot": false,
+        "bits": 64
+      },
+      "os": {
+        "name": "Windows",
+        "marketingName": "Windows 11",
+        "version": "11.0.0",
+        "manufacturer": "microsoft",
+        "bits": 64
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "139.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G991N; Build/SQ3A.210511.203) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G991N; Build/SQ3A.210511.203) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G991N",
+        "marketingName": "Galaxy S21 5G (Korea)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.2
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "12.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Redmi Note 10; Build/BP2A.260423.10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Redmi Note 10; Build/BP2A.260423.10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi Note 10",
+        "marketingName": "Redmi Note 10",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.43
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 2; Build/AP2A.240518.46) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 2; Build/AP2A.240518.46) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 2",
+        "marketingName": "Pixel 2",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 1920,
+          "height": 1080,
+          "touch": true,
+          "size": 5.0
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7a; Build/TQ3A.220625.15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7a; Build/TQ3A.220625.15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 7a",
+        "marketingName": "Pixel 7a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.1
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 4; Build/BP3A.250119.83) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 4; Build/BP3A.250119.83) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 4",
+        "marketingName": "Pixel 4",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2280,
+          "height": 1080,
+          "touch": true,
+          "size": 5.7
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "16.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 9a; Build/AP2A.230101.80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 9a; Build/AP2A.230101.80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Pixel 9a",
+        "marketingName": "Pixel 9a",
+        "manufacturer": "google",
+        "brand": "google",
+        "display": {
+          "width": 2424,
+          "height": 1080,
+          "touch": true,
+          "size": 6.3
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Mi 10T 5G; Build/TQ2B.220603.113) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 13; Mi 10T 5G; Build/TQ2B.220603.113) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Mi 10T",
+        "marketingName": "Mi 10T",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "13.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-G935F; Build/UP1A.240313.250) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-G935F; Build/UP1A.240313.250) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G935F",
+        "marketingName": "Galaxy S7 Edge (Global)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 2560,
+          "height": 1440,
+          "touch": true,
+          "size": 5.5
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "14.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2023; Build/AP4A.241121.245) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; CPH2023; Build/AP4A.241121.245) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "CPH2023",
+        "marketingName": "Find X2",
+        "manufacturer": "bbk",
+        "brand": "oppo",
+        "display": {
+          "width": 3168,
+          "height": 1440,
+          "touch": true,
+          "size": 6.78
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-G988B; Build/BP1A.250803.28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-G988B; Build/BP1A.250803.28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "SM-G988B",
+        "marketingName": "Galaxy S20 Ultra 5G (International)",
+        "manufacturer": "samsung",
+        "brand": "samsung",
+        "display": {
+          "width": 3200,
+          "height": 1440,
+          "touch": true,
+          "size": 6.9
+        },
+        "type": "smartphone",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 1,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "15.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 12 Pro; Build/RD2A.210109.11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+    },
+    "expected": {
+      "headers": {
+        "sec-ch-ua-platform": "\"Android\"",
+        "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Chromium\";v=\"153\", \"Not)A\";v=\"24\"",
+        "sec-ch-ua-mobile": "?1",
+        "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 12 Pro; Build/RD2A.210109.11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36"
+      },
+      "device": {
+        "architecture": "",
+        "deviceName": "Redmi Note 12 Pro",
+        "marketingName": "Redmi Note 12 Pro",
+        "manufacturer": "xiaomi",
+        "brand": "xiaomi",
+        "display": {
+          "width": 2400,
+          "height": 1080,
+          "touch": true,
+          "size": 6.67
+        },
+        "type": "phablet",
+        "ismobile": true,
+        "istv": false,
+        "dualOrientation": true,
+        "simCount": 2,
+        "bits": 0
+      },
+      "client": {
+        "name": "Chrome",
+        "modus": null,
+        "version": "153.0.0",
+        "manufacturer": "google",
+        "type": "browser",
+        "isbot": false,
+        "bits": 0
+      },
+      "os": {
+        "name": "Android",
+        "marketingName": "Android",
+        "version": "11.0.0",
+        "manufacturer": "google",
+        "bits": 0
+      },
+      "engine": {
+        "name": "Blink",
+        "version": "153.0.0",
+        "manufacturer": "google"
+      }
+    }
+  }
+]
