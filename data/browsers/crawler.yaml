@@ -16451,3 +16451,102 @@ labor-eye-bot:
     search:
       - LaborEyeBot
   engine: unknown
+shop-tech-scan:
+  name: ShopTechScan
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ShopTechScan
+  engine: unknown
+shop-contact-crawler:
+  name: ShopContactCrawler
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ShopContactCrawler
+  engine: unknown
+ki-projekt-optout-check:
+  name: KI-Projekt-OptOut-Check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - KI-Projekt-OptOut-Check
+  engine: unknown
+business-watch-bot:
+  name: BusinessWatchBot
+  manufacturer: business-watch
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BusinessWatchBot
+  engine: unknown
+mira-onboarding:
+  name: MIRA-Onboarding
+  manufacturer: squad-house
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MIRA-Onboarding
+  engine: unknown
+loti-common-crawl:
+  name: loti-commoncrawl
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - loti-commoncrawl
+  engine: unknown
+probe-image-size:
+  name: probe-image-size
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - probe-image-size
+  engine: unknown
+media-homepage-check:
+  name: MediaHomepageCheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MediaHomepageCheck
+  engine: unknown
+register-check-bot:
+  name: RegistercheckBot
+  manufacturer: open-law
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - RegistercheckBot
+  engine: unknown
+bapc-bot:
+  name: BAPCBot
+  manufacturer: bakko-armour
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - BAPCBot
+  engine: unknown
+4ort-nexus:
+  name: 4ort-nexus
+  manufacturer: artificial-instincts
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 4ort-nexus
+  engine: unknown
