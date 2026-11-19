@@ -2693,6 +2693,8 @@ rules:
   /checker/i: generic-bot
   /scanner/i: generic-bot
   /scraper/i: generic-bot
+  /crawler/i: generic-bot
+  /finder/i: generic-bot
   /^searchbot\/[0-9\.]+$/i: search-bot
   /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot
   /^mozilla\/[0-9]\.0$/i: generic-bot
