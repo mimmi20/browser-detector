@@ -271,51 +271,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 Instagram 9.3.0 (iPhone4,1; iPhone OS 9_3_4; de_DE; de-DE; scale=2.00; 640x960)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "9.3.0",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.4",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A403 [FBAN/FBIOS;FBAV/66.0.0.42.70;FBBV/40764466;FBRV/0;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/10.0.1;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5]"
     },
     "device": {
@@ -541,6 +496,96 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 Instagram 10.3.0 (iPhone5,4; iPhone OS 9_1; nl_BE; nl-BE; scale=2.00; gamut=normal; 640x1136)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone 5,4",
+      "marketingName": "iPhone 5C",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4.0
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "10.3.0",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.1.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A403 Instagram 7.3.0 (iPhone8,4; iPhone OS 10_0_1; en_US; en)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone 8,4",
+      "marketingName": "iPhone SE",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.0
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "7.3.0",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.0.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 [FBAN/GroupsForiOS;FBAV/48.0;FBBV/40069465;FBRV/0;FBDV/iPhone5,3;FBMD/iPhone;FBSN/iOS;FBSV/10.2;FBSS/2;FBCR/TFW;FBID/phone;FBLC/en_US;FBOP/5]"
     },
     "device": {
@@ -721,51 +766,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C153 Instagram 27.0.0.13.98 (iPhone8,4; iOS 11_2_1; de_DE; de-DE; scale=2.00; gamut=normal; 640x1136)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone 8,4",
-      "marketingName": "iPhone SE",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.0
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "27.0.0.13.98",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.2.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "604.4.7",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 Instagram 27.0.0.13.98 (iPhone5,2; iOS 10_3_3; de_DE; de-DE; scale=2.00; gamut=normal; 640x1136)"
     },
     "device": {
@@ -851,51 +851,6 @@
     "engine": {
       "name": "WebKit",
       "version": "604.4.6",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 Instagram 27.0.0.13.98 (iPhone5,4; iOS 10_3_3; de_DE; de; scale=2.00; gamut=normal; 640x1136)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPhone 5,4",
-      "marketingName": "iPhone 5C",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4.0
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "27.0.0.13.98",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.3",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.3.8",
       "manufacturer": "apple"
     }
   },
@@ -2116,7 +2071,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/22F76 Barcelona 383.1.0.35.85 (iPhone14,2; iOS 18_5; nl_NL; nl; scale=3.00; 1170x2532; 743659548)"
+      "user-agent": "Mozilla/5 (iPhone; CPU iPhone OS 27 like Mac OS X) AppleWebKit/605 (KHTML, like Gecko) Mobile/24A446 Safari/604 [FBAN/WhatsAppSMBIPhone]"
     },
     "device": {
       "architecture": "",
@@ -2138,9 +2093,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Threads",
+      "name": "WhatsApp Business",
       "modus": null,
-      "version": "383.1.0.35.85",
+      "version": null,
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -2149,13 +2104,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "18.5.0",
+      "version": "27.0.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "605.1.15",
+      "version": "605.0.0",
       "manufacturer": "apple"
     }
   }

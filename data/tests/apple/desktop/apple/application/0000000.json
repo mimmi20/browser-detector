@@ -271,6 +271,51 @@
   },
   {
     "headers": {
+      "user-agent": "RealPlayer%20Downloader1444 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac12%2C1)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "PowerMac",
+      "marketingName": "PowerMac",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "CFNetwork",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.5.8",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "438.16.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Automator/247.1 CFNetwork/454.11.5 Darwin/10.5.0 (i386) (MacPro3%2C1)"
     },
     "device": {
@@ -631,6 +676,51 @@
   },
   {
     "headers": {
+      "user-agent": "Spector%20Pro2025 CFNetwork/438.14 Darwin/9.8.0 (Power%20Macintosh) (PowerMac8%2C1)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "PowerMac 8,1",
+      "marketingName": "iMac G5 (2004)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 17.0
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "CFNetwork",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.5.8",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "438.14.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Webnote/2.0.0b44 CFNetwork/454.9.7 Darwin/10.4.0 (i386) (iMac11%2C1)"
     },
     "device": {
@@ -834,51 +924,6 @@
     },
     "client": {
       "name": "CFNetwork",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.12.5",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "811.4.18",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "safarifetcherd/602.1 CFNetwork/811.4.18 Darwin/16.5.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Safari Fetcher Daemon",
       "modus": null,
       "version": null,
       "manufacturer": "apple",

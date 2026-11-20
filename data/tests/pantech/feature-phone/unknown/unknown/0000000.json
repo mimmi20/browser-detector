@@ -226,6 +226,51 @@
   },
   {
     "headers": {
+      "user-agent": "PANTECH-C820/R01 MOZILLA/40 UNTRUSTED/10 UPLINK/631170"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "C820",
+      "marketingName": "C820",
+      "manufacturer": "pantech",
+      "brand": "pantech",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "PANTECH G200"
     },
     "device": {

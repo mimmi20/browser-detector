@@ -2341,6 +2341,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Jolicloud Linux i686) AppleWebKit/537.6 (KHTML, like Gecko) Joli OS/1.2 Chromium/23.0.1240.0 Chrome/23.0.1240.0 Safari/537.6"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": "23.0.1240.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Joli OS",
+      "marketingName": "Joli OS",
+      "version": "1.2.0",
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.6.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
     },
     "device": {
@@ -2697,6 +2742,51 @@
       "name": "Blink",
       "version": "44.0.2403.125",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; NetBSD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "27.0.1453.116",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
@@ -3556,6 +3646,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; NetBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "38.0.2125.122",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "38.0.2125.122",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36Mozilla/5.0 (X11; OpenBSD amd64; rv:28.0) Gecko/20100101 Firefox/28.0"
     },
     "device": {
@@ -3821,6 +3956,51 @@
     "engine": {
       "name": "Blink",
       "version": "59.0.3071.36",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; NetBSD i386) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "38.0.2125.122",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "38.0.2125.122",
       "manufacturer": "google"
     }
   },
@@ -4317,186 +4497,6 @@
       "name": "Blink",
       "version": "33.0.1750.117",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1468.0 Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "28.0.1468.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "28.0.1468.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.60 Safari/537.17"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "24.0.1312.60",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "37.0.2062.124",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2062.124",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Google Desktop/5.9.909.30391; http://desktop.google.com/)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Google Desktop",
-      "modus": null,
-      "version": "5.9.909.30391",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
     }
   }
 ]

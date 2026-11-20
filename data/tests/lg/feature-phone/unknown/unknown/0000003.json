@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "LG-U8150"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "U8150",
+      "marketingName": "U8150",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LG-U8180"
     },
     "device": {
@@ -4412,51 +4457,6 @@
   {
     "headers": {
       "user-agent": "LG/U8110/v2.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "U8110",
-      "marketingName": "U8110",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG/U8110/v1.0 UP.Link/6.3.0.0.0"
     },
     "device": {
       "architecture": "",

@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (X11;Linux armv7i;NETRANGEMMH;HbbTV/1.1.1;CE-HTML/1.0;Vendor/HITACHI;SW-Version/V8-T56FT05-LF1V313;Cnt/GBR;Lan/eng;U;en) AppleWebKit/534.24 (KHTML, like Gecko) Safari/534.24, Digital-TV/V8-T56FT05-LF1V313 (HITACHI,49D2900,wireless)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "49D2900",
+      "marketingName": "49D2900",
+      "manufacturer": "hitachi",
+      "brand": "hitachi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 49.0
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.80.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "534.24.0",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.6.6.j (HITACHI, Si2157LG32, wireless)"
     },
     "device": {

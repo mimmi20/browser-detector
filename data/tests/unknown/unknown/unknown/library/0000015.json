@@ -2386,51 +2386,6 @@
   },
   {
     "headers": {
-      "user-agent": "curlie-linkcheck/1.0 (eenmalige controle of een oude Curlie-link nog werkt; 1 verzoek per domein, geen crawl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Python/3.12 aiohttp/3.14.3"
     },
     "device": {
@@ -2456,51 +2411,6 @@
       "name": "aiohttp",
       "modus": null,
       "version": "3.14.3",
-      "manufacturer": "unknown",
-      "type": "library",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "curl-proxy/1.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "cURL",
-      "modus": null,
-      "version": null,
       "manufacturer": "unknown",
       "type": "library",
       "isbot": false,

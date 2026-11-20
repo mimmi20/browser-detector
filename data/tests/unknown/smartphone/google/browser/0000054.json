@@ -1,6 +1,96 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mate 40 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.114 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "136.0.7103.114",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "136.0.7103.114",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mate 40E 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "136.0.7103.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "136.0.7103.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; Mate 40E 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.44 Mobile Safari/537.36"
     },
     "device": {
@@ -4406,96 +4496,6 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.212",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Enjoy Tablet 2 10.1 Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.128 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "139.0.7258.128",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "139.0.7258.128",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Enjoy Tablet 2 10.1 Wi-Fi) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.7204.97 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "138.0.7204.97",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "138.0.7204.97",
       "manufacturer": "google"
     }
   }

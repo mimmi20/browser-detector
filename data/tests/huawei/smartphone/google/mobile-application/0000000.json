@@ -541,6 +541,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; COL-L29 Build/HUAWEICOL-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.93 Mobile Safari/537.36 [AndroidMapsWebView/10.31.1]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "COL-L29",
+      "marketingName": "Honor 10",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 5.84
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Google Maps",
+      "modus": null,
+      "version": "10.31.1",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; COL-L29 Build/HUAWEICOL-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36 GSA/11.0.10.21.arm64"
     },
     "device": {
@@ -1847,6 +1892,51 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HRY-LX1 Build/HONORHRY-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.165 Mobile Safari/537.36 GoogleLens/15.6.38.28.arm64"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "HRY-LX1",
+      "marketingName": "Honor 10 Lite",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Lens",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "121.0.6167.165",
+      "manufacturer": "google"
     }
   },
   {

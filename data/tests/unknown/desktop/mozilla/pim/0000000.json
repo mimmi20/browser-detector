@@ -1756,6 +1756,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; DragonFly x86_64; rv:34.0) Gecko/20100101 Firefox/34.0 SeaMonkey/2.31"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "2.31.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "DragonFly BSD",
+      "marketingName": "DragonFly BSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "34.0.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:42.0) Gecko/20100101 Firefox/42.0 SeaMonkey/2.39"
     },
     "device": {
@@ -1936,6 +1981,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; NetBSD sparc64; en-US; rv:1.8.1.19) Gecko/20081204 SeaMonkey/1.1.14"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "1.1.14",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1.19",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.8.1.24) Gecko/20100322 SeaMonkey/1.1.19"
     },
     "device": {
@@ -2021,6 +2111,51 @@
     "engine": {
       "name": "Gecko",
       "version": "25.0.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; GNU/kFreeBSD i686; en-US; rv:1.8.1.16) Gecko/20080702 Iceape/1.1.11 (Debian-1.1.11-1)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "1.1.11",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Debian with FreeBSD Kernel",
+      "marketingName": "Debian with FreeBSD Kernel",
+      "version": "1.1.11.1",
+      "manufacturer": "softwareInThePublicInterest",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1.16",
       "manufacturer": "mozilla"
     }
   },
@@ -3511,6 +3646,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; IRIX64 IP35; en-US; rv:1.8.1.24) Gecko/20101027 SeaMonkey/1.1.19"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "1.1.19",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "IRIX",
+      "marketingName": "IRIX",
+      "version": "64.0.0",
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1.24",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; SunOS sun4u; fr-FR; rv:1.8.1.21) Gecko/20090415 SeaMonkey/1.1.16"
     },
     "device": {
@@ -4051,6 +4231,51 @@
   },
   {
     "headers": {
+      "user-agent": "Seamonkey-1.1.13-1(X11; U; GNU Fedora fc 10) Gecko/20081112"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "redhat",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Seamonkey/16.20 (BeOS 7.9; ar;)"
     },
     "device": {
@@ -4271,231 +4496,6 @@
     "engine": {
       "name": "Gecko",
       "version": "28.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; OpenBSD amd64; rv:33.0) Gecko/20100101 Firefox/33.0 SeaMonkey/2.30"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "modus": null,
-      "version": "2.30.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "33.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; SunOS i86pc; rv:52.0) Gecko/20100101 Thunderbird/52.3.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Thunderbird",
-      "modus": null,
-      "version": "52.3.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "SunOS",
-      "marketingName": "SunOS",
-      "version": null,
-      "manufacturer": "oracle",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "52.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:26.0) Gecko/20100101 Firefox/26.0 SeaMonkey/2.23"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "modus": null,
-      "version": "2.23.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "26.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Seamonkey/16.11 (Edubuntu 6.3; fr_CA;)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "modus": null,
-      "version": "16.11.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": "6.3.0",
-      "manufacturer": "canonical",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Seamonkey/13.0 (Edubuntu 4.5; en_CA;)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "modus": null,
-      "version": "13.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": "4.5.0",
-      "manufacturer": "canonical",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
       "manufacturer": "mozilla"
     }
   }

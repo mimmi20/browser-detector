@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Elinks (0.3.2; Unix)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "ELinks",
+      "modus": null,
+      "version": "0.3.2",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Unix",
+      "marketingName": "Unix",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Arexx (compatible; MSIE 6.0; AmigaOS5.0) IBrowse 4.0"
     },
     "device": {
@@ -486,6 +531,51 @@
       "marketingName": "Amiga OS",
       "version": "3.1.0",
       "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.61 [en] (X11; U; ) - BrowseX (2.0.0 Linux 2.2.16-22)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "BrowseX",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": "2.2.16.22",
+      "manufacturer": "linux-foundation",
       "bits": 0
     },
     "engine": {
@@ -3017,6 +3107,51 @@
   },
   {
     "headers": {
+      "user-agent": "Uzbl (X11; U; Arch Linux; de-DE) Webkit/1.1.10"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Uzbl",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "ArchLinux",
+      "marketingName": "ArchLinux",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1.1.10",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/3.0 (compatible; NetPositive/2.1.1; BeOS)"
     },
     "device": {
@@ -3102,6 +3237,51 @@
     "engine": {
       "name": "Gecko",
       "version": "1.8.0.7",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/6.0 (Future Star Technologies Corp. Star-Blade OS; U; en-US) iNet Browser 2.5"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "iNet Browser",
+      "modus": null,
+      "version": "2.5.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Star-Blade OS",
+      "marketingName": "Star-Blade OS",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
       "manufacturer": "mozilla"
     }
   },

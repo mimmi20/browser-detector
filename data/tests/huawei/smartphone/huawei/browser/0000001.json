@@ -2791,6 +2791,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ART-L29N Build/HUAWEIART-L29N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/14.0.0.365 HMSCore/6.12.0.301"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "ART-L29N",
+      "marketingName": "P40 Lite E",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Huawei Browser",
+      "modus": null,
+      "version": "14.0.0.365",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; REA-AN00; HMSCore 6.12.0.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.3.300 Mobile Safari/537.36"
     },
     "device": {
@@ -4436,51 +4481,6 @@
       "name": "Huawei Browser",
       "modus": null,
       "version": "17.0.5.301",
-      "manufacturer": "huawei",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "HarmonyOS",
-      "marketingName": "HarmonyOS",
-      "version": null,
-      "manufacturer": "huawei",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.5735.196",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; BRE-AL80a; HMSCore 6.15.6.332) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/16.0.9.302 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "BRE-AL80a",
-      "marketingName": "Enjoy 70X",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2700,
-        "height": 1224,
-        "touch": true,
-        "size": 6.78
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Huawei Browser",
-      "modus": null,
-      "version": "16.0.9.302",
       "manufacturer": "huawei",
       "type": "browser",
       "isbot": false,

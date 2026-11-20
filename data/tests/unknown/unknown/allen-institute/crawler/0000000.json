@@ -133,5 +133,53 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Chrome OS\"",
+      "sec-ch-ua": "\"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\", \"Not-A.Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (compatible; AI2Bot/1.0)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Ai2Bot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "allen-institute",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "ChromeOS",
+      "marketingName": "ChromeOS",
+      "version": null,
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

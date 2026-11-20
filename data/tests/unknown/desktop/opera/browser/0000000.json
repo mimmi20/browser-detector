@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (X11; Linux zbov) Presto/2.11.355 Version/12.10"
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; en; rv:2.0) Gecko/20100101 Firefox/4.0 Opera 11.64"
     },
     "device": {
       "architecture": "",
@@ -25,7 +25,7 @@
     "client": {
       "name": "Opera",
       "modus": null,
-      "version": "12.10.0",
+      "version": "11.64.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
@@ -40,7 +40,7 @@
     },
     "engine": {
       "name": "Presto",
-      "version": "2.11.355",
+      "version": null,
       "manufacturer": "opera"
     }
   },
@@ -361,6 +361,51 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/6.01 (X11; U; nn)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.01.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Elektra",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (SunOS 5.8 sun4u; U) Opera 5.0 [en]"
     },
     "device": {
@@ -627,6 +672,51 @@
       "name": "Elektra",
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/8.0 (X11; Linu   x i686; U; cs)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
     }
   },
   {
@@ -2161,6 +2251,51 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/10.00 (X11 Linux i686  U Fedora 9 en) Presto/2.2.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "10.00.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": "9.0.0",
+      "manufacturer": "redhat",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.2.0",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/5.0 (SunOS 5.8 sun4u; U) [en]"
     },
     "device": {
@@ -2471,6 +2606,51 @@
     "engine": {
       "name": "Presto",
       "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (X11 FreeBSD i386 en) Presto/2.10.229 Version/11.62"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.62.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": null,
+      "manufacturer": "freebsd",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.229",
       "manufacturer": "opera"
     }
   },
@@ -2831,6 +3011,321 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/7.50 (X11; U; tu)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "7.50.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/6.05 (X11; U; tu)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.05.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Elektra",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.01 (X11; U; ux)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.01.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.10 (X11; U; ux)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.10.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/7.23 (X11; U; ux)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "7.23.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/7.10 (X11; U; tu)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "7.10.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.61 (X11; U; nn)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.61.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
       "manufacturer": "opera"
     }
   },
@@ -3646,6 +4141,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; FreeBSD 6 i386; U; en; rv:1.8.0) Gecko/20060728 Firefox/1.5.0 Opera 9.20"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.20.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "6.0.0",
+      "manufacturer": "freebsd",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (UNIX; U) Opera 6.12  [en]"
     },
     "device": {
@@ -3956,546 +4496,6 @@
     "engine": {
       "name": "Presto",
       "version": "2.12.388",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 9.1-RELEASE-p5 amd64) Presto/2.12.388 Version/12.16"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.16.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "9.1.0",
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.388",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera 11.61 (compatible; MSIE 9.0; Linux; Trident/5.0; tb-webde/1.8.1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.61.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "5.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 9.0-RELEASE amd64; U; ru) Presto/2.10.289 Version/12.00"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.00.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "9.0.0",
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.289",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 8.3-RELEASE-p4 i386; U; en) Presto/2.10.289 Version/12.02"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.02.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "8.3.0",
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.10.289",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 9.1-STABLE amd64) Presto/2.12.388 Version/12.12"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.12.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "9.1.0",
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.388",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; SunOS i86pc; U; de) Presto/2.2.15 Version/10.11"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.11.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "SunOS",
-      "marketingName": "SunOS",
-      "version": null,
-      "manufacturer": "oracle",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.2.15",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 8.2-STABLE i386; U; de) Presto/2.9.168 Version/11.51"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.51.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "8.2.0",
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.9.168",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.64 (X11; FreeBSD 7.4-RELEASE amd64; U; en) Presto/2.1.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.64.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "7.4.0",
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.1.1",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 9.1-RC1 amd64) Presto/2.12.388 Version/12.11"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "9.1.0-RC+1",
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.388",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; SunOS sun4u; U; en) Presto/2.2.15 Version/10.11"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.11.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "SunOS",
-      "marketingName": "SunOS",
-      "version": null,
-      "manufacturer": "oracle",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.2.15",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 6.2-RELEASE i386; U; de) Presto/2.2.15 Version/10.10"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.10.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "6.2.0",
-      "manufacturer": "freebsd",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.2.15",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; OpenBSD i386; U; en) Presto/2.2.15 Version/10.11"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.11.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.2.15",
       "manufacturer": "opera"
     }
   }

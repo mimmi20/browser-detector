@@ -676,51 +676,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A025G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36 GoogleLens/12.47.14.23.arm"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-A025G",
-      "marketingName": "Galaxy A02s",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "96.0.4664.92",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.92",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-M326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.87 Mobile Safari/537.36"
     },
     "device": {
@@ -4519,6 +4474,51 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A336E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.61 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-A336E",
+      "marketingName": "Galaxy A33 5G (Asia/Africa)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "96.0.4664.61",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.61",
       "manufacturer": "google"
     }
   }

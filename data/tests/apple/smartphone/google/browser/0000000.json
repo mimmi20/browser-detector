@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_6_7) AppleWebKit/5321 (KHTML, like Gecko) Chrome/36.0.893.0 Mobile Safari/5321"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "36.0.893.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.7",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "36.0.893.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "sec-ch-ua-platform": "\"iOS\"",
       "sec-ch-ua": "\"Not)A;Brand\";v=\"99\", \"HeadlessChrome\";v=\"127\", \"Chromium\";v=\"127\"",
       "sec-ch-ua-mobile": "?1",

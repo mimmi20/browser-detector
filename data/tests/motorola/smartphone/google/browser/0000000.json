@@ -4141,6 +4141,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; motorola one 5G UW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.66 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "One 5G UW",
+      "marketingName": "One 5G UW",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 2520,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "90.0.4430.66",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.66",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; moto g(9) power) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36"
     },
     "device": {
@@ -4226,6 +4271,51 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; motorola one 5G ace) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "One 5G Ace",
+      "marketingName": "One 5G Ace",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "91.0.4472.164",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.164",
       "manufacturer": "google"
     }
   },
@@ -4406,96 +4496,6 @@
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto g(9)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Moto G9",
-      "marketingName": "Moto G9",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "96.0.4664.104",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.104",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; moto e40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Moto E40",
-      "marketingName": "Moto E40",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "96.0.4664.104",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.104",
       "manufacturer": "google"
     }
   }

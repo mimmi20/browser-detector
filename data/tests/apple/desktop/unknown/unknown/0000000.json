@@ -541,6 +541,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/4.4.0 (textmode; Intel Mac OS X 10.5; en-GB)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.5.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Text",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mac OS X/10.7 (11A511); ExchangeWebServices/2.0 (123); Mail/5.0 (1244.2)"
     },
     "device": {
@@ -811,6 +856,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Zoom.Mac 10.8.5 x86)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Polymail/1.47 (ctrlla.Polymail; build:64; OS X 10.12.6) Alamofire/4.5.1"
     },
     "device": {
@@ -946,6 +1036,112 @@
   },
   {
     "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"12.2.1\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.1672.104\", \"AVG Secure Browser\";v=\"98.0.1672.104\"",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"AVG Secure Browser\";v=\"98\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 64
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "12.2.1",
+      "manufacturer": "apple",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.1672.104",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"12.4.0\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.127\", \"Opera GX\";v=\"100.0.4896.127\"",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Opera GX\";v=\"86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/86.0.4363.64"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 64
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "12.4.0",
+      "manufacturer": "apple",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "macOS/13.3.1 (22E261) dataaccessd/1.0"
     },
     "device": {
@@ -987,6 +1183,59 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"13.1.0\"",
+      "sec-ch-ua": "\"Opera GX\";v=\"99\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"99.0.4788.86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"arm\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0 (Edition std-1)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 64
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "13.1.0",
+      "manufacturer": "apple",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1126,6 +1375,59 @@
   },
   {
     "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"13.5.1\"",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Opera GX\";v=\"101\", \"Chromium\";v=\"115\"",
+      "sec-ch-ua-full-version": "\"101.0.4843.81\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"arm\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/101.0.0.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 64
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "13.5.1",
+      "manufacturer": "apple",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "macOS/14.6.1 (23G93) dataaccessd/1.0"
     },
     "device": {
@@ -1212,6 +1514,151 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (ZOOM.Mac 14.1.2 x86)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "14.1.2",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (ZOOM.Mac 15.3.1 x86)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "15.3.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"26.3.1\"",
+      "sec-ch-ua": "\"Opera GX\";v=\"127\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"127.0.5778.41\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-arch": "\"arm\"",
+      "sec-ch-ua-form-factors": "\"Desktop\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 OPR/127.0.0.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 64
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "26.3.1",
+      "manufacturer": "apple",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.0",
+      "manufacturer": "google"
     }
   }
 ]

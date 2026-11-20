@@ -1306,6 +1306,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11) AppleWebKit/62.41 (KHTML, like Gecko) Edge/17.10859 Safari/452.6"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Edge",
+      "modus": null,
+      "version": "17.10859.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "17.10859.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; <64-bit tags>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Safari/<WebKit Rev> Edge/<EdgeHTML Rev>.<Windows Build>"
     },
     "device": {

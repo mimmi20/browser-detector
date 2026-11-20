@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380/Z3x_tmXXKK4"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "GT-S5380",
+      "marketingName": "Wave Y",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Bada",
+      "marketingName": "Bada",
+      "version": null,
+      "manufacturer": "samsung",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-SM-G870A Build/LMY47X"
     },
     "device": {
@@ -779,6 +824,51 @@
         "height": 240,
         "touch": true,
         "size": 3.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Bada",
+      "marketingName": "Bada",
+      "version": null,
+      "manufacturer": "samsung",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOZILLA50 (SAMSUNG SAMSUNG-GT-S7230"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "GT-S7230",
+      "marketingName": "Wave 723",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": null
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2598,111 +2688,6 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.73",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua-model": "\"SM-G965F\"",
-      "x-requested-with": "com.ksmobile.launcher",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-ua": "\"Android WebView\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-      "sec-ch-ua-full-version": "\"155.0.8059.43\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-form-factors": "\"Mobile\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-wow64": "?0",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G965F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-G965F",
-      "marketingName": "Galaxy S9+ (Europe, Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2960,
-        "height": 1440,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "155.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "x-requested-with": "com.ksmobile.launcher",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua": "\"Android WebView\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
-      "sec-ch-ua-mobile": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G965F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/155.0.8059.43 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-G965F",
-      "marketingName": "Galaxy S9+ (Europe, Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2960,
-        "height": 1440,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "155.0.0",
       "manufacturer": "google"
     }
   }

@@ -1801,6 +1801,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 SAMSUNG-GT-S8003/1.0 SHP/VPP/R5 Bada/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "GT-S8003",
+      "marketingName": "Jet",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Bada",
+      "marketingName": "Bada",
+      "version": "1.0.0",
+      "manufacturer": "samsung",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "FAKE_USER_AGENT Samsung IP-A790"
     },
     "device": {
@@ -2084,6 +2129,51 @@
         "height": 240,
         "touch": false,
         "size": 3.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOZILLA/SMB3(Z105)/SAMSUNG-NOURLCMP-NOMIME"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Z105",
+      "marketingName": "Z105",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 192,
+        "height": 176,
+        "touch": false,
+        "size": null
       },
       "type": "feature-phone",
       "ismobile": true,
@@ -2736,6 +2826,51 @@
       "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "sun",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5330"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "GT-S5330",
+      "marketingName": "Wave 533",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Bada",
+      "marketingName": "Bada",
+      "version": null,
+      "manufacturer": "samsung",
       "bits": 0
     },
     "engine": {
@@ -4334,141 +4469,6 @@
         "height": 240,
         "touch": false,
         "size": 1.92
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-A701"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SGH-A701",
-      "marketingName": "SGH-A701",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 120,
-        "height": 100,
-        "touch": false,
-        "size": 2.3
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-A706"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SGH-A706",
-      "marketingName": "SGH-A706",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-A707"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SGH-A707",
-      "marketingName": "SGH-A707",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 96,
-        "height": 96,
-        "touch": false,
-        "size": null
       },
       "type": "feature-phone",
       "ismobile": true,

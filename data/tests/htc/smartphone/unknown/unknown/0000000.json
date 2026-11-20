@@ -718,5 +718,95 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (COS; HTC 9089)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "9089",
+      "marketingName": "9089",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Chinese Operating System",
+      "marketingName": "COS",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Chinese Operating System 2.0; HTC 9089)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "9089",
+      "marketingName": "9089",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Chinese Operating System",
+      "marketingName": "COS",
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
   }
 ]

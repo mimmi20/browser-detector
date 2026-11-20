@@ -203,7 +203,7 @@
       "bits": 0
     },
     "client": {
-      "name": "AdsBot Google",
+      "name": "AdsBot Google-Mobile",
       "modus": null,
       "version": null,
       "manufacturer": "google",
@@ -222,6 +222,54 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "AdsBot-Google-Mobile"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "AdsBot Google-Mobile",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "type": "search-bot",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.0",
+      "manufacturer": "google"
     }
   }
 ]

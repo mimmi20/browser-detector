@@ -1,7 +1,97 @@
 [
   {
     "headers": {
-      "user-agent": "31.0) Gecko/20100101 Firefox/31.0"
+      "user-agent": "Mozilla Firefox"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (rv:99.0) Gecko/20100101 Firefox/99.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "99.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "99.0.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Gecko/20100101 Firefox/31.0"
     },
     "device": {
       "architecture": "",
@@ -46,52 +136,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (000000000; 00000 000 00 0 000000) DDDDDDDDDDDDDDDDDDDDD DDDDDDD DDDD DDDDDD"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Meine Welt will ich nicht offenbaren.) Gecko/20071127 Firefox/2.0.0.11"
+      "user-agent": "Mozilla/5.0 Gecko 20070713 Firefox/2.0.0.0"
     },
     "device": {
       "architecture": "",
@@ -115,7 +160,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "2.0.0.11",
+      "version": "2.0.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -136,97 +181,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Pr-Navi-Innovation/3.0; +http://www.PR-Navi.de)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/3.0 (Planetweb/2.100 JS SSL US; Dreamcast US)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "firefox/1.0"
+      "user-agent": "Mozilla/5.0 (Unknown; WOW64; rv:) Gecko/20100101 Firefox/; Mozilla Firefox  - --"
     },
     "device": {
       "architecture": "",
@@ -250,7 +205,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "1.0.0",
+      "version": null,
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -271,7 +226,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 Gecko Firefox/46.0"
+      "user-agent": "Mozilla/5.0 (Gecko) Firefox/64"
     },
     "device": {
       "architecture": "",
@@ -295,7 +250,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "46.0.0",
+      "version": "64.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -316,97 +271,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Snacktory; +https://github.com/karussell/snacktory)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Sophora; http://www.subshell.com)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox 3.5.6 (Vista)"
+      "user-agent": "Mozilla/5.0 (compatible; Yahoo Pipes 2.0; +http://developer.yahoo.com/yql/provider) Gecko/20090729 Firefox/3.5.2"
     },
     "device": {
       "architecture": "",
@@ -430,7 +295,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "3.5.6",
+      "version": "3.5.2",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -451,7 +316,7 @@
   },
   {
     "headers": {
-      "user-agent": "36.0) Gecko/20100101 Firefox/36.0"
+      "user-agent": "Mozilla/5.0 Gecko/20101206 Firefox/3.6.13"
     },
     "device": {
       "architecture": "",
@@ -475,7 +340,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "36.0.0",
+      "version": "3.6.13",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -496,7 +361,7 @@
   },
   {
     "headers": {
-      "user-agent": "33.0) Gecko/20100101 Firefox/33.0"
+      "user-agent": "Mozilla/5.0 Gecko Firefox/88.88.88 (Adolf Hitler)"
     },
     "device": {
       "architecture": "",
@@ -520,7 +385,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "33.0.0",
+      "version": "88.88.88",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -541,7 +406,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (; rv:30.0) Gecko/20100101 Firefox/30.0"
+      "user-agent": "Firefox/20.0"
     },
     "device": {
       "architecture": "",
@@ -565,52 +430,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "30.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "30.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (000000000; 00000 000 00 0 000000) DDDDDDDDDDDDDDDDDDDDD DDDDDDD DDDD DDDDDD DDDDDDDDDDDDD DDDDDDDDDDDDDDDD"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
+      "version": "20.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -631,52 +451,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible) MM3-WebAssistant"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "27.3) Gecko/20130101 Firefox/27.3"
+      "user-agent": "23.0) Gecko/20131011 Firefox/23.0"
     },
     "device": {
       "architecture": "",
@@ -700,7 +475,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "27.3.0",
+      "version": "23.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -721,277 +496,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; CsQuery/1.3)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/3.0 (compatible; HP Web PrintSmart 04b0 1.0.1.34)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; StatRank/1.1;)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; WebCookies/1.0; +http://webcookies.org/faq/#agent)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (000000000; 00000 000 00 0 000000) DDDDDDDDDDDDDDDDDDDD DDDDDDD DDDD DDDDDD DDDDDDDDDDDDD DDDDDDDDDDDDDDD"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/2.0 (compatible; crw)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "24.0) Gecko/20100101 Firefox/24.0"
+      "user-agent": "Mozilla/5.0 Gecko/20070713 Firefox/2.0.0.0"
     },
     "device": {
       "architecture": "",
@@ -1015,7 +520,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "24.0.0",
+      "version": "2.0.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1036,7 +541,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (000000000; 0; 00000 000 00 0 0000000; 00000) 00000000000000000000 0000000 0000 000000 0000000000000 000000000000000"
+      "user-agent": "Mozilla/5.0 (1234567890; rv:25.0) Gecko/20100101 Firefox/25.0"
     },
     "device": {
       "architecture": "",
@@ -1058,9 +563,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Mozilla Application Suite",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "25.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1075,13 +580,193 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": null,
+      "version": "25.0.0",
       "manufacturer": "mozilla"
     }
   },
   {
     "headers": {
-      "user-agent": "25.0) Gecko/20100101 Firefox/29.0"
+      "user-agent": "Mozilla/5.0 (-; -; rv:45.0) Gecko/20100101 Firefox/45.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "45.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "45.0.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "<Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0.4495>"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "38.0.4495",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 7",
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "38.0.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "<Mozilla/5.0 (Windows NT 6.1; rv:38.0) Gecko/20100101 Firefox/38.0.6110>"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "38.0.6110",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 7",
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "38.0.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Srwr0KnAyOmEXjLcFpsbo4jXQWp8M; rv:52.0) Gecko/20100101 Firefox/52.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "52.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "52.0.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/29.0"
     },
     "device": {
       "architecture": "",
@@ -1126,7 +811,367 @@
   },
   {
     "headers": {
-      "user-agent": "25.0) Gecko/20100101 Firefox/25.0"
+      "user-agent": "Firefox/3.0.15"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.0.15",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Firefox/3.5.6 Tapatalk/489"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.5.6",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "phoenix2"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Phoenix",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 Firefox 24.0.1"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "24.0.1",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Gecko/20101203 Firefox/3.6.13 GTB7.1"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.6.13",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Firefox/3.5.6 Tapatalk/4.11.6"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.5.6",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Firefox/3.5.6 BYO-4/"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.5.6",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Compatible; NubiloSoft WebAgility/2.1; +http://www.nubilosoft.com) Gecko/20071025 Firefox/2.0.0.9"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0.9",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "http://www.useragentstring.com/Firefox25.0_id_19710.php"
     },
     "device": {
       "architecture": "",
@@ -1171,7 +1216,7 @@
   },
   {
     "headers": {
-      "user-agent": "28.0) Gecko/20100101 Firefox/28.0"
+      "user-agent": "Mozilla/5.0 Firefox/3.5.6 Tapatalk/"
     },
     "device": {
       "architecture": "",
@@ -1195,7 +1240,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "28.0.0",
+      "version": "3.5.6",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1216,7 +1261,52 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/Firefox"
+      "user-agent": "Mozilla(FireFox 2.0)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KnackAttack/6.6 (DOS1.0;U)Gecko One [zy]"
     },
     "device": {
       "architecture": "",
@@ -1261,7 +1351,907 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (en-US) Firefox/3.0.5"
+      "user-agent": "gecko"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/6.6.6 Killer"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "6.6.6",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/3.0.10"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.0.10",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/2.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/1.0.6 (sv-SE; rv:1.7.10) Gecko/20050717"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.0.6",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.7.10",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/1.0.6 (rv:1.7.10) Gecko/20050717"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.0.6",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.7.10",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox!"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox kastaneta03@hotmail.com"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "firefox 3"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox 2.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "FireFox 1.5"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.5.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox 1.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox (kastaneta03@hotmail.com)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "C:\\Programme\\Mozilla Firefox\\firefox.exe"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "906 Firefox/3.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Visit theomega.org and use Firefox)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.5.0.3",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.0.3",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Photon; U; QNX x86pc; en-US; rv:1.6) Gecko Firefox/0.8"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "0.8.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "QNX",
+      "marketingName": "QNX",
+      "version": null,
+      "manufacturer": "blackberry",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Photon; U; QNX x86pc; en-US; rv:1.0.0) Gecko/20030109"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "QNX",
+      "marketingName": "QNX",
+      "version": null,
+      "manufacturer": "blackberry",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.0.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (http://textdigger.com) Gecko/20061208 Firefox/2.0.0.1"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0.1",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (epiliana.com meta bot) Firefox/3.0.5"
     },
     "device": {
       "architecture": "",
@@ -1306,7 +2296,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 Gecko/20140101 Firefox/50"
+      "user-agent": "Mozilla/5.0 (en-US; rv:1.9.2.12) Gecko/20101027 Firefox/3.6.12"
     },
     "device": {
       "architecture": "",
@@ -1330,7 +2320,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "50.0.0",
+      "version": "3.6.12",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1345,13 +2335,13 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": null,
+      "version": "1.9.2.12",
       "manufacturer": "mozilla"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7"
+      "user-agent": "Mozilla/5.0 (en-US; rv:1.9.0.4; DHSI60SP1001) Gecko/2008102920 Firefox/3.0.4"
     },
     "device": {
       "architecture": "",
@@ -1375,7 +2365,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "3.0.7",
+      "version": "3.0.4",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1390,13 +2380,13 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "1.9.0.7",
+      "version": "1.9.0.4",
       "manufacturer": "mozilla"
     }
   },
   {
     "headers": {
-      "user-agent": "<Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0.554>"
+      "user-agent": "Mozilla/5.0 (DMacedo.com; en-US; Firefox Modified) Gecko/20051025 Firefox/1.5"
     },
     "device": {
       "architecture": "",
@@ -1420,52 +2410,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "31.0.554",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "31.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Google AppsViewer; http://drive.google.com)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
+      "version": "1.5.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1486,52 +2431,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; savetheworldheritage.org/1.0; +crawl@savetheworldheritage.org)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "<Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0.687>"
+      "user-agent": "Mozilla/5.0 (Device Mosaic 5.4; OpenTV) Gecko/20081010"
     },
     "device": {
       "architecture": "",
@@ -1555,52 +2455,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "31.0.687",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "31.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Fetcher/0.1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
+      "version": null,
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1621,97 +2476,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; FeedBooster; +http://feeds.qsensei.com)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Google-Proxy; build=f7f)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 Firefox/3.6.8"
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 6.0; ) Gecko"
     },
     "device": {
       "architecture": "",
@@ -1735,7 +2500,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "3.6.8",
+      "version": null,
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1749,14 +2514,14 @@
       "bits": 0
     },
     "engine": {
-      "name": "Gecko",
+      "name": "Trident",
       "version": null,
-      "manufacturer": "mozilla"
+      "manufacturer": "microsoft"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (AltStyle1.0 X_FORWARDED_FOR:23.254.161.248)"
+      "user-agent": "Mozilla/5.0 (AS) Gecko/20061010 Firefox/2.0"
     },
     "device": {
       "architecture": "",
@@ -1778,9 +2543,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Mozilla Application Suite",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": "2.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1801,7 +2566,97 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (huhu; rv:24.0) Gecko/20100101 Firefox/24.0"
+      "user-agent": "Mozilla/5.0 (000000000; 0; 000 000 00 0 000000; 00000; 000000) Gecko/20040113"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (?; U; ?; en-US; rv:1.6) Gecko/20040113"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.6.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (respect; rv:24.0) Gecko/20100101 Firefox/24.0"
     },
     "device": {
       "architecture": "",
@@ -1846,7 +2701,7 @@
   },
   {
     "headers": {
-      "user-agent": "<Mozilla/5.0 (Windows NT 6.1; rv:31.0) Gecko/20100101 Firefox/31.0.00005>"
+      "user-agent": "Mozilla/5.0 (compatible; rv:1.9.2) Gecko/20100101 Firefox/3.6"
     },
     "device": {
       "architecture": "",
@@ -1870,52 +2725,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "31.0.00005",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "31.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Image2play/0.1; +http://image2play.com/)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
+      "version": "3.6.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -1930,238 +2740,13 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": null,
+      "version": "1.9.2",
       "manufacturer": "mozilla"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; ICS)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla compatible"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/6.0 (compatible; KnuddelsForum-Welt.de; Version 8.2)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (000000000; 00000 000 00 0 000000) DDDDDDDDDDDDDDDDDDDD DDDDDDD DDDD DDDDDD DDDDDDDDDDDDD DDDDDDDDDDDDDDDD"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (en-us;)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "31.0) Gecko/20100101 Firefox/31.0 (IKDhPmJcdw)"
+      "user-agent": "f\\xc3\\xbcr Firefox 1.0"
     },
     "device": {
       "architecture": "",
@@ -2185,7 +2770,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "31.0.0",
+      "version": "1.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -2206,7 +2791,7 @@
   },
   {
     "headers": {
-      "user-agent": "Firefox/3.0.5"
+      "user-agent": "Mozilla/5.0 (de) Gecko/2008120122 Firefox/3.0.5"
     },
     "device": {
       "architecture": "",
@@ -2251,7 +2836,7 @@
   },
   {
     "headers": {
-      "user-agent": "<Mozilla/5.0 (Windows NT 6.1; rv:31.0) Gecko/20100101 Firefox/31.0.8929>"
+      "user-agent": "Firefox 5.0"
     },
     "device": {
       "architecture": "",
@@ -2274,51 +2859,6 @@
     },
     "client": {
       "name": "Firefox",
-      "modus": null,
-      "version": "31.0.8929",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows 7",
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "31.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 ( compatible )"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
       "modus": null,
       "version": "5.0.0",
       "manufacturer": "mozilla-foundation",
@@ -2341,682 +2881,7 @@
   },
   {
     "headers": {
-      "user-agent": "Gecko/20100101"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/%2F4.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla-1.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; idiot; ka)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (JMCAJhBeQ7SU046xEBqVuGZKO5KSL75; rv:47.0) Gecko/20100101 Firefox/47.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "47.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "47.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0+(compatible;+G/2.1;++http://topage.net)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 Firefox 31.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "31.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "lb-spider/Mozilla/5.0 Gecko/20100101 Firefox/10.0.2 (lb-spider; http://www.linkbutler.de/spider; spider@linkbutler.de)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "10.0.2",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (hidden; rv:33.0) Gecko/20100101 Firefox/33.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "33.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "33.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; limb0x10;)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 Firefox/33.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "33.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Najdi.si/3.1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "internetVista monitor (Mozilla compatible)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (ZX-81; U; CP/M86; en-US; rv:1.8.0.1) Gecko/20060111 Firefox/1.5.0.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "1.5.0.1",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "CP/M",
-      "marketingName": "CP/M",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.8.0.1",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Interseek/3.1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/12.0 YB/5.2.2"
+      "user-agent": "Mozila Firefox 12"
     },
     "device": {
       "architecture": "",
@@ -3061,52 +2926,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; ACHE/Unknown Version; +https://github.com/ViDA-NYU/ache; )"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0/Firefox/42.0 (contactbigdatafr at gmail.com)"
+      "user-agent": "Mozilla/5.0 (du kommst hier ned rein; rv:19.0) Gecko/20100101 Firefox/19.0"
     },
     "device": {
       "architecture": "",
@@ -3130,7 +2950,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "42.0.0",
+      "version": "19.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -3145,13 +2965,13 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": null,
+      "version": "19.0.0",
       "manufacturer": "mozilla"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla (+http://web.nli.org.il/sites/NLI/English/collections/israel-collection/internet_archive/Pages/default.aspx)"
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 5.5;) Firefox/1.5"
     },
     "device": {
       "architecture": "",
@@ -3173,7 +2993,412 @@
       "bits": 0
     },
     "client": {
-      "name": "Mozilla Application Suite",
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.5.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (en-US; rv:1.9.1.2) Gecko/20090729 Firefox/8.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.1.2",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Morzilla Firefox 5.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/3.6.12"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.6.12",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Firefox/3.5.6"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.5.6",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SnapPreviewBot) Gecko/20061206 Firefox/1.5.0.9"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.5.0.9",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 9.0; GACID=imp_33252; LTID=33252;  Gecko/2008070208 Firefox/3.0; Trident/5.0; InfoPath.3; .NET4.0C)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SkyOS; U; Intel x86; en-US; rv:1.7.5) Gecko/20061024 Firefox/1.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.7.5",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/3.0.3"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.0.3",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "C:\\\\Anwendungen\\\\Firefox\\\\Firefox.exe"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
       "modus": null,
       "version": null,
       "manufacturer": "mozilla-foundation",
@@ -3196,7 +3421,7 @@
   },
   {
     "headers": {
-      "user-agent": "'Mozilla/4.0'"
+      "user-agent": "Mozilla/14.0 Firefox/14.0"
     },
     "device": {
       "architecture": "",
@@ -3218,7 +3443,817 @@
       "bits": 0
     },
     "client": {
-      "name": "Mozilla Application Suite",
+      "name": "Firefox",
+      "modus": null,
+      "version": "14.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/3.6.24"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.6.24",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/6.1 (TEGabuntu; X12; RaDinux x86_128; rv:13.4.2) Gecko/20120431 Firefox/18.7.12"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "18.7.12",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "13.4.2",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "f\\xc3\\xbcr Firefox 10.0.2"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "10.0.2",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (en-US) Gecko Firefox/20"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "20.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/7.0.1"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "7.0.1",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; SnapPreviewBot; en-US; rv:1.8.0.9) Gecko/20061206 Firefox/1.5.0.9"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.5.0.9",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.0.9",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/8.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Gecko/2008091700 Firefox/7.0.1"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "7.0.1",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (en-US) Gecko Firefox/99"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "99.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MFirefox/2.0.0.3"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0.3",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Gecko) Version/4.0 Safari/534.13"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; rv:1.9.1) Gecko/20090702 Firefox/3.5"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.1",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Photon; U; QNX x86pc; en-US; rv:1.6) Gecko/20040429"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "QNX",
+      "marketingName": "QNX",
+      "version": null,
+      "manufacturer": "blackberry",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.6.0",
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Firefox/3.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox 9.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Gecko/20100101 Firefox/10.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox 7.0"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Modzilla Firefox 4"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Firefox",
       "modus": null,
       "version": "4.0.0",
       "manufacturer": "mozilla-foundation",
@@ -3241,277 +4276,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; LinkJumper/0.1.2; +Someday ya skazhu)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; snom m9 9.6.1-a)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; snom370-SIP 7.3.30 1.1.3-u)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; snom370-SIP 7.3.30)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; snom710-SIP 8.7.3.25.5)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 () Gecko/20100101 Firefox/45.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "45.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; en;) Gecko/20100101"
+      "user-agent": "Mozilla Firefox browser"
     },
     "device": {
       "architecture": "",
@@ -3556,412 +4321,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible;) Gecko/20100101"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Eat my Shorts . geil; rv:28.0) Gecko/20100101 Firefox/28.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "28.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "28.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (wixer; x86; rv:41.0 ) Firefox/41.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "41.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (yHU73DZakUewjZlZoaw3I; rv:39.0) Gecko/20100101 Firefox/39.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "39.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "39.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; BCS EX_ERROR)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; informatique at mixdata dot com/0.6; +http://t.co/GSRLLKex24; informatique at mixdata dot com)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; The Drop Reaper; +http://tag1consulting.com/dropreaper.html)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible;)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 x1x"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; rv:2.0) Gecko/20110101 Firefox/4.0"
+      "user-agent": "Firefox 4.0"
     },
     "device": {
       "architecture": "",
@@ -4000,148 +4360,13 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "2.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; http://icvn.de/ua.php)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
       "version": null,
       "manufacturer": "mozilla"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/http://geld.de"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/https://www.geld.de/impressum.html"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 Firefox/47.0"
+      "user-agent": "Mozilla/5.0 Gecko/20080702 Firefox/2.0.0.16"
     },
     "device": {
       "architecture": "",
@@ -4165,7 +4390,7 @@
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "47.0.0",
+      "version": "2.0.0.16",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -4186,7 +4411,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Qwant-news/2.0; +https://www.qwant.com/)"
+      "user-agent": "Mozilla/5.0 (Gecko/20070310 Mozshot/0.0.20070628; http://mozshot.nemui.org/)"
     },
     "device": {
       "architecture": "",
@@ -4208,9 +4433,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Mozilla Application Suite",
+      "name": "Firefox",
       "modus": null,
-      "version": "5.0.0",
+      "version": null,
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -4231,7 +4456,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; ips-agent)"
+      "user-agent": "Mozilla/5.0 (-; -;-; de; -) Gecko/20110303 Firefox/4.0"
     },
     "device": {
       "architecture": "",
@@ -4253,234 +4478,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (foo2.6.3@unspecified.mail)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
+      "name": "Firefox",
       "modus": null,
       "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 foo2.6.3@unspecified.mail"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (kolahsefid.com web crawler bot) Gecko/2008073000 Shredder/3.0a2pre ThunderBrowse/3.2.1.8"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (trouble-agent--ucan't see; rv:51.0) Gecko/20100101 Firefox/51.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "51.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "51.0.0",
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/2.0 (compatible; Go.Web/6.5; HandHTTP 1.1; Elaine/1.0; RIM957 )"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Mozilla Application Suite",
-      "modus": null,
-      "version": "2.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,

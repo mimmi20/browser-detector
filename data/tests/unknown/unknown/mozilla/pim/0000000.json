@@ -181,6 +181,51 @@
   },
   {
     "headers": {
+      "user-agent": "Thunderbird 1.5.0.12 (X11/20070604)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Thunderbird",
+      "modus": null,
+      "version": "1.5.0.12",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Thunderbird-Portable 38.3.0 by GnuPT - Gnu Privacy Tools Lightning/4.0.3.1"
     },
     "device": {
@@ -979,51 +1024,6 @@
     "os": {
       "name": "Brew",
       "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mailbot-ISPDB/1.0 (Thunderbird-compatible autoconfig)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": null,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Thunderbird",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
       "version": null,
       "manufacturer": "unknown",
       "bits": 0

@@ -361,6 +361,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/4.0 (X11; Series60/2.1 Nokia7610/3.0415.0 Profile/MIDP-2.0 Configuration/CLDC-1.0)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "7610",
+      "marketingName": "7610",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Nokia OSS Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "nokia",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": "2.1.0",
+      "manufacturer": "nokia",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Nokia7610s/2.0 (05.20) Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
@@ -2787,51 +2832,6 @@
       "name": "WebKit",
       "version": "533.4.0",
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia7610/2.0 (5.0509.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "7610",
-      "marketingName": "7610",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Nokia OSS Browser",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "nokia",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": "2.1.0",
-      "manufacturer": "nokia",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {

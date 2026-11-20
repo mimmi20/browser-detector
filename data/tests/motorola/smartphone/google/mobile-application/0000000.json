@@ -775,6 +775,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; motorola edge 30 ultra Build/S3SQS32.16-72-31-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36 [AndroidMapsWebView/11.81.1502/R]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Edge 30 Ultra",
+      "marketingName": "Edge 30 Ultra",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Google Maps",
+      "modus": null,
+      "version": "11.81.1502",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "x-requested-with": "com.google.android.apps.searchlite",
       "user-agent": "Mozilla/5.0 (Linux; Android 12; motorola razr 5G Build/S2PS32.57-23-21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.14 Mobile Safari/537.36"
     },
@@ -1176,6 +1221,51 @@
     "engine": {
       "name": "Blink",
       "version": "131.0.6778.39",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; moto g(30) Build/S0RCS32.41-10-19-23; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/135.0.7049.38 Mobile Safari/537.36 GoogleApp/16.13.42.ve.arm64 GoogleLens"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Moto G30",
+      "marketingName": "Moto G30",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Lens",
+      "modus": null,
+      "version": "16.13.42",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "135.0.7049.38",
       "manufacturer": "google"
     }
   },
@@ -1716,6 +1806,51 @@
     "engine": {
       "name": "Blink",
       "version": "150.0.7871.181",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto e6 play Build/POAS29.550-132-25; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 [AndroidMapsWebView/26.40.0/R]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Moto E6 Play",
+      "marketingName": "Moto E6 Play",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Google Maps",
+      "modus": null,
+      "version": "26.40.0",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "138.0.7204.179",
       "manufacturer": "google"
     }
   }

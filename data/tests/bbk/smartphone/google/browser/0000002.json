@@ -2026,51 +2026,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2185 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.164 Mobile Safari/537.36 [LinkedInApp]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "CPH2185",
-      "marketingName": "A15",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Chrome WebView",
-      "modus": null,
-      "version": "91.0.4472.164",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.164",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; LE2123 Build/RKQ1.201105.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/91.0.4472.164 Mobile Safari/537.36"
     },
     "device": {
@@ -4496,6 +4451,51 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; V2043 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "V2043",
+      "marketingName": "Y20 (2021)",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.51
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "80.0.3987.99",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.99",
       "manufacturer": "google"
     }
   }
