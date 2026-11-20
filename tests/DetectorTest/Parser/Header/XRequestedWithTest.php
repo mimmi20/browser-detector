@@ -472,7 +472,7 @@ final class XRequestedWithTest extends TestCase
             ['com.tradron.hdvideodownloader', true, 'download-hub', true, null, false, Os::unknown],
             ['com.box.video.downloader', true, 'box-video-downloader', true, null, false, Os::unknown],
             ['com.sec.android.app.sbrowser', true, 'samsungbrowser', true, null, false, Os::unknown],
-            ['com.opera.mini.native.beta', true, 'opera mini beta', true, null, false, Os::unknown],
+            ['com.opera.mini.native.beta', true, 'opera-mini-beta', true, null, false, Os::unknown],
             ['com.yandex.browser', true, 'yabrowser', true, null, false, Os::unknown],
             ['org.mozilla.firefox', true, 'firefox', true, null, false, Os::unknown],
             ['com.tv.browser.open', true, 'open-tv-browser', true, null, false, Os::unknown],

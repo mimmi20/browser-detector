@@ -295,7 +295,7 @@ final class XRequestedWithClientCode implements ClientCodeInterface
             'com.tradron.hdvideodownloader' => 'download-hub',
             'com.box.video.downloader' => 'box-video-downloader',
             'com.sec.android.app.sbrowser' => 'samsungbrowser',
-            'com.opera.mini.native.beta' => 'opera mini beta',
+            'com.opera.mini.native.beta' => 'opera-mini-beta',
             'com.yandex.browser' => 'yabrowser',
             'org.mozilla.firefox' => 'firefox',
             'com.tv.browser.open' => 'open-tv-browser',

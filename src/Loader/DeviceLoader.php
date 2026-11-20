@@ -52,7 +52,7 @@ final readonly class DeviceLoader implements DeviceLoaderInterface
 
         $deviceData = $this->initData->getItem($key);
 
-        if ($deviceData === null) {
+        if (!$deviceData instanceof InitData\Device) {
             throw new NotFoundException('the device with key "' . $key . '" was not found');
         }
 

@@ -53,7 +53,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'yandex' => 'yabrowser',
             'microsoft edge' => 'edge',
             'google chrome' => 'chrome',
-            'avastsecurebrowser' => 'avast-secure-browser',
+            'avastsecurebrowser', 'avast secure browser' => 'avast-secure-browser',
             'wavebrowser' => 'wave-browser',
             'duckduckgo' => 'duckduck-app',
             'samsung internet', 'samsung browser' => 'samsungbrowser',
@@ -80,7 +80,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'xiaomibrowser' => 'miui-browser',
             'copilot' => 'microsoft-copilot',
             'viasat browser' => 'viasat-browser',
-            'at' => 'avg-secure-browser',
+            'at', 'avg secure browser' => 'avg-secure-browser',
             'pluma' => 'pluma-browser',
             'spark' => 'baidu-spark',
             'mises' => 'mises-browser',
@@ -92,6 +92,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'puffin' => 'puffin-cloud-browser',
             'reflectionbot' => 'reflection-bot',
             'ccleaner browser' => 'ccleaner-browser',
+            'opera gx' => 'opera-gx',
             default => $code,
         };
     }
