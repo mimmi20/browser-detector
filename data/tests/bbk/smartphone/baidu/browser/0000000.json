@@ -1,31 +1,31 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; R6007) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 baidubrowser/5.3.4.0 (Baidu; P1 4.3.1) tieba/6.7.2 BMW"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; GM1910 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36 tieba/11.1.8.1"
     },
     "device": {
       "architecture": "",
-      "deviceName": "R6007",
-      "marketingName": "R6007",
+      "deviceName": "GM1910",
+      "marketingName": "7 Pro",
       "manufacturer": "bbk",
-      "brand": "oppo",
+      "brand": "oneplus",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 3120,
+        "height": 1440,
         "touch": true,
-        "size": 4.7
+        "size": 6.67
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "bits": 0
     },
     "client": {
       "name": "Tieba",
       "modus": null,
-      "version": "6.7.2",
+      "version": "11.1.8.1",
       "manufacturer": "baidu",
       "type": "browser",
       "isbot": false,
@@ -34,43 +34,44 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.3.0",
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "33.0.0.0",
+      "version": "79.0.3945.136",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "User-Agent: Mozilla/5.0 (Linux; Android 8.0; OPPO R11st Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 T7/9.1 baidubrowser/7.18.11.0"
+      "x-requested-with": "com.baidu.browser.apps",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; V2031A Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 SP-engine/2.53.0 matrixstyle/0 flyflow/6.23.0.31 lite baiduboxapp/6.23.0.31 (Baidu; P1 10) NABar/1.0"
     },
     "device": {
       "architecture": "",
-      "deviceName": "R11st",
-      "marketingName": "R11s",
+      "deviceName": "V2031A",
+      "marketingName": "Y73s",
       "manufacturer": "bbk",
-      "brand": "oppo",
+      "brand": "vivo",
       "display": {
-        "width": 2160,
+        "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.01
+        "size": 6.44
       },
       "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 2,
       "bits": 0
     },
     "client": {
       "name": "Baidu Browser",
       "modus": null,
-      "version": "7.18.11.0",
+      "version": "6.23.0.31",
       "manufacturer": "baidu",
       "type": "browser",
       "isbot": false,
@@ -79,13 +80,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.0.0",
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "T7",
-      "version": "9.1.0",
+      "version": "13.51.0",
       "manufacturer": "baidu"
     }
   }

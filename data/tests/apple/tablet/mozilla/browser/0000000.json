@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/1.0 Mobile/12F69 Safari/600.1.4"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Klar/2.0.1 Mobile/13F69"
     },
     "device": {
       "architecture": "",
@@ -23,9 +23,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Firefox Mobile for iOS",
+      "name": "Firefox Klar",
       "modus": null,
-      "version": "1.0.0",
+      "version": "2.0.1",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -34,19 +34,19 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.3.0",
+      "version": "9.3.2",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "600.1.4",
+      "version": "601.1.46",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Focus/3.0.1 Mobile/14D27"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Focus/2.0 Mobile/14B100"
     },
     "device": {
       "architecture": "",
@@ -70,7 +70,7 @@
     "client": {
       "name": "Firefox Focus",
       "modus": null,
-      "version": "3.0.1",
+      "version": "2.0.0",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -79,19 +79,19 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.2.1",
+      "version": "10.1.1",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.4.6",
+      "version": "602.2.14",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/118.0 Mobile/15E148 Safari/605.1.15"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/19.0b16042 Mobile/15E148 Safari/605.1.15"
     },
     "device": {
       "architecture": "",
@@ -115,7 +115,7 @@
     "client": {
       "name": "Firefox Mobile for iOS",
       "modus": null,
-      "version": "118.0.0",
+      "version": "19.0.0-beta+16042",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -124,7 +124,7 @@
     "os": {
       "name": "iPadOS",
       "marketingName": "iPadOS",
-      "version": "13.6.0",
+      "version": "13.1.1",
       "manufacturer": "apple",
       "bits": 0
     },
@@ -136,7 +136,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU iPad OS 3_2_2 like Mac OS X) AppleWebKit/532.0 (KHTML, like Gecko) FxiOS/11.2q1529.0 Mobile/11M754 Safari/532.0"
+      "user-agent": "Mozilla/5.0 (iPad; CPU iPad OS 3_1_3 like Mac OS X) AppleWebKit/534.1 (KHTML, like Gecko) FxiOS/18.0d1877.0 Mobile/15B027 Safari/534.1"
     },
     "device": {
       "architecture": "",
@@ -160,7 +160,7 @@
     "client": {
       "name": "Firefox Mobile for iOS",
       "modus": null,
-      "version": "11.2.0",
+      "version": "18.0.0-dev+1877",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false,
@@ -169,13 +169,13 @@
     "os": {
       "name": "iPhone OS",
       "marketingName": "iPhone OS",
-      "version": "3.2.2",
+      "version": "3.1.3",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "532.0.0",
+      "version": "534.1.0",
       "manufacturer": "apple"
     }
   }

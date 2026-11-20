@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; BBB100-2 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.145 Mobile Safari/537.36 EdgA/41.0.0.1136"
+      "user-agent": "Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; ALCATELONETOUCH; FierceXL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Mobile Safari/537.36 Edge/15.15063"
     },
     "device": {
       "architecture": "",
-      "deviceName": "BBB100-2",
-      "marketingName": "KEYone",
+      "deviceName": "Fierce XL",
+      "marketingName": "Fierce XL",
       "manufacturer": "tcl",
-      "brand": "blackberry",
+      "brand": "alcatel",
       "display": {
-        "width": 1620,
-        "height": 1080,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -23,25 +23,115 @@
       "bits": 0
     },
     "client": {
-      "name": "Edge Mobile for Android",
+      "name": "Edge Mobile",
       "modus": null,
-      "version": "41.0.0.1136",
+      "version": "15.15063.0",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.145",
-      "manufacturer": "google"
+      "name": "Edge",
+      "version": "15.15063.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; ALCATEL; IDOL 4S with Windows 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Mobile Safari/537.36 Edge/15.15254"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "IDOL 4S",
+      "marketingName": "IDOL 4S",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "modus": null,
+      "version": "15.15254.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "15.15254.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; ALCATEL; IDOL 4 PRO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Mobile Safari/537.36 Edge/15.15254"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Idol 4 Pro",
+      "marketingName": "Idol 4 Pro",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "modus": null,
+      "version": "15.15254.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "15.15254.0",
+      "manufacturer": "microsoft"
     }
   },
   {

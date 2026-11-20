@@ -36,7 +36,7 @@ facebook-crawler:
       - facebookexternalhit
       - facebookplatform
   engine: unknown
-'magpie crawler':
+magpie-crawler:
   name: 'Magpie Crawler'
   manufacturer: brandwatch
   type: social-media-agent
@@ -135,7 +135,7 @@ facebook-catalog:
     search:
       - facebookcatalog
   engine: unknown
-'addthis.com robot':
+addthis-com-robot:
   name: 'AddThis.com robot'
   manufacturer: oracle
   type: social-media-agent

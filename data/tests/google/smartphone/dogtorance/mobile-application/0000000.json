@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro Build/SP2A.220505.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36"
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 12; Pixel 6 Pro Build/SP2A.220505.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -25,7 +25,7 @@
     "client": {
       "name": "Dogtorance",
       "modus": null,
-      "version": "1.2.0",
+      "version": "1.0.0",
       "manufacturer": "dog-torance",
       "type": "mobile-application",
       "isbot": false,
@@ -46,19 +46,64 @@
   },
   {
     "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 9a Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.120 Mobile Safari/537.36"
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 14; Pixel 5a Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.136 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Pixel 9a",
-      "marketingName": "Pixel 9a",
+      "deviceName": "Pixel 5a",
+      "marketingName": "Pixel 5a",
       "manufacturer": "google",
       "brand": "google",
       "display": {
-        "width": 2424,
+        "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.3
+        "size": 6.34
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.136",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 11; Pixel 4a Build/RP1A.201105.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 4a",
+      "marketingName": "Pixel 4a",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 5.81
       },
       "type": "smartphone",
       "ismobile": true,
@@ -70,7 +115,7 @@
     "client": {
       "name": "Dogtorance",
       "modus": null,
-      "version": "1.2.0",
+      "version": "1.0.0",
       "manufacturer": "dog-torance",
       "type": "mobile-application",
       "isbot": false,
@@ -79,19 +124,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "16.0.0",
+      "version": "11.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "148.0.7778.120",
+      "version": "83.0.4103.106",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.120 Mobile Safari/537.36"
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro Build/BP4A.251205.006.A4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.115 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -115,7 +160,7 @@
     "client": {
       "name": "Dogtorance",
       "modus": null,
-      "version": "1.2.0",
+      "version": "1.0.0",
       "manufacturer": "dog-torance",
       "type": "mobile-application",
       "isbot": false,
@@ -130,418 +175,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "148.0.7778.120",
+      "version": "143.0.7499.115",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 8a Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.120 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 8a",
-      "marketingName": "Pixel 8a",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.120",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 8 Pro Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.120 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 8 Pro",
-      "marketingName": "Pixel 8 Pro",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2992,
-        "height": 1344,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.120",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 10 Build/CP1A.260505.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 10",
-      "marketingName": "Pixel 10",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2424,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.178",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 8 Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 8",
-      "marketingName": "Pixel 8",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.178",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 9 Pro XL Build/CP1A.260505.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 9 Pro XL",
-      "marketingName": "Pixel 9 Pro XL",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2992,
-        "height": 1344,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.178",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 6a Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.178 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 6a",
-      "marketingName": "Pixel 6a",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.178",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 9 Pro Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.184 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 9 Pro",
-      "marketingName": "Pixel 9 Pro",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2856,
-        "height": 1280,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.184",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 9 Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.120 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 9",
-      "marketingName": "Pixel 9",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2424,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.120",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 7 Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 7",
-      "marketingName": "Pixel 7",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.217",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 7a Build/CP1A.260505.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36"
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 7a Build/BP3A.251105.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -565,7 +205,7 @@
     "client": {
       "name": "Dogtorance",
       "modus": null,
-      "version": "1.2.0",
+      "version": "1.0.0",
       "manufacturer": "dog-torance",
       "type": "mobile-application",
       "isbot": false,
@@ -580,7 +220,637 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "148.0.7778.215",
+      "version": "143.0.7499.34",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 8 Pro Build/BP3A.251105.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 8 Pro",
+      "marketingName": "Pixel 8 Pro",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2992,
+        "height": 1344,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.34",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 10 Build/BD3A.251105.010.E1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 10",
+      "marketingName": "Pixel 10",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2424,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.146",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 12; Pixel 3a Build/SP2A.220505.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.34 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 3a",
+      "marketingName": "Pixel 3a",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2220,
+        "height": 1080,
+        "touch": true,
+        "size": 5.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.34",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 9 Pro Build/BP4A.251205.006.A4; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.192 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 9 Pro",
+      "marketingName": "Pixel 9 Pro",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2856,
+        "height": 1280,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.192",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 7 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.192 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 7",
+      "marketingName": "Pixel 7",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.192",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 8 Build/BP3A.251105.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.146 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 8",
+      "marketingName": "Pixel 8",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.146",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 9 Build/BP3A.251105.015; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.147 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 9",
+      "marketingName": "Pixel 9",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2424,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "143.0.7499.147",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 6 Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.60 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 6",
+      "marketingName": "Pixel 6",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.60",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 7 Pro Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 7 Pro",
+      "marketingName": "Pixel 7 Pro",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.59",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 6a Build/BP4A.251205.006; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 6a",
+      "marketingName": "Pixel 6a",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 8a Build/BP4A.260105.004.E1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 8a",
+      "marketingName": "Pixel 8a",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 9 Pro XL Build/BP4A.260205.002.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 9 Pro XL",
+      "marketingName": "Pixel 9 Pro XL",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2992,
+        "height": 1344,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "144.0.7559.59",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 9a Build/BP4A.260205.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 9a",
+      "marketingName": "Pixel 9a",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2424,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "145.0.7632.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.0 Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro XL Build/BP4A.260205.001.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/145.0.7632.79 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 10 Pro XL",
+      "marketingName": "Pixel 10 Pro XL",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2992,
+        "height": 1344,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Dogtorance",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dog-torance",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "16.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "145.0.7632.79",
       "manufacturer": "google"
     }
   },
@@ -626,186 +896,6 @@
     "engine": {
       "name": "Blink",
       "version": "148.0.7778.225",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 7 Pro Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 7 Pro",
-      "marketingName": "Pixel 7 Pro",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 3120,
-        "height": 1440,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "149.0.7827.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 13; Pixel 4a Build/TQ3A.230805.001.S2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.215 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 4a",
-      "marketingName": "Pixel 4a",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 5.81
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.215",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 10 Pro XL Build/CP1A.260505.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/148.0.7778.217 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 10 Pro XL",
-      "marketingName": "Pixel 10 Pro XL",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2992,
-        "height": 1344,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "148.0.7778.217",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 16; Pixel 6 Build/CP1A.260405.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/150.0.7871.124 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 6",
-      "marketingName": "Pixel 6",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "150.0.7871.124",
       "manufacturer": "google"
     }
   },
@@ -896,51 +986,6 @@
     "engine": {
       "name": "Blink",
       "version": "145.0.7632.218",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "finanzapp-native/0.0.1 dogtorance/1.2 Mozilla/5.0 (Linux; Android 12; Pixel 3a Build/SP2A.220505.008; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.200 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Pixel 3a",
-      "marketingName": "Pixel 3a",
-      "manufacturer": "google",
-      "brand": "google",
-      "display": {
-        "width": 2220,
-        "height": 1080,
-        "touch": true,
-        "size": 5.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 2,
-      "bits": 0
-    },
-    "client": {
-      "name": "Dogtorance",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "dog-torance",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "151.0.7922.200",
       "manufacturer": "google"
     }
   }

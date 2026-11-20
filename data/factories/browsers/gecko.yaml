@@ -3,20 +3,20 @@ rules:
   '/fireweb navigator/i': 'fireweb navigator'
   '/(?<!like )navigator/i': 'netscape navigator'
   /s~virustotalcloud/i: virus-total-cloud
-  '/(?<!via )wayback save page/i': 'wayback archive bot'
+  '/(?<!via )wayback save page/i': wayback-archive-bot
   '/(?<!_)ruby(?!, )/i': ruby
   /googleimageproxy|ggpht/i: gmail-image-proxy
-  '/t-online browser|to-browser|(?<![su])tob[ \/]/i': 't-online browser'
+  '/t-online browser|to-browser|(?<![su])tob[ \/]/i': t-online-browser
   '/qwant(mobile)?\//i': qwant-mobile
-  /appengine-google/i: 'google app engine'
+  /appengine-google/i: google-app-engine
   '/webmoney advisor/i': 'webmoney advisor'
-  /sailfishbrowser/i: 'sailfish browser'
+  /sailfishbrowser/i: sailfish-browser
   /flipboardproxy/i: flipboardproxy
   /novarra-vision/i: novarra-vision
   /thumbshotsbot/i: thumbshotsbot
-  /web\/snippet/i: 'google web snippet'
+  /web\/snippet/i: google-web-snippet
   /unister-test|unistertesting|unister-https-test/i: unistertesting
-  /tweetmemebot/i: 'tweetmeme bot'
+  /tweetmemebot/i: tweetmeme-bot
   /tinybrowser/i: tinybrowser
   /thunderbird/i: thunderbird
   /caremedicom/i: caremedicom
@@ -58,21 +58,21 @@ rules:
   /puffin/i: puffin
   /flock/i: flock
   '/mozilla\/5\.0 \(windows; rv:.*\) gecko\/.* firefox\/.*/i': 'thumbnail.ws bot'
-  '/archive\.org\.ua crawler|archive\.org_bot/i': 'internet archive'
+  '/archive\.org\.ua crawler|archive\.org_bot/i': internet-archive
   /nbertaupete95\(at\)gmail\.com/i: nbertaupete95
   '/^pb[0-9]+/i': 'pirate browser'
-  '/openwave|up\.browser| up\//i': 'openwave mobile browser'
+  '/openwave|up\.browser| up\//i': openwave-mobile-browser
   '/anonymized by abelssoft/i': anti-browser-spy
   '/outlook[\- ]express/i': outlook-express
   '/baidu transcoder/i': baidu-transcoder
   /trendictionbot/i: 'trendiction bot'
-  /bne\.es_bot/i: 'bne.es bot'
+  /bne\.es_bot/i: bne-es-bot
   /umbot|um-(ln|cc|fc|ans)/i: umbot
   '/sunrisebrowser|sunrise[\/ ]/i': sunrise
   /privacywall/i: privacywall
   /img2dataset/i: img2dataset
   /artisreader/i: artis-browser
-  /baiduboxapp/i: 'baidu box app'
+  /baiduboxapp/i: baidu-box-app
   /tenfourfox/i: tenfourfox
   /classilla/i: classilla
   /awesomium/i: awesomium
@@ -87,8 +87,8 @@ rules:
   /diffbot/i: diffbot
   /mypal\//i: mypal
   /bingbot|msnbot|msrbot/i: bingbot
-  /tansodl/i: 'tanso download manager'
-  /youtube/i: 'youtube app'
+  /tansodl/i: tanso-download-manager
+  /youtube/i: youtube-app
   /kapiko/i: kapiko
   /avant/i: avant
   /slurp/i: slurp
@@ -97,7 +97,7 @@ rules:
   /^firefox$/i: generic-bot
   /opera/i: opera
   /firefox|minefield|shiretoko|bonecho|namoroka|granparadiso|lorentz/i: firefox
-  '/xml sitemaps generator/i': 'xml sitemaps generator'
+  '/xml sitemaps generator/i': xml-sitemaps-generator
   /lightningquail/i: lightningquail
   /unimatrix-zero/i: unimatrix-zero
   '/acorn phoenix/i': acorn-phoenix
@@ -109,7 +109,7 @@ rules:
   /webianshell/i: webianshell
   /nightingale/i: nightingale
   /netpositive/i: netpositive
-  '/playstation|psp /i': 'playstation browser'
+  '/playstation|psp /i': playstation-browser
   /etaospider/i: etao-spider
   /charlotte/i: charlotte
   /superswan/i: superswan
@@ -130,5 +130,5 @@ rules:
   /beonex/i: 'beonex communicator'
   /prism/i: prism
   /swb/i: 'hp secure web browser'
-  /android/i: 'android webkit'
+  /android/i: android-webkit
 generic: firefox

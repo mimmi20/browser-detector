@@ -68,7 +68,7 @@ final class UseragentClientCodeTest extends TestCase
             ['NRC Audio/2.0.0 (nl.nrc.audio; build:29; Android 12; Sdk:31; Manufacturer:samsung; Model: SM-G975F) OkHttp/4.9.3', 'nrc-audio'],
             ['Classic FM/65.0.0 Android 12/vivo V2111', 'classic-fm'],
             ['com.huawei.hmos.browser (2in1;OpenHarmony-6.0.2.130;HAD-W24) NetworkSDK/8.0.10.309', 'huawei-browser'],
-            ['Snapchat/10.86.0.55 (SM-A705FN; Android 10#A705FNXXU5BTF1#29; gzip) V/MUSHROOM', 'snapchat app'],
+            ['Snapchat/10.86.0.55 (SM-A705FN; Android 10#A705FNXXU5BTF1#29; gzip) V/MUSHROOM', 'snapchat-app'],
             ['dv(iPh4,1);pr(UCBrowser/10.2.0.517);ov(7_1_2);ss(320x416);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);', 'ucbrowser'],
         ];
     }

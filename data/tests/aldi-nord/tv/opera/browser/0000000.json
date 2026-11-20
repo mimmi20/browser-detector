@@ -46,17 +46,17 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.237.DOM3-OPT.235 Model/Vestel-MB130 VSTVB MB100 HbbTV/1.2.1 (; ALDINORD; MB130; 3.62.35.1; _TV_G10_2017;) SmartTvA/3.0.0 CE-HTML/1.0 FXM-U2FsdGVkX1 oZew0140/QBCrdEn7eNAOlzEcueaamEeYhwCdPcr3KYTZseEcEJqh-END"
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.0.39.9 (ALDINORD, Mxl661L32, wireless) VSTVB_MB97"
     },
     "device": {
       "architecture": "",
-      "deviceName": "Smart TV (2017)",
-      "marketingName": "Smart TV (2017)",
+      "deviceName": "general Aldi-Nord TV",
+      "marketingName": "general Aldi-Nord TV",
       "manufacturer": "aldi-nord",
       "brand": "aldi-nord",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": null,
+        "height": null,
         "touch": false,
         "size": null
       },
@@ -68,25 +68,295 @@
       "bits": 0
     },
     "client": {
-      "name": "Opera Devices",
+      "name": "Opera",
       "modus": null,
-      "version": "4.9.0.237",
+      "version": "12.51.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "Android TV",
-      "marketingName": "Android TV",
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "opera",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "53.0.2785.143",
-      "manufacturer": "google"
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.6.2.j (ALDINORD, Si2157LG32, wired)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Aldi-Nord TV",
+      "marketingName": "general Aldi-Nord TV",
+      "manufacturer": "aldi-nord",
+      "brand": "aldi-nord",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "opera",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.3.8.m (ALDINORD, Si2157LG32, wired)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Aldi-Nord TV",
+      "marketingName": "general Aldi-Nord TV",
+      "manufacturer": "aldi-nord",
+      "brand": "aldi-nord",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "opera",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.3.8.m (ALDINORD, Si2157LG32, wireless)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Aldi-Nord TV",
+      "marketingName": "general Aldi-Nord TV",
+      "manufacturer": "aldi-nord",
+      "brand": "aldi-nord",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "opera",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.3.6.N (ALDINORD, Si2157LG32, wired)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Aldi-Nord TV",
+      "marketingName": "general Aldi-Nord TV",
+      "manufacturer": "aldi-nord",
+      "brand": "aldi-nord",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "opera",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.3.6.N (ALDINORD, Si2157LG32, wireless)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Aldi-Nord TV",
+      "marketingName": "general Aldi-Nord TV",
+      "manufacturer": "aldi-nord",
+      "brand": "aldi-nord",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "opera",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB95/3.3.6.v (ALDINORD, Si2157LG32, wireless)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general Aldi-Nord TV",
+      "marketingName": "general Aldi-Nord TV",
+      "manufacturer": "aldi-nord",
+      "brand": "aldi-nord",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Opera TV",
+      "marketingName": "Opera TV",
+      "version": null,
+      "manufacturer": "opera",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
     }
   }
 ]

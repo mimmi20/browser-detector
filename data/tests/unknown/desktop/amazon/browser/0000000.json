@@ -1,7 +1,52 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Silk/44.1.54 like Chrome/44.0.2403.63 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.6349.115 Safari/537.36 Silk/141.0.6349.115"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Silk",
+      "modus": null,
+      "version": "141.0.6349.115",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "141.0.6349.115",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Amazon-Bedrock-AgentCore-Browser/1.0 (Chromium; +https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-tool.html)"
     },
     "device": {
       "architecture": "",
@@ -23,24 +68,24 @@
       "bits": 0
     },
     "client": {
-      "name": "Silk",
+      "name": "Amazon Bedrock AgentCore Browser",
       "modus": null,
-      "version": "44.1.54",
+      "version": "1.0.0",
       "manufacturer": "amazon",
       "type": "browser",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "linux-foundation",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "44.0.2403.63",
+      "version": "144.0.0.0",
       "manufacturer": "google"
     }
   }

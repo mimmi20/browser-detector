@@ -91,6 +91,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; RT2 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.66 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "RT2",
+      "marketingName": "RT2",
+      "manufacturer": "oukitel",
+      "brand": "oukitel",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "119.0.6045.66",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.66",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; OT8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
     },
     "device": {
@@ -131,6 +176,51 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; OT5 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/129.0.6668.70 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "OT5",
+      "marketingName": "OT5",
+      "manufacturer": "oukitel",
+      "brand": "oukitel",
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 12.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome WebView",
+      "modus": null,
+      "version": "129.0.6668.70",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.6668.70",
       "manufacturer": "google"
     }
   },
@@ -181,19 +271,19 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; RT2 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; OT8 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.94 Safari/537.36"
     },
     "device": {
       "architecture": "",
-      "deviceName": "RT2",
-      "marketingName": "RT2",
+      "deviceName": "OT8",
+      "marketingName": "OT8",
       "manufacturer": "oukitel",
       "brand": "oukitel",
       "display": {
         "width": 1920,
         "height": 1200,
         "touch": true,
-        "size": 10.1
+        "size": 11.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -205,7 +295,7 @@
     "client": {
       "name": "Chrome WebView",
       "modus": null,
-      "version": "149.0.7827.91",
+      "version": "139.0.7258.94",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false,
@@ -214,13 +304,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "14.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "149.0.7827.91",
+      "version": "139.0.7258.94",
       "manufacturer": "google"
     }
   }

@@ -1,31 +1,31 @@
 rules:
-  '/acoo browser/i': 'acoo browser'
+  '/acoo browser/i': acoo-browser
   /avant/i: avant
-  /bidubrowser/i: 'baidu spark'
+  /bidubrowser/i: baidu-spark
   /maxthon|myie/i: maxthon
-  /2345explorer/i: '2345 explorer'
+  /2345explorer/i: 2345-explorer
   /cybeye/i: cybeye
   /inettvbrowser/i: inettvbrowser
-  '/t-online browser|to-browser|(?<![su])tob[ \/]/i': 't-online browser'
+  '/t-online browser|to-browser|(?<![su])tob[ \/]/i': t-online-browser
   /marketwirebot/i: marketwirebot
-  /googletoolbar/i: 'google toolbar'
+  /googletoolbar/i: google-toolbar
   '/websitepulse checker/i': website-pulse-checker
   /netscape/i: netscape
   /lightspeedsystems/i: lightspeed-systems-crawler
-  '/sl commerce client/i': 'second live commerce client'
+  '/sl commerce client/i': second-live-commerce-client
   '/uc ?browser|ucweb/i': ucbrowser
-  /baidubrowser|bdbrowser/i: 'baidu browser'
-  /qqbrowserlite/i: 'qqbrowser lite'
+  /baidubrowser|bdbrowser/i: baidu-browser
+  /qqbrowserlite/i: qqbrowser-lite
   /qqbrowser/i: qqbrowser
   /iemobile|wpdesktop|zunewp7|xblwp7/i: iemobile
-  /bingpreview/i: 'bing preview'
+  /bingpreview/i: bing-preview
   /haosouspider/i: haosouspider
   /windows-rss-platform/i: windows-rss-platform
   '/anonymized by abelssoft/i': anti-browser-spy
   /charlotte/i: charlotte
   '/outlook[\- ]express/i': outlook-express
   /outlook/i: outlook
-  '/microsoft office mobile/i': 'office mobile'
+  '/microsoft office mobile/i': office-mobile
   '/microsoft office/i': office
   '/crazy browser/i': crazy-browser
   '/deepnet explorer/i': deepnet-explorer
@@ -33,32 +33,32 @@ rules:
   /ilunascape/i: ilunascape
   /lunascape/i: lunascape
   /sleipnir/i: sleipnir
-  '/smartsite httpclient/i': 'smartsite httpclient'
-  /orangebot-mobile/i: 'orangebot mobile'
+  '/smartsite httpclient/i': smartsite-httpclient
+  /orangebot-mobile/i: orangebot-mobile
   /orangebot/i: orangebot
   /s~virustotalcloud/i: virus-total-cloud
-  /appengine-google/i: 'google app engine'
+  /appengine-google/i: google-app-engine
   /crystalsemanticsbot/i: crystalsemanticsbot
   /(?<!\.)360se/i: 360-secure-browser
   /theworld/i: theworld
   '/(?<!u)ptst/i': webpagetest
   /mathplayer/i: mathplayer
-  '/(?<!c)blazer/i': 'palm blazer'
+  '/(?<!c)blazer/i': palm-blazer
   /eudoraweb/i: eudora-web
   '/daumoa|msie or firefox mutant/i': daumoa
   /foma|sh05c/i: sharp
   '/sogou-spider|sogou inst spider/i': sogou-spider
   /simplepie/i: simplepie
   /argclrint/i: argclrint
-  '/(?<!via )wayback save page/i': 'wayback archive bot'
+  '/(?<!via )wayback save page/i': wayback-archive-bot
   /savewealth/i: savewealth
   /cobalt/i: cobalt
   /polarity/i: polarity
-  /netgem/i: 'netgem set top box'
-  '/playstation|psp /i': 'playstation browser'
+  /netgem/i: netgem-set-top-box
+  '/playstation|psp /i': playstation-browser
   /nexplayer/i: nexplayer
   '/netfront|nf\/?[34]/i': netfront
-  '/ se (?!build|max|pro)/i': 'sogou explorer'
+  '/ se (?!build|max|pro)/i': sogou-explorer
   /greenbrowser/i: greenbrowser
   /juzibrowser/i: juzibrowser
   /lbbrowser/i: cheetah-browser
@@ -87,10 +87,10 @@ rules:
   /ibrowse/i: ibrowse
   /bingbot|msnbot|msrbot/i: bingbot
   /diffbot/i: diffbot
-  /espial|escape/i: 'espial tv browser'
+  /espial|escape/i: espial-tv-browser
   /irlbot/i: irlbot
   /camino/i: camino
   /dillo/i: dillo
   /viber/i: viber
   '/((?<!s)flow|ekioh)[\/)]/i': flow-browser
-generic: 'internet explorer'
+generic: internet-explorer

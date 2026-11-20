@@ -1,7 +1,142 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X) Word/14.61.0"
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Electron/1.6.1 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Electron",
+      "modus": null,
+      "version": "1.6.1",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.12.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.10.210 (Mac OS/10.12.6; Desktop; de-DE; NonAppStore; Apple/iMac18,2)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iMac 18,2",
+      "marketingName": "iMac 21.5\" (2017)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 4096,
+        "height": 2304,
+        "touch": false,
+        "size": 21.5
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.10.210",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.12.6",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Excel/16.10.210 (Mac OS/10.13.4; Desktop; de-DE; NonAppStore; Apple/iMac16,2)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iMac 16,2",
+      "marketingName": "iMac 21.5\" (2015)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 21.5
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Excel",
+      "modus": null,
+      "version": "16.10.210",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.4",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Word/16.16.18081201 CFNetwork/902.1 Darwin/17.7.0 (x86_64)"
     },
     "device": {
       "architecture": "",
@@ -25,187 +160,7 @@
     "client": {
       "name": "Word",
       "modus": null,
-      "version": "14.61.0",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X) Excel/14.10.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Excel",
-      "modus": null,
-      "version": "14.10.0",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X) PowerPoint/14.39.0"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "PowerPoint",
-      "modus": null,
-      "version": "14.39.0",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) jasper/0.1.1 Chrome/50.0.2661.102 Electron/1.1.3 Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Electron",
-      "modus": null,
-      "version": "1.1.3",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.11.4",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.102",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Min/1.7.0 Chrome/59.0.3071.115 Electron/1.8.2-beta.3 Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Electron",
-      "modus": null,
-      "version": "1.8.2-beta+3",
+      "version": "16.16.18081201",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false,
@@ -214,14 +169,14 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "10.13.3",
+      "version": "10.13.0",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.115",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "902.1.0",
+      "manufacturer": "apple"
     }
   },
   {
@@ -1081,6 +1036,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.5.00.22362 Chrome/96.0.4664.174 Electron/16.2.8 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Teams",
+      "modus": null,
+      "version": "1.5.00.22362",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "12.2.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.174",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Microsoft Office Word/16.70.212 (Mac OS/13.2.1; Desktop; de-DE; AppStore; Apple/Mac14,3)"
     },
     "device": {
@@ -1306,7 +1306,7 @@
   },
   {
     "headers": {
-      "user-agent": "Word/16.50.21061301 CFNetwork/1220.1 Darwin/20.3.0 (x86_64)"
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.96.2 Chrome/128.0.6613.186 Electron/32.2.6 Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -1328,9 +1328,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Word",
+      "name": "Visual Studio Code",
       "modus": null,
-      "version": "16.50.21061301",
+      "version": "1.96.2",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false,
@@ -1339,58 +1339,13 @@
     "os": {
       "name": "macOS",
       "marketingName": "macOS",
-      "version": "11.2.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "1220.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Teams/1.3.00.362 Chrome/66.0.3359.181 Electron/3.1.13 Safari/537.36"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Teams",
-      "modus": null,
-      "version": "1.3.00.362",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.15.3",
+      "version": "10.15.7",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "66.0.3359.181",
+      "version": "128.0.6613.186",
       "manufacturer": "google"
     }
   },
@@ -1716,51 +1671,6 @@
     "device": {
       "architecture": "",
       "deviceName": "iMac 16,1",
-      "marketingName": "iMac 21.5\" (2015)",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": false,
-        "size": 21.5
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Excel",
-      "modus": null,
-      "version": "16.46.212",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "12.7.6",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Microsoft Office Excel/16.46.212 (Mac OS/12.7.6; Desktop; en-US; NonAppStore; Apple/iMac16,2)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iMac 16,2",
       "marketingName": "iMac 21.5\" (2015)",
       "manufacturer": "apple",
       "brand": "apple",

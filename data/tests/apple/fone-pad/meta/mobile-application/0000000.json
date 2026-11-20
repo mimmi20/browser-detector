@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329 [FBAN/FBIOS;FBAV/6.3;FBBV/257209;FBDV/iPad2,2;FBMD/iPad;FBSN/iPhone OS;FBSV/6.1.3;FBSS/1; FBCR/Carrier;FBID/tablet;FBLC/en_US;FBOP/1]"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 [FBAN/FBIOS;FBAV/52.0.0.46.157;FBBV/26424168;FBDV/iPad5,2;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.1;FBSS/2; FBCR/Vodafone.de;FBID/tablet;FBLC/de_DE;FBOP/1]"
     },
     "device": {
       "architecture": "",
-      "deviceName": "iPad 2,2",
-      "marketingName": "iPad (2nd Gen) 3G",
+      "deviceName": "iPad 5,2",
+      "marketingName": "iPad Mini 4 4G",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 1024,
-        "height": 768,
+        "width": 2048,
+        "height": 1536,
         "touch": true,
-        "size": 9.7
+        "size": 7.9
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -25,7 +25,7 @@
     "client": {
       "name": "Facebook App",
       "modus": null,
-      "version": "6.3.0",
+      "version": "52.0.0.46.157",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -34,154 +34,19 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.1.3",
+      "version": "9.3.1",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "536.26.0",
+      "version": "601.1.46",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329 [FBAN/FBIOS;FBAV/6.4;FBBV/290891;FBDV/iPad3,3;FBMD/iPad;FBSN/iPhone OS;FBSV/6.1.3;FBSS/2; FBCR/Three;FBID/tablet;FBLC/en_US;FBOP/1]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 3,3",
-      "marketingName": "iPad (3rd Gen) 3G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "6.4.0",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "6.1.3",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.26.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 7_0_3 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B511 [FBAN/FBIOS;FBAV/8.0.0.28.18;FBBV/1665515;FBDV/iPad4,2;FBMD/iPad;FBSN/iPhone OS;FBSV/7.0.3;FBSS/2; FBCR/Three;FBID/tablet;FBLC/en_US;FBOP/1]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 4,2",
-      "marketingName": "iPad Air 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "8.0.0.28.18",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.3",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.51.1",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Mobile/11D201 [FBAN/MessengerForiOS;FBAV/22.0.0.11.13;FBBV/7231602;FBDV/iPad3,3;FBMD/iPad;FBSN/iPhone OS;FBSV/7.1.1;FBSS/2; FBCR/;FBID/tablet;FBLC/en_US;FBOP/1]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 3,3",
-      "marketingName": "iPad (3rd Gen) 3G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "22.0.0.11.13",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.1.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.51.2",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 [FBAN/MessengerForiOS;FBAV/60.0.0.26.68;FBBV/23914045;FBDV/iPad5,4;FBMD/iPad;FBSN/iPhone OS;FBSV/9.1;FBSS/2; FBCR/Carrier;FBID/tablet;FBLC/en_GB;FBOP/1]"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13D15 [FBAN/FBIOS;FBAV/51.0.0.52.154;FBBV/25351091;FBDV/iPad5,4;FBMD/iPad;FBSN/iPhone OS;FBSV/9.2.1;FBSS/2; FBCR/;FBID/tablet;FBLC/de_DE;FBOP/1]"
     },
     "device": {
       "architecture": "",
@@ -203,54 +68,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Facebook Messenger App",
+      "name": "Facebook App",
       "modus": null,
-      "version": "60.0.0.26.68",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.1.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13D15 [FBAN/MessengerForiOS;FBAV/60.0.0.26.68;FBBV/23914045;FBDV/iPad2,2;FBMD/iPad;FBSN/iPhone OS;FBSV/9.2.1;FBSS/1; FBCR/;FBID/tablet;FBLC/en_GB;FBOP/1]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 2,2",
-      "marketingName": "iPad (2nd Gen) 3G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "60.0.0.26.68",
+      "version": "51.0.0.52.154",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -271,7 +91,187 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 [FBAN/MessengerForiOS;FBAV/117.0.0.36.70;FBBV/57539258;FBDV/iPad4,2;FBMD/iPad;FBSN/iOS;FBSV/10.3.1;FBSS/2;FBCR/EE;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 [FBAN/FBIOS;FBAV/62.0.0.43.141;FBBV/36454510;FBRV/0;FBDV/iPad6,8;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.4;FBSS/2;FBCR/Vodafone.de;FBID/tablet;FBLC/de_DE;FBOP/5]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,8",
+      "marketingName": "iPad Pro 12.9\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "62.0.0.43.141",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.4",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_0_2 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A421 [FBAN/FBIOS;FBAV/144.0.0.55.89;FBBV/74129168;FBDV/iPad6,12;FBMD/iPad;FBSN/iOS;FBSV/11.0.2;FBSS/2;FBCR/Vodafone.de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/74129168]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,12",
+      "marketingName": "iPad 9.7\" (5th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "144.0.0.55.89",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.2",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_0_2 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A421 [FBAN/FBIOS;FBAV/143.0.0.76.90;FBBV/73343453;FBDV/iPad6,4;FBMD/iPad;FBSN/iOS;FBSV/11.0.2;FBSS/2;FBCR/iPad;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,4",
+      "marketingName": "iPad Pro 9.7\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "143.0.0.76.90",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.2",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 Instagram 27.0.0.13.98 (iPad5,4; iOS 10_3_2; de_DE; de-DE; scale=2.00; gamut=normal; 960x640)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 5,4",
+      "marketingName": "iPad Air 2 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "27.0.0.13.98",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.2.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 Instagram 27.0.0.13.98 (iPad4,2; iOS 10_3_2; de_DE; de-DE; scale=2.00; gamut=normal; 640x960)"
     },
     "device": {
       "architecture": "",
@@ -293,9 +293,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Facebook Messenger App",
+      "name": "Instagram App",
       "modus": null,
-      "version": "117.0.0.36.70",
+      "version": "27.0.0.13.98",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -304,13 +304,823 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.1",
+      "version": "10.3.2",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "603.1.30",
+      "version": "603.2.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_2_2 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C202 [FBAN/FBIOS;FBAV/153.0.0.53.87;FBBV/84268146;FBDV/iPad7,2;FBMD/iPad;FBSN/iOS;FBSV/11.2.2;FBSS/2;FBCR/;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 7,2",
+      "marketingName": "iPad Pro 12.9\" (2nd Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "153.0.0.53.87",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.2",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.4.7",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBIOS;FBAV/157.0.0.42.96;FBBV/90008621;FBDV/iPad7,4;FBMD/iPad;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/Telekom.de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/90008621]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 7,4",
+      "marketingName": "iPad Pro 10.5\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2224,
+        "height": 1668,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "157.0.0.42.96",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.5",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.5.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 [FBAN/MessengerForiOS;FBAV/164.0.0.60.91;FBBV/105889540;FBDV/iPad5,2;FBMD/iPad;FBSN/iOS;FBSV/11.3.1;FBSS/2;FBCR/o2-de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 5,2",
+      "marketingName": "iPad Mini 4 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "164.0.0.60.91",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16A404 Instagram 69.0.0.16.95 (iPad7,6; iOS 12_0_1; de_DE; de-DE; scale=2.00; gamut=normal; 750x1334; 129075087)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad7,6",
+      "marketingName": "iPad 9.7\" (6th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "69.0.0.16.95",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.0.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16B92 Instagram 73.0.0.14.186 (iPad6,8; iOS 12_1; de_DE; de-DE; scale=2.00; gamut=normal; 1334x750; 133181238)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,8",
+      "marketingName": "iPad Pro 12.9\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "73.0.0.14.186",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C50 Instagram 64.0.0.12.96 (iPad7,4; iOS 12_1_1; de_DE; de; scale=2.00; gamut=wide; 1334x750; 124976489)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 7,4",
+      "marketingName": "iPad Pro 10.5\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2224,
+        "height": 1668,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "64.0.0.12.96",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 116.0.0.24.361 (iPad7,6; iOS 13_1_2; de_DE; de-DE; scale=2.00; 750x1334; 178418958)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad7,6",
+      "marketingName": "iPad 9.7\" (6th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "116.0.0.24.361",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.1.2",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 118.0.0.25.121 (iPad8,7; iOS 13_2; de_DE; de-DE; scale=2.00; 1334x750; 180988914)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 8,7",
+      "marketingName": "iPad Pro 12.9\" (3rd Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "118.0.0.25.121",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.2.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,4;FBMD/iPad;FBSN/iOS;FBSV/13.2;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.11.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 7,4",
+      "marketingName": "iPad Pro 10.5\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2224,
+        "height": 1668,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.2.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/206.0.0.35.103;FBBV/140132201;FBDV/iPad5,4;FBMD/iPad;FBSN/iOS;FBSV/13.1.3;FBSS/2;FBCR/Telekom.de;FBID/tablet;FBLC/de_DE;FBOP/5;FBRV/0] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 5,4",
+      "marketingName": "iPad Air 2 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "206.0.0.35.103",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.1.3",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,8;FBMD/iPad;FBSN/iOS;FBSV/13.1.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Carrier] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,8",
+      "marketingName": "iPad Pro 12.9\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.1.3",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_2_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad11,4;FBMD/iPad;FBSN/iOS;FBSV/13.2.2;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 11,4",
+      "marketingName": "iPad Air 10.5\" (3rd Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2224,
+        "height": 1668,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.2.2",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad8,7;FBMD/iPad;FBSN/iOS;FBSV/13.1.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.10.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 8,7",
+      "marketingName": "iPad Pro 12.9\" (3rd Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.1.3",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad11,2;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 11,2",
+      "marketingName": "iPad Mini 7.9\" (5th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,4;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/o2 - de] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,4",
+      "marketingName": "iPad Pro 9.7\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 123.0.0.24.115 (iPad5,4; iOS 13_3; de_DE; de-DE; scale=2.00; 750x1334; 188362626) comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 5,4",
+      "marketingName": "iPad Air 2 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "123.0.0.24.115",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,2;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/iPad] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 7,2",
+      "marketingName": "iPad Pro 12.9\" (2nd Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad6,12;FBMD/iPad;FBSN/iOS;FBSV/13.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/o2 - de] comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,12",
+      "marketingName": "iPad 9.7\" (5th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
@@ -341,231 +1151,6 @@
       "name": "Facebook Messenger App",
       "modus": null,
       "version": "70.0.0.30.56",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/63.0.0.37.140;FBBV/37606630;FBRV/37606630;FBDV/iPad5,4;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/Three;FBID/tablet;FBLC/en_GB;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 5,4",
-      "marketingName": "iPad Air 2 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "63.0.0.37.140",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.5",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/MessengerForiOS;FBAV/72.0.0.23.68;FBBV/30451635;FBRV/0;FBDV/iPad2,7;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/1;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 2,7",
-      "marketingName": "iPad Mini 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 7.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "72.0.0.23.68",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.5",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 [FBAN/FBIOS;FBAV/87.0.0.44.70;FBBV/54482584;FBDV/iPad4,5;FBMD/iPad;FBSN/iOS;FBSV/10.3.1;FBSS/2;FBCR/Carrier;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/54482584]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 4,5",
-      "marketingName": "iPad Mini 2 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 7.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "87.0.0.44.70",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/75.0.0.48.61;FBBV/45926345;FBRV/0;FBDV/iPad3,6;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/O2;FBID/tablet;FBLC/en_GB;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 3,6",
-      "marketingName": "iPad (4th Gen) 3G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "75.0.0.48.61",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.5",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 [FBAN/MessengerForiOS;FBAV/73.0.0.33.71;FBBV/31011105;FBRV/0;FBDV/iPad3,6;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.1;FBSS/2;FBCR/Carrier;FBID/tablet;FBLC/pt_PT;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 3,6",
-      "marketingName": "iPad (4th Gen) 3G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "73.0.0.33.71",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -631,231 +1216,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 [FBAN/MessengerForiOS;FBAV/99.0.0.31.139;FBBV/45331829;FBRV/0;FBDV/iPad5,2;FBMD/iPad;FBSN/iOS;FBSV/10.1.1;FBSS/2;FBCR/Three;FBID/tablet;FBLC/en_GB;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 5,2",
-      "marketingName": "iPad Mini 4 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 7.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "99.0.0.31.139",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.2.14",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 [FBAN/FBIOS;FBAV/77.0.0.45.70;FBBV/48299134;FBRV/0;FBDV/iPad6,4;FBMD/iPad;FBSN/iOS;FBSV/10.2;FBSS/2;FBCR/Verizon;FBID/tablet;FBLC/en_US;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 6,4",
-      "marketingName": "iPad Pro 9.7\" 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "77.0.0.45.70",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.3.12",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13F69 [FBAN/FBIOS;FBAV/96.0.0.45.70;FBBV/60548545;FBDV/iPad5,2;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.2;FBSS/2;FBCR/O2;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 5,2",
-      "marketingName": "iPad Mini 4 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 7.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "96.0.0.45.70",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.2",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C153 [FBAN/FBIOS;FBAV/153.0.0.53.87;FBBV/84268146;FBDV/iPad6,8;FBMD/iPad;FBSN/iOS;FBSV/11.2.1;FBSS/2;FBCR/vodafoneUK;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 6,8",
-      "marketingName": "iPad Pro 12.9\" 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2732,
-        "height": 2048,
-        "touch": true,
-        "size": 12.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "153.0.0.53.87",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.2.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "604.4.7",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 Instagram 10.28.0 (iPad4,2; iOS 10_3_2; en_CY; en-CY; scale=2.00; gamut=normal; 640x960)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 4,2",
-      "marketingName": "iPad Air 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "10.28.0",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.2",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.2.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/MessengerForiOS;FBAV/140.0.0.65.91;FBBV/75768478;FBDV/iPad6,12;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Telenor;FBID/tablet;FBLC/nb_NO;FBOP/5;FBRV/0]"
     },
     "device": {
@@ -901,19 +1261,19 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPad2,7;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/1;FBCR/EE;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/75938921]"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad8,3;FBMD/iPad;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Vodafone.de] comdirect/1.0 (appVersion:20.2.0;deviceName:apple ipad;deviceType:tablet)"
     },
     "device": {
       "architecture": "",
-      "deviceName": "iPad 2,7",
-      "marketingName": "iPad Mini 4G",
+      "deviceName": "iPad 8,3",
+      "marketingName": "iPad Pro 11\" 4G",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 1024,
-        "height": 768,
+        "width": 2388,
+        "height": 1668,
         "touch": true,
-        "size": 7.9
+        "size": 11.0
       },
       "type": "fone-pad",
       "ismobile": true,
@@ -925,28 +1285,163 @@
     "client": {
       "name": "Facebook App",
       "modus": null,
-      "version": "146.0.0.73.91",
+      "version": null,
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.5",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "601.1.46",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 [FBAN/FBIOS;FBAV/168.0.0.57.90;FBBV/103647182;FBDV/iPad7,4;FBMD/iPad;FBSN/iOS;FBSV/11.3.1;FBSS/2;FBCR/vodafoneUK;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,6;FBMD/iPad;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/tablet;FBLC/ru_RU;FBOP/5;FBCR/o2 - de]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad7,6",
+      "marketingName": "iPad 9.7\" (6th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 135.1.0.23.118 (iPad8,3; iOS 13_4; de_DE; de-DE; scale=2.00; 750x1334; 206833405) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 8,3",
+      "marketingName": "iPad Pro 11\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2388,
+        "height": 1668,
+        "touch": true,
+        "size": 11.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "135.1.0.23.118",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 135.1.0.23.118 (iPad11,4; iOS 13_3_1; de_DE; de-DE; scale=2.00; 750x1334; 206833405) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 11,4",
+      "marketingName": "iPad Air 10.5\" (3rd Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2224,
+        "height": 1668,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "135.1.0.23.118",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 135.1.0.23.118 (iPad7,4; iOS 13_4; de_DE; de-DE; scale=2.00; 1334x750; 206833405) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
     },
     "device": {
       "architecture": "",
@@ -968,18 +1463,18 @@
       "bits": 0
     },
     "client": {
-      "name": "Facebook App",
+      "name": "Instagram App",
       "modus": null,
-      "version": "168.0.0.57.90",
+      "version": "135.1.0.23.118",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple",
       "bits": 0
     },
@@ -991,17 +1486,62 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/166.0.0.53.95;FBBV/101310068;FBDV/iPad6,12;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Three;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 137.0.0.30.124 (iPad5,2; iOS 13_3_1; de_DE; de-DE; scale=2.00; 750x1334; 208685371) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
     },
     "device": {
       "architecture": "",
-      "deviceName": "iPad 6,12",
-      "marketingName": "iPad 9.7\" (5th Gen) 4G",
+      "deviceName": "iPad 5,2",
+      "marketingName": "iPad Mini 4 4G",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 2732,
-        "height": 2048,
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "137.0.0.30.124",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 136.0.0.22.123 (iPad6,4; iOS 13_4_1; de_DE; de-DE; scale=2.00; 1334x750; 207451752) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,4",
+      "marketingName": "iPad Pro 9.7\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
         "touch": true,
         "size": 9.7
       },
@@ -1013,30 +1553,345 @@
       "bits": 0
     },
     "client": {
-      "name": "Facebook App",
+      "name": "Instagram App",
       "modus": null,
-      "version": "166.0.0.53.95",
+      "version": "136.0.0.22.123",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.3",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.1",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "603.3.8",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C153 Instagram 33.0.0.11.96 (iPad5,4; iOS 11_2_1; nl_BE; nl-BE; scale=2.00; gamut=normal; 640x960)"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad7,12;FBMD/iPad;FBSN/iOS;FBSV/13.4;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/Telekom.de] comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 7,12",
+      "marketingName": "iPad 10.2\" (7th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2160,
+        "height": 1620,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 136.0.0.22.123 (iPad11,2; iOS 13_4; de_DE; de-DE; scale=2.00; 750x1334; 207451752) comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 11,2",
+      "marketingName": "iPad Mini 7.9\" (5th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "136.0.0.22.123",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad8,10;FBMD/iPad;FBSN/iOS;FBSV/13.4;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5;FBCR/]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 8,10",
+      "marketingName": "iPad Pro 11\" (2nd Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2388,
+        "height": 1668,
+        "touch": true,
+        "size": 11.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/263.2.0.81.121;FBBV/213222891;FBDV/iPad6,4;FBMD/iPad;FBSN/iOS;FBSV/13.4.1;FBSS/2;FBCR/;FBID/tablet;FBLC/de_DE;FBOP/0]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 6,4",
+      "marketingName": "iPad Pro 9.7\" 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook Messenger Lite",
+      "modus": null,
+      "version": "263.2.0.81.121",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 144.0.0.17.119 (iPad7,12; iOS 13_4_1; de_DE; de-DE; scale=2.00; 750x1334; 217426887) NW/1 comdirect/1.0 (appVersion:20.5.4;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 7,12",
+      "marketingName": "iPad 10.2\" (7th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2160,
+        "height": 1620,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "144.0.0.17.119",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad5,2;FBMD/iPad;FBSN/iOS;FBSV/13.5.1;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5] comdirect/1.0 (appVersion:20.9.0;deviceName:apple ipad;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 5,2",
+      "marketingName": "iPad Mini 4 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.5.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 169.0.0.21.133 (iPad7,2; iOS 14_2; de_DE; de-DE; scale=2.00; 750x1334; 261791898)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 7,2",
+      "marketingName": "iPad Pro 12.9\" (2nd Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "169.0.0.21.133",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.2.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/291.2.0.30.111;FBBV/257403963;FBDV/iPad5,4;FBMD/iPad;FBSN/iOS;FBSV/14.2;FBSS/2;FBCR/;FBID/tablet;FBLC/de;FBOP/0]"
     },
     "device": {
       "architecture": "",
@@ -1058,9 +1913,54 @@
       "bits": 0
     },
     "client": {
-      "name": "Instagram App",
+      "name": "Facebook Messenger Lite",
       "modus": null,
-      "version": "33.0.0.11.96",
+      "version": "291.2.0.30.111",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.2.0",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/294.0.0.60.128;FBBV/262406393;FBDV/iPad4,2;FBMD/iPad;FBSN/iOS;FBSV/12.5.1;FBSS/2;FBCR/;FBID/tablet;FBLC/de;FBOP/0]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 4,2",
+      "marketingName": "iPad Air 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook Messenger Lite",
+      "modus": null,
+      "version": "294.0.0.60.128",
       "manufacturer": "meta",
       "type": "mobile-application",
       "isbot": false,
@@ -1069,13 +1969,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.2.1",
+      "version": "12.5.1",
       "manufacturer": "apple",
       "bits": 0
     },
     "engine": {
       "name": "WebKit",
-      "version": "604.4.7",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
@@ -1115,96 +2015,6 @@
       "name": "iOS",
       "marketingName": "iOS",
       "version": "12.4.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad5,4;FBMD/iPad;FBSN/iOS;FBSV/14.0.1;FBSS/2;FBID/tablet;FBLC/ru_RU;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 5,4",
-      "marketingName": "iPad Air 2 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "14.0.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPad11,4;FBMD/iPad;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5;FBCR/iPad]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 11,4",
-      "marketingName": "iPad Air 10.5\" (3rd Gen) 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2224,
-        "height": 1668,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "13.3.1",
       "manufacturer": "apple",
       "bits": 0
     },
@@ -1621,51 +2431,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19C63 [FBAN/FBIOS;FBDV/iPad6,12;FBMD/iPad;FBSN/iPadOS;FBSV/15.2.1;FBSS/2;FBID/tablet;FBLC/ru_RU;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 6,12",
-      "marketingName": "iPad 9.7\" (5th Gen) 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2732,
-        "height": 2048,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "15.2.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E241 [FBAN/FBIOS;FBDV/iPad13,17;FBMD/iPad;FBSN/iPadOS;FBSV/15.4;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5]"
     },
     "device": {
@@ -1711,6 +2476,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20D67 [FBAN/FBIOS;FBDV/iPad14,4;FBMD/iPad;FBSN/iPadOS;FBSV/16.3.1;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 14,4",
+      "marketingName": "iPad Pro 11\" (4th Gen) 5G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2388,
+        "height": 1668,
+        "touch": true,
+        "size": 11.0
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "16.3.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20F75 [FBAN/FBIOS;FBAV/446.0.0.32.330;FBBV/554572428;FBDV/iPad8,8;FBMD/iPad;FBSN/iPadOS;FBSV/16.5.1;FBSS/2;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/558132887]"
     },
     "device": {
@@ -1745,96 +2555,6 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "16.5.1",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19B74 [FBAN/FBIOS;FBAV/368.0.0.24.107;FBBV/371860683;FBDV/iPad8,7;FBMD/iPad;FBSN/iPadOS;FBSV/15.1;FBSS/2;FBID/tablet;FBLC/ja_JP;FBOP/5;FBRV/374969207]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 8,7",
-      "marketingName": "iPad Pro 12.9\" (3rd Gen) 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2732,
-        "height": 2048,
-        "touch": true,
-        "size": 12.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "368.0.0.24.107",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iPadOS",
-      "marketingName": "iPadOS",
-      "version": "15.1.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_5_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16H50 [FBAN/FBIOS;FBDV/iPad4,8;FBMD/iPad;FBSN/iOS;FBSV/12.5.4;FBSS/2;FBID/tablet;FBLC/en_GB;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 4,8",
-      "marketingName": "iPad Mini 3 4G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 7.9
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.5.4",
       "manufacturer": "apple",
       "bits": 0
     },
@@ -1931,141 +2651,6 @@
     "engine": {
       "name": "WebKit",
       "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_3_4 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G61 [FBAN/FBIOS;FBAV/67.0.0.49.70;FBBV/41277963;FBRV/0;FBDV/iPad3,5;FBMD/iPad;FBSN/iOS;FBSV/10.3.4;FBSS/2;FBCR/Rogers;FBID/tablet;FBLC/en_US;FBOP/5]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 3,5",
-      "marketingName": "iPad (4th Gen) 3G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "67.0.0.49.70",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.4",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.3.8",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_6 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G37 [FBAN/FBIOS;FBAV/168.0.0.57.90;FBBV/103647182;FBDV/iPad3,2;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.6;FBSS/2;FBCR/Verizon;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 3,2",
-      "marketingName": "iPad (3rd Gen) 3G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "168.0.0.57.90",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.6",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; U; CPU iPhone OS 5_1 like Mac OS X; en_US) AppleWebKit (KHTML, like Gecko) Mobile [FBAN/FBForIPhone;FBAV/4.1;FBBV/4100.0;FBDV/iPad2,3;FBMD/iPad;FBSN/iPhone OS;FBSV/5.1;FBSS/1; FBCR/"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "iPad 2,3",
-      "marketingName": "iPad (2nd Gen) 3G",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "4.1.0",
-      "manufacturer": "meta",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "5.1.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
       "manufacturer": "apple"
     }
   },
@@ -2285,6 +2870,51 @@
       "name": "iPadOS",
       "marketingName": "iPadOS",
       "version": "17.5.1",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/22G86 [FBAN/FBIOS;FBAV/526.0.0.61.97;FBBV/776821927;FBDV/iPad11,7;FBMD/iPad;FBSN/iPadOS;FBSV/18.6;FBSS/2;FBID/tablet;FBLC/nl_NL;FBOP/5;FBRV/781263401]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPad 11,7",
+      "marketingName": "iPad 10.2\" (8th Gen) 4G",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2160,
+        "height": 1620,
+        "touch": true,
+        "size": 10.2
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "526.0.0.61.97",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "18.6.0",
       "manufacturer": "apple",
       "bits": 0
     },

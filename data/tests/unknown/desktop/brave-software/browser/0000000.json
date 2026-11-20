@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/84.0.4147.89 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) brave/0.7.16 Chrome/47.0.2526.110 Brave/0.36.8 Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -25,7 +25,7 @@
     "client": {
       "name": "Brave",
       "modus": null,
-      "version": "84.0.4147.89",
+      "version": "0.7.16",
       "manufacturer": "brave-software",
       "type": "browser",
       "isbot": false,
@@ -40,16 +40,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "84.0.4147.89",
+      "version": "47.0.2526.110",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "sec-ch-ua-platform": "\"Linux\"",
-      "sec-ch-ua": "\"Brave\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
-      "sec-ch-ua-mobile": "?0",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/73.0.3683.90 Safari/537.36"
     },
     "device": {
       "architecture": "",
@@ -73,7 +70,7 @@
     "client": {
       "name": "Brave",
       "modus": null,
-      "version": "123.0.0",
+      "version": "73.0.3683.90",
       "manufacturer": "brave-software",
       "type": "browser",
       "isbot": false,
@@ -88,7 +85,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "123.0.0",
+      "version": "73.0.3683.90",
       "manufacturer": "google"
     }
   },

@@ -1,19 +1,64 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.90 Mobile Safari/537.36 Vivaldi/1.94.1008.14"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.137 Mobile Safari/537.36 Vivaldi/2.7.1624.277 comdirect/1.0 (appVersion:19.10.0;deviceType:mobile)"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-G920F",
-      "marketingName": "Galaxy S6 (Global)",
+      "deviceName": "SM-G975F",
+      "marketingName": "Galaxy S10+ (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2560,
+        "width": 3040,
         "height": 1440,
         "touch": true,
-        "size": 5.1
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Vivaldi",
+      "modus": null,
+      "version": "2.7.1624.277",
+      "manufacturer": "vivaldi",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.137 Mobile Safari/537.36 Vivaldi/2.7.1624.277 comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-G950F",
+      "marketingName": "Galaxy S8 (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 5.8
       },
       "type": "smartphone",
       "ismobile": true,
@@ -25,7 +70,7 @@
     "client": {
       "name": "Vivaldi",
       "modus": null,
-      "version": "1.94.1008.14",
+      "version": "2.7.1624.277",
       "manufacturer": "vivaldi",
       "type": "browser",
       "isbot": false,
@@ -34,13 +79,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.1",
+      "version": "9.0.0",
       "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": "62.0.3202.90",
+      "version": "76.0.3809.137",
       "manufacturer": "google"
     }
   }

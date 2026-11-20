@@ -1,13 +1,13 @@
 rules:
-  /ucbrowserhd/i: 'uc browser hd'
-  /bdbrowserhd/i: 'baidu browser hd'
-  /bdbrowser_mini/i: 'baidu browser mini'
-  /bidubrowser/i: 'baidu spark'
-  /baidubrowser|bdbrowser|flyflow/i: 'baidu browser'
-  /opios/i: 'opera mini ios'
-  '/opera mini/i': 'opera mini'
-  /ucmini/i: 'ucbrowser mini'
-  /ucturbo/i: 'ucbrowser turbo'
+  /ucbrowserhd/i: uc-browser-hd
+  /bdbrowserhd/i: baidu-browser-hd
+  /bdbrowser_mini/i: baidu-browser-mini
+  /bidubrowser/i: baidu-spark
+  /baidubrowser|bdbrowser|flyflow/i: baidu-browser
+  /opios/i: opera-mini-ios
+  '/opera mini/i': opera-mini
+  /ucmini/i: ucbrowser-mini
+  /ucturbo/i: ucbrowser-turbo
   /youbrowser/i: you-browser
   '/(?<!n)ubrowser/i': ubrowser
   /aliapp\(tb/i: taobao
@@ -18,67 +18,67 @@ rules:
   /phantomjs/i: phantomjs
   /salamweb/i: salamweb
   /whatsappsmbiphone/i: whatsapp-business
-  /(fban|fb_iab)\/(messengerlite|mlite)/i: 'facebook messenger lite'
-  /(fban|fb_iab)\/(messenger|orca-android)/i: 'facebook messenger app'
-  /(fban|fb_iab)\/groups/i: 'facebook groups'
+  /(fban|fb_iab)\/(messengerlite|mlite)/i: facebook-messenger-lite
+  /(fban|fb_iab)\/(messenger|orca-android)/i: facebook-messenger-app
+  /(fban|fb_iab)\/groups/i: facebook-groups
   /facebookexternalhit|facebookexternalua|facebookplatform/i: facebook-crawler
   /audiencenetworkforandroid/i: facebook-audience-network
-  /fban\/ema.+fbav/i: 'facebook lite'
+  /fban\/ema.+fbav/i: facebook-lite
   /facebookbot|facebookplatform/i: facebook-bot
   /meta-externalagent/i: meta-external-agent
-  /fban|fbav|fb_iab|facebook(?!\.com)/i: 'facebook app'
-  '/psp /i': 'playstation browser'
+  /fban|fbav|fb_iab|facebook(?!\.com)/i: facebook-app
+  '/psp /i': playstation-browser
   '/(?<!_)silk/i': silk
-  /flipboard/i: 'flipboard app'
-  /liebaofast/i: 'liebao fast'
+  /flipboard/i: flipboard-app
+  /liebaofast/i: liebao-fast
   /navermatome/i: matome
   /netfrontlifebrowser/i: netfrontlifebrowser
   /chedot/i: chedot
-  /qword/i: 'qword browser'
+  /qword/i: qword-browser
   /mxbrowser|maxthon|myie/i: maxthon
   /superbird/i: superbird
   /micromessenger|com\.tencent\.mm|^wechat\//i: wechat-app
-  /pinterestbot/i: 'pinterest bot'
-  /pinterest/i: 'pinterest app'
-  '/lite baiduboxapp/i': 'baidu box app lite'
-  /baiduboxapp/i: 'baidu box app'
-  /newsarticle/i: 'newsarticle app'
+  /pinterestbot/i: pinterest-bot
+  /pinterest/i: pinterest-app
+  '/lite baiduboxapp/i': baidu-box-app-lite
+  /baiduboxapp/i: baidu-box-app
+  /newsarticle/i: newsarticle-app
   /gaanaandroid|^gaana/i: gaana
-  '/miuibrowser| miui\//i': 'miui browser'
+  '/miuibrowser| miui\//i': miui-browser
   /bingsapphire/i: bingsearch
-  /com\.google\.android\.apps\.magazines/i: 'google play newsstand'
-  /com\.google\.android\.apps\.searchlite|nstnwv/i: 'google search lite'
+  /com\.google\.android\.apps\.magazines/i: google-play-newsstand
+  /com\.google\.android\.apps\.searchlite|nstnwv/i: google-search-lite
   /com\.google\.android\.apps\.photos/i: google-photos
-  /com\.google\.googlemobile/i: 'google mobile app'
+  /com\.google\.googlemobile/i: google-mobile-app
   /gsa|^google\//i: google-search
   /1passwordthumbs/i: 1passwordthumbs
   /1password/i: 1password
   /alohalite/i: aloha-browser-lite
   /alohabrowser|aloha\//i: aloha-browser
   /bingweb/i: bingweb
-  /klar\//i: 'firefox klar'
-  /focus\//i: 'firefox focus'
-  /edgios/i: 'edge mobile for ios'
-  '/opera news/i': 'opera news'
-  /com\.apple\.mobilenotes/i: 'apple mobilenotes'
+  /klar\//i: firefox-klar
+  /focus\//i: firefox-focus
+  /edgios/i: edge-mobile-for-ios
+  '/opera news/i': opera-news
+  /com\.apple\.mobilenotes/i: apple mobilenotes
   '/tizen ?browser|slp browser/i': tizen-browser
   '/tizen.*version.*(safari|mobile)/i': tizen-browser
   /iemobile|wpdesktop|zunewp7|xblwp7/i: iemobile
-  '/360 aphone browser|360 ?browser/i': '360 browser'
-  '/(?:obigointernetbrowser|obigo-browser|obigo|telecabrowser|teleca)[\/-]qo?\d+/i': 'obigo q'
+  '/360 aphone browser|360 ?browser/i': 360-browser
+  '/(?:obigointernetbrowser|obigo-browser|obigo|telecabrowser|teleca)[\/-]qo?\d+/i': obigo-q
   /sitekiosk/i: sitekiosk
-  '/Mozilla\/5\.0.*\(.*Trident\/8\.0.*rv\:\d+\).*|Mozilla\/5\.0.*\(.*Trident\/7\.0.*\) like Gecko.*|Mozilla\/5\.0.*\(.*MSIE 10\.\d.*Trident\/(4|5|6|7|8)\.0.*|Mozilla\/(4|5)\.0.*\(.*MSIE (9|8|7|6)\.0.*|Mozilla\/(4|5)\.0.*\(.*MSIE (5|4)\.\d+.*|Mozilla\/\d\.\d+.*\(.*MSIE (3|2|1)\.\d+.*/': 'internet explorer'
-  '/(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr\/)|(?:opera|opr\/).*(?:android|mtk|maui|samsung|windows ce|symbos)/i': 'opera mobile'
-  /mobileiron/i: 'mobile iron'
+  '/Mozilla\/5\.0.*\(.*Trident\/8\.0.*rv\:\d+\).*|Mozilla\/5\.0.*\(.*Trident\/7\.0.*\) like Gecko.*|Mozilla\/5\.0.*\(.*MSIE 10\.\d.*Trident\/(4|5|6|7|8)\.0.*|Mozilla\/(4|5)\.0.*\(.*MSIE (9|8|7|6)\.0.*|Mozilla\/(4|5)\.0.*\(.*MSIE (5|4)\.\d+.*|Mozilla\/\d\.\d+.*\(.*MSIE (3|2|1)\.\d+.*/': internet-explorer
+  '/(?:android|mtk|maui|samsung|windows ce|symbos).*(?:opera|opr\/)|(?:opera|opr\/).*(?:android|mtk|maui|samsung|windows ce|symbos)/i': opera-mobile
+  /mobileiron/i: mobile-iron
   '/(?<!x)iron(\/| (?!build|pro)|$)/i': iron
-  '/ opx\/|oprgx\/|opera gx|opera 20gx|operagx/i': 'opera gx'
-  '/ opt\/|opera touch|opera 20touch/i': 'opera touch'
+  '/ opx\/|oprgx\/|opera gx|opera 20gx|operagx/i': opera-gx
+  '/ opt\/|opera touch|opera 20touch/i': opera-touch
   /opr\//i: opera
   /midori/i: midori
   /whatsapp\/.+cloudapi/i: whatsapp-business
   /whatsapp/i: whatsapp
   /com\.google\.googleplus/i: 'google+ app'
-  /com\.google\.(android|ios)\.youtube/i: 'youtube app'
+  /com\.google\.(android|ios)\.youtube/i: youtube-app
   '/google page speed insights/i': 'google pagespeed insights'
   /googlebot-mobile/i: googlebot-mobile
   /googlebot/i: googlebot
@@ -114,13 +114,13 @@ rules:
   /lunascape/i: lunascape
   /abevalbot/i: abeval-bot
   /wrtnbot/i: wrtnbot
-  /com\.douban\.group/i: 'douban app'
-  /com\.apple\.notes/i: 'apple notes app'
-  '/avast secure browser|(?<!o)safer(?!surf)/i': 'avast secure browser'
+  /com\.douban\.group/i: douban-app
+  /com\.apple\.notes/i: apple-notes-app
+  '/avast secure browser|(?<!o)safer(?!surf)/i': avast-secure-browser
   /networkingextension|com\.apple\.webkit.networking/i: safari
-  /com\.apple\.webkit/i: 'apple webkit service'
-  /safarifetcherd/i: 'apple safari fetcher daemon'
-  '/zdownload pro/i': 'zdownload pro'
+  /com\.apple\.webkit/i: apple-webkit-service
+  /safarifetcherd/i: apple-safari-fetcher-daemon
+  '/zdownload pro/i': zdownload-pro
   /notizen/i: notizen
   /yaani/i: yaanibrowser
   /minibrowsermobile/i: minibrowsermobile
@@ -138,15 +138,15 @@ rules:
   /ninesky/i: ninesky-browser
   /listia/i: listia
   /aldiko/i: aldiko
-  /acheetahi/i: 'cm browser'
+  /acheetahi/i: cm-browser
   /outlook/i: outlook
   /sraf\//i: sraf
   /(?<!\.)360se/i: 360-secure-browser
   /newb/i: newb
   /chromium/i: chromium
   /surfbrowser|surf\//i: surfbrowser
-  '/sogou web spider/i': 'sogou web spider'
-  /qqbrowserlite/i: 'qqbrowser lite'
+  '/sogou web spider/i': sogou-web-spider
+  /qqbrowserlite/i: qqbrowser-lite
   /tencentdocs/i: tencent-docs
   /qqbrowser|v1_and_sq|QQ浏览器/i: qqbrowser
   '/ tim\//i': tim-app
@@ -157,16 +157,16 @@ rules:
   /qqmusic/i: qq-music
   /(flow|ekioh)\//i: flow-browser
   '/lg browser/i': lg-browser
-  /seznam\.cz|sznprohlizec/i: 'seznam browser'
-  /sogoumobilebrowser/i: 'sogou mobile browser'
+  /seznam\.cz|sznprohlizec/i: seznam-browser
+  /sogoumobilebrowser/i: sogou-mobile-browser
   /heliummobilebrowser/i: heliummobilebrowser
   /teleca|obigo|au-mic|mic\//i: teleca-obigo
   /polaris/i: polaris
-  /cosbrowser/i: 'cos browser'
+  /cosbrowser/i: cos-browser
   '/nintendobrowser|nintendo 3ds/i': nintendobrowser
-  /nx\/|wiiu/i: 'netfront nx'
+  /nx\/|wiiu/i: netfront-nx
   '/netfront|nf\/?[34]|playstation [34]/i': netfront
-  /vlc/i: 'vlc media player'
+  /vlc/i: vlc-media-player
   /netnewswire/i: netnewswire
   /goodreader/i: goodreader
   '/espn app|espn radio/i': espn-radio
@@ -191,31 +191,31 @@ rules:
   /antenna\/|antennapod/i: antennapod
   /podcruncher/i: podcruncher
   /downcast/i: downcast
-  '/podkicker classic/i': 'podkicker classic'
-  '/alpha playerfm/i': 'alpha player fm'
-  '/podkicker pro/i': 'podkicker pro'
+  '/podkicker classic/i': podkicker-classic
+  '/alpha playerfm/i': alpha-player-fm
+  '/podkicker pro/i': podkicker-pro
   /podkicker/i: podkicker
-  '/player fm/i': 'player fm'
+  '/player fm/i': player-fm
   /overcast/i: overcast
-  '/rss_?radio/i': 'rssradio podcast player'
-  '/sports talk 1050/i': 'sports talk 1050'
+  '/rss_?radio/i': rssradio-podcast-player
+  '/sports talk 1050/i': sports-talk-1050
   /audioboom/i: audioboom
-  '/knbr 680/i': 'knbr 680'
-  '/77 wabc/i': '77 wabc'
-  '/the dan patrick show/i': 'the dan patrick show'
-  '/mark levin show/i': 'mark levin show'
+  '/knbr 680/i': knbr-680
+  '/77 wabc/i': 77-wabc
+  '/the dan patrick show/i': the-dan-patrick-show
+  '/mark levin show/i': mark-levin-show
   /amarok/i: amarok
-  '/digg feed fetcher/i': 'digg feed fetcher'
+  '/digg feed fetcher/i': digg-feed-fetcher
   /cheshire/i: cheshire
   '/(?<!_)custom(?! phone|rom)/i': custom
-  /smarttv/i: 'smarttv webbrowser'
+  /smarttv/i: smarttv-webbrowser
   /puffin/i: puffin
-  /sailfish/i: 'sailfish browser'
+  /sailfish/i: sailfish-browser
   /kioclient/i: kioclient
   /smtbot/i: smtbot
   /msnbot-media/i: msnbot-media
   /bingbot|msnbot|msrbot/i: bingbot
-  /bingpreview/i: 'bing preview'
+  /bingpreview/i: bing-preview
   /naverdicapp/i: naver-dictionary
   /opera/i: opera
   '/naver[\/\(]/i': naver
@@ -223,7 +223,7 @@ rules:
   '/qwant(mobile)?\/|qwantios/i': qwant-mobile
   '/sunrisebrowser|sunrise[\/ ]/i': sunrise
   '/odyssey web browser/i': odyssey-web-browser
-  /ddg-ios-|duckduckgo/i: 'duckduck app'
+  /ddg-ios-|duckduckgo/i: duckduck-app
   '/origyn web browser/i': origyn-web-browser
   /safariviewservice/i: safari-view-service
   /grapeshotcrawler/i: grapeshotcrawler
@@ -233,7 +233,7 @@ rules:
   '/dorothy browser/i': dorothy-browser
   /mistralai-index/i: mistral-ai-index
   /kimi-searchbot/i: kimi-search-bot
-  /espial|escape/i: 'espial tv browser'
+  /espial|escape/i: espial-tv-browser
   /impendoom-bot/i: impendoom-bot
   /woorankreview/i: woorank-review
   '/deepseek chat/i': deepseek-app
@@ -283,15 +283,15 @@ rules:
   /OWB/: odyssey-web-browser
   '/(?:like android|windows ce|symbos).*safari/i': safari
   /samsungbrowser/i: samsungbrowser
-  '/google web preview/i': 'google web preview'
+  '/google web preview/i': google-web-preview
   /kodeios|^kode\//i: kode-browser
-  /tansodl/i: 'tanso download manager'
-  /mb2345browser|com\.browser2345/i: '2345 browser'
+  /tansodl/i: tanso-download-manager
+  /mb2345browser|com\.browser2345/i: 2345-browser
   /skyfire/i: skyfire
-  /twonkybeambrowser/i: 'twonky beam'
-  /fast-webcrawler/i: 'fast webcrawler'
+  /twonkybeambrowser/i: twonky-beam
+  /fast-webcrawler/i: fast-webcrawler
   /petalbot/i: petalbot
-  '/airwatch browser/i': 'airwatch browser'
+  '/airwatch browser/i': airwatch-browser
   /reeder\//i: reeder
   /applebot-extended/i: applebot-extended
   /applebot/i: applebot
@@ -329,15 +329,15 @@ rules:
   /waipu/i: waipu-tv
   /edg\//i: edge
   /^jam\//i: jam
-  '/wap[ \-]browser|spice qt-75|kkt20\/midp|browser\/wap|\/wap\d\./i': 'wap browser'
-  '/linux; android.*version|android[\/ ][\d\.]+ release|(?:android|mtk|maui|samsung|gingerbread|z710e|ebrd1101|folio_and_a|velocitymicro).*safari/i': 'android webkit'
+  '/wap[ \-]browser|spice qt-75|kkt20\/midp|browser\/wap|\/wap\d\./i': wap-browser
+  '/linux; android.*version|android[\/ ][\d\.]+ release|(?:android|mtk|maui|samsung|gingerbread|z710e|ebrd1101|folio_and_a|velocitymicro).*safari/i': android-webkit
   /webos|wosbrowser|wossystem/i: webkit/webos
   /omniweb/i: omniweb
-  /browserng|series60\//i: 'nokia oss browser'
-  '/twitterandroid|twitter\/|twitter for i/i': 'twitter app'
+  /browserng|series60\//i: nokia-oss-browser
+  '/twitterandroid|twitter\/|twitter for i/i': twitter-app
   /iris\//i: iris
-  /qtcarbrowser/i: 'model s browser'
-  '/qtweb internet browser/i': 'qtweb internet browser'
+  /qtcarbrowser/i: model-s-browser
+  '/qtweb internet browser/i': qtweb-internet-browser
   '/avid link desktop app/i': avid-link
   /boxee/i: boxee
   /qtwebkit/i: qtwebkit
@@ -350,17 +350,17 @@ rules:
   /stickypassword/i: sticky-password
   '/office onenote/i': onenote
   '/office word|microsoft word|word\//i': word
-  '/microsoft office mobile/i': 'office mobile'
+  '/microsoft office mobile/i': office-mobile
   '/microsoft office/i': office
   /com\.google\.maps/i: google-maps
-  /appstore/i: 'apple appstore app'
-  /webglance/i: 'web glance'
-  /yhoo_search_app/i: 'yahoo mobile app'
-  '/newsblur\/|newsblur iphone app/i': 'newsblur app'
-  '/newsblur favicon fetcher/i': 'newsblur favicon fetcher'
-  '/newsblur feed fetcher/i': 'newsblur feed fetcher'
+  /appstore/i: apple-appstore-app
+  /webglance/i: web-glance
+  /yhoo_search_app/i: yahoo-mobile-app
+  '/newsblur\/|newsblur iphone app/i': newsblur-app
+  '/newsblur favicon fetcher/i': newsblur-favicon-fetcher
+  '/newsblur feed fetcher/i': newsblur-feed-fetcher
   /coremedia/i: coremedia
-  /dataaccessd/i: 'ios dataaccessd'
+  /dataaccessd/i: ios-dataaccessd
   '/hotmailbuzzr|mailbuzzr hotmail/i': hotmailbuzzr
   /mailbar/i: mailbar
   /slurp/i: slurp
@@ -371,7 +371,7 @@ rules:
   /profiller/i: profiller
   /wkhtmltopdf/i: wkhtmltopdf
   /wkhtmltoimage/i: wkhtmltoimage
-  /wp-iphone/i: 'wordpress app'
+  /wp-iphone/i: wordpress-app
   /oktamobile/i: 'okta mobile app'
   /kmail2/i: kmail2
   /eb-iphone/i: 'eb iphone/ipad app'
@@ -380,30 +380,30 @@ rules:
   /akregator/i: akregator
   /installatron/i: installatron
   /quora-bot/i: quora-bot
-  /quora/i: 'quora app'
+  /quora/i: quora-app
   /google-adwords-instant/i: google-adwords-instant
-  '/rocky chatwork mobile/i': 'rocky chatwork mobile'
+  '/rocky chatwork mobile/i': rocky-chatwork-mobile
   /adsbot-google-mobile/i: adsbot-google-mobile
   /momentleadsbot/i: moment-leads-bot
   /adsbot-google/i: adsbot-google
   /adsbot/i: adsbot
   /epiphany/i: epiphany
   /rekonq/i: rekonq
-  /flixsterios/i: 'flixster app'
-  /adbeat_bot|adbeat\.com/i: 'adbeat bot'
-  '/second ?life/i': 'second live client'
-  /salesforce1|salesforcetouchcontainer/i: 'salesforce app'
-  /mediapartners-google/i: 'adsense bot'
+  /flixsterios/i: flixster-app
+  /adbeat_bot|adbeat\.com/i: adbeat-bot
+  '/second ?life/i': second-live-client
+  /salesforce1|salesforcetouchcontainer/i: salesforce-app
+  /mediapartners-google/i: adsense-bot
   /s~virustotalcloud/i: virus-total-cloud
-  /appengine-google/i: 'google app engine'
-  /diigobrowser/i: 'diigo browser'
+  /appengine-google/i: google-app-engine
+  /diigobrowser/i: diigo-browser
   /freespoke/i: freespoke
   /kontact/i: kontact
-  /fxios/i: 'firefox for ios'
+  /fxios/i: firefox-for-ios
   /qutebrowser/i: qutebrowser
   /otter/i: otter
   '/pale ?moon/i': palemoon
-  /soundcloud/i: 'soundcloud app'
+  /soundcloud/i: soundcloud-app
   '/rival iq/i': 'rival iq bot'
   /evernote/i: 'evernote app'
   /fluid/i: fluid
@@ -416,21 +416,21 @@ rules:
   '/(?<!al)exabot/i': exabot
   /konqueror/i: konqueror
   /mythbrowser/i: mythbrowser
-  '/(?<!via )wayback save page/i': 'wayback archive bot'
-  /cloudflare-alwaysonline/i: 'cloudflare alwaysonline'
+  '/(?<!via )wayback save page/i': wayback-archive-bot
+  /cloudflare-alwaysonline/i: cloudflare-alwaysonline
   /bline\//i: bline
   /line\//i: line
-  /rddocuments/i: 'rddocuments app'
+  /rddocuments/i: rddocuments-app
   /instacast/i: insta-cast
   /metacast/i: metacast
   /vodacast/i: vodacast
   /peacast/i: pea-cast
-  /acast/i: 'acast podcast app'
-  /snapchat/i: 'snapchat app'
-  /amazonbot-video/i: 'amazon video bot'
+  /acast/i: acast-podcast-app
+  /snapchat/i: snapchat-app
+  /amazonbot-video/i: amazon-video-bot
   /amzn-searchbot/i: amzn-search-bot
-  /amazonbot/i: 'amazon bot'
-  '/safari technology preview/i': 'safari technology preview'
+  /amazonbot/i: amazon-bot
+  '/safari technology preview/i': safari-technology-preview
   /edmodoandroid/i: edmodo
   '/iptv pro/i': iptv-pro
   '/\[pb\//i': proxy-browser
@@ -438,10 +438,10 @@ rules:
   '/\[vd\//i': vd-browser
   /viber/i: viber
   /dalvik/i: dalvik
-  /android/i: 'android webkit'
+  /android/i: android-webkit
   '/(?<!devicename:)nokia|nokiabrowser/i': nokiabrowser
-  '/bonprix mobile app/i': 'bonprix app'
-  /linkdexbot-mobile/i: 'linkdex bot mobile'
+  '/bonprix mobile app/i': bonprix-app
+  /linkdexbot-mobile/i: linkdex-bot-mobile
   /oai-searchbot/i: oai-searchbot
   /keenable-user/i: keenable-user
   /morningscore/i: morningscore-bot
@@ -459,18 +459,18 @@ rules:
   '/yahoo ad monitoring/i': 'yahoo ad monitoring'
   '/fancy cloud music/i': 'fancy cloud music'
   '/y\!j-[abpsw]|y\!j[\/\-]/i': yahoo-japan-bot
-  /com\.tinyspeck\.chatlyio/i: 'chatlyio app'
+  /com\.tinyspeck\.chatlyio/i: chatlyio-app
   /net\.relesysapp\.jj2go/i: jj2go
   '/tunein radio pro/i': tunein-radio-pro
   /virgiliomail/i: virgilio-mail
   '/tunein radio/i': tunein-radio
   /easouspider/i: easouspider
   /reutersnews/i: reuters-news
-  '/alizee ipod/i': 'alizee ipod'
-  '/newsblur iphone app|newsblur ipad app/i': 'newsblur mobile app'
+  '/alizee ipod/i': alizee-ipod
+  '/newsblur iphone app|newsblur ipad app/i': newsblur-mobile-app
   '/mytunerios|mytuner radio app/i': my-tuner
   /com\.meevii\.bibleKJV/i: bible-kjv
-  /sohunews/i: 'sohunews app'
+  /sohunews/i: sohunews-app
   /wallanews/i: walla-news
   /grokapp/i: grok-app
   '/ok(?:android|ios|app)/i': odnoklassniki
@@ -536,18 +536,18 @@ rules:
   /rmsnapkit/i: rmsnapkit
   /sandvox/i: sandvox
   /tubetv/i: tubetv
-  '/elluminate live/i': 'elluminate live'
-  '/element browser/i': 'element browser'
+  '/elluminate live/i': elluminate-live
+  '/element browser/i': element-browser
   /quicklook/i: quicklook
-  /zetakey/i: 'zetakey browser'
-  /getprismatic\.com/i: 'prismatic app'
-  '/ omi\//i': 'opera devices'
+  /zetakey/i: zetakey-browser
+  /getprismatic\.com/i: prismatic-app
+  '/ omi\//i': opera-devices
   /openwebkitsharp/i: open-webkit-sharp
   /unibox/i: unibox
-  /atomicbrowser/i: 'atomic browser'
-  /atomiclite/i: 'atomic browser lite'
-  '/perfect ?browser ?pro/i': 'perfect browser pro'
-  '/perfect ?browser/i': 'perfect browser'
+  /atomicbrowser/i: atomic-browser
+  /atomiclite/i: atomic-browser-lite
+  '/perfect ?browser ?pro/i': perfect-browser-pro
+  '/perfect ?browser/i': perfect-browser
   /fastbrowser/i: fastbrowser
   /bsnbrowserlite/i: bsnbrowserlite
   /abrowse/i: abrowse
@@ -561,7 +561,7 @@ rules:
   /com\.apple\.authenticationservicescore\.authenticationservicesagent/i: safari
   '/mempresas\/|millennium empresas/i': millennium-empresas
   '/millennium\/|millennium corp/i': bank-millennium
-  '/openwave|up\.browser| up\//i': 'openwave mobile browser'
+  '/openwave|up\.browser| up\//i': openwave-mobile-browser
   /autofill_provider_extension/i: autofill-provider-extension
   '/wayback machine extension/i': wayback-machine
   /moonrankbot.*moonrank\.ai/i: moonrank-ai-bot
@@ -727,11 +727,11 @@ rules:
   /wattpad/i: wattpad
   /whisper/i: whisper
   /sparrow/i: viasat-browser
-  /slack\//i: 'slack app'
+  /slack\//i: slack-app
   /^cliqz/i: cliqz-browser
   /^ucast/i: ucast
   /uforia/i: uforia
-  '/(?<!n)spark\//i': 'baidu spark'
+  '/(?<!n)spark\//i': baidu-spark
   /^sodes/i: sodes
   /shadow/i: shadow
   /podbay/i: pod-bay
@@ -759,10 +759,10 @@ rules:
   /n85bot/i: n85bot
   /atbat/i: atbat
   /maven/i: maven
-  /radio/i: 'radio app'
+  /radio/i: radio-app
   /share/i: share-app
   /^siri/i: siri
-  /^mail/i: 'apple mail'
+  /^mail/i: apple-mail
   /^wnyc/i: wnyc
   /^yapa/i: yapa
   /snipd/i: snipd

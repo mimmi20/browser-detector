@@ -58,7 +58,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             preg_match('/Android \d+; [A-Za-z0-9]{10}; U; [^;)]*\) AppleWebKit\/.+Chrome\//', $value)
             && !preg_match('/tenta/i', $value)
         ) {
-            return 'avast secure browser';
+            return 'avast-secure-browser';
         }
 
         try {
@@ -112,7 +112,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
                     'nrc audio' => 'nrc-audio',
                     'classic fm' => 'classic-fm',
                     'com.huawei.hmos.browser' => 'huawei-browser',
-                    'snapchat' => 'snapchat app',
+                    'snapchat' => 'snapchat-app',
                     default => $client,
                 };
             },

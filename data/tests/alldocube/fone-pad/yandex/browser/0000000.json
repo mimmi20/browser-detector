@@ -1,6 +1,51 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 10; iPlay_20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4870.113 YaBrowser/22.3.6.61.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iPlay 20",
+      "marketingName": "iPlay 20",
+      "manufacturer": "alldocube",
+      "brand": "alldocube",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "22.3.6.61.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4870.113",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; iPlay_50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 YaApp_Android/22.116/apad YaSearchBrowser/22.116/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {

@@ -44,7 +44,7 @@ wordpress:
       - WordPress\-Do\-P\-
       - WordPress
   engine: unknown
-'snap url preview service':
+snap-url-preview-service:
   name: 'Snap URL Preview Service'
   manufacturer: snap
   type: service-agent
@@ -369,7 +369,7 @@ microsoft-preview:
     search:
       - MicrosoftPreview
   engine: null
-'hggh screenshot system with phantomjs':
+hggh-screenshot-system-with-phantomjs:
   name: 'HggH Screenshot System with PhantomJS'
   manufacturer: jonas-genannt
   type: service-agent
@@ -378,7 +378,7 @@ microsoft-preview:
     search:
       - 'HggH PhantomJS Screenshoter'
   engine: unknown
-'seznam screenshot generator':
+seznam-screenshot-generator:
   name: 'Seznam Screenshot Generator'
   manufacturer: seznam
   type: service-agent

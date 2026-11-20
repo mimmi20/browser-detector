@@ -184,7 +184,7 @@ mixrankbot:
     class: null
     search: null
   engine: unknown
-'pinterest bot':
+pinterest-bot:
   name: 'Pinterest Bot'
   manufacturer: pinterest
   type: crawler
@@ -265,7 +265,7 @@ yak:
     class: null
     search: null
   engine: unknown
-'internet archive':
+internet-archive:
   name: 'Internet Archive'
   manufacturer: archive.org
   type: crawler
@@ -386,7 +386,7 @@ nutch:
       - Nutch
       - Nutch\-
   engine: unknown
-'amazon video bot':
+amazon-video-bot:
   name: 'Amazon Video Bot'
   manufacturer: amazon
   type: crawler
@@ -756,7 +756,7 @@ virus-total-cloud:
     factory: null
     search: null
   engine: null
-'adbeat bot':
+adbeat-bot:
   name: 'Adbeat Bot'
   manufacturer: adbeat
   type: crawler
@@ -1285,7 +1285,7 @@ criteo-bot:
     search:
       - CriteoBot
   engine: unknown
-'fast webcrawler':
+fast-webcrawler:
   name: 'Fast Webcrawler'
   manufacturer: yahoo
   type: crawler
@@ -1721,7 +1721,7 @@ cliqzbot:
     search:
       - Cliqzbot
   engine: unknown
-'tweetmeme bot':
+tweetmeme-bot:
   name: 'Tweetmeme Bot'
   manufacturer: datasift
   type: crawler
@@ -1803,7 +1803,7 @@ deepfield-genome:
     search:
       - GenomeCrawlerd
   engine: unknown
-'semantic-visions.com crawler':
+semantic-visions-com-crawler:
   name: svEye
   manufacturer: semantic-visions
   type: crawler
@@ -2357,7 +2357,7 @@ ezooms:
     search:
       - Ezooms
   engine: unknown
-'quora link preview bot':
+quora-link-preview-bot:
   name: 'Quora Link Preview Bot'
   manufacturer: quora
   type: crawler
@@ -4268,7 +4268,7 @@ cf-facebook:
     search:
       - cf-facebook
   engine: unknown
-'hubspot marketing grader':
+hubspot-marketing-grader:
   name: 'HubSpot Marketing Grader'
   manufacturer: hubspot-inc
   type: crawler
@@ -4401,7 +4401,7 @@ scoutjet:
     search:
       - Scoutjet
   engine: unknown
-'xml sitemaps generator':
+xml-sitemaps-generator:
   name: 'XML Sitemaps Generator'
   manufacturer: xml-sitemaps
   type: crawler
@@ -5346,7 +5346,7 @@ wrtnbot:
     search:
       - 'Google Keyword Suggestion'
   engine: unknown
-'web glance':
+web-glance:
   name: 'Web Glance'
   manufacturer: web-glance
   type: crawler
@@ -7939,15 +7939,6 @@ icresearch-livebs-phase1:
     search:
       - ICResearch-LiveBS-Phase1
   engine: unknown
-dead-link-checker:
-  name: dead-link-checker
-  manufacturer: unknown
-  type: crawler
-  version:
-    factory: \BrowserDetector\Version\VersionBuilderFactory
-    search:
-      - dead-link-checker
-  engine: unknown
 prism-bulk-builder-corpus-bot:
   name: PrismBulkBuilderCorpusBot
   manufacturer: prism
@@ -8386,7 +8377,7 @@ httpclient:
     class: null
     search: null
   engine: unknown
-'infohelfer webcrawler':
+infohelfer-webcrawler:
   name: 'Infohelfer Webcrawler'
   manufacturer: itam
   type: crawler
@@ -8437,8 +8428,8 @@ vm-crawler:
     class: null
     search: null
   engine: unknown
-'wume crawler':
-  name: 'wume crawler'
+wume-crawler:
+  name: wume-crawler
   manufacturer: unknown
   type: crawler
   version:
@@ -8489,7 +8480,7 @@ crawllybot:
     class: null
     search: null
   engine: unknown
-'online link validator':
+online-link-validator:
   name: 'online link validator'
   manufacturer: dead-links
   type: crawler
@@ -8585,7 +8576,7 @@ fyberspider:
     search:
       - FyberSpider
   engine: unknown
-'fdse robot':
+fdse-robot:
   name: 'FDSE Robot'
   manufacturer: unknown
   type: crawler
@@ -8767,7 +8758,7 @@ pricedrone-shopping-bot:
     search:
       - PricedroneShoppingBot
   engine: unknown
-'bne.es bot':
+bne-es-bot:
   name: 'bne.es Bot'
   manufacturer: biblioteca-nacional-de-espana
   type: crawler
@@ -8963,7 +8954,7 @@ a6-indexer:
     search:
       - A6\-Indexer
   engine: unknown
-'aboutus bot':
+aboutus-bot:
   name: 'AboutUs Bot'
   manufacturer: about-us
   type: crawler
@@ -8972,7 +8963,7 @@ a6-indexer:
     search:
       - AboutUsBot
   engine: unknown
-'aboutus bot johnny5':
+aboutus-bot-johnny5:
   name: 'AboutUs Bot Johnny5'
   manufacturer: about-us
   type: crawler
@@ -9339,7 +9330,7 @@ blitzbot:
     search:
       - 'BND Crawler'
   engine: unknown
-'bnf.fr bot':
+bnf-fr-bot:
   name: 'bnf.fr Bot'
   manufacturer: bibliotheque-nationale-de-france
   type: crawler
@@ -9536,7 +9527,7 @@ cloudinary:
     search:
       - 'CMS Crawler'
   engine: unknown
-'commerce browser center':
+commerce-browser-center:
   name: 'Commerce Browser Center'
   manufacturer: unknown
   type: crawler
@@ -9712,7 +9703,7 @@ dcpbot:
     search:
       - DCPbot
   engine: unknown
-'dead link checker':
+dead-link-checker:
   name: 'dead link checker'
   manufacturer: traffic-names
   type: crawler
@@ -9917,7 +9908,7 @@ esribot:
     search:
       - 'EventMachine HttpClient'
   engine: unknown
-'evernote clip resolver':
+evernote-clip-resolver:
   name: 'Evernote Clip Resolver'
   manufacturer: evernote
   type: crawler
@@ -10265,7 +10256,7 @@ gooblog:
     search:
       - Google\-FontAnalysis
   engine: unknown
-'google http client library for java':
+google-http-client-library-for-java:
   name: 'Google HTTP Client Library for Java'
   manufacturer: google
   type: crawler
@@ -10300,7 +10291,7 @@ gooblog:
     search:
       - Google\-Sitemaps
   engine: unknown
-'google toolbar':
+google-toolbar:
   name: 'Google Toolbar'
   manufacturer: google
   type: crawler
@@ -10442,7 +10433,7 @@ hypercrawl:
     search:
       - HyperCrawl
   engine: unknown
-'ibm connections':
+ibm-connections:
   name: 'IBM Connections'
   manufacturer: ibm
   type: crawler
@@ -10514,7 +10505,7 @@ implisensebot:
     search:
       - 'InAGist URL Resolver'
   engine: unknown
-'incoming links - wordpress plugin':
+incoming-links-wordpress-plugin:
   name: 'Incoming Links - WordPress Plugin'
   manufacturer: 'monitor backlinks'
   type: crawler
@@ -10926,7 +10917,7 @@ ltbot:
     search:
       - ltbot
   engine: unknown
-'lucidworks bot':
+lucidworks-bot:
   name: 'Lucidworks Bot'
   manufacturer: lucidworks
   type: crawler
@@ -11170,7 +11161,7 @@ mosbookmarks:
       - MOSBookmarks
       - MOSBookmarks\/v
   engine: unknown
-'mosbookmarks link checker':
+mosbookmarks-link-checker:
   name: 'MOSBookmarks Link Checker'
   manufacturer: teg-design
   type: crawler
@@ -11189,7 +11180,7 @@ mosbookmarks:
     search:
       - MovableType
   engine: unknown
-'mozilla crawler':
+mozilla-crawler:
   name: 'Mozilla Crawler'
   manufacturer: fairshare
   type: crawler
@@ -11404,7 +11395,7 @@ openweb:
     class: null
     search: null
   engine: unknown
-'orangebot mobile':
+orangebot-mobile:
   name: 'Orangebot Mobile'
   manufacturer: orange
   type: crawler
@@ -11698,7 +11689,7 @@ queryseekerspider:
     search:
       - QuickiWiki
   engine: unknown
-'r6 commentreader':
+r6-commentreader:
   name: 'R6 CommentReader'
   manufacturer: salesforce
   type: crawler
@@ -11750,7 +11741,7 @@ redbot:
     search:
       - RED
   engine: unknown
-'reddit pic scraper':
+reddit-pic-scraper:
   name: 'reddit pic scraper'
   manufacturer: reddit
   type: crawler
@@ -11778,7 +11769,7 @@ restify:
     search:
       - restify
   engine: unknown
-'reverse ip lookup':
+reverse-ip-lookup:
   name: 'Reverse IP Lookup'
   manufacturer: binarymonkey
   type: crawler
@@ -11990,7 +11981,7 @@ searchmetricsbot:
     search:
       - stq\_bot
   engine: unknown
-'second live client':
+second-live-client:
   name: 'Second Life Client'
   manufacturer: linden-labs
   type: crawler
@@ -12186,7 +12177,7 @@ snowtape:
     class: null
     search: null
   engine: unknown
-'socialradar bot':
+socialradar-bot:
   name: 'Socialradar Bot'
   manufacturer: infegy
   type: crawler
@@ -12871,7 +12862,7 @@ wapstart-crawler:
     search:
       - WASALive\-Bot
   engine: unknown
-'wayback archive bot':
+wayback-archive-bot:
   name: 'Wayback Archive Bot'
   manufacturer: archive.org
   type: crawler
@@ -12935,7 +12926,7 @@ webaroo:
     search:
       - Webaroo
   engine: unknown
-'centil-schweiz webbot':
+centil-schweiz-webbot:
   name: Webbot
   manufacturer: centil-schweiz
   type: crawler
@@ -13140,7 +13131,7 @@ wikimpress:
     search:
       - Wikimpress
   engine: unknown
-'windows phone ad client':
+windows-phone-ad-client:
   name: 'Windows Phone Ad Client'
   manufacturer: microsoft
   type: crawler
@@ -13342,7 +13333,7 @@ xerka:
     search:
       - 'Xerka WebBot v'
   engine: unknown
-'xing contenttabreceiver':
+xing-contenttabreceiver:
   name: 'XING Contenttabreceiver'
   manufacturer: xing
   type: crawler

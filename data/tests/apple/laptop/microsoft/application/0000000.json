@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "Word/15.22.506 (Mac OS/10.11.5; Desktop; en-US; NonAppStore; Apple/MacBookAir7,1)"
+      "user-agent": "Microsoft Office Word/16.10.210 (Mac OS/10.13.3; Desktop; de-DE; NonAppStore; Apple/MacBookPro11,1)"
     },
     "device": {
       "architecture": "",
-      "deviceName": "MacBook Air 7,1",
-      "marketingName": "MacBook Air 11\" (2015)",
+      "deviceName": "MacBook Pro 11,1",
+      "marketingName": "MacBook Pro 13\" (2013)",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 1366,
-        "height": 768,
+        "width": 2560,
+        "height": 1600,
         "touch": false,
-        "size": 11.6
+        "size": 13.3
       },
       "type": "laptop",
       "ismobile": false,
@@ -25,16 +25,16 @@
     "client": {
       "name": "Word",
       "modus": null,
-      "version": "15.22.506",
+      "version": "16.10.210",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.11.5",
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.3",
       "manufacturer": "apple",
       "bits": 0
     },
@@ -46,7 +46,7 @@
   },
   {
     "headers": {
-      "user-agent": "Microsoft Office PowerPoint/15.29.1215 (Mac OS/10.11.5; Desktop; en-US; NonAppStore; Apple/MacBookAir7,2)"
+      "user-agent": "Microsoft Office Excel/16.11.319 (Mac OS/10.13.3; Desktop; de-DE; NonAppStore; Apple/MacBookAir7,2)"
     },
     "device": {
       "architecture": "",
@@ -68,18 +68,153 @@
       "bits": 0
     },
     "client": {
-      "name": "PowerPoint",
+      "name": "Excel",
       "modus": null,
-      "version": "15.29.1215",
+      "version": "16.11.319",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false,
       "bits": 0
     },
     "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.11.5",
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.3",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Excel/16.9.116 (Mac OS/10.13.4; Desktop; de-DE; NonAppStore; Apple/MacBookPro14,2)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "MacBook Pro 14,2",
+      "marketingName": "MacBook Pro 13\" (2017)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "laptop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Excel",
+      "modus": null,
+      "version": "16.9.116",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.4",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.9.116 (Mac OS/10.13.4; Desktop; de-DE; NonAppStore; Apple/MacBookAir6,2)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "MacBook Air 6,2",
+      "marketingName": "MacBook Air 13\" (2013)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "laptop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.9.116",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.4",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word/16.23.309.0 (Mac OS/10.14.3; Desktop; de-DE; NonAppStore; Apple/MacBookAir7,2)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "MacBook Air 7,2",
+      "marketingName": "MacBook Air 13\" (2015)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "laptop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Word",
+      "modus": null,
+      "version": "16.23.309.0",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.14.3",
       "manufacturer": "apple",
       "bits": 0
     },
@@ -1655,51 +1790,6 @@
       "name": "macOS",
       "marketingName": "macOS",
       "version": "14.0.0",
-      "manufacturer": "apple",
-      "bits": 0
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Microsoft Office Word/16.11.319 (Mac OS/10.10.5; Desktop; en-US; NonAppStore; Apple/MacBookAir6,1)"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "MacBook Air 6,1",
-      "marketingName": "MacBook Air 11\" (2013)",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1366,
-        "height": 768,
-        "touch": false,
-        "size": 11.6
-      },
-      "type": "laptop",
-      "ismobile": false,
-      "istv": false,
-      "dualOrientation": false,
-      "simCount": 0,
-      "bits": 0
-    },
-    "client": {
-      "name": "Word",
-      "modus": null,
-      "version": "16.11.319",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.10.5",
       "manufacturer": "apple",
       "bits": 0
     },

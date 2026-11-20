@@ -1,19 +1,19 @@
 [
   {
     "headers": {
-      "user-agent": "GooglePodcasts/2.0.2 iPod_touch/13.4.1 hw/iPod9_1"
+      "user-agent": "FancyMusic 1.5.0 build 5 (iPod touch; iPhone OS 9.2.1; en_US)"
     },
     "device": {
       "architecture": "",
-      "deviceName": "iPod Touch 9,1",
-      "marketingName": "iPod Touch (7th Gen)",
+      "deviceName": "iPod Touch",
+      "marketingName": "iPod Touch",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 1136,
-        "height": 640,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": 4.0
+        "size": null
       },
       "type": "mobile-media-player",
       "ismobile": true,
@@ -23,9 +23,9 @@
       "bits": 0
     },
     "client": {
-      "name": "Podcasts",
+      "name": "FancyMusic",
       "modus": null,
-      "version": "2.0.2",
+      "version": "1.5.0",
       "manufacturer": "unknown",
       "type": "multimedia-player",
       "isbot": false,
@@ -34,7 +34,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": null,
+      "version": "9.2.1",
       "manufacturer": "apple",
       "bits": 0
     },
