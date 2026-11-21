@@ -7,7 +7,7 @@
     search:
       - 1Password
   engine: webkit
-'wechat app':
+wechat-app:
   name: 'WeChat App'
   manufacturer: tencent
   type: mobile-application
@@ -17,7 +17,7 @@
       - MicroMessenger
       - WeChat
   engine: null
-'snapchat app':
+snapchat-app:
   name: Snapchat
   manufacturer: snap
   type: mobile-application
@@ -64,7 +64,7 @@ kakaotalk:
     search:
       - KAKAOTALK
   engine: null
-'facebook app':
+facebook-app:
   name: 'Facebook App'
   manufacturer: meta
   type: mobile-application
@@ -74,7 +74,7 @@ kakaotalk:
       - FBAV
       - facebookexternalhit
   engine: null
-'facebook lite':
+facebook-lite:
   name: 'Facebook Lite'
   manufacturer: meta
   type: mobile-application
@@ -83,7 +83,7 @@ kakaotalk:
     search:
       - FBAV
   engine: null
-'facebook groups':
+facebook-groups:
   name: 'Facebook Groups App'
   manufacturer: meta
   type: mobile-application
@@ -93,7 +93,7 @@ kakaotalk:
       - Facebook
       - FBAV
   engine: null
-'facebook messenger app':
+facebook-messenger-app:
   name: 'Facebook Messenger App'
   manufacturer: meta
   type: mobile-application
@@ -103,7 +103,7 @@ kakaotalk:
       - Facebook
       - FBAV
   engine: null
-'facebook messenger lite':
+facebook-messenger-lite:
   name: 'Facebook Messenger Lite'
   manufacturer: meta
   type: mobile-application
@@ -161,7 +161,7 @@ hi-search:
     search:
       - HiSearch
   engine: null
-'flipboard app':
+flipboard-app:
   name: 'Flipboard App'
   manufacturer: flipboard
   type: mobile-application
@@ -170,7 +170,7 @@ hi-search:
     search:
       - Flipboard
   engine: webkit
-'baidu box app':
+baidu-box-app:
   name: 'Baidu Box App'
   manufacturer: baidu
   type: mobile-application
@@ -179,7 +179,7 @@ hi-search:
     search:
       - baiduboxapp
   engine: null
-'baidu box app lite':
+baidu-box-app-lite:
   name: 'Baidu Box App Lite'
   manufacturer: baidu
   type: mobile-application
@@ -197,7 +197,7 @@ msn-app:
     search:
       - NewsSapphire
   engine: null
-'spotify app':
+spotify-app:
   name: Spotify
   manufacturer: spotify
   type: mobile-application
@@ -224,13 +224,14 @@ blitz:
     search:
       - Blitz
   engine: null
-'google mobile app':
+google-mobile-app:
   name: 'Google Mobile App'
   manufacturer: google
   type: mobile-application
   version:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
+      - com\\.google\\.GoogleMobile\\.SearchOnGoogleActionExtension
       - GoogleMobile
   engine: null
 'unity web player':
@@ -1123,6 +1124,7 @@ google-maps:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - com\.google\.Maps
+      - AndroidMapsWebView
   engine: null
 xos-launcher:
   name: 'XOS Launcher'
@@ -1683,7 +1685,7 @@ tiktok:
       - musical_ly_
       - TikTok
   engine: null
-'google search lite':
+google-search-lite:
   name: 'Google Go'
   manufacturer: google
   type: mobile-application
@@ -1719,7 +1721,7 @@ qq-app:
     search:
       - QQ
   engine: null
-'office mobile':
+office-mobile:
   name: 'Office Mobile'
   manufacturer: microsoft
   type: mobile-application
@@ -1887,7 +1889,7 @@ pandora:
     search:
       - Pandora
   engine: webkit
-'youtube app':
+youtube-app:
   name: 'Youtube App'
   manufacturer: google
   type: mobile-application
@@ -1897,7 +1899,7 @@ pandora:
       - com\.google\.ios\.youtube
       - YouTube
   engine: null
-'twitter app':
+twitter-app:
   name: X
   manufacturer: twitter
   type: mobile-application
@@ -1927,7 +1929,7 @@ reuters-news:
       - 'Reuters News'
       - ReutersNews
   engine: blink
-'chatlyio app':
+chatlyio-app:
   name: Slack
   manufacturer: slack
   type: mobile-application
@@ -2118,7 +2120,7 @@ apkxdl:
     factory: null
     search: null
   engine: null
-'quora app':
+quora-app:
   name: 'Quora App'
   manufacturer: quora
   type: mobile-application
@@ -2127,7 +2129,7 @@ apkxdl:
     search:
       - Quora
   engine: webkit
-'bonprix app':
+bonprix-app:
   name: 'BonPrix App'
   manufacturer: bonprix
   type: mobile-application
@@ -2242,7 +2244,7 @@ wechat-share-extension:
     search:
       - WeChatShareExtensionNew
   engine: null
-'slack app':
+slack-app:
   name: 'Slack App'
   manufacturer: slack
   type: mobile-application
@@ -2285,6 +2287,7 @@ google-lens:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - SearchWithLens
+      - GoogleApp
   engine: null
 nyt:
   name: 'The New York Times'
@@ -3546,7 +3549,7 @@ safe-in-cloud-pro:
     factory: null
     search: null
   engine: null
-'apple mobilenotes':
+apple mobilenotes:
   name: MobileNotes
   manufacturer: apple
   type: mobile-application
@@ -4802,4 +4805,12 @@ des-moines-register:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - DMRegister
+  engine: null
+cm-launcher:
+  name: 'CM Launcher'
+  manufacturer: cheetah-mobile
+  type: mobile-application
+  version:
+    factory: null
+    search: null
   engine: null

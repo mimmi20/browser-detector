@@ -1,4 +1,4 @@
-'77 wabc':
+77-wabc:
   name: '77 WABC'
   manufacturer: unknown
   type: multimedia-player
@@ -6,7 +6,7 @@
     class: null
     search: null
   engine: webkit
-'acast podcast app':
+acast-podcast-app:
   name: 'Acast Podcast App'
   manufacturer: acast
   type: multimedia-player
@@ -34,7 +34,7 @@ alexa:
       - AlexaService
       - Alexa
   engine: unknown
-'alizee ipod':
+alizee-ipod:
   name: 'Alizee iPod'
   manufacturer: unknown
   type: multimedia-player
@@ -139,7 +139,7 @@ downcast:
     search:
       - ElmediaPlayer
   engine: unknown
-'espn radio':
+espn-radio:
   name: 'ESPN Radio'
   manufacturer: espn
   type: multimedia-player
@@ -219,7 +219,7 @@ microsoft-iptv-client:
     class: null
     search: null
   engine: unknown
-'knbr 680':
+knbr-680:
   name: 'KNBR 680'
   manufacturer: unknown
   type: multimedia-player
@@ -236,7 +236,7 @@ microsoft-iptv-client:
     search:
       - Kodi
   engine: unknown
-'lg player':
+lg-player:
   name: 'LG Player'
   manufacturer: lg
   type: multimedia-player
@@ -245,7 +245,7 @@ microsoft-iptv-client:
     search:
       - 'LG Player'
   engine: blink
-'mark levin show':
+mark-levin-show:
   name: 'Mark Levin Show'
   manufacturer: unknown
   type: multimedia-player
@@ -280,7 +280,7 @@ musicdownloaderlite:
     search:
       - MusicDownloaderLite
   engine: webkit
-'netgem set top box':
+netgem-set-top-box:
   name: 'Set Top Box'
   manufacturer: netgem
   type: multimedia-player
@@ -306,7 +306,7 @@ overcast:
     search:
       - Overcast
   engine: webkit
-'pocket casts':
+pocket-casts:
   name: 'Pocket Casts'
   manufacturer: shifty-jelly
   type: multimedia-player
@@ -359,7 +359,7 @@ podkicker:
     search:
       - Podkicker
   engine: webkit
-'podkicker classic':
+podkicker-classic:
   name: 'Podkicker Classic'
   manufacturer: unknown
   type: multimedia-player
@@ -368,7 +368,7 @@ podkicker:
     search:
       - 'Podkicker Classic'
   engine: webkit
-'podkicker pro':
+podkicker-pro:
   name: 'Podkicker Pro'
   manufacturer: unknown
   type: multimedia-player
@@ -409,7 +409,7 @@ qvodplayerbrowser:
       - QvodPlayerBrowser
       - 'QvodPlayerBrowser:'
   engine: null
-'radio app':
+radio-app:
   name: 'Radio App'
   manufacturer: unknown
   type: multimedia-player
@@ -459,7 +459,7 @@ qvodplayerbrowser:
     search:
       - Roku\/DVP\-
   engine: unknown
-'rssradio podcast player':
+rssradio-podcast-player:
   name: 'RSSRadio Podcast Player'
   manufacturer: dorada
   type: multimedia-player
@@ -476,7 +476,7 @@ qvodplayerbrowser:
     class: null
     search: null
   engine: unknown
-'sports talk 1050':
+sports-talk-1050:
   name: 'Sports Talk 1050'
   manufacturer: unknown
   type: multimedia-player
@@ -501,7 +501,7 @@ streamradio:
     search:
       - streamradio
   engine: unknown
-'the dan patrick show':
+the-dan-patrick-show:
   name: 'The Dan Patrick Show'
   manufacturer: unknown
   type: multimedia-player
@@ -518,7 +518,7 @@ toppodcasts:
     search:
       - TopPodcasts
   engine: webkit
-'twonky beam':
+twonky-beam:
   name: 'Twonky Beam'
   manufacturer: packet-video
   type: multimedia-player
@@ -527,7 +527,7 @@ toppodcasts:
     search:
       - TwonkyBeamBrowser
   engine: null
-'vlc media player':
+vlc-media-player:
   name: 'VLC Media Player'
   manufacturer: video-lan
   type: multimedia-player
@@ -964,7 +964,7 @@ pod-bay:
     search:
       - Podbay
   engine: webkit
-'player fm':
+player-fm:
   name: 'Player FM'
   manufacturer: nuvomondo
   type: multimedia-player
@@ -972,7 +972,7 @@ pod-bay:
     class: null
     search: null
   engine: webkit
-'alpha player fm':
+alpha-player-fm:
   name: 'Alpha Player FM'
   manufacturer: nuvomondo
   type: multimedia-player

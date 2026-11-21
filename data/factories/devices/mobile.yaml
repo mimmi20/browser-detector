@@ -47,7 +47,7 @@ rules:
   '/(?<!t-mobile |m)(?:blu|dash)[ _][^\/;]+(?: +build|[;\/\)])|vivo[ _](?:air|iv|4\.[368]|5r?|6|xi|xl2?|go|8l?)|studio[ _](?:selfie|5\.5|x[ _]plus|xl[ _]2|view[ _]xl)|(?:blu|arm); win (?:jr|hd)|tank xtreme 5\.0|neo[ _]?4\.5|life[ _]view[ _]tab|life[ _](?:play|x8)|(?:adr|android) 7\..* c4|life pure xl|(?:adr|android) 6\..* grand[ _]x|r1[ _]plus|advance 5\.2|b110dl/i': blu
   '/tp[0-9]{1,2}(?:\.[0-9]{1,2})?-[0-9]{4}|tu-[0-9]{4}|l100[12]|tu-w8402dsp8|i643/i': i-onik
   '/turbo ?pad/i': turbopad
-  '/rct[0-9]{4}|rct6k03w13|(?<![aeno])rca/i': rca-tablets
+  '/rct[0-9]{4}|rct6k03w13|(?<![aeno])rca(?!app)/i': rca-tablets
   '/neffos|tp[0-9]{3}/i': tp-link
   '/(?<![\s])nook(?! browser)|bn[tr]v[0-9]+/i': barnesnoble
   '/mtc[ _]|smart[ _]surf[ _]4g/i': mtc

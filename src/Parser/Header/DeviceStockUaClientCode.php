@@ -35,7 +35,12 @@ final class DeviceStockUaClientCode implements ClientCodeInterface
         $matches = [];
 
         if (preg_match('/(?P<client>opera mini|iemobile)/i', $value, $matches)) {
-            return mb_strtolower($matches['client']);
+            $code = mb_strtolower($matches['client']);
+
+            return match ($code) {
+                'opera mini' => 'opera-mini',
+                default => $code,
+            };
         }
 
         return null;
