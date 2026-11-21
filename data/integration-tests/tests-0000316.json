@@ -484,7 +484,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "arm",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -750,7 +750,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -888,7 +888,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 YaBrowser/26.10.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -1952,7 +1952,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -2022,7 +2022,7 @@
         "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/155.0.8059.84 Mobile/15E148 Safari/604.1"
       },
       "device": {
-        "architecture": "",
+        "architecture": "arm",
         "deviceName": "iPhone",
         "marketingName": "iPhone",
         "manufacturer": "apple",
@@ -2214,7 +2214,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "arm",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -2284,7 +2284,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 CCleaner/154.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -2354,7 +2354,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -2532,7 +2532,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 CCleaner/154.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -2602,7 +2602,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -2672,7 +2672,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -2742,7 +2742,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -3402,7 +3402,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Avast/154.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -3421,11 +3421,11 @@
         "bits": 64
       },
       "client": {
-        "name": null,
+        "name": "Avast Secure Browser",
         "modus": null,
-        "version": null,
-        "manufacturer": "unknown",
-        "type": "unknown",
+        "version": "154.0.35638.100",
+        "manufacturer": "avast-software",
+        "type": "browser",
         "isbot": false,
         "bits": 64
       },
@@ -3477,11 +3477,11 @@
         "bits": 0
       },
       "client": {
-        "name": null,
+        "name": "Avast Secure Browser",
         "modus": null,
-        "version": null,
-        "manufacturer": "unknown",
-        "type": "unknown",
+        "version": "154.0.0",
+        "manufacturer": "avast-software",
+        "type": "browser",
         "isbot": false,
         "bits": 0
       },
@@ -3654,7 +3654,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "arm",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -3850,7 +3850,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 OPR/137.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -3974,7 +3974,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -4042,7 +4042,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -4110,7 +4110,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -4440,7 +4440,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.1.1 Safari/537.36 Edg/132.1.1"
       },
       "device": {
-        "architecture": "",
+        "architecture": "arm",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -4804,7 +4804,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -4942,7 +4942,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Avast/154.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -4961,11 +4961,11 @@
         "bits": 64
       },
       "client": {
-        "name": null,
+        "name": "Avast Secure Browser",
         "modus": null,
-        "version": null,
-        "manufacturer": "unknown",
-        "type": "unknown",
+        "version": "154.0.35638.100",
+        "manufacturer": "avast-software",
+        "type": "browser",
         "isbot": false,
         "bits": 64
       },
@@ -5614,7 +5614,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "arm",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -5754,7 +5754,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -5824,7 +5824,7 @@
         "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Linux Desktop",
         "marketingName": "Linux Desktop",
         "manufacturer": "unknown",
@@ -5894,7 +5894,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -5960,7 +5960,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -6082,7 +6082,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -6278,7 +6278,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",

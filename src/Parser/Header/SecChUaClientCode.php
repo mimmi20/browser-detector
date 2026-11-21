@@ -77,7 +77,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'opera air' => 'opera-air',
             'opera mini android' => 'opera-mini',
             'island' => 'the-enterprise-browser',
-            'xiaomibrowser' => 'miui-browser',
+            'xiaomibrowser', 'miui browser' => 'miui-browser',
             'copilot' => 'microsoft-copilot',
             'viasat browser' => 'viasat-browser',
             'at', 'avg secure browser' => 'avg-secure-browser',

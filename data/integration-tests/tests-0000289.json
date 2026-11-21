@@ -84,7 +84,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -546,7 +546,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "arm",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -672,7 +672,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -798,7 +798,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "arm",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -3640,7 +3640,7 @@
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Macintosh",
         "marketingName": "Macintosh",
         "manufacturer": "apple",
@@ -5068,7 +5068,7 @@
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 OPR/123.0.0.0"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "Windows Desktop",
         "marketingName": "Windows Desktop",
         "manufacturer": "unknown",
@@ -5087,11 +5087,11 @@
         "bits": 64
       },
       "client": {
-        "name": null,
+        "name": "Opera GX",
         "modus": null,
-        "version": null,
-        "manufacturer": "unknown",
-        "type": "unknown",
+        "version": "123.0.5669.57",
+        "manufacturer": "opera",
+        "type": "browser",
         "isbot": false,
         "bits": 64
       },
