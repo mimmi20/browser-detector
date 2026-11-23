@@ -538,5 +538,50 @@
       "version": "84.0.4147.140",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 OPR/46.0.2207.0 OMI/4.11.3.57.Martell-3.118 Model/Hisense-MT5659-SDK4-11 (;Hisense;SmartTV;V0000.01.00A.J1105;43E5600EE) FXM-U2FsdGVkX19sJrRWrVZFrf/K+E/dzfyWCMhSEl8JhDq0LNWUZdyzRj9LbDplLH+E-END"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "general HiSense TV",
+      "marketingName": "general HiSense TV",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.11.3.57",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android TV",
+      "marketingName": "Android TV",
+      "version": null,
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.115",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -4480,7 +4480,7 @@
         "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 (Ecosia android@150.0.0.0)"
       },
       "device": {
-        "architecture": "",
+        "architecture": "x86",
         "deviceName": "general Mobile device",
         "marketingName": "general Mobile device",
         "manufacturer": "unknown",
@@ -4548,7 +4548,7 @@
           "size": null
         },
         "type": "mobile-device",
-        "ismobile": true,
+        "ismobile": false,
         "istv": false,
         "dualOrientation": null,
         "simCount": 0,

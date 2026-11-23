@@ -229,7 +229,15 @@
   },
   {
     "headers": {
-      "x-requested-with": "com.stoutner.privacybrowser.standard",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua": "\"Android WebView\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-wow64": "?0",
       "user-agent": "PrivacyBrowser/1.0"
     },
     "device": {
@@ -245,7 +253,7 @@
         "size": null
       },
       "type": "unknown",
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "dualOrientation": null,
       "simCount": 0,
@@ -261,15 +269,15 @@
       "bits": 0
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "Android",
+      "marketingName": "Android",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "google",
       "bits": 0
     },
     "engine": {
       "name": "Blink",
-      "version": null,
+      "version": "143.0.0",
       "manufacturer": "google"
     }
   }
