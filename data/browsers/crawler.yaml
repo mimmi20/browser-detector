@@ -1,11 +1,12 @@
 2ip-bot:
-  name: 2ip-bot
+  name: '2ip bot'
   manufacturer: barzmann-internet-solutions
   type: crawler
   version:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - 2ip-bot
+      - '2ip bot'
   engine: unknown
 ccbot:
   name: CCBot
@@ -793,7 +794,7 @@ img2dataset:
       - img2dataset
   engine: unknown
 lightspeed-systems-crawler:
-  name: lightspeed-systems-crawler
+  name: 'Lightspeed Systems Crawler'
   manufacturer: lightspeed-systems
   type: crawler
   version:
