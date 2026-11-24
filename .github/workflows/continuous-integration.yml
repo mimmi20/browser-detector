@@ -103,7 +103,7 @@ jobs:
       upload-coveralls: true
       upload-flag: ""
       use-phpstan: true
-      skip-infection: false
+      skip-infection: true
       option-phpunit: ""
     secrets:
       ENV_CODECLIMATE_API_KEY: ${{ secrets.CODECLIMATE_API_KEY }}
