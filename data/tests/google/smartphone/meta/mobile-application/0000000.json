@@ -1756,6 +1756,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 17; Pixel 8 Pro Build/CP2A.260705.006) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.54 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/572.0.0.38.71;IABMV/1;]"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 8 Pro",
+      "marketingName": "Pixel 8 Pro",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2992,
+        "height": 1344,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "572.0.0.38.71",
+      "manufacturer": "meta",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "17.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "151.0.7922.54",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "[FBAN/FB4A;FBAV/572.0.0.38.71;FBBV/1027405186;FBDM/{density=2.25,width=2244,height=1008};FBLC/de_DE;FBRV/1032054666;FBCR/winSIM;FBMF/Google;FBBD/google;FBPN/com.facebook.katana;FBDV/Pixel 8 Pro;FBSV/17;FBOP/1;FBCA/arm64-v8a:;]"
     },
     "device": {

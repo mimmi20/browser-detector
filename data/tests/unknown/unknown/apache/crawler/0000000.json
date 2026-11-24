@@ -178,5 +178,50 @@
       "version": "55.0.2883.95",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "SSI-Nutch/1.23 (SSI broad web crawler; https://ssi.inc/; adi@ssi.inc)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": null,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Nutch",
+      "modus": null,
+      "version": "1.23.0",
+      "manufacturer": "apache",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

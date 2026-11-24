@@ -1306,6 +1306,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; Tab 60) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.7680.953 YaSearchBrowser/26.41.1 BroPP/1.0 YaSearchApp/26.41.1 webOmni Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Tab 60",
+      "marketingName": "Tab 60",
+      "manufacturer": "blackview",
+      "brand": "blackview",
+      "display": {
+        "width": 1340,
+        "height": 800,
+        "touch": true,
+        "size": 8.68
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "26.41.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "146.0.7680.953",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; Tab 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 YaApp_Android/21.114/apad YaSearchBrowser/21.114/apad BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -1391,6 +1436,51 @@
     "engine": {
       "name": "Blink",
       "version": "148.0.7778.112",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; Tab 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.304 YaBrowser/26.6.0.304.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Tab 8",
+      "marketingName": "Tab 8",
+      "manufacturer": "blackview",
+      "brand": "blackview",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "26.6.0.304.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "148.0.7778.304",
       "manufacturer": "google"
     }
   },

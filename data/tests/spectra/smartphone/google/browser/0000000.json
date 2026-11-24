@@ -139,6 +139,54 @@
   },
   {
     "headers": {
+      "sec-ch-ua-model": "Spectra_J2",
+      "sec-ch-ua-platform-version": "15.0.0",
+      "sec-ch-ua": "\"Not;A=Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"150.0.7871.181\", \"Google Chrome\";v=\"150.0.7871.181\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "J2",
+      "marketingName": "J2",
+      "manufacturer": "spectra",
+      "brand": "spectra",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "150.0.7871.181",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "150.0.7871.181",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "sec-ch-ua-model": "Spectra_J2_Pro",
       "sec-ch-ua-platform-version": "15.0.0",
       "sec-ch-ua": "\"Not;A=Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"150.0.7871.128\", \"Google Chrome\";v=\"150.0.7871.128\"",

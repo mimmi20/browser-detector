@@ -1940,6 +1940,60 @@
   },
   {
     "headers": {
+      "sec-ch-ua-model": "\"MRR-W29\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"HuaweiBrowser\";v=\"114\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-wow64": "?0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W29; HMSCore 6.15.0.332) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/15.0.10.302 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "MRR-W29",
+      "marketingName": "MatePad Pro 10.8\" (2021) Wi-Fi",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Huawei Browser",
+      "modus": null,
+      "version": "15.0.10.302",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "10.0.0",
+      "manufacturer": "huawei",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; MRDI-W09 Build/HUAWEIMRDI-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Safari/537.36 HuaweiBrowser/16.0.9.302 HMSCore/6.15.6.332"
     },
     "device": {
@@ -2325,6 +2379,96 @@
       "name": "Huawei Browser",
       "modus": null,
       "version": "17.0.5.301",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "huawei",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; BAH3-W09; HMSCore 6.16.2.322) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.5.301 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "BAH3-W09",
+      "marketingName": "MatePad 10.4\" Wi-Fi",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 10.4
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Huawei Browser",
+      "modus": null,
+      "version": "17.0.5.301",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "huawei",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; AGS3K-W09; HMSCore 6.16.2.342) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.6.313 Safari/537.36"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "AGS3K-W09",
+      "marketingName": "MatePad T10s 10.1\" Wi-Fi",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Huawei Browser",
+      "modus": null,
+      "version": "17.0.6.313",
       "manufacturer": "huawei",
       "type": "browser",
       "isbot": false,

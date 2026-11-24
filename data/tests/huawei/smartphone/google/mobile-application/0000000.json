@@ -2391,6 +2391,51 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MAR-LX1A Build/HUAWEIMAR-L21A; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.169 Mobile Safari/537.36 GoogleApp/17.6.59.ve.arm64"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "MAR-LX1A",
+      "marketingName": "P30 Lite",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2312,
+        "height": 1080,
+        "touch": true,
+        "size": 6.15
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "Google Search App",
+      "modus": null,
+      "version": "17.6.59",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "151.0.7922.169",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; MAR-LX1B Build/HUAWEIMAR-L21B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/151.0.7922.199 Mobile Safari/537.36 OcIdWebView ({\\\"os\\\":\\\"Android\\\",\\\"osVersion\\\":\\\"29\\\",\\\"app\\\":\\\"com.google.android.gms\\\",\\\"appVersion\\\":\\\"263234001\\\",\\\"style\\\":3,\\\"callingAppId\\\":\\\"com.google.android.googlequicksearchbox\\\",\\\"isDarkTheme\\\":false})"
     },
     "device": {

@@ -268,5 +268,50 @@
       "version": "134.0.2105.195",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.2323.62 Mobile Safari/537.36; compatible; ClaudeBot/1.0; +claudebot@anthropic.com"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "Pixel 8",
+      "marketingName": "Pixel 8",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 1,
+      "bits": 0
+    },
+    "client": {
+      "name": "ClaudeBot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "anthropic",
+      "type": "crawler",
+      "isbot": true,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.2323.62",
+      "manufacturer": "google"
+    }
   }
 ]

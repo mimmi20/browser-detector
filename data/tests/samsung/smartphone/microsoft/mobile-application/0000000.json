@@ -3964,6 +3964,54 @@
   },
   {
     "headers": {
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua": "\"Google Chrome\";v=\"124\", \"Chromium\";v=\"124\", \"Not.A/Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 15; SM-S931W Build/AP3A.240905.015.A2; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 BingSapphire/32.3.430811006"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "SM-S931W",
+      "marketingName": "Galaxy S25 (Canada)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "dualOrientation": true,
+      "simCount": 2,
+      "bits": 0
+    },
+    "client": {
+      "name": "Bing Search",
+      "modus": null,
+      "version": "32.3.430811006",
+      "manufacturer": "microsoft",
+      "type": "mobile-application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google",
+      "bits": 0
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A105M Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/140.0.7339.51 Mobile Safari/537.36 BingSapphire/32.3.430811005"
     },
     "device": {
@@ -4414,62 +4462,17 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; samsung SM-S731B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 Sapphire/1.11.2"
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; samsung SM-S938B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 Sapphire/1.11.1"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-S731B",
-      "marketingName": "Galaxy S25 FE (International)",
+      "deviceName": "SM-S938B",
+      "marketingName": "Galaxy S25 Ultra 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "dualOrientation": true,
-      "simCount": 1,
-      "bits": 0
-    },
-    "client": {
-      "name": "Bing Search",
-      "modus": null,
-      "version": "1.11.2",
-      "manufacturer": "microsoft",
-      "type": "mobile-application",
-      "isbot": false,
-      "bits": 0
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "16.0.0",
-      "manufacturer": "google",
-      "bits": 0
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "149.0.7827.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; samsung SM-F766B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 Sapphire/1.11.1"
-    },
-    "device": {
-      "architecture": "",
-      "deviceName": "SM-F766B",
-      "marketingName": "Galaxy Z Flip 7 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2520,
-        "height": 1080,
+        "width": 3120,
+        "height": 1440,
         "touch": true,
         "size": 6.9
       },
@@ -4504,19 +4507,19 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 16; samsung SM-A566E; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 Sapphire/1.11.1"
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; samsung SM-S921B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/149.0.7827.91 Mobile Safari/537.36 Sapphire/1.11.1"
     },
     "device": {
       "architecture": "",
-      "deviceName": "SM-A566E",
-      "marketingName": "Galaxy A56 5G",
+      "deviceName": "SM-S921B",
+      "marketingName": "Galaxy S24",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 6.7
+        "size": 6.2
       },
       "type": "smartphone",
       "ismobile": true,

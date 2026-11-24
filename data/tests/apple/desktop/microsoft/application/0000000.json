@@ -1711,6 +1711,51 @@
   },
   {
     "headers": {
+      "user-agent": "Microsoft Office Excel/16.46.212 (Mac OS/12.7.6; Desktop; en-US; NonAppStore; Apple/iMac16,2)"
+    },
+    "device": {
+      "architecture": "",
+      "deviceName": "iMac 16,2",
+      "marketingName": "iMac 21.5\" (2015)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 21.5
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "dualOrientation": false,
+      "simCount": 0,
+      "bits": 0
+    },
+    "client": {
+      "name": "Excel",
+      "modus": null,
+      "version": "16.46.212",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false,
+      "bits": 0
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "12.7.6",
+      "manufacturer": "apple",
+      "bits": 0
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Microsoft Office Excel/16.46.212 (Mac OS/10.6.8; Desktop; en-US; NonAppStore; Apple/iMac4,1)"
     },
     "device": {
