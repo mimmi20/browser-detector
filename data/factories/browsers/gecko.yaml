@@ -64,7 +64,9 @@ rules:
   '/openwave|up\.browser| up\//i': openwave-mobile-browser
   '/anonymized by abelssoft/i': anti-browser-spy
   '/outlook[\- ]express/i': outlook-express
+  /meta-externalagent/i: meta-external-agent
   '/baidu transcoder/i': baidu-transcoder
+  /meta-webindexer/i: meta-webindexer
   /trendictionbot/i: 'trendiction bot'
   /bne\.es_bot/i: bne-es-bot
   /umbot|um-(ln|cc|fc|ans)/i: umbot
@@ -84,6 +86,7 @@ rules:
   /seolizer/i: seolizer
   /ghostery/i: 'ghostery privacy browser'
   /freshbot/i: freshbot
+  /tigerbot/i: tiger-bot
   /diffbot/i: diffbot
   /mypal\//i: mypal
   /bingbot|msnbot|msrbot/i: bingbot

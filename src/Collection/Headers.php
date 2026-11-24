@@ -484,6 +484,7 @@ final readonly class Headers
                         case 'oai-searchbot':
                         case 'yisouspider':
                         case 'bonprix-app':
+                        case 'obsidian':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

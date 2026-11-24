@@ -9709,8 +9709,9 @@ dead-link-checker:
   manufacturer: traffic-names
   type: crawler
   version:
-    class: null
-    search: null
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - dead-link-checker
   engine: unknown
 delibar:
   name: Delibar
@@ -16650,4 +16651,94 @@ river-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - RiverBot
+  engine: unknown
+aion-bot:
+  name: AionBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AionBot
+  engine: unknown
+utern-bot:
+  name: UTernBot
+  manufacturer: utern
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - UTernBot
+  engine: unknown
+aclipp-bot:
+  name: AclippBot
+  manufacturer: aclipp
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AclippBot
+  engine: unknown
+marven-bot:
+  name: MarvenBot
+  manufacturer: quadress
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MarvenBot
+  engine: unknown
+white-circle-trust-bot:
+  name: WhiteCircleTrustBot
+  manufacturer: white-circle
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WhiteCircleTrustBot
+  engine: unknown
+security-txt-survey-bot:
+  name: SecurityTxtSurveyBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SecurityTxtSurveyBot
+  engine: unknown
+ssi-nutch:
+  name: SSI-Nutch
+  manufacturer: safe-superintelligence
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SSI-Nutch
+  engine: unknown
+urlcheck-rust:
+  name: urlcheck-rust
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - urlcheck-rust
+  engine: unknown
+stripe-site-inspector:
+  name: StripeSiteInspector
+  manufacturer: stripe
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StripeSiteInspector
+  engine: unknown
+lounge-scale-research:
+  name: LoungeScale-Research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LoungeScale-Research
   engine: unknown

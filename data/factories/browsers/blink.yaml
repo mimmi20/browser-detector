@@ -248,6 +248,7 @@ rules:
   /grokapp/i: grok-app
   /com\.google\.maps|androidmapswebview/i: google-maps
   '/ok(?:android|ios|app)/i': odnoklassniki
+  /loungescale-research/i: lounge-scale-research
   '/trill app_version/i': tiktok
   /aliexpressandroid/i: ali-express
   /reddit\/version/i: reddit-app
@@ -289,6 +290,7 @@ rules:
   /aria2app/i: aria2-app
   /kimi\//i: kimi-app
   /buscari/i: seekee
+  /aionbot/i: aion-bot
   /xshare/i: xshare
   /boohee/i: boohee
   /grindr/i: grindr

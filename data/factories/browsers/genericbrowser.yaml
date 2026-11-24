@@ -509,6 +509,7 @@ rules:
   /xovionpagecrawler/i: xovionpagecrawler
   /scaleupxq-crawler/i: scaleupxq-crawler
   /vibalofeedcrawler/i: vibalo-feed-crawler
+  /ads-?txt-?crawler/i: ads-txt-crawler
   /meta-externalads/i: meta-externalads
   /seolyticscrawler/i: seolytics-crawler
   '/hubspot connect/i': hubspot-connect
@@ -526,7 +527,6 @@ rules:
   '/curious george/i': analytics-seo-crawler
   /ip-guide\.com/i: ip-guide-crawler
   '/(?<!a)zoombot/i': seozoom-bot
-  /adstxtcrawler/i: ads-txt-crawler
   /gitcrawlerbot/i: git-crawler-bot
   /openwebspider/i: openwebspider
   /amorankspider/i: amorank-spider
@@ -795,6 +795,7 @@ rules:
   /vbulletin/i: 'vbulletin bot'
   /googlebot/i: googlebot
   /nlcrawler/i: nlcrawler
+  /ssi-nutch/i: ssi-nutch
   /voilabot/i: voilabot
   /cakephp/i: cakephp
   /antbot/i: antbot
@@ -1420,6 +1421,7 @@ rules:
   /efficientrustcrawler/i: efficient-rust-crawler
   /scopecampusresolver2/i: scope-campus-resolver-2
   /lexaidspeedqualityai/i: lex-aid-speed-quality-ai
+  /securitytxtsurveybot/i: security-txt-survey-bot
   # @todo
   /jobindexmeasurement/i: job-index-measurement
   '/sogou orion spider/i': sogou-orion-spider
@@ -1448,6 +1450,8 @@ rules:
   /utern-ats-discovery/i: utern-ats-discovery
   /websitepredictorbot/i: website-predictor-bot
   /stultussearchengine/i: stultus-search-engine
+  /whitecircletrustbot/i: white-circle-trust-bot
+  /stripesiteinspector/i: stripe-site-inspector
   # @todo
   /steamchaturllookup/i: steam-chat-url-lookup
   /dynatracesynthetic/i: dynatrace-synthetic
@@ -1865,6 +1869,8 @@ rules:
   /luissearchbot/i: luis-search-bot
   /solarguidebot/i: solar-guide-bot
   /opencode-user/i: open-code-user
+  /reflectionbot/i: reflection-bot
+  /urlcheck-rust/i: urlcheck-rust
   # @todo
   /researchscan/i: rwth-aachen-researchscan
   /dataprovider/i: dataprovider-spider
@@ -2138,7 +2144,7 @@ rules:
   /go-network/i: go-network
   /msray-plus/i: msray-plus
   /kazehakase/i: kazehakase
-  /pagepeeker|ppbot/i: pagepeeker
+  /pagepeeker/i: pagepeeker
   /suggestbot/i: suggest-bot
   /okdownload/i: okdownload-library
   /google-ilp/i: google-ilp
@@ -2341,6 +2347,8 @@ rules:
   /eurolybot/i: euroly-bot
   /k7mlwcbot/i: k7-mlwc-bot
   /alpostbot/i: alpost-bot
+  /aclippbot/i: aclipp-bot
+  /marvenbot/i: marven-bot
   # @todo:
   /neevabot/i: neevabot
   /msoffice/i: office
@@ -2475,6 +2483,7 @@ rules:
   /myfnbbot/i: my-fnb-bot
   /lessobot/i: lesso-bot
   /riverbot/i: river-bot
+  /uternbot/i: utern-bot
   # @todo:
   /whatcms/i: what-cms
   /phoenix/i: phoenix
@@ -2689,6 +2698,7 @@ rules:
   /pa11y/i: pa11y
   /adbot/i: ad-bot
   /iabot/i: internet-archive-bot
+  /ppbot/i: pagepeeker
   # @todo
   /nmap/i: nmap
   /itms/i: itms
