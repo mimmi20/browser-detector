@@ -35,6 +35,6 @@ final class XOperaminiPhoneUaClientCode implements ClientCodeInterface
     #[Override]
     public function getClientCode(string $value): string
     {
-        return 'opera mini';
+        return 'opera-mini';
     }
 }

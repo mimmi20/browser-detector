@@ -25,7 +25,7 @@
     search:
       - 1stBrowser
   engine: blink
-'2345 browser':
+2345-browser:
   name: '2345 Browser'
   manufacturer: leysin-media
   type: browser
@@ -52,7 +52,7 @@
       - '2345chrome v'
       - 2345chrome
   engine: blink
-'2345 explorer':
+2345-explorer:
   name: '2345 Explorer'
   manufacturer: leysin-media
   type: browser
@@ -61,7 +61,7 @@
     search:
       - 2345Explorer
   engine: blink
-'360 browser':
+360-browser:
   name: '360 Browser'
   manufacturer: qihoo
   type: browser
@@ -71,7 +71,7 @@
       - '360 Browser'
       - '360 Aphone Browser \('
   engine: webkit
-'360 secure browser':
+360-secure-browser:
   name: '360 Secure Browser'
   manufacturer: qihoo
   type: browser
@@ -80,7 +80,7 @@
     search:
       - 'QIHU 360SE'
   engine: null
-'360 speed browser':
+360-speed-browser:
   name: '360 Speed Browser'
   manufacturer: qihoo
   type: browser
@@ -98,7 +98,7 @@ abrowse:
     search:
       - ABrowse
   engine: null
-'acoo browser':
+acoo-browser:
   name: 'Acoo Browser'
   manufacturer: www.acoobrowser.com
   type: browser
@@ -106,7 +106,7 @@ abrowse:
     class: null
     search: null
   engine: trident
-'airwatch browser':
+airwatch-browser:
   name: 'AirWatch Browser'
   manufacturer: vmware
   type: browser
@@ -178,7 +178,7 @@ amigo:
       - Amigo
       - Chrome
   engine: null
-'android webkit':
+android-webkit:
   name: 'Android Webkit'
   manufacturer: google
   type: browser
@@ -258,7 +258,7 @@ arora:
     class: null
     search: null
   engine: null
-'atomic browser':
+atomic-browser:
   name: 'Atomic Browser'
   manufacturer: richard-trautvetter
   type: browser
@@ -267,7 +267,7 @@ arora:
     search:
       - AtomicBrowser
   engine: webkit
-'atomic browser lite':
+atomic-browser-lite:
   name: 'Atomic Browser Lite'
   manufacturer: richard-trautvetter
   type: browser
@@ -293,7 +293,7 @@ avant:
     search:
       - ASW
   engine: null
-'avast secure browser':
+avast-secure-browser:
   name: 'Avast Secure Browser'
   manufacturer: avast-software
   type: browser
@@ -304,7 +304,7 @@ avant:
       - AvastSecureBrowser
       - 'Avast Secure Browser'
   engine: null
-'avg secure browser':
+avg-secure-browser:
   name: 'AVG Secure Browser'
   manufacturer: avast-software
   type: browser
@@ -313,7 +313,7 @@ avant:
     search:
       - AVG
   engine: null
-'ccleaner browser':
+ccleaner-browser:
   name: 'CCleaner Browser'
   manufacturer: piriform
   type: browser
@@ -358,7 +358,7 @@ awesomium:
     search:
       - Awesomium
   engine: null
-'baidu browser':
+baidu-browser:
   name: 'Baidu Browser'
   manufacturer: baidu
   type: browser
@@ -371,7 +371,7 @@ awesomium:
       - bdbrowser
       - baidubrowser
   engine: null
-'baidu browser hd':
+baidu-browser-hd:
   name: 'Baidu Browser HD'
   manufacturer: baidu
   type: browser
@@ -380,7 +380,7 @@ awesomium:
     search:
       - bdbrowserhd_i18n
   engine: null
-'baidu browser mini':
+baidu-browser-mini:
   name: 'Baidu Browser Mini'
   manufacturer: baidu
   type: browser
@@ -389,7 +389,7 @@ awesomium:
     search:
       - bdbrowser_mini
   engine: null
-'baidu spark':
+baidu-spark:
   name: Spark
   manufacturer: baidu
   type: browser
@@ -445,7 +445,7 @@ blackberry:
     search:
       - Version
   engine: webkit
-'palm blazer':
+palm-blazer:
   name: Blazer
   manufacturer: palm
   type: browser
@@ -682,7 +682,7 @@ cloudsurfer:
     search:
       - CloudSurfer
   engine: webkit
-'cm browser':
+cm-browser:
   name: 'CM Browser'
   manufacturer: cheetah-mobile
   type: browser
@@ -744,7 +744,7 @@ cornowser:
     search:
       - CoRom
   engine: blink
-'cos browser':
+cos-browser:
   name: 'COS Browser'
   manufacturer: unknown
   type: browser
@@ -753,7 +753,7 @@ cornowser:
     search:
       - COSBrowser
   engine: webkit
-'crazy browser':
+crazy-browser:
   name: 'Crazy Browser'
   manufacturer: crazy-browser
   type: browser
@@ -780,7 +780,7 @@ dalvik:
     search:
       - Dalvik
   engine: webkit
-'deepnet explorer':
+deepnet-explorer:
   name: 'Deepnet Explorer'
   manufacturer: deepnet-security
   type: browser
@@ -798,7 +798,7 @@ diglo:
     search:
       - Diglo
   engine: null
-'diigo browser':
+diigo-browser:
   name: 'Diigo Browser'
   manufacturer: diigo
   type: browser
@@ -868,7 +868,7 @@ dt-browser:
     search:
       - DTB
   engine: null
-'duckduck app':
+duckduck-app:
   name: 'DuckDuckGo Privacy Browser'
   manufacturer: duck-duck-go
   type: browser
@@ -919,7 +919,7 @@ edge:
     search:
       - EdgA
   engine: blink
-'edge mobile for ios':
+edge-mobile-for-ios:
   name: 'Edge Mobile for iOS'
   manufacturer: microsoft
   type: browser
@@ -947,7 +947,7 @@ flow-browser:
       - Flow
       - Ekioh
   engine: webkit
-'element browser':
+element-browser:
   name: 'Element Browser'
   manufacturer: element-software
   type: browser
@@ -986,7 +986,7 @@ epiphany:
       - Safari
       - AppleWebKit
   engine: gecko
-'espial tv browser':
+espial-tv-browser:
   name: 'Espial TV Browser'
   manufacturer: espial-group
   type: browser
@@ -1058,7 +1058,7 @@ firefox:
       - Lorentz
       - 'rv:'
   engine: gecko
-'firefox klar':
+firefox-klar:
   name: 'Firefox Klar'
   manufacturer: mozilla-foundation
   type: browser
@@ -1067,7 +1067,7 @@ firefox:
     search:
       - Klar
   engine: null
-'firefox focus':
+firefox-focus:
   name: 'Firefox Focus'
   manufacturer: mozilla-foundation
   type: browser
@@ -1085,7 +1085,7 @@ firefox:
     search:
       - FocusiOS
   engine: webkit
-'firefox for ios':
+firefox-for-ios:
   name: 'Firefox Mobile for iOS'
   manufacturer: mozilla-foundation
   type: browser
@@ -1438,7 +1438,7 @@ inettvbrowser:
       - InettvBrowser
       - Version
   engine: presto
-'internet explorer':
+internet-explorer:
   name: 'Internet Explorer'
   manufacturer: microsoft
   type: browser
@@ -1492,7 +1492,7 @@ iron:
       - Iron
       - Chrome
   engine: null
-'mobile iron':
+mobile-iron:
   name: 'Iron Mobile'
   manufacturer: srware
   type: browser
@@ -1650,7 +1650,7 @@ konqueror:
     search:
       - LeBrowser
   engine: blink
-'lg browser':
+lg-browser:
   name: 'LG Browser'
   manufacturer: lg
   type: browser
@@ -1668,7 +1668,7 @@ cheetah-browser:
     search:
       - LBBROWSER
   engine: null
-'liebao fast':
+liebao-fast:
   name: LieBaoFast
   manufacturer: kingsoft
   type: browser
@@ -1768,7 +1768,7 @@ maxthon:
     factory: \BrowserDetector\Version\MaxthonFactory
     search: null
   engine: webkit
-'maxthon nitro':
+maxthon-nitro:
   name: 'Maxthon Nitro'
   manufacturer: maxthon
   type: browser
@@ -1861,7 +1861,7 @@ mitsubishi:
     class: null
     search: null
   engine: unknown
-'miui browser':
+miui-browser:
   name: 'Mi Browser'
   manufacturer: xiaomi
   type: browser
@@ -1901,7 +1901,7 @@ mobilerss:
       - MobileRSSFree
       - MobileRSSFree\-iPad
   engine: webkit
-'model s browser':
+model-s-browser:
   name: 'Model S Browser'
   manufacturer: tesla-motors
   type: browser
@@ -1964,7 +1964,7 @@ mythbrowser:
     class: null
     search: null
   engine: webkit
-'mz browser':
+mz-browser:
   name: 'Meizu Browser'
   manufacturer: meizu
   type: browser
@@ -2031,7 +2031,7 @@ netfront:
       - NetFrontLifeBrowser
       - NF3
   engine: netfront
-'netfront nx':
+netfront-nx:
   name: 'NetFront NX'
   manufacturer: access
   type: browser
@@ -2106,7 +2106,7 @@ nokiabrowser:
       - NokiaBrowser
       - Version
   engine: null
-'nokia oss browser':
+nokia-oss-browser:
   name: 'Nokia OSS Browser'
   manufacturer: nokia
   type: browser
@@ -2133,7 +2133,7 @@ docomo:
     class: null
     search: null
   engine: unknown
-'obigo q':
+obigo-q:
   name: 'Obigo Q'
   manufacturer: obigo
   type: browser
@@ -2159,7 +2159,7 @@ oculus-browser:
     search:
       - Odd
   engine: webkit
-'odyssey web browser':
+odyssey-web-browser:
   name: 'Odyssey Web Browser'
   manufacturer: 'fabien coeurjoly'
   type: browser
@@ -2209,7 +2209,7 @@ open-webkit-sharp:
     search:
       - OpenWebKitSharp
   engine: webkit
-'openwave mobile browser':
+openwave-mobile-browser:
   name: 'Openwave Mobile Browser'
   manufacturer: myriad
   type: browser
@@ -2232,7 +2232,7 @@ opera:
       - 'Opera\/9\.80.*Version'
       - Opera
   engine: null
-'opera devices':
+opera-devices:
   name: 'Opera Devices'
   manufacturer: opera
   type: browser
@@ -2241,7 +2241,7 @@ opera:
     search:
       - OMI
   engine: null
-'opera gx':
+opera-gx:
   name: 'Opera GX'
   manufacturer: opera
   type: browser
@@ -2253,7 +2253,7 @@ opera:
       - OperaGX
       - OPR
   engine: null
-'opera mobile':
+opera-mobile:
   name: 'Opera Mobile'
   manufacturer: opera
   type: browser
@@ -2265,7 +2265,7 @@ opera:
       - Opera
       - 'Opera Mobi'
   engine: null
-'opera neon':
+opera-neon:
   name: 'Opera Neon'
   manufacturer: opera
   type: browser
@@ -2274,7 +2274,7 @@ opera:
     search:
       - MMS
   engine: null
-'opera touch':
+opera-touch:
   name: 'Opera Touch'
   manufacturer: opera
   type: browser
@@ -2311,7 +2311,7 @@ origin:
     search:
       - Origin
   engine: null
-'origyn web browser':
+origyn-web-browser:
   name: 'Origyn Web Browser'
   manufacturer: sand-labs
   type: browser
@@ -2437,7 +2437,7 @@ playstation:
     search:
       - Playstation
   engine: webkit
-'playstation browser':
+playstation-browser:
   name: 'Playstation Browser'
   manufacturer: sony
   type: browser
@@ -2493,7 +2493,7 @@ qqbrowser:
       - V1\_AND\_SQ\_
       - QQ浏览器
   engine: null
-'qqbrowser mini':
+qqbrowser-mini:
   name: 'QQ Browser Mini'
   manufacturer: tencent
   type: browser
@@ -2502,7 +2502,7 @@ qqbrowser:
     search:
       - MQQBrowser\/Mini
   engine: null
-'qqbrowser lite':
+qqbrowser-lite:
   name: 'QQ Browser Lite'
   manufacturer: tencent
   type: browser
@@ -2538,7 +2538,7 @@ qtminibrowser:
     search:
       - QtMiniBrowser
   engine: null
-'qtweb internet browser':
+qtweb-internet-browser:
   name: 'QtWeb Internet Browser'
   manufacturer: logicware
   type: browser
@@ -2641,7 +2641,7 @@ qwant-mobile:
       - QwantMobile
       - Qwant
   engine: null
-'qword browser':
+qword-browser:
   name: 'Qword Browser'
   manufacturer: qword-corporation
   type: browser
@@ -2686,7 +2686,7 @@ safari:
     factory: \BrowserDetector\Version\SafariFactory
     search: null
   engine: webkit
-'safari technology preview':
+safari-technology-preview:
   name: 'Safari Technology Preview'
   manufacturer: apple
   type: browser
@@ -2694,7 +2694,7 @@ safari:
     factory: \BrowserDetector\Version\SafariFactory
     search: null
   engine: null
-'bitdefender safepay':
+bitdefender-safepay:
   name: Safepay
   manufacturer: bitdefender
   type: browser
@@ -2702,7 +2702,7 @@ safari:
     class: null
     search: null
   engine: blink
-'sailfish browser':
+sailfish-browser:
   name: 'Sailfish Browser'
   manufacturer: jolla
   type: browser
@@ -2790,7 +2790,7 @@ semc:
     search:
       - SEMC\-Browser
   engine: unknown
-'seznam browser':
+seznam-browser:
   name: 'Seznam Browser'
   manufacturer: seznam
   type: browser
@@ -2880,7 +2880,7 @@ slimbrowser:
     search:
       - Slimjet
   engine: blink
-'smarttv webbrowser':
+smarttv-webbrowser:
   name: 'SmartTV WebBrowser'
   manufacturer: samsung
   type: browser
@@ -2900,7 +2900,7 @@ snowshoe:
     search:
       - Snowshoe
   engine: webkit
-'sogou explorer':
+sogou-explorer:
   name: 'Sogou Explorer'
   manufacturer: sogou
   type: browser
@@ -2909,7 +2909,7 @@ snowshoe:
     search:
       - 'SE '
   engine: null
-'sogou mobile browser':
+sogou-mobile-browser:
   name: 'Sogou Mobile Browser'
   manufacturer: sogou
   bits: 32
@@ -3057,7 +3057,7 @@ tbrowser:
     search:
       - Tbrowser
   engine: null
-'t-online browser':
+t-online-browser:
   name: 'T-Online Browser'
   manufacturer: telekom
   type: browser
@@ -3147,7 +3147,7 @@ tinybrowser:
     search:
       - TinyBrowser
   engine: null
-'tizen browser':
+tizen-browser:
   name: 'Tizen Browser'
   manufacturer: linux-foundation
   type: browser
@@ -3441,7 +3441,7 @@ yowser:
     search:
       - Yowser
   engine: null
-'zetakey browser':
+zetakey-browser:
   name: 'Zetakey Browser'
   manufacturer: zetakey-solutions
   type: browser
@@ -3469,7 +3469,7 @@ silk:
     search:
       - Silk
   engine: null
-'smart lenovo browser':
+smart-lenovo-browser:
   name: 'Smart Lenovo Browser'
   manufacturer: lenovo
   type: browser
@@ -3498,7 +3498,7 @@ privacywall:
       - 'Ghostery:'
       - 'Ghostery Dawn'
   engine: null
-'adblock browser':
+adblock-browser:
   name: 'AdBlock Browser'
   manufacturer: eyeo
   type: browser
@@ -3952,7 +3952,7 @@ fiery-browser:
     factory: null
     search: null
   engine: null
-'aol desktop':
+aol-desktop:
   name: 'AOL Desktop'
   manufacturer: aol
   type: browser
@@ -4475,7 +4475,7 @@ pure-lite-browser:
     search:
       - Beonex
   engine: null
-'perfect browser':
+perfect-browser:
   name: 'Perfect Browser'
   manufacturer: app-simply
   type: browser
@@ -4486,7 +4486,7 @@ pure-lite-browser:
       - 'Perfect Browser\-iPad'
       - 'Perfect Browser'
   engine: webkit
-'perfect browser pro':
+perfect-browser-pro:
   name: 'Perfect Browser Pro'
   manufacturer: app-simply
   type: browser
@@ -4503,7 +4503,7 @@ every-browser:
     factory: null
     search: null
   engine: null
-'uc browser hd':
+uc-browser-hd:
   name: 'UC Browser HD'
   manufacturer: ucweb
   type: browser
@@ -4675,7 +4675,7 @@ gog-galaxy-client:
     search:
       - GOGGalaxyClient
   engine: null
-'xchaos arachne':
+xchaos-arachne:
   name: Arachne
   manufacturer: unknown
   type: browser
@@ -5475,4 +5475,13 @@ naked-browser-pro:
   version:
     factory: null
     search: null
+  engine: unknown
+cool-browser:
+  name: CoolBrowser
+  manufacturer: zooking-team
+  type: browser
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Chrome
   engine: unknown

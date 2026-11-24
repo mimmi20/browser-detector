@@ -14,7 +14,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Data\ClientData;
-use BrowserDetector\Loader\InitData\Client as DataClient;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Override;
 use Psr\Log\LoggerInterface;
@@ -57,7 +56,7 @@ final class BrowserLoader implements BrowserLoaderInterface
 
         $browserData = $this->initData->getItem($key);
 
-        if ($browserData === null) {
+        if (!$browserData instanceof InitData\Client) {
             throw new NotFoundException('the browser with key "' . $key . '" was not found');
         }
 
@@ -68,7 +67,7 @@ final class BrowserLoader implements BrowserLoaderInterface
     }
 
     /** @throws void */
-    private function fromArray(DataClient $dataClient, string $useragent = ''): Browser
+    private function fromArray(InitData\Client $dataClient, string $useragent = ''): Browser
     {
         $manufacturer     = new Company(type: 'unknown', name: null, brandname: null);
         $manufacturerName = $dataClient->getManufacturer();

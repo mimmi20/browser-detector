@@ -69,7 +69,7 @@ appcent:
     search:
       - Appcent
   engine: null
-'apple appstore app':
+apple-appstore-app:
   name: 'AppStore App'
   manufacturer: apple
   type: application
@@ -194,7 +194,7 @@ cybeye:
     search:
       - CybEye\.com
   engine: unknown
-'douban app':
+douban-app:
   name: 'douban App'
   manufacturer: unknown
   type: application
@@ -230,7 +230,7 @@ electron:
     search:
       - Electron
   engine: null
-'elluminate live':
+elluminate-live:
   name: 'Elluminate Live'
   manufacturer: blackboard
   type: application
@@ -265,7 +265,7 @@ filebox:
     search:
       - Filebox
   engine: null
-'flixster app':
+flixster-app:
   name: 'Flixster App'
   manufacturer: flixster
   type: application
@@ -328,7 +328,7 @@ instapaper:
     search:
       - Instapaper
   engine: null
-'ios dataaccessd':
+ios-dataaccessd:
   name: 'iOS dataaccessd'
   manufacturer: apple
   type: application
@@ -434,7 +434,7 @@ mobicip:
     search:
       - Mobicip
   engine: null
-'opera news':
+opera-news:
   name: News
   manufacturer: opera
   type: application
@@ -443,7 +443,7 @@ mobicip:
     search:
       - News
   engine: null
-'newsarticle app':
+newsarticle-app:
   name: 'NewsArticle App'
   manufacturer: unknown
   type: application
@@ -470,7 +470,7 @@ nightingale:
     search:
       - Nightingale
   engine: null
-'apple notes app':
+apple-notes-app:
   name: 'Notes App'
   manufacturer: apple
   type: application
@@ -496,7 +496,7 @@ office:
       - MSOffice
       - Office
   engine: null
-'office syncproc':
+office-syncproc:
   name: 'Office SyncProc'
   manufacturer: microsoft
   type: application
@@ -505,7 +505,7 @@ office:
     search:
       - 'Office SyncProc'
   engine: null
-'office upload center':
+office-upload-center:
   name: 'Office Upload Center'
   manufacturer: microsoft
   type: application
@@ -551,7 +551,7 @@ openoffice:
     search:
       - OpenOffice
   engine: unknown
-'pinterest app':
+pinterest-app:
   name: 'Pinterest App'
   manufacturer: pinterest
   type: application
@@ -580,7 +580,7 @@ prince:
     search:
       - Prince
   engine: unknown
-'prismatic app':
+prismatic-app:
   name: 'Prismatic App'
   manufacturer: prismatic
   type: application
@@ -588,7 +588,7 @@ prince:
     class: null
     search: null
   engine: webkit
-'rddocuments app':
+rddocuments-app:
   name: 'RDDocuments App'
   manufacturer: readdle
   type: application
@@ -614,7 +614,7 @@ rebelmouse:
     search:
       - RebelMouse
   engine: unknown
-'rocky chatwork mobile':
+rocky-chatwork-mobile:
   name: 'Rocky ChatWork Mobile'
   manufacturer: chat-work
   type: application
@@ -623,7 +623,7 @@ rebelmouse:
     search:
       - 'Rocky ChatWork Mobile'
   engine: webkit
-'apple safari fetcher daemon':
+apple-safari-fetcher-daemon:
   name: 'Safari Fetcher Daemon'
   manufacturer: apple
   type: application
@@ -631,7 +631,7 @@ rebelmouse:
     class: null
     search: null
   engine: webkit
-'salesforce app':
+salesforce-app:
   name: 'SalesForce App'
   manufacturer: salesforce
   type: application
@@ -668,7 +668,7 @@ sandvox:
     search:
       - Schoolwires
   engine: webkit
-'second live commerce client':
+second-live-commerce-client:
   name: 'Second Life Commerce Client'
   manufacturer: linden-labs
   type: application
@@ -731,7 +731,7 @@ sogou-search:
     search:
       - 'SogouSearch Android(?:[\d\.]+) version'
   engine: blink
-'sohunews app':
+sohunews-app:
   name: 'SohuNews App'
   manufacturer: sohu
   type: application
@@ -740,7 +740,7 @@ sogou-search:
     search:
       - SohuNews
   engine: blink
-'soundcloud app':
+soundcloud-app:
   name: 'SoundCloud App'
   manufacturer: sound-cloud
   type: application
@@ -768,7 +768,7 @@ substream:
     search:
       - SubStream
   engine: null
-'tanso download manager':
+tanso-download-manager:
   name: 'Tanso Download Manager'
   manufacturer: web-expansion
   type: application
@@ -855,7 +855,7 @@ vobsub:
     class: null
     search: null
   engine: webkit
-'vs code':
+vs-code:
   name: 'Visual Studio Code'
   manufacturer: microsoft
   type: application
@@ -865,7 +865,7 @@ vobsub:
       - VSCode
       - Code
   engine: null
-'apple webkit service':
+apple-webkit-service:
   name: 'Webkit Service'
   manufacturer: apple
   type: application
@@ -918,7 +918,7 @@ word:
     search:
       - Word
   engine: null
-'wordpress app':
+wordpress-app:
   name: 'WordPress App'
   manufacturer: automattic
   type: application
@@ -946,7 +946,7 @@ worxwebappstore:
     search:
       - YahooMobileFinance
   engine: webkit
-'yahoo mobile app':
+yahoo-mobile-app:
   name: 'Yahoo Mobile App'
   manufacturer: yahoo
   type: application
@@ -982,7 +982,7 @@ yandexsearch:
     search:
       - YPmobile
   engine: null
-'zdownload pro':
+zdownload-pro:
   name: 'zDownload Pro'
   manufacturer: wonjoo-jang
   type: application
@@ -1359,7 +1359,7 @@ zoho-chat:
     search:
       - 'Zoho Chat'
   engine: null
-'open vulnerability assessment system':
+open-vulnerability-assessment-system:
   name: 'Open Vulnerability Assessment System'
   manufacturer: open-vas
   type: application
@@ -1475,4 +1475,13 @@ jamf-pro-self-service-plus:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - 'Self Service\\+'
+  engine: null
+colloquy:
+  name: Colloquy
+  manufacturer: unknown
+  type: application
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Colloquy
   engine: null

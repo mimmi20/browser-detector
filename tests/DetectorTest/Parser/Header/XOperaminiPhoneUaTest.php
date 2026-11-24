@@ -165,7 +165,7 @@ final class XOperaminiPhoneUaTest extends TestCase
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            'opera mini',
+            'opera-mini',
             $xOperaminiPhoneUa->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );

@@ -5558,11 +5558,11 @@
   platform: android
 'samsung sm-c7000':
   deviceName: SM-C7000
-  marketingName: 'Galaxy C7 Duos'
+  marketingName: 'Galaxy C7'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
-  simCount: 1
+  simCount: 2
   display:
     width: 1920
     height: 1080
@@ -6230,7 +6230,7 @@
   platform: android
 'samsung sm-g360h':
   deviceName: SM-G360H
-  marketingName: 'Galaxy Core Prime Duos'
+  marketingName: 'Galaxy Core Prime'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -8260,11 +8260,11 @@
   platform: android
 'samsung sm-j120h':
   deviceName: SM-J120H
-  marketingName: 'Galaxy J1 (2016) Duos'
+  marketingName: 'Galaxy J1 (2016)'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
-  simCount: 1
+  simCount: 2
   display:
     width: 800
     height: 480
@@ -18620,7 +18620,7 @@
   platform: android
 'samsung sm-g800h':
   deviceName: SM-G800H
-  marketingName: 'Galaxy S5 Mini Dual'
+  marketingName: 'Galaxy S5 Mini'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -23954,7 +23954,7 @@
   platform: android
 'samsung gt-s7580':
   deviceName: GT-S7580
-  marketingName: 'Trend Plus'
+  marketingName: 'Galaxy Trend Plus'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -23968,7 +23968,7 @@
   platform: android
 'samsung gt-s7580e':
   deviceName: GT-S7580E
-  marketingName: 'Trend Plus'
+  marketingName: 'Galaxy Trend Plus'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -23982,7 +23982,7 @@
   platform: android
 'samsung gt-s7580l':
   deviceName: GT-S7580L
-  marketingName: 'Trend Plus'
+  marketingName: 'Galaxy Trend Plus'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -36372,7 +36372,7 @@
   platform: android
 'samsung galaxy m56':
   deviceName: 'Galaxy M56'
-  marketingName: 'Galaxy M56 (International)'
+  marketingName: 'Galaxy M56'
   manufacturer: samsung
   brand: samsung
   dualOrientation: true
@@ -36396,5 +36396,103 @@
     height: 1440
     touch: true
     size: 6.9
+  type: smartphone
+  platform: android
+'samsung sm-a276b':
+  deviceName: SM-A276B
+  marketingName: 'Galaxy A27 5G (International)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-a276e':
+  deviceName: SM-A276E
+  marketingName: 'Galaxy A27 5G'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-a276u':
+  deviceName: SM-A276U
+  marketingName: 'Galaxy A27 5G (USA)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-a276u1':
+  deviceName: SM-A276U1
+  marketingName: 'Galaxy A27 5G (USA)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-a276w':
+  deviceName: SM-A276W
+  marketingName: 'Galaxy A27 5G (Canada)'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
+  type: smartphone
+  platform: android
+'samsung sm-s961b':
+  deviceName: SM-S961B
+  marketingName: SM-S961B
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 1
+  display:
+    width: null
+    height: null
+    touch: true
+    size: null
+  type: smartphone
+  platform: android
+'samsung sm-s741b':
+  deviceName: SM-S741B
+  marketingName: 'Galaxy S26 FE'
+  manufacturer: samsung
+  brand: samsung
+  dualOrientation: true
+  simCount: 2
+  display:
+    width: 2340
+    height: 1080
+    touch: true
+    size: 6.7
   type: smartphone
   platform: android

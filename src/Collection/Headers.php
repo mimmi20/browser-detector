@@ -378,7 +378,7 @@ final readonly class Headers
                     switch ($lastClientCodename) {
                         case 'opera':
                         case 'silk':
-                        case 'adblock browser':
+                        case 'adblock-browser':
                         case 'google-nest-hub':
                         case 'chrome for ios':
                         case 'ecosia':
@@ -390,15 +390,15 @@ final readonly class Headers
                         case 'edge':
                         case 'google-search':
                         case 'iron':
-                        case 'aol desktop':
+                        case 'aol-desktop':
                         case 'qtwebengine':
                         case 'pumoxbot':
-                        case 'sogou web spider':
+                        case 'sogou-web-spider':
                         case 'qqbrowser':
                         case 'googlebot':
                         case 'audisto-crawler':
                         case 'meta-external-agent':
-                        case 'avast secure browser':
+                        case 'avast-secure-browser':
                         case 'urlsuma-bot':
                         case 'sender-bot':
                             $clientCodename = $lastClientCodename;
@@ -443,20 +443,20 @@ final readonly class Headers
                     switch ($lastClientCodename) {
                         case 'opera':
                         case 'silk':
-                        case 'adblock browser':
+                        case 'adblock-browser':
                         case 'google-nest-hub':
                         case 'chrome for ios':
                         case 'ecosia':
                         case 'duck-assist-bot':
-                        case 'sogou web spider':
+                        case 'sogou-web-spider':
                         case 'googlebot':
                         case 'google-search':
                         case 'webpagetest':
-                        case 'facebook lite':
+                        case 'facebook-lite':
                         case 'lighthouse':
                         case 'pageburst':
                         case 'brightedge crawler':
-                        case 'adsbot google-mobile':
+                        case 'adsbot-google-mobile':
                         case 'quark':
                         case 'seolyt-bot':
                         case 'bingsearch':
@@ -465,18 +465,25 @@ final readonly class Headers
                         case 'keys-so':
                         case 'meta-external-agent':
                         case 'huawei-mobile-services':
-                        case 'duckduck bot':
+                        case 'duckduck-bot':
                         case 'petalbot':
                         case 'instagram app':
                         case 'mistral-ai-user':
                         case 'meta-webindexer':
                         case 'cohere-ai':
-                        case 'facebook app':
+                        case 'facebook-app':
                         case 'shap-bot':
                         case 'tiktok':
                         case 'perplexity-bot':
                         case 'sender-bot':
                         case 'kakao-bot':
+                        case 'reconx-l2s':
+                        case 'deepseek-bot':
+                        case 'ai2bot':
+                        case 'oai-ads-bot':
+                        case 'oai-searchbot':
+                        case 'yisouspider':
+                        case 'bonprix-app':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -493,7 +500,7 @@ final readonly class Headers
 
                 if (is_string($lastClientCodename)) {
                     switch ($lastClientCodename) {
-                        case 'amazon bot':
+                        case 'amazon-bot':
                         case 'facebook-crawler':
                         case 'headline bot':
                         case 'hanalei-bot':
@@ -510,6 +517,9 @@ final readonly class Headers
                         case 'snapchat-ads':
                         case 'clearscope-bot':
                         case 'quillbot':
+                        case 'branchenbuch-bot':
+                        case 'yisouspider':
+                        case 'kagi-fetcher':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -592,13 +602,13 @@ final readonly class Headers
             case 'keplr-app':
             case 'lookr-app':
             case 'kimi-app':
-            case 'opera mini':
-            case 'baidu box app lite':
-            case 'baidu box app':
+            case 'opera-mini':
+            case 'baidu-box-app-lite':
+            case 'baidu-box-app':
             case 'nytimes-crossword':
             case 'visha':
             case 'search-craft':
-            case 'duckduck app':
+            case 'duckduck-app':
                 $clientHeader = array_last($headersWithClientCode);
 
                 break;
@@ -617,7 +627,7 @@ final readonly class Headers
 
         $clientVersions = $this->getClientVersions($clientCodename);
         $clientVersion  = match ($clientCodename) {
-            'miui browser', 'huawei-browser', 'hola', 'tusk-browser', 'ojr-browser', 'surfy-browser', 'smartview-browser', 'vibe-mate', 'vd-browser', 'arvin-browser', 'sp-browser', 'duckduck bot' => $clientVersions['user-agent'] ?? array_last(
+            'miui-browser', 'huawei-browser', 'hola', 'tusk-browser', 'ojr-browser', 'surfy-browser', 'smartview-browser', 'vibe-mate', 'vd-browser', 'arvin-browser', 'sp-browser', 'duckduck-bot' => $clientVersions['user-agent'] ?? array_last(
                 $clientVersions,
             ),
             'vivaldi', 'samsungbrowser' => array_key_exists(

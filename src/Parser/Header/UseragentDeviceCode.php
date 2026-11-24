@@ -208,7 +208,6 @@ final readonly class UseragentDeviceCode implements DeviceCodeInterface
             '/^(?P<devicecode>.+)\/[\d.]+ up\.link\//i',
             '/^(?P<devicecode>.+) up\.link\//i',
             '/^(?P<devicecode>.+)[_;\/]/i',
-            '/\((?P<devicecode>[^);\/ ]+)/i',
             // should be the last entry in the list
             '/^(?P<devicecode>.+)$/i',
         ];

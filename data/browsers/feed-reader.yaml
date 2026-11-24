@@ -17,7 +17,7 @@ akregator:
       - FeeddlerRSS
       - FeeddlerPro
   engine: webkit
-'google play newsstand':
+google-play-newsstand:
   name: 'Google Play Newsstand'
   manufacturer: google
   type: feed-reader
@@ -71,7 +71,7 @@ newsbeuter:
     search:
       - newsbeuter
   engine: webkit
-'newsblur feed fetcher':
+newsblur-feed-fetcher:
   name: 'NewsBlur Feed Fetcher'
   manufacturer: newsblur
   type: feed-reader
@@ -80,7 +80,7 @@ newsbeuter:
     search:
       - 'NewsBlur Feed Fetcher'
   engine: unknown
-'newsblur favicon fetcher':
+newsblur-favicon-fetcher:
   name: 'NewsBlur Favicon Fetcher'
   manufacturer: newsblur
   type: feed-reader
@@ -141,7 +141,7 @@ reeder:
     search:
       - Reeder
   engine: webkit
-'feedly feed fetcher':
+feedly-feed-fetcher:
   name: 'feedly Feed Fetcher'
   manufacturer: feedly
   type: feed-reader
@@ -177,7 +177,7 @@ rss-bandit:
     search:
       - RssBandit
   engine: unknown
-'newsblur app':
+newsblur-app:
   name: 'NewsBlur App'
   manufacturer: newsblur
   type: feed-reader
@@ -186,7 +186,7 @@ rss-bandit:
     search:
       - NewsBlur
   engine: null
-'newsblur mobile app':
+newsblur-mobile-app:
   name: 'NewsBlur Mobile App'
   manufacturer: newsblur
   type: feed-reader

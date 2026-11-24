@@ -59,7 +59,7 @@ nmap-scripting-engine:
     factory: null
     search: null
   engine: null
-'pdrlabs bot':
+pdrlabs-bot:
   name: 'PDR Labs Bot'
   manufacturer: pdrlabs
   type: security-checker
@@ -523,4 +523,13 @@ safe-cve-2026-87902-checker:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Safe-CVE-2026-87902-Checker
+  engine: unknown
+reconx-l2s:
+  name:  ReconX-L2S
+  manufacturer: reconx-labs
+  type: security-checker
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ReconX-L2S
   engine: unknown

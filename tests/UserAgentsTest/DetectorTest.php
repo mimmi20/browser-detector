@@ -17,9 +17,11 @@ use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
 use BrowserDetector\Iterator\FilterIterator;
 use BrowserDetector\Version\Exception\NotNumericException;
-use DateInterval;
 use Exception;
 use JsonException;
+use Monolog\Handler\BufferHandler;
+use Monolog\Handler\PsrHandler;
+use Monolog\Logger;
 use Override;
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -28,21 +30,24 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\AbstractLogger;
 use Psr\Log\LoggerInterface;
-use Psr\SimpleCache\CacheInterface;
+use Psr\Log\LogLevel;
 use Psr\SimpleCache\InvalidArgumentException;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
 use Stringable;
-use Symfony\Component\Yaml\Exception\ParseException;
-use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Cache\Adapter\NullAdapter;
+use Symfony\Component\Cache\Psr16Cache;
 
 use function assert;
+use function file_get_contents;
+use function in_array;
 use function is_array;
 use function is_iterable;
 use function is_scalar;
 use function is_string;
+use function json_decode;
 use function json_encode;
 use function sprintf;
 use function str_replace;
@@ -99,151 +104,20 @@ final class DetectorTest extends TestCase
             }
         };
 
-        $cache = new class () implements CacheInterface {
-            /**
-             * Fetches a value from the cache.
-             *
-             * @param string $key     the unique key of this item in the cache
-             * @param mixed  $default default value to return if the key does not exist
-             *
-             * @return mixed the value of the item from the cache, or $default in case of cache miss
-             *
-             * @throws void
-             *
-             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             */
-            #[Override]
-            public function get(string $key, mixed $default = null): mixed
-            {
-                return null;
-            }
+        $logger = new Logger(
+            name: 'browser-detector',
+            handlers: [
+                new BufferHandler(
+                    handler: new PsrHandler($logger),
+                    bufferLimit: 0,
+                    level: LogLevel::WARNING,
+                    bubble: false,
+                    flushOnOverflow: false,
+                ),
+            ],
+        );
 
-            /**
-             * Persists data in the cache, uniquely referenced by a key with an optional expiration TTL time.
-             *
-             * @param string                $key   the key of the item to store
-             * @param mixed                 $value the value of the item to store, must be serializable
-             * @param DateInterval|int|null $ttl   Optional. The TTL value of this item. If no value is sent and
-             *                                     the driver supports TTL then the library may set a default value
-             *                                     for it or let the driver take care of that.
-             *
-             * @return bool true on success and false on failure
-             *
-             * @throws void
-             *
-             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             */
-            #[Override]
-            public function set(string $key, mixed $value, int | DateInterval | null $ttl = null): bool
-            {
-                return false;
-            }
-
-            /**
-             * Delete an item from the cache by its unique key.
-             *
-             * @param string $key the unique cache key of the item to delete
-             *
-             * @return bool True if the item was successfully removed. False if there was an error.
-             *
-             * @throws void
-             *
-             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             */
-            #[Override]
-            public function delete(string $key): bool
-            {
-                return false;
-            }
-
-            /**
-             * Wipes clean the entire cache's keys.
-             *
-             * @return bool true on success and false on failure
-             *
-             * @throws void
-             */
-            #[Override]
-            public function clear(): bool
-            {
-                return false;
-            }
-
-            /**
-             * Obtains multiple cache items by their unique keys.
-             *
-             * @param iterable<string> $keys    a list of keys that can obtained in a single operation
-             * @param mixed            $default default value to return for keys that do not exist
-             *
-             * @return iterable<string, mixed> A list of key => value pairs. Cache keys that do not exist or are stale will have $default as value.
-             *
-             * @throws void
-             *
-             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             */
-            #[Override]
-            public function getMultiple(iterable $keys, mixed $default = null): iterable
-            {
-                return [];
-            }
-
-            /**
-             * Persists a set of key => value pairs in the cache, with an optional TTL.
-             *
-             * @param iterable<string, mixed> $values a list of key => value pairs for a multiple-set operation
-             * @param DateInterval|int|null   $ttl    Optional. The TTL value of this item. If no value is sent and
-             *                                        the driver supports TTL then the library may set a default value
-             *                                        for it or let the driver take care of that.
-             *
-             * @return bool true on success and false on failure
-             *
-             * @throws void
-             *
-             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             */
-            #[Override]
-            public function setMultiple(iterable $values, int | DateInterval | null $ttl = null): bool
-            {
-                return false;
-            }
-
-            /**
-             * Deletes multiple cache items in a single operation.
-             *
-             * @param iterable<string> $keys a list of string-based keys to be deleted
-             *
-             * @return bool True if the items were successfully removed. False if there was an error.
-             *
-             * @throws void
-             *
-             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             */
-            #[Override]
-            public function deleteMultiple(iterable $keys): bool
-            {
-                return false;
-            }
-
-            /**
-             * Determines whether an item is present in the cache.
-             *
-             * NOTE: It is recommended that has() is only to be used for cache warming type purposes
-             * and not to be used within your live applications operations for get/set, as this method
-             * is subject to a race condition where your has() will return true and immediately after,
-             * another script can remove it making the state of your app out of date.
-             *
-             * @param string $key the cache item key
-             *
-             * @throws void
-             *
-             * @phpcs:disable SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             */
-            #[Override]
-            public function has(string $key): bool
-            {
-                return false;
-            }
-        };
+        $cache = new Psr16Cache(new NullAdapter());
 
         assert($logger instanceof LoggerInterface);
         self::$detectorFactory = new DetectorFactory($cache, $logger);
@@ -327,7 +201,7 @@ final class DetectorTest extends TestCase
     public static function providerGetBrowser(): array
     {
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('data/tests/'));
-        $files    = new FilterIterator($iterator, 'yaml');
+        $files    = new FilterIterator($iterator, 'json');
 
         $data = [];
 
@@ -338,9 +212,27 @@ final class DetectorTest extends TestCase
             $filepath = str_replace('\\', '/', $pathName);
             assert(is_string($filepath));
 
+            assert($file instanceof SplFileInfo);
+
+            $pathName = $file->getPathname();
+            $filepath = str_replace('\\', '/', $pathName);
+            assert(is_string($filepath));
+
+            $content = file_get_contents($filepath);
+
+            if (in_array($content, [false, '', PHP_EOL], strict: true)) {
+                continue;
+            }
+
             try {
-                $tests = Yaml::parseFile($filepath);
-            } catch (ParseException) {
+                $tests = json_decode($content, associative: true, flags: JSON_THROW_ON_ERROR);
+            } catch (JsonException $e) {
+                echo new Exception(
+                    sprintf('could not decode file %s', $file),
+                    0,
+                    $e,
+                ), PHP_EOL;
+
                 continue;
             }
 

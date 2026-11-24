@@ -165,7 +165,7 @@ google-ads-qualify:
     search:
       - Google-Ads-Qualify
   engine: null
-'duckduck bot':
+duckduck-bot:
   name: 'DuckDuck Bot'
   manufacturer: duck-duck-go
   type: search-bot
@@ -175,7 +175,7 @@ google-ads-qualify:
       - DuckDuckBot
       - DuckDuckBot-Https
   engine: unknown
-'duckduck favicons bot':
+duckduck-favicons-bot:
   name: 'DuckDuck Favicons Bot'
   manufacturer: duck-duck-go
   type: search-bot
@@ -184,7 +184,7 @@ google-ads-qualify:
     search:
       - DuckDuckGo\-Favicons\-Bot
   engine: unknown
-'google image search':
+google-image-search:
   name: 'Google Image Search'
   manufacturer: google
   type: search-bot
@@ -211,7 +211,7 @@ googlebot-video:
     search:
       - Googlebot\-Video
   engine: unknown
-'bing preview':
+bing-preview:
   name: 'Bing Preview'
   manufacturer: microsoft
   type: search-bot
@@ -256,7 +256,7 @@ yacybot:
     class: null
     search: null
   engine: unknown
-'sogou web spider':
+sogou-web-spider:
   name: 'Sogou Web Spider'
   manufacturer: sogou
   type: search-bot
@@ -265,7 +265,7 @@ yacybot:
     search:
       - 'Sogou web spider'
   engine: unknown
-'adsbot google':
+adsbot-google:
   name: 'AdsBot Google'
   manufacturer: google
   type: search-bot
@@ -274,7 +274,7 @@ yacybot:
     search:
       - AdsBot\-Google
   engine: unknown
-'adsbot google-mobile':
+adsbot-google-mobile:
   name: 'AdsBot Google-Mobile'
   manufacturer: google
   type: search-bot
@@ -312,7 +312,7 @@ google-inspectiontool:
       - linkdex\.com\/v
       - linkdexbot
   engine: unknown
-'linkdex bot mobile':
+linkdex-bot-mobile:
   name: 'Linkdex Mobile Bot'
   manufacturer: linkdex
   type: search-bot
@@ -472,7 +472,7 @@ daum:
     class: null
     search: null
   engine: unknown
-'google web snippet':
+google-web-snippet:
   name: 'Google Web Snippet'
   manufacturer: google
   type: search-bot
@@ -480,7 +480,7 @@ daum:
     class: null
     search: null
   engine: unknown
-'google web preview':
+google-web-preview:
   name: 'Google Web Preview'
   manufacturer: google
   type: search-bot
@@ -510,7 +510,7 @@ voilabot:
       - 'VoilaBot BETA'
       - Voilabot
   engine: unknown
-'sogou spider':
+sogou-spider:
   name: 'Sogou Spider'
   manufacturer: sogou
   type: search-bot
@@ -721,7 +721,7 @@ google-adwords-instant:
       - Google-Adwords-Instant-Mobile
       - Google-Adwords-Instant
   engine: unknown
-'adsense bot':
+adsense-bot:
   name: 'AdSense Bot'
   manufacturer: google
   type: search-bot
@@ -922,7 +922,7 @@ acapbot:
     search:
       - acapbot
   engine: unknown
-'google app engine':
+google-app-engine:
   name: 'Google App Engine'
   manufacturer: google
   type: search-bot
@@ -1627,4 +1627,148 @@ vexel-search-bot:
     search:
       - VexelSearchBot\-
       - VexelSearchBot
+  engine: unknown
+qwantbot:
+  name: Qwantbot
+  manufacturer: qwant
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Qwantbot
+  engine: unknown
+oai-searchbot:
+  name: OAI-SearchBot
+  manufacturer: openai
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - OAI-SearchBot
+  engine: null
+amzn-search-bot:
+  name: Amzn-SearchBot
+  manufacturer: amazon
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Amzn-SearchBot
+  engine: unknown
+kimi-search-bot:
+  name: Kimi-SearchBot
+  manufacturer: moonshot-ai
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Kimi-SearchBot
+  engine: unknown
+azureai-searchbot:
+  name: AzureAI-SearchBot
+  manufacturer: unknown
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AzureAI-SearchBot
+  engine: unknown
+qwantify:
+  name: Qwantify
+  manufacturer: qwant
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Qwantify
+  engine: unknown
+mistral-ai-index:
+  name: 'MistralAI Index'
+  manufacturer: mistral-ai
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MistralAI-Index
+  engine: unknown
+go-guides-crawler:
+  name: GoGuidesCrawler
+  manufacturer: go-guides
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GoGuidesCrawler
+  engine: unknown
+goguides-discovery-bot:
+  name: GoGuidesDiscoveryBot
+  manufacturer: go-guides
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - GoGuidesDiscoveryBot
+  engine: unknown
+amazon-bot:
+  name: 'Amazon Bot'
+  manufacturer: amazon
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Amazonbot
+  engine: unknown
+claude-searchbot:
+  name: Claude-SearchBot
+  manufacturer: anthropic
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Claude-SearchBot
+  engine: unknown
+applebot:
+  name: Applebot
+  manufacturer: apple
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Applebot
+  engine: webkit
+perplexity-bot:
+  name: PerplexityBot
+  manufacturer: perplexity
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PerplexityBot
+  engine: unknown
+ibou-bot:
+  name: IbouBot
+  manufacturer: ibou
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - IbouBot
+  engine: unknown
+claude-web:
+  name: Claude-Web
+  manufacturer: anthropic
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Claude-Web
+  engine: unknown
+you-bot:
+  name: YouBot
+  manufacturer: su-sea
+  type: search-bot
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - YouBot
   engine: unknown

@@ -373,7 +373,7 @@ final class Useragent2Test extends TestCase
                 'hasDeviceInfo' => true,
                 'deviceCode' => 'unknown=general mobile phone',
                 'hasClientInfo' => true,
-                'clientCode' => 'avast secure browser',
+                'clientCode' => 'avast-secure-browser',
                 'hasClientVersion' => true,
                 'clientVersion' => null,
                 'hasPlatformInfo' => true,
