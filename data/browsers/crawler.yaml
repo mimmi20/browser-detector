@@ -16862,3 +16862,21 @@ spear-data-bot:
     search:
       - SpearDataBot
   engine: unknown
+agent-hunt-research:
+  name: agent-hunt-research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - agent-hunt-research
+  engine: unknown
+liberatori-bot:
+  name: LiberatoriBot
+  manufacturer: liberatori
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LiberatoriBot
+  engine: unknown

@@ -489,6 +489,8 @@ final readonly class Headers
                         case 'xai-bot':
                         case 'meta-external-fetcher':
                         case 'google-extended':
+                        case 'sebot-wa':
+                        case 'liberatori-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -525,6 +527,7 @@ final readonly class Headers
                         case 'branchenbuch-bot':
                         case 'yisouspider':
                         case 'kagi-fetcher':
+                        case 'agent-hunt-research':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

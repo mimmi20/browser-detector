@@ -3303,12 +3303,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Chrome",
+        "name": "SpearDataBot",
         "modus": null,
-        "version": "120.0.0.0",
-        "manufacturer": "google",
-        "type": "browser",
-        "isbot": false,
+        "version": "1.0.0",
+        "manufacturer": "spear-data",
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
