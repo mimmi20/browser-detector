@@ -93,6 +93,7 @@ final class SecChUaClientCode implements ClientCodeInterface
             'reflectionbot' => 'reflection-bot',
             'ccleaner browser' => 'ccleaner-browser',
             'opera gx' => 'opera-gx',
+            'neo' => 'neo-browser',
             default => $code,
         };
     }

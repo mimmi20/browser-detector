@@ -1572,6 +1572,7 @@ geedo-product-search:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - GeedoProductSearch
+      - GeedoShopProductFinder
   engine: unknown
 sandoba-crawler:
   name: Sandoba//Crawler
@@ -2349,6 +2350,7 @@ xai-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - xAI-Bot
+      - xAI
   engine: unknown
 ezooms:
   name: Ezooms

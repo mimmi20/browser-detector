@@ -401,6 +401,7 @@ final readonly class Headers
                         case 'avast-secure-browser':
                         case 'urlsuma-bot':
                         case 'sender-bot':
+                        case 'chatgpt-user-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -485,6 +486,9 @@ final readonly class Headers
                         case 'yisouspider':
                         case 'bonprix-app':
                         case 'obsidian':
+                        case 'xai-bot':
+                        case 'meta-external-fetcher':
+                        case 'google-extended':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

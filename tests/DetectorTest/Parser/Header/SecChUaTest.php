@@ -300,6 +300,7 @@ final class SecChUaTest extends TestCase
             ['"Chromium";v="151", "Not)A;Brand";v="24", "Reflectionbot";v="1"', true, 'reflection-bot', true, '1.0.0', true, Engine::blink, true, '151.0.0'],
             ['"Chromium";v="154", "CCleaner Browser";v="154", "Not A(Brand";v="99"', true, 'ccleaner-browser', true, '154.0.0', true, Engine::blink, true, '154.0.0'],
             ['"Miui Browser";v="123", "Not:A-Brand";v="8", "Chromium";v="123"', true, 'miui-browser', true, '123.0.0', true, Engine::blink, true, '123.0.0'],
+            ['"Not:A-Brand";v="8", "Chromium";v="156", "Neo";v="156"', true, 'neo-browser', true, '156.0.0', true, Engine::blink, true, '156.0.0'],
         ];
     }
 }
