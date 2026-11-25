@@ -1794,6 +1794,7 @@ ads-txt-crawler:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - AdsTxtCrawler
+      - ads-txt-crawler
   engine: unknown
 deepfield-genome:
   name: 'Deepfield Genome'
@@ -16741,4 +16742,121 @@ lounge-scale-research:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - LoungeScale-Research
+  engine: unknown
+euro-vl-fetch:
+  name: EuroVL-fetch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EuroVL-fetch
+  engine: unknown
+re-script-lead-bot:
+  name: re-script-leadbot
+  manufacturer: re-script
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - re-script-leadbot
+  engine: unknown
+ecommerce-detector:
+  name: EcommerceDetector
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EcommerceDetector
+  engine: unknown
+favi-sh:
+  name: 'favi.sh'
+  manufacturer: iluvatar
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'favi.sh'
+  engine: unknown
+indus-firehose:
+  name: IndusFirehose
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - IndusFirehose
+  engine: unknown
+erioun-bot:
+  name: EriounBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EriounBot
+  engine: unknown
+semalt-indexer:
+  name: SemaltIndexer
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SemaltIndexer
+  engine: unknown
+ankaufsprofil-recherche:
+  name: AnkaufsprofilRecherche
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AnkaufsprofilRecherche
+  engine: unknown
+deep-lead-bot:
+  name: DeepleadBot
+  manufacturer: wagner-consulting
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DeepleadBot
+  engine: unknown
+a11y-scan-bot:
+  name: A11yScanBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - A11yScanBot
+  engine: unknown
+first-seen-bot:
+  name: FirstSeenBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FirstSeenBot
+  engine: unknown
+actes-active-check:
+  name: actes-activecheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - actes-activecheck
+  engine: unknown
+spear-data-bot:
+  name: SpearDataBot
+  manufacturer: spear-data
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SpearDataBot
   engine: unknown

@@ -1393,6 +1393,7 @@ rules:
   /contact-email-research/i: contact-email-research
   /europecompanycollector/i: europe-company-collector
   /auroquantisoutreachbot/i: auro-quantis-outreach-bot
+  /ankaufsprofilrecherche/i: ankaufsprofil-recherche
   # @todo
   /secincyte-categorybot/i: secincyte-categorybot
   /donabase-psp-research/i: donabase-psp-research
@@ -1564,6 +1565,9 @@ rules:
   /uhrigsolutionsbot/i: uhrig-solutions-bot
   /discernowebsearch/i: discerno-web-search
   /elementorproprobe/i: elementor-pro-probe
+  /re-script-leadbot/i: re-script-lead-bot
+  /ecommercedetector/i: ecommerce-detector
+  /actes-activecheck/i: actes-active-check
   # @todo
   /uphonewebbrowser/i: uphone-browser
   /accessiblewebbot/i: accessible-web-bot
@@ -1871,6 +1875,8 @@ rules:
   /opencode-user/i: open-code-user
   /reflectionbot/i: reflection-bot
   /urlcheck-rust/i: urlcheck-rust
+  /indusfirehose/i: indus-firehose
+  /semaltindexer/i: semalt-indexer
   # @todo
   /researchscan/i: rwth-aachen-researchscan
   /dataprovider/i: dataprovider-spider
@@ -1991,6 +1997,9 @@ rules:
   /dmarcflowbot/i: dmarc-flow-bot
   /kagi-fetcher/i: kagi-fetcher
   /domainingbot/i: domaining-bot
+  /eurovl-fetch/i: euro-vl-fetch
+  /firstseenbot/i: first-seen-bot
+  /speardatabot/i: spear-data-bot
   # @todo
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
@@ -2110,6 +2119,8 @@ rules:
   /enfiladebot/i: enfilade-bot
   /viewsrc-bot/i: viewsrc-bot
   /laboreyebot/i: labor-eye-bot
+  /deepleadbot/i: deep-lead-bot
+  /a11yscanbot/i: a11y-scan-bot
   # @todo
   /domainscan/i: domainscan-server-monitoring
   /jobroboter/i: jobroboter
@@ -2349,6 +2360,7 @@ rules:
   /alpostbot/i: alpost-bot
   /aclippbot/i: aclipp-bot
   /marvenbot/i: marven-bot
+  /eriounbot/i: erioun-bot
   # @todo:
   /neevabot/i: neevabot
   /msoffice/i: office
@@ -2484,6 +2496,7 @@ rules:
   /lessobot/i: lesso-bot
   /riverbot/i: river-bot
   /uternbot/i: utern-bot
+  /favi\.sh/i: favi-sh
   # @todo:
   /whatcms/i: what-cms
   /phoenix/i: phoenix
@@ -2728,6 +2741,7 @@ rules:
   /scraper/i: generic-bot
   /crawler/i: generic-bot
   /finder/i: generic-bot
+  /spider/i: generic-bot
   /probe/i: generic-bot
   /bot\//i: generic-bot
   /^searchbot\/[0-9\.]+$/i: search-bot

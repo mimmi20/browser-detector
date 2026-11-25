@@ -279,10 +279,10 @@
         "bits": 0
       },
       "client": {
-        "name": "Safari",
+        "name": "DuckDuckGo Privacy Browser",
         "modus": null,
-        "version": "26.7.0",
-        "manufacturer": "apple",
+        "version": null,
+        "manufacturer": "duck-duck-go",
         "type": "browser",
         "isbot": false,
         "bits": 0
@@ -4529,12 +4529,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Firefox",
+        "name": "Meta-WebIndexer",
         "modus": null,
-        "version": "147.0.0",
-        "manufacturer": "mozilla-foundation",
-        "type": "browser",
-        "isbot": false,
+        "version": "1.1.0",
+        "manufacturer": "meta",
+        "type": "social-media-agent",
+        "isbot": true,
         "bits": 0
       },
       "os": {
