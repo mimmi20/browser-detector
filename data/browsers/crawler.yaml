@@ -16880,3 +16880,120 @@ liberatori-bot:
     search:
       - LiberatoriBot
   engine: unknown
+img-dataset-fetcher:
+  name: img-dataset-fetcher
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - img-dataset-fetcher
+  engine: unknown
+board-discovery-script:
+  name: board-discovery-script
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - board-discovery-script
+  engine: unknown
+image-fetcher:
+  name: image-fetcher
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - image-fetcher
+  engine: unknown
+clairmap-sitecrawl:
+  name: clairmap-sitecrawl
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - clairmap-sitecrawl
+  engine: unknown
+post-hog-image-fetcher-bot:
+  name: PostHogImageFetcherBot
+  manufacturer: post-hog
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PostHogImageFetcherBot
+  engine: unknown
+ufetch:
+  name: ufetch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ufetch
+  engine: unknown
+homepage-metadata-collector:
+  name: HomepageMetadataCollector
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HomepageMetadataCollector
+  engine: unknown
+tpips-retrieval-linkcheck:
+  name: tpips-retrieval-linkcheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - tpips-retrieval-linkcheck
+  engine: unknown
+startup-talk-form-check:
+  name: StartupTalkFormCheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StartupTalkFormCheck
+  engine: unknown
+ant-html:
+  name: ant-html
+  manufacturer: kuaishou
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ant-html
+  engine: unknown
+domain-radar:
+  name: Domain-Radar
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Domain-Radar
+  engine: unknown
+pdf-metadata-check:
+  name: pdf-metadata-check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - pdf-metadata-check
+  engine: unknown
+invictus-ai-readable-index:
+  name: InvictusAIReadableIndex
+  manufacturer: invictus-communications
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - InvictusAIReadableIndex
+  engine: unknown

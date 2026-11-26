@@ -876,6 +876,7 @@ rules:
   /yahoocachesystem/i: yahoocachesystem
   /wmtips\.com/i: 'webmaster tips bot'
   /overture-maps-linkchecker/i: overture-maps-linkchecker
+  /tpips-retrieval-linkcheck/i: tpips-retrieval-linkcheck
   /eyeablebrokenlinkchecker/i: eye-able-broken-link-checker
   /moodlebot-linkchecker/i: moodlebot-linkchecker
   /brokenlinkcheck\.com/i: brokenlinkcheck
@@ -1366,6 +1367,7 @@ rules:
   /email-eu-academic-crawler/i: email-eu-academic-crawler
   /fraunhofersit-domainintel/i: fraunhofer-sit-domain-intel
   /hrw-hubspot-company-check/i: hrw-hubspot-company-check
+  /homepagemetadatacollector/i: homepage-metadata-collector
   # @todo
   /eyeworld-python-research/i: eyeworld-python-research
   /artiwireevidenceverifier/i: artiwire-evidence-verifier
@@ -1381,6 +1383,7 @@ rules:
   /glasswing-zone-research/i: glasswing-zone-research
   /ki-projekt-optout-check/i: ki-projekt-optout-check
   /grevendatenanreicherung/i: greven-daten-anreicherung
+  /invictusaireadableindex/i: invictus-ai-readable-index
   # @todo
   /prospeqt-saas-research/i: prospeqt-saas-research
   /triumvirymediaresearch/i: triumviry-media-research
@@ -1394,6 +1397,8 @@ rules:
   /europecompanycollector/i: europe-company-collector
   /auroquantisoutreachbot/i: auro-quantis-outreach-bot
   /ankaufsprofilrecherche/i: ankaufsprofil-recherche
+  /board-discovery-script/i: board-discovery-script
+  /posthogimagefetcherbot/i: post-hog-image-fetcher-bot
   # @todo
   /secincyte-categorybot/i: secincyte-categorybot
   /donabase-psp-research/i: donabase-psp-research
@@ -1423,6 +1428,7 @@ rules:
   /scopecampusresolver2/i: scope-campus-resolver-2
   /lexaidspeedqualityai/i: lex-aid-speed-quality-ai
   /securitytxtsurveybot/i: security-txt-survey-bot
+  /startuptalkformcheck/i: startup-talk-form-check
   # @todo
   /jobindexmeasurement/i: job-index-measurement
   '/sogou orion spider/i': sogou-orion-spider
@@ -1454,6 +1460,7 @@ rules:
   /whitecircletrustbot/i: white-circle-trust-bot
   /stripesiteinspector/i: stripe-site-inspector
   /agent-hunt-research/i: agent-hunt-research
+  /img-dataset-fetcher/i: img-dataset-fetcher
   # @todo
   /steamchaturllookup/i: steam-chat-url-lookup
   /dynatracesynthetic/i: dynatrace-synthetic
@@ -1487,6 +1494,8 @@ rules:
   /iaskbot|iaskspider/i: i-ask-bot
   /shopcontactcrawler/i: shop-contact-crawler
   /mediahomepagecheck/i: media-homepage-check
+  /clairmap-sitecrawl/i: clairmap-sitecrawl
+  /pdf-metadata-check/i: pdf-metadata-check
   # @todo
   /digitalshadowsbot/i: digital-shadows-bot
   /netpeakcheckerbot/i: netpeak-checker-bot
@@ -1879,6 +1888,7 @@ rules:
   /indusfirehose/i: indus-firehose
   /semaltindexer/i: semalt-indexer
   /liberatoribot/i: liberatori-bot
+  /image-fetcher/i: image-fetcher
   # @todo
   /researchscan/i: rwth-aachen-researchscan
   /dataprovider/i: dataprovider-spider
@@ -2002,6 +2012,7 @@ rules:
   /eurovl-fetch/i: euro-vl-fetch
   /firstseenbot/i: first-seen-bot
   /speardatabot/i: spear-data-bot
+  /domain-radar/i: domain-radar
   # @todo
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
@@ -2499,6 +2510,7 @@ rules:
   /riverbot/i: river-bot
   /uternbot/i: utern-bot
   /favi\.sh/i: favi-sh
+  /ant-html/i: ant-html
   # @todo:
   /whatcms/i: what-cms
   /phoenix/i: phoenix
@@ -2570,6 +2582,7 @@ rules:
   /jshunt/i: js-hunt
   /nrdbot/i: nrd-bot
   /enrich/i: enrich
+  /ufetch/i: ufetch
   # @todo
   /goose/i: goose-extractor
   /avant/i: avant
@@ -2737,6 +2750,7 @@ rules:
   /classifier/i: generic-bot
   /validator/i: generic-bot
   /useragent/i: generic-bot
+  /collector/i: generic-bot
   /resolver/i: generic-bot
   /research/i: generic-bot
   /checker/i: generic-bot
