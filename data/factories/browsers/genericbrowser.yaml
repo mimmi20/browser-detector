@@ -130,6 +130,7 @@ rules:
   /adbeat_bot|adbeat\.com/i: adbeat-bot
   /check_http/i: nagios-check-http
   /nagios-plugins/i: nagios
+  /nagios-check/i: nagios
   /msnbot-media/i: msnbot-media
   /bingbot|msnbot|msrbot|bingadsbot/i: bingbot
   /smtbot/i: smtbot
@@ -1429,6 +1430,7 @@ rules:
   /lexaidspeedqualityai/i: lex-aid-speed-quality-ai
   /securitytxtsurveybot/i: security-txt-survey-bot
   /startuptalkformcheck/i: startup-talk-form-check
+  /lovedbyai-agencyscan/i: loved-by-ai-agency-scan
   # @todo
   /jobindexmeasurement/i: job-index-measurement
   '/sogou orion spider/i': sogou-orion-spider
@@ -1806,6 +1808,7 @@ rules:
   /appads-crawler/i: appads-crawler
   /seo-kb-crawler/i: seo-kb-crawler
   /shiftsignalbot/i: shift-signal-bot
+  /metacrawlerbot/i: meta-crawler-bot
   # @todo
   /censysinspect/i: censysinspect
   /t3versionsbot/i: t3-versions-bot
@@ -2013,6 +2016,7 @@ rules:
   /firstseenbot/i: first-seen-bot
   /speardatabot/i: spear-data-bot
   /domain-radar/i: domain-radar
+  /northstarbot/i: north-star-bot
   # @todo
   /bitsightbot/i: bitsightbot
   /surdotlybot/i: surdotlybot
@@ -2374,6 +2378,7 @@ rules:
   /aclippbot/i: aclipp-bot
   /marvenbot/i: marven-bot
   /eriounbot/i: erioun-bot
+  /minakibot/i: minaki-bot
   # @todo:
   /neevabot/i: neevabot
   /msoffice/i: office
@@ -2743,6 +2748,7 @@ rules:
   /^np|npbot/i: name-protect-bot
   # @todo
   /health-?check/i: generic-bot
+  /domain-?check/i: generic-bot
   /verification/i: generic-bot
   /javascript:/i: generic-bot
   /site-?check/i: generic-bot
@@ -2753,13 +2759,19 @@ rules:
   /collector/i: generic-bot
   /resolver/i: generic-bot
   /research/i: generic-bot
+  /prefetch/i: generic-bot
+  /discover/i: generic-bot
   /checker/i: generic-bot
   /scanner/i: generic-bot
   /scraper/i: generic-bot
-  /crawler/i: generic-bot
+  /connect/i: generic-bot
+  /monitor/i: generic-bot
   /finder/i: generic-bot
   /spider/i: generic-bot
+  /lookup/i: generic-bot
+  /crawl/i: generic-bot
   /probe/i: generic-bot
+  /index/i: generic-bot
   /bot\//i: generic-bot
   /^searchbot\/[0-9\.]+$/i: search-bot
   /^mozilla\/[0-9]\.0 \(compatible\)$/i: generic-bot

@@ -89,6 +89,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
             '/(?P<client>classic fm)\/[\d.]+ android [\d.]+\/[^);\/]+/i',
             '/(?P<client>com\.huawei\.hmos\.browser) \([^;]+;openharmony-[\d.]+;[^)]+\)/i',
             '/(?P<client>snapchat)\/[\d.]+ \([^;]+; andr[o0]id [\d.]+#/i',
+            '/(?P<client>chatgpt)\/[\d.]+ \([^;]+; andr[o0]id [\d.]+#/i',
         ];
 
         $filtered = array_filter(
@@ -113,6 +114,7 @@ final readonly class UseragentClientCode implements ClientCodeInterface
                     'classic fm' => 'classic-fm',
                     'com.huawei.hmos.browser' => 'huawei-browser',
                     'snapchat' => 'snapchat-app',
+                    'chatgpt' => 'chatgpt-app',
                     default => $client,
                 };
             },

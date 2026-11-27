@@ -402,6 +402,7 @@ final readonly class Headers
                         case 'urlsuma-bot':
                         case 'sender-bot':
                         case 'chatgpt-user-bot':
+                        case 'applebot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -491,6 +492,7 @@ final readonly class Headers
                         case 'google-extended':
                         case 'sebot-wa':
                         case 'liberatori-bot':
+                        case 'wechat-app':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 
@@ -528,6 +530,7 @@ final readonly class Headers
                         case 'yisouspider':
                         case 'kagi-fetcher':
                         case 'agent-hunt-research':
+                        case 'minaki-bot':
                             $clientCodename = $lastClientCodename;
                             $clientHeader   = array_last($headersWithClientCode);
 

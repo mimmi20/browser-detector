@@ -16997,3 +16997,39 @@ invictus-ai-readable-index:
     search:
       - InvictusAIReadableIndex
   engine: unknown
+north-star-bot:
+  name: NorthstarBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NorthstarBot
+  engine: unknown
+meta-crawler-bot:
+  name: MetacrawlerBot
+  manufacturer: fintalent
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MetacrawlerBot
+  engine: unknown
+loved-by-ai-agency-scan:
+  name: LovedByAI-AgencyScan
+  manufacturer: loved-by-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LovedByAI-AgencyScan
+  engine: unknown
+minaki-bot:
+  name: MinakiBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MinakiBot
+  engine: unknown
