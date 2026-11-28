@@ -1572,6 +1572,7 @@ geedo-product-search:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - GeedoProductSearch
+      - GeedoShopProductFinder
   engine: unknown
 sandoba-crawler:
   name: Sandoba//Crawler
@@ -1794,6 +1795,7 @@ ads-txt-crawler:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - AdsTxtCrawler
+      - ads-txt-crawler
   engine: unknown
 deepfield-genome:
   name: 'Deepfield Genome'
@@ -2348,6 +2350,7 @@ xai-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - xAI-Bot
+      - xAI
   engine: unknown
 ezooms:
   name: Ezooms
@@ -9709,8 +9712,9 @@ dead-link-checker:
   manufacturer: traffic-names
   type: crawler
   version:
-    class: null
-    search: null
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - dead-link-checker
   engine: unknown
 delibar:
   name: Delibar
@@ -16650,4 +16654,382 @@ river-bot:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - RiverBot
+  engine: unknown
+aion-bot:
+  name: AionBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AionBot
+  engine: unknown
+utern-bot:
+  name: UTernBot
+  manufacturer: utern
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - UTernBot
+  engine: unknown
+aclipp-bot:
+  name: AclippBot
+  manufacturer: aclipp
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AclippBot
+  engine: unknown
+marven-bot:
+  name: MarvenBot
+  manufacturer: quadress
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MarvenBot
+  engine: unknown
+white-circle-trust-bot:
+  name: WhiteCircleTrustBot
+  manufacturer: white-circle
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - WhiteCircleTrustBot
+  engine: unknown
+security-txt-survey-bot:
+  name: SecurityTxtSurveyBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SecurityTxtSurveyBot
+  engine: unknown
+ssi-nutch:
+  name: SSI-Nutch
+  manufacturer: safe-superintelligence
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SSI-Nutch
+  engine: unknown
+urlcheck-rust:
+  name: urlcheck-rust
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - urlcheck-rust
+  engine: unknown
+stripe-site-inspector:
+  name: StripeSiteInspector
+  manufacturer: stripe
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StripeSiteInspector
+  engine: unknown
+lounge-scale-research:
+  name: LoungeScale-Research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LoungeScale-Research
+  engine: unknown
+euro-vl-fetch:
+  name: EuroVL-fetch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EuroVL-fetch
+  engine: unknown
+re-script-lead-bot:
+  name: re-script-leadbot
+  manufacturer: re-script
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - re-script-leadbot
+  engine: unknown
+ecommerce-detector:
+  name: EcommerceDetector
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EcommerceDetector
+  engine: unknown
+favi-sh:
+  name: 'favi.sh'
+  manufacturer: iluvatar
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - 'favi.sh'
+  engine: unknown
+indus-firehose:
+  name: IndusFirehose
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - IndusFirehose
+  engine: unknown
+erioun-bot:
+  name: EriounBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - EriounBot
+  engine: unknown
+semalt-indexer:
+  name: SemaltIndexer
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SemaltIndexer
+  engine: unknown
+ankaufsprofil-recherche:
+  name: AnkaufsprofilRecherche
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - AnkaufsprofilRecherche
+  engine: unknown
+deep-lead-bot:
+  name: DeepleadBot
+  manufacturer: wagner-consulting
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - DeepleadBot
+  engine: unknown
+a11y-scan-bot:
+  name: A11yScanBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - A11yScanBot
+  engine: unknown
+first-seen-bot:
+  name: FirstSeenBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - FirstSeenBot
+  engine: unknown
+actes-active-check:
+  name: actes-activecheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - actes-activecheck
+  engine: unknown
+spear-data-bot:
+  name: SpearDataBot
+  manufacturer: spear-data
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - SpearDataBot
+  engine: unknown
+agent-hunt-research:
+  name: agent-hunt-research
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - agent-hunt-research
+  engine: unknown
+liberatori-bot:
+  name: LiberatoriBot
+  manufacturer: liberatori
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LiberatoriBot
+  engine: unknown
+img-dataset-fetcher:
+  name: img-dataset-fetcher
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - img-dataset-fetcher
+  engine: unknown
+board-discovery-script:
+  name: board-discovery-script
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - board-discovery-script
+  engine: unknown
+image-fetcher:
+  name: image-fetcher
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - image-fetcher
+  engine: unknown
+clairmap-sitecrawl:
+  name: clairmap-sitecrawl
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - clairmap-sitecrawl
+  engine: unknown
+post-hog-image-fetcher-bot:
+  name: PostHogImageFetcherBot
+  manufacturer: post-hog
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - PostHogImageFetcherBot
+  engine: unknown
+ufetch:
+  name: ufetch
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ufetch
+  engine: unknown
+homepage-metadata-collector:
+  name: HomepageMetadataCollector
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - HomepageMetadataCollector
+  engine: unknown
+tpips-retrieval-linkcheck:
+  name: tpips-retrieval-linkcheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - tpips-retrieval-linkcheck
+  engine: unknown
+startup-talk-form-check:
+  name: StartupTalkFormCheck
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - StartupTalkFormCheck
+  engine: unknown
+ant-html:
+  name: ant-html
+  manufacturer: kuaishou
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - ant-html
+  engine: unknown
+domain-radar:
+  name: Domain-Radar
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Domain-Radar
+  engine: unknown
+pdf-metadata-check:
+  name: pdf-metadata-check
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - pdf-metadata-check
+  engine: unknown
+invictus-ai-readable-index:
+  name: InvictusAIReadableIndex
+  manufacturer: invictus-communications
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - InvictusAIReadableIndex
+  engine: unknown
+north-star-bot:
+  name: NorthstarBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - NorthstarBot
+  engine: unknown
+meta-crawler-bot:
+  name: MetacrawlerBot
+  manufacturer: fintalent
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MetacrawlerBot
+  engine: unknown
+loved-by-ai-agency-scan:
+  name: LovedByAI-AgencyScan
+  manufacturer: loved-by-ai
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - LovedByAI-AgencyScan
+  engine: unknown
+minaki-bot:
+  name: MinakiBot
+  manufacturer: unknown
+  type: crawler
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - MinakiBot
   engine: unknown

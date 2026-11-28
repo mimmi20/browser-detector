@@ -248,6 +248,7 @@ rules:
   /grokapp/i: grok-app
   /com\.google\.maps|androidmapswebview/i: google-maps
   '/ok(?:android|ios|app)/i': odnoklassniki
+  /loungescale-research/i: lounge-scale-research
   '/trill app_version/i': tiktok
   /aliexpressandroid/i: ali-express
   /reddit\/version/i: reddit-app
@@ -289,6 +290,7 @@ rules:
   /aria2app/i: aria2-app
   /kimi\//i: kimi-app
   /buscari/i: seekee
+  /aionbot/i: aion-bot
   /xshare/i: xshare
   /boohee/i: boohee
   /grindr/i: grindr
@@ -433,6 +435,8 @@ rules:
   /google-shopping-quality/i: google-shopping-quality
   /yandexaccessibilitybot/i: yandex-accessibility-bot
   /google-adwords-instant/i: google-adwords-instant
+  /geedoshopproductfinder/i: geedo-product-search
+  /posthogimagefetcherbot/i: post-hog-image-fetcher-bot
   /google-gemininotebook/i: google-gemini-notebook
   /gemini-deep-research/i: gemini-deep-research
   '/com\.tcl\.browser|\d+\/tclwebkit\d+[.\d]*/i': browse-here
@@ -447,6 +451,7 @@ rules:
   '/private browser/i': sp-browser
   /akonileadhuntbot/i: akoni-lead-hunt-bot
   /aranet-searchbot/i: aranet-search-bot
+  /millionroundsbot/i: million-rounds-bot
   /ahrefssiteaudit/i: ahrefs-site-audit
   /psfinanzappdemo/i: ps-finanzapp
   /ruxitsynthetic/i: ruxit-synthetic
@@ -459,6 +464,8 @@ rules:
   /surfybrowser/i: surfy-browser
   /prospectorbr/i: prospector-br
   /shoptechscan/i: shop-tech-scan
+  /speardatabot/i: spear-data-bot
+  /modatscanner/i: modat-scanner
   /bitsightbot/i: bitsightbot
   '/ojr browser/i': ojr-browser
   /searchcraft/i: search-craft
@@ -468,6 +475,7 @@ rules:
   /nfsbrowser/i: nfs-browser
   /centurybot/i: century-bot
   /sectorbot/i: sector-bot
+  /minakibot/i: minaki-bot
   /dragon\//i: dragon
   /amzn-user/i: amzn-user
   /builtwith/i: built-with-crawler

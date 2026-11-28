@@ -227,10 +227,10 @@
         "bits": 0
       },
       "client": {
-        "name": "Safari",
+        "name": "DuckDuckGo Privacy Browser",
         "modus": null,
         "version": "26.7.0",
-        "manufacturer": "apple",
+        "manufacturer": "duck-duck-go",
         "type": "browser",
         "isbot": false,
         "bits": 0
@@ -877,12 +877,12 @@
         "bits": 0
       },
       "client": {
-        "name": "Chrome",
+        "name": "AionBot",
         "modus": null,
-        "version": "149.0.0.0",
-        "manufacturer": "google",
-        "type": "browser",
-        "isbot": false,
+        "version": "1.0.0",
+        "manufacturer": "unknown",
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {

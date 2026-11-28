@@ -223,7 +223,7 @@ rules:
   '/qwant(mobile)?\/|qwantios/i': qwant-mobile
   '/sunrisebrowser|sunrise[\/ ]/i': sunrise
   '/odyssey web browser/i': odyssey-web-browser
-  /ddg-ios-|duckduckgo/i: duckduck-app
+  /ddg-ios-|duckduckgo|ddg\//i: duckduck-app
   '/origyn web browser/i': origyn-web-browser
   /safariviewservice/i: safari-view-service
   /grapeshotcrawler/i: grapeshotcrawler
@@ -449,6 +449,7 @@ rules:
   /worldbot/i: world-bot
   /spotify/i: spotify-app
   /shapbot/i: shap-bot
+  /grokapp/i: grok-app
   /safari/i: safari
   /grindr/i: grindr
   /readkit/i: readkit
@@ -472,7 +473,6 @@ rules:
   /com\.meevii\.bibleKJV/i: bible-kjv
   /sohunews/i: sohunews-app
   /wallanews/i: walla-news
-  /grokapp/i: grok-app
   '/ok(?:android|ios|app)/i': odnoklassniki
   /wirtschaftswoche-ios/i: wirtschafts-woche
   /applenews|news\//i: applenews

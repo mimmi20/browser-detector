@@ -1527,12 +1527,12 @@
         "bits": 0
       },
       "client": {
-        "name": null,
+        "name": "Generic Bot",
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "unknown",
-        "isbot": false,
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {
@@ -3283,10 +3283,10 @@
         "bits": 0
       },
       "client": {
-        "name": "ads-txt",
+        "name": "AdsTxtCrawler",
         "modus": null,
-        "version": null,
-        "manufacturer": "unknown",
+        "version": "1.0.0",
+        "manufacturer": "one-tag",
         "type": "crawler",
         "isbot": true,
         "bits": 0
@@ -3433,10 +3433,10 @@
         "bits": 0
       },
       "client": {
-        "name": "ads-txt",
+        "name": "AdsTxtCrawler",
         "modus": null,
-        "version": null,
-        "manufacturer": "unknown",
+        "version": "2.0.0",
+        "manufacturer": "one-tag",
         "type": "crawler",
         "isbot": true,
         "bits": 0
@@ -4333,12 +4333,12 @@
         "bits": 0
       },
       "client": {
-        "name": null,
+        "name": "Generic Bot",
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "unknown",
-        "isbot": false,
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {

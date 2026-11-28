@@ -427,10 +427,10 @@
         "bits": 0
       },
       "client": {
-        "name": "AdBot",
+        "name": "DeepleadBot",
         "modus": null,
         "version": "1.0.0",
-        "manufacturer": "unknown",
+        "manufacturer": "wagner-consulting",
         "type": "crawler",
         "isbot": true,
         "bits": 0
@@ -627,12 +627,12 @@
         "bits": 0
       },
       "client": {
-        "name": null,
+        "name": "Generic Bot",
         "modus": null,
         "version": null,
         "manufacturer": "unknown",
-        "type": "unknown",
-        "isbot": false,
+        "type": "crawler",
+        "isbot": true,
         "bits": 0
       },
       "os": {

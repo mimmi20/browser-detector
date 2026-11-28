@@ -879,6 +879,7 @@ duckduck-app:
       - ddg_android
       - DuckDuckGo
       - ddg_win
+      - ddg
   engine: null
 ecosia:
   name: Ecosia
@@ -5484,4 +5485,13 @@ cool-browser:
     factory: \BrowserDetector\Version\VersionBuilderFactory
     search:
       - Chrome
+  engine: unknown
+neo-browser:
+  name: 'Norton Neo'
+  manufacturer: gen-digital
+  type: browser
+  version:
+    factory: \BrowserDetector\Version\VersionBuilderFactory
+    search:
+      - Neo
   engine: unknown

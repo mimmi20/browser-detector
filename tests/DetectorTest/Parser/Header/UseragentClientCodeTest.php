@@ -112,6 +112,7 @@ final class UseragentClientCodeTest extends TestCase
     {
         return [
             ['WhatsApp/2.2587.9 A', 'unknown'],
+            ['ChatGPT/1.2026.307 (Android 17; SM-S918B; build 2630717)', 'chatgpt-app'],
         ];
     }
 
